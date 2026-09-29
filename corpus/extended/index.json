@@ -1,0 +1,805 @@
+{
+  "schema_version": "1.0",
+  "version": "0.2.0",
+  "review_status": "pending-independent-human-review",
+  "cases": [
+    {
+      "id": "debtor-account-control",
+      "source": "debtor-account-control.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "debtor-account-control.target.xml",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Identity control with the named field present.",
+      "control": "debtor-account-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "debtor-account-changed",
+      "source": "debtor-account-changed.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "debtor-account-changed.target.xml",
+      "target_sha256": "279f324a8b21b5aec0725c3490be6215f1b31701a4a7946881b1e8e16b643f76",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-ACCOUNT"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "control": "debtor-account-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "end-to-end-id-control",
+      "source": "end-to-end-id-control.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "end-to-end-id-control.target.xml",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Identity control with the named field present.",
+      "control": "end-to-end-id-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "end-to-end-id-changed",
+      "source": "end-to-end-id-changed.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "end-to-end-id-changed.target.xml",
+      "target_sha256": "f59de5e1cd18a44cb5f42186ca16daf7fcb6f6b0cc54af85f0380610e40f57eb",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-END-TO-END-ID"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "control": "end-to-end-id-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "transaction-id-control",
+      "source": "transaction-id-control.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "transaction-id-control.target.xml",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Identity control with the named field present.",
+      "control": "transaction-id-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "transaction-id-changed",
+      "source": "transaction-id-changed.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "transaction-id-changed.target.xml",
+      "target_sha256": "654bfd54f62594870e82a1c2dbe685f5d58775003e85a80f64a3bdfc415c42cb",
+      "expected": {
+        "overall": "INDETERMINATE",
+        "exit_code": 3,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Changed declared association key prevents a reliable pairing.",
+      "control": "transaction-id-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "instruction-id-control",
+      "source": "instruction-id-control.source.xml",
+      "source_sha256": "5e9fdb2ae3d6add5d266a397fbb32e8b98a4c190af04c7ad11bca781a5be4a1e",
+      "target": "instruction-id-control.target.xml",
+      "target_sha256": "5e9fdb2ae3d6add5d266a397fbb32e8b98a4c190af04c7ad11bca781a5be4a1e",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Identity control with the named field present.",
+      "control": "instruction-id-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "instruction-id-changed",
+      "source": "instruction-id-changed.source.xml",
+      "source_sha256": "5e9fdb2ae3d6add5d266a397fbb32e8b98a4c190af04c7ad11bca781a5be4a1e",
+      "target": "instruction-id-changed.target.xml",
+      "target_sha256": "887a556f005ae14861098baf43d1851d4c380612e0b25edb4a8eda121bc65d13",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-INSTRUCTION-ID"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "control": "instruction-id-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "debtor-account-iban-control",
+      "source": "debtor-account-iban-control.source.xml",
+      "source_sha256": "882fd5906e3b94253a7e58d27859494bbade09d47783ddd4e0ae20d3b81c36c0",
+      "target": "debtor-account-iban-control.target.xml",
+      "target_sha256": "882fd5906e3b94253a7e58d27859494bbade09d47783ddd4e0ae20d3b81c36c0",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Identity control with the named field present.",
+      "control": "debtor-account-iban-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "debtor-account-iban-changed",
+      "source": "debtor-account-iban-changed.source.xml",
+      "source_sha256": "882fd5906e3b94253a7e58d27859494bbade09d47783ddd4e0ae20d3b81c36c0",
+      "target": "debtor-account-iban-changed.target.xml",
+      "target_sha256": "7ca56b24f8e45dc1445195800d6212c20adfd0ca563c795d3ee64f70f01e16fe",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-ACCOUNT-IBAN"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "control": "debtor-account-iban-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "debtor-account-scheme-code-control",
+      "source": "debtor-account-scheme-code-control.source.xml",
+      "source_sha256": "f4ce9e35d48c5fec0172b6355994a73eadce4b69b81853758e6212196f34044d",
+      "target": "debtor-account-scheme-code-control.target.xml",
+      "target_sha256": "f4ce9e35d48c5fec0172b6355994a73eadce4b69b81853758e6212196f34044d",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Identity control with the named field present.",
+      "control": "debtor-account-scheme-code-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "debtor-account-scheme-code-changed",
+      "source": "debtor-account-scheme-code-changed.source.xml",
+      "source_sha256": "f4ce9e35d48c5fec0172b6355994a73eadce4b69b81853758e6212196f34044d",
+      "target": "debtor-account-scheme-code-changed.target.xml",
+      "target_sha256": "f63e8db251ae4fbd3d4346e951aa5fc219e8beda90884232148c5261191e1afe",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-ACCOUNT-SCHEME-CODE"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "control": "debtor-account-scheme-code-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "debtor-account-scheme-proprietary-control",
+      "source": "debtor-account-scheme-proprietary-control.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "debtor-account-scheme-proprietary-control.target.xml",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Identity control with the named field present.",
+      "control": "debtor-account-scheme-proprietary-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "debtor-account-scheme-proprietary-changed",
+      "source": "debtor-account-scheme-proprietary-changed.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "debtor-account-scheme-proprietary-changed.target.xml",
+      "target_sha256": "897cdd661aa4d36528c17ee82a8582b6224470587dc579a772c31b367d257d22",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-ACCOUNT-SCHEME-PROPRIETARY"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "control": "debtor-account-scheme-proprietary-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "debtor-account-issuer-control",
+      "source": "debtor-account-issuer-control.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "debtor-account-issuer-control.target.xml",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Identity control with the named field present.",
+      "control": "debtor-account-issuer-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "debtor-account-issuer-changed",
+      "source": "debtor-account-issuer-changed.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "debtor-account-issuer-changed.target.xml",
+      "target_sha256": "9ef8bf1d7be571b2ce16b12af1ff05acd5fe797f4727eaa2f7ed5b5624e69130",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-ACCOUNT-ISSUER"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "control": "debtor-account-issuer-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "debtor-agent-bic-control",
+      "source": "debtor-agent-bic-control.source.xml",
+      "source_sha256": "163286bb98ddddcfea196851090598590ea9517b61327e3a3c9506c4a05dc139",
+      "target": "debtor-agent-bic-control.target.xml",
+      "target_sha256": "163286bb98ddddcfea196851090598590ea9517b61327e3a3c9506c4a05dc139",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Identity control with the named field present.",
+      "control": "debtor-agent-bic-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "debtor-agent-bic-changed",
+      "source": "debtor-agent-bic-changed.source.xml",
+      "source_sha256": "163286bb98ddddcfea196851090598590ea9517b61327e3a3c9506c4a05dc139",
+      "target": "debtor-agent-bic-changed.target.xml",
+      "target_sha256": "e0f943c9838c1ccf6121eadcfb69f222f3a186849c2d5379706787e0a197e8b5",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-AGENT-BIC"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "control": "debtor-agent-bic-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "debtor-agent-other-id-control",
+      "source": "debtor-agent-other-id-control.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "debtor-agent-other-id-control.target.xml",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Identity control with the named field present.",
+      "control": "debtor-agent-other-id-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "debtor-agent-other-id-changed",
+      "source": "debtor-agent-other-id-changed.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "debtor-agent-other-id-changed.target.xml",
+      "target_sha256": "29837aed3f08a186d87646ec2c4811b5a2bc04f96307deab40112e0e46ccad50",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-AGENT-OTHER-ID"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "control": "debtor-agent-other-id-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "creditor-account-control",
+      "source": "creditor-account-control.source.xml",
+      "source_sha256": "63af5a4ba376aae937a3d23644a5c1d2a135faba4606f2d60925f89d4f36c4dc",
+      "target": "creditor-account-control.target.xml",
+      "target_sha256": "63af5a4ba376aae937a3d23644a5c1d2a135faba4606f2d60925f89d4f36c4dc",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Identity control with the named field present.",
+      "control": "creditor-account-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "creditor-account-changed",
+      "source": "creditor-account-changed.source.xml",
+      "source_sha256": "63af5a4ba376aae937a3d23644a5c1d2a135faba4606f2d60925f89d4f36c4dc",
+      "target": "creditor-account-changed.target.xml",
+      "target_sha256": "e3a815079ef425261ab0ccdef2afb90040391a1eac5a1c0292ba4d429f97b633",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-CREDITOR-ACCOUNT"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "control": "creditor-account-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "creditor-account-iban-control",
+      "source": "creditor-account-iban-control.source.xml",
+      "source_sha256": "715b6ce1d5db1eb0c03545be9b49a13f757d5602002862c12df136b10c63b357",
+      "target": "creditor-account-iban-control.target.xml",
+      "target_sha256": "715b6ce1d5db1eb0c03545be9b49a13f757d5602002862c12df136b10c63b357",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Identity control with the named field present.",
+      "control": "creditor-account-iban-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "creditor-account-iban-changed",
+      "source": "creditor-account-iban-changed.source.xml",
+      "source_sha256": "715b6ce1d5db1eb0c03545be9b49a13f757d5602002862c12df136b10c63b357",
+      "target": "creditor-account-iban-changed.target.xml",
+      "target_sha256": "70c64d1f7ae5c5721dc800a4243e4b4453e47c198f45dcc9185022aea72901f9",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-CREDITOR-ACCOUNT-IBAN"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "control": "creditor-account-iban-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "creditor-account-issuer-control",
+      "source": "creditor-account-issuer-control.source.xml",
+      "source_sha256": "164f81e1125e9ad1079baae3098a9396b19b910eebcad47d0a33a6d58d1f28d7",
+      "target": "creditor-account-issuer-control.target.xml",
+      "target_sha256": "164f81e1125e9ad1079baae3098a9396b19b910eebcad47d0a33a6d58d1f28d7",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Identity control with the named field present.",
+      "control": "creditor-account-issuer-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "creditor-account-issuer-changed",
+      "source": "creditor-account-issuer-changed.source.xml",
+      "source_sha256": "164f81e1125e9ad1079baae3098a9396b19b910eebcad47d0a33a6d58d1f28d7",
+      "target": "creditor-account-issuer-changed.target.xml",
+      "target_sha256": "cfd331e1d2d7a27f36f2dff6b34161f6dd74583765acd2f5d8c28287578a4810",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-CREDITOR-ACCOUNT-ISSUER"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "control": "creditor-account-issuer-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "creditor-agent-bic-control",
+      "source": "creditor-agent-bic-control.source.xml",
+      "source_sha256": "0aa7c531f2904ea02da4c111b263f23bf16c9c909cd6a733fe4535a021585134",
+      "target": "creditor-agent-bic-control.target.xml",
+      "target_sha256": "0aa7c531f2904ea02da4c111b263f23bf16c9c909cd6a733fe4535a021585134",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Identity control with the named field present.",
+      "control": "creditor-agent-bic-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "creditor-agent-bic-changed",
+      "source": "creditor-agent-bic-changed.source.xml",
+      "source_sha256": "0aa7c531f2904ea02da4c111b263f23bf16c9c909cd6a733fe4535a021585134",
+      "target": "creditor-agent-bic-changed.target.xml",
+      "target_sha256": "718dc333196f6793970942113d04f21d98250cab58b388623a02feb3ed644bb9",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-CREDITOR-AGENT-BIC"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "control": "creditor-agent-bic-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "debtor-name-control",
+      "source": "debtor-name-control.source.xml",
+      "source_sha256": "8fd916bfce4ee73d6c2b8df2db2b409c31ad83bed6ae03d1b472972f7f8b2399",
+      "target": "debtor-name-control.target.xml",
+      "target_sha256": "8fd916bfce4ee73d6c2b8df2db2b409c31ad83bed6ae03d1b472972f7f8b2399",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Identity control with the named field present.",
+      "control": "debtor-name-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "debtor-name-changed",
+      "source": "debtor-name-changed.source.xml",
+      "source_sha256": "8fd916bfce4ee73d6c2b8df2db2b409c31ad83bed6ae03d1b472972f7f8b2399",
+      "target": "debtor-name-changed.target.xml",
+      "target_sha256": "65d9080608d3e491dfd74785cddd251f9bf0c2bd4cb4db5ff0f97ce91729df0e",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-NAME"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "control": "debtor-name-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "creditor-name-control",
+      "source": "creditor-name-control.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "creditor-name-control.target.xml",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Identity control with the named field present.",
+      "control": "creditor-name-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "creditor-name-changed",
+      "source": "creditor-name-changed.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "creditor-name-changed.target.xml",
+      "target_sha256": "c89ea505aecaacb11b6d794a1fa4c991908d1ac1885f305c132058b256617f68",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-CREDITOR-NAME"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "control": "creditor-name-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "instructed-amount-control",
+      "source": "instructed-amount-control.source.xml",
+      "source_sha256": "06f9d120a227150c6dc862d31a23263cf060dc46f610246e1b7682e5e7b75819",
+      "target": "instructed-amount-control.target.xml",
+      "target_sha256": "06f9d120a227150c6dc862d31a23263cf060dc46f610246e1b7682e5e7b75819",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Identity control with the named field present.",
+      "control": "instructed-amount-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "instructed-amount-changed",
+      "source": "instructed-amount-changed.source.xml",
+      "source_sha256": "06f9d120a227150c6dc862d31a23263cf060dc46f610246e1b7682e5e7b75819",
+      "target": "instructed-amount-changed.target.xml",
+      "target_sha256": "ac80797f4aba83cbcef80fc574ed4cd0b0078b7239b191f3e7a23e766d247c0f",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-INSTRUCTED-AMOUNT"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "control": "instructed-amount-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "settlement-amount-control",
+      "source": "settlement-amount-control.source.xml",
+      "source_sha256": "981d5063dd000ea57fc81f53c92730ddeb50d0548baeb12b4fc427cccb16ea7b",
+      "target": "settlement-amount-control.target.xml",
+      "target_sha256": "981d5063dd000ea57fc81f53c92730ddeb50d0548baeb12b4fc427cccb16ea7b",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Identity control with the named field present.",
+      "control": "settlement-amount-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "settlement-amount-changed",
+      "source": "settlement-amount-changed.source.xml",
+      "source_sha256": "981d5063dd000ea57fc81f53c92730ddeb50d0548baeb12b4fc427cccb16ea7b",
+      "target": "settlement-amount-changed.target.xml",
+      "target_sha256": "7ade7da8a5415dacfc235b317fc4d9f867c4ff5ef72581eb5a9d54dd0812110b",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-SETTLEMENT-AMOUNT"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "control": "settlement-amount-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "remittance-control",
+      "source": "remittance-control.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "remittance-control.target.xml",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Repeated remittance identity control.",
+      "control": "remittance-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "remittance-removed",
+      "source": "remittance-removed.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "remittance-removed.target.xml",
+      "target_sha256": "8d5be6c7afa1f9a4a6a1d9d845bc300751f68cf0655397a6d2d78acfdd80a41b",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REMITTANCE"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Multiset semantics preserve multiplicity while allowing reordering.",
+      "control": "remittance-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "remittance-duplicated",
+      "source": "remittance-duplicated.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "remittance-duplicated.target.xml",
+      "target_sha256": "94ae1066b6f158b6d28eb471118418f2cdce86209a977eb0fd2f7a5d6eec0ae9",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REMITTANCE"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Multiset semantics preserve multiplicity while allowing reordering.",
+      "control": "remittance-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "remittance-reordered",
+      "source": "remittance-reordered.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "remittance-reordered.target.xml",
+      "target_sha256": "fc3d3cc1fb9ec9e68ac687ffa26d972eeff7bebd28676fd3e3c7bb5e7ca6e5b0",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Multiset semantics preserve multiplicity while allowing reordering.",
+      "control": "remittance-reordered",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    }
+  ]
+}

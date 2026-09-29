@@ -1,0 +1,47 @@
+{
+  "reference_date": "2026-09-29",
+  "assessment": "Open; bundled-version findings identified, patch build in progress.",
+  "observed": {
+    "lxml": "6.1.3",
+    "libxml2": "2.14.6",
+    "libxslt": "1.1.43"
+  },
+  "python_scan_limitation": "A zero-advisory pip-audit result does not cover all native bundled libraries.",
+  "findings": [
+    {
+      "id": "CVE-2026-86138",
+      "component": "libxml2",
+      "area": "xmlDictAddQString integer overflow",
+      "source": "https://security-tracker.debian.org/tracker/CVE-2026-86138",
+      "upstream_fixed_version": "2.15.4",
+      "reachability": "Not proven. Name/input quotas reduce exposure but do not establish non-exploitability."
+    },
+    {
+      "id": "CVE-2026-86142",
+      "component": "libxml2",
+      "area": "XPointer evaluation",
+      "source": "https://security-tracker.debian.org/tracker/CVE-2026-86142",
+      "upstream_fixed_version": "2.15.4",
+      "reachability": "No XPointer evaluation or XInclude expansion in runtime; source-inspection inference, not a formal proof."
+    },
+    {
+      "id": "CVE-2025-10911",
+      "component": "libxslt",
+      "area": "XSL node processing use-after-free",
+      "source": "https://security-tracker.debian.org/tracker/CVE-2025-10911",
+      "upstream_target_version": "1.1.45",
+      "reachability": "MessageBench does not execute XSLT. Library still bundled by lxml; target patch build avoids relying solely on unused feature assessment."
+    }
+  ],
+  "broader_advisory_indexes": [
+    "https://security-tracker.debian.org/tracker/source-package/libxml2",
+    "https://security-tracker.debian.org/tracker/source-package/libxslt"
+  ],
+  "release_decision": "NOT READY; independent review also remains pending.",
+  "scope": "Selected advisory triage, not exhaustive vulnerability certification or exploit testing.",
+  "backport_caution": {
+    "source": "https://github.com/lxml/lxml/blob/lxml-6.1.3/buildlibxml.py",
+    "patch": "https://github.com/lxml/lxml/blob/lxml-6.1.3/libxslt-1.1.43-backport1.patch",
+    "observation": "lxml source applies a backport patch to libxslt 1.1.43. Version strings alone do not prove the wheel lacks fixes. Exact build/patch attribution has not been established for every advisory."
+  }
+}

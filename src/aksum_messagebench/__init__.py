@@ -1,4 +1,4 @@
 """Aksum MessageBench: offline preservation evidence, never certification."""
 
-__version__ = "0.1.0a1"
+__version__ = "0.1.0a2"
 SCOPE_NOTICE = "Pass means only the listed assertions passed for these inputs and versions."

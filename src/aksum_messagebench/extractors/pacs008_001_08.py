@@ -7,7 +7,7 @@ from lxml import etree
 
 from ..schema_catalog import NAMESPACE
 
-VERSION = "0.1.0"
+VERSION = "0.2.0"
 Q = "{" + NAMESPACE + "}"
 FIELDS = {
     "message.id": ("GrpHdr/MsgId", "text", "single"),
@@ -20,6 +20,26 @@ FIELDS = {
     "transactions.remittance": ("CdtTrfTxInf/RmtInf/Ustrd", "list", "per-transaction"),
     "transactions.settlement_amount": ("CdtTrfTxInf/IntrBkSttlmAmt", "money", "per-transaction"),
 }
+
+# Each choice branch and identifier context is separate: no implicit IBAN assumption.
+for _field, _path, _kind in (
+    ("transaction_id", "PmtId/TxId", "identifier"),
+    ("instruction_id", "PmtId/InstrId", "identifier"),
+    ("debtor_account_iban", "DbtrAcct/Id/IBAN", "identifier"),
+    ("debtor_account_scheme_code", "DbtrAcct/Id/Othr/SchmeNm/Cd", "identifier"),
+    ("debtor_account_scheme_proprietary", "DbtrAcct/Id/Othr/SchmeNm/Prtry", "identifier"),
+    ("debtor_account_issuer", "DbtrAcct/Id/Othr/Issr", "identifier"),
+    ("debtor_agent_bic", "DbtrAgt/FinInstnId/BICFI", "identifier"),
+    ("debtor_agent_other_id", "DbtrAgt/FinInstnId/Othr/Id", "identifier"),
+    ("creditor_account", "CdtrAcct/Id/Othr/Id", "identifier"),
+    ("creditor_account_iban", "CdtrAcct/Id/IBAN", "identifier"),
+    ("creditor_account_issuer", "CdtrAcct/Id/Othr/Issr", "identifier"),
+    ("creditor_agent_bic", "CdtrAgt/FinInstnId/BICFI", "identifier"),
+    ("debtor_name", "Dbtr/Nm", "text"),
+    ("creditor_name", "Cdtr/Nm", "text"),
+    ("instructed_amount", "InstdAmt", "money"),
+):
+    FIELDS["transactions." + _field] = ("CdtTrfTxInf/" + _path, _kind, "per-transaction")
 
 
 @dataclass(frozen=True)

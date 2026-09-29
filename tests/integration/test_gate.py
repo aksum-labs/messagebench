@@ -53,9 +53,7 @@ def test_missing_output(source, contract, tmp_path):
         (lambda d: d["assertions"][1].update(cardinality="single"), 3),
         (lambda d: d.update(source_namespaces=["urn:unsupported"]), 3),
         (
-            lambda d: d.update(
-                association={"mode": "keyed", "keys": ["transactions.end_to_end_id"]}
-            ),
+            lambda d: d.update(association={"mode": "keyed", "keys": ["transactions.unknown_key"]}),
             3,
         ),
     ],

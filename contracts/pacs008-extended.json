@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "id": "aksum.pacs008.extended-preservation",
+  "version": "0.2.0",
+  "status": "draft",
+  "authority": "engineering-contract",
+  "description": "Explicit optional-field preservation subset, with unique transaction-ID batch association.",
+  "source_namespaces": [
+    "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08"
+  ],
+  "target_namespaces": [
+    "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08"
+  ],
+  "provenance": [
+    {
+      "kind": "project-design",
+      "locator": "docs/contracts.md",
+      "license": "Apache-2.0"
+    }
+  ],
+  "association": {
+    "mode": "keyed",
+    "keys": [
+      "transactions.transaction_id"
+    ]
+  },
+  "assertions": [
+    {
+      "id": "PERMIT-MESSAGE-ID-REGENERATION",
+      "field": "message.id",
+      "comparator": "allowed-regeneration",
+      "cardinality": "single",
+      "missing": "require-present",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-DEBTOR-ACCOUNT",
+      "field": "transactions.debtor_account",
+      "comparator": "exact-identifier",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-END-TO-END-ID",
+      "field": "transactions.end_to_end_id",
+      "comparator": "exact-identifier",
+      "cardinality": "per-transaction",
+      "missing": "require-present",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-REMITTANCE",
+      "field": "transactions.remittance",
+      "comparator": "multiset",
+      "cardinality": "per-transaction",
+      "missing": "require-present",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-SETTLEMENT-AMOUNT",
+      "field": "transactions.settlement_amount",
+      "comparator": "decimal-and-currency-equal",
+      "cardinality": "per-transaction",
+      "missing": "require-present",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-TRANSACTION-ID",
+      "field": "transactions.transaction_id",
+      "comparator": "exact-identifier",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-INSTRUCTION-ID",
+      "field": "transactions.instruction_id",
+      "comparator": "exact-identifier",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-DEBTOR-ACCOUNT-IBAN",
+      "field": "transactions.debtor_account_iban",
+      "comparator": "exact-identifier",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-DEBTOR-ACCOUNT-SCHEME-CODE",
+      "field": "transactions.debtor_account_scheme_code",
+      "comparator": "exact-identifier",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-DEBTOR-ACCOUNT-SCHEME-PROPRIETARY",
+      "field": "transactions.debtor_account_scheme_proprietary",
+      "comparator": "exact-identifier",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-DEBTOR-ACCOUNT-ISSUER",
+      "field": "transactions.debtor_account_issuer",
+      "comparator": "exact-identifier",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-DEBTOR-AGENT-BIC",
+      "field": "transactions.debtor_agent_bic",
+      "comparator": "exact-identifier",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-DEBTOR-AGENT-OTHER-ID",
+      "field": "transactions.debtor_agent_other_id",
+      "comparator": "exact-identifier",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-CREDITOR-ACCOUNT",
+      "field": "transactions.creditor_account",
+      "comparator": "exact-identifier",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-CREDITOR-ACCOUNT-IBAN",
+      "field": "transactions.creditor_account_iban",
+      "comparator": "exact-identifier",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-CREDITOR-ACCOUNT-ISSUER",
+      "field": "transactions.creditor_account_issuer",
+      "comparator": "exact-identifier",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-CREDITOR-AGENT-BIC",
+      "field": "transactions.creditor_agent_bic",
+      "comparator": "exact-identifier",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-DEBTOR-NAME",
+      "field": "transactions.debtor_name",
+      "comparator": "exact-text",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-CREDITOR-NAME",
+      "field": "transactions.creditor_name",
+      "comparator": "exact-text",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-INSTRUCTED-AMOUNT",
+      "field": "transactions.instructed_amount",
+      "comparator": "decimal-and-currency-equal",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    }
+  ],
+  "exclusions": [],
+  "coverage_policy": "declared-subset"
+}

@@ -4,6 +4,7 @@ import hashlib
 from pathlib import Path
 
 from . import SCOPE_NOTICE, __version__
+from .association import compare_keyed
 from .comparators import compare_fact
 from .contracts import load_contract
 from .coverage import account_coverage
@@ -77,7 +78,7 @@ def compare(
         "exit_code": 3,
         "limitations": [
             SCOPE_NOTICE,
-            "Single-transaction pacs.008.001.08 subset. "
+            "Declared pacs.008.001.08 subset; single or uniquely keyed transaction association. "
             "No business-rule compliance or certification. Independent review pending.",
         ],
     }
@@ -117,6 +118,13 @@ def compare(
                 status, code = "UNSUPPORTED", "FIELD_UNSUPPORTED"
             elif assertion["cardinality"] != extractor.FIELDS[field][2]:
                 status, code = "UNSUPPORTED", "CARDINALITY_UNSUPPORTED"
+            elif (
+                assertion["cardinality"] == "per-transaction"
+                and document["association"]["mode"] == "keyed"
+            ):
+                status, code = compare_keyed(
+                    roots["source"], roots["target"], assertion, document["association"]["keys"]
+                )
             elif assertion["cardinality"] == "per-transaction" and not association_valid:
                 status, code = "INDETERMINATE", "ASSOCIATION_AMBIGUOUS_OR_UNSUPPORTED"
             else:

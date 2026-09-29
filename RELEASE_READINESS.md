@@ -1,3 +1,5 @@
+> Development continuation: the owner authorized expansion before independent review on 29 September 2026. See [decision](docs/expansion-decision.md). Earlier stop statements below describe the initial proof packet; independent review and publication remain pending.
+
 # Release readiness
 
 **NOT READY — FIX REQUIRED.** Working version: **0.1.0a1**, a local review artifact.

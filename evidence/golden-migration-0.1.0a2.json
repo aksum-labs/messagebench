@@ -1,0 +1,59 @@
+{
+  "cases": [
+    {
+      "changed_report_keys": [
+        "tool_version",
+        "extractor_version",
+        "limitations"
+      ],
+      "classification_changed": false,
+      "id": "identity"
+    },
+    {
+      "changed_report_keys": [
+        "tool_version",
+        "extractor_version",
+        "limitations"
+      ],
+      "classification_changed": false,
+      "id": "leading-zero-loss"
+    },
+    {
+      "changed_report_keys": [
+        "tool_version",
+        "extractor_version",
+        "limitations"
+      ],
+      "classification_changed": false,
+      "id": "reference-truncated"
+    },
+    {
+      "changed_report_keys": [
+        "tool_version",
+        "extractor_version",
+        "limitations"
+      ],
+      "classification_changed": false,
+      "id": "remittance-removed"
+    },
+    {
+      "changed_report_keys": [
+        "tool_version",
+        "extractor_version",
+        "limitations"
+      ],
+      "classification_changed": false,
+      "id": "message-id-regenerated"
+    },
+    {
+      "changed_report_keys": [
+        "tool_version",
+        "extractor_version",
+        "limitations"
+      ],
+      "classification_changed": false,
+      "id": "currency-changed"
+    }
+  ],
+  "reason": "Versioned keyed association and expanded field extraction; original fixture assertions unchanged."
+}

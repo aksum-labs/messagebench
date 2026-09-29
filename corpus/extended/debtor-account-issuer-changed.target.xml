@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
+  <FIToFICstmrCdtTrf>
+    <GrpHdr>
+      <MsgId>AKSUM-SYNTHETIC-0001</MsgId>
+      <CreDtTm>2026-09-29T00:00:00Z</CreDtTm>
+      <NbOfTxs>1</NbOfTxs>
+      <SttlmInf><SttlmMtd>CLRG</SttlmMtd></SttlmInf>
+    </GrpHdr>
+    <CdtTrfTxInf>
+      <PmtId><EndToEndId>INV-2026-000123</EndToEndId><TxId>SYNTHETIC-TX-0001</TxId></PmtId>
+      <IntrBkSttlmAmt Ccy="ETB">1250.50</IntrBkSttlmAmt>
+      <ChrgBr>SHAR</ChrgBr>
+      <Dbtr><Nm>Fictional Payer</Nm></Dbtr>
+      <DbtrAcct><Id><Othr><Id>0000123400</Id><SchmeNm><Prtry>SYNTHETIC</Prtry></SchmeNm><Issr>DIFFERENT-ISSUER</Issr></Othr></Id></DbtrAcct>
+      <DbtrAgt><FinInstnId><Othr><Id>FICTIONAL-DEBTOR-AGENT</Id></Othr></FinInstnId></DbtrAgt>
+      <CdtrAgt><FinInstnId><Othr><Id>FICTIONAL-CREDITOR-AGENT</Id></Othr></FinInstnId></CdtrAgt>
+      <Cdtr><Nm>Fictional Recipient</Nm></Cdtr>
+      <RmtInf><Ustrd>INVOICE 000123</Ustrd><Ustrd>ሙከራ</Ustrd></RmtInf>
+    </CdtTrfTxInf>
+  </FIToFICstmrCdtTrf>
+</Document>

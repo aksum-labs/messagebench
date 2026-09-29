@@ -1,0 +1,556 @@
+{
+  "type": "object",
+  "properties": {
+    "assertions": {
+      "type": "array",
+      "maxItems": 100000,
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "maxLength": 2048
+          },
+          "comparator": {
+            "type": "string",
+            "maxLength": 2048
+          },
+          "field": {
+            "type": "string",
+            "maxLength": 2048
+          },
+          "id": {
+            "type": "string",
+            "maxLength": 2048
+          },
+          "normalization": {
+            "type": "string",
+            "maxLength": 2048
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "source_paths": {
+            "type": "array",
+            "maxItems": 100000,
+            "items": {
+              "type": "string",
+              "maxLength": 2048
+            }
+          },
+          "status": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "NOT_APPLICABLE",
+              "UNSUPPORTED",
+              "INDETERMINATE"
+            ]
+          },
+          "target_paths": {
+            "type": "array",
+            "maxItems": 100000,
+            "items": {
+              "type": "string",
+              "maxLength": 2048
+            }
+          }
+        },
+        "required": [
+          "code",
+          "comparator",
+          "field",
+          "id",
+          "normalization",
+          "required",
+          "source_paths",
+          "status",
+          "target_paths"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "catalog_sha256": {
+      "type": "string",
+      "maxLength": 2048
+    },
+    "contract_id": {
+      "type": "string",
+      "maxLength": 2048
+    },
+    "contract_sha256": {
+      "type": "string",
+      "maxLength": 2048
+    },
+    "contract_version": {
+      "type": "string",
+      "maxLength": 2048
+    },
+    "coverage": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "categories": {
+                  "type": "object",
+                  "properties": {
+                    "examined": {
+                      "type": "object",
+                      "properties": {
+                        "count": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "path_sha256": {
+                          "type": "array",
+                          "maxItems": 100000,
+                          "items": {
+                            "type": "string",
+                            "maxLength": 2048
+                          }
+                        }
+                      },
+                      "required": [
+                        "count",
+                        "path_sha256"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "explicitly_excluded": {
+                      "type": "object",
+                      "properties": {
+                        "count": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "path_sha256": {
+                          "type": "array",
+                          "maxItems": 100000,
+                          "items": {
+                            "type": "string",
+                            "maxLength": 2048
+                          }
+                        }
+                      },
+                      "required": [
+                        "count",
+                        "path_sha256"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "unexamined": {
+                      "type": "object",
+                      "properties": {
+                        "count": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "path_sha256": {
+                          "type": "array",
+                          "maxItems": 100000,
+                          "items": {
+                            "type": "string",
+                            "maxLength": 2048
+                          }
+                        }
+                      },
+                      "required": [
+                        "count",
+                        "path_sha256"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "unsupported": {
+                      "type": "object",
+                      "properties": {
+                        "count": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "path_sha256": {
+                          "type": "array",
+                          "maxItems": 100000,
+                          "items": {
+                            "type": "string",
+                            "maxLength": 2048
+                          }
+                        }
+                      },
+                      "required": [
+                        "count",
+                        "path_sha256"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "examined",
+                    "explicitly_excluded",
+                    "unexamined",
+                    "unsupported"
+                  ],
+                  "additionalProperties": false
+                },
+                "note": {
+                  "type": "string",
+                  "maxLength": 2048
+                },
+                "total": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "unit": {
+                  "type": "string",
+                  "maxLength": 2048
+                },
+                "unresolved_exclusions": {
+                  "type": "array",
+                  "maxItems": 100000,
+                  "items": {
+                    "type": "string",
+                    "maxLength": 2048
+                  }
+                }
+              },
+              "required": [
+                "categories",
+                "note",
+                "total",
+                "unit",
+                "unresolved_exclusions"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "unavailable": {
+                  "const": true
+                }
+              },
+              "required": [
+                "unavailable"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "target": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "categories": {
+                  "type": "object",
+                  "properties": {
+                    "examined": {
+                      "type": "object",
+                      "properties": {
+                        "count": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "path_sha256": {
+                          "type": "array",
+                          "maxItems": 100000,
+                          "items": {
+                            "type": "string",
+                            "maxLength": 2048
+                          }
+                        }
+                      },
+                      "required": [
+                        "count",
+                        "path_sha256"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "explicitly_excluded": {
+                      "type": "object",
+                      "properties": {
+                        "count": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "path_sha256": {
+                          "type": "array",
+                          "maxItems": 100000,
+                          "items": {
+                            "type": "string",
+                            "maxLength": 2048
+                          }
+                        }
+                      },
+                      "required": [
+                        "count",
+                        "path_sha256"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "unexamined": {
+                      "type": "object",
+                      "properties": {
+                        "count": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "path_sha256": {
+                          "type": "array",
+                          "maxItems": 100000,
+                          "items": {
+                            "type": "string",
+                            "maxLength": 2048
+                          }
+                        }
+                      },
+                      "required": [
+                        "count",
+                        "path_sha256"
+                      ],
+                      "additionalProperties": false
+                    },
+                    "unsupported": {
+                      "type": "object",
+                      "properties": {
+                        "count": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "path_sha256": {
+                          "type": "array",
+                          "maxItems": 100000,
+                          "items": {
+                            "type": "string",
+                            "maxLength": 2048
+                          }
+                        }
+                      },
+                      "required": [
+                        "count",
+                        "path_sha256"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "examined",
+                    "explicitly_excluded",
+                    "unexamined",
+                    "unsupported"
+                  ],
+                  "additionalProperties": false
+                },
+                "note": {
+                  "type": "string",
+                  "maxLength": 2048
+                },
+                "total": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "unit": {
+                  "type": "string",
+                  "maxLength": 2048
+                },
+                "unresolved_exclusions": {
+                  "type": "array",
+                  "maxItems": 100000,
+                  "items": {
+                    "type": "string",
+                    "maxLength": 2048
+                  }
+                }
+              },
+              "required": [
+                "categories",
+                "note",
+                "total",
+                "unit",
+                "unresolved_exclusions"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "unavailable": {
+                  "const": true
+                }
+              },
+              "required": [
+                "unavailable"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        }
+      },
+      "required": [
+        "source",
+        "target"
+      ],
+      "additionalProperties": false
+    },
+    "exit_code": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 5
+    },
+    "extractor_version": {
+      "type": "string",
+      "maxLength": 2048
+    },
+    "limitations": {
+      "type": "array",
+      "maxItems": 100000,
+      "items": {
+        "type": "string",
+        "maxLength": 2048
+      }
+    },
+    "overall": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "INDETERMINATE"
+      ]
+    },
+    "schema_checks": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "string",
+              "maxLength": 2048
+            },
+            "exit_code": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "namespace": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "maxLength": 512
+            },
+            "sha256": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "status": {
+              "type": "string",
+              "maxLength": 2048
+            }
+          },
+          "required": [
+            "code",
+            "exit_code",
+            "namespace",
+            "sha256",
+            "status"
+          ],
+          "additionalProperties": false
+        },
+        "target": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "string",
+              "maxLength": 2048
+            },
+            "exit_code": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "namespace": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "maxLength": 512
+            },
+            "sha256": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "status": {
+              "type": "string",
+              "maxLength": 2048
+            }
+          },
+          "required": [
+            "code",
+            "exit_code",
+            "namespace",
+            "sha256",
+            "status"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "source",
+        "target"
+      ],
+      "additionalProperties": false
+    },
+    "schema_sha256": {
+      "type": "string",
+      "maxLength": 2048
+    },
+    "schema_version": {
+      "type": "string",
+      "maxLength": 2048
+    },
+    "source_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "target_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "tool_version": {
+      "type": "string",
+      "maxLength": 2048
+    }
+  },
+  "required": [
+    "assertions",
+    "catalog_sha256",
+    "contract_id",
+    "contract_sha256",
+    "contract_version",
+    "coverage",
+    "exit_code",
+    "extractor_version",
+    "limitations",
+    "overall",
+    "schema_checks",
+    "schema_sha256",
+    "schema_version",
+    "source_sha256",
+    "target_sha256",
+    "tool_version"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}
