@@ -80,12 +80,28 @@
     "metadata_sha256": "c7ce95aa4f8d1a8b762354ef93d6e3ec72cfd01ecf1db7ebb7997fd0b6568251"
   },
   {
+    "name": "Cython",
+    "version": "3.2.9",
+    "role": "development",
+    "license_metadata": "Apache-2.0",
+    "source": "https://pypi.org/project/Cython/3.2.9/",
+    "metadata_sha256": "860fa42ba988c56c9b37fe517acfd3ff2975e123ffcb294fc69d48e913a17bfe"
+  },
+  {
     "name": "defusedxml",
     "version": "0.7.1",
     "role": "development",
     "license_metadata": "PSFL",
     "source": "https://pypi.org/project/defusedxml/0.7.1/",
     "metadata_sha256": "369d3cef64870daf849fba711cb8d05a7efe3c8d9ab0f763adc34079fe378bb1"
+  },
+  {
+    "name": "detect-secrets",
+    "version": "1.5.0",
+    "role": "development",
+    "license_metadata": "UNKNOWN",
+    "source": "https://pypi.org/project/detect-secrets/1.5.0/",
+    "metadata_sha256": "0d0c71d1d64c2962161566365cc5531031a533c06a53dd30744ed345038fc41c"
   },
   {
     "name": "elementpath",
@@ -241,11 +257,11 @@
   },
   {
     "name": "pip",
-    "version": "24.0",
+    "version": "26.2.1",
     "role": "development",
     "license_metadata": "MIT",
-    "source": "https://pypi.org/project/pip/24.0/",
-    "metadata_sha256": "90d11f277fd5868da679ee257c97656dde511c8aac7d025231407e6ce90839e2"
+    "source": "https://pypi.org/project/pip/26.2.1/",
+    "metadata_sha256": "3a561005822841f2c45f442f6c7a7505172c8c376c9fe274d876c8ac912968cb"
   },
   {
     "name": "pip-requirements-parser",
@@ -376,6 +392,14 @@
     "metadata_sha256": "e02ca7619d9a36f74f715122a6c2711024d9e17057ab45a766334daea1ed70bd"
   },
   {
+    "name": "setuptools",
+    "version": "84.0.0",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/setuptools/84.0.0/",
+    "metadata_sha256": "3ef2975718dd31cabdd5829455e9b868ca14dbf79ed8fed2de0af4e87347006e"
+  },
+  {
     "name": "sortedcontainers",
     "version": "2.4.0",
     "role": "development",
@@ -449,7 +473,7 @@
   },
   {
     "name": "libxml2",
-    "version": "2.14.6",
+    "version": "2.15.4",
     "role": "native dependency bundled by lxml",
     "source": "https://gitlab.gnome.org/GNOME/libxml2",
     "license_metadata": "MIT",
@@ -457,10 +481,18 @@
   },
   {
     "name": "libxslt",
-    "version": "1.1.43",
+    "version": "1.1.45",
     "role": "native dependency bundled by lxml",
     "source": "https://gitlab.gnome.org/GNOME/libxslt",
     "license_metadata": "MIT",
+    "vulnerability_scan": "Not covered by pip-audit Python advisory lookup; native review pending."
+  },
+  {
+    "name": "libiconv",
+    "version": "1.19",
+    "role": "native dependency bundled by lxml",
+    "source": "https://www.gnu.org/software/libiconv/",
+    "license_metadata": "LGPL-2.1-or-later",
     "vulnerability_scan": "Not covered by pip-audit Python advisory lookup; native review pending."
   }
 ]

@@ -9,8 +9,8 @@
         "target_xsd": "PASS"
       },
       "expectation_matched": true,
-      "id": "identity",
-      "report_sha256": "1b031e139a1435b22c74fffe97ab15715c2766410792ef7102f9badf8c85e92b"
+      "id": "gate1-identity",
+      "report_sha256": "149955b4b00dd325047b8ea119325863aab1d93e02d87e7e758effe0b1b84ee7"
     },
     {
       "actual": {
@@ -23,8 +23,8 @@
         "target_xsd": "PASS"
       },
       "expectation_matched": true,
-      "id": "leading-zero-loss",
-      "report_sha256": "7229c05c219b2e00e084c60c551727b68d971a1c6d41a0b1cd60045c2a26748c"
+      "id": "gate1-leading-zero-loss",
+      "report_sha256": "31e66afc540054bfbfcb2c430936504458f6d2a3db3f893351891d053c341979"
     },
     {
       "actual": {
@@ -37,8 +37,8 @@
         "target_xsd": "PASS"
       },
       "expectation_matched": true,
-      "id": "reference-truncated",
-      "report_sha256": "d5410ec5b03952c64707063f477e4832cc62fc5588bb9ebea787d83195a60e81"
+      "id": "gate1-reference-truncated",
+      "report_sha256": "62387783aef30c7e6bc3af8e079c17e928bd11f97423cbf70ed06d30ed848d97"
     },
     {
       "actual": {
@@ -51,8 +51,8 @@
         "target_xsd": "PASS"
       },
       "expectation_matched": true,
-      "id": "remittance-removed",
-      "report_sha256": "5da21325fdb1990d94cba7cc135abe45160630cb218792e9ede9331f5df4a893"
+      "id": "gate1-remittance-removed",
+      "report_sha256": "69d34f604a21e85ebe4a975202e6a2e94a8c9ae254b7d0904702a5f2db03c8a1"
     },
     {
       "actual": {
@@ -63,8 +63,8 @@
         "target_xsd": "PASS"
       },
       "expectation_matched": true,
-      "id": "message-id-regenerated",
-      "report_sha256": "88a2fbb7b6d4cb255d7caf97088208e8167813a7bb341a577903988389692d35"
+      "id": "gate1-message-id-regenerated",
+      "report_sha256": "f11920a85ec36aff4c8718c0cc1e7437af0def95ba4327d49e8aca31c5eef047"
     },
     {
       "actual": {
@@ -77,8 +77,808 @@
         "target_xsd": "PASS"
       },
       "expectation_matched": true,
-      "id": "currency-changed",
-      "report_sha256": "68a972594ea2b9a74f91ea7aec0c5b152926830e05ed00c475da3b5cefa4a91b"
+      "id": "gate1-currency-changed",
+      "report_sha256": "0b2be695d9c95ed2258dab6407fcb5c76473291a6047cbb484e6d5aa369eac72"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-debtor-account-control",
+      "report_sha256": "c7f3bdb10a591ddf522a1ac6550a7df5945e066611e2fa6e52165c19bef39e9e"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-ACCOUNT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-debtor-account-changed",
+      "report_sha256": "392806ca54c673a9bda193658e53a282b67b37bf6bdd6207ff6fabdac6b476b0"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-end-to-end-id-control",
+      "report_sha256": "c7f3bdb10a591ddf522a1ac6550a7df5945e066611e2fa6e52165c19bef39e9e"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-END-TO-END-ID"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-end-to-end-id-changed",
+      "report_sha256": "b12df7145ea00dc8291db134e18e0dc7e22339476bb3577c2cab73f757e6d976"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-transaction-id-control",
+      "report_sha256": "c7f3bdb10a591ddf522a1ac6550a7df5945e066611e2fa6e52165c19bef39e9e"
+    },
+    {
+      "actual": {
+        "exit_code": 3,
+        "failed_assertions": [],
+        "overall": "INDETERMINATE",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-transaction-id-changed",
+      "report_sha256": "23851388bd11a6988522ffc66660eaff44301230c3fc72ec53822eb40c455912"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-instruction-id-control",
+      "report_sha256": "e2090e255e4e8f0f6bb56d06eaa09c1fc75f33bae99a62edaec01a49c35671a5"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-INSTRUCTION-ID"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-instruction-id-changed",
+      "report_sha256": "d25870ae9f70cdc239899b0fd6db9178cc575c374a3770867d8b76b0d07f7353"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-debtor-account-iban-control",
+      "report_sha256": "b62758d828decfc8a40b4a6461bcf1e5fc0a7f600436fb0340a089b78ef8874b"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-ACCOUNT-IBAN"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-debtor-account-iban-changed",
+      "report_sha256": "22ce25537aa66b345ce01ac42783cc165c4e6f27eef545d312aa37aaf7c688ab"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-debtor-account-scheme-code-control",
+      "report_sha256": "93cce074477829ddddf2f476a8dbec1743622bed0cd86388208926b685f807ee"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-ACCOUNT-SCHEME-CODE"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-debtor-account-scheme-code-changed",
+      "report_sha256": "a55ac20c9035bbca5a4d1bff90e4a559cf6fa89988f4d224da4cec81657e981a"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-debtor-account-scheme-proprietary-control",
+      "report_sha256": "c7f3bdb10a591ddf522a1ac6550a7df5945e066611e2fa6e52165c19bef39e9e"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-ACCOUNT-SCHEME-PROPRIETARY"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-debtor-account-scheme-proprietary-changed",
+      "report_sha256": "805fc61f2da4a07278e2f9ab3bc54037f3227402295d3d2b6b579e5ca5ac15a9"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-debtor-account-issuer-control",
+      "report_sha256": "c7f3bdb10a591ddf522a1ac6550a7df5945e066611e2fa6e52165c19bef39e9e"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-ACCOUNT-ISSUER"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-debtor-account-issuer-changed",
+      "report_sha256": "18d0483ea2016a4e2c470a619482662358b96e313cfc8f291df90845206c5d63"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-debtor-agent-bic-control",
+      "report_sha256": "9b934decfdb063c9cf44c8311e283e8bd3502d8ce8057f8db7024deddef39fec"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-AGENT-BIC"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-debtor-agent-bic-changed",
+      "report_sha256": "44a9cc8091f36d32862555729aaf748a59d54290698e4378ea780624e2ec2f07"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-debtor-agent-other-id-control",
+      "report_sha256": "c7f3bdb10a591ddf522a1ac6550a7df5945e066611e2fa6e52165c19bef39e9e"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-AGENT-OTHER-ID"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-debtor-agent-other-id-changed",
+      "report_sha256": "39780dcf6314a87879061abbb87b19dcc903334e188ed2c972ad94f5996e82d4"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-creditor-account-control",
+      "report_sha256": "cc99ebb479307987de96ffcb31443df9913d247d52fabf740c81a77b63d04397"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-CREDITOR-ACCOUNT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-creditor-account-changed",
+      "report_sha256": "488a0bb8d0204dc8302eb698e6a8861657161550f708c26967a3df9abcc1683c"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-creditor-account-iban-control",
+      "report_sha256": "1cf3c6f739303bdcac1b994aa89e272fb39f69c39eedb78dc89b01fb867bd0c9"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-CREDITOR-ACCOUNT-IBAN"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-creditor-account-iban-changed",
+      "report_sha256": "7accdb36a2e778d9c8d7da0bd9c59ebb2e6d27f2aceb5a6038c5e44d6f8233ce"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-creditor-account-issuer-control",
+      "report_sha256": "17b131b9b9685a5db8a0201ad76e2b63bb36ac663d2baec00c7e78a234972f60"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-CREDITOR-ACCOUNT-ISSUER"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-creditor-account-issuer-changed",
+      "report_sha256": "1e1b14eb0f407ed1dbc4b81ff17ffc326e41dc4cc1529562a7ecf163996070bb"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-creditor-agent-bic-control",
+      "report_sha256": "ef8bdecf7b4a0cd807d01eba5ab2022e4d88d8322d2a28aa5acaebc3c89e3075"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-CREDITOR-AGENT-BIC"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-creditor-agent-bic-changed",
+      "report_sha256": "7e335c68a33e48acdea2be8e77f357f0d6522359ad6b1a37753c89be2b52cff6"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-debtor-name-control",
+      "report_sha256": "f1cdfdf5278838f58a121199cbf92e123014be7f4c4dfe4fb34566473a2efa14"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-NAME"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-debtor-name-changed",
+      "report_sha256": "a61278b4606783404e824db0040513fa967b0ff3fc83e698ec97a2a2c3ca71f6"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-creditor-name-control",
+      "report_sha256": "c7f3bdb10a591ddf522a1ac6550a7df5945e066611e2fa6e52165c19bef39e9e"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-CREDITOR-NAME"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-creditor-name-changed",
+      "report_sha256": "e5514cf9ee87f492690e076d00a3d6550f7d92b20bf368dbfa28edd5fd96fff0"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-instructed-amount-control",
+      "report_sha256": "7b0c8eeb4884be94059888e57f3d54eea8c63e664e6436e6ae59acc0f6501863"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-INSTRUCTED-AMOUNT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-instructed-amount-changed",
+      "report_sha256": "f7d5e8bcd349580a8e6da2c4b26a1499ee65b1bca34d666685611d02ab91cee3"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-settlement-amount-control",
+      "report_sha256": "2daa70fa6458a1ae6a191e8e095090d0b9bbbccbda75f480d48d5e3d93e2e3fb"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-SETTLEMENT-AMOUNT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-settlement-amount-changed",
+      "report_sha256": "ec0d3cf2f18939d68b77ca8dea92afb9ee8f2404cc2123f7094cf70609f2d571"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-remittance-control",
+      "report_sha256": "c7f3bdb10a591ddf522a1ac6550a7df5945e066611e2fa6e52165c19bef39e9e"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REMITTANCE"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-remittance-removed",
+      "report_sha256": "2d8d19b5f0bb8ff163298cab9132f6f28513a48da8d89099411a2ae4d0a687ea"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REMITTANCE"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-remittance-duplicated",
+      "report_sha256": "35320044da689772c37ca852424bcb8216a157916388240105160278eb9e58f0"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-remittance-reordered",
+      "report_sha256": "23763b8c4bc29f13073377d37b1fd5d9e180121804227d115c5e4047048bcea0"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-regenerated-message-id",
+      "report_sha256": "69c4450c7e6a023c4d17313cd526a3421cbe883364bfbda031af9e3976b5d7d7"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-prefix-renamed",
+      "report_sha256": "819cd7493339ad8b93bdf1268f5bc0f6a81aa19dc1def6426b2beac18c8bcd9c"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-decimal-lexical-change",
+      "report_sha256": "c2adaa97c1cdac8fbf902ede583081142164136f9606fdcc6829503db24c861a"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-SETTLEMENT-AMOUNT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-currency-changed",
+      "report_sha256": "66682a2eb5a29f9d3508e944aa8403eedb8c8f150254ce0ecfaf0371aa7bc805"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REMITTANCE"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-ethiopic-remittance-changed",
+      "report_sha256": "6a242bca1d95717749ff40195982cbaad221de5167a7ff1d3fafc04e30c17e15"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-whitespace-control",
+      "report_sha256": "004612fc4563c57d5ea52675d9afe4a055dbceeb681fb34a9506f03dcacd7a27"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REMITTANCE"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-whitespace-trimmed",
+      "report_sha256": "fb49a9f0c778cb9aa83ea692f4c4b9ace8c764b4c2578efb78d9cc2464fc8678"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-batch-control",
+      "report_sha256": "d0a77b7f7068d89fe9f78ebf63e3502190f0252ae7b3083af444181355712ac5"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-batch-reordered",
+      "report_sha256": "75713214bdb055b53184e17824946cd4608f7ccf06ffdc9d77a78feca0a27b9d"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-SETTLEMENT-AMOUNT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-batch-amount-swapped",
+      "report_sha256": "2fa41650ea4aa6e6ead14df5c365685892e33bb9789f9a176cd89a6c62dd2972"
+    },
+    {
+      "actual": {
+        "exit_code": 3,
+        "failed_assertions": [],
+        "overall": "INDETERMINATE",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-batch-duplicate-key",
+      "report_sha256": "ff7819a5ca7a238d500a72fd0cb18dc03ce3bcab293728251a76b06bd8f487d2"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-unsupported-extension-control",
+      "report_sha256": "196800dcfae08db628cf29b8567bed1f2c3e7bf6529a832e5909104384763a78"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "extended-unsupported-extension-change",
+      "report_sha256": "bd1c4c7c197e9e517cedc4cbb5b096a600f3f030fe06707791c88d9b6948b798"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "FAIL"
+      },
+      "expectation_matched": true,
+      "id": "extended-invalid-target-xsd",
+      "report_sha256": "610d8abc32efb689ef2abe365e5cb2fcbe8e1b2b8dff8c63d001572d56d683c7"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "pacs002-identity",
+      "report_sha256": "179906a6714101009465636cc2529b28d7944b816f6a6a5f0546b05ace29adf9"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "pacs002-regenerated-message-id",
+      "report_sha256": "e9a2f6c0a98955567a896a05195b27e26789c52a48c4beee0f257bd986418a7e"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-ORIGINAL-END-TO-END-ID"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "pacs002-original-reference-truncated",
+      "report_sha256": "ba22dfff1f4fecc55a4f3cb87bbf1570ff00bf5451b32b29b0de1ac38c49d0b7"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-ORIGINAL-TRANSACTION-ID"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "pacs002-original-transaction-changed",
+      "report_sha256": "9fbff5b12c852e3d6f1ad1b1aab77212c9006a2647e8709bcab233dab2d0e6be"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-STATUS"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "pacs002-status-changed",
+      "report_sha256": "026f3cf0cd456924ea60ddaf606ef1f5847893fb37045cfc4f724b1add7583db"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REASON-CODES"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "pacs002-reason-code-changed",
+      "report_sha256": "2393213c7fcbc976d0c778af0170a70800de999f5c3ae6b24c75df27abbba466"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REASON-TEXT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "pacs002-reason-text-removed",
+      "report_sha256": "9f923f2d0029c04229d8121cd8ca8e35987f3b79120e0c7b41375820fd092b73"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "pacs002-reason-text-reordered",
+      "report_sha256": "74af3114971d6beae1a40baa77897f7b1433edc06c7d76813d2a19668a30dd6f"
     }
   ],
   "exit_code": 0,
@@ -86,9 +886,10 @@
   "kind": "corpus-verification",
   "limitations": [
     "Pass means only the listed assertions passed for these inputs and versions.",
+    "Corpus PASS means recorded classifications match, including expected failures.",
     "Verification of recorded expectations is not independent review."
   ],
-  "manifest_sha256": "836a3aed041da9487712657a06eb980bf13f8230ec55bd64db46f7d047763c78",
+  "manifest_sha256": "6773ea3e54f98b5680f40279d03467c623bc38e11ca0547225f16a8040141f58",
   "overall": "PASS",
   "review_status": "pending-independent-human-review",
   "schema_version": "1.0"

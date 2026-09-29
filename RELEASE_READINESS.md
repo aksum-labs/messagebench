@@ -1,40 +1,44 @@
-> Development continuation: the owner authorized expansion before independent review on 29 September 2026. See [decision](docs/expansion-decision.md). Earlier stop statements below describe the initial proof packet; independent review and publication remain pending.
-
 # Release readiness
 
-**NOT READY — FIX REQUIRED.** Working version: **0.1.0a1**, a local review artifact.
-Not a public alpha, not v0.5, not v1.0. The requested full implementation remains unfinished
-because the mandatory independent fixture-review gate has not been satisfied.
+**NOT READY — FIX REQUIRED** for publication. Recommended local version: **0.1.0a2**
+(Semver spelling 0.1.0-alpha.2). The engineering candidate is available for review.
 
-Namespace supported: `urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08`.
-Fields: group message ID (regeneration permitted), debtor other-account ID, end-to-end ID,
-unstructured remittance list, interbank settlement amount and currency. Exact paths and
-semantics: README.md and docs/contracts.md. Only explicitly single-transaction association.
+Exact supported namespaces:
+- urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08
+- urn:iso:std:iso:20022:tech:xsd:pacs.002.001.10
 
-Unsupported: all other message versions; keyed batches; cross-message/version equivalence;
-timezone/calendar reasoning; account context/scheme/issuer; IBAN alternative; instructed
-amount; structured remittance; institutional/scheme usage profiles. Other content remains
-unexamined/unsupported. No full-document preservation, business validity or production claim.
-Standalone suite/report/regression commands are not implemented; compare has four report formats.
+The 26 exact fields, paths and comparison types are enumerated in docs/fields.md. pacs.008
+covers identifiers, account/agent context, names, instructed and settlement amounts and
+unstructured remittance. pacs.002 covers message ID, original references, status, reason
+codes and reason text. Three contracts declare 31 assertions in total. Coverage remains
+scoped; a passing assertion is not complete-document preservation.
 
-Security: tested conservative parser/file/contract policy, redacted reports; no OS sandbox.
-Python advisory scan is not native-library assurance. Native advisory review and independent
-technical review remain open. Rights: original code/fixtures Apache-2.0; schema separately
-licensed under royalty-free SWIFTStandards terms, with unmodified pinned-mirror provenance.
-Full asset/provenance human review is pending.
+Implemented: inspect, compare, corpus verify, suite, report and regression; deterministic
+JSON, text, escaped HTML and JUnit; single-item and explicit unique-key batch association;
+68 synthetic cases. Cases are not independently reviewed. No external technical review or
+independent deployment has occurred. A separate Node.js demonstration exercises file handoff.
 
-Publicly supportable statement after accurately disclosing proof status:
-“Aksum MessageBench helps financial-software engineers test whether message adapters preserve
-declared payment information. It runs offline on synthetic fixtures or institution-local files
-and produces reproducible, scope-labelled results.”
+Unsupported: camt.053 and all other versions, cross-family/version translation, arbitrary
+nested keyed structures, date/time semantics, institutional rules, structured remittance,
+whole-document equivalence and production validation. The literal keyed-items comparator
+returns UNSUPPORTED; transaction key association is implemented separately. See LIMITATIONS.md.
 
-Do not claim official Ethiopian conformance, regulator/vendor approval, certification,
-production safety, a national standard, independent review, a public release, a security badge,
-complete preservation, or v0.5/v1.0 completion. No external reviewer or independent adapter
-user has reproduced this work yet. There are six author-reviewed cases, not 60 or 100.
+Security caveats: Linux/CPython 3.12 profile tested; supplied native wheel is platform-specific.
+Older native profiles fail closed. No OS sandbox or general vulnerability-free claim.
+Licensing: original Apache-2.0, separate XSD terms, native dependency notices and LGPL source
+obligations. The camt asset is excluded while its redistribution basis is unresolved.
 
-Before publication: satisfy initial review gate, finish the chosen version's functionality
-and corpus criteria, run native security/rights review, establish real maintainers/private
-reporting, protected CI/releases, independent approval, verifiable signing and release checks.
-v1.0 additionally requires stable API, 100 reviewed cases, independent external technical
-review/use and governance. None is implied by the local package build.
+Permitted positioning: “Aksum MessageBench helps financial-software engineers test whether
+message adapters preserve declared payment information. It runs offline on synthetic fixtures
+or institution-local files and produces reproducible, scope-labelled results.” Disclose alpha
+status and pending independent review. Do not claim approval, certification, national-standard
+status, production safety, full preservation, a badge, signed release or independent review.
+
+Before publication, obtain actual fixture/technical/provenance review, appoint real maintainers
+and vulnerability responders, configure required reviews/protected releases and run hosted CI.
+The owner authorized development continuation, not automatic publication. No repeated approval
+request is needed for the remaining local work.
+
+v0.5 criteria are not met: only two message versions and no 60 independently reviewed cases.
+v1.0 criteria are not met: no stable public API commitment, 100 reviewed cases, independent
+external review/reproduction/use or established public governance.

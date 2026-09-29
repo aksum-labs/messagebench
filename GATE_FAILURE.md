@@ -1,20 +1,14 @@
-> Development continuation: the owner authorized expansion before independent review on 29 September 2026. See [decision](docs/expansion-decision.md). Earlier stop statements below describe the initial proof packet; independent review and publication remain pending.
+# Historical pre-expansion review hold
 
-# Gate 1 not satisfied — independent review pending
+The original six-case proof demonstrated technical value, but independent human review had
+not occurred. Development was initially held at that review gate. The project owner then
+explicitly authorized continued implementation before independent review on 29 September
+2026; see [the recorded decision](docs/expansion-decision.md).
 
-The narrow executable proposition works: four semantic losses remain XSD-valid and are
-detected, while identity and permitted regeneration pass. Nevertheless the **full initial
-gate has not passed**. The mandate §3 requires independently reviewed fixture pairs, and
-the authoritative build specification Part VI §7 asks for two human reviewers. No such
-review evidence exists in this session; author tests and a second XML processor do not qualify.
+The earlier hold is superseded for development. It is not a finding that the preservation
+oracle failed or that an equivalent maintained upstream tool was discovered. The original
+manifest remains byte-identical at `corpus/gate1-index.json`, with its pre-implementation
+hash retained. Reviewer identities and independent review have not been fabricated.
 
-Scope was therefore held at one message version, six fixture pairs and a reviewable proof.
-No new message families, 60-case release corpus, public release or v0.5/v1.0 claim was made.
-See docs/fixture-review.md for the exact review packet and pre-implementation expected hashes.
-Review was requested from the user after a concrete packet existed. No reviewers were invented.
-
-This is a missing acceptance prerequisite, not a failed technical proposition or established
-prior-art duplication. If a reviewer finds a maintained equivalent, use the bounded upstream
-plan in docs/upstream-contingency.md. Otherwise resume implementation only after actual review
-is supplied or the user explicitly revises the gate. Automatic expansion would violate the
-mandate's “Do not skip gates merely to finish” instruction.
+Use [GATE_REPORT.md](GATE_REPORT.md) and [RELEASE_READINESS.md](RELEASE_READINESS.md) for the
+current release assessment. Nothing in the development exception authorizes publication.

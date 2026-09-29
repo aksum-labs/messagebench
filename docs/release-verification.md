@@ -19,7 +19,7 @@ Bandit B405 flags the standard-library ElementTree import in reports.py. Inspect
 only Element/SubElement/tostring use to construct escaped JUnit output; no untrusted XML is
 parsed there. The actual parser is the guarded lxml module. The low-severity finding is kept
 in the raw scan rather than silently hidden. Python dependency advisory scan found no known
-advisories; native dependency advisory analysis is still pending.
+advisories; selected native advisory analysis is recorded in evidence/native-advisory-review.json; complete historical coverage and independent review remain pending.
 
 Any public release still needs all acceptance gates and actual human approval. Publication,
 GitHub settings and identity-backed signing require real organizational setup after review.

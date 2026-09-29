@@ -104,6 +104,10 @@
             },
             "minItems": 0,
             "maxItems": 4
+          },
+          "contract": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]{0,80}\\.json$"
           }
         },
         "required": [

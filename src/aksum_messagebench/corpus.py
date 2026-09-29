@@ -21,6 +21,8 @@ def verify(manifest: Path, contract: Path | None = None) -> dict:
     ids = [c["id"] for c in document["cases"]]
     if len(set(ids)) != len(ids):
         raise BenchError("CORPUS_DUPLICATE_ID", 2)
+    if any(case["control"] not in ids for case in document["cases"]):
+        raise BenchError("CORPUS_CONTROL_MISSING", 2)
     results = []
     codes = []
     for case in document["cases"]:
@@ -31,7 +33,7 @@ def verify(manifest: Path, contract: Path | None = None) -> dict:
         report = compare(
             manifest.parent / case["source"],
             manifest.parent / case["target"],
-            contract or data_root() / "contracts/pacs008-preserve.json",
+            contract or data_root() / "contracts" / case.get("contract", "pacs008-preserve.json"),
         )
         actual = {
             "overall": report["overall"],
@@ -63,6 +65,7 @@ def verify(manifest: Path, contract: Path | None = None) -> dict:
         "independent_review_verified": False,
         "limitations": [
             SCOPE_NOTICE,
+            "Corpus PASS means recorded classifications match, including expected failures.",
             "Verification of recorded expectations is not independent review.",
         ],
     }

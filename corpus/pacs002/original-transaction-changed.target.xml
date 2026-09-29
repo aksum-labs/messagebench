@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.002.001.10">
+  <FIToFIPmtStsRpt>
+    <GrpHdr><MsgId>SYNTHETIC-STATUS-0001</MsgId><CreDtTm>2026-09-29T00:00:00Z</CreDtTm></GrpHdr>
+    <OrgnlGrpInfAndSts><OrgnlMsgId>SYNTHETIC-ORIGINAL-0001</OrgnlMsgId><OrgnlMsgNmId>pacs.008.001.08</OrgnlMsgNmId></OrgnlGrpInfAndSts>
+    <TxInfAndSts>
+      <OrgnlEndToEndId>INV-2026-000123</OrgnlEndToEndId>
+      <OrgnlTxId>CHANGED-TX</OrgnlTxId><TxSts>RJCT</TxSts>
+      <StsRsnInf><Rsn><Cd>AC01</Cd></Rsn><AddtlInf>SYNTHETIC REASON</AddtlInf><AddtlInf>ሙከራ</AddtlInf></StsRsnInf>
+    </TxInfAndSts>
+  </FIToFIPmtStsRpt>
+</Document>

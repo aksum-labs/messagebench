@@ -69,3 +69,16 @@ def test_name_and_attribute_quotas():
         with pytest.raises(BenchError) as err:
             parse_xml(data)
         assert err.value.code == "XML_NAME_OR_ATTRIBUTE_LIMIT"
+
+
+@pytest.mark.parametrize(
+    "component,version", [("LIBXML_VERSION", (2, 14, 6)), ("LIBXSLT_VERSION", (1, 1, 43))]
+)
+def test_older_native_profile_fails_closed(monkeypatch, component, version):
+    from lxml import etree
+
+    monkeypatch.setattr(etree, component, version)
+    with pytest.raises(BenchError) as failure:
+        parse_xml(b"<a/>")
+    assert failure.value.code == "NATIVE_XML_PROFILE_UNSUPPORTED"
+    assert failure.value.exit_code == 3

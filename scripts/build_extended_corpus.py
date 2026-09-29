@@ -77,7 +77,7 @@ cases = []
 OUT.mkdir(exist_ok=True)
 
 
-def add(name, source, target, failed=(), code=0, rationale=""):
+def add(name, source, target, failed=(), code=0, rationale="", target_xsd="PASS"):
     pair = {}
     for side, root in (("source", source), ("target", target)):
         data = etree.tostring(root, encoding="UTF-8", xml_declaration=True)
@@ -94,7 +94,7 @@ def add(name, source, target, failed=(), code=0, rationale=""):
                 "exit_code": code,
                 "failed_assertions": list(failed),
                 "source_xsd": "PASS",
-                "target_xsd": "PASS",
+                "target_xsd": target_xsd,
             },
             "rationale": rationale,
             "control": name if code == 0 else name.rsplit("-", 1)[0] + "-control",
@@ -167,6 +167,145 @@ for name, action in [("removed", "remove"), ("duplicated", "duplicate"), ("reord
         code=0 if action == "reorder" else 1,
         rationale="Multiset semantics preserve multiplicity while allowing reordering.",
     )
+
+# Additional independently authored expectations for permitted changes and scope boundaries.
+source = etree.fromstring(BASE)
+target = copy.deepcopy(source)
+target.find(".//" + Q + "MsgId").text = "NEW-SYNTHETIC-MESSAGE"
+add(
+    "regenerated-message-id",
+    source,
+    target,
+    rationale="Contract explicitly permits message-ID regeneration.",
+)
+prefixed = etree.Element(Q + "Document", nsmap={"iso": Q[1:-1]})
+prefixed.append(copy.deepcopy(source[0]))
+add("prefix-renamed", source, prefixed, rationale="Expanded QNames remain unchanged.")
+target = copy.deepcopy(source)
+target.find(".//" + Q + "IntrBkSttlmAmt").text = "1250.5000"
+add(
+    "decimal-lexical-change",
+    source,
+    target,
+    rationale="Decimal value preserved; lexical scale is not promised.",
+)
+target = copy.deepcopy(source)
+target.find(".//" + Q + "IntrBkSttlmAmt").set("Ccy", "USD")
+add(
+    "currency-changed",
+    source,
+    target,
+    ["PRESERVE-SETTLEMENT-AMOUNT"],
+    1,
+    "Equal numeric amount with changed currency is a preservation failure.",
+)
+target = copy.deepcopy(source)
+target.findall(".//" + Q + "Ustrd")[-1].text = "ሙከ"
+add(
+    "ethiopic-remittance-changed",
+    source,
+    target,
+    ["PRESERVE-REMITTANCE"],
+    1,
+    "Exact Unicode remittance preservation detects Ethiopic text loss.",
+)
+spaced = copy.deepcopy(source)
+spaced.findall(".//" + Q + "Ustrd")[0].text = " INVOICE 000123 "
+add(
+    "whitespace-control",
+    spaced,
+    spaced,
+    rationale="Whitespace-bearing remittance positive control.",
+)
+add(
+    "whitespace-trimmed",
+    spaced,
+    source,
+    ["PRESERVE-REMITTANCE"],
+    1,
+    "No implicit trimming is permitted.",
+)
+batch = copy.deepcopy(source)
+batch.find(".//" + Q + "NbOfTxs").text = "2"
+second = copy.deepcopy(batch[0][-1])
+second.find(Q + "PmtId/" + Q + "TxId").text = "SECOND-TX"
+second.find(Q + "IntrBkSttlmAmt").text = "99.00"
+batch[0].append(second)
+add(
+    "batch-control",
+    batch,
+    batch,
+    rationale="Two uniquely keyed transactions with different amounts.",
+)
+target = copy.deepcopy(batch)
+target[0].append(target[0][1])
+add(
+    "batch-reordered",
+    batch,
+    target,
+    rationale="Declared unique keys permit transaction reordering.",
+)
+target = copy.deepcopy(batch)
+amounts = target.findall(".//" + Q + "IntrBkSttlmAmt")
+amounts[0].text, amounts[1].text = amounts[1].text, amounts[0].text
+add(
+    "batch-amount-swapped",
+    batch,
+    target,
+    ["PRESERVE-SETTLEMENT-AMOUNT"],
+    1,
+    "Same amount multiset cannot conceal incorrect transaction association.",
+)
+target = copy.deepcopy(batch)
+keys = target.findall(".//" + Q + "TxId")
+keys[1].text = keys[0].text
+add(
+    "batch-duplicate-key",
+    batch,
+    target,
+    code=3,
+    rationale="Ambiguous keys prevent reliable association, never positional guessing.",
+)
+extended = copy.deepcopy(source)
+supplement = etree.SubElement(extended[0], Q + "SplmtryData")
+envelope = etree.SubElement(supplement, Q + "Envlp")
+etree.SubElement(envelope, "{urn:aksum:synthetic:extension}note").text = "SYNTHETIC-UNEXAMINED"
+add(
+    "unsupported-extension-control",
+    extended,
+    extended,
+    rationale="Assertions pass while foreign extension coverage is explicitly unsupported.",
+)
+target = copy.deepcopy(extended)
+target.find(".//{urn:aksum:synthetic:extension}note").text = "CHANGED-UNEXAMINED"
+add(
+    "unsupported-extension-change",
+    extended,
+    target,
+    rationale="No assertion promises extension preservation; scope-labeled pass is intentional.",
+)
+target = copy.deepcopy(source)
+target.find(".//" + Q + "IntrBkSttlmAmt").text = "NOT-A-DECIMAL"
+add(
+    "invalid-target-xsd",
+    source,
+    target,
+    code=1,
+    target_xsd="FAIL",
+    rationale="Schema-invalid target blocks preservation checks; schema failure retained.",
+)
+
+for case in cases:
+    if case["expected"]["exit_code"] != 0:
+        controls = [
+            candidate
+            for candidate in cases
+            if candidate["expected"]["exit_code"] == 0
+            and candidate["source_sha256"] == case["source_sha256"]
+            and candidate["target_sha256"] == case["source_sha256"]
+        ]
+        assert controls, case["id"]
+        case["control"] = controls[0]["id"]
 
 document = {
     "schema_version": "1.0",

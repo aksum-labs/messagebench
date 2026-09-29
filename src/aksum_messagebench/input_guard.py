@@ -85,8 +85,10 @@ def _no_constant(value: str) -> None:
     raise BenchError("JSON_NONFINITE_NUMBER", 2)
 
 
-def load_json(path: Path | str, *, root: Path | None = None) -> tuple[dict, bytes]:
-    data = read_local(path, root=root, limit=1024 * 1024)
+def load_json(
+    path: Path | str, *, root: Path | None = None, limit: int = 1024 * 1024
+) -> tuple[dict, bytes]:
+    data = read_local(path, root=root, limit=limit)
     try:
         result = json.loads(data, object_pairs_hook=_unique_object, parse_constant=_no_constant)
     except (ValueError, UnicodeError, RecursionError):

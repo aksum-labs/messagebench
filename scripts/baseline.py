@@ -37,7 +37,7 @@ def main():
     schema_path = ROOT / "schemas/iso/pacs.008.001.08.xsd"
     first = lxml.etree.XMLSchema(lxml.etree.parse(str(schema_path)))
     second = xmlschema.XMLSchema(str(schema_path), allow="local", defuse="always")
-    cases = json.loads((ROOT / "corpus/index.json").read_text())["cases"]
+    cases = json.loads((ROOT / "corpus/gate1-index.json").read_text())["cases"]
     output = {
         "processors": {
             "lxml": lxml.etree.LXML_VERSION,

@@ -13,6 +13,17 @@
       "inclusion_decision": "included"
     },
     {
+      "name": "pacs.002.001.10 full XSD",
+      "file": "schemas/iso/pacs.002.001.10.xsd",
+      "source": "https://raw.githubusercontent.com/phoughton/pyiso20022/cfb785fcc5174b09adee1419eb83743c85c79398/xsd/payments_clearing_and_settlement/pacs.002/pacs.002.001.10.xsd",
+      "version": "pacs.002.001.10",
+      "sha256": "d14da6304db5178b1afc7d8ed6cc6073e6e1a143fc79d9ba66d3246d4a654e90",
+      "license_or_terms": "LicenseRef-SWIFTStandards-2005",
+      "redistribution_status": "Include unmodified with retained terms under supporting-software and royalty-free sublicensing provisions. Not Apache-2.0.",
+      "modified": false,
+      "inclusion_decision": "included"
+    },
+    {
       "name": "SWIFTStandards terms",
       "file": "third-party/SWIFTStandards_LIC_OUT_V5.pdf",
       "source": "https://www.iso20022.org/sites/default/files/documents/D7/SWIFTStandards_LIC_OUT_V5_.pdf",

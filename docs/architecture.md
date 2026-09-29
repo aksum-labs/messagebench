@@ -2,7 +2,7 @@
 
 `input_guard` reads bounded regular files without symlinks or URL resolution.
 `xml_reader` applies resource and parser policy while building trees. `schema_catalog`
-compiles only the constant-hash pacs.008.001.08 XSD. `contracts` validates JSON against
+compiles the two exact hash-pinned pacs.008.001.08 and pacs.002.001.10 XSDs. `contracts` validates JSON against
 an owned, closed Draft 2020-12 schema. `extractors/pacs008_001_08` selects exact expanded
 QNames and emits internal facts with original QName occurrence paths.
 

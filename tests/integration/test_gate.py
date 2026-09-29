@@ -11,15 +11,15 @@ from aksum_messagebench.reports import canonical_json
 
 def test_preimplementation_expectations(root):
     digest = (root / "evidence/expectations-preimplementation.sha256").read_text().split()[0]
-    assert hashlib.sha256((root / "corpus/index.json").read_bytes()).hexdigest() == digest
-    result = verify(root / "corpus/index.json")
+    assert hashlib.sha256((root / "corpus/gate1-index.json").read_bytes()).hexdigest() == digest
+    result = verify(root / "corpus/gate1-index.json")
     assert len(result["cases"]) == 6
     assert result["exit_code"] == 0
     assert result["independent_review_verified"] is False
 
 
 def test_all_pairs_deterministic(root, contract):
-    cases = json.loads((root / "corpus/index.json").read_text())["cases"]
+    cases = json.loads((root / "corpus/gate1-index.json").read_text())["cases"]
     for case in cases:
         before = root / "corpus" / case["source"]
         after = root / "corpus" / case["target"]

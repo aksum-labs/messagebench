@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "id": "aksum.pacs002.preservation",
+  "version": "0.1.0",
+  "status": "draft",
+  "authority": "engineering-contract",
+  "description": "Declared transaction status-report fields; no interpretation of status decisions.",
+  "source_namespaces": [
+    "urn:iso:std:iso:20022:tech:xsd:pacs.002.001.10"
+  ],
+  "target_namespaces": [
+    "urn:iso:std:iso:20022:tech:xsd:pacs.002.001.10"
+  ],
+  "provenance": [
+    {
+      "kind": "project-design",
+      "locator": "docs/contracts.md",
+      "license": "Apache-2.0"
+    }
+  ],
+  "association": {
+    "mode": "single"
+  },
+  "assertions": [
+    {
+      "id": "PERMIT-MESSAGE-ID-REGENERATION",
+      "field": "message.id",
+      "comparator": "allowed-regeneration",
+      "cardinality": "single",
+      "missing": "require-present",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-ORIGINAL-END-TO-END-ID",
+      "field": "transactions.original_end_to_end_id",
+      "comparator": "exact-identifier",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-ORIGINAL-TRANSACTION-ID",
+      "field": "transactions.original_transaction_id",
+      "comparator": "exact-identifier",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-STATUS",
+      "field": "transactions.status",
+      "comparator": "exact-text",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-REASON-CODES",
+      "field": "transactions.reason_codes",
+      "comparator": "multiset",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-REASON-TEXT",
+      "field": "transactions.reason_text",
+      "comparator": "multiset",
+      "cardinality": "per-transaction",
+      "missing": "compare-presence",
+      "required": true
+    }
+  ],
+  "exclusions": [],
+  "coverage_policy": "declared-subset"
+}

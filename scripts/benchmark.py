@@ -12,7 +12,7 @@ from lxml import etree
 from aksum_messagebench.engine import compare
 
 root = Path(__file__).resolve().parents[1]
-manifest = json.loads((root / "corpus/index.json").read_text())
+manifest = json.loads((root / "corpus/gate1-index.json").read_text())
 pairs = [(root / "corpus" / c["source"], root / "corpus" / c["target"]) for c in manifest["cases"]]
 latencies = []
 for i in range(1000):

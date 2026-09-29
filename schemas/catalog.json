@@ -9,6 +9,15 @@
       "retrieval": "https://raw.githubusercontent.com/socrates8300/mx20022/b650c81f60311801f240efea3f9cc6df9adb70f9/schemas/pacs/pacs.008.001.08.xsd",
       "license": "LicenseRef-SWIFTStandards-2005",
       "modified": false
+    },
+    {
+      "namespace": "urn:iso:std:iso:20022:tech:xsd:pacs.002.001.10",
+      "path": "iso/pacs.002.001.10.xsd",
+      "sha256": "d14da6304db5178b1afc7d8ed6cc6073e6e1a143fc79d9ba66d3246d4a654e90",
+      "origin": "https://www.iso20022.org/catalogue-messages/iso-20022-messages-archive?page=6",
+      "retrieval": "https://raw.githubusercontent.com/phoughton/pyiso20022/cfb785fcc5174b09adee1419eb83743c85c79398/xsd/payments_clearing_and_settlement/pacs.002/pacs.002.001.10.xsd",
+      "license": "LicenseRef-SWIFTStandards-2005",
+      "modified": false
     }
   ]
 }

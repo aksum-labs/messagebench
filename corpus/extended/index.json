@@ -78,7 +78,7 @@
         "target_xsd": "PASS"
       },
       "rationale": "Schema-valid change to the named explicitly preserved field.",
-      "control": "end-to-end-id-control",
+      "control": "debtor-account-control",
       "license": "Apache-2.0",
       "provenance": "Original synthetic engineering authoring; no customer data.",
       "reviewers": []
@@ -116,7 +116,7 @@
         "target_xsd": "PASS"
       },
       "rationale": "Changed declared association key prevents a reliable pairing.",
-      "control": "transaction-id-control",
+      "control": "debtor-account-control",
       "license": "Apache-2.0",
       "provenance": "Original synthetic engineering authoring; no customer data.",
       "reviewers": []
@@ -276,7 +276,7 @@
         "target_xsd": "PASS"
       },
       "rationale": "Schema-valid change to the named explicitly preserved field.",
-      "control": "debtor-account-scheme-proprietary-control",
+      "control": "debtor-account-control",
       "license": "Apache-2.0",
       "provenance": "Original synthetic engineering authoring; no customer data.",
       "reviewers": []
@@ -316,7 +316,7 @@
         "target_xsd": "PASS"
       },
       "rationale": "Schema-valid change to the named explicitly preserved field.",
-      "control": "debtor-account-issuer-control",
+      "control": "debtor-account-control",
       "license": "Apache-2.0",
       "provenance": "Original synthetic engineering authoring; no customer data.",
       "reviewers": []
@@ -396,7 +396,7 @@
         "target_xsd": "PASS"
       },
       "rationale": "Schema-valid change to the named explicitly preserved field.",
-      "control": "debtor-agent-other-id-control",
+      "control": "debtor-account-control",
       "license": "Apache-2.0",
       "provenance": "Original synthetic engineering authoring; no customer data.",
       "reviewers": []
@@ -636,7 +636,7 @@
         "target_xsd": "PASS"
       },
       "rationale": "Schema-valid change to the named explicitly preserved field.",
-      "control": "creditor-name-control",
+      "control": "debtor-account-control",
       "license": "Apache-2.0",
       "provenance": "Original synthetic engineering authoring; no customer data.",
       "reviewers": []
@@ -756,7 +756,7 @@
         "target_xsd": "PASS"
       },
       "rationale": "Multiset semantics preserve multiplicity while allowing reordering.",
-      "control": "remittance-control",
+      "control": "debtor-account-control",
       "license": "Apache-2.0",
       "provenance": "Original synthetic engineering authoring; no customer data.",
       "reviewers": []
@@ -777,7 +777,7 @@
         "target_xsd": "PASS"
       },
       "rationale": "Multiset semantics preserve multiplicity while allowing reordering.",
-      "control": "remittance-control",
+      "control": "debtor-account-control",
       "license": "Apache-2.0",
       "provenance": "Original synthetic engineering authoring; no customer data.",
       "reviewers": []
@@ -797,6 +797,280 @@
       },
       "rationale": "Multiset semantics preserve multiplicity while allowing reordering.",
       "control": "remittance-reordered",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "regenerated-message-id",
+      "source": "regenerated-message-id.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "regenerated-message-id.target.xml",
+      "target_sha256": "dc15be6a53f4d694b7f49b97df9a054064b20368e84026c36a84e2ecdd8dbed9",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Contract explicitly permits message-ID regeneration.",
+      "control": "regenerated-message-id",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "prefix-renamed",
+      "source": "prefix-renamed.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "prefix-renamed.target.xml",
+      "target_sha256": "33e0272f62e227e7e5924f5e6ce1c6b9be69d5c1de3f0be02bff750b926b504c",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Expanded QNames remain unchanged.",
+      "control": "prefix-renamed",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "decimal-lexical-change",
+      "source": "decimal-lexical-change.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "decimal-lexical-change.target.xml",
+      "target_sha256": "9fc2fc6c03dbdf22c50feee016bdff12c21495583f667b7d45022a031872a187",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Decimal value preserved; lexical scale is not promised.",
+      "control": "decimal-lexical-change",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "currency-changed",
+      "source": "currency-changed.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "currency-changed.target.xml",
+      "target_sha256": "eef4076311ffe83023354d0849e2d8eb4e9331e7933b6e2c38fe6cef274b1d61",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-SETTLEMENT-AMOUNT"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Equal numeric amount with changed currency is a preservation failure.",
+      "control": "debtor-account-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "ethiopic-remittance-changed",
+      "source": "ethiopic-remittance-changed.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "ethiopic-remittance-changed.target.xml",
+      "target_sha256": "f9487401d96ee0aa08a1769b98581feb37714b312454d9dc7e0753a05eaf8876",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REMITTANCE"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Exact Unicode remittance preservation detects Ethiopic text loss.",
+      "control": "debtor-account-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "whitespace-control",
+      "source": "whitespace-control.source.xml",
+      "source_sha256": "599fb0537ca885ad491bb0294d5966f7d7fb65d4e4038497f030f609d7e9c961",
+      "target": "whitespace-control.target.xml",
+      "target_sha256": "599fb0537ca885ad491bb0294d5966f7d7fb65d4e4038497f030f609d7e9c961",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Whitespace-bearing remittance positive control.",
+      "control": "whitespace-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "whitespace-trimmed",
+      "source": "whitespace-trimmed.source.xml",
+      "source_sha256": "599fb0537ca885ad491bb0294d5966f7d7fb65d4e4038497f030f609d7e9c961",
+      "target": "whitespace-trimmed.target.xml",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REMITTANCE"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "No implicit trimming is permitted.",
+      "control": "whitespace-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "batch-control",
+      "source": "batch-control.source.xml",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target": "batch-control.target.xml",
+      "target_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Two uniquely keyed transactions with different amounts.",
+      "control": "batch-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "batch-reordered",
+      "source": "batch-reordered.source.xml",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target": "batch-reordered.target.xml",
+      "target_sha256": "903ffd62fd4a581b20cbcb477e4f24226669a7e48ac4cb11e12a6b95b225d037",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Declared unique keys permit transaction reordering.",
+      "control": "batch-reordered",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "batch-amount-swapped",
+      "source": "batch-amount-swapped.source.xml",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target": "batch-amount-swapped.target.xml",
+      "target_sha256": "b38b040ca5591c20550c7c73d0e1c367b2632bfe04b7f23e4247d0c45000a459",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-SETTLEMENT-AMOUNT"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Same amount multiset cannot conceal incorrect transaction association.",
+      "control": "batch-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "batch-duplicate-key",
+      "source": "batch-duplicate-key.source.xml",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target": "batch-duplicate-key.target.xml",
+      "target_sha256": "c23af7ae93ad028fd7f3628d3a71ceb31e5dfca5ddba1aab970429836e8a0a68",
+      "expected": {
+        "overall": "INDETERMINATE",
+        "exit_code": 3,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Ambiguous keys prevent reliable association, never positional guessing.",
+      "control": "batch-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "unsupported-extension-control",
+      "source": "unsupported-extension-control.source.xml",
+      "source_sha256": "8fb8ad3539fa1551cde6bd16a26c9995e2faad8b654823c16f9bc32b25b06cbf",
+      "target": "unsupported-extension-control.target.xml",
+      "target_sha256": "8fb8ad3539fa1551cde6bd16a26c9995e2faad8b654823c16f9bc32b25b06cbf",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Assertions pass while foreign extension coverage is explicitly unsupported.",
+      "control": "unsupported-extension-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "unsupported-extension-change",
+      "source": "unsupported-extension-change.source.xml",
+      "source_sha256": "8fb8ad3539fa1551cde6bd16a26c9995e2faad8b654823c16f9bc32b25b06cbf",
+      "target": "unsupported-extension-change.target.xml",
+      "target_sha256": "7d753a6ffe08e25d2763eb73ab1d8b7bebe6aabd3714de24bd3a4f93f20ade28",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "No assertion promises extension preservation; scope-labeled pass is intentional.",
+      "control": "unsupported-extension-change",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic engineering authoring; no customer data.",
+      "reviewers": []
+    },
+    {
+      "id": "invalid-target-xsd",
+      "source": "invalid-target-xsd.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "invalid-target-xsd.target.xml",
+      "target_sha256": "3ac9b2439ffa55f17c94d1bd356b9e04775891170501c4266c1c6a600654dac0",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "FAIL"
+      },
+      "rationale": "Schema-invalid target blocks preservation checks; schema failure retained.",
+      "control": "debtor-account-control",
       "license": "Apache-2.0",
       "provenance": "Original synthetic engineering authoring; no customer data.",
       "reviewers": []

@@ -22,3 +22,11 @@ identifier directories or paid ISO publications are redistributed.
 Asset hashes/terms are in evidence/rights-register.json. Independent human provenance review
 remains part of the unsatisfied first gate. The legal source documents are provided as a
 traceable basis, not relabeled as an OSI-approved license for the standard.
+
+The second bundled schema is pacs.002.001.10. Its official archive entry lists SWIFT as
+submitter. The unmodified mirror is phoughton/pyiso20022 commit
+`cfb785fcc5174b09adee1419eb83743c85c79398` (20 January 2026), path
+`xsd/payments_clearing_and_settlement/pacs.002/pacs.002.001.10.xsd`, SHA-256
+`d14da6304db5178b1afc7d8ed6cc6073e6e1a143fc79d9ba66d3246d4a654e90`.
+The same retained SWIFTStandards supporting-software/sublicensing terms apply; its schema
+is not relabeled Apache-2.0. camt.053 is not bundled; see camt053-asset-review.md.

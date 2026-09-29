@@ -2,7 +2,7 @@ Aksum MessageBench
 Original implementation and original synthetic fixtures: Copyright 2026 Aksum Labs.
 Original code and fixtures are licensed under Apache License 2.0.
 
-The unmodified pacs.008.001.08 XML schema is ISO 20022 repository information
+The unmodified pacs.008.001.08 and pacs.002.001.10 XML schemas are ISO 20022 repository information
 submitted by SWIFT, obtained from a pinned public mirror. It is NOT relicensed
 under Apache-2.0. It is supplied royalty-free under the applicable ISO repository
 IPR policy and SWIFTStandards September 2005 license, including its limitations.

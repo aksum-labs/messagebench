@@ -3,16 +3,20 @@
 import hashlib
 from pathlib import Path
 
+from lxml import etree
+
 from . import SCOPE_NOTICE, __version__
 from .association import compare_keyed
 from .comparators import compare_fact
 from .contracts import load_contract
 from .coverage import account_coverage
 from .errors import BenchError, aggregate_exit
-from .extractors import pacs008_001_08 as extractor
+from .extractors import pacs002_001_10, pacs008_001_08
 from .input_guard import read_local
-from .schema_catalog import NAMESPACE, SCHEMA_HASH, Catalog
+from .schema_catalog import SCHEMA_HASHES, Catalog
 from .xml_reader import parse_xml
+
+EXTRACTORS = {pacs008_001_08.NAMESPACE: pacs008_001_08, pacs002_001_10.NAMESPACE: pacs002_001_10}
 
 
 def inspect_bytes(data: bytes, catalog: Catalog) -> tuple[dict, object | None]:
@@ -25,9 +29,10 @@ def inspect_bytes(data: bytes, catalog: Catalog) -> tuple[dict, object | None]:
     }
     try:
         root = parse_xml(data)
-        if root.tag != "{" + NAMESPACE + "}Document":
+        namespace = etree.QName(root).namespace
+        if namespace not in catalog.schemas or root.tag != "{" + namespace + "}Document":
             raise BenchError("ROOT_QNAME_UNSUPPORTED", 3)
-        check["namespace"] = NAMESPACE
+        check["namespace"] = namespace
         if not catalog.validate(root):
             raise BenchError("XSD_INVALID", 1)
         check.update(status="PASS", code="XSD_VALID", exit_code=0)
@@ -60,6 +65,7 @@ def compare(
     contract = load_contract(contract_path)
     catalog = Catalog(catalog_path)
     document = contract.document
+    extractor = EXTRACTORS.get(document["source_namespaces"][0], pacs008_001_08)
     report = {
         "schema_version": "1.0",
         "tool_version": __version__,
@@ -67,7 +73,7 @@ def compare(
         "contract_version": document["version"],
         "contract_sha256": contract.sha256,
         "catalog_sha256": catalog.sha256,
-        "schema_sha256": SCHEMA_HASH,
+        "schema_sha256": SCHEMA_HASHES.get(extractor.NAMESPACE),
         "extractor_version": extractor.VERSION,
         "source_sha256": None,
         "target_sha256": None,
@@ -78,7 +84,7 @@ def compare(
         "exit_code": 3,
         "limitations": [
             SCOPE_NOTICE,
-            "Declared pacs.008.001.08 subset; single or uniquely keyed transaction association. "
+            "Declared version-specific subset; single or uniquely keyed transaction association. "
             "No business-rule compliance or certification. Independent review pending.",
         ],
     }
@@ -92,10 +98,16 @@ def compare(
         codes.append(check["exit_code"])
         roots[side] = root
         if root is not None:
-            facts[side] = extractor.extract(root)
+            facts[side] = EXTRACTORS[check["namespace"]].extract(root)
+    extractor = EXTRACTORS.get(report["schema_checks"]["source"]["namespace"], extractor)
+    report["extractor_version"] = extractor.VERSION
+    report["schema_sha256"] = SCHEMA_HASHES[extractor.NAMESPACE]
     inputs_valid = all(root is not None for root in roots.values())
     namespace_allowed = (
-        NAMESPACE in document["source_namespaces"] and NAMESPACE in document["target_namespaces"]
+        report["schema_checks"]["source"]["namespace"] in document["source_namespaces"]
+        and report["schema_checks"]["target"]["namespace"] in document["target_namespaces"]
+        and report["schema_checks"]["source"]["namespace"] == extractor.NAMESPACE
+        and report["schema_checks"]["target"]["namespace"] == extractor.NAMESPACE
     )
     association_valid = (
         inputs_valid
@@ -123,7 +135,11 @@ def compare(
                 and document["association"]["mode"] == "keyed"
             ):
                 status, code = compare_keyed(
-                    roots["source"], roots["target"], assertion, document["association"]["keys"]
+                    roots["source"],
+                    roots["target"],
+                    assertion,
+                    document["association"]["keys"],
+                    extractor,
                 )
             elif assertion["cardinality"] == "per-transaction" and not association_valid:
                 status, code = "INDETERMINATE", "ASSOCIATION_AMBIGUOUS_OR_UNSUPPORTED"

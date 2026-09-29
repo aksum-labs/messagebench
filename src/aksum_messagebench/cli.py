@@ -39,9 +39,7 @@ def main(argv: list[str] | None = None) -> int:
     batch = commands.add_parser("suite")
     batch.add_argument("manifest", type=Path)
     batch.add_argument("--outputs", type=Path, required=True)
-    batch.add_argument(
-        "--contract", type=Path, default=data_root() / "contracts/pacs008-preserve.json"
-    )
+    batch.add_argument("--contract", type=Path)
     batch.add_argument("--out", type=Path, required=True)
     conversion = commands.add_parser("report")
     conversion.add_argument("input", type=Path)

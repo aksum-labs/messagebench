@@ -13,7 +13,7 @@ CONTRACT = ROOT / "contracts/pacs008-preserve.json"
 
 
 def test_handoff_missing_and_complete(tmp_path):
-    manifest = ROOT / "corpus/index.json"
+    manifest = ROOT / "corpus/gate1-index.json"
     result = suite(manifest, tmp_path, CONTRACT)
     assert result["exit_code"] == 3
     assert len(result["cases"]) == 6
@@ -28,7 +28,7 @@ def test_handoff_missing_and_complete(tmp_path):
 
 def test_handoff_security_precedence(tmp_path):
     (tmp_path / "identity.xml").symlink_to(ROOT / "corpus/positive/identity.target.xml")
-    assert suite(ROOT / "corpus/index.json", tmp_path, CONTRACT)["exit_code"] == 4
+    assert suite(ROOT / "corpus/gate1-index.json", tmp_path, CONTRACT)["exit_code"] == 4
 
 
 def report():
@@ -82,6 +82,70 @@ def test_extended_corpus_expectations():
     from aksum_messagebench.corpus import verify
 
     result = verify(ROOT / "corpus/extended/index.json", ROOT / "contracts/pacs008-extended.json")
-    assert len(result["cases"]) == 40
+    assert len(result["cases"]) == 54
     assert result["exit_code"] == 0
     assert result["independent_review_verified"] is False
+
+
+def test_status_report_corpus():
+    from aksum_messagebench.corpus import verify
+
+    result = verify(ROOT / "corpus/pacs002/index.json", ROOT / "contracts/pacs002-preserve.json")
+    assert len(result["cases"]) == 8
+    assert result["exit_code"] == 0
+
+
+def test_suite_report_formats_and_regression(tmp_path):
+    from xml.etree import ElementTree
+
+    from aksum_messagebench.reports import canonical_json, render
+
+    value = suite(ROOT / "corpus/gate1-index.json", tmp_path, CONTRACT)
+    path = tmp_path / "suite.json"
+    path.write_bytes(canonical_json(value))
+    loaded = load_result(path)
+    assert regression(loaded, loaded)["exit_code"] == 3
+    junit = ElementTree.fromstring(render(loaded, "junit"))
+    assert int(junit.attrib["errors"]) > 0
+    assert b"INDETERMINATE" in render(loaded, "html")
+    assert b"identity" in render(loaded, "text")
+    value["overall"] = "PASS"
+    value["exit_code"] = 0
+    path.write_bytes(canonical_json(value))
+    with pytest.raises(BenchError, match="REPORT_STATUS_INCONSISTENT"):
+        load_result(path)
+
+
+def test_forged_schema_success_cannot_bypass_required_unknown(tmp_path):
+    value = report()
+    value["schema_checks"]["source"]["status"] = "FAIL"
+    for assertion in value["assertions"]:
+        assertion["status"] = "INDETERMINATE"
+    path = tmp_path / "forged.json"
+    path.write_text(json.dumps(value))
+    with pytest.raises(BenchError, match="REPORT_SCHEMA_STATUS_INCONSISTENT"):
+        load_result(path)
+
+
+def test_multi_namespace_contract_selects_actual_source_version(tmp_path):
+    contract = json.loads((ROOT / "contracts/pacs002-preserve.json").read_text())
+    primary = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08"
+    contract["source_namespaces"].insert(0, primary)
+    contract["target_namespaces"].insert(0, primary)
+    path = tmp_path / "contract.json"
+    path.write_text(json.dumps(contract))
+    fixture = ROOT / "corpus/pacs002/identity.source.xml"
+    result = compare(fixture, fixture, path)
+    assert result["exit_code"] == 0
+    assert (
+        result["schema_sha256"]
+        == "d14da6304db5178b1afc7d8ed6cc6073e6e1a143fc79d9ba66d3246d4a654e90"
+    )
+
+
+def test_release_corpus_selects_versioned_contracts():
+    from aksum_messagebench.corpus import verify
+
+    result = verify(ROOT / "corpus/index.json")
+    assert len(result["cases"]) == 68
+    assert result["exit_code"] == 0

@@ -1,24 +1,24 @@
-# OpenSSF readiness: no achievement claimed
+# OpenSSF readiness
 
-This private Gate 1 proof has no badge and no Scorecard result. Independent fixture review
-is pending. Full release engineering is intentionally not expanded past that gate.
+No Best Practices badge has been obtained and no Scorecard result is claimed.
 
-Prepared: original-code license, third-party rights register, contribution instructions,
-threat model, bounded XML tests, typed comparisons, deterministic reports, dependency pins,
-Python advisory scan, SAST, native-inclusive SBOM, local artifacts and reproduction commands.
+Prepared locally: Apache-2.0 original source license; explicit third-party rights; contribution,
+governance and security policies; install/build/release instructions; deterministic tests and
+reports; property and bounded fuzz tests; SAST; pinned dependency inventory and advisory scan;
+native dependency SBOM; threat model; read-only SHA-pinned Actions; dependency update workflow;
+secret scanning without network verification; source and unsigned artifact checksums.
 
-Not established: public version history, verified organization/maintainer handles, private
-vulnerability reporting, branch protection, required independent human review, GitHub CI,
-scheduled dependency/security checks, signed approved releases, provenance attestation from
-a trusted build identity, independent reproduction, sustained maintenance record and complete
-assessment of current Best Practices criteria. Native dependency advisory review remains open.
+Pending organization-owned evidence: public version history and stable release links, real
+maintainer/contact ownership, private vulnerability reporting and response operation, required
+human reviews, branch protection, protected release environment, successful hosted CI, actual
+Scorecard execution and badge application. Files alone do not configure GitHub settings.
 
-After Gate 1, implement pinned-SHA Actions with read-only default tokens, no contributor-code
-`pull_request_target`, formatting/types/tests/secret/dependency/license/SAST checks, protected
-human-approved release environments, scheduled longer fuzzing and Scorecard. Configure and
-run Scorecard against the actual published repository; do not invent a score for this checkout.
-Silver/Gold are future assessments, not automatic consequences of scaffolding workflows.
+The scheduled Scorecard workflow runs without publication and preserves its output artifact.
+No score is predicted. Passing criteria must be checked against the current badge application
+when the repository is public. Silver/Gold need stronger independent review, governance and
+sustained process evidence; this sprint does not establish them.
 
-References: [Best Practices criteria](https://www.bestpractices.dev/en/criteria),
-[Scorecard checks](https://github.com/ossf/scorecard/blob/main/docs/checks.md).
-This file is a readiness gap list, not a completed badge questionnaire.
+Review the secret baseline when public hashes change; never suppress a credential merely to
+make a check pass. Review native dependencies separately from Python package advisories.
+Signing/provenance identity must be provided by an actual approved release environment;
+local checksums and source-commit metadata are not signatures.

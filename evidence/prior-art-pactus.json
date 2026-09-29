@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/deniskarlinsky/iso20022-mcp",
+  "commit": "634f3bff3b2927653427835c48ee03f3577191df",
+  "inspected_files": [
+    {
+      "local_inspection_name": "messagebench-pactus-validators.py",
+      "sha256": "a646d2782ded1cb5e13c8a61f0abff5495c3c163ce6cd9190a3654e231098f76"
+    },
+    {
+      "local_inspection_name": "messagebench-pactus-server.py",
+      "sha256": "5d1aaf0ffccce1cea752de66e53079d1e1720b7c8514d29a14ddef64e851c934"
+    },
+    {
+      "local_inspection_name": "messagebench-pactus-tree.json",
+      "sha256": "8667718dc0db98490f60b4cbe68b12e48accabe154c58058e183e7184317ffe6"
+    }
+  ],
+  "executed": false
+}

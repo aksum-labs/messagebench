@@ -1,5 +1,3 @@
-> Development continuation: the owner authorized expansion before independent review on 29 September 2026. See [decision](docs/expansion-decision.md). Earlier stop statements below describe the initial proof packet; independent review and publication remain pending.
-
 # Aksum MessageBench
 
 ```sh
@@ -25,16 +23,20 @@ Aksum MessageBench helps financial-software engineers test whether message adapt
 declared payment information. It runs offline on synthetic fixtures or institution-local
 files and produces reproducible, scope-labelled results.
 
-**Status: Gate 1 proof, `0.1.0a1`; NOT READY FOR PUBLIC RELEASE.** Six fixture pairs and five
-assertions demonstrate the proposition. Independent human review required by the mandate
-has not occurred. [Gate report](GATE_REPORT.md), [readiness](RELEASE_READINESS.md),
-[review packet](docs/fixture-review.md). There is no v0.5 or v1.0 claim.
+**Status: local alpha candidate `0.1.0a2`; release gates remain open.** There are 68 original
+synthetic fixture pairs across two message versions. Independent human review has not occurred.
+The owner authorized continued development before that review; see the [decision](docs/expansion-decision.md).
+[Gate report](GATE_REPORT.md), [current progress](docs/implementation-progress.md),
+[readiness](RELEASE_READINESS.md). No v0.5 or v1.0 claim.
 
 ## What it checks
 
-Exact namespace: `urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08`.
+Exact namespaces: `urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08` and
+`urn:iso:std:iso:20022:tech:xsd:pacs.002.001.10`.
 This is an engineering scope choice, not a claim about the versions used by any Ethiopian system.
-Exactly one transaction per source and target is required for transaction comparisons.
+The default contract uses exactly one transaction per message. The extended contract uses
+unique declared transaction IDs; reordering is allowed, and ambiguous or changed key sets
+produce incomplete evidence. No amount/name matching heuristic exists.
 
 | Field | Declared semantics |
 |---|---|
@@ -44,9 +46,11 @@ Exactly one transaction per source and target is required for transaction compar
 | `CdtTrfTxInf/RmtInf/Ustrd` | Unicode-exact multiset, preserving multiplicity. |
 | `CdtTrfTxInf/IntrBkSttlmAmt` and `@Ccy` | Decimal numeric equality AND exact currency. |
 
-Account scheme/issuer and agent context, IBAN alternative, names, dates, instructed amount,
-fees, structured remittance, supplementary data and all other fields are **not** covered by
-these five assertions. Coverage counts unexamined leaves/attributes explicitly. XML validity
+The table describes the five-assertion default proof contract. The optional extended contract
+adds account scheme/issuer, selected agent identifiers, IBAN alternatives, names and instructed
+amount. The pacs.002 contract preserves selected original references, status and reason data.
+See the [exact field inventory](docs/fields.md). Dates, fees, structured remittance and
+supplementary data remain unexamined or unsupported unless explicitly covered. Coverage counts unexamined leaves/attributes explicitly. XML validity
 is not a business-rule or operational-validity claim. The initial narrow account check is
 **not** a claim that complete account identity/context survived.
 
@@ -64,7 +68,7 @@ MessageBench does not run adapters. It has no network clients, server, telemetry
 account system, payment initiation, routing, settlement, live API, custody, or certification.
 No private EATS/EIPS/EthSwitch rules are included. No regulator or vendor endorsement.
 
-## Reproduce the six-case proof
+## Verify the corpus and reproduce the baseline
 
 ```sh
 PYTHONPATH=src python -m aksum_messagebench corpus verify corpus/index.json
@@ -72,22 +76,23 @@ PYTHONPATH=src python scripts/baseline.py
 PYTHONPATH=src python -m pytest -q
 ```
 
-Corpus verification exit 0 means **all expected classifications match**, including four
-expected failures. It does not approve four defective transformations or attest independent
-review. The baseline script also uses the development-only `xmlschema` processor.
+Corpus verification exit 0 means **all expected classifications match**, including deliberately defective targets. It does not approve four defective transformations or attest independent
+review. The baseline script uses the original six-case `corpus/gate1-index.json` and the development-only
+`xmlschema` processor. The default corpus command checks all 68 cases with their versioned contracts.
 
 `compare` supports `--format json|text|html|junit` and `--out NEW_FILE`. Existing files are
 not overwritten. `inspect` validates a local file. Canonical JSON has stable ordering and
 no timestamps. HTML is escaped, static and has no remote assets. JUnit represents required
-incomplete checks as errors. `suite`, `report` and `regression` commands, keyed batches,
-other message versions, and a reviewed 24/60-case release corpus are deferred behind Gate 1.
+incomplete checks as errors. `suite` accepts separately produced adapter outputs; `report` converts validated comparison
+or suite reports; `regression` compares equivalent evidence scopes. See [file handoff](docs/file-handoff.md)
+and the separately run [Node.js synthetic example](examples/file-handoff/README.md).
 
 ## Trust boundary
 
 Only local regular files through symlink-free POSIX paths are accepted. Maximum input 5 MiB;
 depth 64; 100,000 elements; text node 1 MiB; contract assertions 1,000. DTDs, entities,
 XInclude, processing instructions and instance schema-location hints are rejected. The
-single bundled XSD is pinned in code and the catalog. Contracts have a closed JSON schema;
+bundled XSDs are pinned in code and the catalog. Contracts have a closed JSON schema;
 no executable logic or downloaded expressions. Linux/Python 3.12 was tested; Windows native
 execution fails closed because equivalent file-handle protection is not implemented.
 
@@ -98,10 +103,13 @@ restricted environment; this program is not an operating-system sandbox. See
 
 **Pass means only the listed assertions passed for these inputs and versions.**
 
-Original code/fixtures: Apache-2.0. The unmodified ISO XSD has separate royalty-free
+Original code/fixtures: Apache-2.0. The unmodified ISO XSDs have separate royalty-free
 SWIFTStandards terms; do not relabel or sell the standard itself. See [NOTICE](NOTICE) and
 [rights register](evidence/rights-register.json). Development downloads happen only during
-explicit environment preparation, never while evaluating messages.
+explicit environment preparation, never while evaluating messages. The tested native XML stack
+is a local pinned build; follow [native build instructions](docs/native-build.md). Ordinary
+PyPI wheels can contain different native versions. camt.053 assets remain under
+[separate rights review](docs/camt053-asset-review.md).
 
 [Contribute](CONTRIBUTING.md) · [Prior art](docs/prior-art.md) ·
 [Reproduce evidence](docs/reproduce.md) · [Fixture review](docs/fixture-review.md)

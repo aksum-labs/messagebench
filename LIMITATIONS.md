@@ -1,28 +1,37 @@
 # Limitations
 
-This is a local Gate 1 proof, not a publish-ready release. Independent human fixture review
-has not occurred, so the mandate prohibits expansion. Only pacs.008.001.08 and five assertions
-are implemented. Six synthetic pairs are author-reviewed, not independently reviewed.
+This is a local 0.1.0a2 alpha candidate. Independent review and public release remain pending.
+The owner authorized development continuation before review; no reviewer identity is invented.
 
-No pacs.002/camt.053, keyed batch association, cross-version/cross-message mapping, date/time
-semantics, full-document comparison, institutional rules, certification or connectivity.
-Account context/scheme/issuer are intentionally unexamined in this initial proof. A passing
-identifier-only assertion does not establish preservation of complete account identity.
-No 24/60/100 reviewed-case claim. `suite`, `report`, `regression` command interfaces are not
-implemented. The installed compare command can emit JSON/text/HTML/JUnit directly.
+Only pacs.008.001.08 and pacs.002.001.10 are supported. The 68 cases are synthetic, with
+pre-recorded expectations, not independently reviewed. camt.053 is excluded pending an
+asset-specific redistribution basis. No scheme versions used by Ethiopian institutions are inferred.
 
-Test evidence applies to Linux/Python 3.12 and the exact recorded dependency versions. macOS
-has not been tested; native Windows fails closed. Quotas are not an OS sandbox. Coverage is
-of comparison/extraction code and inventoried input leaves/attributes, not all financial
-meaning. Random parser smoke tests are not sustained fuzzing. Targeted mutation results are
-not a general whole-program mutation score.
+Comparison is limited to declared fields and exact extractor versions. Unexamined information,
+fees, structured remittance, calendar/timezone reasoning, institutional usage rules and arbitrary
+nested associations are not validated. pacs.002 reason codes/text are independent multisets;
+their pairing inside reason blocks is not promised. Cross-family/version translation is absent.
+The keyed-items scalar comparator is unsupported; explicit unique transaction-key association
+is supported. Missing/ambiguous keys prevent a required check from passing.
 
-The full ISO schema is an unmodified pinned mirror, with a second independent mirror having
-equivalent normalized XML structure. The official archive identifies its version/submitter;
-a direct official schema download returned HTTP 403 in this environment. This is documented,
-not silently presented as direct-download byte verification. Bundled XSD terms are separate
-from Apache-2.0, as explained in NOTICE and the rights register.
+Reports are bounded to 5 MiB when reloaded. Large suites may exceed this report-reader limit.
+Input quotas are not a process sandbox. CPU/RSS hard limits and continuous fuzzing are absent.
+Hashes do not anonymize private data. Stored report validation verifies structure/consistency,
+not authenticity; reports are unsigned claims unless independently authenticated.
 
-No independent technical review, external adapter deployment, signed release, public CI run,
-Scorecard score, Best Practices badge, branch protection or public version history exists yet.
-No regulator/vendor endorsement. No v1.0 criteria are satisfied by merely building this proof.
+Tested profile: Linux x86_64, CPython 3.12.3, lxml 6.1.3 with libxml2 2.15.4, libxslt 1.1.45
+and libiconv 1.19. The bundled wheel is not a manylinux/cross-platform guarantee. Native Windows
+fails closed under the POSIX file policy. Other platforms are unverified. Selected native
+advisory triage is not complete historical vulnerability assurance.
+
+Core branch coverage exceeds 90%; whole-package branch coverage does not. Targeted mutations
+are not a comprehensive mutation score. Same-environment double builds are not independent
+reproduction. No native-wheel reproducibility or identity-backed signature is claimed.
+
+Original code/fixtures are Apache-2.0; ISO schema and third-party dependency rights remain
+separate. Public mirror provenance is documented because official direct downloads returned
+403. LGPL native source/notices/rebuild materials accompany the offline bundle.
+
+No payment connectivity, live institution probing, custody, adapter execution, account system,
+telemetry, certification, national rules, institutional endorsement or production-safety claim.
+Pass means only the listed assertions passed for these inputs and versions.

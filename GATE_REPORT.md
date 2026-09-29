@@ -1,94 +1,96 @@
-> Development continuation: the owner authorized expansion before independent review on 29 September 2026. See [decision](docs/expansion-decision.md). Earlier stop statements below describe the initial proof packet; independent review and publication remain pending.
-
 # Gate report — 29 September 2026
 
 **Release decision: NOT READY — FIX REQUIRED.**
 
-Deliverable: local `0.1.0a1` Gate 1 proof and review packet. The A–Z/v0.5 mandate has **not**
-been completed. Expansion stopped at the mandatory independent-human-review gate, not at an
-arbitrary time/token budget. No GitHub repository or public package was published.
+Delivered: local 0.1.0a2 engineering alpha candidate, with 68 synthetic pairs, two message
+versions, offline CLI, four report formats and local release tooling. Development continued
+under the owner's explicit approval recorded in docs/expansion-decision.md. Independent human
+review is still pending; approval to continue is not evidence of such review. Nothing was published.
 
 ## Technical proposition
 
-Gate A's executable proposition passes: four meaningful losses are detected while both
-files remain well-formed and pass the full exact-version XSD. They are leading-zero debtor
-account loss, end-to-end reference truncation, one repeated remittance item removed, and
-currency changed with numeric amount preserved. Identity and permitted regenerated message
-ID controls pass. No proprietary scheme rule is involved.
+Gate A's executable proposition passes. Four initial defects preserve XML well-formedness
+and exact XSD validity: leading-zero account loss, truncated end-to-end reference, removed
+repeated remittance item, and changed currency. Identity and permitted regenerated message ID
+pass. XML parsing, lxml XSD, the second Python xmlschema processor and the inspected Cognis
+lint engine accept the defective targets. Their different scope is not a defect in those tools.
+See evidence/baseline.json for input hashes and processor/source versions.
 
-The Python XML parser, lxml/libxml2 XSD processor, separate `xmlschema` processor, and inspected
-Cognis lint engine accept these targets. That is expected for their different scopes, not a
-finding that those tools are defective. `evidence/baseline.json` records exact input hashes,
-processor versions and Cognis source hash. Other named prior-art tools were source-inspected,
-not executed. See docs/prior-art.md for overlap and limitations.
+Full initial Gate 1 remains administratively incomplete because independent reviewers have
+not signed the hashed six-case packet. Expected classifications were recorded separately from
+oracle execution and retained; they are not represented as independent review.
 
-The proposed contribution is a portable paired-file preservation oracle with explicit
-comparison semantics, reviewed reusable corpus, scope accounting and deterministic reports.
-Parsing, loss warnings, round-trip tests and rule coverage already exist elsewhere. The
-independent-review portion of the contribution is still missing.
-
-**Full Acceptance Gate 1: NOT SATISFIED.** The six pairs have no independent human reviewers.
-The build specification calls for two human reviewers; no human/AI independence is fabricated.
-Expected outcomes were recorded before implementation and retained unchanged, which is useful
-provenance but does not satisfy that prerequisite. See GATE_FAILURE.md and docs/fixture-review.md.
+Prowide, mx20022, iso20022-cbpr-ur, Cognis, Mojaloop Testing Toolkit and Pactus overlap in
+parsing, validation, translation or testing. Selected source inspection found no exact combined
+adapter-neutral paired preservation-contract/corpus workflow at comparable scope. This is a
+bounded finding, not exhaustive novelty proof. Reuse lxml/jsonschema rather than rewriting
+validation engines. See docs/prior-art.md and the upstream contingency.
 
 ## Correctness evidence
 
-- Corpus: **6 pairs / 12 XML files**; **6/6** pre-recorded classifications match (4 failure, 2 pass).
-- Independent fixture-review count: **0**; the corpus is not called independently reviewed.
-- Assertions: **5** (4 preservation rules, 1 permitted-regeneration rule).
-- Version: **pacs.008.001.08 only**; no pacs.002/camt.053 support claim.
-- Test items: **91 passing**, including unit, integration, golden, property and parser/contract
-  fuzz-smoke tests; Hypothesis settings are visible in tests/property/test_invariants.py.
-- Comparator/extractor branch coverage: **53/54 = 98.15%**, measured with coverage.py.
-  Whole-package branch coverage is **178/220 = 80.91%**; do not substitute one metric for the other.
-- Mutation results: **5/5 targeted oracle mutations killed**. Four bypass preservation assertions;
-  one wrongly forbids permitted regeneration. This is not a whole-program mutation score.
-- Golden hashes: all six canonical result hashes pinned; no timestamps or input values in results.
-- Security regressions: DTD including UTF-16, entities, remote resources, XInclude, schema hints,
-  depth/text/size/name limits, symlink/FIFO/traversal, malicious contract fields, report escaping.
-- Known issue fixed: parser cleanup masking explicit safety-rejection codes.
-- No unresolved failing test is known in this scope; absence of independent review and deferred
-  features remain material limitations, not completed work.
+- 68 synthetic source/target cases; all recorded classifications match, including intentional failures.
+- 3 contracts, 31 assertion declarations, 26 extractable fields; independent fixture reviews: zero.
+- Exact families: pacs.008.001.08 and pacs.002.001.10. camt.053.001.08 excluded pending asset rights review.
+- 114 passing tests. Core comparator/extractor/association branch coverage: 80/84 (95.24%).
+  Whole-package branches: 279/342 (81.58%). See evidence/coverage.json and test-run-current.txt.
+- 33/33 targeted oracle/association mutants killed. Not a whole-program mutation score.
+- Golden canonical report hashes, property/metamorphic tests, security regressions and 1,000
+  deterministic parser fuzz-smoke iterations pass. This is not sustained fuzzing.
+- No known unresolved failing test in the delivered scope. Independent audit has not occurred.
 
-## Gates B–G
-
-| Gate | Result | Reason |
+| Gate | Result | Evidence or remaining condition |
 |---|---|---|
-| B correctness | PARTIAL | Author-recorded expectations match; required unknown/incomplete evidence blocks PASS. Independent review outstanding. |
-| C completeness | PARTIAL | Initial assertion/control mutations and deterministic safety tests pass; release corpus/review targets not met. |
-| D portability | PARTIAL | File boundary has no adapter-language dependency. No independently implemented external adapter use demonstrated. |
-| E differentiation | SUPPORTED, bounded | Pair-preservation proof exceeds parser/XSD/lint baselines; selected source review found no exact bundled workflow. No exhaustive absence/comparable-effort proof. |
-| F release hygiene | NOT PASSED | Local checks/artifacts/SBOM exist; public CI, signing, native-advisory review, maintained disclosure channel and approvals are not established. |
-| G claims | PASS for local packet | Narrow versions/scope, no official/regulator/vendor/certification claims, limitations visible. |
+| A technical proposition | PASS executable portion | Four schema-valid losses detected; valid controls pass; no private scheme rules |
+| B correctness | PARTIAL | Recorded corpus matches; required unknown/incomplete checks block PASS; independent review pending |
+| C completeness | PARTIAL | Required assertion mutations and parser regressions pass; reviewed-corpus criterion pending |
+| D portability | PASS scoped demonstration | Separate Node.js synthetic adapter hands off files without modifying MessageBench; not independent external adoption |
+| E differentiation | SUPPORTED, bounded | Beyond parser/XSD baselines; honest prior-art inspection, no global absence proof |
+| F release hygiene | PARTIAL | Local tests, locks, SBOM, source/licensing inventory and workflows; hosted CI and organizational settings unverified |
+| G public claims | PASS local scope | No official standards, certification, endorsement or production-safety claim |
 
-## Security and rights
+## Security
 
-Threat model: docs/threat-model.md. Python dependency scan: **54 packages, zero known advisories**
-in this run; `evidence/dependency-audit.json`. This does not include complete native libxml2/libxslt
-advisory coverage and is not a proof of absence of exploitable vulnerabilities. Native versions
-are included in `evidence/sbom.cdx.json`; their advisory review is still pending. SAST is in
-`evidence/bandit.json`; its low-severity XML import finding is a renderer-only use, not an XML
-parser entry point, and is documented in docs/release-verification.md.
+Threat model: docs/threat-model.md. Python dependency audit: 59 pinned distributions, zero
+reported advisories in this run. Bandit reports one LOW renderer-only ElementTree import;
+no medium/high finding. XML parsing uses hardened lxml, not that renderer import.
 
-XML hardening and default report redaction have tests. Runtime has no network/adapters/plugins.
-The application is not an OS sandbox; no hard process CPU/RSS limit is implemented.
+The supplied native wheel uses lxml 6.1.3, libxml2 2.15.4, libxslt 1.1.45 and libiconv 1.19.
+Runtime rejects older libxml2/libxslt profiles. Selected primary-source native advisory triage
+is in evidence/native-advisory-review.json. No confirmed unresolved critical/high exploitable
+finding was identified in these bounded checks; complete historical native vulnerability
+coverage and independent security review are not claimed. An advisory-free Python scan alone
+is not native-library assurance. There is no hard OS CPU/RSS sandbox.
 
-Bundled external assets: unmodified full pacs.008.001.08 XSD, its SWIFTStandards license PDF,
-and Apache-2.0 license text. Origins/hashes/terms/inclusion decisions are in the rights register.
-ISO XSD terms remain separate; paid/proprietary/vendor/customer material is excluded. Official
-schema download returned 403, so pinned mirrors were used and structural equivalence checked.
-Independent human provenance review is outstanding; no vague Apache relicensing claim is made.
+Default reports omit raw XML, account identifiers, names, values and free text. Hashes are
+metadata, not anonymization. XML quotas, entity/DTD/network/XInclude rejection, path defenses,
+closed contracts and HTML escaping are tested. No adapter execution or runtime network exists.
 
-## OpenSSF and release
+## Rights
 
-No Best Practices badge or Scorecard result. Prepared controls and missing public/governance
-criteria are in docs/openssf-readiness.md. No invented maintainer credentials, review signatures,
-branch protection, CI pass or signing identity. Local wheel/sdist and offline bundle are for
-review only. Reproducible-build measurements/checksums are supplied with the local artifacts;
-only the actually measured unsigned artifact equivalence may be claimed.
+Original code and synthetic fixtures: Apache-2.0. Two unmodified ISO XSDs are separately covered
+by retained SWIFTStandards terms and ISO repository policy; see NOTICE and the full rights
+register. The official downloads returned 403, so pinned public mirrors and documented
+provenance checks were used. No paid publication or proprietary scheme profile is bundled.
 
-Next required action: two independent human fixture/provenance reviews of the hashed six-case
-packet. Then continue the authorized implementation toward a rigorous 24-case v0.1 and, if
-all subsequent gates pass, three-version/60-reviewed-case v0.5. If reviewers establish a
-maintained equivalent, use docs/upstream-contingency.md instead. See docs/reproduce.md for commands.
+The offline bundle includes original native source archives and rebuild instructions:
+lxml BSD-3-Clause, libxml2/libxslt MIT, libiconv LGPL-2.1-or-later. Native LGPL source/notices
+must travel with redistribution. camt.053 is excluded because asset-specific redistribution
+basis remains unresolved; this is not a claim that redistribution is forbidden.
+
+## Performance and release evidence
+
+Measured 1,000 small pairs: 83.528335 pairs/s; p50 11.408343 ms; p95 15.103128 ms;
+peak RSS 40,504 KiB. This includes catalog compilation and cycles six initial pairs on
+Linux/WSL2, i9-14900HX, Python 3.12.3. Full environment and method: evidence/benchmark.json.
+These are local measurements, not production capacity promises.
+
+The release build script compares two separate clean source-copy wheel/sdist builds. Claim
+byte equivalence only when the delivered build-evidence.json says true. Native wheel
+reproducibility, independent reproduction and identity-backed signing are not claimed.
+Checksums and provenance are integrity evidence, not signatures.
+
+OpenSSF: Passing readiness documentation and scheduled Scorecard workflow prepared; no badge
+or actual Scorecard score. Public history, real maintainer/disclosure ownership, branch
+protection, required human release approval and hosted CI must be established by the owner.
+See docs/openssf-readiness.md and docs/github-publication.md. Public release remains subject
+to human review. Exact reproduction commands: docs/reproduce.md.

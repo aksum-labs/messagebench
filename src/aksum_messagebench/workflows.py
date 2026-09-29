@@ -21,10 +21,12 @@ def load_manifest(path: Path) -> tuple[dict, bytes]:
     ids = [case["id"] for case in document["cases"]]
     if len(ids) != len(set(ids)):
         raise BenchError("CORPUS_DUPLICATE_ID", 2)
+    if any(case["control"] not in ids for case in document["cases"]):
+        raise BenchError("CORPUS_CONTROL_MISSING", 2)
     return document, raw
 
 
-def suite(manifest: Path, outputs: Path, contract: Path) -> dict:
+def suite(manifest: Path, outputs: Path, contract: Path | None = None) -> dict:
     """Compare each corpus source against outputs/<case-id>.xml, ignoring oracle targets."""
     document, raw = load_manifest(manifest)
     results = []
@@ -35,7 +37,10 @@ def suite(manifest: Path, outputs: Path, contract: Path) -> dict:
             if hashlib.sha256(source).hexdigest() != case["source_sha256"]:
                 raise BenchError("CORPUS_HASH_MISMATCH", 2)
             result = compare(
-                manifest.parent / case["source"], outputs / (case["id"] + ".xml"), contract
+                manifest.parent / case["source"],
+                outputs / (case["id"] + ".xml"),
+                contract
+                or data_root() / "contracts" / case.get("contract", "pacs008-preserve.json"),
             )
             if result["source_sha256"] != case["source_sha256"]:
                 raise BenchError("CORPUS_SOURCE_CHANGED", 3)
@@ -56,13 +61,24 @@ def suite(manifest: Path, outputs: Path, contract: Path) -> dict:
 
 
 def load_result(path: Path) -> dict:
-    result, _ = load_json(path)
+    result, _ = load_json(path, limit=5 * 1024 * 1024)
+    return validate_result(result)
+
+
+def validate_result(result: dict) -> dict:
+    if result.get("kind") == "adapter-suite":
+        return validate_suite(result)
     schema, _ = load_json(data_root() / "schemas/report.schema.json")
     if not Draft202012Validator(schema).is_valid(result):
         raise BenchError("REPORT_INVALID", 2)
     ids = [check["id"] for check in result["assertions"]]
     if len(ids) != len(set(ids)):
         raise BenchError("REPORT_DUPLICATE_ASSERTION", 2)
+    for check in result["schema_checks"].values():
+        if (check["status"] == "PASS") != (check["exit_code"] == 0):
+            raise BenchError("REPORT_SCHEMA_STATUS_INCONSISTENT", 2)
+        if check["exit_code"] == 0 and check["code"] != "XSD_VALID":
+            raise BenchError("REPORT_SCHEMA_STATUS_INCONSISTENT", 2)
     codes = [check["exit_code"] for check in result["schema_checks"].values()]
     inputs_valid = all(check["status"] == "PASS" for check in result["schema_checks"].values())
     if inputs_valid:
@@ -95,6 +111,12 @@ def load_result(path: Path) -> dict:
 
 def regression(previous: dict, current: dict) -> dict:
     """Compare equivalent assertion scopes; a changed contract never silently passes."""
+    validate_result(previous)
+    validate_result(current)
+    if previous.get("kind") == "adapter-suite" and current.get("kind") == "adapter-suite":
+        return regression_suite(previous, current)
+    if "kind" in previous or "kind" in current:
+        raise BenchError("REPORT_KINDS_DIFFER", 2)
     scope_keys = ("contract_sha256", "schema_sha256", "extractor_version", "source_sha256")
     same_scope = all(previous[key] == current[key] for key in scope_keys)
     before = {check["id"]: check for check in previous["assertions"]}
@@ -127,6 +149,52 @@ def regression(previous: dict, current: dict) -> dict:
         "previous_sha256": hashlib.sha256(canonical_json(previous)).hexdigest(),
         "current_sha256": hashlib.sha256(canonical_json(current)).hexdigest(),
         "changes": changes,
+        "exit_code": code,
+        "overall": "PASS" if code == 0 else "FAIL" if code == 1 else "INDETERMINATE",
+        "limitations": [SCOPE_NOTICE, "Stored reports are untrusted claims, not signatures."],
+    }
+
+
+def validate_suite(result: dict) -> dict:
+    schema, _ = load_json(data_root() / "schemas/suite-report.schema.json")
+    if not Draft202012Validator(schema).is_valid(result):
+        raise BenchError("REPORT_INVALID", 2)
+    ids = [case["id"] for case in result["cases"]]
+    if len(ids) != len(set(ids)):
+        raise BenchError("REPORT_DUPLICATE_CASE", 2)
+    for case in result["cases"]:
+        if "assertions" in case["result"]:
+            validate_result(case["result"])
+    code = aggregate_exit([case["result"]["exit_code"] for case in result["cases"]])
+    overall = "PASS" if code == 0 else "FAIL" if code == 1 else "INDETERMINATE"
+    if code != result["exit_code"] or overall != result["overall"]:
+        raise BenchError("REPORT_STATUS_INCONSISTENT", 2)
+    return result
+
+
+def regression_suite(previous: dict, current: dict) -> dict:
+    before = {case["id"]: case["result"] for case in previous["cases"]}
+    after = {case["id"]: case["result"] for case in current["cases"]}
+    same_scope = (
+        previous["manifest_sha256"] == current["manifest_sha256"] and before.keys() == after.keys()
+    )
+    results = []
+    codes = [current["exit_code"], 0 if same_scope else 3]
+    for key in sorted(before.keys() & after.keys()):
+        if "assertions" in before[key] and "assertions" in after[key]:
+            delta = regression(before[key], after[key])
+            same_scope = same_scope and delta["same_scope"]
+            codes.append(delta["exit_code"])
+            results.append({"id": key, "result": delta})
+        else:
+            codes.append(3)
+            same_scope = False
+    code = aggregate_exit(codes)
+    return {
+        "schema_version": "1.0",
+        "kind": "suite-regression",
+        "same_scope": same_scope,
+        "cases": results,
         "exit_code": code,
         "overall": "PASS" if code == 0 else "FAIL" if code == 1 else "INDETERMINATE",
         "limitations": [SCOPE_NOTICE, "Stored reports are untrusted claims, not signatures."],

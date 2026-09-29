@@ -1,0 +1,44 @@
+name: Prepare reviewed release artifacts
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  prepare:
+    if: github.ref == 'refs/heads/main' && vars.RELEASE_PREPARATION_ENABLED == 'true'
+    environment: release-review
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r dependency-lock.txt
+      - run: python scripts/build_native.py --archives "$RUNNER_TEMP/native-sources" --out "$RUNNER_TEMP/native-wheels" --download
+      - run: python -m pip install --no-index --no-deps --force-reinstall "$RUNNER_TEMP"/native-wheels/*.whl
+      - run: python -m pip install --no-deps --no-build-isolation -e .
+      - run: ruff check src tests scripts fuzz
+      - run: mypy src
+      - run: pytest -q
+      - run: python scripts/check_secrets.py
+      - run: python scripts/check_licenses.py
+      - run: messagebench corpus verify
+      - run: python scripts/reproducible_build.py "$RUNNER_TEMP/release-artifacts" --require-clean
+      - run: python scripts/inventory.py
+      - run: python scripts/prepare_bundle.py --release "$RUNNER_TEMP/release-artifacts" --native "$RUNNER_TEMP/native-wheels" --archives "$RUNNER_TEMP/native-sources" --out "$RUNNER_TEMP/review-bundle"
+      - name: Fresh offline installation
+        run: |
+          python -m venv "$RUNNER_TEMP/install-check"
+          "$RUNNER_TEMP/install-check/bin/python" -m pip install --no-index --find-links "$RUNNER_TEMP/review-bundle/wheelhouse" --require-hashes -r "$RUNNER_TEMP/review-bundle/install-requirements.txt"
+          cd "$RUNNER_TEMP"
+          "$RUNNER_TEMP/install-check/bin/messagebench" corpus verify
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: unsigned-local-review-bundle
+          path: ${{ runner.temp }}/review-bundle
+          retention-days: 30
+# This workflow does not publish a package, GitHub release, tag, signature or badge.
+# The real repository must configure required reviewers on release-review before enabling it.

@@ -80,7 +80,7 @@
       ]
     }
   ],
-  "catalog_sha256": "e34cdc28d2ffb26d57a093c368387f7a1201e1f94a7eeb6fc3599b11224d347e",
+  "catalog_sha256": "b9074bcb13968a9468ec3edec33ec0747eeff65de18c53afc573b86177c05d06",
   "contract_id": "aksum.pacs008.preservation",
   "contract_sha256": "8f2f9fe300c6e4e696457b6a0c5440d13c7837e224d532ad81cfd9c9c591ffd0",
   "contract_version": "0.1.0",
@@ -175,10 +175,10 @@
     }
   },
   "exit_code": 1,
-  "extractor_version": "0.1.0",
+  "extractor_version": "0.2.0",
   "limitations": [
     "Pass means only the listed assertions passed for these inputs and versions.",
-    "Single-transaction pacs.008.001.08 subset. No business-rule compliance or certification. Independent review pending."
+    "Declared version-specific subset; single or uniquely keyed transaction association. No business-rule compliance or certification. Independent review pending."
   ],
   "overall": "FAIL",
   "schema_checks": {
@@ -201,5 +201,5 @@
   "schema_version": "1.0",
   "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
   "target_sha256": "ed27a8c335a5ee5df5f4dd8b51d2d992813bafdce7aeeea98853695e6d1e31aa",
-  "tool_version": "0.1.0a1"
+  "tool_version": "0.1.0a2"
 }

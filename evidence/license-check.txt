@@ -1,0 +1,2 @@
+Seven runtime distribution license declarations match reviewed policy.
+Native-component and standards-asset obligations remain in the rights register and native-build docs.

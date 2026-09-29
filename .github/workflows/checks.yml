@@ -17,10 +17,16 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r dependency-lock.txt
+      - name: Build reviewed native XML dependencies
+        run: python scripts/build_native.py --archives "$RUNNER_TEMP/messagebench-native-sources" --out "$RUNNER_TEMP/messagebench-native-wheels" --download
+      - name: Install local native wheel
+        run: python -m pip install --no-index --no-deps --force-reinstall "$RUNNER_TEMP"/messagebench-native-wheels/*.whl
       - run: python -m pip install --no-deps --no-build-isolation -e .
       - run: ruff check src tests scripts fuzz
       - run: ruff format --check src tests scripts fuzz
       - run: mypy src
+      - run: python scripts/check_secrets.py
+      - run: python scripts/check_licenses.py
       - run: coverage run -m pytest -q
       - run: coverage json -o coverage-ci.json
       - run: python scripts/check_coverage.py coverage-ci.json
@@ -28,6 +34,7 @@ jobs:
       - run: bandit -r src -ll
       - run: messagebench corpus verify corpus/index.json
       - run: messagebench corpus verify corpus/extended/index.json --contract contracts/pacs008-extended.json
+      - run: messagebench corpus verify corpus/pacs002/index.json --contract contracts/pacs002-preserve.json
       - run: python -m build --no-isolation
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
@@ -45,4 +52,4 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r dependency-lock.txt
-      - run: pip-audit --strict --disable-pip -r dependency-lock.txt
+      - run: pip-audit --strict --disable-pip --no-deps -r dependency-lock.txt

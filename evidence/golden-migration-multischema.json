@@ -1,0 +1,23 @@
+{
+  "current": {
+    "currency-changed": "0b2be695d9c95ed2258dab6407fcb5c76473291a6047cbb484e6d5aa369eac72",
+    "identity": "149955b4b00dd325047b8ea119325863aab1d93e02d87e7e758effe0b1b84ee7",
+    "leading-zero-loss": "31e66afc540054bfbfcb2c430936504458f6d2a3db3f893351891d053c341979",
+    "message-id-regenerated": "f11920a85ec36aff4c8718c0cc1e7437af0def95ba4327d49e8aca31c5eef047",
+    "reference-truncated": "62387783aef30c7e6bc3af8e079c17e928bd11f97423cbf70ed06d30ed848d97",
+    "remittance-removed": "69d34f604a21e85ebe4a975202e6a2e94a8c9ae254b7d0904702a5f2db03c8a1"
+  },
+  "previous": {
+    "currency-changed": "01ce96a66bb11ba7a4e366dd937f4f1a1e2a90d51cccfae7d191951fa65fd367",
+    "identity": "2239f692b14a78525726ea3b656a78e01c65ceaf46ca0df1e63df29d660f1b60",
+    "leading-zero-loss": "8051aac01623fd163c36b62bb1d67d734bc82440e8272307f6137b9ae09826e2",
+    "message-id-regenerated": "5d343a471630110a3b434de9b1eb1e43697384ccae93462ef0419100f93d368e",
+    "reference-truncated": "b5b002a8be12bb429fde4d12ed5d286eec1a573dca17aae1a578dde6d1888835",
+    "remittance-removed": "5aebae52ec7499ade38cd91369ce3fb63734d9619dd2cb52f32d032dc870ff55"
+  },
+  "reason": "Second hash-pinned schema catalog and version-neutral scope notice; assertion classifications and coverage unchanged.",
+  "verified_changed_keys": [
+    "catalog_sha256",
+    "limitations"
+  ]
+}

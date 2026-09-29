@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<iso:Document xmlns:iso="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08"><iso:FIToFICstmrCdtTrf>
+    <iso:GrpHdr>
+      <iso:MsgId>AKSUM-SYNTHETIC-0001</iso:MsgId>
+      <iso:CreDtTm>2026-09-29T00:00:00Z</iso:CreDtTm>
+      <iso:NbOfTxs>1</iso:NbOfTxs>
+      <iso:SttlmInf><iso:SttlmMtd>CLRG</iso:SttlmMtd></iso:SttlmInf>
+    </iso:GrpHdr>
+    <iso:CdtTrfTxInf>
+      <iso:PmtId><iso:EndToEndId>INV-2026-000123</iso:EndToEndId><iso:TxId>SYNTHETIC-TX-0001</iso:TxId></iso:PmtId>
+      <iso:IntrBkSttlmAmt Ccy="ETB">1250.50</iso:IntrBkSttlmAmt>
+      <iso:ChrgBr>SHAR</iso:ChrgBr>
+      <iso:Dbtr><iso:Nm>Fictional Payer</iso:Nm></iso:Dbtr>
+      <iso:DbtrAcct><iso:Id><iso:Othr><iso:Id>0000123400</iso:Id><iso:SchmeNm><iso:Prtry>SYNTHETIC</iso:Prtry></iso:SchmeNm><iso:Issr>FICTIONAL-ISSUER</iso:Issr></iso:Othr></iso:Id></iso:DbtrAcct>
+      <iso:DbtrAgt><iso:FinInstnId><iso:Othr><iso:Id>FICTIONAL-DEBTOR-AGENT</iso:Id></iso:Othr></iso:FinInstnId></iso:DbtrAgt>
+      <iso:CdtrAgt><iso:FinInstnId><iso:Othr><iso:Id>FICTIONAL-CREDITOR-AGENT</iso:Id></iso:Othr></iso:FinInstnId></iso:CdtrAgt>
+      <iso:Cdtr><iso:Nm>Fictional Recipient</iso:Nm></iso:Cdtr>
+      <iso:RmtInf><iso:Ustrd>INVOICE 000123</iso:Ustrd><iso:Ustrd>ሙከራ</iso:Ustrd></iso:RmtInf>
+    </iso:CdtTrfTxInf>
+  </iso:FIToFICstmrCdtTrf>
+</iso:Document>

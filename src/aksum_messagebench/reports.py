@@ -25,6 +25,9 @@ def render(report: dict, format: str) -> bytes:
             lines.append(f"{side} XSD: {check['status']} ({check['code']})")
         for check in report.get("assertions", []):
             lines.append(f"{check['status']} {check['id']} ({check['code']})")
+        for case in report.get("cases", []):
+            lines.append("Case: " + case["id"])
+            lines.append(render(case["result"], "text").decode("utf-8").rstrip())
         lines.append(SCOPE_NOTICE)
         return ("\n".join(lines) + "\n").encode("utf-8")
     if format == "html":
@@ -45,6 +48,22 @@ def render(report: dict, format: str) -> bytes:
             for side, check in report.get("schema_checks", {}).items()
         ]
         checks.extend(report.get("assertions", []))
+        for item in report.get("cases", []):
+            child = item["result"]
+            child_checks = [
+                {"id": side + "-schema", **check, "required": True}
+                for side, check in child.get("schema_checks", {}).items()
+            ] + child.get("assertions", [])
+            if not child_checks:
+                child_checks = [
+                    {
+                        "id": "evidence",
+                        "required": True,
+                        "status": "INDETERMINATE",
+                        "code": child.get("code", "INCOMPLETE"),
+                    }
+                ]
+            checks.extend({**check, "id": item["id"] + "/" + check["id"]} for check in child_checks)
         suite = ElementTree.Element("testsuite", name="MessageBench", tests=str(len(checks)))
         failures = errors = skipped = 0
         for check in checks:

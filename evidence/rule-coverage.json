@@ -1,59 +1,322 @@
 {
+  "all_required_assertions_have_targeted_cases": true,
   "assertions": [
     {
-      "allowed_change_control": "message-id-regenerated",
       "assertion": "PERMIT-MESSAGE-ID-REGENERATION",
-      "comparator": "allowed-regeneration",
-      "field": "message.id",
-      "independent_review": "pending",
-      "positive_control": "identity",
-      "targeted_semantic_loss_cases": []
+      "contract": "contracts/pacs008-preserve.json",
+      "covered": true,
+      "evidence_kind": "false-positive mutation rejects permitted regeneration",
+      "required": true,
+      "targeted_cases": [
+        "message-id-regenerated"
+      ]
     },
     {
-      "allowed_change_control": null,
       "assertion": "PRESERVE-DEBTOR-ACCOUNT",
-      "comparator": "exact-identifier",
-      "field": "transactions.debtor_account",
-      "independent_review": "pending",
-      "positive_control": "identity",
-      "targeted_semantic_loss_cases": [
+      "contract": "contracts/pacs008-preserve.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
         "leading-zero-loss"
       ]
     },
     {
-      "allowed_change_control": null,
       "assertion": "PRESERVE-END-TO-END-ID",
-      "comparator": "exact-identifier",
-      "field": "transactions.end_to_end_id",
-      "independent_review": "pending",
-      "positive_control": "identity",
-      "targeted_semantic_loss_cases": [
+      "contract": "contracts/pacs008-preserve.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
         "reference-truncated"
       ]
     },
     {
-      "allowed_change_control": null,
       "assertion": "PRESERVE-REMITTANCE",
-      "comparator": "multiset",
-      "field": "transactions.remittance",
-      "independent_review": "pending",
-      "positive_control": "identity",
-      "targeted_semantic_loss_cases": [
+      "contract": "contracts/pacs008-preserve.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
         "remittance-removed"
       ]
     },
     {
-      "allowed_change_control": null,
       "assertion": "PRESERVE-SETTLEMENT-AMOUNT",
-      "comparator": "decimal-and-currency-equal",
-      "field": "transactions.settlement_amount",
-      "independent_review": "pending",
-      "positive_control": "identity",
-      "targeted_semantic_loss_cases": [
+      "contract": "contracts/pacs008-preserve.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
         "currency-changed"
+      ]
+    },
+    {
+      "assertion": "PERMIT-MESSAGE-ID-REGENERATION",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "false-positive mutation rejects permitted regeneration",
+      "required": true,
+      "targeted_cases": [
+        "regenerated-message-id"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-DEBTOR-ACCOUNT",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "debtor-account-changed"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-END-TO-END-ID",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "end-to-end-id-changed"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-REMITTANCE",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "remittance-removed",
+        "remittance-duplicated",
+        "ethiopic-remittance-changed",
+        "whitespace-trimmed"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-SETTLEMENT-AMOUNT",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "settlement-amount-changed",
+        "currency-changed",
+        "batch-amount-swapped"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-TRANSACTION-ID",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "association-precondition mutation; expected INDETERMINATE, not a guessed match",
+      "required": true,
+      "targeted_cases": [
+        "transaction-id-changed",
+        "batch-duplicate-key"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-INSTRUCTION-ID",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "instruction-id-changed"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-DEBTOR-ACCOUNT-IBAN",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "debtor-account-iban-changed"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-DEBTOR-ACCOUNT-SCHEME-CODE",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "debtor-account-scheme-code-changed"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-DEBTOR-ACCOUNT-SCHEME-PROPRIETARY",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "debtor-account-scheme-proprietary-changed"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-DEBTOR-ACCOUNT-ISSUER",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "debtor-account-issuer-changed"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-DEBTOR-AGENT-BIC",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "debtor-agent-bic-changed"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-DEBTOR-AGENT-OTHER-ID",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "debtor-agent-other-id-changed"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-CREDITOR-ACCOUNT",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "creditor-account-changed"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-CREDITOR-ACCOUNT-IBAN",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "creditor-account-iban-changed"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-CREDITOR-ACCOUNT-ISSUER",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "creditor-account-issuer-changed"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-CREDITOR-AGENT-BIC",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "creditor-agent-bic-changed"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-DEBTOR-NAME",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "debtor-name-changed"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-CREDITOR-NAME",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "creditor-name-changed"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-INSTRUCTED-AMOUNT",
+      "contract": "contracts/pacs008-extended.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "instructed-amount-changed"
+      ]
+    },
+    {
+      "assertion": "PERMIT-MESSAGE-ID-REGENERATION",
+      "contract": "contracts/pacs002-preserve.json",
+      "covered": true,
+      "evidence_kind": "false-positive mutation rejects permitted regeneration",
+      "required": true,
+      "targeted_cases": [
+        "regenerated-message-id"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-ORIGINAL-END-TO-END-ID",
+      "contract": "contracts/pacs002-preserve.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "original-reference-truncated"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-ORIGINAL-TRANSACTION-ID",
+      "contract": "contracts/pacs002-preserve.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "original-transaction-changed"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-STATUS",
+      "contract": "contracts/pacs002-preserve.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "status-changed"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-REASON-CODES",
+      "contract": "contracts/pacs002-preserve.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "reason-code-changed"
+      ]
+    },
+    {
+      "assertion": "PRESERVE-REASON-TEXT",
+      "contract": "contracts/pacs002-preserve.json",
+      "covered": true,
+      "evidence_kind": "preservation failure",
+      "required": true,
+      "targeted_cases": [
+        "reason-text-removed"
       ]
     }
   ],
-  "authority": "engineering-contract",
-  "review_status": "pending"
+  "scope": "Includes false-positive and key-association operators; not a general mutation-completeness proof."
 }

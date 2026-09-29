@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0",
+  "version": "0.1.0",
+  "review_status": "pending-independent-human-review",
+  "cases": [
+    {
+      "id": "identity",
+      "source": "identity.source.xml",
+      "source_sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "target": "identity.target.xml",
+      "target_sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Explicit status-report preservation mutation or permitted-change control: identity",
+      "control": "identity",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; no institutional records or scheme rules.",
+      "reviewers": []
+    },
+    {
+      "id": "regenerated-message-id",
+      "source": "regenerated-message-id.source.xml",
+      "source_sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "target": "regenerated-message-id.target.xml",
+      "target_sha256": "6e4df70dcb7ccdbf46af39fc752edc699e2579783b91c8a962d44389c5ffc849",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Explicit status-report preservation mutation or permitted-change control: regenerated-message-id",
+      "control": "identity",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; no institutional records or scheme rules.",
+      "reviewers": []
+    },
+    {
+      "id": "original-reference-truncated",
+      "source": "original-reference-truncated.source.xml",
+      "source_sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "target": "original-reference-truncated.target.xml",
+      "target_sha256": "3e25fef07616321ec7f7f2d4dc8addb4df1f1b3392c34b0870f6e29c78ef5234",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-ORIGINAL-END-TO-END-ID"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Explicit status-report preservation mutation or permitted-change control: original-reference-truncated",
+      "control": "identity",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; no institutional records or scheme rules.",
+      "reviewers": []
+    },
+    {
+      "id": "original-transaction-changed",
+      "source": "original-transaction-changed.source.xml",
+      "source_sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "target": "original-transaction-changed.target.xml",
+      "target_sha256": "260fd28991a2d2b142a985b5c23393d13e2ae0aa95e05c3990d564114312390f",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-ORIGINAL-TRANSACTION-ID"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Explicit status-report preservation mutation or permitted-change control: original-transaction-changed",
+      "control": "identity",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; no institutional records or scheme rules.",
+      "reviewers": []
+    },
+    {
+      "id": "status-changed",
+      "source": "status-changed.source.xml",
+      "source_sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "target": "status-changed.target.xml",
+      "target_sha256": "9d3a59c7d368a82219a14affb45e77d5029596aaf3f28dc05503a06a62df917a",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-STATUS"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Explicit status-report preservation mutation or permitted-change control: status-changed",
+      "control": "identity",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; no institutional records or scheme rules.",
+      "reviewers": []
+    },
+    {
+      "id": "reason-code-changed",
+      "source": "reason-code-changed.source.xml",
+      "source_sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "target": "reason-code-changed.target.xml",
+      "target_sha256": "b2899649345fee4e78f1ef1adf353be17770f827319d22626f93c7963aa691ea",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REASON-CODES"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Explicit status-report preservation mutation or permitted-change control: reason-code-changed",
+      "control": "identity",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; no institutional records or scheme rules.",
+      "reviewers": []
+    },
+    {
+      "id": "reason-text-removed",
+      "source": "reason-text-removed.source.xml",
+      "source_sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "target": "reason-text-removed.target.xml",
+      "target_sha256": "d137c93fa279f5f4064470f21487b34288da7827f394b63f93cb30faa2d52af8",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REASON-TEXT"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Explicit status-report preservation mutation or permitted-change control: reason-text-removed",
+      "control": "identity",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; no institutional records or scheme rules.",
+      "reviewers": []
+    },
+    {
+      "id": "reason-text-reordered",
+      "source": "reason-text-reordered.source.xml",
+      "source_sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "target": "reason-text-reordered.target.xml",
+      "target_sha256": "331cb5e0ba8530e991553ee93466e7ff6847cdd60b0fe771507c7065a185e588",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Explicit status-report preservation mutation or permitted-change control: reason-text-reordered",
+      "control": "identity",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; no institutional records or scheme rules.",
+      "reviewers": []
+    }
+  ]
+}

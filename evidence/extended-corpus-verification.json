@@ -517,6 +517,182 @@
       "expectation_matched": true,
       "id": "remittance-reordered",
       "report_sha256": "36445bedf758c2d01ae02085798d5f98fbba46f0382fa65a05ae5b4204429246"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "regenerated-message-id",
+      "report_sha256": "57327e311483c1185862fe7c46bc4ed343ebff5956fcd6d25a31c81f97c10210"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "prefix-renamed",
+      "report_sha256": "7e7bdade20fa97ef250c52270fa80ba3383fe9e12f8249530cb56fdf8403821a"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "decimal-lexical-change",
+      "report_sha256": "5decb1a4c953c811a9c7ec9afd4d7e0b710a25130160b1d9d03f45a9f3396099"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-SETTLEMENT-AMOUNT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "currency-changed",
+      "report_sha256": "9add51aeb5f9ef886ac84924697471ea66a8043f3ddbf9b380bdb31c4e891a70"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REMITTANCE"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "ethiopic-remittance-changed",
+      "report_sha256": "135bcbc8719ddb72babefa7ea7cba2d39919a215895800bf1216a14ac50b601d"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "whitespace-control",
+      "report_sha256": "edd45ef0857dd3237c4ebe837043eb34ea8fb943b0c5ec0cfa965519af3feb44"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REMITTANCE"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "whitespace-trimmed",
+      "report_sha256": "2a0c32b77e7515ec49653b8a6ac6546e756a01caf8b60e11e274d932ea8ef222"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "batch-control",
+      "report_sha256": "2e5ff26d5a5a981d21428044c5a111ec4cc0c0c28baf9abe9c361e43d8e2f273"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "batch-reordered",
+      "report_sha256": "7d5f01a79fa6c8f8d5c1dfc026e980921d1d92540bb05643566a9f0743f633f9"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-SETTLEMENT-AMOUNT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "batch-amount-swapped",
+      "report_sha256": "dddf9a3aa362fa12dd4ddd2225fff4e79c399aab17b0125d85caa4e3aad88dc4"
+    },
+    {
+      "actual": {
+        "exit_code": 3,
+        "failed_assertions": [],
+        "overall": "INDETERMINATE",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "batch-duplicate-key",
+      "report_sha256": "d5d8835b11f2daaa47c8265ec7c0c446dc9189f31602f3ecb4ce3b8ce99d28e2"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "unsupported-extension-control",
+      "report_sha256": "f906766622accb9855047b7f6865984165d185178cb05c3f9d7e46e23b550b30"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "unsupported-extension-change",
+      "report_sha256": "8922fc2076930e20702db92d389789928221e7e8b6527ecbef275eda3e51bc66"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "FAIL"
+      },
+      "expectation_matched": true,
+      "id": "invalid-target-xsd",
+      "report_sha256": "4e991ea745e2dda9d58971ccc4fb4641974c8cd10c3facc8fbb85f553a2665ba"
     }
   ],
   "exit_code": 0,
@@ -526,7 +702,7 @@
     "Pass means only the listed assertions passed for these inputs and versions.",
     "Verification of recorded expectations is not independent review."
   ],
-  "manifest_sha256": "6b5f031ded842e4c8dd521d566d6fc2e03402fa03dcf406ce07e97b0511bb709",
+  "manifest_sha256": "5d54babc61f9306a301979589eb05b05b6bf4a595c3da4b9d847f6b7b3f5cb32",
   "overall": "PASS",
   "review_status": "pending-independent-human-review",
   "schema_version": "1.0"

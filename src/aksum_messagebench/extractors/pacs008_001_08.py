@@ -9,6 +9,7 @@ from ..schema_catalog import NAMESPACE
 
 VERSION = "0.2.0"
 Q = "{" + NAMESPACE + "}"
+TRANSACTIONS = Q + "FIToFICstmrCdtTrf/" + Q + "CdtTrfTxInf"
 FIELDS = {
     "message.id": ("GrpHdr/MsgId", "text", "single"),
     "transactions.debtor_account": (

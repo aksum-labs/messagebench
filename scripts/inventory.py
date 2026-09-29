@@ -1,8 +1,10 @@
 """Record Python/native dependencies and asset rights; no network access."""
 
+import ctypes
 import hashlib
 import importlib.metadata as metadata
 import json
+import tomllib
 from pathlib import Path
 
 from lxml import etree
@@ -22,6 +24,8 @@ inventory = []
 for dist in sorted(metadata.distributions(), key=lambda d: d.metadata["Name"].lower()):
     name = dist.metadata["Name"]
     normalized = name.lower().replace("_", "-")
+    if normalized == "aksum-messagebench":
+        continue
     terms = (
         dist.metadata.get("License-Expression")
         or dist.metadata.get("License")
@@ -47,7 +51,7 @@ for dist in sorted(metadata.distributions(), key=lambda d: d.metadata["Name"].lo
             "properties": [{"name": "aksum:role", "value": item["role"]}],
         }
     )
-for name, version, source, license in [
+native_components = [
     (
         "libxml2",
         ".".join(map(str, etree.LIBXML_VERSION)),
@@ -60,7 +64,21 @@ for name, version, source, license in [
         "https://gitlab.gnome.org/GNOME/libxslt",
         "MIT",
     ),
-]:
+]
+try:
+    iconv_version = ctypes.c_int.in_dll(ctypes.CDLL(etree.__file__), "_libiconv_version").value
+except (ValueError, OSError):
+    iconv_version = None
+if iconv_version is not None:
+    native_components.append(
+        (
+            "libiconv",
+            f"{iconv_version >> 8}.{iconv_version & 255}",
+            "https://www.gnu.org/software/libiconv/",
+            "LGPL-2.1-or-later",
+        )
+    )
+for name, version, source, license in native_components:
     inventory.append(
         {
             "name": name,
@@ -94,6 +112,17 @@ for name, file, source, version, license, status in [
         "Include unmodified and royalty-free with terms retained; sections 2 and 4 permit "
         "supporting software and royalty-free sublicensing; section 3 limitations apply. "
         "Not Apache-2.0.",
+    ),
+    (
+        "pacs.002.001.10 full XSD",
+        "schemas/iso/pacs.002.001.10.xsd",
+        "https://raw.githubusercontent.com/phoughton/pyiso20022/"
+        "cfb785fcc5174b09adee1419eb83743c85c79398/"
+        "xsd/payments_clearing_and_settlement/pacs.002/pacs.002.001.10.xsd",
+        "pacs.002.001.10",
+        "LicenseRef-SWIFTStandards-2005",
+        "Include unmodified with retained terms under supporting-software and royalty-free "
+        "sublicensing provisions. Not Apache-2.0.",
     ),
     (
         "SWIFTStandards terms",
@@ -163,10 +192,14 @@ bom = {
     "specVersion": "1.6",
     "version": 1,
     "metadata": {
-        "component": {"type": "application", "name": "aksum-messagebench", "version": "0.1.0a1"}
+        "component": {
+            "type": "application",
+            "name": "aksum-messagebench",
+            "version": tomllib.loads((root / "pyproject.toml").read_text())["project"]["version"],
+        }
     },
     "components": components,
-    "dependencies": [{"ref": "lxml", "dependsOn": ["libxml2", "libxslt"]}],
+    "dependencies": [{"ref": "lxml", "dependsOn": [item[0] for item in native_components]}],
 }
 (root / "evidence/sbom.cdx.json").write_text(json.dumps(bom, sort_keys=True, indent=2) + "\n")
 lines = [i["name"] + "==" + i["version"] for i in inventory if i["role"] == "runtime"]

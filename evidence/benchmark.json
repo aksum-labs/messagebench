@@ -6,8 +6,8 @@
   "iterations": 1000,
   "libxml2": [
     2,
-    14,
-    6
+    15,
+    4
   ],
   "lxml": [
     6,
@@ -18,9 +18,9 @@
   "memory_reported_by_os": "MemTotal:       16375448 kB",
   "method": "In-process full compare including file reads, contract validation and schema compilation each iteration; six small pairs cycled, OS cache warm; no CLI startup. RSS is process peak, not incremental allocation. Shared host, single run; not an SLA or large/batch performance claim.",
   "os": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
-  "p50_ms": 5.716113,
-  "p95_ms": 7.659291,
-  "peak_rss_kib": 36844,
+  "p50_ms": 11.408342999999999,
+  "p95_ms": 15.103128,
+  "peak_rss_kib": 40504,
   "python": "3.12.3",
-  "throughput_pairs_per_second": 167.25544130609356
+  "throughput_pairs_per_second": 83.52833508318916
 }

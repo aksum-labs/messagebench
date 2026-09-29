@@ -92,6 +92,10 @@ DEFAULT_LIMITS = Limits()
 def parse_xml(data: bytes, limits: Limits = DEFAULT_LIMITS):
     if len(data) > limits.size:
         raise BenchError("INPUT_SIZE_LIMIT", 4)
+    # Fail closed on the older native versions observed in the stock Python wheel.
+    # This minimum profile is not a claim that later versions are vulnerability-free.
+    if etree.LIBXML_VERSION < (2, 15, 4) or etree.LIBXSLT_VERSION < (1, 1, 45):
+        raise BenchError("NATIVE_XML_PROFILE_UNSUPPORTED", 3)
     parser = etree.XMLParser(
         target=BoundedTree(limits),
         resolve_entities=False,

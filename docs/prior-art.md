@@ -40,3 +40,17 @@ synthetic pairs and a preservation-contract extension upstream. Prioritize mx200
 examples and round-trip evidence, CBPR-UR for separation of applicability and preservation,
 or Mojaloop when the actual need is protocol testing. Do not send a proposal without user
 authorization. No upstream outreach or contribution has been made in this sprint.
+
+## Additional follow-up: Pactus / iso20022-mcp
+
+Inspected 29 September 2026 at commit
+[`634f3bff3b2927653427835c48ee03f3577191df`](https://github.com/deniskarlinsky/iso20022-mcp/tree/634f3bff3b2927653427835c48ee03f3577191df)
+(committed 12 May 2026). The README, Python source tree,
+[`core/validators.py`](https://github.com/deniskarlinsky/iso20022-mcp/blob/634f3bff3b2927653427835c48ee03f3577191df/src/pactus/core/validators.py)
+and MCP tool registration were inspected. Its four message parsers and four XSD validators
+are useful overlapping infrastructure. Validation takes one XML document and uses lxml
+XMLSchema; the inspected MCP interface has no paired preservation-contract or coverage
+accounting tool. This is source inspection, not an execution benchmark or proof about all
+future releases. Do not rebuild its MCP assistant interface here; reuse upstream parsing
+models if a future integration needs them. MessageBench's bounded paired-file oracle,
+explicit contract semantics and declared-coverage reports remain a different contribution.

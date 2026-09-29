@@ -142,6 +142,20 @@
       "version": "11.12.0"
     },
     {
+      "bom-ref": "cython",
+      "name": "Cython",
+      "properties": [
+        {
+          "name": "aksum:role",
+          "value": "development"
+        }
+      ],
+      "purl": "pkg:pypi/cython@3.2.9",
+      "scope": "optional",
+      "type": "library",
+      "version": "3.2.9"
+    },
+    {
       "bom-ref": "defusedxml",
       "name": "defusedxml",
       "properties": [
@@ -154,6 +168,20 @@
       "scope": "optional",
       "type": "library",
       "version": "0.7.1"
+    },
+    {
+      "bom-ref": "detect-secrets",
+      "name": "detect-secrets",
+      "properties": [
+        {
+          "name": "aksum:role",
+          "value": "development"
+        }
+      ],
+      "purl": "pkg:pypi/detect-secrets@1.5.0",
+      "scope": "optional",
+      "type": "library",
+      "version": "1.5.0"
     },
     {
       "bom-ref": "elementpath",
@@ -430,10 +458,10 @@
           "value": "development"
         }
       ],
-      "purl": "pkg:pypi/pip@24.0",
+      "purl": "pkg:pypi/pip@26.2.1",
       "scope": "optional",
       "type": "library",
-      "version": "24.0"
+      "version": "26.2.1"
     },
     {
       "bom-ref": "pip-requirements-parser",
@@ -660,6 +688,20 @@
       "version": "0.16.9"
     },
     {
+      "bom-ref": "setuptools",
+      "name": "setuptools",
+      "properties": [
+        {
+          "name": "aksum:role",
+          "value": "development"
+        }
+      ],
+      "purl": "pkg:pypi/setuptools@84.0.0",
+      "scope": "optional",
+      "type": "library",
+      "version": "84.0.0"
+    },
+    {
       "bom-ref": "sortedcontainers",
       "name": "sortedcontainers",
       "properties": [
@@ -795,10 +837,10 @@
         }
       ],
       "name": "libxml2",
-      "purl": "pkg:generic/libxml2@2.14.6",
+      "purl": "pkg:generic/libxml2@2.15.4",
       "scope": "required",
       "type": "library",
-      "version": "2.14.6"
+      "version": "2.15.4"
     },
     {
       "bom-ref": "libxslt",
@@ -810,10 +852,25 @@
         }
       ],
       "name": "libxslt",
-      "purl": "pkg:generic/libxslt@1.1.43",
+      "purl": "pkg:generic/libxslt@1.1.45",
       "scope": "required",
       "type": "library",
-      "version": "1.1.43"
+      "version": "1.1.45"
+    },
+    {
+      "bom-ref": "libiconv",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "name": "libiconv",
+      "purl": "pkg:generic/libiconv@1.19",
+      "scope": "required",
+      "type": "library",
+      "version": "1.19"
     },
     {
       "bom-ref": "schemas/iso/pacs.008.001.08.xsd",
@@ -824,6 +881,17 @@
         }
       ],
       "name": "pacs.008.001.08 full XSD",
+      "type": "file"
+    },
+    {
+      "bom-ref": "schemas/iso/pacs.002.001.10.xsd",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d14da6304db5178b1afc7d8ed6cc6073e6e1a143fc79d9ba66d3246d4a654e90"
+        }
+      ],
+      "name": "pacs.002.001.10 full XSD",
       "type": "file"
     },
     {
@@ -853,7 +921,8 @@
     {
       "dependsOn": [
         "libxml2",
-        "libxslt"
+        "libxslt",
+        "libiconv"
       ],
       "ref": "lxml"
     }
@@ -862,7 +931,7 @@
     "component": {
       "name": "aksum-messagebench",
       "type": "application",
-      "version": "0.1.0a1"
+      "version": "0.1.0a2"
     }
   },
   "specVersion": "1.6",

@@ -1,11 +1,6 @@
 {
   "reference_date": "2026-09-29",
-  "assessment": "Open; bundled-version findings identified, patch build in progress.",
-  "observed": {
-    "lxml": "6.1.3",
-    "libxml2": "2.14.6",
-    "libxslt": "1.1.43"
-  },
+  "assessment": "Selected native advisories triaged against pinned upgraded sources and runtime entry points. No confirmed unresolved critical/high exploitable finding in MessageBench was identified by these checks. This is bounded review, not proof of absence of vulnerabilities or an independent audit.",
   "python_scan_limitation": "A zero-advisory pip-audit result does not cover all native bundled libraries.",
   "findings": [
     {
@@ -14,7 +9,8 @@
       "area": "xmlDictAddQString integer overflow",
       "source": "https://security-tracker.debian.org/tracker/CVE-2026-86138",
       "upstream_fixed_version": "2.15.4",
-      "reachability": "Not proven. Name/input quotas reduce exposure but do not establish non-exploitability."
+      "reachability": "Not proven. Name/input quotas reduce exposure but do not establish non-exploitability.",
+      "current_disposition": "Upgraded native component reaches the upstream fixed version recorded above; original-wheel reachability notes are historical."
     },
     {
       "id": "CVE-2026-86142",
@@ -22,7 +18,8 @@
       "area": "XPointer evaluation",
       "source": "https://security-tracker.debian.org/tracker/CVE-2026-86142",
       "upstream_fixed_version": "2.15.4",
-      "reachability": "No XPointer evaluation or XInclude expansion in runtime; source-inspection inference, not a formal proof."
+      "reachability": "No XPointer evaluation or XInclude expansion in runtime; source-inspection inference, not a formal proof.",
+      "current_disposition": "Upgraded native component reaches the upstream fixed version recorded above; original-wheel reachability notes are historical."
     },
     {
       "id": "CVE-2025-10911",
@@ -30,7 +27,20 @@
       "area": "XSL node processing use-after-free",
       "source": "https://security-tracker.debian.org/tracker/CVE-2025-10911",
       "upstream_target_version": "1.1.45",
-      "reachability": "MessageBench does not execute XSLT. Library still bundled by lxml; target patch build avoids relying solely on unused feature assessment."
+      "reachability": "MessageBench does not execute XSLT. Library still bundled by lxml; target patch build avoids relying solely on unused feature assessment.",
+      "current_disposition": "Upgraded native component reaches the upstream fixed version recorded above; original-wheel reachability notes are historical."
+    },
+    {
+      "id": "CVE-2025-7425",
+      "component": "libxslt",
+      "source": "https://security-tracker.debian.org/tracker/CVE-2025-7425",
+      "current_disposition": "Underlying libxslt issue remains tracked; libxml2 mitigation is documented by the tracker. Bundled libxml2 2.15.4 tree.c xmlFreeProp checks cur->id before removing IDs, rather than corrupted atype. No XSLT evaluation entry point exists in MessageBench. This is source-inspection reachability analysis, not a generic safety claim for all lxml uses."
+    },
+    {
+      "id": "CVE-2015-9019",
+      "component": "libxslt",
+      "source": "https://security-tracker.debian.org/tracker/source-package/libxslt",
+      "current_disposition": "EXSLT random-function issue; no EXSLT/XSLT execution in MessageBench."
     }
   ],
   "broader_advisory_indexes": [
@@ -43,5 +53,68 @@
     "source": "https://github.com/lxml/lxml/blob/lxml-6.1.3/buildlibxml.py",
     "patch": "https://github.com/lxml/lxml/blob/lxml-6.1.3/libxslt-1.1.43-backport1.patch",
     "observation": "lxml source applies a backport patch to libxslt 1.1.43. Version strings alone do not prove the wheel lacks fixes. Exact build/patch attribution has not been established for every advisory."
-  }
+  },
+  "original_wheel_observed": {
+    "lxml": "6.1.3",
+    "libxml2": "2.14.6",
+    "libxslt": "1.1.43"
+  },
+  "observed": {
+    "lxml": "6.1.3",
+    "libxml2": "2.15.4",
+    "libxslt": "1.1.45",
+    "libiconv": "1.19"
+  },
+  "local_build": {
+    "wheel_sha256": "8087330d264f18a0c25f9311b9122fcccb5cfb57a62761658acef37a76329799",
+    "flags": {
+      "CFLAGS": "-O2 -fPIC",
+      "CXXFLAGS": "-O2 -fPIC",
+      "STATIC_DEPS": "true",
+      "WITHOUT_ZLIB": "true",
+      "LIBICONV_VERSION": "1.19",
+      "LIBXML2_VERSION": "2.15.4",
+      "LIBXSLT_VERSION": "1.1.45"
+    },
+    "source_archives": [
+      {
+        "name": "libiconv-1.19.tar.gz",
+        "source": "https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.19.tar.gz",
+        "sha256": "88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6",
+        "bytes": 5921103
+      },
+      {
+        "name": "libxml2-2.15.4.tar.xz",
+        "source": "https://download.gnome.org/sources/libxml2/2.15/libxml2-2.15.4.tar.xz",
+        "sha256": "98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821",
+        "bytes": 3177444
+      },
+      {
+        "name": "libxslt-1.1.45.tar.xz",
+        "source": "https://download.gnome.org/sources/libxslt/1.1/libxslt-1.1.45.tar.xz",
+        "sha256": "9acfe68419c4d06a45c550321b3212762d92f41465062ca4ea19e632ee5d216e",
+        "bytes": 1519992
+      },
+      {
+        "name": "lxml-6.1.3.tar.gz",
+        "source": "https://files.pythonhosted.org/packages/23/ad/28ecd7cb894d172f3c9c80a075eeeb2017ac62e3632cee05a5f9493547eb/lxml-6.1.3.tar.gz",
+        "sha256": "45222d94ddd511536f3b2f7d9deae3b2339b4ce0f075f1ca25703b07cad9dd21",
+        "bytes": 4211198
+      }
+    ],
+    "scope": "Linux x86_64 CPython 3.12 local build; not a reproducible-build claim for lxml.",
+    "build_recipe": "scripts/build_native.py",
+    "build_helper_patch": "Pinned version directory bypass; no runtime lxml changes."
+  },
+  "libxml2_source_evidence": {
+    "archive_sha256": "98087fd181d9070724f3fbc65c7377db03038eb92bd882374daff44940138821",
+    "path": "libxml2-2.15.4/tree.c",
+    "function": "xmlFreeProp",
+    "inspection": "ID cleanup uses cur->id; NEWS records atype corruption hardening."
+  },
+  "remaining_limits": [
+    "Independent security review pending.",
+    "GNU libiconv full historical advisory enumeration was not completed.",
+    "Re-check native advisories before public release; minimum versions are not a permanent security guarantee."
+  ]
 }

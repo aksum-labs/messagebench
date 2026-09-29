@@ -23,7 +23,7 @@ packages = ["src/aksum_messagebench"]
 "corpus" = "aksum_messagebench/data/corpus"
 
 [tool.hatch.build.targets.sdist]
-include = ["src", "schemas", "contracts", "corpus", "tests", "scripts", "docs", "evidence", "examples", "*.md", "*.txt", "LICENSE", "NOTICE", "third-party", "pyproject.toml"]
+include = ["src", "schemas", "contracts", "corpus", "tests", "scripts", "docs", "evidence", "examples", "fuzz", ".github", ".secrets.baseline", "*.md", "*.txt", "LICENSE", "NOTICE", "third-party", "pyproject.toml"]
 
 [tool.pytest.ini_options]
 addopts = "-ra --strict-markers"
