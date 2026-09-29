@@ -1,0 +1,466 @@
+[
+  {
+    "name": "ast_serialize",
+    "version": "0.11.2",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/ast_serialize/0.11.2/",
+    "metadata_sha256": "e15bd3194f34f331d669d5e23b1d1e41efa389eb1e27d5f0c2a5000e1816fba4"
+  },
+  {
+    "name": "attrs",
+    "version": "26.1.0",
+    "role": "runtime",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/attrs/26.1.0/",
+    "metadata_sha256": "4cd40e690f23bf37cbcad34efd6758e062df1df07c86833f7e3ce95bf1fa38cc"
+  },
+  {
+    "name": "bandit",
+    "version": "1.9.4",
+    "role": "development",
+    "license_metadata": "Apache-2.0",
+    "source": "https://pypi.org/project/bandit/1.9.4/",
+    "metadata_sha256": "a5cffbefaf54c51418e19cf5765ded49af20b27a25b8eb440f21d9db50c9ce9a"
+  },
+  {
+    "name": "boolean.py",
+    "version": "5.0",
+    "role": "development",
+    "license_metadata": "BSD-2-Clause",
+    "source": "https://pypi.org/project/boolean.py/5.0/",
+    "metadata_sha256": "9e43aeae17a73073abee61deb5fb267dfdf0eeb67d6e3123270b52aac5ed87fa"
+  },
+  {
+    "name": "build",
+    "version": "1.6.1",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/build/1.6.1/",
+    "metadata_sha256": "f3623590844a25dcf308a71a988c73e293b7ef779a1f43acb83ad1be218d61a0"
+  },
+  {
+    "name": "CacheControl",
+    "version": "0.14.4",
+    "role": "development",
+    "license_metadata": "Apache-2.0",
+    "source": "https://pypi.org/project/CacheControl/0.14.4/",
+    "metadata_sha256": "a3b797a601ffe3505ce4b0c635363ccf26a9959f2490e902f841a4b5996b5cc4"
+  },
+  {
+    "name": "certifi",
+    "version": "2026.7.22",
+    "role": "development",
+    "license_metadata": "MPL-2.0",
+    "source": "https://pypi.org/project/certifi/2026.7.22/",
+    "metadata_sha256": "ef5af1638fbb23676ac3c5777dfcfc2cd9c348fe4172ed5ba3d277655b248090"
+  },
+  {
+    "name": "charset-normalizer",
+    "version": "3.5.1",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/charset-normalizer/3.5.1/",
+    "metadata_sha256": "955c93827d59f1280f6d6a76b1e11bfb999cc65a55df83a6f9b28b7bc0e467f6"
+  },
+  {
+    "name": "coverage",
+    "version": "7.16.2",
+    "role": "development",
+    "license_metadata": "Apache-2.0",
+    "source": "https://pypi.org/project/coverage/7.16.2/",
+    "metadata_sha256": "a5447449aa5b0b5a8b7c6a800434623a70c316750fcdde7ebd5b0b41fe756f99"
+  },
+  {
+    "name": "cyclonedx-python-lib",
+    "version": "11.12.0",
+    "role": "development",
+    "license_metadata": "Apache-2.0",
+    "source": "https://pypi.org/project/cyclonedx-python-lib/11.12.0/",
+    "metadata_sha256": "c7ce95aa4f8d1a8b762354ef93d6e3ec72cfd01ecf1db7ebb7997fd0b6568251"
+  },
+  {
+    "name": "defusedxml",
+    "version": "0.7.1",
+    "role": "development",
+    "license_metadata": "PSFL",
+    "source": "https://pypi.org/project/defusedxml/0.7.1/",
+    "metadata_sha256": "369d3cef64870daf849fba711cb8d05a7efe3c8d9ab0f763adc34079fe378bb1"
+  },
+  {
+    "name": "elementpath",
+    "version": "5.1.4",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/elementpath/5.1.4/",
+    "metadata_sha256": "75abcd4238e90f966725140e3aa165a1d1146f7d06c834c9057c12fa40ead809"
+  },
+  {
+    "name": "filelock",
+    "version": "4.0.6",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/filelock/4.0.6/",
+    "metadata_sha256": "34462157b6ba5a76a38569493a1bf78e458ac880cb6b4044e6e2e2def35e8dc6"
+  },
+  {
+    "name": "hatchling",
+    "version": "1.32.4",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/hatchling/1.32.4/",
+    "metadata_sha256": "528714963680f0a6518efd3ccadccfc2e8b4c9a6a82be0f71372dc9b0a9defe4"
+  },
+  {
+    "name": "hypothesis",
+    "version": "6.168.3",
+    "role": "development",
+    "license_metadata": "MPL-2.0",
+    "source": "https://pypi.org/project/hypothesis/6.168.3/",
+    "metadata_sha256": "06a4b20dcadd166ae593bbdb28e29fd05110eb07502f41b0793b28bb76437f37"
+  },
+  {
+    "name": "idna",
+    "version": "3.20",
+    "role": "development",
+    "license_metadata": "BSD-3-Clause",
+    "source": "https://pypi.org/project/idna/3.20/",
+    "metadata_sha256": "dbd8c14c1e4ca1e0c9824a6dbc7cbbf78884f38eb52d91148cd3025f671e4b85"
+  },
+  {
+    "name": "iniconfig",
+    "version": "2.3.0",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/iniconfig/2.3.0/",
+    "metadata_sha256": "40d773f84e4e112f495bbf4f1be9cbd2d456c0aeb6ef5311f75d1bf322f2165b"
+  },
+  {
+    "name": "jsonschema",
+    "version": "4.26.0",
+    "role": "runtime",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/jsonschema/4.26.0/",
+    "metadata_sha256": "05b189866ca98a96da3934bf6b83687ced3ff85325273b77e16b705f6d8b26d2"
+  },
+  {
+    "name": "jsonschema-specifications",
+    "version": "2025.9.1",
+    "role": "runtime",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/jsonschema-specifications/2025.9.1/",
+    "metadata_sha256": "35abd41757f32b4ea24756920ded47b70173d77cbc052a5a6d3ab583b2e8d89d"
+  },
+  {
+    "name": "librt",
+    "version": "0.16.0",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/librt/0.16.0/",
+    "metadata_sha256": "d8d86b1900c9bd2deee1d47b226769832d9854dba7911e07637873a142e88c1a"
+  },
+  {
+    "name": "license-expression",
+    "version": "30.4.4",
+    "role": "development",
+    "license_metadata": "Apache-2.0",
+    "source": "https://pypi.org/project/license-expression/30.4.4/",
+    "metadata_sha256": "1f8fc95adb7c2fead6d6b52cc2da09d4177b24bfac067f7a4dbdc666e72495fb"
+  },
+  {
+    "name": "lxml",
+    "version": "6.1.3",
+    "role": "runtime",
+    "license_metadata": "BSD-3-Clause",
+    "source": "https://pypi.org/project/lxml/6.1.3/",
+    "metadata_sha256": "aad89f8107bc74045b86c9b7f7c0984196102520dd7faed5e4e45693b7c315ef"
+  },
+  {
+    "name": "markdown-it-py",
+    "version": "4.2.0",
+    "role": "development",
+    "license_metadata": "Review package license files",
+    "source": "https://pypi.org/project/markdown-it-py/4.2.0/",
+    "metadata_sha256": "72c36ff516755443b1ecb61e17b2567a990230b49a504b0eb0c42d5f82448a9c"
+  },
+  {
+    "name": "mdurl",
+    "version": "0.1.2",
+    "role": "development",
+    "license_metadata": "Review package license files",
+    "source": "https://pypi.org/project/mdurl/0.1.2/",
+    "metadata_sha256": "b53b29d48f499367053fda3c81e7ce27d2558380ebbf83e66023b02eb7ddd25d"
+  },
+  {
+    "name": "msgpack",
+    "version": "1.2.3",
+    "role": "development",
+    "license_metadata": "Apache-2.0",
+    "source": "https://pypi.org/project/msgpack/1.2.3/",
+    "metadata_sha256": "f47c09192e9f4f81b8b4a63979473a13f7a63c67dcdc41be2e0f97353a9dc5b4"
+  },
+  {
+    "name": "mypy",
+    "version": "2.3.1",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/mypy/2.3.1/",
+    "metadata_sha256": "71f0d6bf44b899dd9517659bf27ccacfa5928b9651c4d0382e89dcd88bb360f5"
+  },
+  {
+    "name": "mypy_extensions",
+    "version": "1.1.0",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/mypy_extensions/1.1.0/",
+    "metadata_sha256": "2c4a44936d885f30433181ca40bbf62457351f1f6b0871b11f8789564f87477f"
+  },
+  {
+    "name": "packageurl-python",
+    "version": "0.17.6",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/packageurl-python/0.17.6/",
+    "metadata_sha256": "f7b3575011c7bd1a1375919e1ecd1258ad4541c6e757c77ff55ba06e3035ec94"
+  },
+  {
+    "name": "packaging",
+    "version": "26.3",
+    "role": "development",
+    "license_metadata": "Apache-2.0 OR BSD-2-Clause",
+    "source": "https://pypi.org/project/packaging/26.3/",
+    "metadata_sha256": "70fdb89fc4d4a9a043bf7372b8972bcc883fddff34ab55e9cf80d73875384763"
+  },
+  {
+    "name": "pathspec",
+    "version": "1.1.1",
+    "role": "development",
+    "license_metadata": "Review package license files",
+    "source": "https://pypi.org/project/pathspec/1.1.1/",
+    "metadata_sha256": "68de3f158b6592f086e78754c962092f32a761944ab66a660c0d62ad79c4b69b"
+  },
+  {
+    "name": "pip",
+    "version": "24.0",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/pip/24.0/",
+    "metadata_sha256": "90d11f277fd5868da679ee257c97656dde511c8aac7d025231407e6ce90839e2"
+  },
+  {
+    "name": "pip-requirements-parser",
+    "version": "32.0.1",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/pip-requirements-parser/32.0.1/",
+    "metadata_sha256": "e21f49c644814ff1bba064a641768f2f534c806cff523e2403652793794ab46d"
+  },
+  {
+    "name": "pip_api",
+    "version": "0.0.35",
+    "role": "development",
+    "license_metadata": "Apache License\n                        Version 2.0, January 2004\n                     https://www.apache.org/licenses/\n\nTERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n1. Definitions.\n\n   \"License\" shall mean the terms and conditions for use, reproduction,\n   and distribution as defined by Sections 1 through 9 of this document.\n\n   \"Licensor\" shall mean the copyright owner or entity authorized by\n   the copyright owner that is granting the License.\n\n   \"Legal Entity\" shall mean the union of the acting entity and all\n   other entities that control, are controlled by, or are under common\n   control with that entity. For the purposes of this definition,\n   \"control\" means (i) the power, direct or indirect, to cause the\n   direction or management of such entity, whether by contract or\n   otherwise, or (ii) ownership of fifty percent (50%) or more of the\n   outstanding shares, or (iii) beneficial ownership of such entity.\n\n   \"You\" (or \"Your\") shall mean an individual or Legal Entity\n   exercising permissions granted by this License.\n\n   \"Source\" form shall mean the preferred form for making modifications,\n   including but not limited to software source code, documentation\n   source, and configuration files.\n\n   \"Object\" form shall mean any form resulting from mechanical\n   transformation or translation of a Source form, including but\n   not limited to compiled object code, generated documentation,\n   and conversions to other media types.\n\n   \"Work\" shall mean the work of authorship, whether in Source or\n   Object form, made available under the License, as indicated by a\n   copyright notice that is included in or attached to the work\n   (an example is provided in the Appendix below).\n\n   \"Derivative Works\" shall mean any work, whether in Source or Object\n   form, that is based on (or derived from) the Work and for which the\n   editorial revisions, annotations, elaborations, or other modifications\n   represent, as a whole, an original work of authorship. For the purposes\n   of this License, Derivative Works shall not include works that remain\n   separable from, or merely link (or bind by name) to the interfaces of,\n   the Work and Derivative Works thereof.\n\n   \"Contribution\" shall mean any work of authorship, including\n   the original version of the Work and any modifications or additions\n   to that Work or Derivative Works thereof, that is intentionally\n   submitted to Licensor for inclusion in the Work by the copyright owner\n   or by an individual or Legal Entity authorized to submit on behalf of\n   the copyright owner. For the purposes of this definition, \"submitted\"\n   means any form of electronic, verbal, or written communication sent\n   to the Licensor or its representatives, including but not limited to\n   communication on electronic mailing lists, source code control systems,\n   and issue tracking systems that are managed by, or on behalf of, the\n   Licensor for the purpose of discussing and improving the Work, but\n   excluding communication that is conspicuously marked or otherwise\n   designated in writing by the copyright owner as \"Not a Contribution.\"\n\n   \"Contributor\" shall mean Licensor and any individual or Legal Entity\n   on behalf of whom a Contribution has been received by Licensor and\n   subsequently incorporated within the Work.\n\n2. Grant of Copyright License. Subject to the terms and conditions of\n   this License, each Contributor hereby grants to You a perpetual,\n   worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n   copyright license to reproduce, prepare Derivative Works of,\n   publicly display, publicly perform, sublicense, and distribute the\n   Work and such Derivative Works in Source or Object form.\n\n3. Grant of Patent License. Subject to the terms and conditions of\n   this License, each Contributor hereby grants to You a perpetual,\n   worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n   (except as stated in this section) patent license to make, have made,\n   use, offer to sell, sell, import, and otherwise transfer the Work,\n   where such license applies only to those patent claims licensable\n   by such Contributor that are necessarily infringed by their\n   Contribution(s) alone or by combination of their Contribution(s)\n   with the Work to which such Contribution(s) was submitted. If You\n   institute patent litigation against any entity (including a\n   cross-claim or counterclaim in a lawsuit) alleging that the Work\n   or a Contribution incorporated within the Work constitutes direct\n   or contributory patent infringement, then any patent licenses\n   granted to You under this License for that Work shall terminate\n   as of the date such litigation is filed.\n\n4. Redistribution. You may reproduce and distribute copies of the\n   Work or Derivative Works thereof in any medium, with or without\n   modifications, and in Source or Object form, provided that You\n   meet the following conditions:\n\n   (a) You must give any other recipients of the Work or\n       Derivative Works a copy of this License; and\n\n   (b) You must cause any modified files to carry prominent notices\n       stating that You changed the files; and\n\n   (c) You must retain, in the Source form of any Derivative Works\n       that You distribute, all copyright, patent, trademark, and\n       attribution notices from the Source form of the Work,\n       excluding those notices that do not pertain to any part of\n       the Derivative Works; and\n\n   (d) If the Work includes a \"NOTICE\" text file as part of its\n       distribution, then any Derivative Works that You distribute must\n       include a readable copy of the attribution notices contained\n       within such NOTICE file, excluding those notices that do not\n       pertain to any part of the Derivative Works, in at least one\n       of the following places: within a NOTICE text file distributed\n       as part of the Derivative Works; within the Source form or\n       documentation, if provided along with the Derivative Works; or,\n       within a display generated by the Derivative Works, if and\n       wherever such third-party notices normally appear. The contents\n       of the NOTICE file are for informational purposes only and\n       do not modify the License. You may add Your own attribution\n       notices within Derivative Works that You distribute, alongside\n       or as an addendum to the NOTICE text from the Work, provided\n       that such additional attribution notices cannot be construed\n       as modifying the License.\n\n   You may add Your own copyright statement to Your modifications and\n   may provide additional or different license terms and conditions\n   for use, reproduction, or distribution of Your modifications, or\n   for any such Derivative Works as a whole, provided Your use,\n   reproduction, and distribution of the Work otherwise complies with\n   the conditions stated in this License.\n\n5. Submission of Contributions. Unless You explicitly state otherwise,\n   any Contribution intentionally submitted for inclusion in the Work\n   by You to the Licensor shall be under the terms and conditions of\n   this License, without any additional terms or conditions.\n   Notwithstanding the above, nothing herein shall supersede or modify\n   the terms of any separate license agreement you may have executed\n   with Licensor regarding such Contributions.\n\n6. Trademarks. This License does not grant permission to use the trade\n   names, trademarks, service marks, or product names of the Licensor,\n   except as required for reasonable and customary use in describing the\n   origin of the Work and reproducing the content of the NOTICE file.\n\n7. Disclaimer of Warranty. Unless required by applicable law or\n   agreed to in writing, Licensor provides the Work (and each\n   Contributor provides its Contributions) on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n   implied, including, without limitation, any warranties or conditions\n   of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n   PARTICULAR PURPOSE. You are solely responsible for determining the\n   appropriateness of using or redistributing the Work and assume any\n   risks associated with Your exercise of permissions under this License.\n\n8. Limitation of Liability. In no event and under no legal theory,\n   whether in tort (including negligence), contract, or otherwise,\n   unless required by applicable law (such as deliberate and grossly\n   negligent acts) or agreed to in writing, shall any Contributor be\n   liable to You for damages, including any direct, indirect, special,\n   incidental, or consequential damages of any character arising as a\n   result of this License or out of the use or inability to use the\n   Work (including but not limited to damages for loss of goodwill,\n   work stoppage, computer failure or malfunction, or any and all\n   other commercial damages or losses), even if such Contributor\n   has been advised of the possibility of such damages.\n\n9. Accepting Warranty or Additional Liability. While redistributing\n   the Work or Derivative Works thereof, You may choose to offer,\n   and charge a fee for, acceptance of support, warranty, indemnity,\n   or other liability obligations and/or rights consistent with this\n   License. However, in accepting such obligations, You may act only\n   on Your own behalf and on Your sole responsibility, not on behalf\n   of any other Contributor, and only if You agree to indemnify,\n   defend, and hold each Contributor harmless for any liability\n   incurred by, or claims asserted against, such Contributor by reason\n   of your accepting any such warranty or additional liability.\n",
+    "source": "https://pypi.org/project/pip_api/0.0.35/",
+    "metadata_sha256": "9884da12db9dd1e7d25e1618528bf5e5518ab7e3114698a57c362e3a4c9c6395"
+  },
+  {
+    "name": "pip_audit",
+    "version": "2.10.1",
+    "role": "development",
+    "license_metadata": "Review package license files",
+    "source": "https://pypi.org/project/pip_audit/2.10.1/",
+    "metadata_sha256": "1f06472185a91042bc510b1b2afd2f08fdb14482729b02f4d9ac21a10f547ba4"
+  },
+  {
+    "name": "platformdirs",
+    "version": "4.12.1",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/platformdirs/4.12.1/",
+    "metadata_sha256": "489028cab90f1d3dd4105ba85a7193da30c2dc3bec1176cc3fb8852fa506ed38"
+  },
+  {
+    "name": "pluggy",
+    "version": "1.6.0",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/pluggy/1.6.0/",
+    "metadata_sha256": "7438c35ee25a095eb7416f84b461c2d74425c5e734ad54c3912453c65244e01c"
+  },
+  {
+    "name": "py-serializable",
+    "version": "2.1.0",
+    "role": "development",
+    "license_metadata": "Apache-2.0",
+    "source": "https://pypi.org/project/py-serializable/2.1.0/",
+    "metadata_sha256": "37f9f541366de7038094960f301642ed46dc82f3701358542dd8e200bd5bef57"
+  },
+  {
+    "name": "Pygments",
+    "version": "2.21.0",
+    "role": "development",
+    "license_metadata": "BSD-2-Clause",
+    "source": "https://pypi.org/project/Pygments/2.21.0/",
+    "metadata_sha256": "1dde075570136774c706bf0009183a793fe0ee262e4a5590cc6eff8453eedd43"
+  },
+  {
+    "name": "pyparsing",
+    "version": "3.3.3",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/pyparsing/3.3.3/",
+    "metadata_sha256": "f2ca34052d720622d300023472ef8ae94fe5b57d69acbb28a8667f6dd0e13497"
+  },
+  {
+    "name": "pyproject_hooks",
+    "version": "1.3.3",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/pyproject_hooks/1.3.3/",
+    "metadata_sha256": "844e375bb28dcbe42a0502fbd9428d9ba4669db25028ee7a7afaa8dd7ada2e00"
+  },
+  {
+    "name": "pytest",
+    "version": "9.1.1",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/pytest/9.1.1/",
+    "metadata_sha256": "c5d032518012789cabc870d46589aca3aeda36cf9fa4399ee88bda3d10438451"
+  },
+  {
+    "name": "PyYAML",
+    "version": "6.0.3",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/PyYAML/6.0.3/",
+    "metadata_sha256": "03c3b415ed38d09faedc49360e930769b40c58f68585e6de00e2e4916a858d34"
+  },
+  {
+    "name": "referencing",
+    "version": "0.37.0",
+    "role": "runtime",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/referencing/0.37.0/",
+    "metadata_sha256": "c93b00e6ab1524fd60848376604c189a114374776475c25a31d57be47b29de6a"
+  },
+  {
+    "name": "requests",
+    "version": "2.34.2",
+    "role": "development",
+    "license_metadata": "Apache-2.0",
+    "source": "https://pypi.org/project/requests/2.34.2/",
+    "metadata_sha256": "8c384ba3e979480faae2859d3c5e6c1276dd2c3616e322e124d52c8cfc556f27"
+  },
+  {
+    "name": "rich",
+    "version": "15.0.0",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/rich/15.0.0/",
+    "metadata_sha256": "fad34fc603fac4481bf81f8dd629492fc302c0ec31909c86644751512afb2e3b"
+  },
+  {
+    "name": "rpds-py",
+    "version": "2026.6.3",
+    "role": "runtime",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/rpds-py/2026.6.3/",
+    "metadata_sha256": "f8be7b17da3980b2c48596941411a43c70ac41b1e2d530aa531f2c15eab2eb1c"
+  },
+  {
+    "name": "ruff",
+    "version": "0.16.9",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/ruff/0.16.9/",
+    "metadata_sha256": "e02ca7619d9a36f74f715122a6c2711024d9e17057ab45a766334daea1ed70bd"
+  },
+  {
+    "name": "sortedcontainers",
+    "version": "2.4.0",
+    "role": "development",
+    "license_metadata": "Apache 2.0",
+    "source": "https://pypi.org/project/sortedcontainers/2.4.0/",
+    "metadata_sha256": "eedf115109e215001e904da0882851beae50b03c0b0161a8b9e74b7cfd679473"
+  },
+  {
+    "name": "stevedore",
+    "version": "5.9.1",
+    "role": "development",
+    "license_metadata": "Apache-2.0",
+    "source": "https://pypi.org/project/stevedore/5.9.1/",
+    "metadata_sha256": "96c8d2d90ab8173cd5cbf5045b8dec06bff69286059bda12d4755201b5ceea82"
+  },
+  {
+    "name": "tomli",
+    "version": "2.4.1",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/tomli/2.4.1/",
+    "metadata_sha256": "1428a97e0c90b9ed2958e9e487db976c4c450932f7334630aebb5bc04e01aa59"
+  },
+  {
+    "name": "tomli_w",
+    "version": "1.2.0",
+    "role": "development",
+    "license_metadata": "Review package license files",
+    "source": "https://pypi.org/project/tomli_w/1.2.0/",
+    "metadata_sha256": "66e81ac2e41775b5ebddcfbb9f4ae77158e4c5739fd52d231e14f2fffda9c8de"
+  },
+  {
+    "name": "tomlkit",
+    "version": "0.15.1",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/tomlkit/0.15.1/",
+    "metadata_sha256": "752d0210341ae500e12ae384ebb8c287a76a00cbac2d41eb86aba2622dabaaad"
+  },
+  {
+    "name": "trove-classifiers",
+    "version": "2026.9.21.13",
+    "role": "development",
+    "license_metadata": "Review package license files",
+    "source": "https://pypi.org/project/trove-classifiers/2026.9.21.13/",
+    "metadata_sha256": "ca7e96493232b21f92aeccf456b2e01f1d4dbcaa8e17a9e1b5e6f03c6eb7461f"
+  },
+  {
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "role": "runtime",
+    "license_metadata": "PSF-2.0",
+    "source": "https://pypi.org/project/typing_extensions/4.16.0/",
+    "metadata_sha256": "b05084ca1d50879865178d9fff9fabeab61bdfb1f361bfbde95421ffc8f9be46"
+  },
+  {
+    "name": "urllib3",
+    "version": "2.8.0",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/urllib3/2.8.0/",
+    "metadata_sha256": "10898c620e8007c030e07fa5622b68358a43010025dfbd78a1cb797699de2bb4"
+  },
+  {
+    "name": "xmlschema",
+    "version": "4.3.2",
+    "role": "development",
+    "license_metadata": "MIT",
+    "source": "https://pypi.org/project/xmlschema/4.3.2/",
+    "metadata_sha256": "04916b244cf2ee8876c0cea0d0ef5e7919dba77b58cfef14ed8ac76d3b0d6c78"
+  },
+  {
+    "name": "libxml2",
+    "version": "2.14.6",
+    "role": "native dependency bundled by lxml",
+    "source": "https://gitlab.gnome.org/GNOME/libxml2",
+    "license_metadata": "MIT",
+    "vulnerability_scan": "Not covered by pip-audit Python advisory lookup; native review pending."
+  },
+  {
+    "name": "libxslt",
+    "version": "1.1.43",
+    "role": "native dependency bundled by lxml",
+    "source": "https://gitlab.gnome.org/GNOME/libxslt",
+    "license_metadata": "MIT",
+    "vulnerability_scan": "Not covered by pip-audit Python advisory lookup; native review pending."
+  }
+]

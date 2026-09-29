@@ -1,0 +1,95 @@
+{
+  "cases": [
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "identity",
+      "report_sha256": "1b031e139a1435b22c74fffe97ab15715c2766410792ef7102f9badf8c85e92b"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-ACCOUNT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "leading-zero-loss",
+      "report_sha256": "7229c05c219b2e00e084c60c551727b68d971a1c6d41a0b1cd60045c2a26748c"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-END-TO-END-ID"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "reference-truncated",
+      "report_sha256": "d5410ec5b03952c64707063f477e4832cc62fc5588bb9ebea787d83195a60e81"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REMITTANCE"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "remittance-removed",
+      "report_sha256": "5da21325fdb1990d94cba7cc135abe45160630cb218792e9ede9331f5df4a893"
+    },
+    {
+      "actual": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "message-id-regenerated",
+      "report_sha256": "88a2fbb7b6d4cb255d7caf97088208e8167813a7bb341a577903988389692d35"
+    },
+    {
+      "actual": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-SETTLEMENT-AMOUNT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "expectation_matched": true,
+      "id": "currency-changed",
+      "report_sha256": "68a972594ea2b9a74f91ea7aec0c5b152926830e05ed00c475da3b5cefa4a91b"
+    }
+  ],
+  "exit_code": 0,
+  "independent_review_verified": false,
+  "kind": "corpus-verification",
+  "limitations": [
+    "Pass means only the listed assertions passed for these inputs and versions.",
+    "Verification of recorded expectations is not independent review."
+  ],
+  "manifest_sha256": "836a3aed041da9487712657a06eb980bf13f8230ec55bd64db46f7d047763c78",
+  "overall": "PASS",
+  "review_status": "pending-independent-human-review",
+  "schema_version": "1.0"
+}

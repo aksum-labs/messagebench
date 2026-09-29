@@ -1,0 +1,16 @@
+Aksum MessageBench
+Original implementation and original synthetic fixtures: Copyright 2026 Aksum Labs.
+Original code and fixtures are licensed under Apache License 2.0.
+
+The unmodified pacs.008.001.08 XML schema is ISO 20022 repository information
+submitted by SWIFT, obtained from a pinned public mirror. It is NOT relicensed
+under Apache-2.0. It is supplied royalty-free under the applicable ISO repository
+IPR policy and SWIFTStandards September 2005 license, including its limitations.
+See third-party/SWIFTStandards_LIC_OUT_V5.pdf and evidence/rights-register.json.
+No sale of the standard itself, modified-standard claim, endorsement or
+trademark license is offered. All third-party rights remain with their owners.
+
+Runtime dependencies retain their own licenses, available in installed package
+metadata and the dependency inventory. No paid ISO publication, proprietary
+usage guideline, real customer record or private payment-system specification
+is included.

@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "id": "aksum.pacs008.preservation",
+  "version": "0.1.0",
+  "status": "draft",
+  "authority": "engineering-contract",
+  "description": "Single-transaction Gate 1 preservation subset; message ID regeneration permitted.",
+  "source_namespaces": [
+    "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08"
+  ],
+  "target_namespaces": [
+    "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08"
+  ],
+  "provenance": [
+    {
+      "kind": "project-design",
+      "locator": "docs/contracts.md",
+      "license": "Apache-2.0"
+    }
+  ],
+  "association": {
+    "mode": "single"
+  },
+  "assertions": [
+    {
+      "id": "PERMIT-MESSAGE-ID-REGENERATION",
+      "field": "message.id",
+      "comparator": "allowed-regeneration",
+      "cardinality": "single",
+      "missing": "require-present",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-DEBTOR-ACCOUNT",
+      "field": "transactions.debtor_account",
+      "comparator": "exact-identifier",
+      "cardinality": "per-transaction",
+      "missing": "require-present",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-END-TO-END-ID",
+      "field": "transactions.end_to_end_id",
+      "comparator": "exact-identifier",
+      "cardinality": "per-transaction",
+      "missing": "require-present",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-REMITTANCE",
+      "field": "transactions.remittance",
+      "comparator": "multiset",
+      "cardinality": "per-transaction",
+      "missing": "require-present",
+      "required": true
+    },
+    {
+      "id": "PRESERVE-SETTLEMENT-AMOUNT",
+      "field": "transactions.settlement_amount",
+      "comparator": "decimal-and-currency-equal",
+      "cardinality": "per-transaction",
+      "missing": "require-present",
+      "required": true
+    }
+  ],
+  "exclusions": [],
+  "coverage_policy": "declared-subset"
+}

@@ -1,0 +1,58 @@
+{
+  "reference_date": "2026-09-29",
+  "third_party_assets": [
+    {
+      "name": "pacs.008.001.08 full XSD",
+      "file": "schemas/iso/pacs.008.001.08.xsd",
+      "source": "https://raw.githubusercontent.com/socrates8300/mx20022/b650c81f60311801f240efea3f9cc6df9adb70f9/schemas/pacs/pacs.008.001.08.xsd",
+      "version": "pacs.008.001.08",
+      "sha256": "9bb360555d1981be8635aa3ed295abfe8b2d221d316193434114ad722107dcde",
+      "license_or_terms": "LicenseRef-SWIFTStandards-2005",
+      "redistribution_status": "Include unmodified and royalty-free with terms retained; sections 2 and 4 permit supporting software and royalty-free sublicensing; section 3 limitations apply. Not Apache-2.0.",
+      "modified": false,
+      "inclusion_decision": "included"
+    },
+    {
+      "name": "SWIFTStandards terms",
+      "file": "third-party/SWIFTStandards_LIC_OUT_V5.pdf",
+      "source": "https://www.iso20022.org/sites/default/files/documents/D7/SWIFTStandards_LIC_OUT_V5_.pdf",
+      "version": "September 2005",
+      "sha256": "07ce98e523e756121586eaec30ddc6581db44eac3462f91dcd1d04bcdb38d61e",
+      "license_or_terms": "License text",
+      "redistribution_status": "Include unmodified to convey applicable license terms.",
+      "modified": false,
+      "inclusion_decision": "included"
+    },
+    {
+      "name": "Apache License 2.0 text",
+      "file": "LICENSE",
+      "source": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "version": "2.0",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "license_or_terms": "Apache-2.0",
+      "redistribution_status": "Include license notice for original code and fixtures.",
+      "modified": false,
+      "inclusion_decision": "included"
+    }
+  ],
+  "original_assets": {
+    "scope": "Aksum code, contracts, docs, original synthetic fixtures",
+    "license": "Apache-2.0"
+  },
+  "provenance_limits": [
+    "Official archive identifies SWIFT as submitter and exact version.",
+    "Official direct XSD download returned 403; mirror bytes preserved unchanged.",
+    "Second moov-io public mirror has equivalent C14N with blank text and comments removed.",
+    "ISO repository terms: https://www.iso20022.org/intellectual-property-rights",
+    "No paid ISO publications or proprietary usage guidelines included."
+  ],
+  "excluded_assets": [
+    "Third-party vendor fixtures",
+    "Private Ethiopian scheme rules",
+    "Commercial identifier directories",
+    "Other prior-art source code"
+  ],
+  "unresolved": [
+    "Independent human asset/provenance review pending with Gate 1."
+  ]
+}

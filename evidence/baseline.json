@@ -1,0 +1,201 @@
+{
+  "cases": [
+    {
+      "id": "identity",
+      "inputs": {
+        "source": {
+          "cognis_codes": [
+            "OK000"
+          ],
+          "cognis_lint_ok": true,
+          "lxml_xsd": true,
+          "parser": "PASS",
+          "sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+          "xmlschema_xsd": true
+        },
+        "target": {
+          "cognis_codes": [
+            "OK000"
+          ],
+          "cognis_lint_ok": true,
+          "lxml_xsd": true,
+          "parser": "PASS",
+          "sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+          "xmlschema_xsd": true
+        }
+      },
+      "messagebench": {
+        "failed_assertions": [],
+        "overall": "PASS"
+      }
+    },
+    {
+      "id": "leading-zero-loss",
+      "inputs": {
+        "source": {
+          "cognis_codes": [
+            "OK000"
+          ],
+          "cognis_lint_ok": true,
+          "lxml_xsd": true,
+          "parser": "PASS",
+          "sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+          "xmlschema_xsd": true
+        },
+        "target": {
+          "cognis_codes": [
+            "OK000"
+          ],
+          "cognis_lint_ok": true,
+          "lxml_xsd": true,
+          "parser": "PASS",
+          "sha256": "51e582cdddedda1aaff4b8445c22eae1bb4e571809579920adabf0358c302d83",
+          "xmlschema_xsd": true
+        }
+      },
+      "messagebench": {
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-ACCOUNT"
+        ],
+        "overall": "FAIL"
+      }
+    },
+    {
+      "id": "reference-truncated",
+      "inputs": {
+        "source": {
+          "cognis_codes": [
+            "OK000"
+          ],
+          "cognis_lint_ok": true,
+          "lxml_xsd": true,
+          "parser": "PASS",
+          "sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+          "xmlschema_xsd": true
+        },
+        "target": {
+          "cognis_codes": [
+            "OK000"
+          ],
+          "cognis_lint_ok": true,
+          "lxml_xsd": true,
+          "parser": "PASS",
+          "sha256": "ed27a8c335a5ee5df5f4dd8b51d2d992813bafdce7aeeea98853695e6d1e31aa",
+          "xmlschema_xsd": true
+        }
+      },
+      "messagebench": {
+        "failed_assertions": [
+          "PRESERVE-END-TO-END-ID"
+        ],
+        "overall": "FAIL"
+      }
+    },
+    {
+      "id": "remittance-removed",
+      "inputs": {
+        "source": {
+          "cognis_codes": [
+            "OK000"
+          ],
+          "cognis_lint_ok": true,
+          "lxml_xsd": true,
+          "parser": "PASS",
+          "sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+          "xmlschema_xsd": true
+        },
+        "target": {
+          "cognis_codes": [
+            "OK000"
+          ],
+          "cognis_lint_ok": true,
+          "lxml_xsd": true,
+          "parser": "PASS",
+          "sha256": "44e7a76c12405405a9400942c5ede7ef2a6a103a880544cc6e4eaeca7ff0ee2a",
+          "xmlschema_xsd": true
+        }
+      },
+      "messagebench": {
+        "failed_assertions": [
+          "PRESERVE-REMITTANCE"
+        ],
+        "overall": "FAIL"
+      }
+    },
+    {
+      "id": "message-id-regenerated",
+      "inputs": {
+        "source": {
+          "cognis_codes": [
+            "OK000"
+          ],
+          "cognis_lint_ok": true,
+          "lxml_xsd": true,
+          "parser": "PASS",
+          "sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+          "xmlschema_xsd": true
+        },
+        "target": {
+          "cognis_codes": [
+            "OK000"
+          ],
+          "cognis_lint_ok": true,
+          "lxml_xsd": true,
+          "parser": "PASS",
+          "sha256": "0f76ea5dfdd051bc881acd873d41b13d107664718c159bc68332c409a69ed957",
+          "xmlschema_xsd": true
+        }
+      },
+      "messagebench": {
+        "failed_assertions": [],
+        "overall": "PASS"
+      }
+    },
+    {
+      "id": "currency-changed",
+      "inputs": {
+        "source": {
+          "cognis_codes": [
+            "OK000"
+          ],
+          "cognis_lint_ok": true,
+          "lxml_xsd": true,
+          "parser": "PASS",
+          "sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+          "xmlschema_xsd": true
+        },
+        "target": {
+          "cognis_codes": [
+            "OK000"
+          ],
+          "cognis_lint_ok": true,
+          "lxml_xsd": true,
+          "parser": "PASS",
+          "sha256": "7beb22c6fc0ed63b201a5feb3d3ae09b3bbfd98bf0849655c72db65044d61f64",
+          "xmlschema_xsd": true
+        }
+      },
+      "messagebench": {
+        "failed_assertions": [
+          "PRESERVE-SETTLEMENT-AMOUNT"
+        ],
+        "overall": "FAIL"
+      }
+    }
+  ],
+  "cognis_source_sha256": "8897194e3728f302bbed68fd816cb6001f75a5c6cb072fb4bfdfdde429ae8d1a",
+  "processors": {
+    "libxml2": [
+      2,
+      14,
+      6
+    ],
+    "lxml": [
+      6,
+      1,
+      3,
+      0
+    ],
+    "xmlschema": "4.3.2"
+  }
+}

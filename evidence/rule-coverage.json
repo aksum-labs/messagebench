@@ -1,0 +1,59 @@
+{
+  "assertions": [
+    {
+      "allowed_change_control": "message-id-regenerated",
+      "assertion": "PERMIT-MESSAGE-ID-REGENERATION",
+      "comparator": "allowed-regeneration",
+      "field": "message.id",
+      "independent_review": "pending",
+      "positive_control": "identity",
+      "targeted_semantic_loss_cases": []
+    },
+    {
+      "allowed_change_control": null,
+      "assertion": "PRESERVE-DEBTOR-ACCOUNT",
+      "comparator": "exact-identifier",
+      "field": "transactions.debtor_account",
+      "independent_review": "pending",
+      "positive_control": "identity",
+      "targeted_semantic_loss_cases": [
+        "leading-zero-loss"
+      ]
+    },
+    {
+      "allowed_change_control": null,
+      "assertion": "PRESERVE-END-TO-END-ID",
+      "comparator": "exact-identifier",
+      "field": "transactions.end_to_end_id",
+      "independent_review": "pending",
+      "positive_control": "identity",
+      "targeted_semantic_loss_cases": [
+        "reference-truncated"
+      ]
+    },
+    {
+      "allowed_change_control": null,
+      "assertion": "PRESERVE-REMITTANCE",
+      "comparator": "multiset",
+      "field": "transactions.remittance",
+      "independent_review": "pending",
+      "positive_control": "identity",
+      "targeted_semantic_loss_cases": [
+        "remittance-removed"
+      ]
+    },
+    {
+      "allowed_change_control": null,
+      "assertion": "PRESERVE-SETTLEMENT-AMOUNT",
+      "comparator": "decimal-and-currency-equal",
+      "field": "transactions.settlement_amount",
+      "independent_review": "pending",
+      "positive_control": "identity",
+      "targeted_semantic_loss_cases": [
+        "currency-changed"
+      ]
+    }
+  ],
+  "authority": "engineering-contract",
+  "review_status": "pending"
+}

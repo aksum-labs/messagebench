@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "schemas": [
+    {
+      "namespace": "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08",
+      "path": "iso/pacs.008.001.08.xsd",
+      "sha256": "9bb360555d1981be8635aa3ed295abfe8b2d221d316193434114ad722107dcde",
+      "origin": "https://www.iso20022.org/message/14231/download",
+      "retrieval": "https://raw.githubusercontent.com/socrates8300/mx20022/b650c81f60311801f240efea3f9cc6df9adb70f9/schemas/pacs/pacs.008.001.08.xsd",
+      "license": "LicenseRef-SWIFTStandards-2005",
+      "modified": false
+    }
+  ]
+}

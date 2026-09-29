@@ -1,0 +1,136 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,95}$"
+    },
+    "review_status": {
+      "enum": [
+        "pending-independent-human-review",
+        "reviewed"
+      ]
+    },
+    "cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,95}$"
+          },
+          "source": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "target": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "source_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "target_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "expected": {
+            "type": "object",
+            "properties": {
+              "overall": {
+                "enum": [
+                  "PASS",
+                  "FAIL",
+                  "INDETERMINATE"
+                ]
+              },
+              "exit_code": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 5
+              },
+              "failed_assertions": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,95}$"
+                },
+                "minItems": 0,
+                "maxItems": 1000
+              },
+              "source_xsd": {
+                "type": "string",
+                "maxLength": 1000
+              },
+              "target_xsd": {
+                "type": "string",
+                "maxLength": 1000
+              }
+            },
+            "required": [
+              "overall",
+              "exit_code",
+              "failed_assertions",
+              "source_xsd",
+              "target_xsd"
+            ],
+            "additionalProperties": false
+          },
+          "rationale": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "control": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,95}$"
+          },
+          "license": {
+            "const": "Apache-2.0"
+          },
+          "provenance": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "reviewers": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "maxLength": 1000
+            },
+            "minItems": 0,
+            "maxItems": 4
+          }
+        },
+        "required": [
+          "id",
+          "source",
+          "target",
+          "source_sha256",
+          "target_sha256",
+          "expected",
+          "rationale",
+          "control",
+          "license",
+          "provenance",
+          "reviewers"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 1000
+    }
+  },
+  "required": [
+    "schema_version",
+    "version",
+    "review_status",
+    "cases"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

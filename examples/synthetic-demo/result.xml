@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="MessageBench" tests="7" failures="1" errors="0" skipped="0"><testcase name="source-schema" /><testcase name="target-schema" /><testcase name="PERMIT-MESSAGE-ID-REGENERATION" /><testcase name="PRESERVE-DEBTOR-ACCOUNT" /><testcase name="PRESERVE-END-TO-END-ID"><failure message="PRESERVATION_CHANGED" /></testcase><testcase name="PRESERVE-REMITTANCE" /><testcase name="PRESERVE-SETTLEMENT-AMOUNT" /><system-out>Pass means only the listed assertions passed for these inputs and versions.</system-out></testsuite>

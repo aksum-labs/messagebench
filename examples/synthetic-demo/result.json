@@ -1,0 +1,205 @@
+{
+  "assertions": [
+    {
+      "code": "REGENERATION_PERMITTED",
+      "comparator": "allowed-regeneration",
+      "field": "message.id",
+      "id": "PERMIT-MESSAGE-ID-REGENERATION",
+      "normalization": "none",
+      "required": true,
+      "source_paths": [
+        "/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Document[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}FIToFICstmrCdtTrf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}GrpHdr[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}MsgId[1]"
+      ],
+      "status": "PASS",
+      "target_paths": [
+        "/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Document[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}FIToFICstmrCdtTrf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}GrpHdr[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}MsgId[1]"
+      ]
+    },
+    {
+      "code": "PRESERVED",
+      "comparator": "exact-identifier",
+      "field": "transactions.debtor_account",
+      "id": "PRESERVE-DEBTOR-ACCOUNT",
+      "normalization": "none",
+      "required": true,
+      "source_paths": [
+        "/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Document[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}FIToFICstmrCdtTrf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}CdtTrfTxInf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}DbtrAcct[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Id[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Othr[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Id[1]"
+      ],
+      "status": "PASS",
+      "target_paths": [
+        "/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Document[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}FIToFICstmrCdtTrf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}CdtTrfTxInf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}DbtrAcct[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Id[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Othr[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Id[1]"
+      ]
+    },
+    {
+      "code": "PRESERVATION_CHANGED",
+      "comparator": "exact-identifier",
+      "field": "transactions.end_to_end_id",
+      "id": "PRESERVE-END-TO-END-ID",
+      "normalization": "none",
+      "required": true,
+      "source_paths": [
+        "/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Document[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}FIToFICstmrCdtTrf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}CdtTrfTxInf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}PmtId[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}EndToEndId[1]"
+      ],
+      "status": "FAIL",
+      "target_paths": [
+        "/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Document[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}FIToFICstmrCdtTrf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}CdtTrfTxInf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}PmtId[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}EndToEndId[1]"
+      ]
+    },
+    {
+      "code": "PRESERVED",
+      "comparator": "multiset",
+      "field": "transactions.remittance",
+      "id": "PRESERVE-REMITTANCE",
+      "normalization": "none",
+      "required": true,
+      "source_paths": [
+        "/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Document[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}FIToFICstmrCdtTrf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}CdtTrfTxInf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}RmtInf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Ustrd[1]",
+        "/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Document[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}FIToFICstmrCdtTrf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}CdtTrfTxInf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}RmtInf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Ustrd[2]"
+      ],
+      "status": "PASS",
+      "target_paths": [
+        "/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Document[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}FIToFICstmrCdtTrf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}CdtTrfTxInf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}RmtInf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Ustrd[1]",
+        "/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Document[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}FIToFICstmrCdtTrf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}CdtTrfTxInf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}RmtInf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Ustrd[2]"
+      ]
+    },
+    {
+      "code": "PRESERVED",
+      "comparator": "decimal-and-currency-equal",
+      "field": "transactions.settlement_amount",
+      "id": "PRESERVE-SETTLEMENT-AMOUNT",
+      "normalization": "none",
+      "required": true,
+      "source_paths": [
+        "/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Document[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}FIToFICstmrCdtTrf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}CdtTrfTxInf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}IntrBkSttlmAmt[1]",
+        "/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Document[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}FIToFICstmrCdtTrf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}CdtTrfTxInf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}IntrBkSttlmAmt[1]/@Ccy"
+      ],
+      "status": "PASS",
+      "target_paths": [
+        "/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Document[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}FIToFICstmrCdtTrf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}CdtTrfTxInf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}IntrBkSttlmAmt[1]",
+        "/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}Document[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}FIToFICstmrCdtTrf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}CdtTrfTxInf[1]/{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08}IntrBkSttlmAmt[1]/@Ccy"
+      ]
+    }
+  ],
+  "catalog_sha256": "e34cdc28d2ffb26d57a093c368387f7a1201e1f94a7eeb6fc3599b11224d347e",
+  "contract_id": "aksum.pacs008.preservation",
+  "contract_sha256": "8f2f9fe300c6e4e696457b6a0c5440d13c7837e224d532ad81cfd9c9c591ffd0",
+  "contract_version": "0.1.0",
+  "coverage": {
+    "source": {
+      "categories": {
+        "examined": {
+          "count": 7,
+          "path_sha256": [
+            "c1ced3cf19c7aebfa61293a62d0610f3847b5f72e980aca042bd4281db4a8c9d",
+            "c315e773e860b518379c10ae8203c049a590dd6e23790bf210df0723f94e1200",
+            "c9183f909e5f9e66304fe741158d33676e80162de90f36a3fd135d0a8540372a",
+            "cfbd1aea88575b921b86ff5631921fc5ccc67aa94755f70190573e3d6d967c5c",
+            "d419caca7c387cf0c8571738ccfb7d84ccdbb5b52c1f6630ede694fbc9ac1632",
+            "f119892c5f8739b89f704557726742bded249c7bff6962719849f8448f1692d2",
+            "fab5e88a7ac884802fd5f71e6675f2c1caf35dc807d979a04229997eca10a3b5"
+          ]
+        },
+        "explicitly_excluded": {
+          "count": 0,
+          "path_sha256": []
+        },
+        "unexamined": {
+          "count": 11,
+          "path_sha256": [
+            "0d1463902599a106d71b38ee17bdb3a9fae4e2c3908bfefe1fa96beb4fa05121",
+            "0f6647a1de5ba5e11d171614f457e645efeab49b0c90fcc46c460b29d99d10bc",
+            "23fee2a6751bfed10bd6139a289ac4c60910505b5598944fc51fce640101bc87",
+            "3473c1cf8025056d173651a71f63c3243f2d08960c8c05d9d86b95a67ac0f98e",
+            "492f1330ed088efb46e31e5b6b3c5d1f9f2286ca52de393a24f5494c790fac1c",
+            "860527e4c128610e1f4ff05bbf58af51ba1996c9ced4783a2919eaca260a876e",
+            "8ed90e84412b173d606a0fa09559ac19fa33e090276069c21cab857338a24dc5",
+            "caddd7fed8ae925c4a314bc1633b55127405f187d2ac88b3f4a71d2fe167a096",
+            "cfb0558e61a32675053c499609eb071b64999e977674cd4f4658927a1a74233c",
+            "f76d2edeb304af38d5212a501d0f5ab95a06394792508fa9d6590e48fdb6fbe5",
+            "fb618756aadee1247e74713b70c68326c9d38ab43b39866b1c8ae7a0cf58d3aa"
+          ]
+        },
+        "unsupported": {
+          "count": 0,
+          "path_sha256": []
+        }
+      },
+      "note": "Unknown paths are hashed to avoid echoing payload-bearing extension names. Hashes are metadata, not anonymization. Containers, comments, whitespace and namespace declarations are not coverage units. Examined does not mean equal.",
+      "total": 18,
+      "unit": "leaf-or-empty-element-and-attribute-occurrence",
+      "unresolved_exclusions": []
+    },
+    "target": {
+      "categories": {
+        "examined": {
+          "count": 7,
+          "path_sha256": [
+            "c1ced3cf19c7aebfa61293a62d0610f3847b5f72e980aca042bd4281db4a8c9d",
+            "c315e773e860b518379c10ae8203c049a590dd6e23790bf210df0723f94e1200",
+            "c9183f909e5f9e66304fe741158d33676e80162de90f36a3fd135d0a8540372a",
+            "cfbd1aea88575b921b86ff5631921fc5ccc67aa94755f70190573e3d6d967c5c",
+            "d419caca7c387cf0c8571738ccfb7d84ccdbb5b52c1f6630ede694fbc9ac1632",
+            "f119892c5f8739b89f704557726742bded249c7bff6962719849f8448f1692d2",
+            "fab5e88a7ac884802fd5f71e6675f2c1caf35dc807d979a04229997eca10a3b5"
+          ]
+        },
+        "explicitly_excluded": {
+          "count": 0,
+          "path_sha256": []
+        },
+        "unexamined": {
+          "count": 11,
+          "path_sha256": [
+            "0d1463902599a106d71b38ee17bdb3a9fae4e2c3908bfefe1fa96beb4fa05121",
+            "0f6647a1de5ba5e11d171614f457e645efeab49b0c90fcc46c460b29d99d10bc",
+            "23fee2a6751bfed10bd6139a289ac4c60910505b5598944fc51fce640101bc87",
+            "3473c1cf8025056d173651a71f63c3243f2d08960c8c05d9d86b95a67ac0f98e",
+            "492f1330ed088efb46e31e5b6b3c5d1f9f2286ca52de393a24f5494c790fac1c",
+            "860527e4c128610e1f4ff05bbf58af51ba1996c9ced4783a2919eaca260a876e",
+            "8ed90e84412b173d606a0fa09559ac19fa33e090276069c21cab857338a24dc5",
+            "caddd7fed8ae925c4a314bc1633b55127405f187d2ac88b3f4a71d2fe167a096",
+            "cfb0558e61a32675053c499609eb071b64999e977674cd4f4658927a1a74233c",
+            "f76d2edeb304af38d5212a501d0f5ab95a06394792508fa9d6590e48fdb6fbe5",
+            "fb618756aadee1247e74713b70c68326c9d38ab43b39866b1c8ae7a0cf58d3aa"
+          ]
+        },
+        "unsupported": {
+          "count": 0,
+          "path_sha256": []
+        }
+      },
+      "note": "Unknown paths are hashed to avoid echoing payload-bearing extension names. Hashes are metadata, not anonymization. Containers, comments, whitespace and namespace declarations are not coverage units. Examined does not mean equal.",
+      "total": 18,
+      "unit": "leaf-or-empty-element-and-attribute-occurrence",
+      "unresolved_exclusions": []
+    }
+  },
+  "exit_code": 1,
+  "extractor_version": "0.1.0",
+  "limitations": [
+    "Pass means only the listed assertions passed for these inputs and versions.",
+    "Single-transaction pacs.008.001.08 subset. No business-rule compliance or certification. Independent review pending."
+  ],
+  "overall": "FAIL",
+  "schema_checks": {
+    "source": {
+      "code": "XSD_VALID",
+      "exit_code": 0,
+      "namespace": "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08",
+      "sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "status": "PASS"
+    },
+    "target": {
+      "code": "XSD_VALID",
+      "exit_code": 0,
+      "namespace": "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08",
+      "sha256": "ed27a8c335a5ee5df5f4dd8b51d2d992813bafdce7aeeea98853695e6d1e31aa",
+      "status": "PASS"
+    }
+  },
+  "schema_sha256": "9bb360555d1981be8635aa3ed295abfe8b2d221d316193434114ad722107dcde",
+  "schema_version": "1.0",
+  "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+  "target_sha256": "ed27a8c335a5ee5df5f4dd8b51d2d992813bafdce7aeeea98853695e6d1e31aa",
+  "tool_version": "0.1.0a1"
+}

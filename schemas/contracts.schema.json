@@ -1,0 +1,208 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,95}$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,95}$"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "reviewed",
+        "deprecated"
+      ]
+    },
+    "authority": {
+      "enum": [
+        "engineering-contract",
+        "published-standard",
+        "institution-supplied"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 1000
+    },
+    "source_namespaces": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 160
+      },
+      "minItems": 1,
+      "maxItems": 3
+    },
+    "target_namespaces": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "maxLength": 160
+      },
+      "minItems": 1,
+      "maxItems": 3
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "locator": {
+            "type": "string",
+            "maxLength": 1000
+          },
+          "license": {
+            "type": "string",
+            "maxLength": 1000
+          }
+        },
+        "required": [
+          "kind",
+          "locator",
+          "license"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 10
+    },
+    "association": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "enum": [
+            "single",
+            "keyed"
+          ]
+        },
+        "keys": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,95}$"
+          },
+          "minItems": 1,
+          "maxItems": 4
+        }
+      },
+      "required": [
+        "mode"
+      ],
+      "additionalProperties": false
+    },
+    "assertions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,95}$"
+          },
+          "field": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,95}$"
+          },
+          "comparator": {
+            "enum": [
+              "exact-text",
+              "exact-identifier",
+              "decimal-equal",
+              "decimal-and-currency-equal",
+              "presence-equal",
+              "ordered-list",
+              "multiset",
+              "keyed-items",
+              "allowed-regeneration"
+            ]
+          },
+          "cardinality": {
+            "enum": [
+              "single",
+              "per-transaction"
+            ]
+          },
+          "missing": {
+            "enum": [
+              "require-present",
+              "compare-presence"
+            ]
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "normalization": {
+            "enum": [
+              "none",
+              "NFC"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "field",
+          "comparator",
+          "cardinality",
+          "missing",
+          "required"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 1000
+    },
+    "exclusions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "field": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,95}$"
+          },
+          "reason": {
+            "type": "string",
+            "maxLength": 1000
+          }
+        },
+        "required": [
+          "field",
+          "reason"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 1000
+    },
+    "coverage_policy": {
+      "const": "declared-subset"
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "version",
+    "status",
+    "authority",
+    "description",
+    "source_namespaces",
+    "target_namespaces",
+    "provenance",
+    "association",
+    "assertions",
+    "exclusions",
+    "coverage_policy"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

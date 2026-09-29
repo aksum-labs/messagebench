@@ -1,0 +1,37 @@
+{
+  "mutants": [
+    {
+      "operator": "bypass-required-assertion",
+      "assertion": "PRESERVE-DEBTOR-ACCOUNT",
+      "case": "leading-zero-loss",
+      "killed": true
+    },
+    {
+      "operator": "bypass-required-assertion",
+      "assertion": "PRESERVE-END-TO-END-ID",
+      "case": "reference-truncated",
+      "killed": true
+    },
+    {
+      "operator": "bypass-required-assertion",
+      "assertion": "PRESERVE-REMITTANCE",
+      "case": "remittance-removed",
+      "killed": true
+    },
+    {
+      "operator": "bypass-required-assertion",
+      "assertion": "PRESERVE-SETTLEMENT-AMOUNT",
+      "case": "currency-changed",
+      "killed": true
+    },
+    {
+      "operator": "deny-permitted-regeneration",
+      "assertion": "PERMIT-MESSAGE-ID-REGENERATION",
+      "case": "message-id-regenerated",
+      "killed": true
+    }
+  ],
+  "killed": 5,
+  "total": 5,
+  "scope": "Targeted oracle-bypass and false-positive operators only; not a whole-program mutation score. Expectations were not changed."
+}

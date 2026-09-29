@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0",
+  "version": "0.1.0-alpha.1",
+  "review_status": "pending-independent-human-review",
+  "cases": [
+    {
+      "id": "identity",
+      "source": "positive/identity.source.xml",
+      "target": "positive/identity.target.xml",
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Byte-identical control for every declared assertion.",
+      "control": "identity",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring from this mandate; no customer records.",
+      "reviewers": []
+    },
+    {
+      "id": "leading-zero-loss",
+      "source": "negative/leading-zero-loss.source.xml",
+      "target": "negative/leading-zero-loss.target.xml",
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "51e582cdddedda1aaff4b8445c22eae1bb4e571809579920adabf0358c302d83",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-ACCOUNT"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Account identifiers are exact strings, including leading zeros.",
+      "control": "identity",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring from this mandate; no customer records.",
+      "reviewers": []
+    },
+    {
+      "id": "reference-truncated",
+      "source": "negative/reference-truncated.source.xml",
+      "target": "negative/reference-truncated.target.xml",
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "ed27a8c335a5ee5df5f4dd8b51d2d992813bafdce7aeeea98853695e6d1e31aa",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-END-TO-END-ID"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "A shorter but schema-valid end-to-end identifier violates the declared promise.",
+      "control": "identity",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring from this mandate; no customer records.",
+      "reviewers": []
+    },
+    {
+      "id": "remittance-removed",
+      "source": "negative/remittance-removed.source.xml",
+      "target": "negative/remittance-removed.target.xml",
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "44e7a76c12405405a9400942c5ede7ef2a6a103a880544cc6e4eaeca7ff0ee2a",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REMITTANCE"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Removing one repeated item changes the declared multiset.",
+      "control": "identity",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring from this mandate; no customer records.",
+      "reviewers": []
+    },
+    {
+      "id": "message-id-regenerated",
+      "source": "positive/message-id-regenerated.source.xml",
+      "target": "positive/message-id-regenerated.target.xml",
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "0f76ea5dfdd051bc881acd873d41b13d107664718c159bc68332c409a69ed957",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "This engineering contract explicitly permits message ID regeneration.",
+      "control": "identity",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring from this mandate; no customer records.",
+      "reviewers": []
+    },
+    {
+      "id": "currency-changed",
+      "source": "negative/currency-changed.source.xml",
+      "target": "negative/currency-changed.target.xml",
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "7beb22c6fc0ed63b201a5feb3d3ae09b3bbfd98bf0849655c72db65044d61f64",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-SETTLEMENT-AMOUNT"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "Equal numeric text with a different currency does not preserve the amount-and-currency pair.",
+      "control": "identity",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring from this mandate; no customer records.",
+      "reviewers": []
+    }
+  ]
+}

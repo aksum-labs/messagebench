@@ -1,0 +1,47 @@
+[
+  {
+    "repo": "prowide/prowide-iso20022",
+    "sha": "4f9e43996fca625e5affcb32adb3c03b910c05ab",
+    "commit_date": "2026-09-23T23:57:26Z",
+    "license": "Apache-2.0",
+    "archived": false,
+    "rechecked_on": "2026-09-29",
+    "review_scope": "Selected entry points, README, license and tests; not exhaustive."
+  },
+  {
+    "repo": "mojaloop/ml-testing-toolkit",
+    "sha": "bd1bc7e90e4c9cc84b606b868a04dfd744f6338b",
+    "commit_date": "2026-02-26T15:44:32Z",
+    "license": "NOASSERTION",
+    "archived": false,
+    "rechecked_on": "2026-09-29",
+    "review_scope": "Selected entry points, README, license and tests; not exhaustive."
+  },
+  {
+    "repo": "socrates8300/mx20022",
+    "sha": "b650c81f60311801f240efea3f9cc6df9adb70f9",
+    "commit_date": "2026-08-12T23:24:47Z",
+    "license": "Apache-2.0",
+    "archived": false,
+    "rechecked_on": "2026-09-29",
+    "review_scope": "Selected entry points, README, license and tests; not exhaustive."
+  },
+  {
+    "repo": "phoughton/iso20022-cbpr-ur",
+    "sha": "f6a8d27b6ff62ac4c5cc87457cfb1a7058935c26",
+    "commit_date": "2026-06-26T15:16:38Z",
+    "license": "MIT",
+    "archived": false,
+    "rechecked_on": "2026-09-29",
+    "review_scope": "Selected entry points, README, license and tests; not exhaustive."
+  },
+  {
+    "repo": "cognis-digital/iso20022",
+    "sha": "d7903979b5dbc74967f93eaa5688d5d5db984b06",
+    "commit_date": "2026-06-30T03:05:56Z",
+    "license": "NOASSERTION",
+    "archived": false,
+    "rechecked_on": "2026-09-29",
+    "review_scope": "Selected entry points, README, license and tests; not exhaustive."
+  }
+]
