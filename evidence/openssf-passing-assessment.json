@@ -1,0 +1,647 @@
+{
+  "source": "https://www.bestpractices.dev/en/criteria",
+  "source_sha256": "533ef898e4f3b66578b680b80f9dcd77167aa5dfe66d8dcf5d9d5dd083ebd3bd",
+  "reference_date": "2026-09-29",
+  "level": "Passing",
+  "criterion_count": 67,
+  "badge_obtained": false,
+  "assessment_scope": "Readiness and actual blockers; this is not a submitted badge application. PASS includes justified inapplicability.",
+  "criteria": [
+    {
+      "criterion": "description_good",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Local documentation/control prepared; applicability stated in the mandate report. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "interact",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Local documentation/control prepared; applicability stated in the mandate report. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "contribution",
+      "status": "PASS",
+      "evidence": [
+        "CONTRIBUTING.md"
+      ],
+      "assessment": "Contribution process, coding and test requirements documented."
+    },
+    {
+      "criterion": "contribution_requirements",
+      "status": "PASS",
+      "evidence": [
+        "CONTRIBUTING.md"
+      ],
+      "assessment": "Contribution process, coding and test requirements documented."
+    },
+    {
+      "criterion": "floss_license",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "LICENSE",
+        "NOTICE",
+        "evidence/rights-register.json"
+      ],
+      "assessment": "Original Apache-2.0 source and separately documented third-party terms; uncertain camt asset excluded. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "floss_license_osi",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "LICENSE",
+        "NOTICE",
+        "evidence/rights-register.json"
+      ],
+      "assessment": "Original Apache-2.0 source and separately documented third-party terms; uncertain camt asset excluded.",
+      "disposition": "Original executable code is Apache-2.0. Bundled standard schemas retain separate non-OSI terms; a qualified human and badge assessors must confirm treatment of these standards assets before claiming the whole project meets this criterion."
+    },
+    {
+      "criterion": "license_location",
+      "status": "PASS",
+      "evidence": [
+        "LICENSE",
+        "NOTICE",
+        "evidence/rights-register.json"
+      ],
+      "assessment": "Original Apache-2.0 source and separately documented third-party terms; uncertain camt asset excluded."
+    },
+    {
+      "criterion": "documentation_basics",
+      "status": "PASS",
+      "evidence": [
+        "docs/quickstart.md",
+        "docs/api.md"
+      ],
+      "assessment": "Install/use and external-interface references prepared."
+    },
+    {
+      "criterion": "documentation_interface",
+      "status": "PASS",
+      "evidence": [
+        "docs/quickstart.md",
+        "docs/api.md"
+      ],
+      "assessment": "Install/use and external-interface references prepared."
+    },
+    {
+      "criterion": "sites_https",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Local documentation/control prepared; applicability stated in the mandate report. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "discussion",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Local documentation/control prepared; applicability stated in the mandate report. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "english",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Local documentation/control prepared; applicability stated in the mandate report."
+    },
+    {
+      "criterion": "maintained",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Local documentation/control prepared; applicability stated in the mandate report. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "repo_public",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Git tracks interim commits and attribution; actual public repository is owner controlled. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "repo_track",
+      "status": "PASS",
+      "evidence": [
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Git tracks interim commits and attribution; actual public repository is owner controlled."
+    },
+    {
+      "criterion": "repo_interim",
+      "status": "PASS",
+      "evidence": [
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Git tracks interim commits and attribution; actual public repository is owner controlled."
+    },
+    {
+      "criterion": "repo_distributed",
+      "status": "PASS",
+      "evidence": [
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Git tracks interim commits and attribution; actual public repository is owner controlled."
+    },
+    {
+      "criterion": "version_unique",
+      "status": "PASS",
+      "evidence": [
+        "pyproject.toml",
+        "CHANGELOG.md"
+      ],
+      "assessment": "Unique prerelease version and human-readable change notes; no known Aksum-code assigned CVE fix to omit."
+    },
+    {
+      "criterion": "version_semver",
+      "status": "PASS",
+      "evidence": [
+        "pyproject.toml",
+        "CHANGELOG.md"
+      ],
+      "assessment": "Unique prerelease version and human-readable change notes; no known Aksum-code assigned CVE fix to omit."
+    },
+    {
+      "criterion": "version_tags",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "pyproject.toml",
+        "CHANGELOG.md"
+      ],
+      "assessment": "Unique prerelease version and human-readable change notes; no known Aksum-code assigned CVE fix to omit. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "release_notes",
+      "status": "PASS",
+      "evidence": [
+        "pyproject.toml",
+        "CHANGELOG.md"
+      ],
+      "assessment": "Unique prerelease version and human-readable change notes; no known Aksum-code assigned CVE fix to omit."
+    },
+    {
+      "criterion": "release_notes_vulns",
+      "status": "PASS",
+      "evidence": [
+        "pyproject.toml",
+        "CHANGELOG.md"
+      ],
+      "assessment": "Unique prerelease version and human-readable change notes; no known Aksum-code assigned CVE fix to omit."
+    },
+    {
+      "criterion": "report_process",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "report_tracker",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "report_responses",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "enhancement_responses",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "report_archive",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "vulnerability_report_process",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "vulnerability_report_private",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "vulnerability_report_response",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "build",
+      "status": "PASS",
+      "evidence": [
+        "pyproject.toml",
+        "scripts/build_native.py",
+        "scripts/reproducible_build.py"
+      ],
+      "assessment": "FLOSS build tools and clean-build/install verification."
+    },
+    {
+      "criterion": "build_common_tools",
+      "status": "PASS",
+      "evidence": [
+        "pyproject.toml",
+        "scripts/build_native.py",
+        "scripts/reproducible_build.py"
+      ],
+      "assessment": "FLOSS build tools and clean-build/install verification."
+    },
+    {
+      "criterion": "build_floss_tools",
+      "status": "PASS",
+      "evidence": [
+        "pyproject.toml",
+        "scripts/build_native.py",
+        "scripts/reproducible_build.py"
+      ],
+      "assessment": "FLOSS build tools and clean-build/install verification."
+    },
+    {
+      "criterion": "test",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "test_invocation",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance."
+    },
+    {
+      "criterion": "test_most",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance."
+    },
+    {
+      "criterion": "test_continuous_integration",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "test_policy",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance."
+    },
+    {
+      "criterion": "tests_are_added",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance."
+    },
+    {
+      "criterion": "tests_documented_added",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance."
+    },
+    {
+      "criterion": "warnings",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bandit.json",
+        ".github/workflows/checks.yml"
+      ],
+      "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained."
+    },
+    {
+      "criterion": "warnings_fixed",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bandit.json",
+        ".github/workflows/checks.yml"
+      ],
+      "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained."
+    },
+    {
+      "criterion": "warnings_strict",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bandit.json",
+        ".github/workflows/checks.yml"
+      ],
+      "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained."
+    },
+    {
+      "criterion": "know_secure_design",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Local documentation/control prepared; applicability stated in the mandate report. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "know_common_errors",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Local documentation/control prepared; applicability stated in the mandate report. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "crypto_published",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        ".github/workflows/release.yml"
+      ],
+      "assessment": "SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign."
+    },
+    {
+      "criterion": "crypto_call",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        ".github/workflows/release.yml"
+      ],
+      "assessment": "SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign."
+    },
+    {
+      "criterion": "crypto_floss",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        ".github/workflows/release.yml"
+      ],
+      "assessment": "SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign."
+    },
+    {
+      "criterion": "crypto_keylength",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        ".github/workflows/release.yml"
+      ],
+      "assessment": "SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign."
+    },
+    {
+      "criterion": "crypto_working",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        ".github/workflows/release.yml"
+      ],
+      "assessment": "SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign."
+    },
+    {
+      "criterion": "crypto_weaknesses",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        ".github/workflows/release.yml"
+      ],
+      "assessment": "SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign."
+    },
+    {
+      "criterion": "crypto_pfs",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        ".github/workflows/release.yml"
+      ],
+      "assessment": "SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign."
+    },
+    {
+      "criterion": "crypto_password_storage",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        ".github/workflows/release.yml"
+      ],
+      "assessment": "SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign."
+    },
+    {
+      "criterion": "crypto_random",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        ".github/workflows/release.yml"
+      ],
+      "assessment": "SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign."
+    },
+    {
+      "criterion": "delivery_mitm",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Local documentation/control prepared; applicability stated in the mandate report. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "delivery_unsigned",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Local documentation/control prepared; applicability stated in the mandate report."
+    },
+    {
+      "criterion": "vulnerabilities_fixed_60_days",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "vulnerabilities_critical_fixed",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution."
+    },
+    {
+      "criterion": "no_leaked_credentials",
+      "status": "PASS",
+      "evidence": [
+        "scripts/check_secrets.py",
+        ".secrets.baseline"
+      ],
+      "assessment": "Tracked-source secret scan without online credential probing; reviewed public digests only."
+    },
+    {
+      "criterion": "static_analysis",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bandit.json",
+        ".github/workflows/checks.yml"
+      ],
+      "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained."
+    },
+    {
+      "criterion": "static_analysis_common_vulnerabilities",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bandit.json",
+        ".github/workflows/checks.yml"
+      ],
+      "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained."
+    },
+    {
+      "criterion": "static_analysis_fixed",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bandit.json",
+        ".github/workflows/checks.yml"
+      ],
+      "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained."
+    },
+    {
+      "criterion": "static_analysis_often",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bandit.json",
+        ".github/workflows/checks.yml"
+      ],
+      "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained."
+    },
+    {
+      "criterion": "dynamic_analysis",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance."
+    },
+    {
+      "criterion": "dynamic_analysis_unsafe",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance."
+    },
+    {
+      "criterion": "dynamic_analysis_enable_assertions",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance."
+    },
+    {
+      "criterion": "dynamic_analysis_fixed",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance."
+    }
+  ]
+}

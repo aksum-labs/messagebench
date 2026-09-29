@@ -6,6 +6,7 @@ Extractability does not mean a contract examines a field. Read the actual assert
 
 | Field | Relative QName path (namespace above) | Type | Scope |
 |---|---|---|---|
+| `message.created_at` | `GrpHdr/CreDtTm` | datetime | single |
 | `message.id` | `GrpHdr/MsgId` | text | single |
 | `transactions.debtor_account` | `CdtTrfTxInf/DbtrAcct/Id/Othr/Id` | identifier | per-transaction |
 | `transactions.end_to_end_id` | `CdtTrfTxInf/PmtId/EndToEndId` | identifier | per-transaction |

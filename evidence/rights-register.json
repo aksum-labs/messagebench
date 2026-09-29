@@ -63,7 +63,10 @@
     "Commercial identifier directories",
     "Other prior-art source code"
   ],
-  "unresolved": [
-    "Independent human asset/provenance review pending with Gate 1."
-  ]
+  "review_status": "BLOCKED-BY-HUMAN: independent asset/provenance approval only",
+  "dependency_license_policy": "evidence/dependency-license-policy.json",
+  "dependency_release_hashes": "evidence/dependency-release-hashes.json",
+  "native_source_inventory": "evidence/native-source-pins.json",
+  "bundle_inventory": "Each review bundle includes bundle-rights-register.json for every wheel/source archive.",
+  "camt053_decision": "Excluded; see docs/camt053-asset-review.md. Rights clarification is BLOCKED-BY-HUMAN."
 }

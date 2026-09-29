@@ -2,7 +2,7 @@
 
 Run an adapter in your own environment. MessageBench does not start it, load its code or contact it. For each case ID in `corpus/index.json`, supply the transformation of that case's **source** as `adapter-outputs/<case-id>.xml`. Outputs may come from Java, Rust, Python, a vendor tool or manual export.
 
-The default release manifest has 68 case IDs and selects a bundled versioned contract per case.
+The default release manifest has 100 case IDs and selects a bundled versioned contract per case.
 `--contract` explicitly overrides that selection for every case. The six-case Node demonstration
 uses `corpus/gate1-index.json`.
 

@@ -1,44 +1,48 @@
-# Release readiness
+# Release readiness — 0.2.0-rc.1
 
-**NOT READY — FIX REQUIRED** for publication. Recommended local version: **0.1.0a2**
-(Semver spelling 0.1.0-alpha.2). The engineering candidate is available for review.
+**Technical preparation: complete. Public approval: BLOCKED-BY-HUMAN.**
+Recommended engineering candidate: Semver 0.2.0-rc.1, Python 0.2.0rc1. No public release was made.
 
 Exact supported namespaces:
-- urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08
-- urn:iso:std:iso:20022:tech:xsd:pacs.002.001.10
+- `urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08`
+- `urn:iso:std:iso:20022:tech:xsd:pacs.002.001.10`
 
-The 26 exact fields, paths and comparison types are enumerated in docs/fields.md. pacs.008
-covers identifiers, account/agent context, names, instructed and settlement amounts and
-unstructured remittance. pacs.002 covers message ID, original references, status, reason
-codes and reason text. Three contracts declare 31 assertions in total. Coverage remains
-scoped; a passing assertion is not complete-document preservation.
+The 27 exact supported fields and their extraction paths/types are listed in docs/fields.md.
+Ten versioned contracts exercise 38 required assertion declarations. The 100 synthetic pairs
+have pre-recorded outcomes, successful automated checks and a hash-bound human-review packet.
+They have not been independently reviewed. No outside institution's use is claimed.
 
-Implemented: inspect, compare, corpus verify, suite, report and regression; deterministic
-JSON, text, escaped HTML and JUnit; single-item and explicit unique-key batch association;
-68 synthetic cases. Cases are not independently reviewed. No external technical review or
-independent deployment has occurred. A separate Node.js demonstration exercises file handoff.
+Unsupported features: camt.053.001.08 (rights exclusion), other versions, arbitrary XPath/code,
+universal translation, full-document equivalence, scheme business rules, live connectivity,
+adapter execution, automatic timezone/calendar guesses and heuristic transaction matching.
+Unknown required information blocks overall PASS. Unexamined fields are reported explicitly.
+Linux is the verified file-safety/process profile; unsupported platform protections fail closed.
 
-Unsupported: camt.053 and all other versions, cross-family/version translation, arbitrary
-nested keyed structures, date/time semantics, institutional rules, structured remittance,
-whole-document equivalence and production validation. The literal keyed-items comparator
-returns UNSUPPORTED; transaction key association is implemented separately. See LIMITATIONS.md.
+Security caveats: resource limits are not an OS sandbox; bounded tests are not an exhaustive
+security proof; institution-local files can be sensitive, and hashes are not anonymization.
+The offline wheel bundle is Linux x86_64 CPython 3.12 specific. Native wheel reproducibility
+is not claimed. Native license notices, original sources and relink/rebuild instructions are
+included. See rights register and camt exclusion rationale; human legal approval is not asserted.
 
-Security caveats: Linux/CPython 3.12 profile tested; supplied native wheel is platform-specific.
-Older native profiles fail closed. No OS sandbox or general vulnerability-free claim.
-Licensing: original Apache-2.0, separate XSD terms, native dependency notices and LGPL source
-obligations. The camt asset is excluded while its redistribution basis is unresolved.
+Approved positioning:
+“Aksum MessageBench helps financial-software engineers test whether message adapters preserve
+declared payment information. It runs offline on synthetic fixtures or institution-local files
+and produces reproducible, scope-labelled results.”
 
-Permitted positioning: “Aksum MessageBench helps financial-software engineers test whether
-message adapters preserve declared payment information. It runs offline on synthetic fixtures
-or institution-local files and produces reproducible, scope-labelled results.” Disclose alpha
-status and pending independent review. Do not claim approval, certification, national-standard
-status, production safety, full preservation, a badge, signed release or independent review.
+Disclose the candidate status, exact supported scope and absence of independent review.
+Do not claim NBE/EthSwitch/SWIFT/ISO approval or certification, production safety, national
+standard status, complete-document preservation, full Scorecard score or an earned badge.
+Every result states: “Pass means only the listed assertions passed for these inputs and versions.”
 
-Before publication, obtain actual fixture/technical/provenance review, appoint real maintainers
-and vulnerability responders, configure required reviews/protected releases and run hosted CI.
-The owner authorized development continuation, not automatic publication. No repeated approval
-request is needed for the remaining local work.
+Human-only release actions:
+1. Two genuine independent reviewers inspect the hash-bound packet, expected outcomes and rights;
+   a responsible human authenticates identities/independence and approves publication.
+2. Organization owners set real maintainers/CODEOWNERS, private reporting, branch/tag/environment
+   protections and run hosted CI. Exact payloads/commands are generated by scripts/owner_setup.py.
+3. Owners enable the protected OIDC signing job and verify its exact identity before publication;
+   create public repository/release and submit any badge application only with authorization.
+4. For camt support, obtain authoritative joint-contributor redistribution clearance first.
 
-v0.5 criteria are not met: only two message versions and no 60 independently reviewed cases.
-v1.0 criteria are not met: no stable public API commitment, 100 reviewed cases, independent
-external review/reproduction/use or established public governance.
+v0.5 criteria are not satisfied (third version and reviewed corpus). v1.0 criteria are not
+satisfied (external review, outside use, stable public API and governance). Preparation is complete;
+these real-world human facts cannot be manufactured by automation.

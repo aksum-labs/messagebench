@@ -1,0 +1,1621 @@
+{
+  "all_agree": true,
+  "documents": 200,
+  "processors": {
+    "libxml2": [
+      2,
+      15,
+      4
+    ],
+    "lxml": [
+      6,
+      1,
+      3,
+      0
+    ],
+    "xmlschema": "4.3.2"
+  },
+  "results": [
+    {
+      "case": "gate1-identity",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "gate1-identity",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "gate1-leading-zero-loss",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "gate1-leading-zero-loss",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "51e582cdddedda1aaff4b8445c22eae1bb4e571809579920adabf0358c302d83",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "gate1-reference-truncated",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "gate1-reference-truncated",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "ed27a8c335a5ee5df5f4dd8b51d2d992813bafdce7aeeea98853695e6d1e31aa",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "gate1-remittance-removed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "gate1-remittance-removed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "44e7a76c12405405a9400942c5ede7ef2a6a103a880544cc6e4eaeca7ff0ee2a",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "gate1-message-id-regenerated",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "gate1-message-id-regenerated",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "0f76ea5dfdd051bc881acd873d41b13d107664718c159bc68332c409a69ed957",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "gate1-currency-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "gate1-currency-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "7beb22c6fc0ed63b201a5feb3d3ae09b3bbfd98bf0849655c72db65044d61f64",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "279f324a8b21b5aec0725c3490be6215f1b31701a4a7946881b1e8e16b643f76",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-end-to-end-id-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-end-to-end-id-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-end-to-end-id-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-end-to-end-id-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "f59de5e1cd18a44cb5f42186ca16daf7fcb6f6b0cc54af85f0380610e40f57eb",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-transaction-id-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-transaction-id-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-transaction-id-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-transaction-id-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "654bfd54f62594870e82a1c2dbe685f5d58775003e85a80f64a3bdfc415c42cb",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-instruction-id-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "5e9fdb2ae3d6add5d266a397fbb32e8b98a4c190af04c7ad11bca781a5be4a1e",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-instruction-id-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "5e9fdb2ae3d6add5d266a397fbb32e8b98a4c190af04c7ad11bca781a5be4a1e",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-instruction-id-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "5e9fdb2ae3d6add5d266a397fbb32e8b98a4c190af04c7ad11bca781a5be4a1e",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-instruction-id-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "887a556f005ae14861098baf43d1851d4c380612e0b25edb4a8eda121bc65d13",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-iban-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "882fd5906e3b94253a7e58d27859494bbade09d47783ddd4e0ae20d3b81c36c0",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-iban-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "882fd5906e3b94253a7e58d27859494bbade09d47783ddd4e0ae20d3b81c36c0",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-iban-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "882fd5906e3b94253a7e58d27859494bbade09d47783ddd4e0ae20d3b81c36c0",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-iban-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "7ca56b24f8e45dc1445195800d6212c20adfd0ca563c795d3ee64f70f01e16fe",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-scheme-code-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "f4ce9e35d48c5fec0172b6355994a73eadce4b69b81853758e6212196f34044d",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-scheme-code-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "f4ce9e35d48c5fec0172b6355994a73eadce4b69b81853758e6212196f34044d",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-scheme-code-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "f4ce9e35d48c5fec0172b6355994a73eadce4b69b81853758e6212196f34044d",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-scheme-code-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "f63e8db251ae4fbd3d4346e951aa5fc219e8beda90884232148c5261191e1afe",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-scheme-proprietary-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-scheme-proprietary-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-scheme-proprietary-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-scheme-proprietary-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "897cdd661aa4d36528c17ee82a8582b6224470587dc579a772c31b367d257d22",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-issuer-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-issuer-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-issuer-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-account-issuer-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "9ef8bf1d7be571b2ce16b12af1ff05acd5fe797f4727eaa2f7ed5b5624e69130",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-agent-bic-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "163286bb98ddddcfea196851090598590ea9517b61327e3a3c9506c4a05dc139",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-agent-bic-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "163286bb98ddddcfea196851090598590ea9517b61327e3a3c9506c4a05dc139",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-agent-bic-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "163286bb98ddddcfea196851090598590ea9517b61327e3a3c9506c4a05dc139",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-agent-bic-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "e0f943c9838c1ccf6121eadcfb69f222f3a186849c2d5379706787e0a197e8b5",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-agent-other-id-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-agent-other-id-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-agent-other-id-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-agent-other-id-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "29837aed3f08a186d87646ec2c4811b5a2bc04f96307deab40112e0e46ccad50",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-account-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "63af5a4ba376aae937a3d23644a5c1d2a135faba4606f2d60925f89d4f36c4dc",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-account-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "63af5a4ba376aae937a3d23644a5c1d2a135faba4606f2d60925f89d4f36c4dc",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-account-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "63af5a4ba376aae937a3d23644a5c1d2a135faba4606f2d60925f89d4f36c4dc",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-account-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "e3a815079ef425261ab0ccdef2afb90040391a1eac5a1c0292ba4d429f97b633",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-account-iban-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "715b6ce1d5db1eb0c03545be9b49a13f757d5602002862c12df136b10c63b357",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-account-iban-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "715b6ce1d5db1eb0c03545be9b49a13f757d5602002862c12df136b10c63b357",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-account-iban-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "715b6ce1d5db1eb0c03545be9b49a13f757d5602002862c12df136b10c63b357",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-account-iban-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "70c64d1f7ae5c5721dc800a4243e4b4453e47c198f45dcc9185022aea72901f9",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-account-issuer-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "164f81e1125e9ad1079baae3098a9396b19b910eebcad47d0a33a6d58d1f28d7",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-account-issuer-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "164f81e1125e9ad1079baae3098a9396b19b910eebcad47d0a33a6d58d1f28d7",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-account-issuer-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "164f81e1125e9ad1079baae3098a9396b19b910eebcad47d0a33a6d58d1f28d7",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-account-issuer-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "cfd331e1d2d7a27f36f2dff6b34161f6dd74583765acd2f5d8c28287578a4810",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-agent-bic-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "0aa7c531f2904ea02da4c111b263f23bf16c9c909cd6a733fe4535a021585134",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-agent-bic-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "0aa7c531f2904ea02da4c111b263f23bf16c9c909cd6a733fe4535a021585134",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-agent-bic-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "0aa7c531f2904ea02da4c111b263f23bf16c9c909cd6a733fe4535a021585134",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-agent-bic-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "718dc333196f6793970942113d04f21d98250cab58b388623a02feb3ed644bb9",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-name-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "8fd916bfce4ee73d6c2b8df2db2b409c31ad83bed6ae03d1b472972f7f8b2399",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-name-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "8fd916bfce4ee73d6c2b8df2db2b409c31ad83bed6ae03d1b472972f7f8b2399",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-name-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "8fd916bfce4ee73d6c2b8df2db2b409c31ad83bed6ae03d1b472972f7f8b2399",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-debtor-name-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "65d9080608d3e491dfd74785cddd251f9bf0c2bd4cb4db5ff0f97ce91729df0e",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-name-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-name-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-name-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-creditor-name-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "c89ea505aecaacb11b6d794a1fa4c991908d1ac1885f305c132058b256617f68",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-instructed-amount-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "06f9d120a227150c6dc862d31a23263cf060dc46f610246e1b7682e5e7b75819",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-instructed-amount-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "06f9d120a227150c6dc862d31a23263cf060dc46f610246e1b7682e5e7b75819",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-instructed-amount-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "06f9d120a227150c6dc862d31a23263cf060dc46f610246e1b7682e5e7b75819",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-instructed-amount-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "ac80797f4aba83cbcef80fc574ed4cd0b0078b7239b191f3e7a23e766d247c0f",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-settlement-amount-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "981d5063dd000ea57fc81f53c92730ddeb50d0548baeb12b4fc427cccb16ea7b",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-settlement-amount-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "981d5063dd000ea57fc81f53c92730ddeb50d0548baeb12b4fc427cccb16ea7b",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-settlement-amount-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "981d5063dd000ea57fc81f53c92730ddeb50d0548baeb12b4fc427cccb16ea7b",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-settlement-amount-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "7ade7da8a5415dacfc235b317fc4d9f867c4ff5ef72581eb5a9d54dd0812110b",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-remittance-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-remittance-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-remittance-removed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-remittance-removed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "8d5be6c7afa1f9a4a6a1d9d845bc300751f68cf0655397a6d2d78acfdd80a41b",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-remittance-duplicated",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-remittance-duplicated",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "94ae1066b6f158b6d28eb471118418f2cdce86209a977eb0fd2f7a5d6eec0ae9",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-remittance-reordered",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-remittance-reordered",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "fc3d3cc1fb9ec9e68ac687ffa26d972eeff7bebd28676fd3e3c7bb5e7ca6e5b0",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-regenerated-message-id",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-regenerated-message-id",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "dc15be6a53f4d694b7f49b97df9a054064b20368e84026c36a84e2ecdd8dbed9",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-prefix-renamed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-prefix-renamed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "33e0272f62e227e7e5924f5e6ce1c6b9be69d5c1de3f0be02bff750b926b504c",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-decimal-lexical-change",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-decimal-lexical-change",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "9fc2fc6c03dbdf22c50feee016bdff12c21495583f667b7d45022a031872a187",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-currency-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-currency-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "eef4076311ffe83023354d0849e2d8eb4e9331e7933b6e2c38fe6cef274b1d61",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-ethiopic-remittance-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-ethiopic-remittance-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "f9487401d96ee0aa08a1769b98581feb37714b312454d9dc7e0753a05eaf8876",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-whitespace-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "599fb0537ca885ad491bb0294d5966f7d7fb65d4e4038497f030f609d7e9c961",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-whitespace-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "599fb0537ca885ad491bb0294d5966f7d7fb65d4e4038497f030f609d7e9c961",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-whitespace-trimmed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "599fb0537ca885ad491bb0294d5966f7d7fb65d4e4038497f030f609d7e9c961",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-whitespace-trimmed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-batch-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-batch-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-batch-reordered",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-batch-reordered",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "903ffd62fd4a581b20cbcb477e4f24226669a7e48ac4cb11e12a6b95b225d037",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-batch-amount-swapped",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-batch-amount-swapped",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "b38b040ca5591c20550c7c73d0e1c367b2632bfe04b7f23e4247d0c45000a459",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-batch-duplicate-key",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-batch-duplicate-key",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "c23af7ae93ad028fd7f3628d3a71ceb31e5dfca5ddba1aab970429836e8a0a68",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-unsupported-extension-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "8fb8ad3539fa1551cde6bd16a26c9995e2faad8b654823c16f9bc32b25b06cbf",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-unsupported-extension-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "8fb8ad3539fa1551cde6bd16a26c9995e2faad8b654823c16f9bc32b25b06cbf",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-unsupported-extension-change",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "8fb8ad3539fa1551cde6bd16a26c9995e2faad8b654823c16f9bc32b25b06cbf",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-unsupported-extension-change",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "7d753a6ffe08e25d2763eb73ab1d8b7bebe6aabd3714de24bd3a4f93f20ade28",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-invalid-target-xsd",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "extended-invalid-target-xsd",
+      "expected_valid": false,
+      "lxml_valid": false,
+      "sha256": "3ac9b2439ffa55f17c94d1bd356b9e04775891170501c4266c1c6a600654dac0",
+      "side": "target",
+      "xmlschema_valid": false
+    },
+    {
+      "case": "pacs002-identity",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "pacs002-identity",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "pacs002-regenerated-message-id",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "pacs002-regenerated-message-id",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "6e4df70dcb7ccdbf46af39fc752edc699e2579783b91c8a962d44389c5ffc849",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "pacs002-original-reference-truncated",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "pacs002-original-reference-truncated",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "3e25fef07616321ec7f7f2d4dc8addb4df1f1b3392c34b0870f6e29c78ef5234",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "pacs002-original-transaction-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "pacs002-original-transaction-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "260fd28991a2d2b142a985b5c23393d13e2ae0aa95e05c3990d564114312390f",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "pacs002-status-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "pacs002-status-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "9d3a59c7d368a82219a14affb45e77d5029596aaf3f28dc05503a06a62df917a",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "pacs002-reason-code-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "pacs002-reason-code-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "b2899649345fee4e78f1ef1adf353be17770f827319d22626f93c7963aa691ea",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "pacs002-reason-text-removed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "pacs002-reason-text-removed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "d137c93fa279f5f4064470f21487b34288da7827f394b63f93cb30faa2d52af8",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "pacs002-reason-text-reordered",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "pacs002-reason-text-reordered",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "331cb5e0ba8530e991553ee93466e7ff6847cdd60b0fe771507c7065a185e588",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-time-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-time-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-offset-equivalent",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-offset-equivalent",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "aa8cfa36fe9babc6eed4361242f9322eff1c23b2287b835a2de0508d1339a657",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-offset-negative",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-offset-negative",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "70fb1adf181afd5573f9b58fd5a134a54a0476cb7476008640537d2fa3bea04e",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-instant-shift",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-instant-shift",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "4272d43c0e789ab9a1d9a05aeb8ddc3ef6d8afbece63c8a64aa461a4b7c5160c",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-timezone-lost",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-timezone-lost",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "da46dbe514fa22a65e98c4555e1f2def64f7858715e02b4a38053f625ba8db4d",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-fraction-zero",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-fraction-zero",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "3378f56d8b24d8b8b519ba7cb98d1962b4ce5b5273c0118850eed899d6352ff4",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-submicro-loss",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-submicro-loss",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "8e01c7780f31e0e5a5796381c382cbcd07dac12921a065e194205d489831fc6e",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-midnight-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "79c038f762d491b0457c7c68a303e106c5daf9578385e8e2e2a6fc571259aa95",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-midnight-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "79c038f762d491b0457c7c68a303e106c5daf9578385e8e2e2a6fc571259aa95",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-midnight-equivalent",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "79c038f762d491b0457c7c68a303e106c5daf9578385e8e2e2a6fc571259aa95",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-midnight-equivalent",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "25e85a372a2ea7c5481a72fd3e24b1fa080f26e27d97a0e94ebb35708d24f191",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-calendar-day-shift",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-calendar-day-shift",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "01e4585bd6b2c72163a9292f62538f1ce646daa5fae51f1989923c21b9ba0872",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-keyed-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-keyed-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-keyed-reorder",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-keyed-reorder",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "903ffd62fd4a581b20cbcb477e4f24226669a7e48ac4cb11e12a6b95b225d037",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-keyed-swap",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-keyed-swap",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "b38b040ca5591c20550c7c73d0e1c367b2632bfe04b7f23e4247d0c45000a459",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-keyed-duplicate",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-keyed-duplicate",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "c23af7ae93ad028fd7f3628d3a71ceb31e5dfca5ddba1aab970429836e8a0a68",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-keyed-missing",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-keyed-missing",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "98b65e5b8a6f91ddde7feca69a7d1d22b7daa438962149749a065a29d8f34b94",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-keyed-regenerated-id",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-keyed-regenerated-id",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "520ef449653a78825ca192b656aaf1deaae1e25d4258582aef71222a0d470c5b",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-nfc-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-nfc-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-nfc-equivalent",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-nfc-equivalent",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "71006874eee8a4f68c9ef35a3938ff1bf481c4c463ecc3fc994ec4ee643a0e4d",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-nfc-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-nfc-changed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "9cfe473cf9305bb7d8efa21f9ad3bce8eedd159edd9917cf85fd9fdf33733948",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-exact-name-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-exact-name-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-nfd-not-normalized",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-nfd-not-normalized",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "71006874eee8a4f68c9ef35a3938ff1bf481c4c463ecc3fc994ec4ee643a0e4d",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-name-whitespace",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-name-whitespace",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "4fbdbab89e1568b24165327ae22aeaa73866b972e2a48ed9d30c0f78dfa6f150",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-name-case",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-name-case",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "ac4a2b6a6c593188a0a1db1de96d633b3f97018fbcb5ac108f5f8416b1d3ad91",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-name-script-change",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-name-script-change",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "8fd916bfce4ee73d6c2b8df2db2b409c31ad83bed6ae03d1b472972f7f8b2399",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-presence-absent-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "adad00fdf6ec142baa7fd82af1201f4392ef4e359c4e9289d8fa621c21f4316b",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-presence-absent-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "adad00fdf6ec142baa7fd82af1201f4392ef4e359c4e9289d8fa621c21f4316b",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-presence-present-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-presence-present-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-presence-added",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "adad00fdf6ec142baa7fd82af1201f4392ef4e359c4e9289d8fa621c21f4316b",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-presence-added",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-presence-removed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-presence-removed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "adad00fdf6ec142baa7fd82af1201f4392ef4e359c4e9289d8fa621c21f4316b",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-ordered-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-ordered-control",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-ordered-reversed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-ordered-reversed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "fc3d3cc1fb9ec9e68ac687ffa26d972eeff7bebd28676fd3e3c7bb5e7ca6e5b0",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-multiset-reversed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-multiset-reversed",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "fc3d3cc1fb9ec9e68ac687ffa26d972eeff7bebd28676fd3e3c7bb5e7ca6e5b0",
+      "side": "target",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-multiset-duplicated",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "side": "source",
+      "xmlschema_valid": true
+    },
+    {
+      "case": "semantic-multiset-duplicated",
+      "expected_valid": true,
+      "lxml_valid": true,
+      "sha256": "e6b5d73d51f5f9a60de8f2a66376df95c49b19e5a22bc010c9bd1b3c5aa95d48",
+      "side": "target",
+      "xmlschema_valid": true
+    }
+  ],
+  "scope": "All distributable XML-pair fixtures; malicious parser probes are tested separately."
+}

@@ -1,3 +1,5 @@
+> Historical alpha.2 notes. Current state is FINAL_COMPLETION_REPORT.md.
+
 # 0.1.0-alpha.2 — local review candidate
 
 Aksum MessageBench tests declared information preservation between local XML message pairs.

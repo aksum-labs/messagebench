@@ -1,0 +1,1851 @@
+{
+  "assets": {
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE": "6eb1b471fc933f6a8632f902839018ad65172570ffa488f748a9b588eefafde7",
+    "contracts/pacs002-preserve.json": "b47a2c567e2998c0e7f76bec3d7cdf8cbf712960bff06058d3de4d98d0ddb89f",
+    "contracts/pacs008-extended.json": "edd6a9f41a155ce4f6d30ae10b6808a38eedb44de6bec2b77b9271bdc0c5c373",
+    "contracts/pacs008-keyed-amount.json": "c2eae49a41b0dadaffc4beb0f53e1fd02bd3a6f606ba22e721479485a88c81fe",
+    "contracts/pacs008-name-exact.json": "a8ddd584c0ff0676d83940cdb0b5dd9ea42c8f9bde24f71552d35dca8f9f1ad0",
+    "contracts/pacs008-name-nfc.json": "62765dbbe1384f0b89070952eae7e4c90ab83baf38cdfafa2099be4ce5dcb4e9",
+    "contracts/pacs008-name-presence.json": "b24da55ca6046d78c498fc58de6627be3242314a49b288dc21e66ba49ada5261",
+    "contracts/pacs008-preserve.json": "8f2f9fe300c6e4e696457b6a0c5440d13c7837e224d532ad81cfd9c9c591ffd0",
+    "contracts/pacs008-remittance-multiset.json": "e8dee77a455077adff70386e3fd3b86897af1c7e50a9aaacdd77c74763355d46",
+    "contracts/pacs008-remittance-ordered.json": "da40eaea88811166e38ac8c6d238f0cf55a508495abf1f787181d4123598c21a",
+    "contracts/pacs008-time.json": "dbc14cc0b661d4c5d72d721e6796da38a03c18cf4c4b2f6feef378c9f8a07369",
+    "corpus/extended/batch-amount-swapped.source.xml": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+    "corpus/extended/batch-amount-swapped.target.xml": "b38b040ca5591c20550c7c73d0e1c367b2632bfe04b7f23e4247d0c45000a459",
+    "corpus/extended/batch-control.source.xml": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+    "corpus/extended/batch-control.target.xml": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+    "corpus/extended/batch-duplicate-key.source.xml": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+    "corpus/extended/batch-duplicate-key.target.xml": "c23af7ae93ad028fd7f3628d3a71ceb31e5dfca5ddba1aab970429836e8a0a68",
+    "corpus/extended/batch-reordered.source.xml": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+    "corpus/extended/batch-reordered.target.xml": "903ffd62fd4a581b20cbcb477e4f24226669a7e48ac4cb11e12a6b95b225d037",
+    "corpus/extended/creditor-account-changed.source.xml": "63af5a4ba376aae937a3d23644a5c1d2a135faba4606f2d60925f89d4f36c4dc",
+    "corpus/extended/creditor-account-changed.target.xml": "e3a815079ef425261ab0ccdef2afb90040391a1eac5a1c0292ba4d429f97b633",
+    "corpus/extended/creditor-account-control.source.xml": "63af5a4ba376aae937a3d23644a5c1d2a135faba4606f2d60925f89d4f36c4dc",
+    "corpus/extended/creditor-account-control.target.xml": "63af5a4ba376aae937a3d23644a5c1d2a135faba4606f2d60925f89d4f36c4dc",
+    "corpus/extended/creditor-account-iban-changed.source.xml": "715b6ce1d5db1eb0c03545be9b49a13f757d5602002862c12df136b10c63b357",
+    "corpus/extended/creditor-account-iban-changed.target.xml": "70c64d1f7ae5c5721dc800a4243e4b4453e47c198f45dcc9185022aea72901f9",
+    "corpus/extended/creditor-account-iban-control.source.xml": "715b6ce1d5db1eb0c03545be9b49a13f757d5602002862c12df136b10c63b357",
+    "corpus/extended/creditor-account-iban-control.target.xml": "715b6ce1d5db1eb0c03545be9b49a13f757d5602002862c12df136b10c63b357",
+    "corpus/extended/creditor-account-issuer-changed.source.xml": "164f81e1125e9ad1079baae3098a9396b19b910eebcad47d0a33a6d58d1f28d7",
+    "corpus/extended/creditor-account-issuer-changed.target.xml": "cfd331e1d2d7a27f36f2dff6b34161f6dd74583765acd2f5d8c28287578a4810",
+    "corpus/extended/creditor-account-issuer-control.source.xml": "164f81e1125e9ad1079baae3098a9396b19b910eebcad47d0a33a6d58d1f28d7",
+    "corpus/extended/creditor-account-issuer-control.target.xml": "164f81e1125e9ad1079baae3098a9396b19b910eebcad47d0a33a6d58d1f28d7",
+    "corpus/extended/creditor-agent-bic-changed.source.xml": "0aa7c531f2904ea02da4c111b263f23bf16c9c909cd6a733fe4535a021585134",
+    "corpus/extended/creditor-agent-bic-changed.target.xml": "718dc333196f6793970942113d04f21d98250cab58b388623a02feb3ed644bb9",
+    "corpus/extended/creditor-agent-bic-control.source.xml": "0aa7c531f2904ea02da4c111b263f23bf16c9c909cd6a733fe4535a021585134",
+    "corpus/extended/creditor-agent-bic-control.target.xml": "0aa7c531f2904ea02da4c111b263f23bf16c9c909cd6a733fe4535a021585134",
+    "corpus/extended/creditor-name-changed.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/creditor-name-changed.target.xml": "c89ea505aecaacb11b6d794a1fa4c991908d1ac1885f305c132058b256617f68",
+    "corpus/extended/creditor-name-control.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/creditor-name-control.target.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/currency-changed.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/currency-changed.target.xml": "eef4076311ffe83023354d0849e2d8eb4e9331e7933b6e2c38fe6cef274b1d61",
+    "corpus/extended/debtor-account-changed.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/debtor-account-changed.target.xml": "279f324a8b21b5aec0725c3490be6215f1b31701a4a7946881b1e8e16b643f76",
+    "corpus/extended/debtor-account-control.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/debtor-account-control.target.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/debtor-account-iban-changed.source.xml": "882fd5906e3b94253a7e58d27859494bbade09d47783ddd4e0ae20d3b81c36c0",
+    "corpus/extended/debtor-account-iban-changed.target.xml": "7ca56b24f8e45dc1445195800d6212c20adfd0ca563c795d3ee64f70f01e16fe",
+    "corpus/extended/debtor-account-iban-control.source.xml": "882fd5906e3b94253a7e58d27859494bbade09d47783ddd4e0ae20d3b81c36c0",
+    "corpus/extended/debtor-account-iban-control.target.xml": "882fd5906e3b94253a7e58d27859494bbade09d47783ddd4e0ae20d3b81c36c0",
+    "corpus/extended/debtor-account-issuer-changed.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/debtor-account-issuer-changed.target.xml": "9ef8bf1d7be571b2ce16b12af1ff05acd5fe797f4727eaa2f7ed5b5624e69130",
+    "corpus/extended/debtor-account-issuer-control.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/debtor-account-issuer-control.target.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/debtor-account-scheme-code-changed.source.xml": "f4ce9e35d48c5fec0172b6355994a73eadce4b69b81853758e6212196f34044d",
+    "corpus/extended/debtor-account-scheme-code-changed.target.xml": "f63e8db251ae4fbd3d4346e951aa5fc219e8beda90884232148c5261191e1afe",
+    "corpus/extended/debtor-account-scheme-code-control.source.xml": "f4ce9e35d48c5fec0172b6355994a73eadce4b69b81853758e6212196f34044d",
+    "corpus/extended/debtor-account-scheme-code-control.target.xml": "f4ce9e35d48c5fec0172b6355994a73eadce4b69b81853758e6212196f34044d",
+    "corpus/extended/debtor-account-scheme-proprietary-changed.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/debtor-account-scheme-proprietary-changed.target.xml": "897cdd661aa4d36528c17ee82a8582b6224470587dc579a772c31b367d257d22",
+    "corpus/extended/debtor-account-scheme-proprietary-control.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/debtor-account-scheme-proprietary-control.target.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/debtor-agent-bic-changed.source.xml": "163286bb98ddddcfea196851090598590ea9517b61327e3a3c9506c4a05dc139",
+    "corpus/extended/debtor-agent-bic-changed.target.xml": "e0f943c9838c1ccf6121eadcfb69f222f3a186849c2d5379706787e0a197e8b5",
+    "corpus/extended/debtor-agent-bic-control.source.xml": "163286bb98ddddcfea196851090598590ea9517b61327e3a3c9506c4a05dc139",
+    "corpus/extended/debtor-agent-bic-control.target.xml": "163286bb98ddddcfea196851090598590ea9517b61327e3a3c9506c4a05dc139",
+    "corpus/extended/debtor-agent-other-id-changed.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/debtor-agent-other-id-changed.target.xml": "29837aed3f08a186d87646ec2c4811b5a2bc04f96307deab40112e0e46ccad50",
+    "corpus/extended/debtor-agent-other-id-control.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/debtor-agent-other-id-control.target.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/debtor-name-changed.source.xml": "8fd916bfce4ee73d6c2b8df2db2b409c31ad83bed6ae03d1b472972f7f8b2399",
+    "corpus/extended/debtor-name-changed.target.xml": "65d9080608d3e491dfd74785cddd251f9bf0c2bd4cb4db5ff0f97ce91729df0e",
+    "corpus/extended/debtor-name-control.source.xml": "8fd916bfce4ee73d6c2b8df2db2b409c31ad83bed6ae03d1b472972f7f8b2399",
+    "corpus/extended/debtor-name-control.target.xml": "8fd916bfce4ee73d6c2b8df2db2b409c31ad83bed6ae03d1b472972f7f8b2399",
+    "corpus/extended/decimal-lexical-change.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/decimal-lexical-change.target.xml": "9fc2fc6c03dbdf22c50feee016bdff12c21495583f667b7d45022a031872a187",
+    "corpus/extended/end-to-end-id-changed.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/end-to-end-id-changed.target.xml": "f59de5e1cd18a44cb5f42186ca16daf7fcb6f6b0cc54af85f0380610e40f57eb",
+    "corpus/extended/end-to-end-id-control.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/end-to-end-id-control.target.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/ethiopic-remittance-changed.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/ethiopic-remittance-changed.target.xml": "f9487401d96ee0aa08a1769b98581feb37714b312454d9dc7e0753a05eaf8876",
+    "corpus/extended/instructed-amount-changed.source.xml": "06f9d120a227150c6dc862d31a23263cf060dc46f610246e1b7682e5e7b75819",
+    "corpus/extended/instructed-amount-changed.target.xml": "ac80797f4aba83cbcef80fc574ed4cd0b0078b7239b191f3e7a23e766d247c0f",
+    "corpus/extended/instructed-amount-control.source.xml": "06f9d120a227150c6dc862d31a23263cf060dc46f610246e1b7682e5e7b75819",
+    "corpus/extended/instructed-amount-control.target.xml": "06f9d120a227150c6dc862d31a23263cf060dc46f610246e1b7682e5e7b75819",
+    "corpus/extended/instruction-id-changed.source.xml": "5e9fdb2ae3d6add5d266a397fbb32e8b98a4c190af04c7ad11bca781a5be4a1e",
+    "corpus/extended/instruction-id-changed.target.xml": "887a556f005ae14861098baf43d1851d4c380612e0b25edb4a8eda121bc65d13",
+    "corpus/extended/instruction-id-control.source.xml": "5e9fdb2ae3d6add5d266a397fbb32e8b98a4c190af04c7ad11bca781a5be4a1e",
+    "corpus/extended/instruction-id-control.target.xml": "5e9fdb2ae3d6add5d266a397fbb32e8b98a4c190af04c7ad11bca781a5be4a1e",
+    "corpus/extended/invalid-target-xsd.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/invalid-target-xsd.target.xml": "3ac9b2439ffa55f17c94d1bd356b9e04775891170501c4266c1c6a600654dac0",
+    "corpus/extended/prefix-renamed.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/prefix-renamed.target.xml": "33e0272f62e227e7e5924f5e6ce1c6b9be69d5c1de3f0be02bff750b926b504c",
+    "corpus/extended/regenerated-message-id.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/regenerated-message-id.target.xml": "dc15be6a53f4d694b7f49b97df9a054064b20368e84026c36a84e2ecdd8dbed9",
+    "corpus/extended/remittance-control.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/remittance-control.target.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/remittance-duplicated.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/remittance-duplicated.target.xml": "94ae1066b6f158b6d28eb471118418f2cdce86209a977eb0fd2f7a5d6eec0ae9",
+    "corpus/extended/remittance-removed.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/remittance-removed.target.xml": "8d5be6c7afa1f9a4a6a1d9d845bc300751f68cf0655397a6d2d78acfdd80a41b",
+    "corpus/extended/remittance-reordered.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/remittance-reordered.target.xml": "fc3d3cc1fb9ec9e68ac687ffa26d972eeff7bebd28676fd3e3c7bb5e7ca6e5b0",
+    "corpus/extended/settlement-amount-changed.source.xml": "981d5063dd000ea57fc81f53c92730ddeb50d0548baeb12b4fc427cccb16ea7b",
+    "corpus/extended/settlement-amount-changed.target.xml": "7ade7da8a5415dacfc235b317fc4d9f867c4ff5ef72581eb5a9d54dd0812110b",
+    "corpus/extended/settlement-amount-control.source.xml": "981d5063dd000ea57fc81f53c92730ddeb50d0548baeb12b4fc427cccb16ea7b",
+    "corpus/extended/settlement-amount-control.target.xml": "981d5063dd000ea57fc81f53c92730ddeb50d0548baeb12b4fc427cccb16ea7b",
+    "corpus/extended/transaction-id-changed.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/transaction-id-changed.target.xml": "654bfd54f62594870e82a1c2dbe685f5d58775003e85a80f64a3bdfc415c42cb",
+    "corpus/extended/transaction-id-control.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/transaction-id-control.target.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/extended/unsupported-extension-change.source.xml": "8fb8ad3539fa1551cde6bd16a26c9995e2faad8b654823c16f9bc32b25b06cbf",
+    "corpus/extended/unsupported-extension-change.target.xml": "7d753a6ffe08e25d2763eb73ab1d8b7bebe6aabd3714de24bd3a4f93f20ade28",
+    "corpus/extended/unsupported-extension-control.source.xml": "8fb8ad3539fa1551cde6bd16a26c9995e2faad8b654823c16f9bc32b25b06cbf",
+    "corpus/extended/unsupported-extension-control.target.xml": "8fb8ad3539fa1551cde6bd16a26c9995e2faad8b654823c16f9bc32b25b06cbf",
+    "corpus/extended/whitespace-control.source.xml": "599fb0537ca885ad491bb0294d5966f7d7fb65d4e4038497f030f609d7e9c961",
+    "corpus/extended/whitespace-control.target.xml": "599fb0537ca885ad491bb0294d5966f7d7fb65d4e4038497f030f609d7e9c961",
+    "corpus/extended/whitespace-trimmed.source.xml": "599fb0537ca885ad491bb0294d5966f7d7fb65d4e4038497f030f609d7e9c961",
+    "corpus/extended/whitespace-trimmed.target.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/index.json": "619192c486a7f77021556767124b86087ca99a54a017687dde5439c0e32284f6",
+    "corpus/negative/currency-changed.source.xml": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+    "corpus/negative/currency-changed.target.xml": "7beb22c6fc0ed63b201a5feb3d3ae09b3bbfd98bf0849655c72db65044d61f64",
+    "corpus/negative/leading-zero-loss.source.xml": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+    "corpus/negative/leading-zero-loss.target.xml": "51e582cdddedda1aaff4b8445c22eae1bb4e571809579920adabf0358c302d83",
+    "corpus/negative/reference-truncated.source.xml": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+    "corpus/negative/reference-truncated.target.xml": "ed27a8c335a5ee5df5f4dd8b51d2d992813bafdce7aeeea98853695e6d1e31aa",
+    "corpus/negative/remittance-removed.source.xml": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+    "corpus/negative/remittance-removed.target.xml": "44e7a76c12405405a9400942c5ede7ef2a6a103a880544cc6e4eaeca7ff0ee2a",
+    "corpus/pacs002/identity.source.xml": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+    "corpus/pacs002/identity.target.xml": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+    "corpus/pacs002/original-reference-truncated.source.xml": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+    "corpus/pacs002/original-reference-truncated.target.xml": "3e25fef07616321ec7f7f2d4dc8addb4df1f1b3392c34b0870f6e29c78ef5234",
+    "corpus/pacs002/original-transaction-changed.source.xml": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+    "corpus/pacs002/original-transaction-changed.target.xml": "260fd28991a2d2b142a985b5c23393d13e2ae0aa95e05c3990d564114312390f",
+    "corpus/pacs002/reason-code-changed.source.xml": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+    "corpus/pacs002/reason-code-changed.target.xml": "b2899649345fee4e78f1ef1adf353be17770f827319d22626f93c7963aa691ea",
+    "corpus/pacs002/reason-text-removed.source.xml": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+    "corpus/pacs002/reason-text-removed.target.xml": "d137c93fa279f5f4064470f21487b34288da7827f394b63f93cb30faa2d52af8",
+    "corpus/pacs002/reason-text-reordered.source.xml": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+    "corpus/pacs002/reason-text-reordered.target.xml": "331cb5e0ba8530e991553ee93466e7ff6847cdd60b0fe771507c7065a185e588",
+    "corpus/pacs002/regenerated-message-id.source.xml": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+    "corpus/pacs002/regenerated-message-id.target.xml": "6e4df70dcb7ccdbf46af39fc752edc699e2579783b91c8a962d44389c5ffc849",
+    "corpus/pacs002/status-changed.source.xml": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+    "corpus/pacs002/status-changed.target.xml": "9d3a59c7d368a82219a14affb45e77d5029596aaf3f28dc05503a06a62df917a",
+    "corpus/positive/identity.source.xml": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+    "corpus/positive/identity.target.xml": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+    "corpus/positive/message-id-regenerated.source.xml": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+    "corpus/positive/message-id-regenerated.target.xml": "0f76ea5dfdd051bc881acd873d41b13d107664718c159bc68332c409a69ed957",
+    "corpus/semantic/calendar-day-shift.source.xml": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+    "corpus/semantic/calendar-day-shift.target.xml": "01e4585bd6b2c72163a9292f62538f1ce646daa5fae51f1989923c21b9ba0872",
+    "corpus/semantic/exact-name-control.source.xml": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+    "corpus/semantic/exact-name-control.target.xml": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+    "corpus/semantic/fraction-zero.source.xml": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+    "corpus/semantic/fraction-zero.target.xml": "3378f56d8b24d8b8b519ba7cb98d1962b4ce5b5273c0118850eed899d6352ff4",
+    "corpus/semantic/instant-shift.source.xml": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+    "corpus/semantic/instant-shift.target.xml": "4272d43c0e789ab9a1d9a05aeb8ddc3ef6d8afbece63c8a64aa461a4b7c5160c",
+    "corpus/semantic/keyed-control.source.xml": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+    "corpus/semantic/keyed-control.target.xml": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+    "corpus/semantic/keyed-duplicate.source.xml": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+    "corpus/semantic/keyed-duplicate.target.xml": "c23af7ae93ad028fd7f3628d3a71ceb31e5dfca5ddba1aab970429836e8a0a68",
+    "corpus/semantic/keyed-missing.source.xml": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+    "corpus/semantic/keyed-missing.target.xml": "98b65e5b8a6f91ddde7feca69a7d1d22b7daa438962149749a065a29d8f34b94",
+    "corpus/semantic/keyed-regenerated-id.source.xml": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+    "corpus/semantic/keyed-regenerated-id.target.xml": "520ef449653a78825ca192b656aaf1deaae1e25d4258582aef71222a0d470c5b",
+    "corpus/semantic/keyed-reorder.source.xml": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+    "corpus/semantic/keyed-reorder.target.xml": "903ffd62fd4a581b20cbcb477e4f24226669a7e48ac4cb11e12a6b95b225d037",
+    "corpus/semantic/keyed-swap.source.xml": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+    "corpus/semantic/keyed-swap.target.xml": "b38b040ca5591c20550c7c73d0e1c367b2632bfe04b7f23e4247d0c45000a459",
+    "corpus/semantic/midnight-control.source.xml": "79c038f762d491b0457c7c68a303e106c5daf9578385e8e2e2a6fc571259aa95",
+    "corpus/semantic/midnight-control.target.xml": "79c038f762d491b0457c7c68a303e106c5daf9578385e8e2e2a6fc571259aa95",
+    "corpus/semantic/midnight-equivalent.source.xml": "79c038f762d491b0457c7c68a303e106c5daf9578385e8e2e2a6fc571259aa95",
+    "corpus/semantic/midnight-equivalent.target.xml": "25e85a372a2ea7c5481a72fd3e24b1fa080f26e27d97a0e94ebb35708d24f191",
+    "corpus/semantic/multiset-duplicated.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/semantic/multiset-duplicated.target.xml": "e6b5d73d51f5f9a60de8f2a66376df95c49b19e5a22bc010c9bd1b3c5aa95d48",
+    "corpus/semantic/multiset-reversed.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/semantic/multiset-reversed.target.xml": "fc3d3cc1fb9ec9e68ac687ffa26d972eeff7bebd28676fd3e3c7bb5e7ca6e5b0",
+    "corpus/semantic/name-case.source.xml": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+    "corpus/semantic/name-case.target.xml": "ac4a2b6a6c593188a0a1db1de96d633b3f97018fbcb5ac108f5f8416b1d3ad91",
+    "corpus/semantic/name-script-change.source.xml": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+    "corpus/semantic/name-script-change.target.xml": "8fd916bfce4ee73d6c2b8df2db2b409c31ad83bed6ae03d1b472972f7f8b2399",
+    "corpus/semantic/name-whitespace.source.xml": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+    "corpus/semantic/name-whitespace.target.xml": "4fbdbab89e1568b24165327ae22aeaa73866b972e2a48ed9d30c0f78dfa6f150",
+    "corpus/semantic/nfc-changed.source.xml": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+    "corpus/semantic/nfc-changed.target.xml": "9cfe473cf9305bb7d8efa21f9ad3bce8eedd159edd9917cf85fd9fdf33733948",
+    "corpus/semantic/nfc-control.source.xml": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+    "corpus/semantic/nfc-control.target.xml": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+    "corpus/semantic/nfc-equivalent.source.xml": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+    "corpus/semantic/nfc-equivalent.target.xml": "71006874eee8a4f68c9ef35a3938ff1bf481c4c463ecc3fc994ec4ee643a0e4d",
+    "corpus/semantic/nfd-not-normalized.source.xml": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+    "corpus/semantic/nfd-not-normalized.target.xml": "71006874eee8a4f68c9ef35a3938ff1bf481c4c463ecc3fc994ec4ee643a0e4d",
+    "corpus/semantic/offset-equivalent.source.xml": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+    "corpus/semantic/offset-equivalent.target.xml": "aa8cfa36fe9babc6eed4361242f9322eff1c23b2287b835a2de0508d1339a657",
+    "corpus/semantic/offset-negative.source.xml": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+    "corpus/semantic/offset-negative.target.xml": "70fb1adf181afd5573f9b58fd5a134a54a0476cb7476008640537d2fa3bea04e",
+    "corpus/semantic/ordered-control.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/semantic/ordered-control.target.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/semantic/ordered-reversed.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/semantic/ordered-reversed.target.xml": "fc3d3cc1fb9ec9e68ac687ffa26d972eeff7bebd28676fd3e3c7bb5e7ca6e5b0",
+    "corpus/semantic/presence-absent-control.source.xml": "adad00fdf6ec142baa7fd82af1201f4392ef4e359c4e9289d8fa621c21f4316b",
+    "corpus/semantic/presence-absent-control.target.xml": "adad00fdf6ec142baa7fd82af1201f4392ef4e359c4e9289d8fa621c21f4316b",
+    "corpus/semantic/presence-added.source.xml": "adad00fdf6ec142baa7fd82af1201f4392ef4e359c4e9289d8fa621c21f4316b",
+    "corpus/semantic/presence-added.target.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/semantic/presence-present-control.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/semantic/presence-present-control.target.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/semantic/presence-removed.source.xml": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+    "corpus/semantic/presence-removed.target.xml": "adad00fdf6ec142baa7fd82af1201f4392ef4e359c4e9289d8fa621c21f4316b",
+    "corpus/semantic/submicro-loss.source.xml": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+    "corpus/semantic/submicro-loss.target.xml": "8e01c7780f31e0e5a5796381c382cbcd07dac12921a065e194205d489831fc6e",
+    "corpus/semantic/time-control.source.xml": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+    "corpus/semantic/time-control.target.xml": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+    "corpus/semantic/timezone-lost.source.xml": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+    "corpus/semantic/timezone-lost.target.xml": "da46dbe514fa22a65e98c4555e1f2def64f7858715e02b4a38053f625ba8db4d",
+    "evidence/native-source-pins.json": "84e5309714c3d734835222a65a74d074ca5c84506c921e616156066d9764966c",
+    "evidence/rights-register.json": "effd68a3997247a1bb589775cb8b8a81c2ab5b1fc535e3a09fdd4b193374a068",
+    "schemas/catalog.json": "b9074bcb13968a9468ec3edec33ec0747eeff65de18c53afc573b86177c05d06",
+    "schemas/contracts.schema.json": "2d2cd71209bccf119ac7f8e91342e43234d98a1987e44410ade73b1ebcc175f1",
+    "schemas/corpus.schema.json": "3abb368d5e5a4f0fd0df9f24b78a5281a5ed017904cfbbf138c05d2f97897d19",
+    "schemas/iso/pacs.002.001.10.xsd": "d14da6304db5178b1afc7d8ed6cc6073e6e1a143fc79d9ba66d3246d4a654e90",
+    "schemas/iso/pacs.008.001.08.xsd": "9bb360555d1981be8635aa3ed295abfe8b2d221d316193434114ad722107dcde",
+    "schemas/report.schema.json": "eaaa4a4629dc8cd0efeafbae8a35dd77725ec3dc2a08ffbe0208381402c46a8b",
+    "schemas/suite-report.schema.json": "398afc45db2c51d008b892196493671fbc4069d4e8be520ca609b6d4d3881dfd",
+    "src/aksum_messagebench/__init__.py": "3e4788d2a5a7a272ee082e18b52b412df5a8c144120f8bdf171b4023d942b9fa",
+    "src/aksum_messagebench/__main__.py": "3c82483a895ec731a7ace273df25d6419e9e08a0fd8762cb01aa3eaad43c1d81",
+    "src/aksum_messagebench/assets.py": "10adcc13d4ef24260044a26356590f3697e688f9a17a018b4b5336a85f978049",
+    "src/aksum_messagebench/association.py": "6c37191952abdbdc725290db21f5b8250b1bbb76e69f3b60bb2b785364ec7696",
+    "src/aksum_messagebench/cli.py": "3d8c7c560cbe3f45a909541eb5da26b390b2353c10fd0bdeb41ceae9e365224c",
+    "src/aksum_messagebench/comparators.py": "305f8f662da9966dd21ccdd08cbba04d114aa3b1435ca1dbc81e3c222675e3cd",
+    "src/aksum_messagebench/contracts.py": "1ecc9e82ad25a63f888b2ad9ced0ac8665be37f1500d9a193778fc5ad4c989da",
+    "src/aksum_messagebench/corpus.py": "a6876fb882292953be0fd32e87f7dfb230cdda9a38111d7ee6f18c8c8c767b08",
+    "src/aksum_messagebench/coverage.py": "5b2df15368299e1fc7040fcd19a2e52106481b45f0c36d10ddcc7dda41eb8696",
+    "src/aksum_messagebench/engine.py": "2112d7b67536c26516380f8027da549014f49bbcc84e64c451fb5519e7adccad",
+    "src/aksum_messagebench/errors.py": "00f2fbf8edb533abe702b6d4efbb46b44858b84879b23608cdcdc45d475651de",
+    "src/aksum_messagebench/extractors/__init__.py": "f825370831d77315e81762f619fa0f0d08c3d365e61f066252e12dc5ff469706",
+    "src/aksum_messagebench/extractors/pacs002_001_10.py": "e819b1ad6fceaee42f0a9e27672cab96dac431dc0b8838d84bb03fe32f4a842f",
+    "src/aksum_messagebench/extractors/pacs008_001_08.py": "5f2b92dafbd99a62e42b99dc2b792ebf911c2119695bcf17d7c2e21d9a8ff17d",
+    "src/aksum_messagebench/input_guard.py": "1a575bc95a83dc48b2d678593fb0ff3438167b393262da2ca6ca930772610b13",
+    "src/aksum_messagebench/reports.py": "64be8281acfc1af4b2f427d2f6aac0bace90754339f745942090b81ab7d76333",
+    "src/aksum_messagebench/runtime_limits.py": "57949d3212e929f63af4b87681bf9a058d1e46a32ed427ba51601e3f07737bf5",
+    "src/aksum_messagebench/schema_catalog.py": "2e6d749b513c68fa8996767cbf7a73dfabc9031b05956ca555e01db1e95ae740",
+    "src/aksum_messagebench/time_semantics.py": "fc2cd6ef8f24865340fa3f9792049be88aa1a36260d667920b56c9cc31ebf659",
+    "src/aksum_messagebench/workflows.py": "942e7459a738e8cb73991ac59d092bff983a01331fdcb5503557abb9ba156785",
+    "src/aksum_messagebench/xml_reader.py": "d90d85dec707b0dd9f691cc26002f3b84f027f3091f14ebadf8ab4d98173f2f5",
+    "third-party/SWIFTStandards_LIC_OUT_V5.pdf": "07ce98e523e756121586eaec30ddc6581db44eac3462f91dcd1d04bcdb38d61e"
+  },
+  "cases": [
+    {
+      "contract": "pacs008-preserve.json",
+      "control": "gate1-identity",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "gate1-identity",
+      "rationale": "Byte-identical control for every declared assertion.",
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27"
+    },
+    {
+      "contract": "pacs008-preserve.json",
+      "control": "gate1-identity",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-ACCOUNT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "gate1-leading-zero-loss",
+      "rationale": "Account identifiers are exact strings, including leading zeros.",
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "51e582cdddedda1aaff4b8445c22eae1bb4e571809579920adabf0358c302d83"
+    },
+    {
+      "contract": "pacs008-preserve.json",
+      "control": "gate1-identity",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-END-TO-END-ID"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "gate1-reference-truncated",
+      "rationale": "A shorter but schema-valid end-to-end identifier violates the declared promise.",
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "ed27a8c335a5ee5df5f4dd8b51d2d992813bafdce7aeeea98853695e6d1e31aa"
+    },
+    {
+      "contract": "pacs008-preserve.json",
+      "control": "gate1-identity",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REMITTANCE"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "gate1-remittance-removed",
+      "rationale": "Removing one repeated item changes the declared multiset.",
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "44e7a76c12405405a9400942c5ede7ef2a6a103a880544cc6e4eaeca7ff0ee2a"
+    },
+    {
+      "contract": "pacs008-preserve.json",
+      "control": "gate1-identity",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "gate1-message-id-regenerated",
+      "rationale": "This engineering contract explicitly permits message ID regeneration.",
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "0f76ea5dfdd051bc881acd873d41b13d107664718c159bc68332c409a69ed957"
+    },
+    {
+      "contract": "pacs008-preserve.json",
+      "control": "gate1-identity",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-SETTLEMENT-AMOUNT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "gate1-currency-changed",
+      "rationale": "Equal numeric text with a different currency does not preserve the amount-and-currency pair.",
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "7beb22c6fc0ed63b201a5feb3d3ae09b3bbfd98bf0849655c72db65044d61f64"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-account-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-debtor-account-control",
+      "rationale": "Identity control with the named field present.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-account-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-ACCOUNT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-debtor-account-changed",
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "279f324a8b21b5aec0725c3490be6215f1b31701a4a7946881b1e8e16b643f76"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-end-to-end-id-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-end-to-end-id-control",
+      "rationale": "Identity control with the named field present.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-account-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-END-TO-END-ID"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-end-to-end-id-changed",
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "f59de5e1cd18a44cb5f42186ca16daf7fcb6f6b0cc54af85f0380610e40f57eb"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-transaction-id-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-transaction-id-control",
+      "rationale": "Identity control with the named field present.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-account-control",
+      "expected": {
+        "exit_code": 3,
+        "failed_assertions": [],
+        "overall": "INDETERMINATE",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-transaction-id-changed",
+      "rationale": "Changed declared association key prevents a reliable pairing.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "654bfd54f62594870e82a1c2dbe685f5d58775003e85a80f64a3bdfc415c42cb"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-instruction-id-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-instruction-id-control",
+      "rationale": "Identity control with the named field present.",
+      "source_sha256": "5e9fdb2ae3d6add5d266a397fbb32e8b98a4c190af04c7ad11bca781a5be4a1e",
+      "target_sha256": "5e9fdb2ae3d6add5d266a397fbb32e8b98a4c190af04c7ad11bca781a5be4a1e"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-instruction-id-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-INSTRUCTION-ID"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-instruction-id-changed",
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "source_sha256": "5e9fdb2ae3d6add5d266a397fbb32e8b98a4c190af04c7ad11bca781a5be4a1e",
+      "target_sha256": "887a556f005ae14861098baf43d1851d4c380612e0b25edb4a8eda121bc65d13"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-account-iban-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-debtor-account-iban-control",
+      "rationale": "Identity control with the named field present.",
+      "source_sha256": "882fd5906e3b94253a7e58d27859494bbade09d47783ddd4e0ae20d3b81c36c0",
+      "target_sha256": "882fd5906e3b94253a7e58d27859494bbade09d47783ddd4e0ae20d3b81c36c0"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-account-iban-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-ACCOUNT-IBAN"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-debtor-account-iban-changed",
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "source_sha256": "882fd5906e3b94253a7e58d27859494bbade09d47783ddd4e0ae20d3b81c36c0",
+      "target_sha256": "7ca56b24f8e45dc1445195800d6212c20adfd0ca563c795d3ee64f70f01e16fe"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-account-scheme-code-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-debtor-account-scheme-code-control",
+      "rationale": "Identity control with the named field present.",
+      "source_sha256": "f4ce9e35d48c5fec0172b6355994a73eadce4b69b81853758e6212196f34044d",
+      "target_sha256": "f4ce9e35d48c5fec0172b6355994a73eadce4b69b81853758e6212196f34044d"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-account-scheme-code-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-ACCOUNT-SCHEME-CODE"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-debtor-account-scheme-code-changed",
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "source_sha256": "f4ce9e35d48c5fec0172b6355994a73eadce4b69b81853758e6212196f34044d",
+      "target_sha256": "f63e8db251ae4fbd3d4346e951aa5fc219e8beda90884232148c5261191e1afe"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-account-scheme-proprietary-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-debtor-account-scheme-proprietary-control",
+      "rationale": "Identity control with the named field present.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-account-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-ACCOUNT-SCHEME-PROPRIETARY"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-debtor-account-scheme-proprietary-changed",
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "897cdd661aa4d36528c17ee82a8582b6224470587dc579a772c31b367d257d22"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-account-issuer-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-debtor-account-issuer-control",
+      "rationale": "Identity control with the named field present.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-account-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-ACCOUNT-ISSUER"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-debtor-account-issuer-changed",
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "9ef8bf1d7be571b2ce16b12af1ff05acd5fe797f4727eaa2f7ed5b5624e69130"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-agent-bic-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-debtor-agent-bic-control",
+      "rationale": "Identity control with the named field present.",
+      "source_sha256": "163286bb98ddddcfea196851090598590ea9517b61327e3a3c9506c4a05dc139",
+      "target_sha256": "163286bb98ddddcfea196851090598590ea9517b61327e3a3c9506c4a05dc139"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-agent-bic-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-AGENT-BIC"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-debtor-agent-bic-changed",
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "source_sha256": "163286bb98ddddcfea196851090598590ea9517b61327e3a3c9506c4a05dc139",
+      "target_sha256": "e0f943c9838c1ccf6121eadcfb69f222f3a186849c2d5379706787e0a197e8b5"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-agent-other-id-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-debtor-agent-other-id-control",
+      "rationale": "Identity control with the named field present.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-account-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-AGENT-OTHER-ID"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-debtor-agent-other-id-changed",
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "29837aed3f08a186d87646ec2c4811b5a2bc04f96307deab40112e0e46ccad50"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-creditor-account-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-creditor-account-control",
+      "rationale": "Identity control with the named field present.",
+      "source_sha256": "63af5a4ba376aae937a3d23644a5c1d2a135faba4606f2d60925f89d4f36c4dc",
+      "target_sha256": "63af5a4ba376aae937a3d23644a5c1d2a135faba4606f2d60925f89d4f36c4dc"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-creditor-account-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-CREDITOR-ACCOUNT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-creditor-account-changed",
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "source_sha256": "63af5a4ba376aae937a3d23644a5c1d2a135faba4606f2d60925f89d4f36c4dc",
+      "target_sha256": "e3a815079ef425261ab0ccdef2afb90040391a1eac5a1c0292ba4d429f97b633"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-creditor-account-iban-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-creditor-account-iban-control",
+      "rationale": "Identity control with the named field present.",
+      "source_sha256": "715b6ce1d5db1eb0c03545be9b49a13f757d5602002862c12df136b10c63b357",
+      "target_sha256": "715b6ce1d5db1eb0c03545be9b49a13f757d5602002862c12df136b10c63b357"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-creditor-account-iban-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-CREDITOR-ACCOUNT-IBAN"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-creditor-account-iban-changed",
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "source_sha256": "715b6ce1d5db1eb0c03545be9b49a13f757d5602002862c12df136b10c63b357",
+      "target_sha256": "70c64d1f7ae5c5721dc800a4243e4b4453e47c198f45dcc9185022aea72901f9"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-creditor-account-issuer-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-creditor-account-issuer-control",
+      "rationale": "Identity control with the named field present.",
+      "source_sha256": "164f81e1125e9ad1079baae3098a9396b19b910eebcad47d0a33a6d58d1f28d7",
+      "target_sha256": "164f81e1125e9ad1079baae3098a9396b19b910eebcad47d0a33a6d58d1f28d7"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-creditor-account-issuer-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-CREDITOR-ACCOUNT-ISSUER"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-creditor-account-issuer-changed",
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "source_sha256": "164f81e1125e9ad1079baae3098a9396b19b910eebcad47d0a33a6d58d1f28d7",
+      "target_sha256": "cfd331e1d2d7a27f36f2dff6b34161f6dd74583765acd2f5d8c28287578a4810"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-creditor-agent-bic-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-creditor-agent-bic-control",
+      "rationale": "Identity control with the named field present.",
+      "source_sha256": "0aa7c531f2904ea02da4c111b263f23bf16c9c909cd6a733fe4535a021585134",
+      "target_sha256": "0aa7c531f2904ea02da4c111b263f23bf16c9c909cd6a733fe4535a021585134"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-creditor-agent-bic-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-CREDITOR-AGENT-BIC"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-creditor-agent-bic-changed",
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "source_sha256": "0aa7c531f2904ea02da4c111b263f23bf16c9c909cd6a733fe4535a021585134",
+      "target_sha256": "718dc333196f6793970942113d04f21d98250cab58b388623a02feb3ed644bb9"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-name-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-debtor-name-control",
+      "rationale": "Identity control with the named field present.",
+      "source_sha256": "8fd916bfce4ee73d6c2b8df2db2b409c31ad83bed6ae03d1b472972f7f8b2399",
+      "target_sha256": "8fd916bfce4ee73d6c2b8df2db2b409c31ad83bed6ae03d1b472972f7f8b2399"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-name-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-DEBTOR-NAME"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-debtor-name-changed",
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "source_sha256": "8fd916bfce4ee73d6c2b8df2db2b409c31ad83bed6ae03d1b472972f7f8b2399",
+      "target_sha256": "65d9080608d3e491dfd74785cddd251f9bf0c2bd4cb4db5ff0f97ce91729df0e"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-creditor-name-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-creditor-name-control",
+      "rationale": "Identity control with the named field present.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-account-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-CREDITOR-NAME"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-creditor-name-changed",
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "c89ea505aecaacb11b6d794a1fa4c991908d1ac1885f305c132058b256617f68"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-instructed-amount-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-instructed-amount-control",
+      "rationale": "Identity control with the named field present.",
+      "source_sha256": "06f9d120a227150c6dc862d31a23263cf060dc46f610246e1b7682e5e7b75819",
+      "target_sha256": "06f9d120a227150c6dc862d31a23263cf060dc46f610246e1b7682e5e7b75819"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-instructed-amount-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-INSTRUCTED-AMOUNT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-instructed-amount-changed",
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "source_sha256": "06f9d120a227150c6dc862d31a23263cf060dc46f610246e1b7682e5e7b75819",
+      "target_sha256": "ac80797f4aba83cbcef80fc574ed4cd0b0078b7239b191f3e7a23e766d247c0f"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-settlement-amount-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-settlement-amount-control",
+      "rationale": "Identity control with the named field present.",
+      "source_sha256": "981d5063dd000ea57fc81f53c92730ddeb50d0548baeb12b4fc427cccb16ea7b",
+      "target_sha256": "981d5063dd000ea57fc81f53c92730ddeb50d0548baeb12b4fc427cccb16ea7b"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-settlement-amount-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-SETTLEMENT-AMOUNT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-settlement-amount-changed",
+      "rationale": "Schema-valid change to the named explicitly preserved field.",
+      "source_sha256": "981d5063dd000ea57fc81f53c92730ddeb50d0548baeb12b4fc427cccb16ea7b",
+      "target_sha256": "7ade7da8a5415dacfc235b317fc4d9f867c4ff5ef72581eb5a9d54dd0812110b"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-remittance-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-remittance-control",
+      "rationale": "Repeated remittance identity control.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-account-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REMITTANCE"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-remittance-removed",
+      "rationale": "Multiset semantics preserve multiplicity while allowing reordering.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "8d5be6c7afa1f9a4a6a1d9d845bc300751f68cf0655397a6d2d78acfdd80a41b"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-account-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REMITTANCE"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-remittance-duplicated",
+      "rationale": "Multiset semantics preserve multiplicity while allowing reordering.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "94ae1066b6f158b6d28eb471118418f2cdce86209a977eb0fd2f7a5d6eec0ae9"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-remittance-reordered",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-remittance-reordered",
+      "rationale": "Multiset semantics preserve multiplicity while allowing reordering.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "fc3d3cc1fb9ec9e68ac687ffa26d972eeff7bebd28676fd3e3c7bb5e7ca6e5b0"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-regenerated-message-id",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-regenerated-message-id",
+      "rationale": "Contract explicitly permits message-ID regeneration.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "dc15be6a53f4d694b7f49b97df9a054064b20368e84026c36a84e2ecdd8dbed9"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-prefix-renamed",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-prefix-renamed",
+      "rationale": "Expanded QNames remain unchanged.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "33e0272f62e227e7e5924f5e6ce1c6b9be69d5c1de3f0be02bff750b926b504c"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-decimal-lexical-change",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-decimal-lexical-change",
+      "rationale": "Decimal value preserved; lexical scale is not promised.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "9fc2fc6c03dbdf22c50feee016bdff12c21495583f667b7d45022a031872a187"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-account-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-SETTLEMENT-AMOUNT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-currency-changed",
+      "rationale": "Equal numeric amount with changed currency is a preservation failure.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "eef4076311ffe83023354d0849e2d8eb4e9331e7933b6e2c38fe6cef274b1d61"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-account-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REMITTANCE"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-ethiopic-remittance-changed",
+      "rationale": "Exact Unicode remittance preservation detects Ethiopic text loss.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "f9487401d96ee0aa08a1769b98581feb37714b312454d9dc7e0753a05eaf8876"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-whitespace-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-whitespace-control",
+      "rationale": "Whitespace-bearing remittance positive control.",
+      "source_sha256": "599fb0537ca885ad491bb0294d5966f7d7fb65d4e4038497f030f609d7e9c961",
+      "target_sha256": "599fb0537ca885ad491bb0294d5966f7d7fb65d4e4038497f030f609d7e9c961"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-whitespace-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REMITTANCE"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-whitespace-trimmed",
+      "rationale": "No implicit trimming is permitted.",
+      "source_sha256": "599fb0537ca885ad491bb0294d5966f7d7fb65d4e4038497f030f609d7e9c961",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-batch-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-batch-control",
+      "rationale": "Two uniquely keyed transactions with different amounts.",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-batch-reordered",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-batch-reordered",
+      "rationale": "Declared unique keys permit transaction reordering.",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target_sha256": "903ffd62fd4a581b20cbcb477e4f24226669a7e48ac4cb11e12a6b95b225d037"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-batch-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-SETTLEMENT-AMOUNT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-batch-amount-swapped",
+      "rationale": "Same amount multiset cannot conceal incorrect transaction association.",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target_sha256": "b38b040ca5591c20550c7c73d0e1c367b2632bfe04b7f23e4247d0c45000a459"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-batch-control",
+      "expected": {
+        "exit_code": 3,
+        "failed_assertions": [],
+        "overall": "INDETERMINATE",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-batch-duplicate-key",
+      "rationale": "Ambiguous keys prevent reliable association, never positional guessing.",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target_sha256": "c23af7ae93ad028fd7f3628d3a71ceb31e5dfca5ddba1aab970429836e8a0a68"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-unsupported-extension-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-unsupported-extension-control",
+      "rationale": "Assertions pass while foreign extension coverage is explicitly unsupported.",
+      "source_sha256": "8fb8ad3539fa1551cde6bd16a26c9995e2faad8b654823c16f9bc32b25b06cbf",
+      "target_sha256": "8fb8ad3539fa1551cde6bd16a26c9995e2faad8b654823c16f9bc32b25b06cbf"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-unsupported-extension-change",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "extended-unsupported-extension-change",
+      "rationale": "No assertion promises extension preservation; scope-labeled pass is intentional.",
+      "source_sha256": "8fb8ad3539fa1551cde6bd16a26c9995e2faad8b654823c16f9bc32b25b06cbf",
+      "target_sha256": "7d753a6ffe08e25d2763eb73ab1d8b7bebe6aabd3714de24bd3a4f93f20ade28"
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "control": "extended-debtor-account-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "FAIL"
+      },
+      "id": "extended-invalid-target-xsd",
+      "rationale": "Schema-invalid target blocks preservation checks; schema failure retained.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "3ac9b2439ffa55f17c94d1bd356b9e04775891170501c4266c1c6a600654dac0"
+    },
+    {
+      "contract": "pacs002-preserve.json",
+      "control": "pacs002-identity",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "pacs002-identity",
+      "rationale": "Explicit status-report preservation mutation or permitted-change control: identity",
+      "source_sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "target_sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84"
+    },
+    {
+      "contract": "pacs002-preserve.json",
+      "control": "pacs002-identity",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "pacs002-regenerated-message-id",
+      "rationale": "Explicit status-report preservation mutation or permitted-change control: regenerated-message-id",
+      "source_sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "target_sha256": "6e4df70dcb7ccdbf46af39fc752edc699e2579783b91c8a962d44389c5ffc849"
+    },
+    {
+      "contract": "pacs002-preserve.json",
+      "control": "pacs002-identity",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-ORIGINAL-END-TO-END-ID"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "pacs002-original-reference-truncated",
+      "rationale": "Explicit status-report preservation mutation or permitted-change control: original-reference-truncated",
+      "source_sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "target_sha256": "3e25fef07616321ec7f7f2d4dc8addb4df1f1b3392c34b0870f6e29c78ef5234"
+    },
+    {
+      "contract": "pacs002-preserve.json",
+      "control": "pacs002-identity",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-ORIGINAL-TRANSACTION-ID"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "pacs002-original-transaction-changed",
+      "rationale": "Explicit status-report preservation mutation or permitted-change control: original-transaction-changed",
+      "source_sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "target_sha256": "260fd28991a2d2b142a985b5c23393d13e2ae0aa95e05c3990d564114312390f"
+    },
+    {
+      "contract": "pacs002-preserve.json",
+      "control": "pacs002-identity",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-STATUS"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "pacs002-status-changed",
+      "rationale": "Explicit status-report preservation mutation or permitted-change control: status-changed",
+      "source_sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "target_sha256": "9d3a59c7d368a82219a14affb45e77d5029596aaf3f28dc05503a06a62df917a"
+    },
+    {
+      "contract": "pacs002-preserve.json",
+      "control": "pacs002-identity",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REASON-CODES"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "pacs002-reason-code-changed",
+      "rationale": "Explicit status-report preservation mutation or permitted-change control: reason-code-changed",
+      "source_sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "target_sha256": "b2899649345fee4e78f1ef1adf353be17770f827319d22626f93c7963aa691ea"
+    },
+    {
+      "contract": "pacs002-preserve.json",
+      "control": "pacs002-identity",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-REASON-TEXT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "pacs002-reason-text-removed",
+      "rationale": "Explicit status-report preservation mutation or permitted-change control: reason-text-removed",
+      "source_sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "target_sha256": "d137c93fa279f5f4064470f21487b34288da7827f394b63f93cb30faa2d52af8"
+    },
+    {
+      "contract": "pacs002-preserve.json",
+      "control": "pacs002-identity",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "pacs002-reason-text-reordered",
+      "rationale": "Explicit status-report preservation mutation or permitted-change control: reason-text-reordered",
+      "source_sha256": "92f58a7cf9dbafcb001c18e84d5c9221cf3cac42e2d8d3686d1532e424e8db84",
+      "target_sha256": "331cb5e0ba8530e991553ee93466e7ff6847cdd60b0fe771507c7065a185e588"
+    },
+    {
+      "contract": "pacs008-time.json",
+      "control": "semantic-time-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-time-control",
+      "rationale": "time control under explicitly declared comparator semantics.",
+      "source_sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "target_sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38"
+    },
+    {
+      "contract": "pacs008-time.json",
+      "control": "semantic-time-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-offset-equivalent",
+      "rationale": "offset equivalent under explicitly declared comparator semantics.",
+      "source_sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "target_sha256": "aa8cfa36fe9babc6eed4361242f9322eff1c23b2287b835a2de0508d1339a657"
+    },
+    {
+      "contract": "pacs008-time.json",
+      "control": "semantic-time-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-offset-negative",
+      "rationale": "offset negative under explicitly declared comparator semantics.",
+      "source_sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "target_sha256": "70fb1adf181afd5573f9b58fd5a134a54a0476cb7476008640537d2fa3bea04e"
+    },
+    {
+      "contract": "pacs008-time.json",
+      "control": "semantic-time-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-TIME"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-instant-shift",
+      "rationale": "instant shift under explicitly declared comparator semantics.",
+      "source_sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "target_sha256": "4272d43c0e789ab9a1d9a05aeb8ddc3ef6d8afbece63c8a64aa461a4b7c5160c"
+    },
+    {
+      "contract": "pacs008-time.json",
+      "control": "semantic-time-control",
+      "expected": {
+        "exit_code": 3,
+        "failed_assertions": [],
+        "overall": "INDETERMINATE",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-timezone-lost",
+      "rationale": "timezone lost under explicitly declared comparator semantics.",
+      "source_sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "target_sha256": "da46dbe514fa22a65e98c4555e1f2def64f7858715e02b4a38053f625ba8db4d"
+    },
+    {
+      "contract": "pacs008-time.json",
+      "control": "semantic-time-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-fraction-zero",
+      "rationale": "fraction zero under explicitly declared comparator semantics.",
+      "source_sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "target_sha256": "3378f56d8b24d8b8b519ba7cb98d1962b4ce5b5273c0118850eed899d6352ff4"
+    },
+    {
+      "contract": "pacs008-time.json",
+      "control": "semantic-time-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-TIME"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-submicro-loss",
+      "rationale": "submicro loss under explicitly declared comparator semantics.",
+      "source_sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "target_sha256": "8e01c7780f31e0e5a5796381c382cbcd07dac12921a065e194205d489831fc6e"
+    },
+    {
+      "contract": "pacs008-time.json",
+      "control": "semantic-midnight-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-midnight-control",
+      "rationale": "midnight control under explicitly declared comparator semantics.",
+      "source_sha256": "79c038f762d491b0457c7c68a303e106c5daf9578385e8e2e2a6fc571259aa95",
+      "target_sha256": "79c038f762d491b0457c7c68a303e106c5daf9578385e8e2e2a6fc571259aa95"
+    },
+    {
+      "contract": "pacs008-time.json",
+      "control": "semantic-midnight-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-midnight-equivalent",
+      "rationale": "midnight equivalent under explicitly declared comparator semantics.",
+      "source_sha256": "79c038f762d491b0457c7c68a303e106c5daf9578385e8e2e2a6fc571259aa95",
+      "target_sha256": "25e85a372a2ea7c5481a72fd3e24b1fa080f26e27d97a0e94ebb35708d24f191"
+    },
+    {
+      "contract": "pacs008-time.json",
+      "control": "semantic-time-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-TIME"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-calendar-day-shift",
+      "rationale": "calendar day shift under explicitly declared comparator semantics.",
+      "source_sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "target_sha256": "01e4585bd6b2c72163a9292f62538f1ce646daa5fae51f1989923c21b9ba0872"
+    },
+    {
+      "contract": "pacs008-keyed-amount.json",
+      "control": "semantic-keyed-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-keyed-control",
+      "rationale": "keyed control under explicitly declared comparator semantics.",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b"
+    },
+    {
+      "contract": "pacs008-keyed-amount.json",
+      "control": "semantic-keyed-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-keyed-reorder",
+      "rationale": "keyed reorder under explicitly declared comparator semantics.",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target_sha256": "903ffd62fd4a581b20cbcb477e4f24226669a7e48ac4cb11e12a6b95b225d037"
+    },
+    {
+      "contract": "pacs008-keyed-amount.json",
+      "control": "semantic-keyed-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-KEYED-AMOUNT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-keyed-swap",
+      "rationale": "keyed swap under explicitly declared comparator semantics.",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target_sha256": "b38b040ca5591c20550c7c73d0e1c367b2632bfe04b7f23e4247d0c45000a459"
+    },
+    {
+      "contract": "pacs008-keyed-amount.json",
+      "control": "semantic-keyed-control",
+      "expected": {
+        "exit_code": 3,
+        "failed_assertions": [],
+        "overall": "INDETERMINATE",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-keyed-duplicate",
+      "rationale": "keyed duplicate under explicitly declared comparator semantics.",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target_sha256": "c23af7ae93ad028fd7f3628d3a71ceb31e5dfca5ddba1aab970429836e8a0a68"
+    },
+    {
+      "contract": "pacs008-keyed-amount.json",
+      "control": "semantic-keyed-control",
+      "expected": {
+        "exit_code": 3,
+        "failed_assertions": [],
+        "overall": "INDETERMINATE",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-keyed-missing",
+      "rationale": "keyed missing under explicitly declared comparator semantics.",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target_sha256": "98b65e5b8a6f91ddde7feca69a7d1d22b7daa438962149749a065a29d8f34b94"
+    },
+    {
+      "contract": "pacs008-keyed-amount.json",
+      "control": "semantic-keyed-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-keyed-regenerated-id",
+      "rationale": "keyed regenerated id under explicitly declared comparator semantics.",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target_sha256": "520ef449653a78825ca192b656aaf1deaae1e25d4258582aef71222a0d470c5b"
+    },
+    {
+      "contract": "pacs008-name-nfc.json",
+      "control": "semantic-nfc-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-nfc-control",
+      "rationale": "nfc control under explicitly declared comparator semantics.",
+      "source_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "target_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006"
+    },
+    {
+      "contract": "pacs008-name-nfc.json",
+      "control": "semantic-nfc-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-nfc-equivalent",
+      "rationale": "nfc equivalent under explicitly declared comparator semantics.",
+      "source_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "target_sha256": "71006874eee8a4f68c9ef35a3938ff1bf481c4c463ecc3fc994ec4ee643a0e4d"
+    },
+    {
+      "contract": "pacs008-name-nfc.json",
+      "control": "semantic-nfc-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-NAME-NFC"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-nfc-changed",
+      "rationale": "nfc changed under explicitly declared comparator semantics.",
+      "source_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "target_sha256": "9cfe473cf9305bb7d8efa21f9ad3bce8eedd159edd9917cf85fd9fdf33733948"
+    },
+    {
+      "contract": "pacs008-name-exact.json",
+      "control": "semantic-exact-name-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-exact-name-control",
+      "rationale": "exact name control under explicitly declared comparator semantics.",
+      "source_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "target_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006"
+    },
+    {
+      "contract": "pacs008-name-exact.json",
+      "control": "semantic-exact-name-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-NAME-EXACT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-nfd-not-normalized",
+      "rationale": "nfd not normalized under explicitly declared comparator semantics.",
+      "source_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "target_sha256": "71006874eee8a4f68c9ef35a3938ff1bf481c4c463ecc3fc994ec4ee643a0e4d"
+    },
+    {
+      "contract": "pacs008-name-exact.json",
+      "control": "semantic-exact-name-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-NAME-EXACT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-name-whitespace",
+      "rationale": "name whitespace under explicitly declared comparator semantics.",
+      "source_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "target_sha256": "4fbdbab89e1568b24165327ae22aeaa73866b972e2a48ed9d30c0f78dfa6f150"
+    },
+    {
+      "contract": "pacs008-name-exact.json",
+      "control": "semantic-exact-name-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-NAME-EXACT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-name-case",
+      "rationale": "name case under explicitly declared comparator semantics.",
+      "source_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "target_sha256": "ac4a2b6a6c593188a0a1db1de96d633b3f97018fbcb5ac108f5f8416b1d3ad91"
+    },
+    {
+      "contract": "pacs008-name-exact.json",
+      "control": "semantic-exact-name-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-NAME-EXACT"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-name-script-change",
+      "rationale": "name script change under explicitly declared comparator semantics.",
+      "source_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "target_sha256": "8fd916bfce4ee73d6c2b8df2db2b409c31ad83bed6ae03d1b472972f7f8b2399"
+    },
+    {
+      "contract": "pacs008-name-presence.json",
+      "control": "semantic-presence-absent-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-presence-absent-control",
+      "rationale": "presence absent control under explicitly declared comparator semantics.",
+      "source_sha256": "adad00fdf6ec142baa7fd82af1201f4392ef4e359c4e9289d8fa621c21f4316b",
+      "target_sha256": "adad00fdf6ec142baa7fd82af1201f4392ef4e359c4e9289d8fa621c21f4316b"
+    },
+    {
+      "contract": "pacs008-name-presence.json",
+      "control": "semantic-presence-present-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-presence-present-control",
+      "rationale": "presence present control under explicitly declared comparator semantics.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942"
+    },
+    {
+      "contract": "pacs008-name-presence.json",
+      "control": "semantic-presence-absent-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-NAME-PRESENCE"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-presence-added",
+      "rationale": "presence added under explicitly declared comparator semantics.",
+      "source_sha256": "adad00fdf6ec142baa7fd82af1201f4392ef4e359c4e9289d8fa621c21f4316b",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942"
+    },
+    {
+      "contract": "pacs008-name-presence.json",
+      "control": "semantic-presence-present-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-NAME-PRESENCE"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-presence-removed",
+      "rationale": "presence removed under explicitly declared comparator semantics.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "adad00fdf6ec142baa7fd82af1201f4392ef4e359c4e9289d8fa621c21f4316b"
+    },
+    {
+      "contract": "pacs008-remittance-ordered.json",
+      "control": "semantic-ordered-control",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-ordered-control",
+      "rationale": "ordered control under explicitly declared comparator semantics.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942"
+    },
+    {
+      "contract": "pacs008-remittance-ordered.json",
+      "control": "semantic-ordered-control",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-REMITTANCE-ORDERED"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-ordered-reversed",
+      "rationale": "ordered reversed under explicitly declared comparator semantics.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "fc3d3cc1fb9ec9e68ac687ffa26d972eeff7bebd28676fd3e3c7bb5e7ca6e5b0"
+    },
+    {
+      "contract": "pacs008-remittance-multiset.json",
+      "control": "semantic-multiset-reversed",
+      "expected": {
+        "exit_code": 0,
+        "failed_assertions": [],
+        "overall": "PASS",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-multiset-reversed",
+      "rationale": "multiset reversed under explicitly declared comparator semantics.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "fc3d3cc1fb9ec9e68ac687ffa26d972eeff7bebd28676fd3e3c7bb5e7ca6e5b0"
+    },
+    {
+      "contract": "pacs008-remittance-multiset.json",
+      "control": "semantic-multiset-reversed",
+      "expected": {
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-REMITTANCE-MULTISET"
+        ],
+        "overall": "FAIL",
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "id": "semantic-multiset-duplicated",
+      "rationale": "multiset duplicated under explicitly declared comparator semantics.",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target_sha256": "e6b5d73d51f5f9a60de8f2a66376df95c49b19e5a22bc010c9bd1b3c5aa95d48"
+    }
+  ],
+  "independence_warning": "A form or valid hash does not prove identity, expertise or independence. An accountable human must verify those facts.",
+  "purpose": "Independent human semantic and rights review",
+  "required_reviews": 2,
+  "review_scope": [
+    "expected outcomes",
+    "positive controls",
+    "contract semantics",
+    "coverage limits",
+    "schema rights/provenance"
+  ],
+  "schema_version": "1.0"
+}

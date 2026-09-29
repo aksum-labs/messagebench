@@ -1,0 +1,137 @@
+{
+  "all_matched": true,
+  "cases": [
+    {
+      "actual_exit": 3,
+      "classification_matched": true,
+      "control_exit": 0,
+      "expected_exit": 3,
+      "id": "foreign-namespace",
+      "independently_reviewed": false,
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "a8e60bbc18618c992e8d64b75d77bf7973fe9e7cf02e944692357b58114252d2"
+    },
+    {
+      "actual_exit": 3,
+      "classification_matched": true,
+      "control_exit": 0,
+      "expected_exit": 3,
+      "id": "unsupported-namespace",
+      "independently_reviewed": false,
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "452a73ccf3e8150768230658b3445f90f353cedb2ed828c8516dce2270181739"
+    },
+    {
+      "actual_exit": 4,
+      "classification_matched": true,
+      "control_exit": 0,
+      "expected_exit": 4,
+      "id": "dtd-entity",
+      "independently_reviewed": false,
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "09b1ff161b12ca5501ec8c2adca7232e5ab286aad02f64aa968b51abc652b0b1"
+    },
+    {
+      "actual_exit": 4,
+      "classification_matched": true,
+      "control_exit": 0,
+      "expected_exit": 4,
+      "id": "remote-entity",
+      "independently_reviewed": false,
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "cd31bfd64a9463109074c8064092687d5f018579805e8a170030aba98dd5cd2e"
+    },
+    {
+      "actual_exit": 4,
+      "classification_matched": true,
+      "control_exit": 0,
+      "expected_exit": 4,
+      "id": "remote-schema",
+      "independently_reviewed": false,
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "6be6a570e0d7fcf571a9c92bcb97660c16cc12c70d098b5654888dedf6650c7d"
+    },
+    {
+      "actual_exit": 4,
+      "classification_matched": true,
+      "control_exit": 0,
+      "expected_exit": 4,
+      "id": "xinclude",
+      "independently_reviewed": false,
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "62a034491d1a84edb1072bd81982aec99032ca70021dec8a34564ca7e835cbd9"
+    },
+    {
+      "actual_exit": 4,
+      "classification_matched": true,
+      "control_exit": 0,
+      "expected_exit": 4,
+      "id": "xml-depth",
+      "independently_reviewed": false,
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "0b86ae776fff5104cb4fdb7dbe1dd6ba952a76da340d9b0b32c6d5fb7e8abc8a"
+    },
+    {
+      "actual_exit": 4,
+      "classification_matched": true,
+      "control_exit": 0,
+      "expected_exit": 4,
+      "id": "oversized-input",
+      "independently_reviewed": false,
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "29d92a909372c6fc9c902311a215fab54f8c1ce2249eb42b12030871e93c157e"
+    },
+    {
+      "actual_exit": 2,
+      "classification_matched": true,
+      "control_exit": 0,
+      "expected_exit": 2,
+      "id": "malformed-contract",
+      "independently_reviewed": false,
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27"
+    },
+    {
+      "actual_exit": 3,
+      "classification_matched": true,
+      "control_exit": 0,
+      "expected_exit": 3,
+      "id": "missing-output",
+      "independently_reviewed": false,
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27"
+    },
+    {
+      "actual_exit": 0,
+      "classification_matched": true,
+      "control_exit": 0,
+      "expected_exit": 0,
+      "id": "html-payload",
+      "independently_reviewed": false,
+      "source_sha256": "1583a58c3ee2bce5791a15139d382d008f6ea8ac0b38487f3191619bb68e169b",
+      "target_sha256": "1583a58c3ee2bce5791a15139d382d008f6ea8ac0b38487f3191619bb68e169b"
+    },
+    {
+      "actual_exit": 0,
+      "classification_matched": true,
+      "control_exit": 0,
+      "expected_exit": 0,
+      "id": "excluded-field",
+      "independently_reviewed": false,
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "6aa0db67ae68c04b9ca5400471213d33e8f0bd1f60d83e3d9e68929fb0279a3d"
+    },
+    {
+      "actual_exit": 0,
+      "classification_matched": true,
+      "control_exit": 0,
+      "expected_exit": 0,
+      "id": "unexamined-field",
+      "independently_reviewed": false,
+      "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
+      "target_sha256": "f41fd7a4589fde2fee66b67d392f5e221d86d07ccd406ad6ff43e1583208508c"
+    }
+  ],
+  "schema_version": "1.0",
+  "scope": "13 safety/workflow scenarios, each with valid positive control; generated locally, no real inputs."
+}

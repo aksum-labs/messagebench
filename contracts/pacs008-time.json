@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "aksum.pacs008-time",
+  "version": "0.2.0",
+  "status": "draft",
+  "authority": "engineering-contract",
+  "description": "Explicit synthetic engineering semantics for pacs008-time",
+  "source_namespaces": [
+    "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08"
+  ],
+  "target_namespaces": [
+    "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08"
+  ],
+  "provenance": [
+    {
+      "kind": "project-design",
+      "locator": "docs/contracts.md",
+      "license": "Apache-2.0"
+    }
+  ],
+  "association": {
+    "mode": "single"
+  },
+  "assertions": [
+    {
+      "id": "PRESERVE-PACS008-TIME",
+      "field": "message.created_at",
+      "comparator": "datetime-equal",
+      "cardinality": "single",
+      "missing": "require-present",
+      "required": true,
+      "normalization": "none"
+    }
+  ],
+  "exclusions": [],
+  "coverage_policy": "declared-subset"
+}

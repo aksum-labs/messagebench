@@ -29,6 +29,10 @@ def main():
         if hashlib.sha256(path.read_bytes()).hexdigest() != digest:
             raise SystemExit("Native wheel hash mismatch")
         shutil.copyfile(path, wheels / name)
+    release_hashes = json.loads((ROOT / "evidence/dependency-release-hashes.json").read_text())
+    hashes_by_pin = {
+        key.lower().replace("_", "-"): value["files"] for key, value in release_hashes.items()
+    }
     requirements = [
         line
         for line in (ROOT / "runtime-lock.txt").read_text().splitlines()
@@ -36,7 +40,18 @@ def main():
     ]
     requirements.append("pip==26.2.1")
     download = args.out / "download-requirements.txt"
-    download.write_text("\n".join(requirements) + "\n")
+    download.write_text(
+        "\n".join(
+            pin
+            + " "
+            + " ".join(
+                "--hash=sha256:" + item["sha256"]
+                for item in hashes_by_pin[pin.lower().replace("_", "-")]
+            )
+            for pin in requirements
+        )
+        + "\n"
+    )
     subprocess.run(
         [
             sys.executable,
@@ -44,6 +59,7 @@ def main():
             "pip",
             "download",
             "--only-binary=:all:",
+            "--require-hashes",
             "--no-deps",
             "-r",
             str(download),
@@ -67,10 +83,24 @@ def main():
             raise SystemExit("Native source hash mismatch")
         shutil.copyfile(source, sources / item["name"])
     shutil.copyfile(args.native / "native-build.json", args.out / "native-build.json")
-    for name in ["LICENSE", "NOTICE", "GATE_REPORT.md", "RELEASE_READINESS.md", "LIMITATIONS.md"]:
+    for name in [
+        "LICENSE",
+        "NOTICE",
+        "GATE_REPORT.md",
+        "RELEASE_READINESS.md",
+        "LIMITATIONS.md",
+        "FINAL_COMPLETION_REPORT.md",
+    ]:
         shutil.copyfile(ROOT / name, args.out / name)
     shutil.copytree(ROOT / "third-party", args.out / "third-party")
     shutil.copyfile(ROOT / "evidence/sbom.cdx.json", args.out / "sbom.cdx.json")
+    license_policy = {
+        i["name"]: i
+        for i in json.loads((ROOT / "evidence/dependency-license-policy.json").read_text())[
+            "dependencies"
+        ]
+    }
+    bundle_rights = []
     lock = []
     seen = set()
     for wheel in sorted(wheels.glob("*.whl")):
@@ -83,9 +113,68 @@ def main():
         if name.lower().replace("_", "-") in seen:
             raise SystemExit("Duplicate distribution wheel")
         seen.add(name.lower().replace("_", "-"))
+        normalized = name.lower().replace("_", "-")
+        bundle_rights.append(
+            {
+                "name": name,
+                "version": version,
+                "file": "wheelhouse/" + wheel.name,
+                "sha256": hashlib.sha256(wheel.read_bytes()).hexdigest(),
+                "source": "Aksum original source"
+                if normalized == "aksum-messagebench"
+                else "https://pypi.org/project/" + name + "/" + version + "/",
+                "license_or_terms": "Apache-2.0"
+                if normalized == "aksum-messagebench"
+                else license_policy[normalized]["license_expression"],
+                "modified": normalized == "lxml",
+                "redistribution_status": (
+                    "Included with package notices; "
+                    "lxml native licenses/source obligations additional."
+                ),
+                "inclusion_decision": "offline review bundle",
+            }
+        )
         lock.append(
             f"{name}=={version} --hash=sha256:{hashlib.sha256(wheel.read_bytes()).hexdigest()}"
         )
+    native_licenses = {
+        "libiconv": "LGPL-2.1-or-later AND GPL-3.0-or-later",
+        "libxml2": "MIT",
+        "libxslt": "MIT",
+        "lxml": "BSD-3-Clause",
+    }
+    for item in pins["archives"]:
+        component = item["name"].split("-")[0]
+        bundle_rights.append(
+            {
+                "name": item["name"],
+                "source": item["source"],
+                "sha256": item["sha256"],
+                "version": item["name"].split("-", 1)[1].split(".tar")[0],
+                "license_or_terms": native_licenses[component],
+                "modified": False,
+                "redistribution_status": (
+                    "Original source and license notices included; rebuild/relink recipe supplied."
+                ),
+                "inclusion_decision": "native-sources/" + item["name"],
+            }
+        )
+    (args.out / "bundle-rights-register.json").write_text(
+        json.dumps(
+            {
+                "assets": bundle_rights,
+                "additional_native_wheel_terms": (
+                    "The lxml wheel includes libxml2/libxslt MIT "
+                    "and libiconv LGPL-2.1-or-later; corresponding source archives "
+                    "and build helper "
+                    "are included."
+                ),
+                "schema_terms": "See the source rights register and retained SWIFTStandards terms.",
+            },
+            indent=2,
+        )
+        + "\n"
+    )
     (args.out / "install-requirements.txt").write_text("\n".join(sorted(lock)) + "\n")
     (args.out / "README-BUNDLE.md").write_text(
         "# Offline local review bundle\n\nNot a public or signed release. See GATE_REPORT.md.\n\n"
@@ -94,7 +183,7 @@ def main():
         "review-env/bin/python -m pip install --no-index --find-links wheelhouse "
         "--require-hashes -r install-requirements.txt\n"
         "review-env/bin/messagebench corpus verify\n```\n\n"
-        "Expected: 68 recorded classifications match, including intentional failures. "
+        "Expected: 100 recorded classifications match, including intentional failures. "
         "This does not approve defective transformations or attest independent review.\n\n"
         "The sdist contains the complete original source, build scripts and tests. "
         "native-sources contains original lxml/libxml2/libxslt/libiconv archives with "

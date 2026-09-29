@@ -123,7 +123,8 @@
               "ordered-list",
               "multiset",
               "keyed-items",
-              "allowed-regeneration"
+              "allowed-regeneration",
+              "datetime-equal"
             ]
           },
           "cardinality": {
@@ -146,6 +147,19 @@
               "none",
               "NFC"
             ]
+          },
+          "item_comparator": {
+            "enum": [
+              "exact-text",
+              "exact-identifier",
+              "decimal-equal",
+              "decimal-and-currency-equal",
+              "presence-equal",
+              "ordered-list",
+              "multiset",
+              "allowed-regeneration",
+              "datetime-equal"
+            ]
           }
         },
         "required": [
@@ -156,7 +170,35 @@
           "missing",
           "required"
         ],
-        "additionalProperties": false
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "comparator": {
+                  "const": "keyed-items"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "item_comparator"
+              ],
+              "properties": {
+                "cardinality": {
+                  "const": "per-transaction"
+                }
+              }
+            },
+            "else": {
+              "not": {
+                "required": [
+                  "item_comparator"
+                ]
+              }
+            }
+          }
+        ]
       },
       "minItems": 1,
       "maxItems": 1000

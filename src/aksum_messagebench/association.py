@@ -59,11 +59,14 @@ def compare_keyed(
         return "INDETERMINATE", left_error or right_error or "ASSOCIATION_INVALID"
     if before.keys() != after.keys():
         return "INDETERMINATE", "ASSOCIATION_KEY_SET_CHANGED"
+    item_assertion = assertion
+    if assertion["comparator"] == "keyed-items":
+        item_assertion = {**assertion, "comparator": assertion["item_comparator"]}
     results = [
         compare_fact(
             transaction_fact(before[key], assertion["field"], extractor),
             transaction_fact(after[key], assertion["field"], extractor),
-            assertion,
+            item_assertion,
         )
         for key in sorted(before)
     ]

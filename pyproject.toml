@@ -1,10 +1,10 @@
 [build-system]
-requires = ["hatchling==1.32.4"]
+requires = ["hatchling==1.32.4", "editables==0.6"]
 build-backend = "hatchling.build"
 
 [project]
 name = "aksum-messagebench"
-version = "0.1.0a2"
+version = "0.2.0rc1"
 description = "Offline, adapter-neutral declared financial-message preservation checks"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -13,7 +13,7 @@ license-files = ["LICENSE", "NOTICE", "third-party/*"]
 dependencies = ["lxml==6.1.3", "jsonschema==4.26.0"]
 
 [project.scripts]
-messagebench = "aksum_messagebench.cli:main"
+messagebench = "aksum_messagebench.cli:entrypoint"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/aksum_messagebench"]

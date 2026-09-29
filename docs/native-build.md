@@ -40,3 +40,8 @@ The runtime now rejects libxml2 below 2.15.4 or libxslt below 1.1.45 with exit 3
 avoids silently using the older stock wheel. It is not an assertion that every newer build
 is secure or behaviorally identical. Run the corpus after any native upgrade; inspect the
 SBOM and release manifest for the actual native versions and wheel digest.
+
+The original libiconv source archive also contains the separate iconv command-line program
+under GPL-3.0-or-later, with COPYING retained. The linked library uses LGPL-2.1-or-later;
+the GPL command-line program is not linked into the lxml wheel. Full original archives
+preserve their per-file notices; they are not relicensed under Apache-2.0.

@@ -1,0 +1,8 @@
+{
+  "status": "BLOCKED-BY-HUMAN",
+  "verified_attestation_count": 0,
+  "required": 2,
+  "packet_sha256": "8154bcdf5b35291f2ad245a050afbb21ee80c533432a640f49ef3f6a1652c2f3",
+  "identity_and_independence_verified_by_software": false,
+  "scope": "Hash/decision consistency only; accountable humans must authenticate reviewers."
+}

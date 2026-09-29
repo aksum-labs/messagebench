@@ -26,7 +26,7 @@ not a claim about acceptance by a payment scheme.
 Multisets preserve multiplicity and ignore order. Ordered-list semantics are also unit-tested.
 `allowed-regeneration` tests nonempty presence, not equality. Unknown timezone/calendar handling
 is deferred: no date extraction or date equivalence is claimed. All dates appear as unexamined.
-Keyed associations/comparators are recognized but unsupported; a batch never falls back to
+Keyed associations/comparators require unique declared keys and explicit item semantics; a batch never falls back to
 positional, amount or name matching. The default `single` association requires exactly one
 transaction on each side.
 
@@ -40,3 +40,14 @@ Exit precedence: 5 internal > 4 safety/resource > 2 config > 3 incomplete > 1 fa
 Invalid XML/XSD is exit 1. Assertions blocked by invalid inputs are INDETERMINATE but do not
 replace that input failure with a derivative missing-evidence error. Both input outcomes are
 reported when possible. Configuration failures return a redacted diagnostic before evaluation.
+
+## Explicit keyed-item and datetime semantics
+
+`keyed-items` requires `association.mode=keyed`, unique declared identifier keys, per-transaction
+cardinality and an explicit `item_comparator`. Missing/duplicate/changed key sets are
+INDETERMINATE; no positional or amount/name association is inferred.
+
+`datetime-equal` applies to `message.created_at` in pacs.008.001.08. Explicit UTC offsets are
+converted to an instant while preserving arbitrary fractional precision. Unknown timezone or
+unsupported calendar/range produces INDETERMINATE. No Ethiopian-calendar inference is made.
+`24:00:00` follows XSD rollover semantics. Other date fields are unexamined.

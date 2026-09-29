@@ -49,7 +49,7 @@ def test_missing_output(source, contract, tmp_path):
     "edit,want",
     [
         (lambda d: d["assertions"][0].update(field="message.unknown"), 3),
-        (lambda d: d["assertions"][1].update(comparator="keyed-items"), 3),
+        (lambda d: d["assertions"][1].update(comparator="decimal-equal"), 3),
         (lambda d: d["assertions"][1].update(cardinality="single"), 3),
         (lambda d: d.update(source_namespaces=["urn:unsupported"]), 3),
         (

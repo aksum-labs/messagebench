@@ -1,37 +1,28 @@
 # Limitations
 
-This is a local 0.1.0a2 alpha candidate. Independent review and public release remain pending.
-The owner authorized development continuation before review; no reviewer identity is invented.
+Engineering candidate 0.2.0-rc.1 has completed local technical verification; genuine independent
+review and public release approval are BLOCKED-BY-HUMAN.
 
-Only pacs.008.001.08 and pacs.002.001.10 are supported. The 68 cases are synthetic, with
-pre-recorded expectations, not independently reviewed. camt.053 is excluded pending an
-asset-specific redistribution basis. No scheme versions used by Ethiopian institutions are inferred.
+Only pacs.008.001.08 and pacs.002.001.10 are supported. camt.053.001.08 is intentionally excluded
+because complete redistribution rights were not established; see docs/camt053-asset-review.md.
+The 100 paired fixtures are original synthetic cases, not real bank data or independently approved
+examples. The 27 extracted fields do not cover all message information.
 
-Comparison is limited to declared fields and exact extractor versions. Unexamined information,
-fees, structured remittance, calendar/timezone reasoning, institutional usage rules and arbitrary
-nested associations are not validated. pacs.002 reason codes/text are independent multisets;
-their pairing inside reason blocks is not promised. Cross-family/version translation is absent.
-The keyed-items scalar comparator is unsupported; explicit unique transaction-key association
-is supported. Missing/ambiguous keys prevent a required check from passing.
+Contracts compare only declared assertions. Unknown required facts, ambiguous keys and unknown
+timezones cannot pass. Keyed items require unique declared identifiers and explicit comparator
+semantics. Other dates, fees, structured remittance and supplementary structures remain outside
+the declared field inventory. Allowed message-ID regeneration is not a promise of ID equality.
 
-Reports are bounded to 5 MiB when reloaded. Large suites may exceed this report-reader limit.
-Input quotas are not a process sandbox. CPU/RSS hard limits and continuous fuzzing are absent.
-Hashes do not anonymize private data. Stored report validation verifies structure/consistency,
-not authenticity; reports are unsigned claims unless independently authenticated.
+No operational or scheme-rule validity, certification, account-standard correctness, settlement,
+connectivity, translation, custody or whole-document preservation is claimed. No Ethiopian
+proprietary rules or institutional endorsements exist in this project.
 
-Tested profile: Linux x86_64, CPython 3.12.3, lxml 6.1.3 with libxml2 2.15.4, libxslt 1.1.45
-and libiconv 1.19. The bundled wheel is not a manylinux/cross-platform guarantee. Native Windows
-fails closed under the POSIX file policy. Other platforms are unverified. Selected native
-advisory triage is not complete historical vulnerability assurance.
+CLI bounds include file/XML quotas and CPU/wall/address-space limits; they are not an OS sandbox
+or a peak-RSS guarantee. Library callers own process isolation. Linux is the verified safe-file
+profile. Reports redact values but hashes can still enable correlation. Native dependency review
+is bounded to the documented sources; no universal vulnerability-free assertion is made.
 
-Core branch coverage exceeds 90%; whole-package branch coverage does not. Targeted mutations
-are not a comprehensive mutation score. Same-environment double builds are not independent
-reproduction. No native-wheel reproducibility or identity-backed signature is claimed.
-
-Original code/fixtures are Apache-2.0; ISO schema and third-party dependency rights remain
-separate. Public mirror provenance is documented because official direct downloads returned
-403. LGPL native source/notices/rebuild materials accompany the offline bundle.
-
-No payment connectivity, live institution probing, custody, adapter execution, account system,
-telemetry, certification, national rules, institutional endorsement or production-safety claim.
-Pass means only the listed assertions passed for these inputs and versions.
+The supplied native wheel is platform-specific and is not proven reproducible. Python wheel/sdist
+reproducibility is limited to two clean builds in the same locked environment. Offline installation
+was performed by the implementer, not an independent person. Local Scorecard checks are not a
+public repository score; no OpenSSF badge, signature identity or hosted CI result is fabricated.

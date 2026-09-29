@@ -5,8 +5,10 @@ from collections import Counter
 from decimal import Decimal, InvalidOperation
 
 from .extractors.pacs008_001_08 import Fact
+from .time_semantics import instant
 
 COMPATIBILITY = {
+    "datetime-equal": {"datetime"},
     "exact-text": {"text", "identifier"},
     "exact-identifier": {"identifier", "text"},
     "decimal-equal": {"decimal"},
@@ -42,6 +44,12 @@ def compare_fact(before: Fact, after: Fact, assertion: dict) -> tuple[str, str]:
     elif mode == "allowed-regeneration":
         equal = bool(before.values[0]) and bool(after.values[0])
         return ("PASS", "REGENERATION_PERMITTED") if equal else ("FAIL", "EMPTY_IDENTIFIER")
+    elif mode == "datetime-equal":
+        left_time, left_error = instant(before.values[0])
+        right_time, right_error = instant(after.values[0])
+        if left_error or right_error:
+            return "INDETERMINATE", left_error or right_error or "DATETIME_UNSUPPORTED"
+        equal = left_time == right_time
     elif mode in {"decimal-equal", "decimal-and-currency-equal"}:
         try:
             if mode == "decimal-equal":

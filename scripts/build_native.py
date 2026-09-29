@@ -111,6 +111,12 @@ def main():
             },
         }
         (args.out / "native-build.json").write_text(json.dumps(manifest, indent=2) + "\n")
+        if len(manifest["wheels"]) != 1:
+            raise SystemExit("Expected exactly one native wheel")
+        wheel_hash = next(iter(manifest["wheels"].values()))
+        (args.out / "install-requirements.txt").write_text(
+            "lxml==6.1.3 --hash=sha256:" + wheel_hash + "\n"
+        )
 
 
 if __name__ == "__main__":

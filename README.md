@@ -23,7 +23,7 @@ Aksum MessageBench helps financial-software engineers test whether message adapt
 declared payment information. It runs offline on synthetic fixtures or institution-local
 files and produces reproducible, scope-labelled results.
 
-**Status: local alpha candidate `0.1.0a2`; release gates remain open.** There are 68 original
+**Status: engineering release candidate `0.2.0rc1`; human approval is required for publication.** There are 100 original
 synthetic fixture pairs across two message versions. Independent human review has not occurred.
 The owner authorized continued development before that review; see the [decision](docs/expansion-decision.md).
 [Gate report](GATE_REPORT.md), [current progress](docs/implementation-progress.md),
@@ -49,7 +49,7 @@ produce incomplete evidence. No amount/name matching heuristic exists.
 The table describes the five-assertion default proof contract. The optional extended contract
 adds account scheme/issuer, selected agent identifiers, IBAN alternatives, names and instructed
 amount. The pacs.002 contract preserves selected original references, status and reason data.
-See the [exact field inventory](docs/fields.md). Dates, fees, structured remittance and
+See the [exact field inventory](docs/fields.md). Only explicitly contracted creation datetimes are compared; fees, structured remittance and
 supplementary data remain unexamined or unsupported unless explicitly covered. Coverage counts unexamined leaves/attributes explicitly. XML validity
 is not a business-rule or operational-validity claim. The initial narrow account check is
 **not** a claim that complete account identity/context survived.
@@ -78,7 +78,7 @@ PYTHONPATH=src python -m pytest -q
 
 Corpus verification exit 0 means **all expected classifications match**, including deliberately defective targets. It does not approve four defective transformations or attest independent
 review. The baseline script uses the original six-case `corpus/gate1-index.json` and the development-only
-`xmlschema` processor. The default corpus command checks all 68 cases with their versioned contracts.
+`xmlschema` processor. The default corpus command checks all 100 cases with their versioned contracts.
 
 `compare` supports `--format json|text|html|junit` and `--out NEW_FILE`. Existing files are
 not overwritten. `inspect` validates a local file. Canonical JSON has stable ordering and

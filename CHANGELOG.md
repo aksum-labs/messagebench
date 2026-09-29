@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.0-rc.1
+
+See [release notes](docs/release-notes-0.2.0-rc.1.md) for the completed engineering candidate and human release gates.
+
+
 ## 0.1.0a2 — local engineering alpha candidate
 
 - Two exact message versions, 68 synthetic cases, explicit keyed transaction association.

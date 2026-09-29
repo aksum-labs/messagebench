@@ -47,7 +47,7 @@
     "https://security-tracker.debian.org/tracker/source-package/libxml2",
     "https://security-tracker.debian.org/tracker/source-package/libxslt"
   ],
-  "release_decision": "NOT READY; independent review also remains pending.",
+  "release_decision": "Automated advisory triage complete for the recorded sources; independent review is BLOCKED-BY-HUMAN.",
   "scope": "Selected advisory triage, not exhaustive vulnerability certification or exploit testing.",
   "backport_caution": {
     "source": "https://github.com/lxml/lxml/blob/lxml-6.1.3/buildlibxml.py",
@@ -66,7 +66,7 @@
     "libiconv": "1.19"
   },
   "local_build": {
-    "wheel_sha256": "8087330d264f18a0c25f9311b9122fcccb5cfb57a62761658acef37a76329799",
+    "wheel_sha256": "c0f246258ce3b52d75b57ad0e8f472a432e1d4ed566e541fdbd73d99d04babab",
     "flags": {
       "CFLAGS": "-O2 -fPIC",
       "CXXFLAGS": "-O2 -fPIC",
@@ -113,8 +113,49 @@
     "inspection": "ID cleanup uses cur->id; NEWS records atype corruption hardening."
   },
   "remaining_limits": [
-    "Independent security review pending.",
-    "GNU libiconv full historical advisory enumeration was not completed.",
-    "Re-check native advisories before public release; minimum versions are not a permanent security guarantee."
-  ]
+    "Independent security review is BLOCKED-BY-HUMAN; no reviewer identity is fabricated.",
+    "Re-check advisories before each public release. Dated source enumeration is not an absence proof."
+  ],
+  "libiconv_enumeration": {
+    "status": "COMPLETE_FOR_RECORDED_SOURCES",
+    "sources": [
+      "https://services.nvd.nist.gov/rest/json/cves/2.0?keywordSearch=libiconv&resultsPerPage=2000",
+      "https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.19.tar.gz"
+    ],
+    "nvd_keyword_result_count": 1,
+    "related_records": [
+      {
+        "id": "CVE-2005-2642",
+        "source": "https://cveawg.mitre.org/api/cve/CVE-2005-2642",
+        "response_sha256": null,
+        "disposition": "Mutt Handler.c defect; Mutt not a dependency."
+      },
+      {
+        "id": "CVE-2018-17942",
+        "source": "https://cveawg.mitre.org/api/cve/CVE-2018-17942",
+        "response_sha256": "f3919398f9e44546042c1ae8252ec37adabf1278086e7ba44834c13dcae8976a",
+        "disposition": "Gnulib vasnprintf defect. The pinned GNU libiconv 1.19 archive contains no vasnprintf source, and the linked wheel exposes no vasnprintf symbol."
+      },
+      {
+        "id": "CVE-2016-10228",
+        "source": "https://cveawg.mitre.org/api/cve/CVE-2016-10228",
+        "response_sha256": "edcd870dbbf2be828b27e873889bd5bbd54ceffaf5fa342f4f52e032d585c8bc",
+        "disposition": "glibc iconv command-line program issue; distinct from the statically linked GNU libiconv library."
+      },
+      {
+        "id": "CVE-2024-2961",
+        "source": "https://cveawg.mitre.org/api/cve/CVE-2024-2961",
+        "response_sha256": "c8ec903a2ec8f0c2b558d9bd08aae37a34e95803ee5f3469ab9fe4ac8c9330af",
+        "disposition": "glibc iconv conversion issue; the lxml wheel resolves conversion through separately bundled GNU libiconv symbols, not glibc iconv."
+      },
+      {
+        "id": "CVE-2025-26519",
+        "source": "https://cveawg.mitre.org/api/cve/CVE-2025-26519",
+        "response_sha256": "f03c37f30ac793da79089c9cc5591864716ab8abe1c30e1e8ce5f4b068570026",
+        "disposition": "musl libc issue; musl is not linked in the recorded glibc/GNU libiconv build."
+      }
+    ],
+    "limits": "Keyword/product catalogs can omit indirect vulnerabilities. This completes the specified source review, not every possible security claim."
+  },
+  "index_enumeration": "evidence/native-advisory-index.json; 134 libxml2 and 34 libxslt indexed records; two current libxslt issues have explicit mitigation/non-reachability analysis above."
 }

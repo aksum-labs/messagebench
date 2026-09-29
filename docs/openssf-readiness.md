@@ -1,24 +1,87 @@
-# OpenSSF readiness
+# OpenSSF readiness — criterion-by-criterion assessment
 
-No Best Practices badge has been obtained and no Scorecard result is claimed.
+All 67 current Passing criterion identifiers were checked against the [official criteria](https://www.bestpractices.dev/en/criteria). Source digest and structured decisions: evidence/openssf-passing-assessment.json. No badge is claimed. PASS here means the local technical criterion or its documented inapplicability is evidenced; actual public/organizational criteria remain BLOCKED-BY-HUMAN.
 
-Prepared locally: Apache-2.0 original source license; explicit third-party rights; contribution,
-governance and security policies; install/build/release instructions; deterministic tests and
-reports; property and bounded fuzz tests; SAST; pinned dependency inventory and advisory scan;
-native dependency SBOM; threat model; read-only SHA-pinned Actions; dependency update workflow;
-secret scanning without network verification; source and unsigned artifact checksums.
+| Criterion | Status | Evidence and disposition |
+|---|---|---|
+| description_good | BLOCKED-BY-HUMAN | README.md, CONTRIBUTING.md, GOVERNANCE.md — Local documentation/control prepared; applicability stated in the mandate report. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| interact | BLOCKED-BY-HUMAN | README.md, CONTRIBUTING.md, GOVERNANCE.md — Local documentation/control prepared; applicability stated in the mandate report. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| contribution | PASS | CONTRIBUTING.md — Contribution process, coding and test requirements documented. |
+| contribution_requirements | PASS | CONTRIBUTING.md — Contribution process, coding and test requirements documented. |
+| floss_license | BLOCKED-BY-HUMAN | LICENSE, NOTICE, evidence/rights-register.json — Original Apache-2.0 source and separately documented third-party terms; uncertain camt asset excluded. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| floss_license_osi | BLOCKED-BY-HUMAN | Original executable code is Apache-2.0; standard schemas retain non-OSI terms. Qualified human/badge assessment must confirm treatment of standards assets. |
+| license_location | PASS | LICENSE, NOTICE, evidence/rights-register.json — Original Apache-2.0 source and separately documented third-party terms; uncertain camt asset excluded. |
+| documentation_basics | PASS | docs/quickstart.md, docs/api.md — Install/use and external-interface references prepared. |
+| documentation_interface | PASS | docs/quickstart.md, docs/api.md — Install/use and external-interface references prepared. |
+| sites_https | BLOCKED-BY-HUMAN | README.md, CONTRIBUTING.md, GOVERNANCE.md — Local documentation/control prepared; applicability stated in the mandate report. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| discussion | BLOCKED-BY-HUMAN | README.md, CONTRIBUTING.md, GOVERNANCE.md — Local documentation/control prepared; applicability stated in the mandate report. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| english | PASS | README.md, CONTRIBUTING.md, GOVERNANCE.md — Local documentation/control prepared; applicability stated in the mandate report. |
+| maintained | BLOCKED-BY-HUMAN | README.md, CONTRIBUTING.md, GOVERNANCE.md — Local documentation/control prepared; applicability stated in the mandate report. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| repo_public | BLOCKED-BY-HUMAN | GOVERNANCE.md — Git tracks interim commits and attribution; actual public repository is owner controlled. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| repo_track | PASS | GOVERNANCE.md — Git tracks interim commits and attribution; actual public repository is owner controlled. |
+| repo_interim | PASS | GOVERNANCE.md — Git tracks interim commits and attribution; actual public repository is owner controlled. |
+| repo_distributed | PASS | GOVERNANCE.md — Git tracks interim commits and attribution; actual public repository is owner controlled. |
+| version_unique | PASS | pyproject.toml, CHANGELOG.md — Unique prerelease version and human-readable change notes; no known Aksum-code assigned CVE fix to omit. |
+| version_semver | PASS | pyproject.toml, CHANGELOG.md — Unique prerelease version and human-readable change notes; no known Aksum-code assigned CVE fix to omit. |
+| version_tags | BLOCKED-BY-HUMAN | pyproject.toml, CHANGELOG.md — Unique prerelease version and human-readable change notes; no known Aksum-code assigned CVE fix to omit. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| release_notes | PASS | pyproject.toml, CHANGELOG.md — Unique prerelease version and human-readable change notes; no known Aksum-code assigned CVE fix to omit. |
+| release_notes_vulns | PASS | pyproject.toml, CHANGELOG.md — Unique prerelease version and human-readable change notes; no known Aksum-code assigned CVE fix to omit. |
+| report_process | BLOCKED-BY-HUMAN | SECURITY.md, scripts/owner_setup.py — Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| report_tracker | BLOCKED-BY-HUMAN | SECURITY.md, scripts/owner_setup.py — Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| report_responses | BLOCKED-BY-HUMAN | SECURITY.md, scripts/owner_setup.py — Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| enhancement_responses | BLOCKED-BY-HUMAN | SECURITY.md, scripts/owner_setup.py — Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| report_archive | BLOCKED-BY-HUMAN | SECURITY.md, scripts/owner_setup.py — Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| vulnerability_report_process | BLOCKED-BY-HUMAN | SECURITY.md, scripts/owner_setup.py — Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| vulnerability_report_private | BLOCKED-BY-HUMAN | SECURITY.md, scripts/owner_setup.py — Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| vulnerability_report_response | BLOCKED-BY-HUMAN | SECURITY.md, scripts/owner_setup.py — Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| build | PASS | pyproject.toml, scripts/build_native.py, scripts/reproducible_build.py — FLOSS build tools and clean-build/install verification. |
+| build_common_tools | PASS | pyproject.toml, scripts/build_native.py, scripts/reproducible_build.py — FLOSS build tools and clean-build/install verification. |
+| build_floss_tools | PASS | pyproject.toml, scripts/build_native.py, scripts/reproducible_build.py — FLOSS build tools and clean-build/install verification. |
+| test | BLOCKED-BY-HUMAN | tests, fuzz, evidence/coverage.json, evidence/mutation-results.json — Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| test_invocation | PASS | tests, fuzz, evidence/coverage.json, evidence/mutation-results.json — Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance. |
+| test_most | PASS | tests, fuzz, evidence/coverage.json, evidence/mutation-results.json — Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance. |
+| test_continuous_integration | BLOCKED-BY-HUMAN | tests, fuzz, evidence/coverage.json, evidence/mutation-results.json — Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| test_policy | PASS | tests, fuzz, evidence/coverage.json, evidence/mutation-results.json — Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance. |
+| tests_are_added | PASS | tests, fuzz, evidence/coverage.json, evidence/mutation-results.json — Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance. |
+| tests_documented_added | PASS | tests, fuzz, evidence/coverage.json, evidence/mutation-results.json — Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance. |
+| warnings | PASS | evidence/bandit.json, .github/workflows/checks.yml — Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained. |
+| warnings_fixed | PASS | evidence/bandit.json, .github/workflows/checks.yml — Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained. |
+| warnings_strict | PASS | evidence/bandit.json, .github/workflows/checks.yml — Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained. |
+| know_secure_design | BLOCKED-BY-HUMAN | README.md, CONTRIBUTING.md, GOVERNANCE.md — Local documentation/control prepared; applicability stated in the mandate report. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| know_common_errors | BLOCKED-BY-HUMAN | README.md, CONTRIBUTING.md, GOVERNANCE.md — Local documentation/control prepared; applicability stated in the mandate report. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| crypto_published | PASS | src/aksum_messagebench/reports.py, .github/workflows/release.yml — SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign. |
+| crypto_call | PASS | src/aksum_messagebench/reports.py, .github/workflows/release.yml — SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign. |
+| crypto_floss | PASS | src/aksum_messagebench/reports.py, .github/workflows/release.yml — SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign. |
+| crypto_keylength | PASS | src/aksum_messagebench/reports.py, .github/workflows/release.yml — SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign. |
+| crypto_working | PASS | src/aksum_messagebench/reports.py, .github/workflows/release.yml — SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign. |
+| crypto_weaknesses | PASS | src/aksum_messagebench/reports.py, .github/workflows/release.yml — SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign. |
+| crypto_pfs | PASS | src/aksum_messagebench/reports.py, .github/workflows/release.yml — SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign. |
+| crypto_password_storage | PASS | src/aksum_messagebench/reports.py, .github/workflows/release.yml — SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign. |
+| crypto_random | PASS | src/aksum_messagebench/reports.py, .github/workflows/release.yml — SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign. |
+| delivery_mitm | BLOCKED-BY-HUMAN | README.md, CONTRIBUTING.md, GOVERNANCE.md — Local documentation/control prepared; applicability stated in the mandate report. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| delivery_unsigned | PASS | README.md, CONTRIBUTING.md, GOVERNANCE.md — Local documentation/control prepared; applicability stated in the mandate report. |
+| vulnerabilities_fixed_60_days | BLOCKED-BY-HUMAN | SECURITY.md, scripts/owner_setup.py — Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| vulnerabilities_critical_fixed | BLOCKED-BY-HUMAN | SECURITY.md, scripts/owner_setup.py — Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution. |
+| no_leaked_credentials | PASS | scripts/check_secrets.py, .secrets.baseline — Tracked-source secret scan without online credential probing; reviewed public digests only. |
+| static_analysis | PASS | evidence/bandit.json, .github/workflows/checks.yml — Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained. |
+| static_analysis_common_vulnerabilities | PASS | evidence/bandit.json, .github/workflows/checks.yml — Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained. |
+| static_analysis_fixed | PASS | evidence/bandit.json, .github/workflows/checks.yml — Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained. |
+| static_analysis_often | PASS | evidence/bandit.json, .github/workflows/checks.yml — Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained. |
+| dynamic_analysis | PASS | tests, fuzz, evidence/coverage.json, evidence/mutation-results.json — Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance. |
+| dynamic_analysis_unsafe | PASS | tests, fuzz, evidence/coverage.json, evidence/mutation-results.json — Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance. |
+| dynamic_analysis_enable_assertions | PASS | tests, fuzz, evidence/coverage.json, evidence/mutation-results.json — Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance. |
+| dynamic_analysis_fixed | PASS | tests, fuzz, evidence/coverage.json, evidence/mutation-results.json — Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance. |
 
-Pending organization-owned evidence: public version history and stable release links, real
-maintainer/contact ownership, private vulnerability reporting and response operation, required
-human reviews, branch protection, protected release environment, successful hosted CI, actual
-Scorecard execution and badge application. Files alone do not configure GitHub settings.
+## Scorecard
 
-The scheduled Scorecard workflow runs without publication and preserves its output artifact.
-No score is predicted. Passing criteria must be checked against the current badge application
-when the repository is public. Silver/Gold need stronger independent review, governance and
-sustained process evidence; this sprint does not establish them.
+Scorecard 5.5.0 is installed and seven supported source-only checks are executed against a tracked-file snapshot, excluding the development environment. Raw results: evidence/scorecard-local.json. This is not a full public-repository score. The scheduled workflow is configured; remote checks need the real public repository and owner settings. No 9/10 or 10/10 promise.
 
-Review the secret baseline when public hashes change; never suppress a credential merely to
-make a check pass. Review native dependencies separately from Python package advisories.
-Signing/provenance identity must be provided by an actual approved release environment;
-local checksums and source-commit metadata are not signatures.
+## Silver and Gold
+
+Feasibility: the architecture supports stronger testing, review, deterministic builds and signed release evidence. Actual Silver/Gold assessment requires real governance, sustained maintenance, public issue history, independent reviewers and organizational operation. These are BLOCKED-BY-HUMAN, not a reason to fabricate history. The original mandate asks for a pathway, not instant Silver/Gold achievement.
+
+Owner handoff: docs/github-publication.md and scripts/owner_setup.py. Human review handoff: docs/fixture-review.md and scripts/review_packet.py.
+
+Local Scorecard 5.5.0 source checks: Binary-Artifacts 10, Dangerous-Workflow 10,
+Dependency-Update-Tool 10, License 9, Pinned-Dependencies 10, Security-Policy 10,
+Token-Permissions 10. These seven checks are not a full repository score or badge.

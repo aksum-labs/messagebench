@@ -3,21 +3,23 @@ Name                                                  Stmts   Miss Branch BrPart
 src/aksum_messagebench/__init__.py                        2      0      0      0   100%
 src/aksum_messagebench/__main__.py                        2      2      0      0     0%   1-3
 src/aksum_messagebench/assets.py                          5      0      0      0   100%
-src/aksum_messagebench/association.py                    50      3     26      3    92%   35, 43, 49
-src/aksum_messagebench/cli.py                            73     73     12      0     0%   3-109
-src/aksum_messagebench/comparators.py                    49      0     30      0   100%
-src/aksum_messagebench/contracts.py                      35      4     12      0    87%   23-26
+src/aksum_messagebench/association.py                    53      2     28      2    95%   35, 49
+src/aksum_messagebench/cli.py                            89     89     12      0     0%   3-147
+src/aksum_messagebench/comparators.py                    56      0     34      0   100%
+src/aksum_messagebench/contracts.py                      37      4     14      0    88%   23-26
 src/aksum_messagebench/corpus.py                         32      4     12      4    82%   20, 23, 25, 32
 src/aksum_messagebench/coverage.py                       18      0      8      1    96%   18->17
 src/aksum_messagebench/engine.py                         84      1     26      2    97%   34, 150->158
 src/aksum_messagebench/errors.py                          8      0      0      0   100%
 src/aksum_messagebench/extractors/__init__.py             0      0      0      0   100%
 src/aksum_messagebench/extractors/pacs002_001_10.py      15      0      2      0   100%
-src/aksum_messagebench/extractors/pacs008_001_08.py      69      0     26      1    99%   66->71
+src/aksum_messagebench/extractors/pacs008_001_08.py      69      0     26      1    99%   67->72
 src/aksum_messagebench/input_guard.py                    82      4     38      5    92%   24, 28, 47->53, 55, 62
 src/aksum_messagebench/reports.py                        79      9     34      7    86%   21, 58, 80-81, 87, 93, 111-112, 115, 116->exit
+src/aksum_messagebench/runtime_limits.py                 34     34     10      0     0%   3-44
 src/aksum_messagebench/schema_catalog.py                 57     16     28     10    67%   28-31, 34, 37, 41, 43, 45, 55, 65, 68, 70, 73, 81-82
+src/aksum_messagebench/time_semantics.py                 28      0     12      0   100%
 src/aksum_messagebench/workflows.py                     131     16     66     14    85%   20, 23, 25, 38, 46-48, 76, 81, 105, 119, 144, 161, 164, 166->165, 190-191
 src/aksum_messagebench/xml_reader.py                     73      1     22      0    99%   21
 -------------------------------------------------------------------------------------------------
-TOTAL                                                   864    133    342     47    84%
+TOTAL                                                   954    182    372     46    81%

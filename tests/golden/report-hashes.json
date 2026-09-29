@@ -1,8 +1,8 @@
 {
-  "currency-changed": "0b2be695d9c95ed2258dab6407fcb5c76473291a6047cbb484e6d5aa369eac72",
-  "identity": "149955b4b00dd325047b8ea119325863aab1d93e02d87e7e758effe0b1b84ee7",
-  "leading-zero-loss": "31e66afc540054bfbfcb2c430936504458f6d2a3db3f893351891d053c341979",
-  "message-id-regenerated": "f11920a85ec36aff4c8718c0cc1e7437af0def95ba4327d49e8aca31c5eef047",
-  "reference-truncated": "62387783aef30c7e6bc3af8e079c17e928bd11f97423cbf70ed06d30ed848d97",
-  "remittance-removed": "69d34f604a21e85ebe4a975202e6a2e94a8c9ae254b7d0904702a5f2db03c8a1"
+  "currency-changed": "d11ffa994bddaf2ab28b0f8db32e8b68876dc9a7b2966948b59dcbe31090ecb4",
+  "identity": "a4dc07abefe552a2104260bc7d79ab41ff10d54a12a4a2296ddf71d0e254a433",
+  "leading-zero-loss": "b8911bc19a805904821e53deba7e5b642a4bd5dbf39c5bccc9182304810fe64e",
+  "message-id-regenerated": "768e725046deaf33ca2f412009f100966fc2bf085c2dbcb8e6b97857f13571f1",
+  "reference-truncated": "5a5d62462522561d7788a663a98e9171908969df9224aa3fe376027b14755758",
+  "remittance-removed": "91480094f00c0d3c9dfb70fcd6ef38620113f492ca2db3a2f3bbb28f1306054c"
 }

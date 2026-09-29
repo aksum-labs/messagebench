@@ -189,10 +189,10 @@
             }
           },
           "exit_code": 0,
-          "extractor_version": "0.2.0",
+          "extractor_version": "0.3.0",
           "limitations": [
             "Pass means only the listed assertions passed for these inputs and versions.",
-            "Declared version-specific subset; single or uniquely keyed transaction association. No business-rule compliance or certification. Independent review pending."
+            "Declared version-specific subset; single or uniquely keyed transaction association. No business-rule compliance or certification. Independent human review not performed."
           ],
           "overall": "PASS",
           "schema_checks": {
@@ -215,7 +215,7 @@
           "schema_version": "1.0",
           "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
           "target_sha256": "8ecd66292064fdfd2d56884a0d5e3c9b481c41b25e09721ac753c5af61920b89",
-          "tool_version": "0.1.0a2"
+          "tool_version": "0.2.0rc1"
         }
       },
       {
@@ -397,10 +397,10 @@
             }
           },
           "exit_code": 0,
-          "extractor_version": "0.2.0",
+          "extractor_version": "0.3.0",
           "limitations": [
             "Pass means only the listed assertions passed for these inputs and versions.",
-            "Declared version-specific subset; single or uniquely keyed transaction association. No business-rule compliance or certification. Independent review pending."
+            "Declared version-specific subset; single or uniquely keyed transaction association. No business-rule compliance or certification. Independent human review not performed."
           ],
           "overall": "PASS",
           "schema_checks": {
@@ -423,7 +423,7 @@
           "schema_version": "1.0",
           "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
           "target_sha256": "8ecd66292064fdfd2d56884a0d5e3c9b481c41b25e09721ac753c5af61920b89",
-          "tool_version": "0.1.0a2"
+          "tool_version": "0.2.0rc1"
         }
       },
       {
@@ -605,10 +605,10 @@
             }
           },
           "exit_code": 0,
-          "extractor_version": "0.2.0",
+          "extractor_version": "0.3.0",
           "limitations": [
             "Pass means only the listed assertions passed for these inputs and versions.",
-            "Declared version-specific subset; single or uniquely keyed transaction association. No business-rule compliance or certification. Independent review pending."
+            "Declared version-specific subset; single or uniquely keyed transaction association. No business-rule compliance or certification. Independent human review not performed."
           ],
           "overall": "PASS",
           "schema_checks": {
@@ -631,7 +631,7 @@
           "schema_version": "1.0",
           "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
           "target_sha256": "8ecd66292064fdfd2d56884a0d5e3c9b481c41b25e09721ac753c5af61920b89",
-          "tool_version": "0.1.0a2"
+          "tool_version": "0.2.0rc1"
         }
       },
       {
@@ -813,10 +813,10 @@
             }
           },
           "exit_code": 0,
-          "extractor_version": "0.2.0",
+          "extractor_version": "0.3.0",
           "limitations": [
             "Pass means only the listed assertions passed for these inputs and versions.",
-            "Declared version-specific subset; single or uniquely keyed transaction association. No business-rule compliance or certification. Independent review pending."
+            "Declared version-specific subset; single or uniquely keyed transaction association. No business-rule compliance or certification. Independent human review not performed."
           ],
           "overall": "PASS",
           "schema_checks": {
@@ -839,7 +839,7 @@
           "schema_version": "1.0",
           "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
           "target_sha256": "8ecd66292064fdfd2d56884a0d5e3c9b481c41b25e09721ac753c5af61920b89",
-          "tool_version": "0.1.0a2"
+          "tool_version": "0.2.0rc1"
         }
       },
       {
@@ -1021,10 +1021,10 @@
             }
           },
           "exit_code": 0,
-          "extractor_version": "0.2.0",
+          "extractor_version": "0.3.0",
           "limitations": [
             "Pass means only the listed assertions passed for these inputs and versions.",
-            "Declared version-specific subset; single or uniquely keyed transaction association. No business-rule compliance or certification. Independent review pending."
+            "Declared version-specific subset; single or uniquely keyed transaction association. No business-rule compliance or certification. Independent human review not performed."
           ],
           "overall": "PASS",
           "schema_checks": {
@@ -1047,7 +1047,7 @@
           "schema_version": "1.0",
           "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
           "target_sha256": "8ecd66292064fdfd2d56884a0d5e3c9b481c41b25e09721ac753c5af61920b89",
-          "tool_version": "0.1.0a2"
+          "tool_version": "0.2.0rc1"
         }
       },
       {
@@ -1229,10 +1229,10 @@
             }
           },
           "exit_code": 0,
-          "extractor_version": "0.2.0",
+          "extractor_version": "0.3.0",
           "limitations": [
             "Pass means only the listed assertions passed for these inputs and versions.",
-            "Declared version-specific subset; single or uniquely keyed transaction association. No business-rule compliance or certification. Independent review pending."
+            "Declared version-specific subset; single or uniquely keyed transaction association. No business-rule compliance or certification. Independent human review not performed."
           ],
           "overall": "PASS",
           "schema_checks": {
@@ -1255,7 +1255,7 @@
           "schema_version": "1.0",
           "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
           "target_sha256": "8ecd66292064fdfd2d56884a0d5e3c9b481c41b25e09721ac753c5af61920b89",
-          "tool_version": "0.1.0a2"
+          "tool_version": "0.2.0rc1"
         }
       }
     ],

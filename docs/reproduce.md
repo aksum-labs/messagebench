@@ -38,7 +38,7 @@ and the following reviewed source (not included in MessageBench):
 
 ```sh
 # Explicit connected preparation; inspect the exact source before executing it.
-curl -fL https://raw.githubusercontent.com/cognis-digital/iso20022/d7903979b5dbc74967f93eaa5688d5d5db984b06/iso20022/core.py -o /tmp/cognis-core.py
+curl -fL https://raw.githubusercontent.com/cognis-digital/iso20022/d7903979b5dbc74967f93eaa51008d5d5db984b06/iso20022/core.py -o /tmp/cognis-core.py
 PYTHONPATH=src .venv/bin/python scripts/baseline.py --cognis-source /tmp/cognis-core.py
 ```
 
@@ -47,7 +47,7 @@ The first baseline only parses/XSD-validates; neither XSD engine was expected to
 messages. These results demonstrate differing scope, not bugs in the baseline tools.
 
 Golden hashes pin canonical report bytes for all six pairs. Changes require explanation and
-human review; there is no automatic expected-result updater. The mutation script tests 33
+human review; there is no automatic expected-result updater. The mutation script tests 40
 targeted oracle/association changes, not every possible line mutation. Hypothesis tests perform bounded
 random XML/contract smoke checks, not a long-running fuzz service. Test counts refer to pytest
 items, not individual Hypothesis examples.
@@ -80,3 +80,23 @@ build recipe. The bundle includes a hashed offline installation lock and corresp
 sources. Its README gives the installation check. Source copies are clean build directories;
 source_dirty in build evidence records whether the original checkout had uncommitted changes.
 Do not present an uncommitted checkout as a clean source commit.
+
+## Complete local acceptance run
+
+After the hash-pinned development install and native rebuild, run:
+
+```sh
+python scripts/fetch_dev_tools.py --out /tmp/messagebench-tools actionlint
+python scripts/check_all.py --out /tmp/messagebench-acceptance-new --actionlint /tmp/messagebench-tools/actionlint/actionlint
+python fuzz/smoke.py --iterations 100000
+python fuzz/contracts.py --iterations 10000
+python scripts/differential_xsd.py
+python scripts/security_corpus.py
+python scripts/review_packet.py verify
+```
+
+The last command returns 3 until authentic review forms are supplied; this is the required
+human gate, not a failed technical acceptance check. The all-check runner needs a fresh output
+directory. Fetching tools and dependencies is explicit connected preparation; installed runtime
+and local acceptance are offline. `scripts/release_provenance.py --bundle PATH` binds a clean
+source commit and all input hashes to the verified unsigned artifacts. It refreshes checksums.

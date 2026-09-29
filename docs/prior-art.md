@@ -32,8 +32,9 @@ projects were source-inspected, not installed or benchmarked. No universal compa
 There is a plausible gap in the **combination** of explicit pair-preservation semantics,
 adapter-independent file handoff, a reusable independently reviewed corpus, honest coverage,
 and deterministic redacted evidence. The small executable proof demonstrates the pair oracle;
-the independent corpus review has **not** happened. Thus differentiation is supported for the
-proof, not yet established for a public standalone release at comparable engineering effort.
+the independent corpus review has **not** happened. The executable comparison and selected source inspection satisfy the bounded technical
+differentiation gate. Independent corpus review is a separate BLOCKED-BY-HUMAN gate;
+no exhaustive global absence claim or cross-product performance benchmark is made.
 
 If reviewers identify an equivalent maintained workflow, stop expansion. Propose original
 synthetic pairs and a preservation-contract extension upstream. Prioritize mx20022 for adapter

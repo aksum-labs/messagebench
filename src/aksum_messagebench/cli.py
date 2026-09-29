@@ -94,6 +94,18 @@ def main(argv: list[str] | None = None) -> int:
             )
         )
         return exc.exit_code
+    except MemoryError:
+        sys.stdout.buffer.write(
+            canonical_json(
+                {
+                    "overall": "INDETERMINATE",
+                    "code": "PROCESS_MEMORY_LIMIT",
+                    "exit_code": 4,
+                    "limitations": [SCOPE_NOTICE],
+                }
+            )
+        )
+        return 4
     except Exception:
         # Do not expose XML-library tracebacks, filenames or payloads.
         sys.stdout.buffer.write(
@@ -107,3 +119,29 @@ def main(argv: list[str] | None = None) -> int:
             )
         )
         return 5
+
+
+def entrypoint() -> int:
+    """Apply process limits only at the command boundary, not the Python API."""
+    try:
+        from .runtime_limits import command_limits
+
+        with command_limits():
+            return main()
+    except (ImportError, OSError, ValueError):
+        code = "PROCESS_LIMITS_UNAVAILABLE"
+    except BenchError as exc:
+        code = exc.code
+    except MemoryError:
+        code = "PROCESS_MEMORY_LIMIT"
+    sys.stdout.buffer.write(
+        canonical_json(
+            {
+                "overall": "INDETERMINATE",
+                "code": code,
+                "exit_code": 4,
+                "limitations": [SCOPE_NOTICE],
+            }
+        )
+    )
+    return 4

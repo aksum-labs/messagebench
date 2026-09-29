@@ -131,7 +131,7 @@ def regression(previous: dict, current: dict) -> dict:
             or right is None
             or any(
                 left.get(k) != right.get(k)
-                for k in ("field", "comparator", "required", "normalization")
+                for k in ("field", "comparator", "item_comparator", "required", "normalization")
             )
         ):
             same_scope = False

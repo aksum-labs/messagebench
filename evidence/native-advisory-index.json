@@ -1,0 +1,772 @@
+{
+  "reference_date": "2026-09-29",
+  "sources": [
+    {
+      "component": "libxml2",
+      "url": "https://security-tracker.debian.org/tracker/source-package/libxml2",
+      "sha256": "9feb4542e9c2006780eca4327f3660e1435501e55936a54ea41e5c5e87208767",
+      "rows": [
+        {
+          "id": "CVE-2026-86144",
+          "statuses": [
+            "vulnerable",
+            "vulnerable",
+            "fixed",
+            "fixed"
+          ]
+        },
+        {
+          "id": "CVE-2026-86143",
+          "statuses": [
+            "vulnerable",
+            "vulnerable",
+            "fixed",
+            "fixed"
+          ]
+        },
+        {
+          "id": "CVE-2026-86142",
+          "statuses": [
+            "vulnerable",
+            "vulnerable",
+            "fixed",
+            "fixed"
+          ]
+        },
+        {
+          "id": "CVE-2026-86141",
+          "statuses": [
+            "vulnerable",
+            "vulnerable",
+            "fixed",
+            "fixed"
+          ]
+        },
+        {
+          "id": "CVE-2026-86140",
+          "statuses": [
+            "vulnerable",
+            "vulnerable",
+            "fixed",
+            "fixed"
+          ]
+        },
+        {
+          "id": "CVE-2026-86139",
+          "statuses": [
+            "vulnerable",
+            "vulnerable",
+            "fixed",
+            "fixed"
+          ]
+        },
+        {
+          "id": "CVE-2026-86138",
+          "statuses": [
+            "vulnerable",
+            "vulnerable",
+            "fixed",
+            "fixed"
+          ]
+        },
+        {
+          "id": "CVE-2026-86137",
+          "statuses": [
+            "vulnerable",
+            "vulnerable",
+            "fixed",
+            "fixed"
+          ]
+        },
+        {
+          "id": "CVE-2026-76781",
+          "statuses": [
+            "vulnerable",
+            "vulnerable",
+            "fixed",
+            "fixed"
+          ]
+        },
+        {
+          "id": "CVE-2026-74860",
+          "statuses": [
+            "vulnerable",
+            "vulnerable",
+            "fixed",
+            "fixed"
+          ]
+        },
+        {
+          "id": "CVE-2026-6653",
+          "statuses": [
+            "vulnerable (no DSA, postponed)",
+            "vulnerable (no DSA)",
+            "fixed",
+            "fixed"
+          ]
+        },
+        {
+          "id": "CVE-2026-11979",
+          "statuses": [
+            "vulnerable",
+            "vulnerable",
+            "fixed",
+            "fixed"
+          ]
+        },
+        {
+          "id": "CVE-2026-6732",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2026-1757",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2026-0992",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2026-0990",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2026-0989",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2025-49796",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2025-49795",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2025-49794",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2025-32415",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2025-32414",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2025-27113",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2025-26434",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2025-24928",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2025-9714",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2025-8732",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2025-6170",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2025-6021",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2024-56171",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2024-40896",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2024-34459",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2024-25062",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2023-45322",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2023-39615",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2023-29469",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2023-28484",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2022-49043",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2022-40304",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2022-40303",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2022-29824",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2022-23308",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2022-2309",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2021-3541",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2021-3537",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2021-3518",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2021-3517",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2021-3516",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2020-24977",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2020-7595",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2019-20388",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2019-19956",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2018-14567",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2018-14404",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2018-9251",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2017-18258",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2017-16932",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2017-16931",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2017-15412",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2017-9050",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2017-9049",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2017-9048",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2017-9047",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2017-8872",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2017-7376",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2017-7375",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2017-5969",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2017-5130",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2017-0663",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-9598",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-9597",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-9596",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-9318",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-5131",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-4658",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-4483",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-4449",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-4448",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-4447",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-3709",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-3705",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-3627",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-2073",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-1840",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-1839",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-1838",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-1837",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-1836",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-1835",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-1834",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-1833",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-1762",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2015-8806",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2015-8710",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2015-8317",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2015-8242",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2015-8241",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2015-8035",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2015-7942",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2015-7941",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2015-7500",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2015-7499",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2015-7498",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2015-7497",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2015-5312",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2015-1819",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2014-3660",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2014-0191",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2013-2877",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2013-1969",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2013-0339",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2013-0338",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2012-5134",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2012-2807",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2012-0841",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2011-3919",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2011-3905",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2011-3102",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2011-2834",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2011-2821",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2011-1944",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2011-0216",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2010-4494",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2010-4008",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2009-2416",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2009-2414",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2008-4409",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2008-4226",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2008-4225",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2008-3529",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2008-3281",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2007-6284",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2004-0989",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2004-0110",
+          "statuses": []
+        }
+      ]
+    },
+    {
+      "component": "libxslt",
+      "url": "https://security-tracker.debian.org/tracker/source-package/libxslt",
+      "sha256": "3e77ca94a0ef56fbb1afe13eb741832bde96493e17cffec9bcec753ad176486a",
+      "rows": [
+        {
+          "id": "CVE-2025-11731",
+          "statuses": [
+            "vulnerable (no DSA)",
+            "vulnerable (no DSA)",
+            "fixed",
+            "fixed"
+          ]
+        },
+        {
+          "id": "CVE-2025-10911",
+          "statuses": [
+            "vulnerable (no DSA, postponed)",
+            "vulnerable (no DSA, postponed)",
+            "fixed",
+            "fixed"
+          ]
+        },
+        {
+          "id": "CVE-2025-7425",
+          "statuses": [
+            "fixed",
+            "fixed",
+            "vulnerable",
+            "vulnerable"
+          ]
+        },
+        {
+          "id": "CVE-2015-9019",
+          "statuses": [
+            "vulnerable",
+            "vulnerable",
+            "vulnerable",
+            "vulnerable"
+          ]
+        },
+        {
+          "id": "CVE-2025-24855",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2025-7424",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2024-55549",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2023-40403",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2021-30560",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2019-18197",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2019-13118",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2019-13117",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2019-11068",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2019-5815",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2017-5029",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-4738",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-4610",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-4609",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-4608",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-1841",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-1684",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2016-1683",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2015-7995",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2013-4520",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2013-2902",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2012-6139",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2012-2893",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2012-2871",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2012-2870",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2012-2825",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2011-3970",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2011-1202",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2008-2935",
+          "statuses": []
+        },
+        {
+          "id": "CVE-2008-1767",
+          "statuses": []
+        }
+      ]
+    }
+  ],
+  "scope": "Complete rows in the selected Debian package indexes, plus direct GNU libiconv keyword/related-CVE checks. Not a universal absence proof."
+}

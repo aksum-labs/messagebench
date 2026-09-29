@@ -1,0 +1,673 @@
+{
+  "schema_version": "1.0",
+  "version": "0.2.0",
+  "review_status": "pending-independent-human-review",
+  "cases": [
+    {
+      "id": "time-control",
+      "source": "time-control.source.xml",
+      "source_sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "target": "time-control.target.xml",
+      "target_sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "contract": "pacs008-time.json",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "time control under explicitly declared comparator semantics.",
+      "control": "time-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "offset-equivalent",
+      "source": "offset-equivalent.source.xml",
+      "source_sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "target": "offset-equivalent.target.xml",
+      "target_sha256": "aa8cfa36fe9babc6eed4361242f9322eff1c23b2287b835a2de0508d1339a657",
+      "contract": "pacs008-time.json",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "offset equivalent under explicitly declared comparator semantics.",
+      "control": "time-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "offset-negative",
+      "source": "offset-negative.source.xml",
+      "source_sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "target": "offset-negative.target.xml",
+      "target_sha256": "70fb1adf181afd5573f9b58fd5a134a54a0476cb7476008640537d2fa3bea04e",
+      "contract": "pacs008-time.json",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "offset negative under explicitly declared comparator semantics.",
+      "control": "time-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "instant-shift",
+      "source": "instant-shift.source.xml",
+      "source_sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "target": "instant-shift.target.xml",
+      "target_sha256": "4272d43c0e789ab9a1d9a05aeb8ddc3ef6d8afbece63c8a64aa461a4b7c5160c",
+      "contract": "pacs008-time.json",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-TIME"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "instant shift under explicitly declared comparator semantics.",
+      "control": "time-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "timezone-lost",
+      "source": "timezone-lost.source.xml",
+      "source_sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "target": "timezone-lost.target.xml",
+      "target_sha256": "da46dbe514fa22a65e98c4555e1f2def64f7858715e02b4a38053f625ba8db4d",
+      "contract": "pacs008-time.json",
+      "expected": {
+        "overall": "INDETERMINATE",
+        "exit_code": 3,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "timezone lost under explicitly declared comparator semantics.",
+      "control": "time-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "fraction-zero",
+      "source": "fraction-zero.source.xml",
+      "source_sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "target": "fraction-zero.target.xml",
+      "target_sha256": "3378f56d8b24d8b8b519ba7cb98d1962b4ce5b5273c0118850eed899d6352ff4",
+      "contract": "pacs008-time.json",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "fraction zero under explicitly declared comparator semantics.",
+      "control": "time-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "submicro-loss",
+      "source": "submicro-loss.source.xml",
+      "source_sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "target": "submicro-loss.target.xml",
+      "target_sha256": "8e01c7780f31e0e5a5796381c382cbcd07dac12921a065e194205d489831fc6e",
+      "contract": "pacs008-time.json",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-TIME"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "submicro loss under explicitly declared comparator semantics.",
+      "control": "time-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "midnight-control",
+      "source": "midnight-control.source.xml",
+      "source_sha256": "79c038f762d491b0457c7c68a303e106c5daf9578385e8e2e2a6fc571259aa95",
+      "target": "midnight-control.target.xml",
+      "target_sha256": "79c038f762d491b0457c7c68a303e106c5daf9578385e8e2e2a6fc571259aa95",
+      "contract": "pacs008-time.json",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "midnight control under explicitly declared comparator semantics.",
+      "control": "midnight-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "midnight-equivalent",
+      "source": "midnight-equivalent.source.xml",
+      "source_sha256": "79c038f762d491b0457c7c68a303e106c5daf9578385e8e2e2a6fc571259aa95",
+      "target": "midnight-equivalent.target.xml",
+      "target_sha256": "25e85a372a2ea7c5481a72fd3e24b1fa080f26e27d97a0e94ebb35708d24f191",
+      "contract": "pacs008-time.json",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "midnight equivalent under explicitly declared comparator semantics.",
+      "control": "midnight-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "calendar-day-shift",
+      "source": "calendar-day-shift.source.xml",
+      "source_sha256": "efda28bda6c25062f8066c6a55e050681fbd88d12a0b23d2410722c26472ec38",
+      "target": "calendar-day-shift.target.xml",
+      "target_sha256": "01e4585bd6b2c72163a9292f62538f1ce646daa5fae51f1989923c21b9ba0872",
+      "contract": "pacs008-time.json",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-TIME"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "calendar day shift under explicitly declared comparator semantics.",
+      "control": "time-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "keyed-control",
+      "source": "keyed-control.source.xml",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target": "keyed-control.target.xml",
+      "target_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "contract": "pacs008-keyed-amount.json",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "keyed control under explicitly declared comparator semantics.",
+      "control": "keyed-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "keyed-reorder",
+      "source": "keyed-reorder.source.xml",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target": "keyed-reorder.target.xml",
+      "target_sha256": "903ffd62fd4a581b20cbcb477e4f24226669a7e48ac4cb11e12a6b95b225d037",
+      "contract": "pacs008-keyed-amount.json",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "keyed reorder under explicitly declared comparator semantics.",
+      "control": "keyed-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "keyed-swap",
+      "source": "keyed-swap.source.xml",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target": "keyed-swap.target.xml",
+      "target_sha256": "b38b040ca5591c20550c7c73d0e1c367b2632bfe04b7f23e4247d0c45000a459",
+      "contract": "pacs008-keyed-amount.json",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-KEYED-AMOUNT"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "keyed swap under explicitly declared comparator semantics.",
+      "control": "keyed-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "keyed-duplicate",
+      "source": "keyed-duplicate.source.xml",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target": "keyed-duplicate.target.xml",
+      "target_sha256": "c23af7ae93ad028fd7f3628d3a71ceb31e5dfca5ddba1aab970429836e8a0a68",
+      "contract": "pacs008-keyed-amount.json",
+      "expected": {
+        "overall": "INDETERMINATE",
+        "exit_code": 3,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "keyed duplicate under explicitly declared comparator semantics.",
+      "control": "keyed-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "keyed-missing",
+      "source": "keyed-missing.source.xml",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target": "keyed-missing.target.xml",
+      "target_sha256": "98b65e5b8a6f91ddde7feca69a7d1d22b7daa438962149749a065a29d8f34b94",
+      "contract": "pacs008-keyed-amount.json",
+      "expected": {
+        "overall": "INDETERMINATE",
+        "exit_code": 3,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "keyed missing under explicitly declared comparator semantics.",
+      "control": "keyed-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "keyed-regenerated-id",
+      "source": "keyed-regenerated-id.source.xml",
+      "source_sha256": "f2daaaaf21242be0048b0f02402684e59873b9127b7c04f57fac268fa128645b",
+      "target": "keyed-regenerated-id.target.xml",
+      "target_sha256": "520ef449653a78825ca192b656aaf1deaae1e25d4258582aef71222a0d470c5b",
+      "contract": "pacs008-keyed-amount.json",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "keyed regenerated id under explicitly declared comparator semantics.",
+      "control": "keyed-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "nfc-control",
+      "source": "nfc-control.source.xml",
+      "source_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "target": "nfc-control.target.xml",
+      "target_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "contract": "pacs008-name-nfc.json",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "nfc control under explicitly declared comparator semantics.",
+      "control": "nfc-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "nfc-equivalent",
+      "source": "nfc-equivalent.source.xml",
+      "source_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "target": "nfc-equivalent.target.xml",
+      "target_sha256": "71006874eee8a4f68c9ef35a3938ff1bf481c4c463ecc3fc994ec4ee643a0e4d",
+      "contract": "pacs008-name-nfc.json",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "nfc equivalent under explicitly declared comparator semantics.",
+      "control": "nfc-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "nfc-changed",
+      "source": "nfc-changed.source.xml",
+      "source_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "target": "nfc-changed.target.xml",
+      "target_sha256": "9cfe473cf9305bb7d8efa21f9ad3bce8eedd159edd9917cf85fd9fdf33733948",
+      "contract": "pacs008-name-nfc.json",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-NAME-NFC"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "nfc changed under explicitly declared comparator semantics.",
+      "control": "nfc-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "exact-name-control",
+      "source": "exact-name-control.source.xml",
+      "source_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "target": "exact-name-control.target.xml",
+      "target_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "contract": "pacs008-name-exact.json",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "exact name control under explicitly declared comparator semantics.",
+      "control": "exact-name-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "nfd-not-normalized",
+      "source": "nfd-not-normalized.source.xml",
+      "source_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "target": "nfd-not-normalized.target.xml",
+      "target_sha256": "71006874eee8a4f68c9ef35a3938ff1bf481c4c463ecc3fc994ec4ee643a0e4d",
+      "contract": "pacs008-name-exact.json",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-NAME-EXACT"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "nfd not normalized under explicitly declared comparator semantics.",
+      "control": "exact-name-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "name-whitespace",
+      "source": "name-whitespace.source.xml",
+      "source_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "target": "name-whitespace.target.xml",
+      "target_sha256": "4fbdbab89e1568b24165327ae22aeaa73866b972e2a48ed9d30c0f78dfa6f150",
+      "contract": "pacs008-name-exact.json",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-NAME-EXACT"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "name whitespace under explicitly declared comparator semantics.",
+      "control": "exact-name-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "name-case",
+      "source": "name-case.source.xml",
+      "source_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "target": "name-case.target.xml",
+      "target_sha256": "ac4a2b6a6c593188a0a1db1de96d633b3f97018fbcb5ac108f5f8416b1d3ad91",
+      "contract": "pacs008-name-exact.json",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-NAME-EXACT"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "name case under explicitly declared comparator semantics.",
+      "control": "exact-name-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "name-script-change",
+      "source": "name-script-change.source.xml",
+      "source_sha256": "dded0c7e5bb6f0c4a4b604553a8caca63b3611f5fa6661e8988ada9c53c62006",
+      "target": "name-script-change.target.xml",
+      "target_sha256": "8fd916bfce4ee73d6c2b8df2db2b409c31ad83bed6ae03d1b472972f7f8b2399",
+      "contract": "pacs008-name-exact.json",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-NAME-EXACT"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "name script change under explicitly declared comparator semantics.",
+      "control": "exact-name-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "presence-absent-control",
+      "source": "presence-absent-control.source.xml",
+      "source_sha256": "adad00fdf6ec142baa7fd82af1201f4392ef4e359c4e9289d8fa621c21f4316b",
+      "target": "presence-absent-control.target.xml",
+      "target_sha256": "adad00fdf6ec142baa7fd82af1201f4392ef4e359c4e9289d8fa621c21f4316b",
+      "contract": "pacs008-name-presence.json",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "presence absent control under explicitly declared comparator semantics.",
+      "control": "presence-absent-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "presence-present-control",
+      "source": "presence-present-control.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "presence-present-control.target.xml",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "contract": "pacs008-name-presence.json",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "presence present control under explicitly declared comparator semantics.",
+      "control": "presence-present-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "presence-added",
+      "source": "presence-added.source.xml",
+      "source_sha256": "adad00fdf6ec142baa7fd82af1201f4392ef4e359c4e9289d8fa621c21f4316b",
+      "target": "presence-added.target.xml",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "contract": "pacs008-name-presence.json",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-NAME-PRESENCE"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "presence added under explicitly declared comparator semantics.",
+      "control": "presence-absent-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "presence-removed",
+      "source": "presence-removed.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "presence-removed.target.xml",
+      "target_sha256": "adad00fdf6ec142baa7fd82af1201f4392ef4e359c4e9289d8fa621c21f4316b",
+      "contract": "pacs008-name-presence.json",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-NAME-PRESENCE"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "presence removed under explicitly declared comparator semantics.",
+      "control": "presence-present-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "ordered-control",
+      "source": "ordered-control.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "ordered-control.target.xml",
+      "target_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "contract": "pacs008-remittance-ordered.json",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "ordered control under explicitly declared comparator semantics.",
+      "control": "ordered-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "ordered-reversed",
+      "source": "ordered-reversed.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "ordered-reversed.target.xml",
+      "target_sha256": "fc3d3cc1fb9ec9e68ac687ffa26d972eeff7bebd28676fd3e3c7bb5e7ca6e5b0",
+      "contract": "pacs008-remittance-ordered.json",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-REMITTANCE-ORDERED"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "ordered reversed under explicitly declared comparator semantics.",
+      "control": "ordered-control",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "multiset-reversed",
+      "source": "multiset-reversed.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "multiset-reversed.target.xml",
+      "target_sha256": "fc3d3cc1fb9ec9e68ac687ffa26d972eeff7bebd28676fd3e3c7bb5e7ca6e5b0",
+      "contract": "pacs008-remittance-multiset.json",
+      "expected": {
+        "overall": "PASS",
+        "exit_code": 0,
+        "failed_assertions": [],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "multiset reversed under explicitly declared comparator semantics.",
+      "control": "multiset-reversed",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    },
+    {
+      "id": "multiset-duplicated",
+      "source": "multiset-duplicated.source.xml",
+      "source_sha256": "105186b089ae75b40fd7898748f442f5213e20a3056bc0b31d66d20064534942",
+      "target": "multiset-duplicated.target.xml",
+      "target_sha256": "e6b5d73d51f5f9a60de8f2a66376df95c49b19e5a22bc010c9bd1b3c5aa95d48",
+      "contract": "pacs008-remittance-multiset.json",
+      "expected": {
+        "overall": "FAIL",
+        "exit_code": 1,
+        "failed_assertions": [
+          "PRESERVE-PACS008-REMITTANCE-MULTISET"
+        ],
+        "source_xsd": "PASS",
+        "target_xsd": "PASS"
+      },
+      "rationale": "multiset duplicated under explicitly declared comparator semantics.",
+      "control": "multiset-reversed",
+      "license": "Apache-2.0",
+      "provenance": "Original synthetic authoring; expected classifications declared before oracle execution.",
+      "reviewers": []
+    }
+  ]
+}

@@ -104,6 +104,14 @@
     "metadata_sha256": "0d0c71d1d64c2962161566365cc5531031a533c06a53dd30744ed345038fc41c"
   },
   {
+    "name": "editables",
+    "version": "0.6",
+    "role": "development",
+    "license_metadata": "Review package license files",
+    "source": "https://pypi.org/project/editables/0.6/",
+    "metadata_sha256": "3911cfe29cec3de216d1f8c776c551c77821daa1a46408da4bb745614840bb83"
+  },
+  {
     "name": "elementpath",
     "version": "5.1.4",
     "role": "development",

@@ -147,5 +147,5 @@ def test_release_corpus_selects_versioned_contracts():
     from aksum_messagebench.corpus import verify
 
     result = verify(ROOT / "corpus/index.json")
-    assert len(result["cases"]) == 68
+    assert len(result["cases"]) == 100
     assert result["exit_code"] == 0

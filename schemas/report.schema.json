@@ -54,6 +54,19 @@
               "type": "string",
               "maxLength": 2048
             }
+          },
+          "item_comparator": {
+            "enum": [
+              "exact-text",
+              "exact-identifier",
+              "decimal-equal",
+              "decimal-and-currency-equal",
+              "presence-equal",
+              "ordered-list",
+              "multiset",
+              "allowed-regeneration",
+              "datetime-equal"
+            ]
           }
         },
         "required": [
@@ -67,7 +80,30 @@
           "status",
           "target_paths"
         ],
-        "additionalProperties": false
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "comparator": {
+                  "const": "keyed-items"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "item_comparator"
+              ]
+            },
+            "else": {
+              "not": {
+                "required": [
+                  "item_comparator"
+                ]
+              }
+            }
+          }
+        ]
       }
     },
     "catalog_sha256": {

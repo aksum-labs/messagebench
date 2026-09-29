@@ -1,5 +1,3 @@
-> Development continuation: the owner authorized expansion before independent review on 29 September 2026. See [decision](docs/expansion-decision.md). Earlier stop statements below describe the initial proof packet; independent review and publication remain pending.
-
 # Governance
 
 Intended steward: Aksum Labs. No GitHub organization, team or individual maintainer account
@@ -11,5 +9,5 @@ checks, versioning and updated evidence. Review disagreements are documented and
 before release, not hidden by expected-output changes. Keep original code and corpus open.
 
 Releases require human approval, protected tags/branches, clean CI and accurate limitation
-notes. A sole automated author cannot attest independent review. No public release is
-permitted by this repository's current NOT READY gate status.
+notes. A sole automated author cannot attest independent review. Publication and release approval are BLOCKED-BY-HUMAN until these real controls and
+independent reviews exist. See FINAL_COMPLETION_REPORT.md for the itemized handoff.

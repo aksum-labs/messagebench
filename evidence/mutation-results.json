@@ -1,238 +1,287 @@
 {
   "mutants": [
     {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-preserve.json",
-      "assertion": "PRESERVE-DEBTOR-ACCOUNT",
-      "case": "leading-zero-loss",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-preserve.json",
-      "assertion": "PRESERVE-END-TO-END-ID",
-      "case": "reference-truncated",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-preserve.json",
-      "assertion": "PRESERVE-REMITTANCE",
-      "case": "remittance-removed",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-preserve.json",
-      "assertion": "PRESERVE-SETTLEMENT-AMOUNT",
-      "case": "currency-changed",
-      "killed": true
-    },
-    {
-      "operator": "deny-permitted-regeneration",
-      "contract": "contracts/pacs008-preserve.json",
+      "contract": "pacs002-preserve.json",
       "assertion": "PERMIT-MESSAGE-ID-REGENERATION",
-      "case": "message-id-regenerated",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "PRESERVE-DEBTOR-ACCOUNT",
-      "case": "debtor-account-changed",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "PRESERVE-END-TO-END-ID",
-      "case": "end-to-end-id-changed",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "PRESERVE-INSTRUCTION-ID",
-      "case": "instruction-id-changed",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "PRESERVE-DEBTOR-ACCOUNT-IBAN",
-      "case": "debtor-account-iban-changed",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "PRESERVE-DEBTOR-ACCOUNT-SCHEME-CODE",
-      "case": "debtor-account-scheme-code-changed",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "PRESERVE-DEBTOR-ACCOUNT-SCHEME-PROPRIETARY",
-      "case": "debtor-account-scheme-proprietary-changed",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "PRESERVE-DEBTOR-ACCOUNT-ISSUER",
-      "case": "debtor-account-issuer-changed",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "PRESERVE-DEBTOR-AGENT-BIC",
-      "case": "debtor-agent-bic-changed",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "PRESERVE-DEBTOR-AGENT-OTHER-ID",
-      "case": "debtor-agent-other-id-changed",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "PRESERVE-CREDITOR-ACCOUNT",
-      "case": "creditor-account-changed",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "PRESERVE-CREDITOR-ACCOUNT-IBAN",
-      "case": "creditor-account-iban-changed",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "PRESERVE-CREDITOR-ACCOUNT-ISSUER",
-      "case": "creditor-account-issuer-changed",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "PRESERVE-CREDITOR-AGENT-BIC",
-      "case": "creditor-agent-bic-changed",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "PRESERVE-DEBTOR-NAME",
-      "case": "debtor-name-changed",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "PRESERVE-CREDITOR-NAME",
-      "case": "creditor-name-changed",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "PRESERVE-INSTRUCTED-AMOUNT",
-      "case": "instructed-amount-changed",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "PRESERVE-SETTLEMENT-AMOUNT",
-      "case": "settlement-amount-changed",
-      "killed": true
-    },
-    {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "PRESERVE-REMITTANCE",
-      "case": "remittance-removed",
-      "killed": true
-    },
-    {
       "operator": "deny-permitted-regeneration",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "PERMIT-MESSAGE-ID-REGENERATION",
-      "case": "regenerated-message-id",
+      "case": "pacs002-regenerated-message-id",
       "killed": true
     },
     {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs002-preserve.json",
+      "contract": "pacs002-preserve.json",
       "assertion": "PRESERVE-ORIGINAL-END-TO-END-ID",
-      "case": "original-reference-truncated",
+      "operator": "bypass-required-assertion",
+      "case": "pacs002-original-reference-truncated",
       "killed": true
     },
     {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs002-preserve.json",
+      "contract": "pacs002-preserve.json",
       "assertion": "PRESERVE-ORIGINAL-TRANSACTION-ID",
-      "case": "original-transaction-changed",
+      "operator": "bypass-required-assertion",
+      "case": "pacs002-original-transaction-changed",
       "killed": true
     },
     {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs002-preserve.json",
+      "contract": "pacs002-preserve.json",
       "assertion": "PRESERVE-STATUS",
-      "case": "status-changed",
+      "operator": "bypass-required-assertion",
+      "case": "pacs002-status-changed",
       "killed": true
     },
     {
-      "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs002-preserve.json",
+      "contract": "pacs002-preserve.json",
       "assertion": "PRESERVE-REASON-CODES",
-      "case": "reason-code-changed",
-      "killed": true
-    },
-    {
       "operator": "bypass-required-assertion",
-      "contract": "contracts/pacs002-preserve.json",
+      "case": "pacs002-reason-code-changed",
+      "killed": true
+    },
+    {
+      "contract": "pacs002-preserve.json",
       "assertion": "PRESERVE-REASON-TEXT",
-      "case": "reason-text-removed",
+      "operator": "bypass-required-assertion",
+      "case": "pacs002-reason-text-removed",
       "killed": true
     },
     {
-      "operator": "deny-permitted-regeneration",
-      "contract": "contracts/pacs002-preserve.json",
+      "contract": "pacs008-extended.json",
       "assertion": "PERMIT-MESSAGE-ID-REGENERATION",
-      "case": "regenerated-message-id",
+      "operator": "deny-permitted-regeneration",
+      "case": "extended-regenerated-message-id",
       "killed": true
     },
     {
-      "operator": "guess-positional-association",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "ASSOCIATION-PRECONDITION",
-      "case": "batch-reordered",
+      "contract": "pacs008-extended.json",
+      "assertion": "PRESERVE-DEBTOR-ACCOUNT",
+      "operator": "bypass-required-assertion",
+      "case": "extended-debtor-account-changed",
       "killed": true
     },
     {
-      "operator": "guess-positional-association",
-      "contract": "contracts/pacs008-extended.json",
-      "assertion": "ASSOCIATION-PRECONDITION",
-      "case": "batch-duplicate-key",
+      "contract": "pacs008-extended.json",
+      "assertion": "PRESERVE-END-TO-END-ID",
+      "operator": "bypass-required-assertion",
+      "case": "extended-end-to-end-id-changed",
       "killed": true
     },
     {
-      "operator": "guess-positional-association",
-      "contract": "contracts/pacs008-extended.json",
+      "contract": "pacs008-extended.json",
+      "assertion": "PRESERVE-REMITTANCE",
+      "operator": "bypass-required-assertion",
+      "case": "extended-remittance-removed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "assertion": "PRESERVE-SETTLEMENT-AMOUNT",
+      "operator": "bypass-required-assertion",
+      "case": "extended-settlement-amount-changed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "assertion": "PRESERVE-TRANSACTION-ID",
+      "operator": "bypass-key-association-precondition",
+      "case": "extended-transaction-id-changed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "assertion": "PRESERVE-INSTRUCTION-ID",
+      "operator": "bypass-required-assertion",
+      "case": "extended-instruction-id-changed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "assertion": "PRESERVE-DEBTOR-ACCOUNT-IBAN",
+      "operator": "bypass-required-assertion",
+      "case": "extended-debtor-account-iban-changed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "assertion": "PRESERVE-DEBTOR-ACCOUNT-SCHEME-CODE",
+      "operator": "bypass-required-assertion",
+      "case": "extended-debtor-account-scheme-code-changed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "assertion": "PRESERVE-DEBTOR-ACCOUNT-SCHEME-PROPRIETARY",
+      "operator": "bypass-required-assertion",
+      "case": "extended-debtor-account-scheme-proprietary-changed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "assertion": "PRESERVE-DEBTOR-ACCOUNT-ISSUER",
+      "operator": "bypass-required-assertion",
+      "case": "extended-debtor-account-issuer-changed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "assertion": "PRESERVE-DEBTOR-AGENT-BIC",
+      "operator": "bypass-required-assertion",
+      "case": "extended-debtor-agent-bic-changed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "assertion": "PRESERVE-DEBTOR-AGENT-OTHER-ID",
+      "operator": "bypass-required-assertion",
+      "case": "extended-debtor-agent-other-id-changed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "assertion": "PRESERVE-CREDITOR-ACCOUNT",
+      "operator": "bypass-required-assertion",
+      "case": "extended-creditor-account-changed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "assertion": "PRESERVE-CREDITOR-ACCOUNT-IBAN",
+      "operator": "bypass-required-assertion",
+      "case": "extended-creditor-account-iban-changed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "assertion": "PRESERVE-CREDITOR-ACCOUNT-ISSUER",
+      "operator": "bypass-required-assertion",
+      "case": "extended-creditor-account-issuer-changed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "assertion": "PRESERVE-CREDITOR-AGENT-BIC",
+      "operator": "bypass-required-assertion",
+      "case": "extended-creditor-agent-bic-changed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "assertion": "PRESERVE-DEBTOR-NAME",
+      "operator": "bypass-required-assertion",
+      "case": "extended-debtor-name-changed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "assertion": "PRESERVE-CREDITOR-NAME",
+      "operator": "bypass-required-assertion",
+      "case": "extended-creditor-name-changed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "assertion": "PRESERVE-INSTRUCTED-AMOUNT",
+      "operator": "bypass-required-assertion",
+      "case": "extended-instructed-amount-changed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-keyed-amount.json",
+      "assertion": "PRESERVE-PACS008-KEYED-AMOUNT",
+      "operator": "bypass-required-assertion",
+      "case": "semantic-keyed-swap",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-name-exact.json",
+      "assertion": "PRESERVE-PACS008-NAME-EXACT",
+      "operator": "bypass-required-assertion",
+      "case": "semantic-nfd-not-normalized",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-name-nfc.json",
+      "assertion": "PRESERVE-PACS008-NAME-NFC",
+      "operator": "bypass-required-assertion",
+      "case": "semantic-nfc-changed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-name-presence.json",
+      "assertion": "PRESERVE-PACS008-NAME-PRESENCE",
+      "operator": "bypass-required-assertion",
+      "case": "semantic-presence-added",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-preserve.json",
+      "assertion": "PERMIT-MESSAGE-ID-REGENERATION",
+      "operator": "deny-permitted-regeneration",
+      "case": "gate1-message-id-regenerated",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-preserve.json",
+      "assertion": "PRESERVE-DEBTOR-ACCOUNT",
+      "operator": "bypass-required-assertion",
+      "case": "gate1-leading-zero-loss",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-preserve.json",
+      "assertion": "PRESERVE-END-TO-END-ID",
+      "operator": "bypass-required-assertion",
+      "case": "gate1-reference-truncated",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-preserve.json",
+      "assertion": "PRESERVE-REMITTANCE",
+      "operator": "bypass-required-assertion",
+      "case": "gate1-remittance-removed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-preserve.json",
+      "assertion": "PRESERVE-SETTLEMENT-AMOUNT",
+      "operator": "bypass-required-assertion",
+      "case": "gate1-currency-changed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-remittance-multiset.json",
+      "assertion": "PRESERVE-PACS008-REMITTANCE-MULTISET",
+      "operator": "bypass-required-assertion",
+      "case": "semantic-multiset-duplicated",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-remittance-ordered.json",
+      "assertion": "PRESERVE-PACS008-REMITTANCE-ORDERED",
+      "operator": "bypass-required-assertion",
+      "case": "semantic-ordered-reversed",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-time.json",
+      "assertion": "PRESERVE-PACS008-TIME",
+      "operator": "bypass-required-assertion",
+      "case": "semantic-instant-shift",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-extended.json",
       "assertion": "ASSOCIATION-PRECONDITION",
-      "case": "transaction-id-changed",
+      "operator": "guess-positional-association",
+      "case": "extended-batch-reordered",
+      "killed": true
+    },
+    {
+      "contract": "pacs008-extended.json",
+      "assertion": "ASSOCIATION-PRECONDITION",
+      "operator": "guess-positional-association",
+      "case": "extended-batch-duplicate-key",
       "killed": true
     }
   ],
-  "killed": 33,
-  "total": 33,
-  "scope": "Targeted preservation-bypass, false-positive and association operators only; not a whole-program mutation score. Original expected classifications remain unchanged."
+  "killed": 40,
+  "total": 40,
+  "scope": "Targeted assertion, false-positive and association mutations; not whole-program scoring. Original expected classifications retained."
 }

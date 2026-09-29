@@ -175,10 +175,10 @@
     }
   },
   "exit_code": 1,
-  "extractor_version": "0.2.0",
+  "extractor_version": "0.3.0",
   "limitations": [
     "Pass means only the listed assertions passed for these inputs and versions.",
-    "Declared version-specific subset; single or uniquely keyed transaction association. No business-rule compliance or certification. Independent review pending."
+    "Declared version-specific subset; single or uniquely keyed transaction association. No business-rule compliance or certification. Independent human review not performed."
   ],
   "overall": "FAIL",
   "schema_checks": {
@@ -201,5 +201,5 @@
   "schema_version": "1.0",
   "source_sha256": "339a745626d817d2d7170109ce6857b471cbbe573455589173fafd5a613b5a27",
   "target_sha256": "ed27a8c335a5ee5df5f4dd8b51d2d992813bafdce7aeeea98853695e6d1e31aa",
-  "tool_version": "0.1.0a2"
+  "tool_version": "0.2.0rc1"
 }

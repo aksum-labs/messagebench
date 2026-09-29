@@ -7,10 +7,11 @@ from lxml import etree
 
 from ..schema_catalog import NAMESPACE
 
-VERSION = "0.2.0"
+VERSION = "0.3.0"
 Q = "{" + NAMESPACE + "}"
 TRANSACTIONS = Q + "FIToFICstmrCdtTrf/" + Q + "CdtTrfTxInf"
 FIELDS = {
+    "message.created_at": ("GrpHdr/CreDtTm", "datetime", "single"),
     "message.id": ("GrpHdr/MsgId", "text", "single"),
     "transactions.debtor_account": (
         "CdtTrfTxInf/DbtrAcct/Id/Othr/Id",

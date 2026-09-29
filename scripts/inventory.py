@@ -19,6 +19,12 @@ runtime = {
     "rpds-py",
     "typing-extensions",
 }
+license_policy = {
+    item["name"]: item
+    for item in json.loads((root / "evidence/dependency-license-policy.json").read_text())[
+        "dependencies"
+    ]
+}
 components = []
 inventory = []
 for dist in sorted(metadata.distributions(), key=lambda d: d.metadata["Name"].lower()):
@@ -49,6 +55,7 @@ for dist in sorted(metadata.distributions(), key=lambda d: d.metadata["Name"].lo
             "scope": "required" if normalized in runtime else "optional",
             "purl": f"pkg:pypi/{normalized}@{dist.version}",
             "properties": [{"name": "aksum:role", "value": item["role"]}],
+            "licenses": [{"expression": license_policy[normalized]["license_expression"]}],
         }
     )
 native_components = [
@@ -183,7 +190,16 @@ rights_document = {
         "Commercial identifier directories",
         "Other prior-art source code",
     ],
-    "unresolved": ["Independent human asset/provenance review pending with Gate 1."],
+    "review_status": "BLOCKED-BY-HUMAN: independent asset/provenance approval only",
+    "dependency_license_policy": "evidence/dependency-license-policy.json",
+    "dependency_release_hashes": "evidence/dependency-release-hashes.json",
+    "native_source_inventory": "evidence/native-source-pins.json",
+    "bundle_inventory": (
+        "Each review bundle includes bundle-rights-register.json for every wheel/source archive."
+    ),
+    "camt053_decision": (
+        "Excluded; see docs/camt053-asset-review.md. Rights clarification is BLOCKED-BY-HUMAN."
+    ),
 }
 (root / "evidence/dependency-inventory.json").write_text(json.dumps(inventory, indent=2) + "\n")
 (root / "evidence/rights-register.json").write_text(json.dumps(rights_document, indent=2) + "\n")

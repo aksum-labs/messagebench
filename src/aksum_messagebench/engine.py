@@ -85,7 +85,7 @@ def compare(
         "limitations": [
             SCOPE_NOTICE,
             "Declared version-specific subset; single or uniquely keyed transaction association. "
-            "No business-rule compliance or certification. Independent review pending.",
+            "No business-rule compliance or certification. Independent human review not performed.",
         ],
     }
     codes = []
@@ -160,6 +160,11 @@ def compare(
                 "id": assertion["id"],
                 "field": field,
                 "comparator": assertion["comparator"],
+                **(
+                    {"item_comparator": assertion["item_comparator"]}
+                    if "item_comparator" in assertion
+                    else {}
+                ),
                 "required": assertion["required"],
                 "status": status,
                 "code": code,

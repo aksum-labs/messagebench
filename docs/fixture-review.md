@@ -1,46 +1,39 @@
-# Gate 1 independent review packet
+# Independent fixture review handoff
 
-Status: **pending**. Author: Codex. Independent human reviewers: none recorded.
-The source specification (Part VI §7) calls for two humans to review expected outcomes;
-the implementation mandate §3 makes independent review a pre-expansion gate.
-An AI self-review, a second parser or passing tests does not establish that review.
+**Status: BLOCKED-BY-HUMAN.** No independent human review is asserted. The owner authorized
+continued development, not fabrication of reviewer decisions. All technical preparation is complete.
 
-Review these six pairs against [the engineering contract](../contracts/pacs008-preserve.json).
-All data was authored synthetically for this repository. Names and identifiers are fictional;
-the tool has no capability to transmit a message.
+The packet covers all 100 source/target pairs, their expected outcomes, controls, exact input
+hashes, contracts, schemas, extractor source and rights notices. It includes the original six
+Gate 1 pairs unchanged. Thirteen generated safety/workflow scenarios have positive controls
+and separate evidence in evidence/security-corpus.json.
 
-| Case | Expected | Reason |
-|---|---|---|
-| [Identity](../corpus/positive/identity.target.xml) | PASS | Unchanged declared information. |
-| [Leading-zero loss](../corpus/negative/leading-zero-loss.target.xml) | FAIL PRESERVE-DEBTOR-ACCOUNT | `0000123400` becomes `123400`; identifiers are strings. |
-| [Reference truncation](../corpus/negative/reference-truncated.target.xml) | FAIL PRESERVE-END-TO-END-ID | `INV-2026-000123` becomes `INV-2026-000`. |
-| [Repeated remittance removal](../corpus/negative/remittance-removed.target.xml) | FAIL PRESERVE-REMITTANCE | One of two unstructured remittance items is removed. |
-| [Regenerated message ID](../corpus/positive/message-id-regenerated.target.xml) | PASS | Contract permits a new nonempty message ID; no equality assertion is made for that ID. |
-| [Currency change](../corpus/negative/currency-changed.target.xml) | FAIL PRESERVE-SETTLEMENT-AMOUNT | Numeric value unchanged, ETB becomes USD. |
+Preparation and verification:
 
-Each target has its corresponding `*.source.xml` next to it. The unchanged source is also
-[here](../corpus/positive/identity.source.xml). Review XML directly, not just report output.
-The expectations and rationale were recorded before comparator implementation; their initial
-manifest hash is in `evidence/expectations-preimplementation.sha256`. This temporal separation
-is useful evidence but is **not** independent authorship.
+```sh
+python scripts/review_packet.py prepare
+python scripts/review_packet.py verify
+# Expected exit 3 until two genuine independent human approvals are recorded.
+```
 
-Review tasks:
+Reviewers should first read README.md, docs/contracts.md, docs/fields.md, the threat model,
+rights register and camt exclusion decision. Verify input/asset hashes, inspect the exact
+XSD and declared comparator semantics, then determine expected outcomes without trusting
+the implementation output. Run the corpus and baseline only after recording that judgment.
+Pay particular attention to zeros, issuer/institution context, multiplicity, normalization,
+key uniqueness, fractional time precision, permitted regeneration and unexamined information.
 
-1. Check schema provenance and the exact namespace; do not assume an Ethiopian scheme profile.
-2. Inspect all twelve files and the five contract assertions; confirm each expected result.
-3. Confirm `single` association is valid only for exactly one transaction on each side.
-4. Confirm remittance multiplicity matters but order is explicitly disregarded in this contract.
-5. Confirm regeneration checks presence, not identity, and the coverage/limitations explain this.
-6. Identify omitted information: agent context, account scheme/issuer, names, fees, dates,
-   instructed amount, structured remittance and other XML fields are not preservation-checked.
-7. Record corrections before changing implementation or expectations; never approve a report
-   simply because it agrees with code.
+Each reviewer copies docs/reviewer-form.template.json to `reviews/<real-handle>.json`, supplies
+a real handle/date, explicitly attests human authorship and independence, and replaces every
+NOT_REVIEWED decision with APPROVE or REQUEST_CHANGES. Approve rights/scope only if actually
+reviewed. Do not use fictional identities or AI-generated approval forms. Record disagreements
+and fixes in a reviewed change; regenerate the packet and repeat affected approvals when an
+asset changes. Do not change expected answers merely to agree with the implementation.
 
-Reproduce from this checkout using `PYTHONPATH=src python -m aksum_messagebench corpus verify`
-with the pinned dependencies installed. Exit 0 means the six recorded classifications match;
-it does not mean the four deliberately defective transformations passed.
+The verification tool rejects wrong hashes, duplicate handles, absent attestations and any
+unapproved case. A syntactically valid form does **not** authenticate identity, expertise or
+independence. The accountable release approver must verify those facts through the actual
+review process. The protected signing job runs this checker but does not replace human judgment.
 
-Record review evidence with reviewer identity/role, date, the exact reviewed corpus/contract/XSD
-hashes, all six case decisions, any conflicts and their resolution. Put signed-off evidence in
-`evidence/reviews/` only when it exists. Do not populate fictional names, credentials or dates.
-No institutional affiliation or endorsement is required or implied.
+No request has been sent to anyone. The next human action is to perform the prepared review,
+not to design a review process or create missing engineering artifacts.

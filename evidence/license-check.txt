@@ -1,2 +1,2 @@
-Seven runtime distribution license declarations match reviewed policy.
-Native-component and standards-asset obligations remain in the rights register and native-build docs.
+All 60 pinned distributions match reviewed license metadata/notices.
+Native and schema redistribution obligations are additional; see the rights registers.

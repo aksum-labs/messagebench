@@ -1,6 +1,6 @@
 # Security
 
-Status: unpublished research proof; no supported production releases. Do not submit private
+Status: unpublished engineering release candidate; no supported production releases. Do not submit private
 messages, account identifiers, raw customer data or secrets in issues or CI artifacts.
 
 Before publication, Aksum Labs must appoint a security responder and enable GitHub private
@@ -14,5 +14,7 @@ suggested mitigation. Maintainers should acknowledge within 7 days, triage withi
 and coordinate disclosure and patched releases. These are proposed maintenance objectives,
 not an assertion that a staffed response process already exists.
 
-See docs/threat-model.md and LIMITATIONS.md. Native XML-library vulnerabilities must be
+See [threat model](docs/threat-model.md), [limitations](LIMITATIONS.md), and
+[GitHub private reporting instructions](https://docs.github.com/en/code-security/security-advisories/working-with-repository-security-advisories/privately-reporting-a-security-vulnerability).
+The owner setup plan enables this channel; its actual activation is BLOCKED-BY-HUMAN. Native XML-library vulnerabilities must be
 tracked in addition to Python package advisories. Never attach production inputs to scans.

@@ -9,7 +9,7 @@ Contracts can weaken their declared promises: a PASS is always conditional on co
 |---|---|---|
 | DTD/entity/remote resolution | Parser target rejects DOCTYPE, deny-all resolver, no network/entity expansion. UTF-16 regression tested. | Native parser defects remain possible; dependency maintenance required. |
 | XInclude/PI/schema hints | Explicitly rejected, never expanded or used for resolution. | May reject otherwise harmless files; deliberate conservative prototype policy. |
-| Resource exhaustion | Input/text/depth/element/assertion caps. Bounds applied while tree is built. | No OS sandbox or hard CPU/RSS ceiling; quarantine unknown inputs. |
+| Resource exhaustion | Input/text/depth/element/assertion caps. Bounds applied while tree is built. | CLI CPU/wall/address-space limits apply; no OS sandbox or peak-RSS guarantee. |
 | Symlink/FIFO/traversal | Directory-descriptor traversal, O_NOFOLLOW, O_NONBLOCK, regular-file check, no `..`/URLs. Output exclusive, mode 0600. | POSIX only; no defense against privileged filesystem/OS compromise. File mutation checks are best effort, not a filesystem snapshot. |
 | Schema substitution | Constant SHA-256 allowlist, local catalog path confinement, no schema imports. | A maintainer/code compromise can replace trust anchors. |
 | Executable contracts | Closed schema and comparator allowlist, no evaluation; duplicate IDs/keys rejected. | A syntactically valid weak contract can intentionally exclude meaningful information. |
@@ -23,3 +23,11 @@ Contracts can weaken their declared promises: a PASS is always conditional on co
 A test found that lxml target cleanup initially masked safety errors. Preserving the original
 rejection in `BoundedTree.close` fixed classification; regression tests cover the failure.
 No claim of a professional security audit or production safety is made.
+
+## CLI process boundary
+
+On the supported Linux execution profile, CLI entrypoints additionally impose 60 seconds CPU,
+120 seconds wall time and 1 GiB virtual address space, respecting stricter existing limits.
+These are process resource controls, not an operating-system sandbox or a peak-RSS guarantee.
+The Python API does not alter caller limits. Resource exceptions are redacted; an OS hard kill
+cannot guarantee a report. `tests/security/test_process_limits.py` verifies enforcement/restoration.

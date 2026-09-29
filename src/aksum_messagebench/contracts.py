@@ -45,4 +45,6 @@ def load_contract(path: Path) -> Contract:
         and "keys" not in association
     ):
         raise BenchError("CONTRACT_ASSOCIATION_INVALID", 2)
+    if association["mode"] != "keyed" and any(a["comparator"] == "keyed-items" for a in assertions):
+        raise BenchError("CONTRACT_KEYED_ASSOCIATION_REQUIRED", 2)
     return Contract(document, hashlib.sha256(raw).hexdigest())

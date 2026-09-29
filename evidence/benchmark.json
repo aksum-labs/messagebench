@@ -18,9 +18,9 @@
   "memory_reported_by_os": "MemTotal:       16375448 kB",
   "method": "In-process full compare including file reads, contract validation and schema compilation each iteration; six small pairs cycled, OS cache warm; no CLI startup. RSS is process peak, not incremental allocation. Shared host, single run; not an SLA or large/batch performance claim.",
   "os": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
-  "p50_ms": 11.408342999999999,
-  "p95_ms": 15.103128,
-  "peak_rss_kib": 40504,
+  "p50_ms": 11.740749,
+  "p95_ms": 15.584327,
+  "peak_rss_kib": 40360,
   "python": "3.12.3",
-  "throughput_pairs_per_second": 83.52833508318916
+  "throughput_pairs_per_second": 80.62404206957613
 }

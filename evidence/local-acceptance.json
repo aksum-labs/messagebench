@@ -1,0 +1,86 @@
+{
+  "checks": [
+    {
+      "check": "lint",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "check": "format",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "check": "types",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "check": "tests",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "check": "coverage-json",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "check": "coverage-target",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "check": "corpus",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "check": "differential-xsd",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "check": "security-corpus",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "check": "mutations",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "check": "parser-fuzz",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "check": "contract-fuzz",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "check": "licenses",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "check": "secrets",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "check": "sast",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "check": "workflows",
+      "exit_code": 0,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "scope": "Local offline checks; hosted Actions and genuine human approval are separate."
+}

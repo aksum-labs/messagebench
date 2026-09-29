@@ -36,12 +36,6 @@
   "patch": "Pinned version directory bypass; no runtime lxml changes.",
   "unsigned_native_reproducibility_claimed": false,
   "wheels": {
-    "lxml-6.1.3-cp312-cp312-linux_x86_64.whl": "8087330d264f18a0c25f9311b9122fcccb5cfb57a62761658acef37a76329799"
-  },
-  "observed_build_environment": {
-    "python": "3.12.3",
-    "os": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
-    "pip": "24.0",
-    "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+    "lxml-6.1.3-cp312-cp312-linux_x86_64.whl": "c0f246258ce3b52d75b57ad0e8f472a432e1d4ed566e541fdbd73d99d04babab"
   }
 }

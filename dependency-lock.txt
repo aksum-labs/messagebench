@@ -11,6 +11,7 @@ cyclonedx-python-lib==11.12.0
 Cython==3.2.9
 defusedxml==0.7.1
 detect-secrets==1.5.0
+editables==0.6
 elementpath==5.1.4
 filelock==4.0.6
 hatchling==1.32.4

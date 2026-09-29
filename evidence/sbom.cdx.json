@@ -3,6 +3,11 @@
   "components": [
     {
       "bom-ref": "ast-serialize",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "ast_serialize",
       "properties": [
         {
@@ -17,6 +22,11 @@
     },
     {
       "bom-ref": "attrs",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "attrs",
       "properties": [
         {
@@ -31,6 +41,11 @@
     },
     {
       "bom-ref": "bandit",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
       "name": "bandit",
       "properties": [
         {
@@ -45,6 +60,11 @@
     },
     {
       "bom-ref": "boolean.py",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        }
+      ],
       "name": "boolean.py",
       "properties": [
         {
@@ -59,6 +79,11 @@
     },
     {
       "bom-ref": "build",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "build",
       "properties": [
         {
@@ -73,6 +98,11 @@
     },
     {
       "bom-ref": "cachecontrol",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
       "name": "CacheControl",
       "properties": [
         {
@@ -87,6 +117,11 @@
     },
     {
       "bom-ref": "certifi",
+      "licenses": [
+        {
+          "expression": "MPL-2.0"
+        }
+      ],
       "name": "certifi",
       "properties": [
         {
@@ -101,6 +136,11 @@
     },
     {
       "bom-ref": "charset-normalizer",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "charset-normalizer",
       "properties": [
         {
@@ -115,6 +155,11 @@
     },
     {
       "bom-ref": "coverage",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
       "name": "coverage",
       "properties": [
         {
@@ -129,6 +174,11 @@
     },
     {
       "bom-ref": "cyclonedx-python-lib",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
       "name": "cyclonedx-python-lib",
       "properties": [
         {
@@ -143,6 +193,11 @@
     },
     {
       "bom-ref": "cython",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
       "name": "Cython",
       "properties": [
         {
@@ -157,6 +212,11 @@
     },
     {
       "bom-ref": "defusedxml",
+      "licenses": [
+        {
+          "expression": "PSF-2.0"
+        }
+      ],
       "name": "defusedxml",
       "properties": [
         {
@@ -171,6 +231,11 @@
     },
     {
       "bom-ref": "detect-secrets",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
       "name": "detect-secrets",
       "properties": [
         {
@@ -184,7 +249,31 @@
       "version": "1.5.0"
     },
     {
+      "bom-ref": "editables",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
+      "name": "editables",
+      "properties": [
+        {
+          "name": "aksum:role",
+          "value": "development"
+        }
+      ],
+      "purl": "pkg:pypi/editables@0.6",
+      "scope": "optional",
+      "type": "library",
+      "version": "0.6"
+    },
+    {
       "bom-ref": "elementpath",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "elementpath",
       "properties": [
         {
@@ -199,6 +288,11 @@
     },
     {
       "bom-ref": "filelock",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "filelock",
       "properties": [
         {
@@ -213,6 +307,11 @@
     },
     {
       "bom-ref": "hatchling",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "hatchling",
       "properties": [
         {
@@ -227,6 +326,11 @@
     },
     {
       "bom-ref": "hypothesis",
+      "licenses": [
+        {
+          "expression": "MPL-2.0"
+        }
+      ],
       "name": "hypothesis",
       "properties": [
         {
@@ -241,6 +345,11 @@
     },
     {
       "bom-ref": "idna",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
       "name": "idna",
       "properties": [
         {
@@ -255,6 +364,11 @@
     },
     {
       "bom-ref": "iniconfig",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "iniconfig",
       "properties": [
         {
@@ -269,6 +383,11 @@
     },
     {
       "bom-ref": "jsonschema",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "jsonschema",
       "properties": [
         {
@@ -283,6 +402,11 @@
     },
     {
       "bom-ref": "jsonschema-specifications",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "jsonschema-specifications",
       "properties": [
         {
@@ -297,6 +421,11 @@
     },
     {
       "bom-ref": "librt",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "librt",
       "properties": [
         {
@@ -311,6 +440,11 @@
     },
     {
       "bom-ref": "license-expression",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
       "name": "license-expression",
       "properties": [
         {
@@ -325,6 +459,11 @@
     },
     {
       "bom-ref": "lxml",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause"
+        }
+      ],
       "name": "lxml",
       "properties": [
         {
@@ -339,6 +478,11 @@
     },
     {
       "bom-ref": "markdown-it-py",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "markdown-it-py",
       "properties": [
         {
@@ -353,6 +497,11 @@
     },
     {
       "bom-ref": "mdurl",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "mdurl",
       "properties": [
         {
@@ -367,6 +516,11 @@
     },
     {
       "bom-ref": "msgpack",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
       "name": "msgpack",
       "properties": [
         {
@@ -381,6 +535,11 @@
     },
     {
       "bom-ref": "mypy",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "mypy",
       "properties": [
         {
@@ -395,6 +554,11 @@
     },
     {
       "bom-ref": "mypy-extensions",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "mypy_extensions",
       "properties": [
         {
@@ -409,6 +573,11 @@
     },
     {
       "bom-ref": "packageurl-python",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "packageurl-python",
       "properties": [
         {
@@ -423,6 +592,11 @@
     },
     {
       "bom-ref": "packaging",
+      "licenses": [
+        {
+          "expression": "Apache-2.0 OR BSD-2-Clause"
+        }
+      ],
       "name": "packaging",
       "properties": [
         {
@@ -437,6 +611,11 @@
     },
     {
       "bom-ref": "pathspec",
+      "licenses": [
+        {
+          "expression": "MPL-2.0"
+        }
+      ],
       "name": "pathspec",
       "properties": [
         {
@@ -451,6 +630,11 @@
     },
     {
       "bom-ref": "pip",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "pip",
       "properties": [
         {
@@ -465,6 +649,11 @@
     },
     {
       "bom-ref": "pip-requirements-parser",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "pip-requirements-parser",
       "properties": [
         {
@@ -479,6 +668,11 @@
     },
     {
       "bom-ref": "pip-api",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
       "name": "pip_api",
       "properties": [
         {
@@ -493,6 +687,11 @@
     },
     {
       "bom-ref": "pip-audit",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
       "name": "pip_audit",
       "properties": [
         {
@@ -507,6 +706,11 @@
     },
     {
       "bom-ref": "platformdirs",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "platformdirs",
       "properties": [
         {
@@ -521,6 +725,11 @@
     },
     {
       "bom-ref": "pluggy",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "pluggy",
       "properties": [
         {
@@ -535,6 +744,11 @@
     },
     {
       "bom-ref": "py-serializable",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
       "name": "py-serializable",
       "properties": [
         {
@@ -549,6 +763,11 @@
     },
     {
       "bom-ref": "pygments",
+      "licenses": [
+        {
+          "expression": "BSD-2-Clause"
+        }
+      ],
       "name": "Pygments",
       "properties": [
         {
@@ -563,6 +782,11 @@
     },
     {
       "bom-ref": "pyparsing",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "pyparsing",
       "properties": [
         {
@@ -577,6 +801,11 @@
     },
     {
       "bom-ref": "pyproject-hooks",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "pyproject_hooks",
       "properties": [
         {
@@ -591,6 +820,11 @@
     },
     {
       "bom-ref": "pytest",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "pytest",
       "properties": [
         {
@@ -605,6 +839,11 @@
     },
     {
       "bom-ref": "pyyaml",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "PyYAML",
       "properties": [
         {
@@ -619,6 +858,11 @@
     },
     {
       "bom-ref": "referencing",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "referencing",
       "properties": [
         {
@@ -633,6 +877,11 @@
     },
     {
       "bom-ref": "requests",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
       "name": "requests",
       "properties": [
         {
@@ -647,6 +896,11 @@
     },
     {
       "bom-ref": "rich",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "rich",
       "properties": [
         {
@@ -661,6 +915,11 @@
     },
     {
       "bom-ref": "rpds-py",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "rpds-py",
       "properties": [
         {
@@ -675,6 +934,11 @@
     },
     {
       "bom-ref": "ruff",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "ruff",
       "properties": [
         {
@@ -689,6 +953,11 @@
     },
     {
       "bom-ref": "setuptools",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "setuptools",
       "properties": [
         {
@@ -703,6 +972,11 @@
     },
     {
       "bom-ref": "sortedcontainers",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
       "name": "sortedcontainers",
       "properties": [
         {
@@ -717,6 +991,11 @@
     },
     {
       "bom-ref": "stevedore",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
       "name": "stevedore",
       "properties": [
         {
@@ -731,6 +1010,11 @@
     },
     {
       "bom-ref": "tomli",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "tomli",
       "properties": [
         {
@@ -745,6 +1029,11 @@
     },
     {
       "bom-ref": "tomli-w",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "tomli_w",
       "properties": [
         {
@@ -759,6 +1048,11 @@
     },
     {
       "bom-ref": "tomlkit",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "tomlkit",
       "properties": [
         {
@@ -773,6 +1067,11 @@
     },
     {
       "bom-ref": "trove-classifiers",
+      "licenses": [
+        {
+          "expression": "Apache-2.0"
+        }
+      ],
       "name": "trove-classifiers",
       "properties": [
         {
@@ -787,6 +1086,11 @@
     },
     {
       "bom-ref": "typing-extensions",
+      "licenses": [
+        {
+          "expression": "PSF-2.0"
+        }
+      ],
       "name": "typing_extensions",
       "properties": [
         {
@@ -801,6 +1105,11 @@
     },
     {
       "bom-ref": "urllib3",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "urllib3",
       "properties": [
         {
@@ -815,6 +1124,11 @@
     },
     {
       "bom-ref": "xmlschema",
+      "licenses": [
+        {
+          "expression": "MIT"
+        }
+      ],
       "name": "xmlschema",
       "properties": [
         {
@@ -931,7 +1245,7 @@
     "component": {
       "name": "aksum-messagebench",
       "type": "application",
-      "version": "0.1.0a2"
+      "version": "0.2.0rc1"
     }
   },
   "specVersion": "1.6",

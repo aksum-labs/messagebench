@@ -11,7 +11,7 @@ review-env/bin/python -m pip install --no-index --find-links wheelhouse \
 review-env/bin/messagebench corpus verify
 ```
 
-Expected: all 68 recorded classifications match, including intentional failures. The lock
+Expected: all 100 recorded classifications match, including intentional failures. The lock
 includes the specifically built native wheel; downloading the ordinary upstream lxml wheel
 alone is insufficient for this tested native profile. Runtime rejects older native libraries.
 
