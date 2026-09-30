@@ -20,7 +20,7 @@ def render(report: dict, format: str) -> bytes:
     if format == "json":
         return canonical_json(report)
     if format == "text":
-        lines = ["Aksum MessageBench", "Overall: " + report["overall"]]
+        lines = ["MessageBench", "Overall: " + report["overall"]]
         for side, check in report.get("schema_checks", {}).items():
             lines.append(f"{side} XSD: {check['status']} ({check['code']})")
         for check in report.get("assertions", []):
@@ -35,8 +35,8 @@ def render(report: dict, format: str) -> bytes:
         return (
             '<!doctype html><html lang="en"><meta charset="utf-8">'
             '<meta http-equiv="Content-Security-Policy" content="default-src \'none\'; '
-            "base-uri 'none'; form-action 'none'\"><title>Aksum MessageBench evidence</title>"
-            "<h1>Aksum MessageBench</h1><p>"
+            "base-uri 'none'; form-action 'none'\"><title>MessageBench evidence</title>"
+            "<h1>MessageBench</h1><p>"
             + html.escape(SCOPE_NOTICE)
             + "</p><pre>"
             + content

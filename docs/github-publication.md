@@ -1,6 +1,6 @@
 # Publication preparation
 
-Nothing in this sprint publishes the repository. Proposed slug: `aksum-messagebench`.
+Nothing in this sprint publishes the repository. Repository slug: `messagebench`.
 Intended owner: the Aksum Labs organization; its actual GitHub handle must be verified.
 
 Description / About text:
@@ -33,7 +33,7 @@ Generate files using the actual organization/repository, two real handles and co
 numeric GitHub user IDs (examples below are placeholders, not assigned maintainers):
 
 ```sh
-python scripts/owner_setup.py --repo ACTUAL_ORG/aksum-messagebench \
+python scripts/owner_setup.py --repo ACTUAL_ORG/messagebench \
   --maintainer REAL_HANDLE_ONE --maintainer REAL_HANDLE_TWO \
   --reviewer-id REAL_NUMERIC_ID_ONE --reviewer-id REAL_NUMERIC_ID_TWO \
   --out /tmp/messagebench-owner-plan

@@ -1,4 +1,4 @@
-# FINAL_COMPLETION_REPORT — Aksum MessageBench
+# FINAL_COMPLETION_REPORT — MessageBench
 
 Reference date: 29 September 2026. Engineering candidate: **0.2.0-rc.1** (Python package 0.2.0rc1).
 
@@ -81,9 +81,9 @@ Implemented and verified within the declared offline scope. Evidence: [docs/prio
 
 ### Original section 1
 
-**01.01 — PASS — Aksum MessageBench name and repository slug**
+**01.01 — PASS — MessageBench name and messagebench repository slug (owner naming revision, 2026-09-30)**
 
-Implemented and verified within the declared offline scope. Evidence: [README.md](README.md), [docs/api.md](docs/api.md).
+Owner requested the neutral public name MessageBench without the Aksum prefix. Organization ownership and corporate commit identity remain Aksum Labs. Evidence: [README.md](README.md), [docs/api.md](docs/api.md).
 
 **01.02 — PASS — Offline declared-preservation product contract**
 

@@ -1243,7 +1243,7 @@
   ],
   "metadata": {
     "component": {
-      "name": "aksum-messagebench",
+      "name": "messagebench",
       "type": "application",
       "version": "0.2.0rc1"
     }

@@ -1,4 +1,4 @@
-Aksum MessageBench
+MessageBench
 Overall: FAIL
 source XSD: PASS (XSD_VALID)
 target XSD: PASS (XSD_VALID)

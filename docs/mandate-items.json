@@ -65,13 +65,13 @@
     {
       "id": "01.01",
       "section": 1,
-      "requirement": "Aksum MessageBench name and repository slug",
+      "requirement": "MessageBench name and messagebench repository slug (owner naming revision, 2026-09-30)",
       "status": "PASS",
       "evidence": [
         "README.md",
         "docs/api.md"
       ],
-      "disposition": "Implemented and verified within the declared offline scope."
+      "disposition": "Owner requested the neutral public name MessageBench without the Aksum prefix. Organization ownership and corporate commit identity remain Aksum Labs."
     },
     {
       "id": "01.02",

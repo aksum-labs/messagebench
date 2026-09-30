@@ -3,7 +3,7 @@ requires = ["hatchling==1.32.4", "editables==0.6"]
 build-backend = "hatchling.build"
 
 [project]
-name = "aksum-messagebench"
+name = "messagebench"
 version = "0.2.0rc1"
 description = "Offline, adapter-neutral declared financial-message preservation checks"
 readme = "README.md"

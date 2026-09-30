@@ -1,7 +1,7 @@
 {
   "assets": {
     "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-    "NOTICE": "6eb1b471fc933f6a8632f902839018ad65172570ffa488f748a9b588eefafde7",
+    "NOTICE": "beddeca70e6172669dc4008e69389e83a2fd8f5ce56aae9f07f10c243d6a8eec",
     "contracts/pacs002-preserve.json": "b47a2c567e2998c0e7f76bec3d7cdf8cbf712960bff06058d3de4d98d0ddb89f",
     "contracts/pacs008-extended.json": "edd6a9f41a155ce4f6d30ae10b6808a38eedb44de6bec2b77b9271bdc0c5c373",
     "contracts/pacs008-keyed-amount.json": "c2eae49a41b0dadaffc4beb0f53e1fd02bd3a6f606ba22e721479485a88c81fe",
@@ -222,7 +222,7 @@
     "schemas/iso/pacs.008.001.08.xsd": "9bb360555d1981be8635aa3ed295abfe8b2d221d316193434114ad722107dcde",
     "schemas/report.schema.json": "eaaa4a4629dc8cd0efeafbae8a35dd77725ec3dc2a08ffbe0208381402c46a8b",
     "schemas/suite-report.schema.json": "398afc45db2c51d008b892196493671fbc4069d4e8be520ca609b6d4d3881dfd",
-    "src/aksum_messagebench/__init__.py": "3e4788d2a5a7a272ee082e18b52b412df5a8c144120f8bdf171b4023d942b9fa",
+    "src/aksum_messagebench/__init__.py": "7df1cf4c056be4ba89ea6d133906407046243b1b149bf734fad262572a4e15d8",
     "src/aksum_messagebench/__main__.py": "3c82483a895ec731a7ace273df25d6419e9e08a0fd8762cb01aa3eaad43c1d81",
     "src/aksum_messagebench/assets.py": "10adcc13d4ef24260044a26356590f3697e688f9a17a018b4b5336a85f978049",
     "src/aksum_messagebench/association.py": "6c37191952abdbdc725290db21f5b8250b1bbb76e69f3b60bb2b785364ec7696",
@@ -237,7 +237,7 @@
     "src/aksum_messagebench/extractors/pacs002_001_10.py": "e819b1ad6fceaee42f0a9e27672cab96dac431dc0b8838d84bb03fe32f4a842f",
     "src/aksum_messagebench/extractors/pacs008_001_08.py": "5f2b92dafbd99a62e42b99dc2b792ebf911c2119695bcf17d7c2e21d9a8ff17d",
     "src/aksum_messagebench/input_guard.py": "1a575bc95a83dc48b2d678593fb0ff3438167b393262da2ca6ca930772610b13",
-    "src/aksum_messagebench/reports.py": "64be8281acfc1af4b2f427d2f6aac0bace90754339f745942090b81ab7d76333",
+    "src/aksum_messagebench/reports.py": "ae6bb9c3931b6b0fe43871ea3b9316eb9e83516d5d25f21bf21dde88159f3283",
     "src/aksum_messagebench/runtime_limits.py": "57949d3212e929f63af4b87681bf9a058d1e46a32ed427ba51601e3f07737bf5",
     "src/aksum_messagebench/schema_catalog.py": "2e6d749b513c68fa8996767cbf7a73dfabc9031b05956ca555e01db1e95ae740",
     "src/aksum_messagebench/time_semantics.py": "fc2cd6ef8f24865340fa3f9792049be88aa1a36260d667920b56c9cc31ebf659",

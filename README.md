@@ -1,6 +1,4 @@
-# Aksum MessageBench
-
-<p align="center"><img src="branding/aksum-github-avatar-1024.svg" width="96" height="96" alt="Aksum Labs"></p>
+# MessageBench
 
 ```sh
 # From this checkout after installing the pinned dependencies (docs/quickstart.md):
@@ -21,7 +19,7 @@ Default reports deliberately omit values. **Schema-valid does not necessarily me
 transformation-correct.** For the unchanged control, use `corpus/positive/identity.source.xml`
 and `corpus/positive/identity.target.xml`; its exit code is 0.
 
-Aksum MessageBench helps financial-software engineers test whether message adapters preserve
+MessageBench helps financial-software engineers test whether message adapters preserve
 declared payment information. It runs offline on synthetic fixtures or institution-local
 files and produces reproducible, scope-labelled results.
 

@@ -25,7 +25,7 @@ is not claimed. Native license notices, original sources and relink/rebuild inst
 included. See rights register and camt exclusion rationale; human legal approval is not asserted.
 
 Approved positioning:
-“Aksum MessageBench helps financial-software engineers test whether message adapters preserve
+“MessageBench helps financial-software engineers test whether message adapters preserve
 declared payment information. It runs offline on synthetic fixtures or institution-local files
 and produces reproducible, scope-labelled results.”
 

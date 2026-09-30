@@ -35,7 +35,7 @@ def main():
     counts = collections.Counter(i["status"] for i in items)
     benchmark = json.loads((ROOT / "evidence/benchmark.json").read_text())
     lines = [
-        "# FINAL_COMPLETION_REPORT — Aksum MessageBench",
+        "# FINAL_COMPLETION_REPORT — MessageBench",
         "",
         "Reference date: 29 September 2026. Engineering candidate: **0.2.0-rc.1** "
         "(Python package 0.2.0rc1).",

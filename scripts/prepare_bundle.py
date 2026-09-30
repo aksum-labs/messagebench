@@ -121,10 +121,10 @@ def main():
                 "file": "wheelhouse/" + wheel.name,
                 "sha256": hashlib.sha256(wheel.read_bytes()).hexdigest(),
                 "source": "Aksum original source"
-                if normalized == "aksum-messagebench"
+                if normalized in {"messagebench", "aksum-messagebench"}
                 else "https://pypi.org/project/" + name + "/" + version + "/",
                 "license_or_terms": "Apache-2.0"
-                if normalized == "aksum-messagebench"
+                if normalized in {"messagebench", "aksum-messagebench"}
                 else license_policy[normalized]["license_expression"],
                 "modified": normalized == "lxml",
                 "redistribution_status": (

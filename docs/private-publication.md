@@ -1,6 +1,6 @@
 # Private review repository
 
-The engineering candidate is prepared for aksum-labs/aksum-messagebench, an organization-owned private repository. Public release remains subject to the independent-review and rights gates documented in RELEASE_READINESS.md.
+The engineering candidate is prepared for aksum-labs/messagebench, an organization-owned private repository. Public release remains subject to the independent-review and rights gates documented in RELEASE_READINESS.md.
 
 Commit author and committer metadata use Aksum Labs with a company noreply address. Uploads are permitted only through a dedicated organization-owned GitHub App installation identity. Local hooks reject ordinary personal-account credentials. This controls public commit/push attribution; it does not promise invisibility from GitHub or authorized private administrative audit records.
 

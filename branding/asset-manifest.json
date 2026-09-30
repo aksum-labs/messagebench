@@ -2,16 +2,12 @@
   "source": "https://www.aksumlabs.org/images/aksum-labs-logo-primary.svg",
   "source_sha256": "c6176a4467e39aacd751e61ee22b9f18fd82f71df0a4b2e25d4822921c357bf0",
   "authorization": "Organization owner requested reuse/adaptation of the company website logo.",
-  "changes": "Original vector shapes and gold color retained; square safe margins, dark background and repository-specific text added.",
+  "changes": "Original company avatar retained. Project preview and public name use MessageBench without a publisher prefix.",
   "personal_identity_embedded": false,
   "assets": {
     "aksum-github-avatar-1024.png": "6749ca32e5a70d7c70dd6895521d4996125183e1f607a327cfb0a216285ea2b2",
     "aksum-github-avatar-1024.svg": "8919c6ab944ace5daf070de93ccd6403bf881d437092461258610b5622143c50",
-    "aksum-github-banner.png": "f5a347858b78b99b9c5c07d4d6e9990474f4bcff9d2a816070ad9af88df4a370",
-    "aksum-github-banner.svg": "d420a9d0ee2c23b809cefa2301f99bc24b74d42d6193d18f245150130f8b8d02",
-    "aksum-messagebench-social-preview.png": "6e224d657071dbf17a571cd5ca2f1541d88c1e633b2e2680901f37b144bcdef2",
-    "aksum-messagebench-social-preview.svg": "a51d7a33398afcc7c5c50f7333d3d72de3bae651c51218f5136a8004d79f2d3c",
-    "website-logo-original.svg": "c6176a4467e39aacd751e61ee22b9f18fd82f71df0a4b2e25d4822921c357bf0",
-    "website-mark-original.png": "97ed9bffabeded967fc06c8a1c25c1db705df50f6ec4c178cb2c9846052c2baf"
+    "messagebench-social-preview.png": "754b3ee8ef9987f3322ad198766d25550e7c53ee2e830ccc132d768f0420a655",
+    "messagebench-social-preview.svg": "07ee33bb2227cc7450f40cb6f9c4a846b4b603bbe3d1ab2b1bd1a68507d61db1"
   }
 }

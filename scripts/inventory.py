@@ -30,7 +30,7 @@ inventory = []
 for dist in sorted(metadata.distributions(), key=lambda d: d.metadata["Name"].lower()):
     name = dist.metadata["Name"]
     normalized = name.lower().replace("_", "-")
-    if normalized == "aksum-messagebench":
+    if normalized in {"messagebench", "aksum-messagebench"}:
         continue
     terms = (
         dist.metadata.get("License-Expression")
@@ -210,7 +210,7 @@ bom = {
     "metadata": {
         "component": {
             "type": "application",
-            "name": "aksum-messagebench",
+            "name": "messagebench",
             "version": tomllib.loads((root / "pyproject.toml").read_text())["project"]["version"],
         }
     },
