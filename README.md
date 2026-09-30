@@ -1,5 +1,7 @@
 # Aksum MessageBench
 
+<p align="center"><img src="branding/aksum-github-avatar-1024.svg" width="96" height="96" alt="Aksum Labs"></p>
+
 ```sh
 # From this checkout after installing the pinned dependencies (docs/quickstart.md):
 PYTHONPATH=src python -m aksum_messagebench compare \
