@@ -12,7 +12,7 @@ Evidence refers to main source `ad10253e1d0d9a07282ab78290f024cdbf5a111b`. Later
 
 GitHub hides ruleset bypass actors from read-only callers. The corrected release guard binds a privileged company-App read-back to the exact current ruleset fields/timestamps and fails closed on mismatch; CI receives no administrative write secret. Live read-only validation succeeded. Two real semantic/rights review decisions are still required before release. One maintainer team member is not two independent reviewers.
 
-The company-bot protected evidence PR (receipt added after publication) carries the refreshed evidence and correction. Required human approval is not bypassed or fabricated.
+[Company-bot PR #7](https://github.com/aksum-labs/messagebench/pull/7) carries the refreshed evidence and correction. Required human approval is not bypassed or fabricated.
 
 ## B. Actual hosted CI
 
@@ -141,6 +141,7 @@ There are no unsubmitted foundation proposals falsely described as under review.
 - https://github.com/aksum-labs/messagebench/actions/runs/36838839643
 - https://github.com/aksum-labs/messagebench/attestations/51751545
 - https://github.com/aksum-labs/messagebench/blob/main/CITATION.cff
+- https://github.com/aksum-labs/messagebench/pull/7
 - https://github.com/aksum-labs/messagebench/tree/main/paper
 - https://scorecard.dev/viewer/?uri=github.com/aksum-labs/messagebench
 

@@ -388,7 +388,7 @@
       "public_listing_url": "https://aksum-labs.github.io/messagebench/",
       "badge_url": null,
       "blocker": null,
-      "next_action": "Actual settings read back through the company App; refreshed facts/guard fix follow protected PR review.",
+      "next_action": "Live Pages at main is verified; refreshed evidence is publicly uploaded on PR #7. Human merge precedes deploying that newer site revision.",
       "owner_approval_required": false
     },
     {
@@ -442,15 +442,16 @@
       "date_checked": "2026-10-01",
       "artifact_required": [
         "scripts/release_guard.py",
-        "tests/integration/test_release_handoffs.py"
+        "tests/integration/test_release_handoffs.py",
+        "evidence/recognition-pull-request.json"
       ],
       "prepared": true,
       "submitted": false,
       "accepted": false,
-      "public_listing_url": null,
+      "public_listing_url": "https://github.com/aksum-labs/messagebench/pull/7",
       "badge_url": null,
       "blocker": "Genuine human code-owner review and merge approval.",
-      "next_action": "Company App publishes and tests the branch; human reviews and merges without bypass.",
+      "next_action": "Company-bot PR #7 is public; genuine human code-owner review and merge after green checks.",
       "owner_approval_required": true
     }
   ]

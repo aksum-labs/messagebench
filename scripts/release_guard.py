@@ -113,9 +113,8 @@ def read(path):
     return json.loads(raw)
 
 
-def main():
-    if os.environ.get("GITHUB_REPOSITORY") != REPOSITORY or os.environ.get("GITHUB_REF") != REF:
-        raise ValueError("Exact repository and reviewed tag required")
+def verify_live_controls():
+    """Read and validate platform controls without signing, deploying or publishing."""
     rules = read("/rulesets")
     if not isinstance(rules, list) or len(rules) > 25:
         raise ValueError("Unexpected ruleset collection")
@@ -131,6 +130,12 @@ def main():
         bind_admin_readback(current, readback),
     )
     print("Public release control checks passed; this is not independent human review.")
+
+
+def main():
+    if os.environ.get("GITHUB_REPOSITORY") != REPOSITORY or os.environ.get("GITHUB_REF") != REF:
+        raise ValueError("Exact repository and reviewed tag required")
+    verify_live_controls()
 
 
 if __name__ == "__main__":
