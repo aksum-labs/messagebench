@@ -1,0 +1,9 @@
+Source: 7d620ae4a63ba7b3ba4ad4720763883d3e7df6ca
+Run: https://github.com/aksum-labs/messagebench/actions/runs/36843481802
+Job: 110307885686
+Only public permission and validation lines retained; no raw token or payload.
+2026-10-01T09:33:22.8823314Z ##[group]GITHUB_TOKEN Permissions
+2026-10-01T09:33:22.8825500Z Actions: read
+2026-10-01T09:33:22.8826185Z Contents: read
+2026-10-01T09:33:22.8826772Z Metadata: read
+2026-10-01T09:33:27.2043943Z Public release control checks passed; this is not independent human review.

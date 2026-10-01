@@ -37,3 +37,7 @@ GitHub omits ruleset bypass actors from callers without ruleset write access. Th
 Actual live control validation is evidence/release-controls-live-verification.json. Source review must cover the record and guard correction before the exact tag is approved. The owner must authenticate reviewers; software verifies only hash/decision consistency. No reviews have been fabricated.
 
 The publication job verifies the exact tag-workflow signature again after download. The offline ZIP checksum uses a relative basename, so recipients can verify it in their download directory. Local preparation can reuse cleared wheels via --wheel-cache with --no-index; no package index is needed.
+
+## Hosted read-only permission verification
+
+PR source 7d620ae was tested with GitHub Actions’ actual contents/actions/metadata read-only job token. The live main/tag/environment control check passed in job 110307885686, run 36843481802. See evidence/hosted-readonly-release-controls.txt. This checks platform controls without signing, publishing, simulating tag identity or claiming human review.

@@ -681,11 +681,13 @@
       "id": "02.24",
       "section": 2,
       "requirement": "Hosted runs for final prepared documentation/workflow commit",
-      "status": "READY-FOR-OWNER-APPROVAL",
+      "status": "ACHIEVED",
       "evidence": [
-        "docs/github-hardening-report.md"
+        "evidence/recognition-pr-ci.json",
+        "evidence/hosted-pr-checks-excerpt.txt",
+        "evidence/hosted-readonly-release-controls.txt"
       ],
-      "disposition": "The final facts and release-guard correction use a protected PR. Bot prepares/publishes/tests it; genuine human review is required to merge without bypassing protection."
+      "disposition": "Actual protected PR source 7d620ae passed Checks (154 tests and read-only live release controls), CodeQL and dependency review. Exact run/job evidence retained. Human merge is separate and not bypassed."
     },
     {
       "id": "03.01",

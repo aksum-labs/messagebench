@@ -16,7 +16,7 @@ GitHub hides ruleset bypass actors from read-only callers. The corrected release
 
 ## B. Actual hosted CI
 
-All seven workflows below succeeded at the named main commit. Checks includes formatting, typing, unit/golden/property/integration/security tests, 97.06% semantic branch coverage, targeted mutation checks, bounded parser/contract fuzzing, differential XSD, license/manifest/secret checks, SAST and clean build. Dependency vulnerability audit, CodeQL, dependency-review and long fuzz campaigns succeeded. Candidate preparation generated an SBOM including native XML dependencies and verified clean offline installation. Main hosted tests: **149 passed**; the subsequent release-guard branch has **154 local passing tests**. Original paper measurement remains 140 tests at its stated original source.
+All seven workflows below succeeded at the named main commit. Checks includes formatting, typing, unit/golden/property/integration/security tests, 97.06% semantic branch coverage, targeted mutation checks, bounded parser/contract fuzzing, differential XSD, license/manifest/secret checks, SAST and clean build. Dependency vulnerability audit, CodeQL, dependency-review and long fuzz campaigns succeeded. Candidate preparation generated an SBOM including native XML dependencies and verified clean offline installation. Main hosted tests: **149 passed**; the protected release-guard PR source 7d620ae has **154 hosted passing tests**, with successful CodeQL, dependency review and actual read-only-token platform verification. Original paper measurement remains 140 tests at its stated original source.
 
 | Workflow | Actual run | Conclusion |
 |---|---|---|
@@ -28,7 +28,7 @@ All seven workflows below succeeded at the named main commit. Checks includes fo
 | Build and attest candidate snapshot | [36838833434](https://github.com/aksum-labs/messagebench/actions/runs/36838833434) | success |
 | Documentation | [36838839643](https://github.com/aksum-labs/messagebench/actions/runs/36838839643) | success |
 
-Exact source, jobs, steps and artifact digests: `evidence/hosted-recognition.json`. Filtered test proof: `evidence/hosted-checks-excerpt.txt`. PR results are separately source-bound; see `evidence/recognition-pr-ci.json` when recorded. No later commit is attributed to an earlier run.
+Exact source, jobs, steps and artifact digests: `evidence/hosted-recognition.json`. Filtered test proof: `evidence/hosted-checks-excerpt.txt`. PR results are separately source-bound in `evidence/recognition-pr-ci.json`, `evidence/hosted-pr-checks-excerpt.txt` and `evidence/hosted-readonly-release-controls.txt`. Checks run 36843481802, CodeQL run 36843481848 and dependency-review run 36843481803 all succeeded at 7d620ae. Later receipt-only updates require their own checks before merge. No later commit is attributed to an earlier run.
 
 ## C. OpenSSF Scorecard
 
@@ -177,7 +177,7 @@ No NBE/EthSwitch/SWIFT/ISO/BIS/foundation approval or certification; no Passing 
 
 ## Exhaustive mandate accounting
 
-213 explicit rows, sections 0–20: ACHIEVED: 196, BLOCKED-BY-REQUIRED-HUMAN-HISTORY: 1, READY-FOR-OWNER-APPROVAL: 16. Preparation is distinguished from submission, review, acceptance and publication. No PARTIAL state.
+213 explicit rows, sections 0–20: ACHIEVED: 197, BLOCKED-BY-REQUIRED-HUMAN-HISTORY: 1, READY-FOR-OWNER-APPROVAL: 15. Preparation is distinguished from submission, review, acceptance and publication. No PARTIAL state.
 
 | ID | Requirement | Disposition | Evidence and next action |
 |---|---|---|---|
@@ -240,7 +240,7 @@ No NBE/EthSwitch/SWIFT/ISO/BIS/foundation approval or certification; no Passing 
 | 02.21 | Run IDs and source SHA | ACHIEVED | evidence/hosted-recognition.json, evidence/hosted-checks-excerpt.txt — Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits. |
 | 02.22 | Artifact hashes and conclusions | ACHIEVED | evidence/hosted-recognition.json, evidence/hosted-checks-excerpt.txt — Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits. |
 | 02.23 | Actual successful run links and failure reporting | ACHIEVED | evidence/hosted-recognition.json, evidence/hosted-checks-excerpt.txt — Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits. |
-| 02.24 | Hosted runs for final prepared documentation/workflow commit | READY-FOR-OWNER-APPROVAL | docs/github-hardening-report.md — The final facts and release-guard correction use a protected PR. Bot prepares/publishes/tests it; genuine human review is required to merge without bypassing protection. |
+| 02.24 | Hosted runs for final prepared documentation/workflow commit | ACHIEVED | evidence/recognition-pr-ci.json, evidence/hosted-pr-checks-excerpt.txt, evidence/hosted-readonly-release-controls.txt — Actual protected PR source 7d620ae passed Checks (154 tests and read-only live release controls), CodeQL and dependency review. Exact run/job evidence retained. Human merge is separate and not bypassed. |
 | 03.01 | Official immutable-pinned action | ACHIEVED | evidence/scorecard-public.json, .github/workflows/scorecard.yml, docs/scorecard-remediation.md, README.md — Actual published 7.1/10 at ad10253; official action and full CLI agree, all 18 checks recorded. Badge refers to earned public result; no score gaming. |
 | 03.02 | Public scan | ACHIEVED | evidence/scorecard-public.json, .github/workflows/scorecard.yml, docs/scorecard-remediation.md, README.md — Actual published 7.1/10 at ad10253; official action and full CLI agree, all 18 checks recorded. Badge refers to earned public result; no score gaming. |
 | 03.03 | publish_results | ACHIEVED | evidence/scorecard-public.json, .github/workflows/scorecard.yml, docs/scorecard-remediation.md, README.md — Actual published 7.1/10 at ad10253; official action and full CLI agree, all 18 checks recorded. Badge refers to earned public result; no score gaming. |

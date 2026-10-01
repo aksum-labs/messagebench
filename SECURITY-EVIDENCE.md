@@ -25,3 +25,5 @@ Identity: https://github.com/aksum-labs/messagebench/.github/workflows/snapshot.
 ## Earned signals and unresolved human work
 
 Public Scorecard 7.1/10 at ad10253, confirmed by full 18-check CLI scan. Live Pages documentation and completed Software Heritage snapshot are earned. No Best Practices Passing badge, OSPS award, SLSA level, DOI, LFDT/FINOS acceptance or sponsor exists. Original code/corpus Apache-2.0; bundled standard schemas retain separate terms; camt.053 excluded. Real MFA readiness, ongoing maintenance/response commitments, legal/account attestations, independent review and protected PR approval cannot be fabricated. SECURITY.md gives the enabled private reporting route.
+
+The release guard also passed on hosted PR source 7d620ae using the actual read-only GitHub job token (job 110307885686). Evidence: evidence/hosted-readonly-release-controls.txt. The check performs no release action and does not stand in for independent review.
