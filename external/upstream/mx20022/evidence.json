@@ -14,5 +14,13 @@
     "message": "pacs.008.001.08",
     "source_valid": true,
     "mutated_target_valid": true
+  },
+  "closeout_refresh": {
+    "date_checked": "2026-10-01",
+    "current_upstream_commit": "810cfa2e486745ca3a779c460a7768e1923f860a",
+    "rebase_needed": false,
+    "tests_passed": 2,
+    "cargo_fmt": "PASS",
+    "contribution_policy": "No DCO/CLA or CONTRIBUTING file discovered in current tree; Apache-2.0 code. Corporate global contribution account still unavailable; no agreement signed."
   }
 }

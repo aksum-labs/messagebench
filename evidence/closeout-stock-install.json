@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-01",
+  "distribution": "messagebench==0.2.0rc1",
+  "source_commit": "ad10253e1d0d9a07282ab78290f024cdbf5a111b",
+  "consumer_pip_install": "succeeded using stock index dependency resolution",
+  "lxml": "6.1.3",
+  "libxml2": "2.14.6",
+  "libxslt": "1.1.43",
+  "messagebench_exit_code": 3,
+  "messagebench_code": "NATIVE_XML_PROFILE_UNSUPPORTED",
+  "generic_pypi_quickstart_verified": false,
+  "supported_remedy": "CPython 3.12 Linux x86-64 offline wheelhouse, hashes, sources and notices; verified separately",
+  "ownership_note": "Platform JSON 404 does not establish ownership or name availability"
+}

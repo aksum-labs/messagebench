@@ -1,0 +1,28 @@
+{
+  "boundary_invocations": {
+    "comparators": 125,
+    "contracts": 324,
+    "engine": 5361,
+    "parser": 4090
+  },
+  "container_images": {
+    "builder": "gcr.io/oss-fuzz-base/base-builder-python@sha256:58f80c90a90944b68b8e70b98e38997ee9396225311cfb0f3aea78671446ab4e",
+    "python": "python:3.12-bullseye@sha256:7cc929040c5e8cf6036c5099d62a83708427c131fb7a7c965b5ba51e995eea1c"
+  },
+  "date_checked": "2026-10-01",
+  "generated_corpus_entries": 711,
+  "independent_execution": false,
+  "instrumentation": "Atheris guidance plus ClusterFuzzLite native address/fuzzer-no-link compile flags; runtime sanitizer preloaded; not complete native coverage or an independent audit",
+  "libfuzzer_coverage_counter": 7963,
+  "libfuzzer_feature_counter": 18918,
+  "log_sha256": {
+    "cfl-build.log": "01bd5fcb572b1b2bbf2fa23afd5ba5bd68a9bd0669f6c67aabd8649901ebdd27",
+    "cfl-compile.log": "3190bca0411a593dd118b29277b408794b2272e5bdf5f5f1902f7dc00c34f205",
+    "cfl-run.log": "e68e8f0018a88e2a9fb267ac8ef6e3ce5ba53789c77e7a43e16dfeacee5ab6e2"
+  },
+  "peak_rss_reported_mib": 702,
+  "runs_completed": 10000,
+  "scope": "Synthetic parser/contracts/comparators/engine; local ClusterFuzzLite build and frozen target, hosted execution separately verified",
+  "unexpected_crashes": 0,
+  "wall_seconds": 482
+}

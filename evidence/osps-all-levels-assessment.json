@@ -1,0 +1,1032 @@
+{
+  "version": "2026.08.28",
+  "checked_at": "2026-10-01",
+  "source_sha256": "d1d603880f2948f8465d5334af55e3235291493ab002898cd9519c70963e176c",
+  "official_external_result_obtained": false,
+  "scope": "Criterion-by-criterion self-assessment across all maturity levels; concrete owner gates are not hidden by this metadata.",
+  "controls": [
+    {
+      "control": "OSPS-AC-01.01",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "ACTION-REQUIRES-OWNER",
+      "assessment": "Actual account/org MFA not authenticated; owner confirms true policy.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-ac-0101"
+    },
+    {
+      "control": "OSPS-AC-02.01",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-ac-0201"
+    },
+    {
+      "control": "OSPS-AC-03.01",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-ac-0301"
+    },
+    {
+      "control": "OSPS-AC-03.02",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-ac-0302"
+    },
+    {
+      "control": "OSPS-AC-04.01",
+      "levels": [
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-ac-0401"
+    },
+    {
+      "control": "OSPS-AC-04.02",
+      "levels": [
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-ac-0402"
+    },
+    {
+      "control": "OSPS-BR-01.01",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-br-0101"
+    },
+    {
+      "control": "OSPS-BR-01.03",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-br-0103"
+    },
+    {
+      "control": "OSPS-BR-01.04",
+      "levels": [
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-br-0104"
+    },
+    {
+      "control": "OSPS-BR-02.01",
+      "levels": [
+        2,
+        3
+      ],
+      "status": "ACTION-REQUIRES-OWNER",
+      "assessment": "Implemented reviewed-release controls/materials, but actual reviewed immutable-tag release is gated by genuine independent decisions and normal protected merge.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-br-0201"
+    },
+    {
+      "control": "OSPS-BR-02.02",
+      "levels": [
+        3
+      ],
+      "status": "ACTION-REQUIRES-OWNER",
+      "assessment": "Implemented reviewed-release controls/materials, but actual reviewed immutable-tag release is gated by genuine independent decisions and normal protected merge.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-br-0202"
+    },
+    {
+      "control": "OSPS-BR-03.01",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-br-0301"
+    },
+    {
+      "control": "OSPS-BR-03.02",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-br-0302"
+    },
+    {
+      "control": "OSPS-BR-04.01",
+      "levels": [
+        2,
+        3
+      ],
+      "status": "ACTION-REQUIRES-OWNER",
+      "assessment": "Implemented reviewed-release controls/materials, but actual reviewed immutable-tag release is gated by genuine independent decisions and normal protected merge.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-br-0401"
+    },
+    {
+      "control": "OSPS-BR-05.01",
+      "levels": [
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-br-0501"
+    },
+    {
+      "control": "OSPS-BR-06.01",
+      "levels": [
+        2,
+        3
+      ],
+      "status": "ACTION-REQUIRES-OWNER",
+      "assessment": "Implemented reviewed-release controls/materials, but actual reviewed immutable-tag release is gated by genuine independent decisions and normal protected merge.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-br-0601"
+    },
+    {
+      "control": "OSPS-BR-07.01",
+      "levels": [
+        1
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-br-0701"
+    },
+    {
+      "control": "OSPS-BR-07.02",
+      "levels": [
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Concrete build, release, disclosure, scope and security policy documented; actual release/signatures and human response are separately gated.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-br-0702"
+    },
+    {
+      "control": "OSPS-DO-01.01",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Concrete build, release, disclosure, scope and security policy documented; actual release/signatures and human response are separately gated.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-do-0101"
+    },
+    {
+      "control": "OSPS-DO-02.01",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Concrete build, release, disclosure, scope and security policy documented; actual release/signatures and human response are separately gated.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-do-0201"
+    },
+    {
+      "control": "OSPS-DO-03.01",
+      "levels": [
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Concrete build, release, disclosure, scope and security policy documented; actual release/signatures and human response are separately gated.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-do-0301"
+    },
+    {
+      "control": "OSPS-DO-03.02",
+      "levels": [
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Concrete build, release, disclosure, scope and security policy documented; actual release/signatures and human response are separately gated.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-do-0302"
+    },
+    {
+      "control": "OSPS-DO-04.01",
+      "levels": [
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Concrete build, release, disclosure, scope and security policy documented; actual release/signatures and human response are separately gated.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-do-0401"
+    },
+    {
+      "control": "OSPS-DO-05.01",
+      "levels": [
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Concrete build, release, disclosure, scope and security policy documented; actual release/signatures and human response are separately gated.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-do-0501"
+    },
+    {
+      "control": "OSPS-DO-06.01",
+      "levels": [
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Concrete build, release, disclosure, scope and security policy documented; actual release/signatures and human response are separately gated.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-do-0601"
+    },
+    {
+      "control": "OSPS-DO-07.01",
+      "levels": [
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Concrete build, release, disclosure, scope and security policy documented; actual release/signatures and human response are separately gated.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-do-0701"
+    },
+    {
+      "control": "OSPS-GV-01.01",
+      "levels": [
+        2,
+        3
+      ],
+      "status": "ACTION-REQUIRES-OWNER",
+      "assessment": "Actual human sensitive-access roster not supplied; maintain an accountable private inventory with an appropriate public role list.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-gv-0101"
+    },
+    {
+      "control": "OSPS-GV-01.02",
+      "levels": [
+        2,
+        3
+      ],
+      "status": "ACTION-REQUIRES-OWNER",
+      "assessment": "Named responsible people and role commitments not yet supplied.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-gv-0102"
+    },
+    {
+      "control": "OSPS-GV-02.01",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "ACTION-REQUIRES-OWNER",
+      "assessment": "Requires actual public configuration read-back or accountable security contact; current docs are prepared.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-gv-0201"
+    },
+    {
+      "control": "OSPS-GV-03.01",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-gv-0301"
+    },
+    {
+      "control": "OSPS-GV-03.02",
+      "levels": [
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-gv-0302"
+    },
+    {
+      "control": "OSPS-GV-04.01",
+      "levels": [
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Concrete build, release, disclosure, scope and security policy documented; actual release/signatures and human response are separately gated.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-gv-0401"
+    },
+    {
+      "control": "OSPS-LE-01.01",
+      "levels": [
+        2,
+        3
+      ],
+      "status": "ACTION-REQUIRES-OWNER",
+      "assessment": "No new DCO/CLA authority is assumed; real legal contribution assertion process needs owner/signatory decision.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-le-0101"
+    },
+    {
+      "control": "OSPS-LE-02.01",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-le-0201"
+    },
+    {
+      "control": "OSPS-LE-02.02",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "ACTION-REQUIRES-OWNER",
+      "assessment": "Original code is Apache-2.0; ancillary standard-data terms are disclosed. Narrow official interpretation of released-asset scope remains separate; no mirror-license substitution.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-le-0202"
+    },
+    {
+      "control": "OSPS-LE-03.01",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-le-0301"
+    },
+    {
+      "control": "OSPS-LE-03.02",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-le-0302"
+    },
+    {
+      "control": "OSPS-QA-01.01",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "ACTION-REQUIRES-OWNER",
+      "assessment": "Requires actual public configuration read-back or accountable security contact; current docs are prepared.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-qa-0101"
+    },
+    {
+      "control": "OSPS-QA-01.02",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "ACTION-REQUIRES-OWNER",
+      "assessment": "Requires actual public configuration read-back or accountable security contact; current docs are prepared.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-qa-0102"
+    },
+    {
+      "control": "OSPS-QA-02.01",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-qa-0201"
+    },
+    {
+      "control": "OSPS-QA-02.02",
+      "levels": [
+        3
+      ],
+      "status": "ACTION-REQUIRES-OWNER",
+      "assessment": "Implemented reviewed-release controls/materials, but actual reviewed immutable-tag release is gated by genuine independent decisions and normal protected merge.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-qa-0202"
+    },
+    {
+      "control": "OSPS-QA-03.01",
+      "levels": [
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-qa-0301"
+    },
+    {
+      "control": "OSPS-QA-04.01",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-qa-0401"
+    },
+    {
+      "control": "OSPS-QA-04.02",
+      "levels": [
+        3
+      ],
+      "status": "NOT-APPLICABLE",
+      "assessment": "Single source repository; no multi-repository release or inherited subproject controls.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-qa-0402"
+    },
+    {
+      "control": "OSPS-QA-05.01",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-qa-0501"
+    },
+    {
+      "control": "OSPS-QA-05.02",
+      "levels": [
+        1,
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-qa-0502"
+    },
+    {
+      "control": "OSPS-QA-06.01",
+      "levels": [
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-qa-0601"
+    },
+    {
+      "control": "OSPS-QA-06.02",
+      "levels": [
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-qa-0602"
+    },
+    {
+      "control": "OSPS-QA-06.03",
+      "levels": [
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-qa-0603"
+    },
+    {
+      "control": "OSPS-QA-07.01",
+      "levels": [
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-qa-0701"
+    },
+    {
+      "control": "OSPS-SA-01.01",
+      "levels": [
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-sa-0101"
+    },
+    {
+      "control": "OSPS-SA-02.01",
+      "levels": [
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-sa-0201"
+    },
+    {
+      "control": "OSPS-SA-03.01",
+      "levels": [
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Threat model/attack-surface and bounded automated self-assessment documented; no independent audit claim.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-sa-0301"
+    },
+    {
+      "control": "OSPS-SA-03.02",
+      "levels": [
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Threat model/attack-surface and bounded automated self-assessment documented; no independent audit claim.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-sa-0302"
+    },
+    {
+      "control": "OSPS-VM-01.01",
+      "levels": [
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-vm-0101"
+    },
+    {
+      "control": "OSPS-VM-02.01",
+      "levels": [
+        1
+      ],
+      "status": "ACTION-REQUIRES-OWNER",
+      "assessment": "Private reporting channel is enabled, but accountable human security contact/response commitment remains to be supplied.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-vm-0201"
+    },
+    {
+      "control": "OSPS-VM-03.01",
+      "levels": [
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-vm-0301"
+    },
+    {
+      "control": "OSPS-VM-04.01",
+      "levels": [
+        2,
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Public source, pinned dependencies and Actions controls, test/review enforcement or documented contribution/process evidence, as applicable. This is a self-assessment, not external certification.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-vm-0401"
+    },
+    {
+      "control": "OSPS-VM-04.02",
+      "levels": [
+        3
+      ],
+      "status": "NOT-APPLICABLE",
+      "assessment": "No substantiated non-affecting component vulnerability needing VEX is asserted. Do not fabricate VEX statements.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-vm-0402"
+    },
+    {
+      "control": "OSPS-VM-05.01",
+      "levels": [
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Concrete build, release, disclosure, scope and security policy documented; actual release/signatures and human response are separately gated.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-vm-0501"
+    },
+    {
+      "control": "OSPS-VM-05.02",
+      "levels": [
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Concrete build, release, disclosure, scope and security policy documented; actual release/signatures and human response are separately gated.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-vm-0502"
+    },
+    {
+      "control": "OSPS-VM-05.03",
+      "levels": [
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Concrete build, release, disclosure, scope and security policy documented; actual release/signatures and human response are separately gated.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-vm-0503"
+    },
+    {
+      "control": "OSPS-VM-06.01",
+      "levels": [
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Concrete build, release, disclosure, scope and security policy documented; actual release/signatures and human response are separately gated.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-vm-0601"
+    },
+    {
+      "control": "OSPS-VM-06.02",
+      "levels": [
+        3
+      ],
+      "status": "SATISFIED",
+      "assessment": "Concrete build, release, disclosure, scope and security policy documented; actual release/signatures and human response are separately gated.",
+      "evidence": [
+        "docs/security-control-policy.md",
+        "docs/release-closeout-controls.md",
+        ".github/workflows/checks.yml",
+        "docs/threat-model.md"
+      ],
+      "official_url": "https://baseline.openssf.org/versions/2026-08-28.html#osps-vm-0602"
+    }
+  ]
+}

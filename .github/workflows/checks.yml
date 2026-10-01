@@ -1,6 +1,7 @@
 name: Checks
 on:
   push:
+    branches: [main]
   pull_request:
   workflow_dispatch:
 permissions:
@@ -30,6 +31,9 @@ jobs:
       - run: python scripts/check_secrets.py
       - run: python scripts/check_licenses.py
       - run: python scripts/check_recognition.py
+      - run: python scripts/fetch_dev_tools.py --out "$RUNNER_TEMP/dev-tools" cue
+      - name: Validate Security Insights against the pinned released CUE schema
+        run: '"$RUNNER_TEMP/dev-tools/cue/cue" vet schemas/security-insights-v2.2.0.cue security-insights.yml -d "#SecurityInsights"' 
       - run: python scripts/inventory.py --out "$RUNNER_TEMP/inventory"
       - run: coverage run -m pytest -q
       - run: coverage json -o coverage-ci.json

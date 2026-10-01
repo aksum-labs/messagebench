@@ -14,3 +14,5 @@ Runtime dependencies retain their own licenses, available in installed package
 metadata and the dependency inventory. No paid ISO publication, proprietary
 usage guideline, real customer record or private payment-system specification
 is included.
+
+OpenSSF Security Insights v2.2.0 CUE schema is unmodified, from https://github.com/ossf/security-insights/tree/v2.2.0. Its source-code/Community Specification terms are retained in third-party/security-insights-LICENSE and third-party/CommunitySpecification-License-1.0.md. It is not Aksum Apache-2.0 code.

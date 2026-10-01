@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Scan tracked repository files without credential verification or network calls."""
 
 import json

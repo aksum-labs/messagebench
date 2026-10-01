@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Deterministic grammar mutations of a valid closed contract; offline developer check."""
 
 import argparse

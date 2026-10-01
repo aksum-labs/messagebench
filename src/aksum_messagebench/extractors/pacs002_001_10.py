@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Exact pacs.002.001.10 status-report preservation facts, without status decisioning."""
 
 from .pacs008_001_08 import Fact, qualified_path

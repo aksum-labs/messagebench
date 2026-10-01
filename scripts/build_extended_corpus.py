@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Author synthetic cases and their expectations without importing the comparison engine.
 
 Run before verification. This is engineering authorship, not independent review.

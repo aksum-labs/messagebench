@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Offline CLI. Runtime inputs cannot invoke executables, plugins or downloads."""
 
 import argparse

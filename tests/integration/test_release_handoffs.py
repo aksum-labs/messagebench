@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 import importlib.util
 from copy import deepcopy
 from pathlib import Path
@@ -92,7 +94,44 @@ def platform_control_fixture():
                 "bypass_actors": [],
                 "conditions": {"ref_name": {"include": ["refs/tags/v*"], "exclude": []}},
                 "rules": [{"type": "update"}, {"type": "deletion"}],
-            }
+            },
+            {
+                "target": "branch",
+                "enforcement": "active",
+                "bypass_actors": [],
+                "conditions": {"ref_name": {"include": ["refs/heads/main"], "exclude": []}},
+                "rules": [
+                    {"type": "deletion"},
+                    {"type": "non_fast_forward"},
+                    {"type": "required_linear_history"},
+                    {
+                        "type": "pull_request",
+                        "parameters": {
+                            "dismiss_stale_reviews_on_push": True,
+                            "require_code_owner_review": True,
+                            "require_last_push_approval": True,
+                            "required_review_thread_resolution": True,
+                            "required_approving_review_count": 1,
+                        },
+                    },
+                    {
+                        "type": "required_status_checks",
+                        "parameters": {
+                            "strict_required_status_checks_policy": True,
+                            "required_status_checks": [
+                                {"context": name, "integration_id": 15368}
+                                for name in (
+                                    "checks",
+                                    "dependencies",
+                                    "dependency-review",
+                                    "analyze",
+                                    "release-controls",
+                                )
+                            ],
+                        },
+                    },
+                ],
+            },
         ],
     ]
 
@@ -152,7 +191,7 @@ def test_release_guard_binds_only_matching_privileged_rule_version():
     hidden, record = masked_rule_fixture()
     guard = script("release_guard")
     bound = guard.bind_admin_readback([hidden], record)
-    guard.validate(*platform_control_fixture()[:4], bound)
+    guard.validate(*platform_control_fixture()[:4], bound + platform_control_fixture()[4][1:])
 
 
 @pytest.mark.parametrize("defect", ["missing-record", "changed-version", "changed-scope", "bypass"])
@@ -169,3 +208,114 @@ def test_release_guard_rejects_stale_or_unsafe_privileged_records(defect):
         record["rulesets"][0]["bypass_actors"] = [{"actor_type": "OrganizationAdmin"}]
     with pytest.raises(ValueError):
         guard.validate(*platform_control_fixture()[:4], guard.bind_admin_readback([hidden], record))
+
+
+@pytest.mark.parametrize(
+    "defect", ["wrong-source", "old-check", "missing-check", "wrong-app", "unmerged"]
+)
+def test_release_guard_exact_source_checks(defect):
+    guard = script("release_guard")
+    sha = "a" * 40
+    tag = {"object": {"type": "commit", "sha": sha}}
+    checks = [
+        {
+            "name": name,
+            "head_sha": sha,
+            "status": "completed",
+            "conclusion": "success",
+            "app": {"id": 15368},
+        }
+        for name in sorted(guard.CHECKS)
+    ]
+    prs = [
+        {
+            "merged": True,
+            "merge_commit_sha": sha,
+            "base": {"ref": "main", "repo": {"full_name": guard.REPOSITORY}},
+        }
+    ]
+    guard.validate_release_source(tag, sha, sha, checks, prs)
+    if defect == "wrong-source":
+        tag["object"]["sha"] = "b" * 40
+    elif defect == "old-check":
+        checks[0]["head_sha"] = "b" * 40
+    elif defect == "missing-check":
+        checks.pop()
+    elif defect == "wrong-app":
+        checks[0]["app"]["id"] = 1
+    else:
+        prs[0]["merged"] = False
+    with pytest.raises(ValueError):
+        guard.validate_release_source(tag, sha, sha, checks, prs)
+
+
+@pytest.mark.parametrize(
+    "defect", ["absent", "missing-check", "wrong-app", "bypass", "no-codeowners"]
+)
+def test_release_guard_complete_main_policy(defect):
+    guard = script("release_guard")
+    rules = deepcopy(platform_control_fixture()[4])
+    if defect == "absent":
+        rules.pop()
+    elif defect == "bypass":
+        rules[1]["bypass_actors"] = [{"actor_type": "OrganizationAdmin"}]
+    elif defect == "no-codeowners":
+        rules[1]["rules"][3]["parameters"]["require_code_owner_review"] = False
+    elif defect == "wrong-app":
+        rules[1]["rules"][4]["parameters"]["required_status_checks"][0]["integration_id"] = 1
+    else:
+        rules[1]["rules"][4]["parameters"]["required_status_checks"].pop()
+    with pytest.raises(ValueError):
+        guard.validate_main_rules(rules)
+
+
+@pytest.mark.parametrize("defect", ["missing", "bot", "wrong-packet", "other-environment"])
+def test_release_guard_real_platform_acknowledgment_shape(defect):
+    guard = script("release_guard")
+    sha = "a" * 64
+    fixture = [
+        {
+            "state": "approved",
+            "user": {"type": "User", "id": 123},
+            "comment": "REVIEWER-IDENTITIES-VERIFIED " + sha,
+            "environments": [{"name": "release-review"}],
+        }
+    ]
+    # Synthetic shape validation only: no actual reviewer record is manufactured.
+    guard.validate_human_acknowledgment(fixture, sha)
+    if defect == "missing":
+        fixture = []
+    elif defect == "bot":
+        fixture[0]["user"]["type"] = "Bot"
+    elif defect == "wrong-packet":
+        fixture[0]["comment"] = "REVIEWER-IDENTITIES-VERIFIED " + "b" * 64
+    else:
+        fixture[0]["environments"][0]["name"] = "other"
+    with pytest.raises(ValueError):
+        guard.validate_human_acknowledgment(fixture, sha)
+
+
+def test_newer_failed_exact_source_check_does_not_reuse_older_success():
+    guard = script("release_guard")
+    sha = "a" * 40
+    checks = [
+        {
+            "name": name,
+            "head_sha": sha,
+            "status": "completed",
+            "conclusion": "success",
+            "app": {"id": 15368},
+            "id": 1,
+        }
+        for name in guard.CHECKS
+    ]
+    checks.append({**checks[0], "id": 2, "conclusion": "failure"})
+    pr = {
+        "merged": True,
+        "merge_commit_sha": sha,
+        "base": {"ref": "main", "repo": {"full_name": guard.REPOSITORY}},
+    }
+    with pytest.raises(ValueError):
+        guard.validate_release_source(
+            {"object": {"type": "commit", "sha": sha}}, sha, sha, checks, [pr]
+        )

@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """File handoff and evidence comparison. No adapter code is ever executed."""
 
 import hashlib

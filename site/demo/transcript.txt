@@ -1,0 +1,16 @@
+MessageBench — recorded synthetic CLI results
+Source snapshot: ad10253 (not a reviewed tag release)
+
+Installed offline wheel, outside the checkout:
+
+identity
+  Source / target XSD: PASS / PASS
+  Preservation exit code: 0
+
+reference-truncated
+  Source / target XSD: PASS / PASS
+  Preservation exit code: 1
+  FAIL PRESERVE-END-TO-END-ID
+
+Schema validity and transformation preservation are different questions.
+Pass covers only listed assertions; no certification or whole-document guarantee.

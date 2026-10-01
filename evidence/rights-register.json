@@ -44,6 +44,39 @@
       "redistribution_status": "Include license notice for original code and fixtures.",
       "modified": false,
       "inclusion_decision": "included"
+    },
+    {
+      "name": "OpenSSF Security Insights released schema",
+      "file": "schemas/security-insights-v2.2.0.cue",
+      "source": "https://github.com/ossf/security-insights/tree/v2.2.0",
+      "version": "v2.2.0",
+      "sha256": "4e4b61470b5484fc8969f2a8a77ffbe0712a7c8a870c2079188f246c14cd58b1",
+      "license_or_terms": "LicenseRef-SecurityInsightsTerms (MIT for source code; Community Specification 1.0 prevails on conflict)",
+      "redistribution_status": "Unmodified CUE source schema and governing notice retained. Repository terms designate source code MIT; Community Specification 1.0 section 1.1 also grants royalty-free redistribution. Version/source attribution and full terms included. Not Apache-2.0.",
+      "modified": false,
+      "inclusion_decision": "included"
+    },
+    {
+      "name": "Security Insights license notice",
+      "file": "third-party/security-insights-LICENSE",
+      "source": "https://github.com/ossf/security-insights/tree/v2.2.0",
+      "version": "v2.2.0",
+      "sha256": "d5aacd695705474626cb91df8c2b4b9d0c82061547cf44deedfa154d36d50a1c",
+      "license_or_terms": "LicenseRef-SecurityInsightsTerms (MIT for source code; Community Specification 1.0 prevails on conflict)",
+      "redistribution_status": "Unmodified CUE source schema and governing notice retained. Repository terms designate source code MIT; Community Specification 1.0 section 1.1 also grants royalty-free redistribution. Version/source attribution and full terms included. Not Apache-2.0.",
+      "modified": false,
+      "inclusion_decision": "included"
+    },
+    {
+      "name": "Community Specification License 1.0",
+      "file": "third-party/CommunitySpecification-License-1.0.md",
+      "source": "https://github.com/CommunitySpecification/Community_Specification/blob/main/01-community-specification-license-v1.md",
+      "version": "1.0",
+      "sha256": "cc2efe227e081828843c87cb78116f7cc852076593693c0595a7c96ed014f617",
+      "license_or_terms": "License text",
+      "redistribution_status": "Retained governing notice for OpenSSF Security Insights schema; no contribution agreement or representation signed.",
+      "modified": false,
+      "inclusion_decision": "included"
     }
   ],
   "original_assets": {

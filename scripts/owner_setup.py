@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Generate an owner-executed GitHub setup plan. Never contact or mutate GitHub."""
 
 import argparse

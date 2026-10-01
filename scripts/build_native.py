@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Build a pinned local lxml wheel; optional downloads are a developer build step only.
 
 The MessageBench package never imports this script or downloads dependencies.
@@ -75,8 +77,8 @@ def main():
         helper.write_text(modified)
         environment = {
             **os.environ,
-            "CFLAGS": "-O2 -fPIC",
-            "CXXFLAGS": "-O2 -fPIC",
+            "CFLAGS": "-O2 -fPIC " + os.environ.get("CFLAGS", ""),
+            "CXXFLAGS": "-O2 -fPIC " + os.environ.get("CXXFLAGS", ""),
             "STATIC_DEPS": "true",
             "WITHOUT_ZLIB": "true",
             "LIBICONV_VERSION": "1.19",

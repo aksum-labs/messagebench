@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 from itertools import combinations, permutations
 
 from aksum_messagebench.errors import PRECEDENCE, aggregate_exit

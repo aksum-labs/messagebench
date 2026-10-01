@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Prepare hash-bound review forms; verify attestations, never invent human independence."""
 
 import argparse
@@ -33,6 +35,21 @@ def packet():
     files.extend(sorted((ROOT / "third-party").glob("*")))
     for case in manifest["cases"]:
         files.extend(ROOT / "corpus" / case[side] for side in ("source", "target"))
+    files.extend(sorted((ROOT / "corpus").rglob("*.xml")))
+    files.extend(sorted((ROOT / "corpus").rglob("*.json")))
+    files.extend(sorted((ROOT / "scripts").glob("*.py")))
+    files.extend(sorted((ROOT / ".github/workflows").glob("*.yml")))
+    files.extend(
+        [
+            ROOT / "pyproject.toml",
+            ROOT / "dependency-lock-hashed.txt",
+            ROOT / "security-insights.yml",
+        ]
+    )
+    files.extend(sorted((ROOT / "fuzz").rglob("*.py")))
+    files.extend(sorted((ROOT / "fuzz").rglob("*.txt")))
+    files.extend(sorted(p for p in (ROOT / ".clusterfuzzlite").rglob("*") if p.is_file()))
+    files.extend(sorted((ROOT / "schemas").glob("*.cue")))
     return {
         "schema_version": "1.0",
         "purpose": "Independent human semantic and rights review",
@@ -59,6 +76,8 @@ def packet():
             "contract semantics",
             "coverage limits",
             "schema rights/provenance",
+            "native build and offline install profile",
+            "release workflows, controls and build scripts (separate engineering review scope)",
         ],
         "independence_warning": (
             "A form or valid hash does not prove identity, expertise or "

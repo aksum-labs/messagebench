@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Coverage measures examined leaf/attribute occurrences, not business correctness."""
 
 import hashlib

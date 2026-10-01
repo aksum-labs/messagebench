@@ -1,0 +1,713 @@
+{
+  "checked_at": "2026-10-01",
+  "official_award_obtained": false,
+  "purpose": "Criterion-by-criterion self-assessment; no Silver/Gold attainment or fixed waiting period claimed. NOT-ATTAINED denotes an actual specific evidence/technical gap, not a primary-release gate.",
+  "source_sha256": {
+    "1": "91dc5c7ed3b13313165f7bcfd2a5432b0865e93869d1fdccf572ae19fe857005",
+    "2": "e5b9648d534faee9057a852ab602e03b17165ee8477334ae916c78ea29f83a4b"
+  },
+  "criteria": [
+    {
+      "level": 1,
+      "criterion": "achieve_passing",
+      "requirement_level": "MUST",
+      "status": "AWAITING-EXTERNAL-DECISION",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "Official Passing has not been granted; corporate account registration/access and truthful answers required.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.achieve_passing"
+    },
+    {
+      "level": 1,
+      "criterion": "contribution_requirements",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "CONTRIBUTING.md",
+      "assessment": "Documented contribution requirements and tests.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.contribution_requirements"
+    },
+    {
+      "level": 1,
+      "criterion": "dco",
+      "requirement_level": "SHOULD",
+      "status": "ACTION-REQUIRES-OWNER",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "No legal signatory authority or accepted DCO for historical commits established. Do not add somebody else\u2019s sign-off.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.dco"
+    },
+    {
+      "level": 1,
+      "criterion": "governance",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "GOVERNANCE.md",
+      "assessment": "Documented decision and stewardship model; named personnel commitments are separate.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.governance"
+    },
+    {
+      "level": 1,
+      "criterion": "code_of_conduct",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "CODE_OF_CONDUCT.md",
+      "assessment": "Public code of conduct.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.code_of_conduct"
+    },
+    {
+      "level": 1,
+      "criterion": "roles_responsibilities",
+      "requirement_level": "MUST",
+      "status": "ACTION-REQUIRES-OWNER",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "Named accountable maintainer/security responder commitments not yet supplied.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.roles_responsibilities"
+    },
+    {
+      "level": 1,
+      "criterion": "access_continuity",
+      "requirement_level": "MUST",
+      "status": "ACTION-REQUIRES-OWNER",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "Actual second authorized human and rights/key continuity not established by documents.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.access_continuity"
+    },
+    {
+      "level": 1,
+      "criterion": "bus_factor",
+      "requirement_level": "SHOULD",
+      "status": "ACTION-REQUIRES-OWNER",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "Two real capable maintainers with access are not established; no dummy contributors.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.bus_factor"
+    },
+    {
+      "level": 1,
+      "criterion": "documentation_roadmap",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "docs/roadmap.md",
+      "assessment": "One-year bounded intentions, no false adoption or version commitments.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.documentation_roadmap"
+    },
+    {
+      "level": 1,
+      "criterion": "documentation_architecture",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "docs/architecture.md",
+      "assessment": "Architecture and offline adapter boundary documented.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.documentation_architecture"
+    },
+    {
+      "level": 1,
+      "criterion": "documentation_security",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "docs/threat-model.md",
+      "assessment": "Security requirements, scope and limits documented.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.documentation_security"
+    },
+    {
+      "level": 1,
+      "criterion": "documentation_quick_start",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "docs/quickstart.md",
+      "assessment": "Supported native/offline installation route, not an untested generic pip command.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.documentation_quick_start"
+    },
+    {
+      "level": 1,
+      "criterion": "documentation_current",
+      "requirement_level": "MUST",
+      "status": "NOT-ATTAINED",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "Snapshot measurements remain dated; follow-up current-source docs await normal review/merge.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.documentation_current"
+    },
+    {
+      "level": 1,
+      "criterion": "documentation_achievements",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "README.md",
+      "assessment": "Only existing public Scorecard signal linked; no fabricated badge.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.documentation_achievements"
+    },
+    {
+      "level": 1,
+      "criterion": "accessibility_best_practices",
+      "requirement_level": "SHOULD",
+      "status": "SATISFIED",
+      "evidence": "site/index.html",
+      "assessment": "Semantic links, keyboard-accessible native video controls and plain-text demo transcript; no accessibility certification claimed.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.accessibility_best_practices"
+    },
+    {
+      "level": 1,
+      "criterion": "internationalization",
+      "requirement_level": "SHOULD",
+      "status": "NOT-ATTAINED",
+      "evidence": "docs/limitations.md",
+      "assessment": "Exact Unicode/Ethiopic data supported. User-facing CLI labels remain English; no false claim of localized UI.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.internationalization"
+    },
+    {
+      "level": 1,
+      "criterion": "sites_password_security",
+      "requirement_level": "MUST",
+      "status": "NOT-APPLICABLE",
+      "evidence": "docs/limitations.md",
+      "assessment": "Runtime/site has no password database; GitHub-hosted account authentication is outside this offline product.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.sites_password_security"
+    },
+    {
+      "level": 1,
+      "criterion": "maintenance_or_update",
+      "requirement_level": "MUST",
+      "status": "NOT-APPLICABLE",
+      "evidence": "docs/roadmap.md",
+      "assessment": "No reviewed public version or widely used older releases exist yet; no unsupported upgrade/adoption claim.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.maintenance_or_update"
+    },
+    {
+      "level": 1,
+      "criterion": "report_tracker",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "https://github.com/aksum-labs/messagebench/issues",
+      "assessment": "Actual tracker and three scoped contributor requests.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.report_tracker"
+    },
+    {
+      "level": 1,
+      "criterion": "vulnerability_report_credit",
+      "requirement_level": "MUST",
+      "status": "NOT-APPLICABLE",
+      "evidence": "docs/limitations.md",
+      "assessment": "No real vulnerability report resolved in the measured record; N/A is allowed by this criterion, no reports manufactured.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.vulnerability_report_credit"
+    },
+    {
+      "level": 1,
+      "criterion": "vulnerability_response_process",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "SECURITY.md",
+      "assessment": "Documented process; individual responder commitment must be authentic.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.vulnerability_response_process"
+    },
+    {
+      "level": 1,
+      "criterion": "coding_standards",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "CONTRIBUTING.md",
+      "assessment": "Ruff conventions required.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.coding_standards"
+    },
+    {
+      "level": 1,
+      "criterion": "coding_standards_enforced",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": ".github/workflows/checks.yml",
+      "assessment": "Ruff format/lint enforced in actual hosted CI.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.coding_standards_enforced"
+    },
+    {
+      "level": 1,
+      "criterion": "build_standard_variables",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "scripts/build_native.py",
+      "assessment": "Preserves caller CFLAGS and other standard environment variables; adds default safety/performance flags.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.build_standard_variables"
+    },
+    {
+      "level": 1,
+      "criterion": "build_preserve_debug",
+      "requirement_level": "SHOULD",
+      "status": "SATISFIED",
+      "evidence": "scripts/build_native.py",
+      "assessment": "Caller flags are preserved and no install -s stripping is imposed by Aksum build wrapper.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.build_preserve_debug"
+    },
+    {
+      "level": 1,
+      "criterion": "build_non_recursive",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "scripts/build_native.py",
+      "assessment": "Build wrapper stages pinned independent libraries; no recursively cross-dependent Aksum subdirectory graph.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.build_non_recursive"
+    },
+    {
+      "level": 1,
+      "criterion": "build_repeatable",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "Two same-environment unsigned Python builds measured, independent reproducibility is separate.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.build_repeatable"
+    },
+    {
+      "level": 1,
+      "criterion": "installation_common",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "docs/offline-install.md",
+      "assessment": "pip/venv install and uninstall, supported wheelhouse.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.installation_common"
+    },
+    {
+      "level": 1,
+      "criterion": "installation_standard_variables",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "docs/offline-install.md",
+      "assessment": "pip target/venv standard locations; no fixed production path.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.installation_standard_variables"
+    },
+    {
+      "level": 1,
+      "criterion": "installation_development_quick",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "docs/quickstart.md",
+      "assessment": "Pinned developer dependency and reviewed native build instructions.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.installation_development_quick"
+    },
+    {
+      "level": 1,
+      "criterion": "external_dependencies",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "dependency-lock-hashed.txt",
+      "assessment": "Machine-readable Python/native pins and inventories.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.external_dependencies"
+    },
+    {
+      "level": 1,
+      "criterion": "dependency_monitoring",
+      "requirement_level": "MUST",
+      "status": "NOT-ATTAINED",
+      "evidence": ".github/workflows/security.yml",
+      "assessment": "Dated advisory scan implemented and locally executed; hosted scheduled follow-up run must be recorded before claiming this source active on main.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.dependency_monitoring"
+    },
+    {
+      "level": 1,
+      "criterion": "updateable_reused_components",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "evidence/native-source-pins.json",
+      "assessment": "Explicit reviewed pins; renewed rights/security review required for updates.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.updateable_reused_components"
+    },
+    {
+      "level": 1,
+      "criterion": "interfaces_current",
+      "requirement_level": "SHOULD",
+      "status": "SATISFIED",
+      "evidence": "pyproject.toml",
+      "assessment": "Python 3.12+ and supported current library interfaces; no known obsolete runtime API used.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.interfaces_current"
+    },
+    {
+      "level": 1,
+      "criterion": "automated_integration_testing",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": ".github/workflows/checks.yml",
+      "assessment": "PRs, main and manual checks; green PR7 head is separately recorded.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.automated_integration_testing"
+    },
+    {
+      "level": 1,
+      "criterion": "regression_tests_added50",
+      "requirement_level": "MUST",
+      "status": "ACTION-REQUIRES-OWNER",
+      "evidence": "tests",
+      "assessment": "Synthetic defect/mutation controls are executed; actual historical bug-fix fraction needs accountable review, not an invented history.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.regression_tests_added50"
+    },
+    {
+      "level": 1,
+      "criterion": "test_statement_coverage80",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "evidence/closeout-full-coverage.json",
+      "assessment": "Measured full Aksum runtime statement coverage 80.9224%, branch coverage 80.6452%; selected semantic coverage is a separate narrower metric.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.test_statement_coverage80"
+    },
+    {
+      "level": 1,
+      "criterion": "test_policy_mandated",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "CONTRIBUTING.md",
+      "assessment": "Meaningful tests and synthetic positive/negative controls required.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.test_policy_mandated"
+    },
+    {
+      "level": 1,
+      "criterion": "tests_documented_added",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "CONTRIBUTING.md",
+      "assessment": "Contributor test commands and scope documented.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.tests_documented_added"
+    },
+    {
+      "level": 1,
+      "criterion": "warnings_strict",
+      "requirement_level": "MUST",
+      "status": "NOT-ATTAINED",
+      "evidence": ".github/workflows/checks.yml",
+      "assessment": "Ruff/mypy/Bandit enforced; complete Python/native warning policy not yet independently assessed.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.warnings_strict"
+    },
+    {
+      "level": 1,
+      "criterion": "implement_secure_design",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "docs/threat-model.md",
+      "assessment": "Bounded offline input, no execution, secure XML, typed contracts and redaction; human competence not inferred.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.implement_secure_design"
+    },
+    {
+      "level": 1,
+      "criterion": "crypto_weaknesses",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "docs/threat-model.md",
+      "assessment": "No weak runtime security cryptography; SHA-256 metadata does not promise anonymization.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.crypto_weaknesses"
+    },
+    {
+      "level": 1,
+      "criterion": "crypto_algorithm_agility",
+      "requirement_level": "SHOULD",
+      "status": "NOT-APPLICABLE",
+      "evidence": "docs/limitations.md",
+      "assessment": "Offline preservation toolkit performs no payment cryptography; report SHA-256 is metadata, not a user security mechanism.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.crypto_algorithm_agility"
+    },
+    {
+      "level": 1,
+      "criterion": "crypto_credential_agility",
+      "requirement_level": "MUST",
+      "status": "NOT-APPLICABLE",
+      "evidence": "docs/limitations.md",
+      "assessment": "No runtime accounts or authentication credentials; release OIDC is external maintainer tooling.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.crypto_credential_agility"
+    },
+    {
+      "level": 1,
+      "criterion": "crypto_used_network",
+      "requirement_level": "SHOULD",
+      "status": "NOT-APPLICABLE",
+      "evidence": "docs/limitations.md",
+      "assessment": "No runtime network communications. Connected maintainer tools use TLS; not an additional product network surface.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.crypto_used_network"
+    },
+    {
+      "level": 1,
+      "criterion": "crypto_tls12",
+      "requirement_level": "SHOULD",
+      "status": "NOT-APPLICABLE",
+      "evidence": "docs/limitations.md",
+      "assessment": "Offline runtime does not support TLS or network connections.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.crypto_tls12"
+    },
+    {
+      "level": 1,
+      "criterion": "crypto_certificate_verification",
+      "requirement_level": "MUST",
+      "status": "NOT-APPLICABLE",
+      "evidence": "docs/limitations.md",
+      "assessment": "Offline runtime does not support TLS; connected maintainer tools retain verification.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.crypto_certificate_verification"
+    },
+    {
+      "level": 1,
+      "criterion": "crypto_verification_private",
+      "requirement_level": "MUST",
+      "status": "NOT-APPLICABLE",
+      "evidence": "docs/limitations.md",
+      "assessment": "No runtime private-data TLS transmission or network support.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.crypto_verification_private"
+    },
+    {
+      "level": 1,
+      "criterion": "signed_releases",
+      "requirement_level": "MUST",
+      "status": "ACTION-REQUIRES-OWNER",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "Only signed main snapshot exists; genuine reviewed tag release is not yet published.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.signed_releases"
+    },
+    {
+      "level": 1,
+      "criterion": "version_tags_signed",
+      "requirement_level": "SUGGESTED",
+      "status": "ACTION-REQUIRES-OWNER",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "No reviewed signed immutable version tag exists. Sigstore manifest and Git tag signing are distinct.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.version_tags_signed"
+    },
+    {
+      "level": 1,
+      "criterion": "input_validation",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "src/aksum_messagebench/input_guard.py",
+      "assessment": "Closed contracts, bounded files/XML, parser and resource checks.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.input_validation"
+    },
+    {
+      "level": 1,
+      "criterion": "hardening",
+      "requirement_level": "SHOULD",
+      "status": "ACTION-REQUIRES-OWNER",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "Python checks and native security profile are implemented; platform/compiler hardening across delivered native binaries needs specific measured evidence.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.hardening"
+    },
+    {
+      "level": 1,
+      "criterion": "assurance_case",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "SECURITY-EVIDENCE.md",
+      "assessment": "Threat-to-control-to-test evidence with explicit incomplete independent review.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.assurance_case"
+    },
+    {
+      "level": 1,
+      "criterion": "static_analysis_common_vulnerabilities",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": ".github/workflows/codeql.yml",
+      "assessment": "CodeQL and Bandit with actual green runs.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.static_analysis_common_vulnerabilities"
+    },
+    {
+      "level": 1,
+      "criterion": "dynamic_analysis_unsafe",
+      "requirement_level": "MUST",
+      "status": "ACTION-REQUIRES-OWNER",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "Python coverage guidance is measured; native memory-unsafe-component sanitizer results require a compatible tested stack.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/1#1.dynamic_analysis_unsafe"
+    },
+    {
+      "level": 2,
+      "criterion": "achieve_silver",
+      "requirement_level": "MUST",
+      "status": "AWAITING-EXTERNAL-DECISION",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "Official Silver prerequisite not granted; this assessment is not an award.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.achieve_silver"
+    },
+    {
+      "level": 2,
+      "criterion": "bus_factor",
+      "requirement_level": "MUST",
+      "status": "ACTION-REQUIRES-OWNER",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "Two real capable maintainers with access are not established; no dummy contributors.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.bus_factor"
+    },
+    {
+      "level": 2,
+      "criterion": "contributors_unassociated",
+      "requirement_level": "MUST",
+      "status": "AWAITING-EXTERNAL-DECISION",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "Two unrelated significant actual contributors are not demonstrated. External participation decision, not cosmetic commits.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.contributors_unassociated"
+    },
+    {
+      "level": 2,
+      "criterion": "copyright_per_file",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "src/aksum_messagebench",
+      "assessment": "SPDX copyright statements in original Python files.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.copyright_per_file"
+    },
+    {
+      "level": 2,
+      "criterion": "license_per_file",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "src/aksum_messagebench",
+      "assessment": "SPDX Apache-2.0 statements in original Python files; vendor terms separate.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.license_per_file"
+    },
+    {
+      "level": 2,
+      "criterion": "repo_distributed",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "https://github.com/aksum-labs/messagebench",
+      "assessment": "Public Git repository.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.repo_distributed"
+    },
+    {
+      "level": 2,
+      "criterion": "small_tasks",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "https://github.com/aksum-labs/messagebench/issues/10",
+      "assessment": "Narrow synthetic remittance contribution; domain review honestly help wanted, not beginner bait.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.small_tasks"
+    },
+    {
+      "level": 2,
+      "criterion": "require_2FA",
+      "requirement_level": "MUST",
+      "status": "ACTION-REQUIRES-OWNER",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "Real organization/account MFA confirmation required from authenticated accountable owner.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.require_2FA"
+    },
+    {
+      "level": 2,
+      "criterion": "secure_2FA",
+      "requirement_level": "SHOULD",
+      "status": "ACTION-REQUIRES-OWNER",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "Actual phishing-resistant MFA mechanism must be verified; do not infer it from GitHub login.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.secure_2FA"
+    },
+    {
+      "level": 2,
+      "criterion": "code_review_standards",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "Code-owner/source checks and genuine release-review scope, no AI approval.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.code_review_standards"
+    },
+    {
+      "level": 2,
+      "criterion": "two_person_review",
+      "requirement_level": "MUST",
+      "status": "ACTION-REQUIRES-OWNER",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "Actual required fraction of human-reviewed modifications must be evidenced, including expanded packet review; no generated approval.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.two_person_review"
+    },
+    {
+      "level": 2,
+      "criterion": "build_reproducible",
+      "requirement_level": "MUST",
+      "status": "ACTION-REQUIRES-OWNER",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "Same-environment equality is measured; independent reproducibility under Gold detailed definition is not established.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.build_reproducible"
+    },
+    {
+      "level": 2,
+      "criterion": "test_invocation",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "pyproject.toml",
+      "assessment": "pytest -q standard invocation.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.test_invocation"
+    },
+    {
+      "level": 2,
+      "criterion": "test_continuous_integration",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": ".github/workflows/checks.yml",
+      "assessment": "Actual PR CI; final merged-source run still gated by merge.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.test_continuous_integration"
+    },
+    {
+      "level": 2,
+      "criterion": "test_statement_coverage90",
+      "requirement_level": "MUST",
+      "status": "NOT-ATTAINED",
+      "evidence": "evidence/closeout-full-coverage.json",
+      "assessment": "Whole-runtime statement coverage measured 80.9224%, below 90%. Selected semantic coverage cannot satisfy the whole-program requirement.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.test_statement_coverage90"
+    },
+    {
+      "level": 2,
+      "criterion": "test_branch_coverage80",
+      "requirement_level": "MUST",
+      "status": "SATISFIED",
+      "evidence": "evidence/closeout-full-coverage.json",
+      "assessment": "Measured full Aksum runtime statement coverage 80.9224%, branch coverage 80.6452%; selected semantic coverage is a separate narrower metric.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.test_branch_coverage80"
+    },
+    {
+      "level": 2,
+      "criterion": "crypto_used_network",
+      "requirement_level": "MUST",
+      "status": "NOT-APPLICABLE",
+      "evidence": "docs/limitations.md",
+      "assessment": "No runtime network communications. Connected maintainer tools use TLS; not an additional product network surface.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.crypto_used_network"
+    },
+    {
+      "level": 2,
+      "criterion": "crypto_tls12",
+      "requirement_level": "MUST",
+      "status": "NOT-APPLICABLE",
+      "evidence": "docs/limitations.md",
+      "assessment": "Offline runtime does not support TLS or network connections.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.crypto_tls12"
+    },
+    {
+      "level": 2,
+      "criterion": "hardened_site",
+      "requirement_level": "MUST",
+      "status": "ACTION-REQUIRES-OWNER",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "GitHub Pages provides HTTPS; no independently checked site-wide security-header policy is established.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.hardened_site"
+    },
+    {
+      "level": 2,
+      "criterion": "security_review",
+      "requirement_level": "MUST",
+      "status": "ACTION-REQUIRES-OWNER",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "No genuine independent security review exists; automated source review is not substituted.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.security_review"
+    },
+    {
+      "level": 2,
+      "criterion": "hardening",
+      "requirement_level": "MUST",
+      "status": "ACTION-REQUIRES-OWNER",
+      "evidence": "docs/release-closeout-controls.md",
+      "assessment": "Python checks and native security profile are implemented; platform/compiler hardening across delivered native binaries needs specific measured evidence.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.hardening"
+    },
+    {
+      "level": 2,
+      "criterion": "dynamic_analysis",
+      "requirement_level": "MUST",
+      "status": "NOT-ATTAINED",
+      "evidence": "docs/limitations.md",
+      "assessment": "No sufficient measured criterion-specific evidence; not asserted met.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.dynamic_analysis"
+    },
+    {
+      "level": 2,
+      "criterion": "dynamic_analysis_enable_assertions",
+      "requirement_level": "SHOULD",
+      "status": "SATISFIED",
+      "evidence": "fuzz/coverage_guided.py",
+      "assessment": "Contract/property/fuzz checks execute assertions; no blanket assert added solely for metrics.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/2#2.dynamic_analysis_enable_assertions"
+    }
+  ]
+}

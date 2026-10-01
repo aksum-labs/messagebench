@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Stable, payload-free diagnostic codes. Never render underlying exceptions."""
 
 

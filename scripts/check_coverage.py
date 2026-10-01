@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Enforce measured branch coverage of authored extraction and comparison code."""
 
 import json

@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Explicit connected maintainer action: capture release-file digests for exact pins."""
 
 import concurrent.futures

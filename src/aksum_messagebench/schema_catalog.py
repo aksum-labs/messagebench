@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Pin exact local versioned schemas; no runtime trust expansion or imports."""
 
 import hashlib

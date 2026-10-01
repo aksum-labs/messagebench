@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Verify a separately installed wheel outside the checkout with Python sockets denied."""
 
 import argparse

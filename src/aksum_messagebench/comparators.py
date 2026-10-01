@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Typed deterministic comparisons; absence is distinct from an empty value."""
 
 import unicodedata

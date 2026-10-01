@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Gate 1 facts for pacs.008.001.08. No local-name matching or heuristic association."""
 
 import hashlib

@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """One targeted killing witness for every required declaration; no whole-program score."""
 
 import json
