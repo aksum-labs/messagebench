@@ -1,0 +1,31 @@
+{
+  "source_commit": "8ff219cccbe28e11453845a087236fef7754034f",
+  "result": {
+    "status": "PASS",
+    "version": "0.2.0rc1",
+    "corpus_cases": 100,
+    "schema_valid_semantic_loss_detected": true,
+    "identity_passed": true,
+    "python_socket_calls_denied": true,
+    "independent_reproduction": false,
+    "lxml": [
+      6,
+      1,
+      3,
+      0
+    ],
+    "libxml2": [
+      2,
+      15,
+      4
+    ]
+  },
+  "preparation": "Reused cleared local wheels with --no-index and reviewed dependency hashes. No package index contacted.",
+  "signature_status": "Unsigned local bundle; different from actual earlier hosted signed snapshot.",
+  "artifact_sha256": {
+    "messagebench-0.2.0rc1-py3-none-any.whl": "7cfa94a3dc01036bfa91f8e753d1b321e8ab196ca0601fd9bc98eb727ee14804",
+    "messagebench-0.2.0rc1.tar.gz": "e6aa5e1402754e22b63669ab7d1e4a7b4533c35121407398c0e4107c19f74e32"
+  },
+  "build_evidence_sha256": "e21aa1b1e3759786ba72c517aff17a7889e10bc3caadcf0cea05dcfc2dbd25f8",
+  "bundle_manifest_sha256": "b69df0d73412d386c95221261d7f72a083c8d8903401796453fc86dc1997f146"
+}

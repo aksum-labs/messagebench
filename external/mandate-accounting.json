@@ -1149,9 +1149,10 @@
       "evidence": [
         "evidence/hosted-recognition.json",
         "evidence/hosted-signature-verification.txt",
-        ".github/workflows/snapshot.yml"
+        ".github/workflows/snapshot.yml",
+        "evidence/local-recognition-offline-install.json"
       ],
-      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim. Refreshed release-preparation bundle also verified locally with socket calls denied, at source 8ff219c; not independently reviewed."
     },
     {
       "id": "05.15",
