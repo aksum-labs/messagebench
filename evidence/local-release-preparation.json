@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-01",
+  "base_commit": "aef9caed85006e11d62281f45e14dcc1e7e1f30d",
+  "scope": "Local follow-up release/hardening corrections; changes not yet hosted. Core preservation implementation unchanged.",
+  "test_command": "python -m pytest -q",
+  "local_tests_passed": 149,
+  "new_release_control_tests": 9,
+  "hosted_prior_commit_tests": 140,
+  "human_reviews_created": 0,
+  "actual_platform_configuration_claimed": false,
+  "workflow_actionlint": "PASS",
+  "changes": {
+    "tag_policy": "Selected exact main branch and v0.2.0-rc.1 tag policies; protected-branches-only cannot be substituted.",
+    "release_guard": "Fails closed for absent/unsafe platform controls; synthetic tests only until real hosted API execution.",
+    "signature": "Publication job verifies exact tag-workflow identity again after signed artifact download.",
+    "archive_checksum": "Relative basename works in recipients download directory.",
+    "bundle_description": "No blanket claim that signed public snapshots are unsigned/private."
+  },
+  "source_files_sha256": {
+    "scripts/release_guard.py": "b59286fcb3e941335c71c1fd4d1e620314111cc41e6bb587714fb434748d52f9",
+    "scripts/owner_setup.py": "896a6919897d5610b441a43fecf40e3780e6e7ac892bc034d956ff8f1f489e8b",
+    "scripts/prepare_bundle.py": "f626feb8872cdbaf033713881583ad99811a54f87f4208f962afb0e830699efd",
+    ".github/workflows/publish-reviewed-release.yml": "43b451766efe28be54ba7e572ac02e1589e60b4e9623aaa8ce50cb51a3320b61",
+    "tests/integration/test_release_handoffs.py": "c91072c1efbea18b29e88ab15ae0575ae1915ce2d3e126591e7ae40ccbad8d40"
+  },
+  "primary_sources": [
+    "https://docs.github.com/en/rest/deployments/environments?apiVersion=2026-03-10",
+    "https://docs.github.com/en/rest/deployments/branch-policies?apiVersion=2026-03-10",
+    "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "reference_date": "2026-10-01",
   "source_commit": "2bb62cb1e0dcbbb91d265bb824eda274cbd9b217",
-  "requirement_count": 212,
+  "requirement_count": 213,
   "requirements": [
     {
       "id": "00.01",
@@ -1171,9 +1171,12 @@
       "status": "READY-FOR-OWNER-APPROVAL",
       "evidence": [
         ".github/workflows/publish-reviewed-release.yml",
-        "docs/release-publication.md"
+        "docs/release-publication.md",
+        "scripts/release_guard.py",
+        "tests/integration/test_release_handoffs.py",
+        "evidence/local-release-preparation.json"
       ],
-      "disposition": "Tag-specific workflow prepared and actionlint checked locally; enable only after real review and actual environment protection. No tag-backed signature exists yet."
+      "disposition": "Tag-specific workflow prepared and actionlint checked locally; enable only after real review and actual environment protection. No tag-backed signature exists yet. Nine new local negative/control tests verify fail-closed platform metadata handling; these are synthetic platform data, not human approvals."
     },
     {
       "id": "06.01",
@@ -2492,6 +2495,17 @@
         "docs/github-hardening-report.md"
       ],
       "disposition": "Independent review/owner approval remain human gates; remaining configuration/upload additionally blocked by current company-network access."
+    },
+    {
+      "id": "01.32",
+      "section": 1,
+      "requirement": "Disable release-environment administrator bypass and verify it",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "evidence": [
+        "docs/release-publication.md",
+        "scripts/release_guard.py"
+      ],
+      "disposition": "Documented owner environment-settings toggle; current REST update schema does not document a setter. Never infer enforcement from an unlisted JSON field. Guard requires actual false read-back."
     }
   ]
 }

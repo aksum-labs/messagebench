@@ -408,6 +408,27 @@
       "blocker": "New repository lacks real approved changes and sustained maintenance history.",
       "next_action": "Maintain the project, review actual contributor changes and respond to real reports; do not create activity for metrics.",
       "owner_approval_required": false
+    },
+    {
+      "target": "Release environment administrator bypass setting",
+      "category": "security account control",
+      "free_or_paid": "free",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
+      "submission_url": "https://github.com/aksum-labs/messagebench",
+      "date_checked": "2026-10-01",
+      "artifact_required": [
+        "docs/release-publication.md",
+        "scripts/release_guard.py"
+      ],
+      "prepared": true,
+      "submitted": false,
+      "accepted": false,
+      "public_listing_url": null,
+      "badge_url": null,
+      "blocker": "No documented REST setter in inspected update schema; use the documented owner settings toggle, then require actual false read-back.",
+      "next_action": "In repository Settings \u2192 Environments \u2192 release-review, deselect Allow administrators to bypass configured protection rules; save. Company App read-back and release guard must verify false before publication.",
+      "owner_approval_required": true
     }
   ]
 }

@@ -46,10 +46,12 @@ def plan(repository, maintainers, reviewer_ids):
             "prevent_self_review": True,
             "reviewers": [{"type": "User", "id": i} for i in reviewer_ids],
             "deployment_branch_policy": {
-                "protected_branches": True,
-                "custom_branch_policies": False,
+                "protected_branches": False,
+                "custom_branch_policies": True,
             },
         },
+        "release-main-policy.json": {"name": "main", "type": "branch"},
+        "release-tag-policy.json": {"name": "v0.2.0-rc.1", "type": "tag"},
         "release-tag-creation.json": {
             "name": "Reviewed release tag creation",
             "target": "tag",
@@ -118,6 +120,16 @@ def main():
             f"gh api --method PUT repos/{args.repo}/environments/release-review "
             "--input release-environment.json"
         ),
+        (
+            f"gh api --method POST repos/{args.repo}/environments/release-review/"
+            "deployment-branch-policies --input release-main-policy.json"
+        ),
+        (
+            f"gh api --method POST repos/{args.repo}/environments/release-review/"
+            "deployment-branch-policies --input release-tag-policy.json"
+        ),
+        "# Verify existing policies first; do not create duplicate policies on repeated setup.",
+        "# Owner must disable administrator bypass in environment settings and read it back.",
         f"gh api --method PUT repos/{args.repo}/private-vulnerability-reporting",
         (f"gh api --method POST repos/{args.repo}/rulesets --input release-tag-creation.json"),
         (f"gh api --method POST repos/{args.repo}/rulesets --input release-tag-immutability.json"),
@@ -131,6 +143,7 @@ def main():
         ),
         f"gh api repos/{args.repo}/branches/main/protection",
         f"gh api repos/{args.repo}/environments/release-review",
+        f"gh api repos/{args.repo}/environments/release-review/deployment-branch-policies",
         f"gh api repos/{args.repo}/private-vulnerability-reporting",
     ]
     (args.out / "OWNER_COMMANDS.sh").write_text("\n".join(commands) + "\n")

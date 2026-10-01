@@ -17,3 +17,5 @@ Current execution environment rejects company-App networking with temporary DNS 
 Organization MFA was false at inspection. Owner must establish real maintainer MFA readiness and policy. App registration currently has extra permissions; every token issued for this task is restricted to MessageBench and requested permissions. Owner should reduce the registered App grant to the documented actual scope. Neither MFA nor globally narrow App registration is claimed.
 
 Formal release and independent review remain genuine human gates. No approval bypass, forged review or fake maintenance history is authorized.
+
+Follow-up release audit: exact Selected branches and tags policies for main and v0.2.0-rc.1 are prepared. A new tag-release guard checks actual public controls before each privileged stage, with nine additional synthetic control tests (149 local tests total). Actual platform enforcement is still unverified because company-App networking is blocked. See docs/release-publication.md and evidence/local-release-preparation.json.

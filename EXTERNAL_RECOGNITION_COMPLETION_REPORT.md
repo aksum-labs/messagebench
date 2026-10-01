@@ -85,6 +85,8 @@ d2f57d3b0f4f259b78edfb3dfd5549ecf145192a7fe1eed04a909098c836296e
 
 No formal reviewed release/tag exists. Tag-specific `publish-reviewed-release.yml` and notes are prepared locally and actionlint checked. Two genuine independent reviews, owner authorization and verified environment protection must precede its execution. It verifies the exact tag-workflow identity and publishes a prerelease with assets. See `docs/release-publication.md`.
 
+Local follow-up release preparation: 149 tests now pass (nine additional fail-closed platform-control checks), actionlint is clean, exact main/tag deployment policy templates replace protected-branches-only, the signed manifest is verified again before publication, and the offline ZIP checksum is portable. Evidence: `evidence/local-release-preparation.json`. This is local evidence, not later hosted CI. The release guard deliberately blocks on absent/unreadable controls. Owner must disable environment administrator bypass through the documented settings toggle and confirm actual false read-back; an unlisted API payload field is not proof.
+
 ## G. LFDT
 
 **READY-FOR-OWNER-APPROVAL.** Current free Lab Proposal issue-form route researched from primary sources. All five requested package files exist in `external/lfdt/`. No membership purchased or submission made. Real contacts/committers, DCO decisions, trademark/transfer authorization and mission fit remain human/steward questions. The non-blockchain scope is explicit and fit is not presumed.
@@ -107,6 +109,7 @@ No formal reviewed release/tag exists. Tag-specific `publish-reviewed-release.ym
 
 ## L. Remaining genuine human/account actions
 
+- Disable release-environment administrator bypass via the documented owner settings path and verify actual false read-back.
 - Authenticate two independent semantic/rights reviewers and their hash-bound decisions; no invented handles.
 - Commit to real human security response/maintenance and competence attestations; arrange MFA and reduce extra App registration grants. Task tokens already restrict the repository and permissions.
 - Approve formal RC/tag publication after review and real environment protection.
@@ -174,7 +177,7 @@ No NBE/EthSwitch/SWIFT/ISO/BIS/foundation approval or certification; no Best Pra
 
 ## Exhaustive mandate accounting
 
-212 explicit requirement rows across sections 0–20. Dispositions: ACHIEVED: 183, BLOCKED-BY-EXTERNAL-PARTY: 13, BLOCKED-BY-REQUIRED-HUMAN-HISTORY: 1, READY-FOR-OWNER-APPROVAL: 15. Machine-readable source: external/mandate-accounting.json. ACHIEVED preparation is distinguished explicitly from submission/issuance and from later blocked upload.
+213 explicit requirement rows across sections 0–20. Dispositions: ACHIEVED: 183, BLOCKED-BY-EXTERNAL-PARTY: 13, BLOCKED-BY-REQUIRED-HUMAN-HISTORY: 1, READY-FOR-OWNER-APPROVAL: 16. Machine-readable source: external/mandate-accounting.json. ACHIEVED preparation is distinguished explicitly from submission/issuance and from later blocked upload.
 
 | ID | Requirement | Disposition | Evidence and next action |
 |---|---|---|---|
@@ -278,7 +281,7 @@ No NBE/EthSwitch/SWIFT/ISO/BIS/foundation approval or certification; no Best Pra
 | 05.13 | Two same-host unsigned builds compared | ACHIEVED | evidence/hosted-recognition.json, evidence/hosted-signature-verification.txt, .github/workflows/snapshot.yml — Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim. |
 | 05.14 | Fresh offline bundle installation | ACHIEVED | evidence/hosted-recognition.json, evidence/hosted-signature-verification.txt, .github/workflows/snapshot.yml — Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim. |
 | 05.15 | Reviewed tag-backed signing approval | READY-FOR-OWNER-APPROVAL | .github/workflows/publish-reviewed-release.yml, docs/release-publication.md — Tag-specific workflow prepared and actionlint checked locally; enable only after real review and actual environment protection. No tag-backed signature exists yet. |
-| 05.16 | Tag-specific publication/signing workflow | READY-FOR-OWNER-APPROVAL | .github/workflows/publish-reviewed-release.yml, docs/release-publication.md — Tag-specific workflow prepared and actionlint checked locally; enable only after real review and actual environment protection. No tag-backed signature exists yet. |
+| 05.16 | Tag-specific publication/signing workflow | READY-FOR-OWNER-APPROVAL | .github/workflows/publish-reviewed-release.yml, docs/release-publication.md, scripts/release_guard.py, tests/integration/test_release_handoffs.py, evidence/local-release-preparation.json — Tag-specific workflow prepared and actionlint checked locally; enable only after real review and actual environment protection. No tag-backed signature exists yet. Nine new local negative/control tests verify fail-closed platform metadata handling; these are synthetic platform data, not human approvals. |
 | 06.01 | Complete scope-labelled RC release notes | ACHIEVED | docs/release-notes-0.2.0-rc.1.md — Includes exact message scope, limits, synthetic evidence, security/rights/reproduction/Scorecard/Best Practices links; no approval claims. |
 | 06.02 | Create reviewed v0.2.0-rc.1 tag and publish formal prerelease | READY-FOR-OWNER-APPROVAL | docs/release-publication.md, .github/workflows/publish-reviewed-release.yml — Requires two authenticated independent reviews and protected owner approval. Current signed snapshot is not this release. |
 | 07.01 | Current LFDT process research | ACHIEVED | external/lfdt/README.md, external/lfdt/submission.md, external/lfdt/technical-summary.md, external/lfdt/governance-readiness.md, external/lfdt/faq.md — Current Lab Proposal issue form documented; no paid membership prerequisite asserted. Mission fit is candidly uncertain, not transformed into a blockchain claim. |
@@ -390,6 +393,7 @@ No NBE/EthSwitch/SWIFT/ISO/BIS/foundation approval or certification; no Best Pra
 | 20.05 | Original licensing and separate asset limits | ACHIEVED | evidence/hosted-recognition.json, SECURITY-EVIDENCE.md, external/upstream/mx20022/evidence.json — Earned public engineering credibility; no invented reviews, certifications or paid visibility. |
 | 20.06 | Constructive substantive upstream preparation | ACHIEVED | evidence/hosted-recognition.json, SECURITY-EVIDENCE.md, external/upstream/mx20022/evidence.json — Earned public engineering credibility; no invented reviews, certifications or paid visibility. |
 | 20.07 | Fully hardened final public release and independent verification | READY-FOR-OWNER-APPROVAL | docs/release-publication.md, docs/github-hardening-report.md — Independent review/owner approval remain human gates; remaining configuration/upload additionally blocked by current company-network access. |
+| 01.32 | Disable release-environment administrator bypass and verify it | READY-FOR-OWNER-APPROVAL | docs/release-publication.md, scripts/release_guard.py — Documented owner environment-settings toggle; current REST update schema does not document a setter. Never infer enforcement from an unlisted JSON field. Guard requires actual false read-back. |
 
 ## Required final summary
 

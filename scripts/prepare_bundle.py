@@ -177,7 +177,10 @@ def main():
     )
     (args.out / "install-requirements.txt").write_text("\n".join(sorted(lock)) + "\n")
     (args.out / "README-BUNDLE.md").write_text(
-        "# Offline local review bundle\n\nNot a public or signed release. See GATE_REPORT.md.\n\n"
+        "# Offline engineering artifact bundle\n\n"
+        "A bundle alone is not a reviewed release. Check its exact workflow/ref, "
+        "attached signature and review status; signatures do not establish "
+        "independent review or production safety. See RELEASE_READINESS.md.\n\n"
         "Verify SHA256SUMS, then install on compatible Linux x86_64 / CPython 3.12:\n\n"
         "```sh\nsha256sum -c SHA256SUMS\npython3.12 -m venv review-env\n"
         "review-env/bin/python -m pip install --no-index --find-links wheelhouse "
