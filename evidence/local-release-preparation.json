@@ -14,12 +14,13 @@
     "release_guard": "Fails closed for absent/unsafe platform controls; synthetic tests only until real hosted API execution.",
     "signature": "Publication job verifies exact tag-workflow identity again after signed artifact download.",
     "archive_checksum": "Relative basename works in recipients download directory.",
-    "bundle_description": "No blanket claim that signed public snapshots are unsigned/private."
+    "bundle_description": "No blanket claim that signed public snapshots are unsigned/private.",
+    "offline_preparation": "Optional cleared local wheel cache uses pip --no-index plus reviewed hashes; no dependency-index network needed."
   },
   "source_files_sha256": {
     "scripts/release_guard.py": "b59286fcb3e941335c71c1fd4d1e620314111cc41e6bb587714fb434748d52f9",
     "scripts/owner_setup.py": "896a6919897d5610b441a43fecf40e3780e6e7ac892bc034d956ff8f1f489e8b",
-    "scripts/prepare_bundle.py": "f626feb8872cdbaf033713881583ad99811a54f87f4208f962afb0e830699efd",
+    "scripts/prepare_bundle.py": "fba565b7201f55f048f1f017bec6d3c20295e467dadbb5599d5f8e07bcd8d991",
     ".github/workflows/publish-reviewed-release.yml": "43b451766efe28be54ba7e572ac02e1589e60b4e9623aaa8ce50cb51a3320b61",
     "tests/integration/test_release_handoffs.py": "c91072c1efbea18b29e88ab15ae0575ae1915ce2d3e126591e7ae40ccbad8d40"
   },

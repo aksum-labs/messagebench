@@ -18,8 +18,15 @@ def main():
     parser.add_argument("--release", type=Path, required=True)
     parser.add_argument("--native", type=Path, required=True)
     parser.add_argument("--archives", type=Path, required=True)
+    parser.add_argument(
+        "--wheel-cache",
+        type=Path,
+        help="Reuse cleared local dependency wheels without contacting an index",
+    )
     parser.add_argument("--out", type=Path, required=True)
     args = parser.parse_args()
+    if args.wheel_cache is not None and not args.wheel_cache.is_dir():
+        raise SystemExit("Local wheel cache must be a directory")
     args.out.mkdir(parents=True, exist_ok=False)
     wheels = args.out / "wheelhouse"
     wheels.mkdir()
@@ -58,6 +65,11 @@ def main():
             "-m",
             "pip",
             "download",
+            *(
+                ["--no-index", "--find-links", str(args.wheel_cache.resolve())]
+                if args.wheel_cache is not None
+                else []
+            ),
             "--only-binary=:all:",
             "--require-hashes",
             "--no-deps",
