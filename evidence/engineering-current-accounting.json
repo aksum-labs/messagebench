@@ -1,0 +1,5315 @@
+{
+  "date": "2026-10-01",
+  "historical_source": "docs/mandate-items.json",
+  "scope": "Original 389 engineering requirements updated only for actually earned publication evidence; no new message support, independent review, formal release or badge claim.",
+  "counts": {
+    "PASS": 377,
+    "BLOCKED-BY-HUMAN": 12
+  },
+  "items": [
+    {
+      "id": "00.01",
+      "section": 0,
+      "requirement": "Validate genuine technical purpose before expansion",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "docs/expansion-decision.md",
+        "GATE_REPORT.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "00.02",
+      "section": 0,
+      "requirement": "Enforce and record acceptance gates",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "docs/expansion-decision.md",
+        "GATE_REPORT.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "00.03",
+      "section": 0,
+      "requirement": "Reshape when rights or upstream overlap require it",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "docs/expansion-decision.md",
+        "GATE_REPORT.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "00.04",
+      "section": 0,
+      "requirement": "Prefer substance over release labeling",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "docs/expansion-decision.md",
+        "GATE_REPORT.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "00.05",
+      "section": 0,
+      "requirement": "Do not claim v1.0 without its criteria",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "docs/expansion-decision.md",
+        "GATE_REPORT.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "01.01",
+      "section": 1,
+      "requirement": "MessageBench name and messagebench repository slug (owner naming revision, 2026-09-30)",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/api.md"
+      ],
+      "disposition": "Owner requested the neutral public name MessageBench without the Aksum prefix. Organization ownership and corporate commit identity remain Aksum Labs."
+    },
+    {
+      "id": "01.02",
+      "section": 1,
+      "requirement": "Offline declared-preservation product contract",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "01.03",
+      "section": 1,
+      "requirement": "Primary and secondary users documented",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "01.04",
+      "section": 1,
+      "requirement": "Compare information promises rather than parse success",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "02.01",
+      "section": 2,
+      "requirement": "No payment initiation",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.02",
+      "section": 2,
+      "requirement": "No routing",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.03",
+      "section": 2,
+      "requirement": "No settlement",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.04",
+      "section": 2,
+      "requirement": "No balances or account service",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.05",
+      "section": 2,
+      "requirement": "No SWIFT connectivity",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.06",
+      "section": 2,
+      "requirement": "No EATS connectivity",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.07",
+      "section": 2,
+      "requirement": "No EthSwitch connectivity",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.08",
+      "section": 2,
+      "requirement": "No live APIs",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.09",
+      "section": 2,
+      "requirement": "No customer KYC",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.10",
+      "section": 2,
+      "requirement": "No sanctions screening",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.11",
+      "section": 2,
+      "requirement": "No AML decisioning",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.12",
+      "section": 2,
+      "requirement": "No universal MT/MX translation",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.13",
+      "section": 2,
+      "requirement": "No CBDC",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.14",
+      "section": 2,
+      "requirement": "No DvP/PvP",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.15",
+      "section": 2,
+      "requirement": "No government securities",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.16",
+      "section": 2,
+      "requirement": "No stablecoins",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.17",
+      "section": 2,
+      "requirement": "No wallets",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.18",
+      "section": 2,
+      "requirement": "No hosted financial service",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.19",
+      "section": 2,
+      "requirement": "No national standards or NBE rulemaking",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.20",
+      "section": 2,
+      "requirement": "No Ethiopian account-number standards",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.21",
+      "section": 2,
+      "requirement": "No official conformance or certification",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.22",
+      "section": 2,
+      "requirement": "No public bank rankings",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.23",
+      "section": 2,
+      "requirement": "No live bank testing",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.24",
+      "section": 2,
+      "requirement": "No financial-institution scraping or probing",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.25",
+      "section": 2,
+      "requirement": "No inferred proprietary EATS/EIPS/EthSwitch rules",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "02.26",
+      "section": 2,
+      "requirement": "No NBE/EthSwitch/SWIFT/ISO endorsement or production-safety claims",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "src/aksum_messagebench",
+        "LIMITATIONS.md"
+      ],
+      "disposition": "Runtime is a bounded local-file comparator. No connectors, server, custody, adapter execution or institutional-rule implementation exists; exclusions are explicit."
+    },
+    {
+      "id": "03.01",
+      "section": 3,
+      "requirement": "Initial proof limited to pacs.008.001.08",
+      "status": "PASS",
+      "evidence": [
+        "corpus/gate1-index.json",
+        "evidence/baseline.json",
+        "tests/golden",
+        "docs/prior-art.md",
+        "evidence/rights-register.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "03.02",
+      "section": 3,
+      "requirement": "Identity control",
+      "status": "PASS",
+      "evidence": [
+        "corpus/gate1-index.json",
+        "evidence/baseline.json",
+        "tests/golden",
+        "docs/prior-art.md",
+        "evidence/rights-register.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "03.03",
+      "section": 3,
+      "requirement": "Leading-zero identifier-loss case",
+      "status": "PASS",
+      "evidence": [
+        "corpus/gate1-index.json",
+        "evidence/baseline.json",
+        "tests/golden",
+        "docs/prior-art.md",
+        "evidence/rights-register.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "03.04",
+      "section": 3,
+      "requirement": "Truncated reference case",
+      "status": "PASS",
+      "evidence": [
+        "corpus/gate1-index.json",
+        "evidence/baseline.json",
+        "tests/golden",
+        "docs/prior-art.md",
+        "evidence/rights-register.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "03.05",
+      "section": 3,
+      "requirement": "Removed repeated remittance case",
+      "status": "PASS",
+      "evidence": [
+        "corpus/gate1-index.json",
+        "evidence/baseline.json",
+        "tests/golden",
+        "docs/prior-art.md",
+        "evidence/rights-register.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "03.06",
+      "section": 3,
+      "requirement": "Permitted regenerated message ID control",
+      "status": "PASS",
+      "evidence": [
+        "corpus/gate1-index.json",
+        "evidence/baseline.json",
+        "tests/golden",
+        "docs/prior-art.md",
+        "evidence/rights-register.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "03.07",
+      "section": 3,
+      "requirement": "Additional currency-preservation defect",
+      "status": "PASS",
+      "evidence": [
+        "corpus/gate1-index.json",
+        "evidence/baseline.json",
+        "tests/golden",
+        "docs/prior-art.md",
+        "evidence/rights-register.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "03.08",
+      "section": 3,
+      "requirement": "At least two defective targets remain well-formed and exact-XSD-valid",
+      "status": "PASS",
+      "evidence": [
+        "corpus/gate1-index.json",
+        "evidence/baseline.json",
+        "tests/golden",
+        "docs/prior-art.md",
+        "evidence/rights-register.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "03.09",
+      "section": 3,
+      "requirement": "XSD alone accepts declared semantic defects",
+      "status": "PASS",
+      "evidence": [
+        "corpus/gate1-index.json",
+        "evidence/baseline.json",
+        "tests/golden",
+        "docs/prior-art.md",
+        "evidence/rights-register.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "03.10",
+      "section": 3,
+      "requirement": "MessageBench detects defects",
+      "status": "PASS",
+      "evidence": [
+        "corpus/gate1-index.json",
+        "evidence/baseline.json",
+        "tests/golden",
+        "docs/prior-art.md",
+        "evidence/rights-register.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "03.11",
+      "section": 3,
+      "requirement": "Correct transformations pass",
+      "status": "PASS",
+      "evidence": [
+        "corpus/gate1-index.json",
+        "evidence/baseline.json",
+        "tests/golden",
+        "docs/prior-art.md",
+        "evidence/rights-register.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "03.12",
+      "section": 3,
+      "requirement": "Permitted changes avoid false positives",
+      "status": "PASS",
+      "evidence": [
+        "corpus/gate1-index.json",
+        "evidence/baseline.json",
+        "tests/golden",
+        "docs/prior-art.md",
+        "evidence/rights-register.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "03.13",
+      "section": 3,
+      "requirement": "Deterministic repeatable evidence",
+      "status": "PASS",
+      "evidence": [
+        "corpus/gate1-index.json",
+        "evidence/baseline.json",
+        "tests/golden",
+        "docs/prior-art.md",
+        "evidence/rights-register.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "03.14",
+      "section": 3,
+      "requirement": "No proprietary Ethiopian rules",
+      "status": "PASS",
+      "evidence": [
+        "corpus/gate1-index.json",
+        "evidence/baseline.json",
+        "tests/golden",
+        "docs/prior-art.md",
+        "evidence/rights-register.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "03.15",
+      "section": 3,
+      "requirement": "Bundled proof assets zero-fee with retained terms",
+      "status": "PASS",
+      "evidence": [
+        "corpus/gate1-index.json",
+        "evidence/baseline.json",
+        "tests/golden",
+        "docs/prior-art.md",
+        "evidence/rights-register.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "03.16",
+      "section": 3,
+      "requirement": "Selected maintained prior art does not provide the exact combined workflow",
+      "status": "PASS",
+      "evidence": [
+        "corpus/gate1-index.json",
+        "evidence/baseline.json",
+        "tests/golden",
+        "docs/prior-art.md",
+        "evidence/rights-register.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "03.17",
+      "section": 3,
+      "requirement": "Independent review of at least six initial pairs",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "docs/fixture-review.md",
+        "evidence/review-packet.json",
+        "docs/reviewer-form.template.json"
+      ],
+      "disposition": "Two genuine independent human reviewers must examine the hash-bound packet and record decisions. The owner allowed development continuation; no independent approval is fabricated."
+    },
+    {
+      "id": "04.01",
+      "section": 4,
+      "requirement": "Inspect Prowide ISO 20022",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "evidence/prior-art-snapshots.json",
+        "evidence/prior-art-pactus.json",
+        "evidence/baseline.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "04.02",
+      "section": 4,
+      "requirement": "Inspect mx20022",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "evidence/prior-art-snapshots.json",
+        "evidence/prior-art-pactus.json",
+        "evidence/baseline.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "04.03",
+      "section": 4,
+      "requirement": "Inspect iso20022-cbpr-ur",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "evidence/prior-art-snapshots.json",
+        "evidence/prior-art-pactus.json",
+        "evidence/baseline.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "04.04",
+      "section": 4,
+      "requirement": "Inspect Cognis",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "evidence/prior-art-snapshots.json",
+        "evidence/prior-art-pactus.json",
+        "evidence/baseline.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "04.05",
+      "section": 4,
+      "requirement": "Inspect Mojaloop Testing Toolkit",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "evidence/prior-art-snapshots.json",
+        "evidence/prior-art-pactus.json",
+        "evidence/baseline.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "04.06",
+      "section": 4,
+      "requirement": "Record parsing/XSD/business-rule overlap",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "evidence/prior-art-snapshots.json",
+        "evidence/prior-art-pactus.json",
+        "evidence/baseline.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "04.07",
+      "section": 4,
+      "requirement": "Record warnings and round-trip overlap",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "evidence/prior-art-snapshots.json",
+        "evidence/prior-art-pactus.json",
+        "evidence/baseline.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "04.08",
+      "section": 4,
+      "requirement": "Assess adapter-independent contracts and reusable corpus",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "evidence/prior-art-snapshots.json",
+        "evidence/prior-art-pactus.json",
+        "evidence/baseline.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "04.09",
+      "section": 4,
+      "requirement": "Assess coverage accounting",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "evidence/prior-art-snapshots.json",
+        "evidence/prior-art-pactus.json",
+        "evidence/baseline.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "04.10",
+      "section": 4,
+      "requirement": "Record exact sources and reuse decisions",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "evidence/prior-art-snapshots.json",
+        "evidence/prior-art-pactus.json",
+        "evidence/baseline.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "04.11",
+      "section": 4,
+      "requirement": "Do not exaggerate novelty",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "evidence/prior-art-snapshots.json",
+        "evidence/prior-art-pactus.json",
+        "evidence/baseline.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "05.01",
+      "section": 5,
+      "requirement": "Python 3.12+",
+      "status": "PASS",
+      "evidence": [
+        "pyproject.toml",
+        "dependency-lock.txt",
+        "dependency-lock-hashed.txt",
+        "evidence/dependency-inventory.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "05.02",
+      "section": 5,
+      "requirement": "Use lxml instead of an XSD engine rewrite",
+      "status": "PASS",
+      "evidence": [
+        "pyproject.toml",
+        "dependency-lock.txt",
+        "dependency-lock-hashed.txt",
+        "evidence/dependency-inventory.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "05.03",
+      "section": 5,
+      "requirement": "Use jsonschema Draft 2020-12",
+      "status": "PASS",
+      "evidence": [
+        "pyproject.toml",
+        "dependency-lock.txt",
+        "dependency-lock-hashed.txt",
+        "evidence/dependency-inventory.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "05.04",
+      "section": 5,
+      "requirement": "pytest and Hypothesis",
+      "status": "PASS",
+      "evidence": [
+        "pyproject.toml",
+        "dependency-lock.txt",
+        "dependency-lock-hashed.txt",
+        "evidence/dependency-inventory.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "05.05",
+      "section": 5,
+      "requirement": "Use Decimal/hashlib/json and standard library",
+      "status": "PASS",
+      "evidence": [
+        "pyproject.toml",
+        "dependency-lock.txt",
+        "dependency-lock-hashed.txt",
+        "evidence/dependency-inventory.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "05.06",
+      "section": 5,
+      "requirement": "Pin exact dependencies",
+      "status": "PASS",
+      "evidence": [
+        "pyproject.toml",
+        "dependency-lock.txt",
+        "dependency-lock-hashed.txt",
+        "evidence/dependency-inventory.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "05.07",
+      "section": 5,
+      "requirement": "Produce full dependency inventory",
+      "status": "PASS",
+      "evidence": [
+        "pyproject.toml",
+        "dependency-lock.txt",
+        "dependency-lock-hashed.txt",
+        "evidence/dependency-inventory.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "06.01",
+      "section": 6,
+      "requirement": "Bounded reader to exact schema validation",
+      "status": "PASS",
+      "evidence": [
+        "docs/architecture.md",
+        "src/aksum_messagebench",
+        "docs/file-handoff.md",
+        "scripts/reproducible_build.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "06.02",
+      "section": 6,
+      "requirement": "Version-specific fact extraction",
+      "status": "PASS",
+      "evidence": [
+        "docs/architecture.md",
+        "src/aksum_messagebench",
+        "docs/file-handoff.md",
+        "scripts/reproducible_build.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "06.03",
+      "section": 6,
+      "requirement": "Versioned preservation contracts",
+      "status": "PASS",
+      "evidence": [
+        "docs/architecture.md",
+        "src/aksum_messagebench",
+        "docs/file-handoff.md",
+        "scripts/reproducible_build.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "06.04",
+      "section": 6,
+      "requirement": "Typed deterministic comparison",
+      "status": "PASS",
+      "evidence": [
+        "docs/architecture.md",
+        "src/aksum_messagebench",
+        "docs/file-handoff.md",
+        "scripts/reproducible_build.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "06.05",
+      "section": 6,
+      "requirement": "Coverage accounting",
+      "status": "PASS",
+      "evidence": [
+        "docs/architecture.md",
+        "src/aksum_messagebench",
+        "docs/file-handoff.md",
+        "scripts/reproducible_build.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "06.06",
+      "section": 6,
+      "requirement": "JSON/text/HTML/JUnit output",
+      "status": "PASS",
+      "evidence": [
+        "docs/architecture.md",
+        "src/aksum_messagebench",
+        "docs/file-handoff.md",
+        "scripts/reproducible_build.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "06.07",
+      "section": 6,
+      "requirement": "Reproducibility manifest",
+      "status": "PASS",
+      "evidence": [
+        "docs/architecture.md",
+        "src/aksum_messagebench",
+        "docs/file-handoff.md",
+        "scripts/reproducible_build.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "06.08",
+      "section": 6,
+      "requirement": "No server/database/cloud/telemetry/accounts",
+      "status": "PASS",
+      "evidence": [
+        "docs/architecture.md",
+        "src/aksum_messagebench",
+        "docs/file-handoff.md",
+        "scripts/reproducible_build.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "06.09",
+      "section": 6,
+      "requirement": "No runtime downloads or network",
+      "status": "PASS",
+      "evidence": [
+        "docs/architecture.md",
+        "src/aksum_messagebench",
+        "docs/file-handoff.md",
+        "scripts/reproducible_build.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "06.10",
+      "section": 6,
+      "requirement": "Users execute adapters independently",
+      "status": "PASS",
+      "evidence": [
+        "docs/architecture.md",
+        "src/aksum_messagebench",
+        "docs/file-handoff.md",
+        "scripts/reproducible_build.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.01",
+      "section": 7,
+      "requirement": "Regular-file size and symlink/path/URL protections",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.02",
+      "section": 7,
+      "requirement": "DTD/entity/XInclude/network rejection",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.03",
+      "section": 7,
+      "requirement": "Exact QName and namespace enforcement",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.04",
+      "section": 7,
+      "requirement": "Depth/element/text limits",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.05",
+      "section": 7,
+      "requirement": "Hash-pinned local schema catalog",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.06",
+      "section": 7,
+      "requirement": "Provenance and original QName paths",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.07",
+      "section": 7,
+      "requirement": "Field presence and extractor version",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.08",
+      "section": 7,
+      "requirement": "Closed non-executable JSON contracts",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.09",
+      "section": 7,
+      "requirement": "Exact text comparator",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.10",
+      "section": 7,
+      "requirement": "Exact identifier comparator",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.11",
+      "section": 7,
+      "requirement": "Decimal comparator",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.12",
+      "section": 7,
+      "requirement": "Decimal-plus-currency comparator",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.13",
+      "section": 7,
+      "requirement": "Presence comparator",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.14",
+      "section": 7,
+      "requirement": "Ordered-list comparator",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.15",
+      "section": 7,
+      "requirement": "Multiset comparator",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.16",
+      "section": 7,
+      "requirement": "Explicit keyed repeated-item comparator",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.17",
+      "section": 7,
+      "requirement": "Allowed regeneration",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.18",
+      "section": 7,
+      "requirement": "Explicit normalization",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.19",
+      "section": 7,
+      "requirement": "Examined/excluded/unsupported/unexamined categories",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.20",
+      "section": 7,
+      "requirement": "Deterministic synthetic fixtures/manifests/defects",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.21",
+      "section": 7,
+      "requirement": "Review metadata without invented reviewers",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.22",
+      "section": 7,
+      "requirement": "Deterministic redacted report renderers",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.23",
+      "section": 7,
+      "requirement": "Offline CLI and stable exit codes",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench",
+        "tests",
+        "schemas",
+        "corpus",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "07.24",
+      "section": 7,
+      "requirement": "camt.053 extractor module with cleared exact schema",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "docs/camt053-asset-review.md"
+      ],
+      "disposition": "Excluded under the uncertain-rights rule. An authoritative redistribution confirmation or qualified human rights determination is required before this asset/module enters the distributable; no support is claimed."
+    },
+    {
+      "id": "08.01",
+      "section": 8,
+      "requirement": "inspect command",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/cli.py",
+        "tests/integration/test_cli.py",
+        "tests/integration/test_workflows.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "08.02",
+      "section": 8,
+      "requirement": "compare command",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/cli.py",
+        "tests/integration/test_cli.py",
+        "tests/integration/test_workflows.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "08.03",
+      "section": 8,
+      "requirement": "corpus verify command",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/cli.py",
+        "tests/integration/test_cli.py",
+        "tests/integration/test_workflows.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "08.04",
+      "section": 8,
+      "requirement": "suite command",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/cli.py",
+        "tests/integration/test_cli.py",
+        "tests/integration/test_workflows.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "08.05",
+      "section": 8,
+      "requirement": "report command",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/cli.py",
+        "tests/integration/test_cli.py",
+        "tests/integration/test_workflows.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "08.06",
+      "section": 8,
+      "requirement": "regression command",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/cli.py",
+        "tests/integration/test_cli.py",
+        "tests/integration/test_workflows.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "08.07",
+      "section": 8,
+      "requirement": "No shell-command execution flag",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/cli.py",
+        "tests/integration/test_cli.py",
+        "tests/integration/test_workflows.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "08.08",
+      "section": 8,
+      "requirement": "No plugins/URL input/dynamic dependency installation",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/cli.py",
+        "tests/integration/test_cli.py",
+        "tests/integration/test_workflows.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "09.01",
+      "section": 9,
+      "requirement": "Exit 0 success",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/errors.py",
+        "tests/unit/test_exit_precedence.py",
+        "src/aksum_messagebench/engine.py",
+        "src/aksum_messagebench/workflows.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "09.02",
+      "section": 9,
+      "requirement": "Exit 1 assertion/input failure",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/errors.py",
+        "tests/unit/test_exit_precedence.py",
+        "src/aksum_messagebench/engine.py",
+        "src/aksum_messagebench/workflows.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "09.03",
+      "section": 9,
+      "requirement": "Exit 2 CLI/configuration error",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/errors.py",
+        "tests/unit/test_exit_precedence.py",
+        "src/aksum_messagebench/engine.py",
+        "src/aksum_messagebench/workflows.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "09.04",
+      "section": 9,
+      "requirement": "Exit 3 incomplete/unsupported required evidence",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/errors.py",
+        "tests/unit/test_exit_precedence.py",
+        "src/aksum_messagebench/engine.py",
+        "src/aksum_messagebench/workflows.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "09.05",
+      "section": 9,
+      "requirement": "Exit 4 safety/resource rejection",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/errors.py",
+        "tests/unit/test_exit_precedence.py",
+        "src/aksum_messagebench/engine.py",
+        "src/aksum_messagebench/workflows.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "09.06",
+      "section": 9,
+      "requirement": "Exit 5 internal error",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/errors.py",
+        "tests/unit/test_exit_precedence.py",
+        "src/aksum_messagebench/engine.py",
+        "src/aksum_messagebench/workflows.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "09.07",
+      "section": 9,
+      "requirement": "Exact precedence 5 > 4 > 2 > 3 > 1 > 0",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/errors.py",
+        "tests/unit/test_exit_precedence.py",
+        "src/aksum_messagebench/engine.py",
+        "src/aksum_messagebench/workflows.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "09.08",
+      "section": 9,
+      "requirement": "Retain observed safe results",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/errors.py",
+        "tests/unit/test_exit_precedence.py",
+        "src/aksum_messagebench/engine.py",
+        "src/aksum_messagebench/workflows.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "10.01",
+      "section": 10,
+      "requirement": "Draft 2020-12 closed contract schema",
+      "status": "PASS",
+      "evidence": [
+        "schemas/contracts.schema.json",
+        "contracts",
+        "src/aksum_messagebench/contracts.py",
+        "tests/security/test_files_contracts.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "10.02",
+      "section": 10,
+      "requirement": "All required contract metadata fields",
+      "status": "PASS",
+      "evidence": [
+        "schemas/contracts.schema.json",
+        "contracts",
+        "src/aksum_messagebench/contracts.py",
+        "tests/security/test_files_contracts.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "10.03",
+      "section": 10,
+      "requirement": "Authority enum and engineering-contract defaults",
+      "status": "PASS",
+      "evidence": [
+        "schemas/contracts.schema.json",
+        "contracts",
+        "src/aksum_messagebench/contracts.py",
+        "tests/security/test_files_contracts.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "10.04",
+      "section": 10,
+      "requirement": "Draft/reviewed/deprecated status enum",
+      "status": "PASS",
+      "evidence": [
+        "schemas/contracts.schema.json",
+        "contracts",
+        "src/aksum_messagebench/contracts.py",
+        "tests/security/test_files_contracts.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "10.05",
+      "section": 10,
+      "requirement": "Assertion IDs/fields/comparators/cardinality/missing/required",
+      "status": "PASS",
+      "evidence": [
+        "schemas/contracts.schema.json",
+        "contracts",
+        "src/aksum_messagebench/contracts.py",
+        "tests/security/test_files_contracts.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "10.06",
+      "section": 10,
+      "requirement": "No executable expressions",
+      "status": "PASS",
+      "evidence": [
+        "schemas/contracts.schema.json",
+        "contracts",
+        "src/aksum_messagebench/contracts.py",
+        "tests/security/test_files_contracts.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "11.01",
+      "section": 11,
+      "requirement": "Identifiers stay strings with leading zeroes",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/comparators.py",
+        "src/aksum_messagebench/time_semantics.py",
+        "src/aksum_messagebench/association.py",
+        "corpus/semantic",
+        "tests/unit/test_time_semantics.py",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "11.02",
+      "section": 11,
+      "requirement": "Scheme/issuer and institution context separate",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/comparators.py",
+        "src/aksum_messagebench/time_semantics.py",
+        "src/aksum_messagebench/association.py",
+        "corpus/semantic",
+        "tests/unit/test_time_semantics.py",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "11.03",
+      "section": 11,
+      "requirement": "No assumed IBAN or invented national check digits",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/comparators.py",
+        "src/aksum_messagebench/time_semantics.py",
+        "src/aksum_messagebench/association.py",
+        "corpus/semantic",
+        "tests/unit/test_time_semantics.py",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "11.04",
+      "section": 11,
+      "requirement": "Exact Decimal amount semantics",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/comparators.py",
+        "src/aksum_messagebench/time_semantics.py",
+        "src/aksum_messagebench/association.py",
+        "corpus/semantic",
+        "tests/unit/test_time_semantics.py",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "11.05",
+      "section": 11,
+      "requirement": "Independent currency equality",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/comparators.py",
+        "src/aksum_messagebench/time_semantics.py",
+        "src/aksum_messagebench/association.py",
+        "corpus/semantic",
+        "tests/unit/test_time_semantics.py",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "11.06",
+      "section": 11,
+      "requirement": "Lexical amount input retained",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/comparators.py",
+        "src/aksum_messagebench/time_semantics.py",
+        "src/aksum_messagebench/association.py",
+        "corpus/semantic",
+        "tests/unit/test_time_semantics.py",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "11.07",
+      "section": 11,
+      "requirement": "Instructed and settlement amounts distinct",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/comparators.py",
+        "src/aksum_messagebench/time_semantics.py",
+        "src/aksum_messagebench/association.py",
+        "corpus/semantic",
+        "tests/unit/test_time_semantics.py",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "11.08",
+      "section": 11,
+      "requirement": "Exact Unicode by default",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/comparators.py",
+        "src/aksum_messagebench/time_semantics.py",
+        "src/aksum_messagebench/association.py",
+        "corpus/semantic",
+        "tests/unit/test_time_semantics.py",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "11.09",
+      "section": 11,
+      "requirement": "No silent trim/case folding/transliteration/normalization",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/comparators.py",
+        "src/aksum_messagebench/time_semantics.py",
+        "src/aksum_messagebench/association.py",
+        "corpus/semantic",
+        "tests/unit/test_time_semantics.py",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "11.10",
+      "section": 11,
+      "requirement": "Explicit NFC only when declared",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/comparators.py",
+        "src/aksum_messagebench/time_semantics.py",
+        "src/aksum_messagebench/association.py",
+        "corpus/semantic",
+        "tests/unit/test_time_semantics.py",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "11.11",
+      "section": 11,
+      "requirement": "Ethiopic preservation data",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/comparators.py",
+        "src/aksum_messagebench/time_semantics.py",
+        "src/aksum_messagebench/association.py",
+        "corpus/semantic",
+        "tests/unit/test_time_semantics.py",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "11.12",
+      "section": 11,
+      "requirement": "Bounded XSD Gregorian timestamp semantics",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/comparators.py",
+        "src/aksum_messagebench/time_semantics.py",
+        "src/aksum_messagebench/association.py",
+        "corpus/semantic",
+        "tests/unit/test_time_semantics.py",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "11.13",
+      "section": 11,
+      "requirement": "Unknown timezone/calendar yields INDETERMINATE",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/comparators.py",
+        "src/aksum_messagebench/time_semantics.py",
+        "src/aksum_messagebench/association.py",
+        "corpus/semantic",
+        "tests/unit/test_time_semantics.py",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "11.14",
+      "section": 11,
+      "requirement": "Repeated multiplicity and order/multiset semantics",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/comparators.py",
+        "src/aksum_messagebench/time_semantics.py",
+        "src/aksum_messagebench/association.py",
+        "corpus/semantic",
+        "tests/unit/test_time_semantics.py",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "11.15",
+      "section": 11,
+      "requirement": "Explicit single-item association",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/comparators.py",
+        "src/aksum_messagebench/time_semantics.py",
+        "src/aksum_messagebench/association.py",
+        "corpus/semantic",
+        "tests/unit/test_time_semantics.py",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "11.16",
+      "section": 11,
+      "requirement": "Unique declared batch keys",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/comparators.py",
+        "src/aksum_messagebench/time_semantics.py",
+        "src/aksum_messagebench/association.py",
+        "corpus/semantic",
+        "tests/unit/test_time_semantics.py",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "11.17",
+      "section": 11,
+      "requirement": "No amount/name matching heuristic",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/comparators.py",
+        "src/aksum_messagebench/time_semantics.py",
+        "src/aksum_messagebench/association.py",
+        "corpus/semantic",
+        "tests/unit/test_time_semantics.py",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "11.18",
+      "section": 11,
+      "requirement": "Ambiguous keys INDETERMINATE",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/comparators.py",
+        "src/aksum_messagebench/time_semantics.py",
+        "src/aksum_messagebench/association.py",
+        "corpus/semantic",
+        "tests/unit/test_time_semantics.py",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "11.19",
+      "section": 11,
+      "requirement": "Message-ID regeneration only under declared permission",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/comparators.py",
+        "src/aksum_messagebench/time_semantics.py",
+        "src/aksum_messagebench/association.py",
+        "corpus/semantic",
+        "tests/unit/test_time_semantics.py",
+        "docs/api.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "12.01",
+      "section": 12,
+      "requirement": "PASS/FAIL/NOT_APPLICABLE/UNSUPPORTED/INDETERMINATE model",
+      "status": "PASS",
+      "evidence": [
+        "schemas/report.schema.json",
+        "src/aksum_messagebench/engine.py",
+        "src/aksum_messagebench/reports.py",
+        "tests/unit/test_reports.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "12.02",
+      "section": 12,
+      "requirement": "Required unsupported/indeterminate checks prevent PASS",
+      "status": "PASS",
+      "evidence": [
+        "schemas/report.schema.json",
+        "src/aksum_messagebench/engine.py",
+        "src/aksum_messagebench/reports.py",
+        "tests/unit/test_reports.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "12.03",
+      "section": 12,
+      "requirement": "Scope notice in every report",
+      "status": "PASS",
+      "evidence": [
+        "schemas/report.schema.json",
+        "src/aksum_messagebench/engine.py",
+        "src/aksum_messagebench/reports.py",
+        "tests/unit/test_reports.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "13.01",
+      "section": 13,
+      "requirement": "Default reports omit names/accounts/raw XML/payment values/free text",
+      "status": "PASS",
+      "evidence": [
+        "tests/integration/test_coverage_privacy.py",
+        "tests/integration/test_gate.py",
+        "src/aksum_messagebench/reports.py",
+        "SECURITY.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "13.02",
+      "section": 13,
+      "requirement": "Report metadata limited to paths/IDs/codes/counts/hashes/versions",
+      "status": "PASS",
+      "evidence": [
+        "tests/integration/test_coverage_privacy.py",
+        "tests/integration/test_gate.py",
+        "src/aksum_messagebench/reports.py",
+        "SECURITY.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "13.03",
+      "section": 13,
+      "requirement": "Sanitized parser errors",
+      "status": "PASS",
+      "evidence": [
+        "tests/integration/test_coverage_privacy.py",
+        "tests/integration/test_gate.py",
+        "src/aksum_messagebench/reports.py",
+        "SECURITY.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "13.04",
+      "section": 13,
+      "requirement": "No production inputs in CI artifacts",
+      "status": "PASS",
+      "evidence": [
+        "tests/integration/test_coverage_privacy.py",
+        "tests/integration/test_gate.py",
+        "src/aksum_messagebench/reports.py",
+        "SECURITY.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "13.05",
+      "section": 13,
+      "requirement": "Hashes explicitly not anonymization",
+      "status": "PASS",
+      "evidence": [
+        "tests/integration/test_coverage_privacy.py",
+        "tests/integration/test_gate.py",
+        "src/aksum_messagebench/reports.py",
+        "SECURITY.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "13.06",
+      "section": 13,
+      "requirement": "No telemetry",
+      "status": "PASS",
+      "evidence": [
+        "tests/integration/test_coverage_privacy.py",
+        "tests/integration/test_gate.py",
+        "src/aksum_messagebench/reports.py",
+        "SECURITY.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "14.01",
+      "section": 14,
+      "requirement": "UTF-8 and LF canonical output",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        "tests/golden",
+        "tests/property/test_invariants.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "14.02",
+      "section": 14,
+      "requirement": "Stable ordering and JSON serialization",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        "tests/golden",
+        "tests/property/test_invariants.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "14.03",
+      "section": 14,
+      "requirement": "No timestamp in canonical results",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        "tests/golden",
+        "tests/property/test_invariants.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "14.04",
+      "section": 14,
+      "requirement": "Wall-clock data separated into build/benchmark evidence",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        "tests/golden",
+        "tests/property/test_invariants.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "14.05",
+      "section": 14,
+      "requirement": "Golden-hash regression checks",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        "tests/golden",
+        "tests/property/test_invariants.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.01",
+      "section": 15,
+      "requirement": "At least 24 fixtures and target 60 exceeded",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.02",
+      "section": 15,
+      "requirement": "Identity copy",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.03",
+      "section": 15,
+      "requirement": "Prefix rename with same QName",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.04",
+      "section": 15,
+      "requirement": "Foreign namespace with familiar names",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.05",
+      "section": 15,
+      "requirement": "Leading-zero loss",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.06",
+      "section": 15,
+      "requirement": "Account institution context loss",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.07",
+      "section": 15,
+      "requirement": "Decimal rounding",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.08",
+      "section": 15,
+      "requirement": "Currency change",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.09",
+      "section": 15,
+      "requirement": "Reference truncation",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.10",
+      "section": 15,
+      "requirement": "Removed remittance repetition",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.11",
+      "section": 15,
+      "requirement": "Duplicated remittance repetition",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.12",
+      "section": 15,
+      "requirement": "Altered Ethiopic text",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.13",
+      "section": 15,
+      "requirement": "Permitted regenerated message ID",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.14",
+      "section": 15,
+      "requirement": "Unsupported extension",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.15",
+      "section": 15,
+      "requirement": "Ambiguous batch association",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.16",
+      "section": 15,
+      "requirement": "Optional absence on both sides",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.17",
+      "section": 15,
+      "requirement": "Invalid target XSD",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.18",
+      "section": 15,
+      "requirement": "DTD/entity expansion attack",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.19",
+      "section": 15,
+      "requirement": "Remote schema/entity attempt",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.20",
+      "section": 15,
+      "requirement": "Deep XML",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.21",
+      "section": 15,
+      "requirement": "Oversized input",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.22",
+      "section": 15,
+      "requirement": "HTML payload",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.23",
+      "section": 15,
+      "requirement": "Malformed contract",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.24",
+      "section": 15,
+      "requirement": "Unsupported namespace",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.25",
+      "section": 15,
+      "requirement": "Missing required adapter output",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.26",
+      "section": 15,
+      "requirement": "Excluded-field behavior",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.27",
+      "section": 15,
+      "requirement": "Unexamined-field coverage",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.28",
+      "section": 15,
+      "requirement": "Positive controls for failure classes",
+      "status": "PASS",
+      "evidence": [
+        "corpus/index.json",
+        "corpus/semantic/index.json",
+        "evidence/security-corpus.json",
+        "scripts/security_corpus.py",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "15.29",
+      "section": 15,
+      "requirement": "Genuine independent release-corpus review",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "evidence/review-packet.json",
+        "docs/fixture-review.md"
+      ],
+      "disposition": "100 paired scenarios and 13 safety/workflow probes are prepared; genuine human decisions and reviewer authentication cannot be generated automatically."
+    },
+    {
+      "id": "16.01",
+      "section": 16,
+      "requirement": "pacs.008.001.08 priority implemented",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/extractors",
+        "schemas/catalog.json",
+        "README.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "16.02",
+      "section": 16,
+      "requirement": "pacs.002.001.10 priority implemented",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/extractors",
+        "schemas/catalog.json",
+        "README.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "16.03",
+      "section": 16,
+      "requirement": "No further message families before rigor",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/extractors",
+        "schemas/catalog.json",
+        "README.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "16.04",
+      "section": 16,
+      "requirement": "No claim these versions are used by Ethiopian rails",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/extractors",
+        "schemas/catalog.json",
+        "README.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "16.05",
+      "section": 16,
+      "requirement": "camt.053.001.08 third-family support",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "docs/camt053-asset-review.md"
+      ],
+      "disposition": "Rights-specific human clarification is required before future implementation of this excluded version; no fabricated extractor or permissive substitute XSD."
+    },
+    {
+      "id": "17.01",
+      "section": 17,
+      "requirement": "Unit tests",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "evidence/coverage.json",
+        "evidence/rule-coverage.json",
+        "evidence/mutation-results.json",
+        "evidence/differential-xsd.json",
+        "evidence/fuzz-extended.txt",
+        "evidence/contract-fuzz.json",
+        "evidence/native-advisory-review.json",
+        "evidence/dependency-audit.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "17.02",
+      "section": 17,
+      "requirement": "Golden tests",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "evidence/coverage.json",
+        "evidence/rule-coverage.json",
+        "evidence/mutation-results.json",
+        "evidence/differential-xsd.json",
+        "evidence/fuzz-extended.txt",
+        "evidence/contract-fuzz.json",
+        "evidence/native-advisory-review.json",
+        "evidence/dependency-audit.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "17.03",
+      "section": 17,
+      "requirement": "Property tests",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "evidence/coverage.json",
+        "evidence/rule-coverage.json",
+        "evidence/mutation-results.json",
+        "evidence/differential-xsd.json",
+        "evidence/fuzz-extended.txt",
+        "evidence/contract-fuzz.json",
+        "evidence/native-advisory-review.json",
+        "evidence/dependency-audit.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "17.04",
+      "section": 17,
+      "requirement": "Metamorphic tests",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "evidence/coverage.json",
+        "evidence/rule-coverage.json",
+        "evidence/mutation-results.json",
+        "evidence/differential-xsd.json",
+        "evidence/fuzz-extended.txt",
+        "evidence/contract-fuzz.json",
+        "evidence/native-advisory-review.json",
+        "evidence/dependency-audit.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "17.05",
+      "section": 17,
+      "requirement": "Targeted mutation tests",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "evidence/coverage.json",
+        "evidence/rule-coverage.json",
+        "evidence/mutation-results.json",
+        "evidence/differential-xsd.json",
+        "evidence/fuzz-extended.txt",
+        "evidence/contract-fuzz.json",
+        "evidence/native-advisory-review.json",
+        "evidence/dependency-audit.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "17.06",
+      "section": 17,
+      "requirement": "Parser fuzzing",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "evidence/coverage.json",
+        "evidence/rule-coverage.json",
+        "evidence/mutation-results.json",
+        "evidence/differential-xsd.json",
+        "evidence/fuzz-extended.txt",
+        "evidence/contract-fuzz.json",
+        "evidence/native-advisory-review.json",
+        "evidence/dependency-audit.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "17.07",
+      "section": 17,
+      "requirement": "Contract fuzzing",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "evidence/coverage.json",
+        "evidence/rule-coverage.json",
+        "evidence/mutation-results.json",
+        "evidence/differential-xsd.json",
+        "evidence/fuzz-extended.txt",
+        "evidence/contract-fuzz.json",
+        "evidence/native-advisory-review.json",
+        "evidence/dependency-audit.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "17.08",
+      "section": 17,
+      "requirement": "Integration tests",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "evidence/coverage.json",
+        "evidence/rule-coverage.json",
+        "evidence/mutation-results.json",
+        "evidence/differential-xsd.json",
+        "evidence/fuzz-extended.txt",
+        "evidence/contract-fuzz.json",
+        "evidence/native-advisory-review.json",
+        "evidence/dependency-audit.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "17.09",
+      "section": 17,
+      "requirement": "Second mature XSD processor over release corpus",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "evidence/coverage.json",
+        "evidence/rule-coverage.json",
+        "evidence/mutation-results.json",
+        "evidence/differential-xsd.json",
+        "evidence/fuzz-extended.txt",
+        "evidence/contract-fuzz.json",
+        "evidence/native-advisory-review.json",
+        "evidence/dependency-audit.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "17.10",
+      "section": 17,
+      "requirement": "At least 90% core branch coverage",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "evidence/coverage.json",
+        "evidence/rule-coverage.json",
+        "evidence/mutation-results.json",
+        "evidence/differential-xsd.json",
+        "evidence/fuzz-extended.txt",
+        "evidence/contract-fuzz.json",
+        "evidence/native-advisory-review.json",
+        "evidence/dependency-audit.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "17.11",
+      "section": 17,
+      "requirement": "Every required declaration has a killing mutation witness",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "evidence/coverage.json",
+        "evidence/rule-coverage.json",
+        "evidence/mutation-results.json",
+        "evidence/differential-xsd.json",
+        "evidence/fuzz-extended.txt",
+        "evidence/contract-fuzz.json",
+        "evidence/native-advisory-review.json",
+        "evidence/dependency-audit.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "17.12",
+      "section": 17,
+      "requirement": "All recorded corpus classifications match",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "evidence/coverage.json",
+        "evidence/rule-coverage.json",
+        "evidence/mutation-results.json",
+        "evidence/differential-xsd.json",
+        "evidence/fuzz-extended.txt",
+        "evidence/contract-fuzz.json",
+        "evidence/native-advisory-review.json",
+        "evidence/dependency-audit.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "17.13",
+      "section": 17,
+      "requirement": "No confirmed unresolved critical/high exploitable finding in bounded scans",
+      "status": "PASS",
+      "evidence": [
+        "tests",
+        "evidence/coverage.json",
+        "evidence/rule-coverage.json",
+        "evidence/mutation-results.json",
+        "evidence/differential-xsd.json",
+        "evidence/fuzz-extended.txt",
+        "evidence/contract-fuzz.json",
+        "evidence/native-advisory-review.json",
+        "evidence/dependency-audit.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "17.14",
+      "section": 17,
+      "requirement": "Independent correctness/security review",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "docs/fixture-review.md",
+        "docs/technical-review-checklist.md"
+      ],
+      "disposition": "Actual external review must be performed and authenticated by humans; automated tests and source inspection are not substituted for it."
+    },
+    {
+      "id": "18.01",
+      "section": 18,
+      "requirement": "Actual CPU/RAM/OS/Python/native versions/corpus recorded",
+      "status": "PASS",
+      "evidence": [
+        "scripts/benchmark.py",
+        "evidence/benchmark.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "18.02",
+      "section": 18,
+      "requirement": "Benchmark 1000 small pairs",
+      "status": "PASS",
+      "evidence": [
+        "scripts/benchmark.py",
+        "evidence/benchmark.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "18.03",
+      "section": 18,
+      "requirement": "Measured throughput",
+      "status": "PASS",
+      "evidence": [
+        "scripts/benchmark.py",
+        "evidence/benchmark.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "18.04",
+      "section": 18,
+      "requirement": "Measured p50 and p95 latency",
+      "status": "PASS",
+      "evidence": [
+        "scripts/benchmark.py",
+        "evidence/benchmark.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "18.05",
+      "section": 18,
+      "requirement": "Measured peak RSS",
+      "status": "PASS",
+      "evidence": [
+        "scripts/benchmark.py",
+        "evidence/benchmark.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "18.06",
+      "section": 18,
+      "requirement": "No invented performance claims",
+      "status": "PASS",
+      "evidence": [
+        "scripts/benchmark.py",
+        "evidence/benchmark.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "19.01",
+      "section": 19,
+      "requirement": "5 MiB input limit",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/input_guard.py",
+        "src/aksum_messagebench/xml_reader.py",
+        "src/aksum_messagebench/runtime_limits.py",
+        "tests/security/test_process_limits.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "19.02",
+      "section": 19,
+      "requirement": "Depth 64",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/input_guard.py",
+        "src/aksum_messagebench/xml_reader.py",
+        "src/aksum_messagebench/runtime_limits.py",
+        "tests/security/test_process_limits.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "19.03",
+      "section": 19,
+      "requirement": "100000 XML elements",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/input_guard.py",
+        "src/aksum_messagebench/xml_reader.py",
+        "src/aksum_messagebench/runtime_limits.py",
+        "tests/security/test_process_limits.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "19.04",
+      "section": 19,
+      "requirement": "1 MiB single text node",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/input_guard.py",
+        "src/aksum_messagebench/xml_reader.py",
+        "src/aksum_messagebench/runtime_limits.py",
+        "tests/security/test_process_limits.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "19.05",
+      "section": 19,
+      "requirement": "1000 assertions",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/input_guard.py",
+        "src/aksum_messagebench/xml_reader.py",
+        "src/aksum_messagebench/runtime_limits.py",
+        "tests/security/test_process_limits.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "19.06",
+      "section": 19,
+      "requirement": "Practical CPU/wall-clock/address-space limits",
+      "status": "PASS",
+      "evidence": [
+        "src/aksum_messagebench/input_guard.py",
+        "src/aksum_messagebench/xml_reader.py",
+        "src/aksum_messagebench/runtime_limits.py",
+        "tests/security/test_process_limits.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "20.01",
+      "section": 20,
+      "requirement": "Malicious XML threat and tests",
+      "status": "PASS",
+      "evidence": [
+        "docs/threat-model.md",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py",
+        ".github/workflows/checks.yml",
+        "dependency-lock-hashed.txt"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "20.02",
+      "section": 20,
+      "requirement": "Malicious contract threat and tests",
+      "status": "PASS",
+      "evidence": [
+        "docs/threat-model.md",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py",
+        ".github/workflows/checks.yml",
+        "dependency-lock-hashed.txt"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "20.03",
+      "section": 20,
+      "requirement": "Schema traversal defenses",
+      "status": "PASS",
+      "evidence": [
+        "docs/threat-model.md",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py",
+        ".github/workflows/checks.yml",
+        "dependency-lock-hashed.txt"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "20.04",
+      "section": 20,
+      "requirement": "Symlink/path defenses",
+      "status": "PASS",
+      "evidence": [
+        "docs/threat-model.md",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py",
+        ".github/workflows/checks.yml",
+        "dependency-lock-hashed.txt"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "20.05",
+      "section": 20,
+      "requirement": "Report privacy defenses",
+      "status": "PASS",
+      "evidence": [
+        "docs/threat-model.md",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py",
+        ".github/workflows/checks.yml",
+        "dependency-lock-hashed.txt"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "20.06",
+      "section": 20,
+      "requirement": "HTML injection defenses",
+      "status": "PASS",
+      "evidence": [
+        "docs/threat-model.md",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py",
+        ".github/workflows/checks.yml",
+        "dependency-lock-hashed.txt"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "20.07",
+      "section": 20,
+      "requirement": "False-assurance scope controls",
+      "status": "PASS",
+      "evidence": [
+        "docs/threat-model.md",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py",
+        ".github/workflows/checks.yml",
+        "dependency-lock-hashed.txt"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "20.08",
+      "section": 20,
+      "requirement": "Dependency compromise controls",
+      "status": "PASS",
+      "evidence": [
+        "docs/threat-model.md",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py",
+        ".github/workflows/checks.yml",
+        "dependency-lock-hashed.txt"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "20.09",
+      "section": 20,
+      "requirement": "Untrusted PR read-only/no-secrets controls",
+      "status": "PASS",
+      "evidence": [
+        "docs/threat-model.md",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py",
+        ".github/workflows/checks.yml",
+        "dependency-lock-hashed.txt"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "20.10",
+      "section": 20,
+      "requirement": "No dangerous adapter execution boundary",
+      "status": "PASS",
+      "evidence": [
+        "docs/threat-model.md",
+        "tests/security",
+        "tests/integration/test_coverage_privacy.py",
+        ".github/workflows/checks.yml",
+        "dependency-lock-hashed.txt"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "21.01",
+      "section": 21,
+      "requirement": "Complete package metadata and policy files",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "pyproject.toml",
+        "docs",
+        "src",
+        "schemas",
+        "contracts",
+        "corpus",
+        "tests",
+        "fuzz",
+        "examples",
+        "evidence",
+        ".github"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "21.02",
+      "section": 21,
+      "requirement": "Source modules and supported extractors",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "pyproject.toml",
+        "docs",
+        "src",
+        "schemas",
+        "contracts",
+        "corpus",
+        "tests",
+        "fuzz",
+        "examples",
+        "evidence",
+        ".github"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "21.03",
+      "section": 21,
+      "requirement": "Schemas/contracts/corpus/tests/fuzz/examples",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "pyproject.toml",
+        "docs",
+        "src",
+        "schemas",
+        "contracts",
+        "corpus",
+        "tests",
+        "fuzz",
+        "examples",
+        "evidence",
+        ".github"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "21.04",
+      "section": 21,
+      "requirement": "Architecture/security/reproduction/contributor documentation",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "pyproject.toml",
+        "docs",
+        "src",
+        "schemas",
+        "contracts",
+        "corpus",
+        "tests",
+        "fuzz",
+        "examples",
+        "evidence",
+        ".github"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "21.05",
+      "section": 21,
+      "requirement": "Evidence inventory and GitHub preparation files",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "pyproject.toml",
+        "docs",
+        "src",
+        "schemas",
+        "contracts",
+        "corpus",
+        "tests",
+        "fuzz",
+        "examples",
+        "evidence",
+        ".github"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "22.01",
+      "section": 22,
+      "requirement": "README starts with reproducible schema-valid-loss demo",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/quickstart.md",
+        "docs/fields.md"
+      ],
+      "disposition": "English engineering documentation is complete; the optional reviewed Amharic introduction is intentionally omitted as the mandate permits."
+    },
+    {
+      "id": "22.02",
+      "section": 22,
+      "requirement": "Problem and non-goals",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/quickstart.md",
+        "docs/fields.md"
+      ],
+      "disposition": "English engineering documentation is complete; the optional reviewed Amharic introduction is intentionally omitted as the mandate permits."
+    },
+    {
+      "id": "22.03",
+      "section": 22,
+      "requirement": "Quickstart",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/quickstart.md",
+        "docs/fields.md"
+      ],
+      "disposition": "English engineering documentation is complete; the optional reviewed Amharic introduction is intentionally omitted as the mandate permits."
+    },
+    {
+      "id": "22.04",
+      "section": 22,
+      "requirement": "Exact namespaces",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/quickstart.md",
+        "docs/fields.md"
+      ],
+      "disposition": "English engineering documentation is complete; the optional reviewed Amharic introduction is intentionally omitted as the mandate permits."
+    },
+    {
+      "id": "22.05",
+      "section": 22,
+      "requirement": "Tested and unexamined fields",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/quickstart.md",
+        "docs/fields.md"
+      ],
+      "disposition": "English engineering documentation is complete; the optional reviewed Amharic introduction is intentionally omitted as the mandate permits."
+    },
+    {
+      "id": "22.06",
+      "section": 22,
+      "requirement": "Security and limitations",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/quickstart.md",
+        "docs/fields.md"
+      ],
+      "disposition": "English engineering documentation is complete; the optional reviewed Amharic introduction is intentionally omitted as the mandate permits."
+    },
+    {
+      "id": "22.07",
+      "section": 22,
+      "requirement": "No-certification disclaimer",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/quickstart.md",
+        "docs/fields.md"
+      ],
+      "disposition": "English engineering documentation is complete; the optional reviewed Amharic introduction is intentionally omitted as the mandate permits."
+    },
+    {
+      "id": "22.08",
+      "section": 22,
+      "requirement": "Sample output",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/quickstart.md",
+        "docs/fields.md"
+      ],
+      "disposition": "English engineering documentation is complete; the optional reviewed Amharic introduction is intentionally omitted as the mandate permits."
+    },
+    {
+      "id": "22.09",
+      "section": 22,
+      "requirement": "Architecture diagram",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/quickstart.md",
+        "docs/fields.md"
+      ],
+      "disposition": "English engineering documentation is complete; the optional reviewed Amharic introduction is intentionally omitted as the mandate permits."
+    },
+    {
+      "id": "22.10",
+      "section": 22,
+      "requirement": "File-handoff integration",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/quickstart.md",
+        "docs/fields.md"
+      ],
+      "disposition": "English engineering documentation is complete; the optional reviewed Amharic introduction is intentionally omitted as the mandate permits."
+    },
+    {
+      "id": "22.11",
+      "section": 22,
+      "requirement": "Contribution instructions",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/quickstart.md",
+        "docs/fields.md"
+      ],
+      "disposition": "English engineering documentation is complete; the optional reviewed Amharic introduction is intentionally omitted as the mandate permits."
+    },
+    {
+      "id": "22.12",
+      "section": 22,
+      "requirement": "Amharic introduction omitted rather than unreviewed machine translation",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/quickstart.md",
+        "docs/fields.md"
+      ],
+      "disposition": "English engineering documentation is complete; the optional reviewed Amharic introduction is intentionally omitted as the mandate permits."
+    },
+    {
+      "id": "23.01",
+      "section": 23,
+      "requirement": "Original code Apache-2.0",
+      "status": "PASS",
+      "evidence": [
+        "LICENSE",
+        "NOTICE",
+        "evidence/rights-register.json",
+        "evidence/dependency-license-policy.json",
+        "evidence/native-source-pins.json",
+        "scripts/prepare_bundle.py",
+        "docs/camt053-asset-review.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "23.02",
+      "section": 23,
+      "requirement": "Original synthetic fixtures Apache-2.0",
+      "status": "PASS",
+      "evidence": [
+        "LICENSE",
+        "NOTICE",
+        "evidence/rights-register.json",
+        "evidence/dependency-license-policy.json",
+        "evidence/native-source-pins.json",
+        "scripts/prepare_bundle.py",
+        "docs/camt053-asset-review.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "23.03",
+      "section": 23,
+      "requirement": "Rights register with source/version/hash/terms/status/modification/decision",
+      "status": "PASS",
+      "evidence": [
+        "LICENSE",
+        "NOTICE",
+        "evidence/rights-register.json",
+        "evidence/dependency-license-policy.json",
+        "evidence/native-source-pins.json",
+        "scripts/prepare_bundle.py",
+        "docs/camt053-asset-review.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "23.04",
+      "section": 23,
+      "requirement": "No paid ISO publications",
+      "status": "PASS",
+      "evidence": [
+        "LICENSE",
+        "NOTICE",
+        "evidence/rights-register.json",
+        "evidence/dependency-license-policy.json",
+        "evidence/native-source-pins.json",
+        "scripts/prepare_bundle.py",
+        "docs/camt053-asset-review.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "23.05",
+      "section": 23,
+      "requirement": "No proprietary SWIFT usage profiles",
+      "status": "PASS",
+      "evidence": [
+        "LICENSE",
+        "NOTICE",
+        "evidence/rights-register.json",
+        "evidence/dependency-license-policy.json",
+        "evidence/native-source-pins.json",
+        "scripts/prepare_bundle.py",
+        "docs/camt053-asset-review.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "23.06",
+      "section": 23,
+      "requirement": "No commercial BIC directories",
+      "status": "PASS",
+      "evidence": [
+        "LICENSE",
+        "NOTICE",
+        "evidence/rights-register.json",
+        "evidence/dependency-license-policy.json",
+        "evidence/native-source-pins.json",
+        "scripts/prepare_bundle.py",
+        "docs/camt053-asset-review.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "23.07",
+      "section": 23,
+      "requirement": "No vendor fixtures",
+      "status": "PASS",
+      "evidence": [
+        "LICENSE",
+        "NOTICE",
+        "evidence/rights-register.json",
+        "evidence/dependency-license-policy.json",
+        "evidence/native-source-pins.json",
+        "scripts/prepare_bundle.py",
+        "docs/camt053-asset-review.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "23.08",
+      "section": 23,
+      "requirement": "No private EATS/EthSwitch specifications",
+      "status": "PASS",
+      "evidence": [
+        "LICENSE",
+        "NOTICE",
+        "evidence/rights-register.json",
+        "evidence/dependency-license-policy.json",
+        "evidence/native-source-pins.json",
+        "scripts/prepare_bundle.py",
+        "docs/camt053-asset-review.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "23.09",
+      "section": 23,
+      "requirement": "Uncertain camt asset excluded",
+      "status": "PASS",
+      "evidence": [
+        "LICENSE",
+        "NOTICE",
+        "evidence/rights-register.json",
+        "evidence/dependency-license-policy.json",
+        "evidence/native-source-pins.json",
+        "scripts/prepare_bundle.py",
+        "docs/camt053-asset-review.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "23.10",
+      "section": 23,
+      "requirement": "Useful zero-fee default repository",
+      "status": "PASS",
+      "evidence": [
+        "LICENSE",
+        "NOTICE",
+        "evidence/rights-register.json",
+        "evidence/dependency-license-policy.json",
+        "evidence/native-source-pins.json",
+        "scripts/prepare_bundle.py",
+        "docs/camt053-asset-review.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "23.11",
+      "section": 23,
+      "requirement": "Native LGPL source/notices/rebuild materials",
+      "status": "PASS",
+      "evidence": [
+        "LICENSE",
+        "NOTICE",
+        "evidence/rights-register.json",
+        "evidence/dependency-license-policy.json",
+        "evidence/native-source-pins.json",
+        "scripts/prepare_bundle.py",
+        "docs/camt053-asset-review.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.01",
+      "section": 24,
+      "requirement": "PR formatting",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.02",
+      "section": 24,
+      "requirement": "PR typing",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.03",
+      "section": 24,
+      "requirement": "PR unit/golden/property tests",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.04",
+      "section": 24,
+      "requirement": "Bounded parser and contract fuzz smoke",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.05",
+      "section": 24,
+      "requirement": "Secret scanning",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.06",
+      "section": 24,
+      "requirement": "Dependency advisory scanning",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.07",
+      "section": 24,
+      "requirement": "Dependency license checks",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.08",
+      "section": 24,
+      "requirement": "SAST",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.09",
+      "section": 24,
+      "requirement": "Manifest/corpus validation",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.10",
+      "section": 24,
+      "requirement": "Actions pinned to commit SHA",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.11",
+      "section": 24,
+      "requirement": "Read-only default token",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.12",
+      "section": 24,
+      "requirement": "No pull_request_target on contributor code",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.13",
+      "section": 24,
+      "requirement": "No secret-dependent PR jobs",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.14",
+      "section": 24,
+      "requirement": "Scheduled dependency updates",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.15",
+      "section": 24,
+      "requirement": "Longer fuzzing",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.16",
+      "section": 24,
+      "requirement": "Scorecard configuration",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.17",
+      "section": 24,
+      "requirement": "Protected manual release workflow configuration",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.18",
+      "section": 24,
+      "requirement": "Clean build and install check",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.19",
+      "section": 24,
+      "requirement": "SBOM/checksums",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.20",
+      "section": 24,
+      "requirement": "Sigstore signing and identity verification configuration",
+      "status": "PASS",
+      "evidence": [
+        ".github/workflows/checks.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/release.yml",
+        ".github/dependabot.yml",
+        "evidence/actionlint.txt",
+        "scripts/check_all.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "24.21",
+      "section": 24,
+      "requirement": "Actual hosted CI runs and repository protections",
+      "status": "PASS",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        "evidence/recognition-pr-ci.json"
+      ],
+      "disposition": "Actual hosted CI and protection are verified, with seven successful main workflows and green protected-PR checks."
+    },
+    {
+      "id": "24.22",
+      "section": 24,
+      "requirement": "Actual human release approval",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "scripts/owner_setup.py",
+        "docs/github-publication.md",
+        ".github/workflows/release.yml"
+      ],
+      "disposition": "Real independent review and protected human approval are required for the formal tag-backed release; no approval is fabricated."
+    },
+    {
+      "id": "24.23",
+      "section": 24,
+      "requirement": "Actual organization-identity Sigstore signature",
+      "status": "PASS",
+      "evidence": [
+        "evidence/hosted-artifact-local-verification.json",
+        "evidence/hosted-signature-verification.txt"
+      ],
+      "disposition": "Authentic company-repository OIDC signature obtained and verified against the exact main snapshot workflow; no human approval inferred."
+    },
+    {
+      "id": "25.01",
+      "section": 25,
+      "requirement": "SBOM includes Python and native XML dependencies",
+      "status": "PASS",
+      "evidence": [
+        "evidence/sbom.cdx.json",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py",
+        "scripts/release_provenance.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "25.02",
+      "section": 25,
+      "requirement": "Wheel/sdist SHA-256",
+      "status": "PASS",
+      "evidence": [
+        "evidence/sbom.cdx.json",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py",
+        "scripts/release_provenance.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "25.03",
+      "section": 25,
+      "requirement": "Source commit and toolchain provenance",
+      "status": "PASS",
+      "evidence": [
+        "evidence/sbom.cdx.json",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py",
+        "scripts/release_provenance.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "25.04",
+      "section": 25,
+      "requirement": "Dependency lock hashes",
+      "status": "PASS",
+      "evidence": [
+        "evidence/sbom.cdx.json",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py",
+        "scripts/release_provenance.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "25.05",
+      "section": 25,
+      "requirement": "Schema hashes",
+      "status": "PASS",
+      "evidence": [
+        "evidence/sbom.cdx.json",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py",
+        "scripts/release_provenance.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "25.06",
+      "section": 25,
+      "requirement": "Contract hashes",
+      "status": "PASS",
+      "evidence": [
+        "evidence/sbom.cdx.json",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py",
+        "scripts/release_provenance.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "25.07",
+      "section": 25,
+      "requirement": "Corpus manifest hash",
+      "status": "PASS",
+      "evidence": [
+        "evidence/sbom.cdx.json",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py",
+        "scripts/release_provenance.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "25.08",
+      "section": 25,
+      "requirement": "Attempt reproducible unsigned builds",
+      "status": "PASS",
+      "evidence": [
+        "evidence/sbom.cdx.json",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py",
+        "scripts/release_provenance.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "25.09",
+      "section": 25,
+      "requirement": "Claim byte equivalence only on measured matching builds",
+      "status": "PASS",
+      "evidence": [
+        "evidence/sbom.cdx.json",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py",
+        "scripts/release_provenance.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "26.01",
+      "section": 26,
+      "requirement": "All current Passing criteria assessed",
+      "status": "PASS",
+      "evidence": [
+        "docs/openssf-readiness.md",
+        "evidence/openssf-passing-assessment.json",
+        "evidence/scorecard-local.json",
+        "evidence/developer-tool-pins.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "26.02",
+      "section": 26,
+      "requirement": "Clear license/contribution/build/install/release/security docs",
+      "status": "PASS",
+      "evidence": [
+        "docs/openssf-readiness.md",
+        "evidence/openssf-passing-assessment.json",
+        "evidence/scorecard-local.json",
+        "evidence/developer-tool-pins.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "26.03",
+      "section": 26,
+      "requirement": "Tests/static/dynamic analysis",
+      "status": "PASS",
+      "evidence": [
+        "docs/openssf-readiness.md",
+        "evidence/openssf-passing-assessment.json",
+        "evidence/scorecard-local.json",
+        "evidence/developer-tool-pins.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "26.04",
+      "section": 26,
+      "requirement": "Dependency inventory/update process",
+      "status": "PASS",
+      "evidence": [
+        "docs/openssf-readiness.md",
+        "evidence/openssf-passing-assessment.json",
+        "evidence/scorecard-local.json",
+        "evidence/developer-tool-pins.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "26.05",
+      "section": 26,
+      "requirement": "Threat model and SBOM",
+      "status": "PASS",
+      "evidence": [
+        "docs/openssf-readiness.md",
+        "evidence/openssf-passing-assessment.json",
+        "evidence/scorecard-local.json",
+        "evidence/developer-tool-pins.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "26.06",
+      "section": 26,
+      "requirement": "Scorecard installed and local checks executed",
+      "status": "PASS",
+      "evidence": [
+        "docs/openssf-readiness.md",
+        "evidence/openssf-passing-assessment.json",
+        "evidence/scorecard-local.json",
+        "evidence/developer-tool-pins.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "26.07",
+      "section": 26,
+      "requirement": "No badge or score promise",
+      "status": "PASS",
+      "evidence": [
+        "docs/openssf-readiness.md",
+        "evidence/openssf-passing-assessment.json",
+        "evidence/scorecard-local.json",
+        "evidence/developer-tool-pins.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "26.08",
+      "section": 26,
+      "requirement": "Silver/Gold feasibility pathway",
+      "status": "PASS",
+      "evidence": [
+        "docs/openssf-readiness.md",
+        "evidence/openssf-passing-assessment.json",
+        "evidence/scorecard-local.json",
+        "evidence/developer-tool-pins.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "26.09",
+      "section": 26,
+      "requirement": "Public history and actual human governance controls",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "docs/openssf-readiness.md",
+        "docs/github-publication.md"
+      ],
+      "disposition": "Public source/history and controls now exist. Accountable human governance, actual maintenance behavior and MFA remain human responsibilities; no sustained history is invented."
+    },
+    {
+      "id": "26.10",
+      "section": 26,
+      "requirement": "Actual OpenSSF badge application/achievement",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "docs/openssf-readiness.md",
+        "docs/github-publication.md"
+      ],
+      "disposition": "Public account ownership, accountable maintainers, authentic reviews and badge account/application are real owner/human operations. Local files and a source-only Scorecard run cannot establish them."
+    },
+    {
+      "id": "26.11",
+      "section": 26,
+      "requirement": "Full public-repository Scorecard execution",
+      "status": "PASS",
+      "evidence": [
+        "evidence/scorecard-public.json",
+        "evidence/scorecard-full-public.json"
+      ],
+      "disposition": "Full public 18-check Scorecard action/CLI execution and published 7.1 result verified."
+    },
+    {
+      "id": "27.01",
+      "section": 27,
+      "requirement": "Repository description",
+      "status": "PASS",
+      "evidence": [
+        "docs/github-publication.md",
+        "docs/release-notes-0.2.0-rc.1.md",
+        ".github/ISSUE_TEMPLATE",
+        "CONTRIBUTING.md",
+        "docs/maintainer-guide.md",
+        "scripts/owner_setup.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "27.02",
+      "section": 27,
+      "requirement": "Topics/tags",
+      "status": "PASS",
+      "evidence": [
+        "docs/github-publication.md",
+        "docs/release-notes-0.2.0-rc.1.md",
+        ".github/ISSUE_TEMPLATE",
+        "CONTRIBUTING.md",
+        "docs/maintainer-guide.md",
+        "scripts/owner_setup.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "27.03",
+      "section": 27,
+      "requirement": "Social preview text",
+      "status": "PASS",
+      "evidence": [
+        "docs/github-publication.md",
+        "docs/release-notes-0.2.0-rc.1.md",
+        ".github/ISSUE_TEMPLATE",
+        "CONTRIBUTING.md",
+        "docs/maintainer-guide.md",
+        "scripts/owner_setup.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "27.04",
+      "section": 27,
+      "requirement": "About text",
+      "status": "PASS",
+      "evidence": [
+        "docs/github-publication.md",
+        "docs/release-notes-0.2.0-rc.1.md",
+        ".github/ISSUE_TEMPLATE",
+        "CONTRIBUTING.md",
+        "docs/maintainer-guide.md",
+        "scripts/owner_setup.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "27.05",
+      "section": 27,
+      "requirement": "Release notes",
+      "status": "PASS",
+      "evidence": [
+        "docs/github-publication.md",
+        "docs/release-notes-0.2.0-rc.1.md",
+        ".github/ISSUE_TEMPLATE",
+        "CONTRIBUTING.md",
+        "docs/maintainer-guide.md",
+        "scripts/owner_setup.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "27.06",
+      "section": 27,
+      "requirement": "Bug and feature templates",
+      "status": "PASS",
+      "evidence": [
+        "docs/github-publication.md",
+        "docs/release-notes-0.2.0-rc.1.md",
+        ".github/ISSUE_TEMPLATE",
+        "CONTRIBUTING.md",
+        "docs/maintainer-guide.md",
+        "scripts/owner_setup.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "27.07",
+      "section": 27,
+      "requirement": "Security reporting instructions",
+      "status": "PASS",
+      "evidence": [
+        "docs/github-publication.md",
+        "docs/release-notes-0.2.0-rc.1.md",
+        ".github/ISSUE_TEMPLATE",
+        "CONTRIBUTING.md",
+        "docs/maintainer-guide.md",
+        "scripts/owner_setup.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "27.08",
+      "section": 27,
+      "requirement": "Contributor and maintainer guides",
+      "status": "PASS",
+      "evidence": [
+        "docs/github-publication.md",
+        "docs/release-notes-0.2.0-rc.1.md",
+        ".github/ISSUE_TEMPLATE",
+        "CONTRIBUTING.md",
+        "docs/maintainer-guide.md",
+        "scripts/owner_setup.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "27.09",
+      "section": 27,
+      "requirement": "Prepare for Aksum Labs ownership",
+      "status": "PASS",
+      "evidence": [
+        "docs/github-publication.md",
+        "docs/release-notes-0.2.0-rc.1.md",
+        ".github/ISSUE_TEMPLATE",
+        "CONTRIBUTING.md",
+        "docs/maintainer-guide.md",
+        "scripts/owner_setup.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "27.10",
+      "section": 27,
+      "requirement": "Do not publish automatically",
+      "status": "PASS",
+      "evidence": [
+        "docs/github-publication.md",
+        "docs/release-notes-0.2.0-rc.1.md",
+        ".github/ISSUE_TEMPLATE",
+        "CONTRIBUTING.md",
+        "docs/maintainer-guide.md",
+        "scripts/owner_setup.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "27.11",
+      "section": 27,
+      "requirement": "Actual organization ownership/account configuration and publication",
+      "status": "PASS",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/recognition-pull-request.json"
+      ],
+      "disposition": "Actual public organization-owned repository and corporate App publication verified; protections enforced."
+    },
+    {
+      "id": "28.01",
+      "section": 28,
+      "requirement": "Use approved neutral public positioning",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "NOTICE",
+        "docs/github-publication.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "28.02",
+      "section": 28,
+      "requirement": "No official approval/certification/national-standard labels",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "NOTICE",
+        "docs/github-publication.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "28.03",
+      "section": 28,
+      "requirement": "No institutional logos",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "NOTICE",
+        "docs/github-publication.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "29.01",
+      "section": 29,
+      "requirement": "Concrete schema-valid semantic-loss baseline",
+      "status": "PASS",
+      "evidence": [
+        "evidence/baseline.json",
+        "docs/prior-art.md",
+        "README.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "29.02",
+      "section": 29,
+      "requirement": "Parser PASS",
+      "status": "PASS",
+      "evidence": [
+        "evidence/baseline.json",
+        "docs/prior-art.md",
+        "README.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "29.03",
+      "section": 29,
+      "requirement": "XSD PASS",
+      "status": "PASS",
+      "evidence": [
+        "evidence/baseline.json",
+        "docs/prior-art.md",
+        "README.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "29.04",
+      "section": 29,
+      "requirement": "Preservation rule FAIL",
+      "status": "PASS",
+      "evidence": [
+        "evidence/baseline.json",
+        "docs/prior-art.md",
+        "README.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "29.05",
+      "section": 29,
+      "requirement": "Existing-tool overlap disclosed",
+      "status": "PASS",
+      "evidence": [
+        "evidence/baseline.json",
+        "docs/prior-art.md",
+        "README.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "29.06",
+      "section": 29,
+      "requirement": "Added paired-comparison layer demonstrated",
+      "status": "PASS",
+      "evidence": [
+        "evidence/baseline.json",
+        "docs/prior-art.md",
+        "README.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "30.01",
+      "section": 30,
+      "requirement": "Gate A executable proposition",
+      "status": "PASS",
+      "evidence": [
+        "GATE_REPORT.md",
+        "evidence/corpus-verification.json",
+        "evidence/mutation-results.json",
+        "evidence/file-handoff.json",
+        "evidence/local-acceptance.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "30.02",
+      "section": 30,
+      "requirement": "Gate B automated correctness/incomplete-evidence behavior",
+      "status": "PASS",
+      "evidence": [
+        "GATE_REPORT.md",
+        "evidence/corpus-verification.json",
+        "evidence/mutation-results.json",
+        "evidence/file-handoff.json",
+        "evidence/local-acceptance.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "30.03",
+      "section": 30,
+      "requirement": "Gate C technical test completeness",
+      "status": "PASS",
+      "evidence": [
+        "GATE_REPORT.md",
+        "evidence/corpus-verification.json",
+        "evidence/mutation-results.json",
+        "evidence/file-handoff.json",
+        "evidence/local-acceptance.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "30.04",
+      "section": 30,
+      "requirement": "Gate D nontrivial language-neutral handoff",
+      "status": "PASS",
+      "evidence": [
+        "GATE_REPORT.md",
+        "evidence/corpus-verification.json",
+        "evidence/mutation-results.json",
+        "evidence/file-handoff.json",
+        "evidence/local-acceptance.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "30.05",
+      "section": 30,
+      "requirement": "Gate E bounded differentiation",
+      "status": "PASS",
+      "evidence": [
+        "GATE_REPORT.md",
+        "evidence/corpus-verification.json",
+        "evidence/mutation-results.json",
+        "evidence/file-handoff.json",
+        "evidence/local-acceptance.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "30.06",
+      "section": 30,
+      "requirement": "Gate F local engineering hygiene",
+      "status": "PASS",
+      "evidence": [
+        "GATE_REPORT.md",
+        "evidence/corpus-verification.json",
+        "evidence/mutation-results.json",
+        "evidence/file-handoff.json",
+        "evidence/local-acceptance.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "30.07",
+      "section": 30,
+      "requirement": "Gate G public-claim safety",
+      "status": "PASS",
+      "evidence": [
+        "GATE_REPORT.md",
+        "evidence/corpus-verification.json",
+        "evidence/mutation-results.json",
+        "evidence/file-handoff.json",
+        "evidence/local-acceptance.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "30.08",
+      "section": 30,
+      "requirement": "Gate B/C independent-review portions",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "docs/fixture-review.md",
+        "docs/github-publication.md"
+      ],
+      "disposition": "Only genuine independent reviewers and actual owner-controlled hosted settings remain; technical subchecks are separately evidenced."
+    },
+    {
+      "id": "30.09",
+      "section": 30,
+      "requirement": "Gate F hosted/human release portions",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "docs/fixture-review.md",
+        "docs/github-publication.md",
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json"
+      ],
+      "disposition": "Hosted checks, protection and signed candidate are verified. Gate F requires genuine human rights/release approval, which remains BLOCKED-BY-HUMAN; no technical configuration gap remains."
+    },
+    {
+      "id": "31.01",
+      "section": 31,
+      "requirement": "Check exact maintained upstream equivalent stop condition",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "docs/upstream-contingency.md",
+        "docs/camt053-asset-review.md",
+        "evidence/baseline.json"
+      ],
+      "disposition": "No standalone-project stop condition established by bounded investigation. Uncertain camt asset is excluded; core cleared functionality remains useful. No unsolicited upstream outreach."
+    },
+    {
+      "id": "31.02",
+      "section": 31,
+      "requirement": "Check public-asset rights stop condition",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "docs/upstream-contingency.md",
+        "docs/camt053-asset-review.md",
+        "evidence/baseline.json"
+      ],
+      "disposition": "No standalone-project stop condition established by bounded investigation. Uncertain camt asset is excluded; core cleared functionality remains useful. No unsolicited upstream outreach."
+    },
+    {
+      "id": "31.03",
+      "section": 31,
+      "requirement": "Check private-rule dependency stop condition",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "docs/upstream-contingency.md",
+        "docs/camt053-asset-review.md",
+        "evidence/baseline.json"
+      ],
+      "disposition": "No standalone-project stop condition established by bounded investigation. Uncertain camt asset is excluded; core cleared functionality remains useful. No unsolicited upstream outreach."
+    },
+    {
+      "id": "31.04",
+      "section": 31,
+      "requirement": "Check value beyond XSD stop condition",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "docs/upstream-contingency.md",
+        "docs/camt053-asset-review.md",
+        "evidence/baseline.json"
+      ],
+      "disposition": "No standalone-project stop condition established by bounded investigation. Uncertain camt asset is excluded; core cleared functionality remains useful. No unsolicited upstream outreach."
+    },
+    {
+      "id": "31.05",
+      "section": 31,
+      "requirement": "Check scheme-authority dependency stop condition",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "docs/upstream-contingency.md",
+        "docs/camt053-asset-review.md",
+        "evidence/baseline.json"
+      ],
+      "disposition": "No standalone-project stop condition established by bounded investigation. Uncertain camt asset is excluded; core cleared functionality remains useful. No unsolicited upstream outreach."
+    },
+    {
+      "id": "31.06",
+      "section": 31,
+      "requirement": "Prepare upstream contingency if a stop condition is established",
+      "status": "PASS",
+      "evidence": [
+        "docs/prior-art.md",
+        "docs/upstream-contingency.md",
+        "docs/camt053-asset-review.md",
+        "evidence/baseline.json"
+      ],
+      "disposition": "No standalone-project stop condition established by bounded investigation. Uncertain camt asset is excluded; core cleared functionality remains useful. No unsolicited upstream outreach."
+    },
+    {
+      "id": "32.01",
+      "section": 32,
+      "requirement": "Full repository",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.02",
+      "section": 32,
+      "requirement": "Working package",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.03",
+      "section": 32,
+      "requirement": "CLI",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.04",
+      "section": 32,
+      "requirement": "Minimum fixture count exceeded",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.05",
+      "section": 32,
+      "requirement": "Contracts",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.06",
+      "section": 32,
+      "requirement": "Test suite",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.07",
+      "section": 32,
+      "requirement": "Coverage report",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.08",
+      "section": 32,
+      "requirement": "Mutation evidence",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.09",
+      "section": 32,
+      "requirement": "Fuzz/security tests",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.10",
+      "section": 32,
+      "requirement": "Benchmark",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.11",
+      "section": 32,
+      "requirement": "SBOM",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.12",
+      "section": 32,
+      "requirement": "Release artifacts",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.13",
+      "section": 32,
+      "requirement": "Checksums",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.14",
+      "section": 32,
+      "requirement": "Unsigned provenance artifacts",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.15",
+      "section": 32,
+      "requirement": "Documentation",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.16",
+      "section": 32,
+      "requirement": "README demo",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.17",
+      "section": 32,
+      "requirement": "Prior-art comparison",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.18",
+      "section": 32,
+      "requirement": "Rights register",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.19",
+      "section": 32,
+      "requirement": "OpenSSF assessment",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.20",
+      "section": 32,
+      "requirement": "Gate report",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.21",
+      "section": 32,
+      "requirement": "Release-readiness report",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.22",
+      "section": 32,
+      "requirement": "Limitations",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.23",
+      "section": 32,
+      "requirement": "Exact reproduction commands",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "FINAL_COMPLETION_REPORT.md",
+        "docs/reproduce.md",
+        "evidence",
+        "scripts/reproducible_build.py",
+        "scripts/prepare_bundle.py"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "32.24",
+      "section": 32,
+      "requirement": "Identity-backed signed public release artifacts",
+      "status": "PASS",
+      "evidence": [
+        "evidence/hosted-artifact-local-verification.json",
+        "evidence/hosted-signature-verification.txt"
+      ],
+      "disposition": "Wheel/sdist and offline candidate artifacts have an authentic signed manifest and GitHub attestation; all 31 files verified locally. This satisfies signed-artifact delivery, not formal reviewed-release approval."
+    },
+    {
+      "id": "33.01",
+      "section": 33,
+      "requirement": "Gate report technical answers",
+      "status": "PASS",
+      "evidence": [
+        "GATE_REPORT.md",
+        "evidence"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "33.02",
+      "section": 33,
+      "requirement": "Correctness counts and measured coverage/mutations",
+      "status": "PASS",
+      "evidence": [
+        "GATE_REPORT.md",
+        "evidence"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "33.03",
+      "section": 33,
+      "requirement": "Security/advisory/SBOM/redaction answers",
+      "status": "PASS",
+      "evidence": [
+        "GATE_REPORT.md",
+        "evidence"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "33.04",
+      "section": 33,
+      "requirement": "Asset rights and remaining human determinations",
+      "status": "PASS",
+      "evidence": [
+        "GATE_REPORT.md",
+        "evidence"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "33.05",
+      "section": 33,
+      "requirement": "OpenSSF met controls and human blockers",
+      "status": "PASS",
+      "evidence": [
+        "GATE_REPORT.md",
+        "evidence"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "33.06",
+      "section": 33,
+      "requirement": "Explicit release decision",
+      "status": "PASS",
+      "evidence": [
+        "GATE_REPORT.md",
+        "evidence"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "34.01",
+      "section": 34,
+      "requirement": "Version recommendation",
+      "status": "PASS",
+      "evidence": [
+        "RELEASE_READINESS.md",
+        "LIMITATIONS.md",
+        "docs/fields.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "34.02",
+      "section": 34,
+      "requirement": "Exact supported namespaces/fields",
+      "status": "PASS",
+      "evidence": [
+        "RELEASE_READINESS.md",
+        "LIMITATIONS.md",
+        "docs/fields.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "34.03",
+      "section": 34,
+      "requirement": "Unsupported features and limitations",
+      "status": "PASS",
+      "evidence": [
+        "RELEASE_READINESS.md",
+        "LIMITATIONS.md",
+        "docs/fields.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "34.04",
+      "section": 34,
+      "requirement": "Security/licensing caveats",
+      "status": "PASS",
+      "evidence": [
+        "RELEASE_READINESS.md",
+        "LIMITATIONS.md",
+        "docs/fields.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "34.05",
+      "section": 34,
+      "requirement": "Allowed and forbidden claims",
+      "status": "PASS",
+      "evidence": [
+        "RELEASE_READINESS.md",
+        "LIMITATIONS.md",
+        "docs/fields.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "34.06",
+      "section": 34,
+      "requirement": "External-review status",
+      "status": "PASS",
+      "evidence": [
+        "RELEASE_READINESS.md",
+        "LIMITATIONS.md",
+        "docs/fields.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "34.07",
+      "section": 34,
+      "requirement": "v1.0 criteria assessment",
+      "status": "PASS",
+      "evidence": [
+        "RELEASE_READINESS.md",
+        "LIMITATIONS.md",
+        "docs/fields.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "35.01",
+      "section": 35,
+      "requirement": "Semver-compatible prerelease identifier",
+      "status": "PASS",
+      "evidence": [
+        "pyproject.toml",
+        "CHANGELOG.md",
+        "RELEASE_READINESS.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "35.02",
+      "section": 35,
+      "requirement": "Do not call automated completion v1.0",
+      "status": "PASS",
+      "evidence": [
+        "pyproject.toml",
+        "CHANGELOG.md",
+        "RELEASE_READINESS.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "35.03",
+      "section": 35,
+      "requirement": "At least 100 scenarios prepared for review",
+      "status": "PASS",
+      "evidence": [
+        "pyproject.toml",
+        "CHANGELOG.md",
+        "RELEASE_READINESS.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "35.04",
+      "section": 35,
+      "requirement": "Version boundaries reflect actual capabilities",
+      "status": "PASS",
+      "evidence": [
+        "pyproject.toml",
+        "CHANGELOG.md",
+        "RELEASE_READINESS.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "35.05",
+      "section": 35,
+      "requirement": "v0.5 three-cleared-version/reviewed-corpus criteria",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "RELEASE_READINESS.md",
+        "docs/camt053-asset-review.md",
+        "docs/fixture-review.md"
+      ],
+      "disposition": "No v0.5/v1.0 promotion until actual rights/review/governance requirements are met. Preparing 100 cases is not obtaining 100 independent case approvals."
+    },
+    {
+      "id": "35.06",
+      "section": 35,
+      "requirement": "v1.0 external review/use/governance and stable-public-API approval",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "RELEASE_READINESS.md",
+        "docs/camt053-asset-review.md",
+        "docs/fixture-review.md"
+      ],
+      "disposition": "No v0.5/v1.0 promotion until actual rights/review/governance requirements are met. Preparing 100 cases is not obtaining 100 independent case approvals."
+    },
+    {
+      "id": "36.01",
+      "section": 36,
+      "requirement": "Technical value before polish",
+      "status": "PASS",
+      "evidence": [
+        "GATE_REPORT.md",
+        "evidence",
+        "docs/expansion-decision.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "36.02",
+      "section": 36,
+      "requirement": "Correctness and semantic precision",
+      "status": "PASS",
+      "evidence": [
+        "GATE_REPORT.md",
+        "evidence",
+        "docs/expansion-decision.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "36.03",
+      "section": 36,
+      "requirement": "Security and corpus before claims",
+      "status": "PASS",
+      "evidence": [
+        "GATE_REPORT.md",
+        "evidence",
+        "docs/expansion-decision.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "36.04",
+      "section": 36,
+      "requirement": "Reproducibility and rights",
+      "status": "PASS",
+      "evidence": [
+        "GATE_REPORT.md",
+        "evidence",
+        "docs/expansion-decision.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "36.05",
+      "section": 36,
+      "requirement": "Documentation/release/OpenSSF preparation",
+      "status": "PASS",
+      "evidence": [
+        "GATE_REPORT.md",
+        "evidence",
+        "docs/expansion-decision.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "36.06",
+      "section": 36,
+      "requirement": "No correctness sacrifice for appearance",
+      "status": "PASS",
+      "evidence": [
+        "GATE_REPORT.md",
+        "evidence",
+        "docs/expansion-decision.md"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "37.01",
+      "section": 37,
+      "requirement": "One-command reproducible schema-valid loss demonstration",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/reproduce.md",
+        "scripts/check_all.py",
+        "evidence/review-packet.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "37.02",
+      "section": 37,
+      "requirement": "Exact violated rule inspectable",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/reproduce.md",
+        "scripts/check_all.py",
+        "evidence/review-packet.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "37.03",
+      "section": 37,
+      "requirement": "Unexamined coverage inspectable",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/reproduce.md",
+        "scripts/check_all.py",
+        "evidence/review-packet.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "37.04",
+      "section": 37,
+      "requirement": "Offline verification and honest scope",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/reproduce.md",
+        "scripts/check_all.py",
+        "evidence/review-packet.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    },
+    {
+      "id": "37.05",
+      "section": 37,
+      "requirement": "Substance suitable for skeptical technical review",
+      "status": "PASS",
+      "evidence": [
+        "README.md",
+        "docs/reproduce.md",
+        "scripts/check_all.py",
+        "evidence/review-packet.json"
+      ],
+      "disposition": "Implemented and verified within the declared offline scope."
+    }
+  ]
+}

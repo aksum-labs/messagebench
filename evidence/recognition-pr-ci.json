@@ -1,0 +1,314 @@
+{
+  "repository": "aksum-labs/messagebench",
+  "source_commit": "7d620ae4a63ba7b3ba4ad4720763883d3e7df6ca",
+  "scope": "Actual PR checks at this head. Later receipt-only commits have their own runs; no retroactive signing/review claim.",
+  "runs": [
+    {
+      "id": 36843481802,
+      "name": "Checks",
+      "event": "pull_request",
+      "commit": "7d620ae4a63ba7b3ba4ad4720763883d3e7df6ca",
+      "url": "https://github.com/aksum-labs/messagebench/actions/runs/36843481802",
+      "status": "completed",
+      "conclusion": "success",
+      "actor": "aksum-labs-publisher[bot]",
+      "jobs": [
+        {
+          "id": 110307885282,
+          "name": "checks",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run python -m pip install --require-hashes -r dependency-lock-hashed.txt",
+              "conclusion": "success"
+            },
+            {
+              "name": "Build reviewed native XML dependencies",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install local native wheel",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run python -m pip install --no-deps --no-build-isolation -e .",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run ruff check src tests scripts fuzz",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run ruff format --check src tests scripts fuzz",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run mypy src",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run python scripts/fetch_dev_tools.py --out \"$RUNNER_TEMP/dev-tools\" actionlint",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run \"$RUNNER_TEMP/dev-tools/actionlint/actionlint\" .github/workflows/*.yml",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run python scripts/check_secrets.py",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run python scripts/check_licenses.py",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run python scripts/check_recognition.py",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run python scripts/inventory.py --out \"$RUNNER_TEMP/inventory\"",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run coverage run -m pytest -q",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run coverage json -o coverage-ci.json",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run python scripts/check_coverage.py coverage-ci.json",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run python fuzz/smoke.py --iterations 1000",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run python fuzz/contracts.py --iterations 1000",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run bandit -r src -ll",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run messagebench corpus verify corpus/index.json",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run messagebench corpus verify corpus/extended/index.json --contract contracts/pacs008-extended.json",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run messagebench corpus verify corpus/pacs002/index.json --contract contracts/pacs002-preserve.json",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run python scripts/differential_xsd.py",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run python scripts/security_corpus.py",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run python scripts/mutations.py",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run python -m build --no-isolation",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        },
+        {
+          "id": 110307885603,
+          "name": "dependencies",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run python -m pip install --require-hashes -r dependency-lock-hashed.txt",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run pip-audit --strict --disable-pip --no-deps -r dependency-lock.txt",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        },
+        {
+          "id": 110307885686,
+          "name": "release-controls",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Verify live controls with the actual read-only job token",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 36843481848,
+      "name": "CodeQL",
+      "event": "pull_request",
+      "commit": "7d620ae4a63ba7b3ba4ad4720763883d3e7df6ca",
+      "url": "https://github.com/aksum-labs/messagebench/actions/runs/36843481848",
+      "status": "completed",
+      "conclusion": "success",
+      "actor": "aksum-labs-publisher[bot]",
+      "jobs": [
+        {
+          "id": 110307885695,
+          "name": "analyze",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run github/codeql-action/init@1190a975f95ce23525efb6a3fc21ea29567c1b52",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run github/codeql-action/analyze@1190a975f95ce23525efb6a3fc21ea29567c1b52",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run github/codeql-action/analyze@1190a975f95ce23525efb6a3fc21ea29567c1b52",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run github/codeql-action/init@1190a975f95ce23525efb6a3fc21ea29567c1b52",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 36843481803,
+      "name": "Dependency review",
+      "event": "pull_request",
+      "commit": "7d620ae4a63ba7b3ba4ad4720763883d3e7df6ca",
+      "url": "https://github.com/aksum-labs/messagebench/actions/runs/36843481803",
+      "status": "completed",
+      "conclusion": "success",
+      "actor": "aksum-labs-publisher[bot]",
+      "jobs": [
+        {
+          "id": 110307885767,
+          "name": "dependency-review",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/dependency-review-action@2f920dad77d7f4f2ea876b66287b896de40dda79",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

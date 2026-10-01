@@ -1,0 +1,8 @@
+Source: 7d620ae4a63ba7b3ba4ad4720763883d3e7df6ca
+Run: https://github.com/aksum-labs/messagebench/actions/runs/36843481802
+Job: 110307885282
+Only selected public verification lines retained; no raw payloads or credentials.
+2026-10-01T09:35:22.8017781Z No unreviewed secret findings; network verification disabled. Reviewed public hashes retained.
+2026-10-01T09:35:41.6381485Z 154 passed in 18.00s
+2026-10-01T09:35:41.9305277Z Comparator/extractor branches: 99/102 (97.06%)
+2026-10-01T09:35:48.4536676Z   "all_matched": true,

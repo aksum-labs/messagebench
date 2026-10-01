@@ -2,6 +2,8 @@
 
 > Historical engineering acceptance snapshot (29 September 2026). Current publication/security/recognition state is recorded in EXTERNAL_RECOGNITION_COMPLETION_REPORT.md. This historical report is not a current visibility or badge claim.
 
+Current 1 October update: public source/protection, hosted CI and signed candidate are verified. The remaining B/C/F gates are genuine independent review, rights approval and formal release approval. See FINAL_COMPLETION_REPORT_CURRENT.md for all 389 current dispositions. The snapshot below retains its original dated decision.
+
 Release decision: **NOT READY — FIX REQUIRED** for public release. The remaining fixes are
 authentic human review/approval and owner-controlled activation, not unfinished implementation.
 The technical candidate and offline bundle are complete; nothing has been published.

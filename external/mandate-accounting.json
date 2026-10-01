@@ -319,100 +319,100 @@
       "id": "01.22",
       "section": 1,
       "requirement": "Main branch protection",
-      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "status": "ACHIEVED",
       "evidence": [
         "docs/github-hardening-report.md",
         ".github/workflows/pages.yml"
       ],
-      "disposition": "Main/tag protection and required environment reviewers are not verified. Company-App DNS/network access is currently denied by the execution environment; personal-account substitution is disallowed. Settings payloads are prepared outside repository."
+      "disposition": "Network recovered. Company App published ad10253, applied/read-back actual controls; hosted documentation deployed and SWH full visit/snapshot confirmed. See exact supporting evidence."
     },
     {
       "id": "01.23",
       "section": 1,
       "requirement": "No force push to main",
-      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "status": "ACHIEVED",
       "evidence": [
         "docs/github-hardening-report.md",
         ".github/workflows/pages.yml"
       ],
-      "disposition": "Main/tag protection and required environment reviewers are not verified. Company-App DNS/network access is currently denied by the execution environment; personal-account substitution is disallowed. Settings payloads are prepared outside repository."
+      "disposition": "Network recovered. Company App published ad10253, applied/read-back actual controls; hosted documentation deployed and SWH full visit/snapshot confirmed. See exact supporting evidence."
     },
     {
       "id": "01.24",
       "section": 1,
       "requirement": "Required PR review",
-      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "status": "ACHIEVED",
       "evidence": [
         "docs/github-hardening-report.md",
         ".github/workflows/pages.yml"
       ],
-      "disposition": "Main/tag protection and required environment reviewers are not verified. Company-App DNS/network access is currently denied by the execution environment; personal-account substitution is disallowed. Settings payloads are prepared outside repository."
+      "disposition": "Network recovered. Company App published ad10253, applied/read-back actual controls; hosted documentation deployed and SWH full visit/snapshot confirmed. See exact supporting evidence."
     },
     {
       "id": "01.25",
       "section": 1,
       "requirement": "Required status checks",
-      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "status": "ACHIEVED",
       "evidence": [
         "docs/github-hardening-report.md",
         ".github/workflows/pages.yml"
       ],
-      "disposition": "Main/tag protection and required environment reviewers are not verified. Company-App DNS/network access is currently denied by the execution environment; personal-account substitution is disallowed. Settings payloads are prepared outside repository."
+      "disposition": "Network recovered. Company App published ad10253, applied/read-back actual controls; hosted documentation deployed and SWH full visit/snapshot confirmed. See exact supporting evidence."
     },
     {
       "id": "01.26",
       "section": 1,
       "requirement": "Protected immutable version tags",
-      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "status": "ACHIEVED",
       "evidence": [
         "docs/github-hardening-report.md",
         ".github/workflows/pages.yml"
       ],
-      "disposition": "Main/tag protection and required environment reviewers are not verified. Company-App DNS/network access is currently denied by the execution environment; personal-account substitution is disallowed. Settings payloads are prepared outside repository."
+      "disposition": "Network recovered. Company App published ad10253, applied/read-back actual controls; hosted documentation deployed and SWH full visit/snapshot confirmed. See exact supporting evidence."
     },
     {
       "id": "01.27",
       "section": 1,
       "requirement": "Enforced release environment review",
-      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "status": "ACHIEVED",
       "evidence": [
         "docs/github-hardening-report.md",
         ".github/workflows/pages.yml"
       ],
-      "disposition": "Main/tag protection and required environment reviewers are not verified. Company-App DNS/network access is currently denied by the execution environment; personal-account substitution is disallowed. Settings payloads are prepared outside repository."
+      "disposition": "Network recovered. Company App published ad10253, applied/read-back actual controls; hosted documentation deployed and SWH full visit/snapshot confirmed. See exact supporting evidence."
     },
     {
       "id": "01.28",
       "section": 1,
       "requirement": "Final configuration read-back",
-      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "status": "ACHIEVED",
       "evidence": [
         "docs/github-hardening-report.md",
         ".github/workflows/pages.yml"
       ],
-      "disposition": "Main/tag protection and required environment reviewers are not verified. Company-App DNS/network access is currently denied by the execution environment; personal-account substitution is disallowed. Settings payloads are prepared outside repository."
+      "disposition": "Network recovered. Company App published ad10253, applied/read-back actual controls; hosted documentation deployed and SWH full visit/snapshot confirmed. See exact supporting evidence."
     },
     {
       "id": "01.29",
       "section": 1,
       "requirement": "Dependabot security-update activation",
-      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "status": "ACHIEVED",
       "evidence": [
         "docs/github-hardening-report.md",
         ".github/workflows/pages.yml"
       ],
-      "disposition": "Main/tag protection and required environment reviewers are not verified. Company-App DNS/network access is currently denied by the execution environment; personal-account substitution is disallowed. Settings payloads are prepared outside repository."
+      "disposition": "Network recovered. Company App published ad10253, applied/read-back actual controls; hosted documentation deployed and SWH full visit/snapshot confirmed. See exact supporting evidence."
     },
     {
       "id": "01.30",
       "section": 1,
       "requirement": "Optional Pages deployment",
-      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "status": "ACHIEVED",
       "evidence": [
         "docs/github-hardening-report.md",
         ".github/workflows/pages.yml"
       ],
-      "disposition": "Main/tag protection and required environment reviewers are not verified. Company-App DNS/network access is currently denied by the execution environment; personal-account substitution is disallowed. Settings payloads are prepared outside repository."
+      "disposition": "Network recovered. Company App published ad10253, applied/read-back actual controls; hosted documentation deployed and SWH full visit/snapshot confirmed. See exact supporting evidence."
     },
     {
       "id": "01.31",
@@ -433,7 +433,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.02",
@@ -444,7 +444,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.03",
@@ -455,7 +455,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.04",
@@ -466,7 +466,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.05",
@@ -477,7 +477,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.06",
@@ -488,7 +488,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.07",
@@ -499,7 +499,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.08",
@@ -510,7 +510,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.09",
@@ -521,7 +521,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.10",
@@ -532,7 +532,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.11",
@@ -543,7 +543,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.12",
@@ -554,7 +554,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.13",
@@ -565,7 +565,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.14",
@@ -576,7 +576,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.15",
@@ -587,7 +587,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.16",
@@ -598,7 +598,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.17",
@@ -609,7 +609,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.18",
@@ -620,7 +620,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.19",
@@ -631,7 +631,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.20",
@@ -642,7 +642,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.21",
@@ -653,7 +653,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.22",
@@ -664,7 +664,7 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.23",
@@ -675,17 +675,19 @@
         "evidence/hosted-recognition.json",
         "evidence/hosted-checks-excerpt.txt"
       ],
-      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+      "disposition": "Actual seven hosted workflows succeeded at ad10253; Checks ran 149 tests. Updated evidence PR CI is distinct; no inferred result for later commits."
     },
     {
       "id": "02.24",
       "section": 2,
       "requirement": "Hosted runs for final prepared documentation/workflow commit",
-      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "status": "ACHIEVED",
       "evidence": [
-        "docs/github-hardening-report.md"
+        "evidence/recognition-pr-ci.json",
+        "evidence/hosted-pr-checks-excerpt.txt",
+        "evidence/hosted-readonly-release-controls.txt"
       ],
-      "disposition": "Final local changes cannot be uploaded/dispatched while company-App networking is denied."
+      "disposition": "Actual protected PR source 7d620ae passed Checks (154 tests and read-only live release controls), CodeQL and dependency review. Exact run/job evidence retained. Human merge is separate and not bypassed."
     },
     {
       "id": "03.01",
@@ -698,7 +700,7 @@
         "docs/scorecard-remediation.md",
         "README.md"
       ],
-      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+      "disposition": "Actual published 7.1/10 at ad10253; official action and full CLI agree, all 18 checks recorded. Badge refers to earned public result; no score gaming."
     },
     {
       "id": "03.02",
@@ -711,7 +713,7 @@
         "docs/scorecard-remediation.md",
         "README.md"
       ],
-      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+      "disposition": "Actual published 7.1/10 at ad10253; official action and full CLI agree, all 18 checks recorded. Badge refers to earned public result; no score gaming."
     },
     {
       "id": "03.03",
@@ -724,7 +726,7 @@
         "docs/scorecard-remediation.md",
         "README.md"
       ],
-      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+      "disposition": "Actual published 7.1/10 at ad10253; official action and full CLI agree, all 18 checks recorded. Badge refers to earned public result; no score gaming."
     },
     {
       "id": "03.04",
@@ -737,7 +739,7 @@
         "docs/scorecard-remediation.md",
         "README.md"
       ],
-      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+      "disposition": "Actual published 7.1/10 at ad10253; official action and full CLI agree, all 18 checks recorded. Badge refers to earned public result; no score gaming."
     },
     {
       "id": "03.05",
@@ -750,7 +752,7 @@
         "docs/scorecard-remediation.md",
         "README.md"
       ],
-      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+      "disposition": "Actual published 7.1/10 at ad10253; official action and full CLI agree, all 18 checks recorded. Badge refers to earned public result; no score gaming."
     },
     {
       "id": "03.06",
@@ -763,7 +765,7 @@
         "docs/scorecard-remediation.md",
         "README.md"
       ],
-      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+      "disposition": "Actual published 7.1/10 at ad10253; official action and full CLI agree, all 18 checks recorded. Badge refers to earned public result; no score gaming."
     },
     {
       "id": "03.07",
@@ -776,7 +778,7 @@
         "docs/scorecard-remediation.md",
         "README.md"
       ],
-      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+      "disposition": "Actual published 7.1/10 at ad10253; official action and full CLI agree, all 18 checks recorded. Badge refers to earned public result; no score gaming."
     },
     {
       "id": "03.08",
@@ -789,7 +791,7 @@
         "docs/scorecard-remediation.md",
         "README.md"
       ],
-      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+      "disposition": "Actual published 7.1/10 at ad10253; official action and full CLI agree, all 18 checks recorded. Badge refers to earned public result; no score gaming."
     },
     {
       "id": "03.09",
@@ -802,7 +804,7 @@
         "docs/scorecard-remediation.md",
         "README.md"
       ],
-      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+      "disposition": "Actual published 7.1/10 at ad10253; official action and full CLI agree, all 18 checks recorded. Badge refers to earned public result; no score gaming."
     },
     {
       "id": "03.10",
@@ -815,7 +817,7 @@
         "docs/scorecard-remediation.md",
         "README.md"
       ],
-      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+      "disposition": "Actual published 7.1/10 at ad10253; official action and full CLI agree, all 18 checks recorded. Badge refers to earned public result; no score gaming."
     },
     {
       "id": "03.11",
@@ -828,7 +830,7 @@
         "docs/scorecard-remediation.md",
         "README.md"
       ],
-      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+      "disposition": "Actual published 7.1/10 at ad10253; official action and full CLI agree, all 18 checks recorded. Badge refers to earned public result; no score gaming."
     },
     {
       "id": "03.12",
@@ -841,17 +843,17 @@
         "docs/scorecard-remediation.md",
         "README.md"
       ],
-      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+      "disposition": "Actual published 7.1/10 at ad10253; official action and full CLI agree, all 18 checks recorded. Badge refers to earned public result; no score gaming."
     },
     {
       "id": "03.13",
       "section": 3,
       "requirement": "Rescan after protection and final badge upload",
-      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "status": "ACHIEVED",
       "evidence": [
         "docs/github-hardening-report.md"
       ],
-      "disposition": "Requires company-App networking, actual enforcement and final source publication."
+      "disposition": "Network recovered. Company App published ad10253, applied/read-back actual controls; hosted documentation deployed and SWH full visit/snapshot confirmed. See exact supporting evidence."
     },
     {
       "id": "04.01",
@@ -995,7 +997,7 @@
         "evidence/hosted-signature-verification.txt",
         ".github/workflows/snapshot.yml"
       ],
-      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA d8aaffbf9eceb4c146d6619eca8fae2b16fefc5697de054b567c93ac28fc862a; attestation 51751545. All 31 manifest files and exact Cosign identity verified locally. No independent reproduction claim."
     },
     {
       "id": "05.02",
@@ -1007,7 +1009,7 @@
         "evidence/hosted-signature-verification.txt",
         ".github/workflows/snapshot.yml"
       ],
-      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA d8aaffbf9eceb4c146d6619eca8fae2b16fefc5697de054b567c93ac28fc862a; attestation 51751545. All 31 manifest files and exact Cosign identity verified locally. No independent reproduction claim."
     },
     {
       "id": "05.03",
@@ -1019,7 +1021,7 @@
         "evidence/hosted-signature-verification.txt",
         ".github/workflows/snapshot.yml"
       ],
-      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA d8aaffbf9eceb4c146d6619eca8fae2b16fefc5697de054b567c93ac28fc862a; attestation 51751545. All 31 manifest files and exact Cosign identity verified locally. No independent reproduction claim."
     },
     {
       "id": "05.04",
@@ -1031,7 +1033,7 @@
         "evidence/hosted-signature-verification.txt",
         ".github/workflows/snapshot.yml"
       ],
-      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA d8aaffbf9eceb4c146d6619eca8fae2b16fefc5697de054b567c93ac28fc862a; attestation 51751545. All 31 manifest files and exact Cosign identity verified locally. No independent reproduction claim."
     },
     {
       "id": "05.05",
@@ -1043,7 +1045,7 @@
         "evidence/hosted-signature-verification.txt",
         ".github/workflows/snapshot.yml"
       ],
-      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA d8aaffbf9eceb4c146d6619eca8fae2b16fefc5697de054b567c93ac28fc862a; attestation 51751545. All 31 manifest files and exact Cosign identity verified locally. No independent reproduction claim."
     },
     {
       "id": "05.06",
@@ -1055,7 +1057,7 @@
         "evidence/hosted-signature-verification.txt",
         ".github/workflows/snapshot.yml"
       ],
-      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA d8aaffbf9eceb4c146d6619eca8fae2b16fefc5697de054b567c93ac28fc862a; attestation 51751545. All 31 manifest files and exact Cosign identity verified locally. No independent reproduction claim."
     },
     {
       "id": "05.07",
@@ -1067,7 +1069,7 @@
         "evidence/hosted-signature-verification.txt",
         ".github/workflows/snapshot.yml"
       ],
-      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA d8aaffbf9eceb4c146d6619eca8fae2b16fefc5697de054b567c93ac28fc862a; attestation 51751545. All 31 manifest files and exact Cosign identity verified locally. No independent reproduction claim."
     },
     {
       "id": "05.08",
@@ -1079,7 +1081,7 @@
         "evidence/hosted-signature-verification.txt",
         ".github/workflows/snapshot.yml"
       ],
-      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA d8aaffbf9eceb4c146d6619eca8fae2b16fefc5697de054b567c93ac28fc862a; attestation 51751545. All 31 manifest files and exact Cosign identity verified locally. No independent reproduction claim."
     },
     {
       "id": "05.09",
@@ -1091,7 +1093,7 @@
         "evidence/hosted-signature-verification.txt",
         ".github/workflows/snapshot.yml"
       ],
-      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA d8aaffbf9eceb4c146d6619eca8fae2b16fefc5697de054b567c93ac28fc862a; attestation 51751545. All 31 manifest files and exact Cosign identity verified locally. No independent reproduction claim."
     },
     {
       "id": "05.10",
@@ -1103,7 +1105,7 @@
         "evidence/hosted-signature-verification.txt",
         ".github/workflows/snapshot.yml"
       ],
-      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA d8aaffbf9eceb4c146d6619eca8fae2b16fefc5697de054b567c93ac28fc862a; attestation 51751545. All 31 manifest files and exact Cosign identity verified locally. No independent reproduction claim."
     },
     {
       "id": "05.11",
@@ -1115,7 +1117,7 @@
         "evidence/hosted-signature-verification.txt",
         ".github/workflows/snapshot.yml"
       ],
-      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA d8aaffbf9eceb4c146d6619eca8fae2b16fefc5697de054b567c93ac28fc862a; attestation 51751545. All 31 manifest files and exact Cosign identity verified locally. No independent reproduction claim."
     },
     {
       "id": "05.12",
@@ -1127,7 +1129,7 @@
         "evidence/hosted-signature-verification.txt",
         ".github/workflows/snapshot.yml"
       ],
-      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA d8aaffbf9eceb4c146d6619eca8fae2b16fefc5697de054b567c93ac28fc862a; attestation 51751545. All 31 manifest files and exact Cosign identity verified locally. No independent reproduction claim."
     },
     {
       "id": "05.13",
@@ -1139,7 +1141,7 @@
         "evidence/hosted-signature-verification.txt",
         ".github/workflows/snapshot.yml"
       ],
-      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA d8aaffbf9eceb4c146d6619eca8fae2b16fefc5697de054b567c93ac28fc862a; attestation 51751545. All 31 manifest files and exact Cosign identity verified locally. No independent reproduction claim."
     },
     {
       "id": "05.14",
@@ -1152,7 +1154,7 @@
         ".github/workflows/snapshot.yml",
         "evidence/local-recognition-offline-install.json"
       ],
-      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim. Refreshed release-preparation bundle also verified locally with socket calls denied, at source 8ff219c; not independently reviewed."
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA d8aaffbf9eceb4c146d6619eca8fae2b16fefc5697de054b567c93ac28fc862a; attestation 51751545. All 31 manifest files and exact Cosign identity verified locally. No independent reproduction claim. Refreshed release-preparation bundle also verified locally with socket calls denied, at source 8ff219c; not independently reviewed."
     },
     {
       "id": "05.15",
@@ -1177,7 +1179,7 @@
         "tests/integration/test_release_handoffs.py",
         "evidence/local-release-preparation.json"
       ],
-      "disposition": "Tag-specific workflow prepared and actionlint checked locally; enable only after real review and actual environment protection. No tag-backed signature exists yet. Nine new local negative/control tests verify fail-closed platform metadata handling; these are synthetic platform data, not human approvals."
+      "disposition": "Prepared source includes actual API response handling and version-matched privileged rule read-back. Formal execution still requires genuine reviewed packet and environment approval."
     },
     {
       "id": "06.01",
@@ -1915,11 +1917,11 @@
       "id": "11.07",
       "section": 11,
       "requirement": "Software Heritage save and actual snapshot verification",
-      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "status": "ACHIEVED",
       "evidence": [
         "docs/citation-and-archival.md"
       ],
-      "disposition": "Anti-bot denial encountered; no save receipt or SWHID. Current company shell also lacks network. A request would not prove archival."
+      "disposition": "Network recovered. Company App published ad10253, applied/read-back actual controls; hosted documentation deployed and SWH full visit/snapshot confirmed. See exact supporting evidence."
     },
     {
       "id": "12.01",
@@ -2130,11 +2132,11 @@
       "id": "13.08",
       "section": 13,
       "requirement": "Actual GitHub Pages publication and URL verification",
-      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "status": "ACHIEVED",
       "evidence": [
         ".github/workflows/pages.yml"
       ],
-      "disposition": "Requires company-App network/configuration, final workflow upload and real deployment. No successful Pages URL claimed."
+      "disposition": "Network recovered. Company App published ad10253, applied/read-back actual controls; hosted documentation deployed and SWH full visit/snapshot confirmed. See exact supporting evidence."
     },
     {
       "id": "14.01",
@@ -2379,7 +2381,7 @@
         "EXTERNAL_RECOGNITION_COMPLETION_REPORT.md",
         "evidence/recognition-hashes.json"
       ],
-      "disposition": "Report prepared locally; final publication and enforcement remain genuine environment blockers."
+      "disposition": "Current file hashes listed separately from actual platform artifact digests; no recursive/self-hash claim."
     },
     {
       "id": "19.04",
@@ -2495,18 +2497,18 @@
         "docs/release-publication.md",
         "docs/github-hardening-report.md"
       ],
-      "disposition": "Independent review/owner approval remain human gates; remaining configuration/upload additionally blocked by current company-network access."
+      "disposition": "Public protection, hosted evidence and signed snapshot are verified. Formal reviewed release and independent verification require genuine human reviews and protected owner approval; no network blocker remains."
     },
     {
       "id": "01.32",
       "section": 1,
       "requirement": "Disable release-environment administrator bypass and verify it",
-      "status": "READY-FOR-OWNER-APPROVAL",
+      "status": "ACHIEVED",
       "evidence": [
-        "docs/release-publication.md",
-        "scripts/release_guard.py"
+        "evidence/github-settings.json",
+        "evidence/release-controls-live-verification.json"
       ],
-      "disposition": "Documented owner environment-settings toggle; current REST update schema does not document a setter. Never infer enforcement from an unlisted JSON field. Guard requires actual false read-back."
+      "disposition": "Actual API accepted false; GET read-back confirms can_admins_bypass:false. Earlier missing documentation was not proof of impossibility."
     }
   ]
 }

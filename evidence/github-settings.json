@@ -11,22 +11,180 @@
       "enabled": true,
       "enforced_by_owner": false
     },
+    "main_protection": {
+      "allow_deletions": {
+        "enabled": false
+      },
+      "allow_force_pushes": {
+        "enabled": false
+      },
+      "allow_fork_syncing": {
+        "enabled": false
+      },
+      "block_creations": {
+        "enabled": false
+      },
+      "enforce_admins": {
+        "enabled": true,
+        "url": "https://api.github.com/repos/aksum-labs/messagebench/branches/main/protection/enforce_admins"
+      },
+      "lock_branch": {
+        "enabled": false
+      },
+      "required_conversation_resolution": {
+        "enabled": true
+      },
+      "required_linear_history": {
+        "enabled": true
+      },
+      "required_pull_request_reviews": {
+        "dismiss_stale_reviews": true,
+        "require_code_owner_reviews": true,
+        "require_last_push_approval": true,
+        "required_approving_review_count": 1,
+        "url": "https://api.github.com/repos/aksum-labs/messagebench/branches/main/protection/required_pull_request_reviews"
+      },
+      "required_signatures": {
+        "enabled": false,
+        "url": "https://api.github.com/repos/aksum-labs/messagebench/branches/main/protection/required_signatures"
+      },
+      "required_status_checks": {
+        "checks": [
+          {
+            "app_id": 15368,
+            "context": "checks"
+          },
+          {
+            "app_id": 15368,
+            "context": "dependencies"
+          },
+          {
+            "app_id": 15368,
+            "context": "dependency-review"
+          },
+          {
+            "app_id": 15368,
+            "context": "analyze"
+          }
+        ],
+        "contexts": [
+          "checks",
+          "dependencies",
+          "dependency-review",
+          "analyze"
+        ],
+        "contexts_url": "https://api.github.com/repos/aksum-labs/messagebench/branches/main/protection/required_status_checks/contexts",
+        "strict": true,
+        "url": "https://api.github.com/repos/aksum-labs/messagebench/branches/main/protection/required_status_checks"
+      },
+      "url": "https://api.github.com/repos/aksum-labs/messagebench/branches/main/protection"
+    },
+    "pages": {
+      "build_type": "workflow",
+      "cname": null,
+      "custom_404": false,
+      "html_url": "https://aksum-labs.github.io/messagebench/",
+      "https_enforced": true,
+      "pending_domain_unverified_at": null,
+      "protected_domain_state": null,
+      "public": true,
+      "source": {
+        "branch": "main",
+        "path": "/"
+      },
+      "status": null,
+      "url": "https://api.github.com/repos/aksum-labs/messagebench/pages"
+    },
     "private_reporting": {
       "enabled": true
     },
     "release_environment": {
-      "can_admins_bypass": true,
+      "can_admins_bypass": false,
       "created_at": "2026-10-01T07:33:54Z",
-      "deployment_branch_policy": null,
+      "deployment_branch_policy": {
+        "custom_branch_policies": true,
+        "protected_branches": false
+      },
       "html_url": "https://github.com/aksum-labs/messagebench/deployments/activity_log?environments_filter=release-review",
       "id": 23184314443,
       "name": "release-review",
       "node_id": "EN_kwDOU1IV5s8AAAAFZeSQSw",
-      "protection_rules": [],
-      "updated_at": "2026-10-01T07:33:54Z",
+      "protection_rules": [
+        {
+          "id": 67305695,
+          "node_id": "GA_kwDOU1IV5s4EAwDf",
+          "prevent_self_review": true,
+          "reviewers": [
+            {
+              "reviewer": {
+                "description": "Accountable MessageBench code and security stewardship; membership remains private.",
+                "html_url": "https://github.com/orgs/aksum-labs/teams/messagebench-maintainers",
+                "id": 19826182,
+                "members_url": "https://api.github.com/organizations/336061556/team/19826182/members{/member}",
+                "name": "MessageBench maintainers",
+                "node_id": "T_kwDOFAfkdM4BLoYG",
+                "notification_setting": "notifications_enabled",
+                "organization_id": 336061556,
+                "parent": null,
+                "permission": "push",
+                "privacy": "closed",
+                "repositories_url": "https://api.github.com/organizations/336061556/team/19826182/repos",
+                "slug": "messagebench-maintainers",
+                "type": "organization",
+                "url": "https://api.github.com/organizations/336061556/team/19826182"
+              },
+              "type": "Team"
+            }
+          ],
+          "type": "required_reviewers"
+        },
+        {
+          "id": 67305696,
+          "node_id": "GA_kwDOU1IV5s4EAwDg",
+          "type": "branch_policy"
+        }
+      ],
+      "updated_at": "2026-10-01T08:45:15Z",
       "url": "https://api.github.com/repos/aksum-labs/messagebench/environments/release-review"
     },
-    "rulesets": [],
+    "release_policies": {
+      "branch_policies": [
+        {
+          "id": 61619420,
+          "name": "main",
+          "node_id": "MDE2OkdhdGVCcmFuY2hQb2xpY3k2MTYxOTQyMA==",
+          "type": "branch"
+        },
+        {
+          "id": 61619422,
+          "name": "v0.2.0-rc.1",
+          "node_id": "MDE2OkdhdGVCcmFuY2hQb2xpY3k2MTYxOTQyMg==",
+          "type": "tag"
+        }
+      ],
+      "total_count": 2
+    },
+    "rulesets": [
+      {
+        "_links": {
+          "html": {
+            "href": "https://github.com/aksum-labs/messagebench/rules/24297769"
+          },
+          "self": {
+            "href": "https://api.github.com/repos/aksum-labs/messagebench/rulesets/24297769"
+          }
+        },
+        "created_at": "2026-10-01T08:46:53.972Z",
+        "enforcement": "active",
+        "id": 24297769,
+        "name": "Immutable release tags",
+        "node_id": "RRS_lACqUmVwb3NpdG9yec5TUhXmzgFywSk",
+        "source": "aksum-labs/messagebench",
+        "source_type": "Repository",
+        "target": "tag",
+        "updated_at": "2026-10-01T08:46:54.010Z"
+      }
+    ],
     "topics": {
       "names": [
         "data-quality",
@@ -44,9 +202,7 @@
       "default_workflow_permissions": "read"
     }
   },
-  "errors": {
-    "main_protection": "GitHub API rejected request: HTTP 404"
-  },
+  "errors": {},
   "human_membership": "private; no personal identities in public evidence",
   "repository": {
     "allow_merge_commit": false,
@@ -65,7 +221,7 @@
     "private": false,
     "security_and_analysis": {
       "dependabot_security_updates": {
-        "status": "disabled"
+        "status": "enabled"
       },
       "secret_scanning": {
         "status": "enabled"

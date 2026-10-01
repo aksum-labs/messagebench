@@ -1,0 +1,13 @@
+{
+  "actor": "aksum-labs-publisher[bot]",
+  "base": "main",
+  "created_at": "2026-10-01T09:24:05Z",
+  "draft": false,
+  "head_sha": "808213594e145c51dda5407cb3cc6844cade75fd",
+  "html_url": "https://github.com/aksum-labs/messagebench/pull/7",
+  "human_review": "required; not fabricated",
+  "merged": false,
+  "number": 7,
+  "state": "open",
+  "title": "Verify protected release controls and publish earned recognition evidence"
+}

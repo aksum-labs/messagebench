@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-01",
+  "source_commit": "ad10253e1d0d9a07282ab78290f024cdbf5a111b",
+  "artifact_id": 11149734913,
+  "platform_zip_sha256": "59fe072e57e45a8ad800ed4bd416572b227d119654c4277821015a6b2660148f",
+  "manifest_sha256": "d8aaffbf9eceb4c146d6619eca8fae2b16fefc5697de054b567c93ac28fc862a",
+  "manifest_files_verified": 31,
+  "exact_workflow_identity": "https://github.com/aksum-labs/messagebench/.github/workflows/snapshot.yml@refs/heads/main",
+  "oidc_issuer": "https://token.actions.githubusercontent.com",
+  "cosign_verification": "PASS",
+  "verification_environment": "Local WSL CPython/Linux environment, distinct from hosted build job; same agent, no independent-human review",
+  "independent_reproduction": false,
+  "reviewed_release": false,
+  "artifact_sha256": {
+    "messagebench-0.2.0rc1-py3-none-any.whl": "7cfa94a3dc01036bfa91f8e753d1b321e8ab196ca0601fd9bc98eb727ee14804",
+    "messagebench-0.2.0rc1.tar.gz": "87d4c9da416683fc318d92b6bfbad15d571ff18d9b209e75e6bfa2bbf73bcb32"
+  }
+}

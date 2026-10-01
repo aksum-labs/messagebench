@@ -1,6 +1,6 @@
 # OpenSSF readiness — current recognition assessment
 
-No official Passing badge has been obtained. Public Scorecard is 6.4/10 at 2bb62cb; these are separate programs. See [application preparation](openssf-best-practices-submission.md), [public Scorecard](scorecard-remediation.md) and [security evidence](../SECURITY-EVIDENCE.md).
+No official Passing badge has been obtained. Public Scorecard is 7.1/10 at ad10253; these are separate programs. See [application preparation](openssf-best-practices-submission.md), [public Scorecard](scorecard-remediation.md) and [security evidence](../SECURITY-EVIDENCE.md).
 
 Current official Passing source and hash: evidence/openssf-current-criteria.json. All 67 criteria follow. SATISFIED is repository self-assessment, not official acceptance.
 

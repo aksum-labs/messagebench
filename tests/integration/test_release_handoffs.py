@@ -134,3 +134,38 @@ def test_release_guard_rejects_unsafe_platform_controls(defect):
         values[4][0]["conditions"]["ref_name"]["exclude"] = ["refs/tags/v0.2.0-rc.1"]
     with pytest.raises(ValueError):
         script("release_guard").validate(*values)
+
+
+def masked_rule_fixture():
+    rule = deepcopy(platform_control_fixture()[4][0])
+    rule.update(id=123, updated_at="2026-10-01T00:00:00Z")
+    hidden = {k: v for k, v in rule.items() if k != "bypass_actors"}
+    record = {
+        "repository": "aksum-labs/messagebench",
+        "actor": "aksum-labs-publisher[bot]",
+        "rulesets": [rule],
+    }
+    return hidden, record
+
+
+def test_release_guard_binds_only_matching_privileged_rule_version():
+    hidden, record = masked_rule_fixture()
+    guard = script("release_guard")
+    bound = guard.bind_admin_readback([hidden], record)
+    guard.validate(*platform_control_fixture()[:4], bound)
+
+
+@pytest.mark.parametrize("defect", ["missing-record", "changed-version", "changed-scope", "bypass"])
+def test_release_guard_rejects_stale_or_unsafe_privileged_records(defect):
+    hidden, record = masked_rule_fixture()
+    guard = script("release_guard")
+    if defect == "missing-record":
+        record["rulesets"] = []
+    elif defect == "changed-version":
+        hidden["updated_at"] = "2026-10-02T00:00:00Z"
+    elif defect == "changed-scope":
+        hidden["conditions"]["ref_name"]["include"] = ["refs/tags/other*"]
+    elif defect == "bypass":
+        record["rulesets"][0]["bypass_actors"] = [{"actor_type": "OrganizationAdmin"}]
+    with pytest.raises(ValueError):
+        guard.validate(*platform_control_fixture()[:4], guard.bind_admin_readback([hidden], record))
