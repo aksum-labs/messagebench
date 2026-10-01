@@ -27,6 +27,7 @@ def packet():
             ROOT / "NOTICE",
             ROOT / "evidence/rights-register.json",
             ROOT / "evidence/native-source-pins.json",
+            ROOT / "evidence/tag-rules-admin-readback.json",
         ]
     )
     files.extend(sorted((ROOT / "third-party").glob("*")))

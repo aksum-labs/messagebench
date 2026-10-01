@@ -10,7 +10,7 @@
       "target": "Public hardened GitHub repository",
       "category": "repository",
       "free_or_paid": "free",
-      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "status": "ACHIEVED",
       "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
       "submission_url": "https://github.com/aksum-labs/messagebench",
       "date_checked": "2026-10-01",
@@ -19,11 +19,11 @@
       ],
       "prepared": true,
       "submitted": false,
-      "accepted": false,
+      "accepted": true,
       "public_listing_url": "https://github.com/aksum-labs/messagebench",
       "badge_url": null,
-      "blocker": "Public publication and most settings are verified. Main/tag protection and release environment reviewers remain unapplied or unverified. Current execution environment denies company-App network access (DNS failure); connected personal identity cannot replace the company bot.",
-      "next_action": "Resume repository-scoped company App network access; publish prepared changes, configure protections and read back every setting. Do not weaken privacy or review controls.",
+      "blocker": null,
+      "next_action": "Actual settings read back through the company App; refreshed facts/guard fix follow protected PR review.",
       "owner_approval_required": false
     },
     {
@@ -44,7 +44,7 @@
       "public_listing_url": "https://github.com/aksum-labs/messagebench/actions/runs/36831305315",
       "badge_url": null,
       "blocker": null,
-      "next_action": "Six successful hosted workflows at 2bb62cb1e0dcbbb91d265bb824eda274cbd9b217; see exact jobs and artifacts. Later local edits are not yet hosted.",
+      "next_action": "Seven successful hosted workflows at ad10253; 149 tests. Evidence-branch PR CI is recorded separately.",
       "owner_approval_required": false
     },
     {
@@ -85,7 +85,7 @@
       "public_listing_url": "https://scorecard.dev/viewer/?uri=github.com/aksum-labs/messagebench",
       "badge_url": "https://api.scorecard.dev/projects/github.com/aksum-labs/messagebench/badge",
       "blocker": null,
-      "next_action": "Actual public score 6.4/10 across 18 checks; remediate real controls and rerun, never fabricate review/history.",
+      "next_action": "Actual public 7.1/10 at ad10253, confirmed by full 18-check CLI scan; real review/history remains limited.",
       "owner_approval_required": false
     },
     {
@@ -104,7 +104,7 @@
       "accepted": false,
       "public_listing_url": null,
       "badge_url": null,
-      "blocker": "Owner establishes MFA and accountable security contact; verify branch controls and schema licensing treatment. No earned certification.",
+      "blocker": "Real human MFA/maintenance commitment and ancillary schema license classification remain; branch/tag/environment controls are now verified.",
       "next_action": "Owner establishes MFA and accountable security contact; verify branch controls and schema licensing treatment. No earned certification.",
       "owner_approval_required": true
     },
@@ -203,30 +203,32 @@
       "prepared": true,
       "submitted": false,
       "accepted": true,
-      "public_listing_url": "https://github.com/aksum-labs/messagebench/attestations/51734116",
+      "public_listing_url": "https://github.com/aksum-labs/messagebench/attestations/51751545",
       "badge_url": null,
       "blocker": null,
-      "next_action": "Signed and verified exact snapshot.yml@refs/heads/main identity. Not a tag signature or reviewed release.",
+      "next_action": "Latest ad10253 candidate signed and exact-identity verified in hosted job and local verification environment. No reviewed release or independent reproduction.",
       "owner_approval_required": false
     },
     {
       "target": "Software Heritage",
       "category": "archive",
       "free_or_paid": "free",
-      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "status": "ACHIEVED",
       "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
       "submission_url": "https://archive.softwareheritage.org/save/",
       "date_checked": "2026-10-01",
       "artifact_required": [
-        "docs/citation-and-archival.md"
+        "evidence/software-heritage-save-receipt.json",
+        "evidence/software-heritage-visit.json",
+        "evidence/software-heritage-snapshot.json"
       ],
       "prepared": true,
-      "submitted": false,
-      "accepted": false,
-      "public_listing_url": null,
+      "submitted": true,
+      "accepted": true,
+      "public_listing_url": "https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/aksum-labs/messagebench",
       "badge_url": null,
-      "blocker": "Save Code Now source inspection encountered anti-bot denial; no save request receipt, origin snapshot or SWHID was obtained. Company shell network is restricted.",
-      "next_action": "Use the free Save Code Now form for the public origin; verify completed visit and actual snapshot/SWHID. No archival claim before confirmation.",
+      "blocker": null,
+      "next_action": "Full visit and snapshot verified; archived main revision equals ad10253.",
       "owner_approval_required": false
     },
     {
@@ -323,10 +325,10 @@
       "prepared": true,
       "submitted": false,
       "accepted": true,
-      "public_listing_url": "https://github.com/aksum-labs/messagebench/blob/main/docs/index.md",
+      "public_listing_url": "https://aksum-labs.github.io/messagebench/",
       "badge_url": null,
       "blocker": null,
-      "next_action": "Public repository-native landing is available; separate Pages deployment has not been verified.",
+      "next_action": "GitHub Pages and repository-native landing are live; future evidence updates use protected review.",
       "owner_approval_required": false
     },
     {
@@ -373,7 +375,7 @@
       "target": "Final evidence upload and GitHub Pages deployment",
       "category": "publication",
       "free_or_paid": "free",
-      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "status": "ACHIEVED",
       "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
       "submission_url": "https://github.com/aksum-labs/messagebench",
       "date_checked": "2026-10-01",
@@ -382,11 +384,11 @@
       ],
       "prepared": true,
       "submitted": false,
-      "accepted": false,
-      "public_listing_url": null,
+      "accepted": true,
+      "public_listing_url": "https://aksum-labs.github.io/messagebench/",
       "badge_url": null,
-      "blocker": "Company-App shell network is denied by the current execution environment; prepared final files and Pages workflow are local.",
-      "next_action": "Restore company-App network access; upload as company bot, run Pages and verify URL plus deployment. Repository-native landing already exists.",
+      "blocker": null,
+      "next_action": "Actual settings read back through the company App; refreshed facts/guard fix follow protected PR review.",
       "owner_approval_required": false
     },
     {
@@ -413,7 +415,7 @@
       "target": "Release environment administrator bypass setting",
       "category": "security account control",
       "free_or_paid": "free",
-      "status": "READY-FOR-OWNER-APPROVAL",
+      "status": "ACHIEVED",
       "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
       "submission_url": "https://github.com/aksum-labs/messagebench",
       "date_checked": "2026-10-01",
@@ -423,11 +425,32 @@
       ],
       "prepared": true,
       "submitted": false,
+      "accepted": true,
+      "public_listing_url": "https://github.com/aksum-labs/messagebench",
+      "badge_url": null,
+      "blocker": null,
+      "next_action": "Actual settings read back through the company App; refreshed facts/guard fix follow protected PR review.",
+      "owner_approval_required": false
+    },
+    {
+      "target": "Protected evidence and release-guard PR",
+      "category": "repository",
+      "free_or_paid": "free",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "eligibility": "Actual human review required by enforced main protection.",
+      "submission_url": "https://github.com/aksum-labs/messagebench/pulls",
+      "date_checked": "2026-10-01",
+      "artifact_required": [
+        "scripts/release_guard.py",
+        "tests/integration/test_release_handoffs.py"
+      ],
+      "prepared": true,
+      "submitted": false,
       "accepted": false,
       "public_listing_url": null,
       "badge_url": null,
-      "blocker": "No documented REST setter in inspected update schema; use the documented owner settings toggle, then require actual false read-back.",
-      "next_action": "In repository Settings \u2192 Environments \u2192 release-review, deselect Allow administrators to bypass configured protection rules; save. Company App read-back and release guard must verify false before publication.",
+      "blocker": "Genuine human code-owner review and merge approval.",
+      "next_action": "Company App publishes and tests the branch; human reviews and merges without bypass.",
       "owner_approval_required": true
     }
   ]

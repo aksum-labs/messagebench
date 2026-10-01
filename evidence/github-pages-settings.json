@@ -1,0 +1,26 @@
+{
+  "actor": "GitHub-App-installation",
+  "configuration": {
+    "build_type": "workflow",
+    "cname": null,
+    "custom_404": false,
+    "html_url": "https://aksum-labs.github.io/messagebench/",
+    "https_enforced": true,
+    "pending_domain_unverified_at": null,
+    "protected_domain_state": null,
+    "public": true,
+    "source": {
+      "branch": "main",
+      "path": "/"
+    },
+    "status": null,
+    "url": "https://api.github.com/repos/aksum-labs/messagebench/pages"
+  },
+  "deployment_verified": true,
+  "repository": "aksum-labs/messagebench",
+  "verified_url": "https://aksum-labs.github.io/messagebench/",
+  "deployment_run": 36838839643,
+  "source_commit": "ad10253e1d0d9a07282ab78290f024cdbf5a111b",
+  "html_sha256": "c364e8e3bfe7b8249c93372c26740e8fb8860bc6d76ea65496fb610f0358cca7",
+  "body_matches_source": true
+}

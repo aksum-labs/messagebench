@@ -2,7 +2,7 @@
 
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/aksum-labs/messagebench/badge)](https://scorecard.dev/viewer/?uri=github.com/aksum-labs/messagebench)
 
-Published Scorecard result: **6.4/10**, checked 1 October 2026 at commit `2bb62cb`. This automated score is not certification. [Checks and limitations](docs/scorecard-remediation.md).
+Published Scorecard result: **7.1/10**, checked 1 October 2026 at commit `ad10253`. This automated score is not certification. [Checks and limitations](docs/scorecard-remediation.md).
 
 ```sh
 # From this checkout after installing the pinned dependencies (docs/quickstart.md):
@@ -30,6 +30,7 @@ files and produces reproducible, scope-labelled results.
 **Status: engineering release candidate `0.2.0rc1`; public source publication is owner-authorized. Formal release still requires independent human review.** There are 100 original
 synthetic fixture pairs across two message versions. Independent human review has not occurred.
 The owner authorized continued development before that review; see the [decision](docs/expansion-decision.md).
+[Live documentation](https://aksum-labs.github.io/messagebench/), [archived source](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/aksum-labs/messagebench),
 [Gate report](GATE_REPORT.md), [current progress](docs/implementation-progress.md),
 [readiness](RELEASE_READINESS.md). No v0.5 or v1.0 claim.
 

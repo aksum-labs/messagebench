@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-01",
+  "actor": "aksum-labs-publisher[bot]",
+  "repository": "aksum-labs/messagebench",
+  "scope": "Privileged administrative API read-back; read-only jobs hide bypass actors. This is not human review.",
+  "rulesets": [
+    {
+      "id": 24297769,
+      "name": "Immutable release tags",
+      "target": "tag",
+      "source_type": "Repository",
+      "source": "aksum-labs/messagebench",
+      "enforcement": "active",
+      "conditions": {
+        "ref_name": {
+          "exclude": [],
+          "include": [
+            "refs/tags/v*"
+          ]
+        }
+      },
+      "rules": [
+        {
+          "type": "update"
+        },
+        {
+          "type": "deletion"
+        }
+      ],
+      "node_id": "RRS_lACqUmVwb3NpdG9yec5TUhXmzgFywSk",
+      "created_at": "2026-10-01T08:46:53.972Z",
+      "updated_at": "2026-10-01T08:46:54.010Z",
+      "bypass_actors": [],
+      "current_user_can_bypass": "never",
+      "_links": {
+        "self": {
+          "href": "https://api.github.com/repos/aksum-labs/messagebench/rulesets/24297769"
+        },
+        "html": {
+          "href": "https://github.com/aksum-labs/messagebench/rules/24297769"
+        }
+      }
+    }
+  ]
+}

@@ -6,4 +6,8 @@ The software citation is in [CITATION.cff](../CITATION.cff). The paper has a sep
 
 **Software Heritage:** [Save Code Now](https://archive.softwareheritage.org/save/) accepts a Git origin URL. Save https://github.com/aksum-labs/messagebench; confirm the visit status and capture the resulting origin/snapshot SWHIDs, not merely the request receipt. A public unauthenticated request may be made after publication if the service accepts it; bot challenges or denial are external service blockers, never evidence of archival. The source can also be picked up by normal GitHub ingestion, but discovery is not proof that ingestion occurred. Archive requests require no membership payment. [Service](https://archive.softwareheritage.org/).
 
-GitHub source and Actions artifacts are useful evidence but Actions artifact retention is finite. A reviewed release/archival deposit is preferable for durable citation. No DOI, SWHID, archived-paper record or journal acceptance is invented.
+GitHub source and Actions artifacts are useful evidence but Actions artifact retention is finite. A reviewed release/archival deposit is preferable for durable citation. No DOI, archived-paper record or journal acceptance is claimed. The verified source SWHIDs are recorded below.
+
+## Earned Software Heritage archival
+
+Save request 2520811 completed with a **full** visit on 1 October 2026. Snapshot: `swh:1:snp:68c8e8f3c5a263c3f9c21855ec9399c7550e70fa`; its main branch resolves to `swh:1:rev:ad10253e1d0d9a07282ab78290f024cdbf5a111b`. The receipt, completed visit and snapshot API data are retained under evidence/software-heritage-*.json. [Verified origin listing](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/aksum-labs/messagebench). This archives source; it is not a DOI, peer review or certification. Later evidence-PR changes are not claimed as part of this snapshot.

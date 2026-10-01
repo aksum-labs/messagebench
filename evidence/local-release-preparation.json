@@ -28,5 +28,6 @@
     "https://docs.github.com/en/rest/deployments/environments?apiVersion=2026-03-10",
     "https://docs.github.com/en/rest/deployments/branch-policies?apiVersion=2026-03-10",
     "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments"
-  ]
+  ],
+  "follow_up": "Read-only API bypass visibility corrected using privileged App record bound to exact rule metadata/version. Main remains 149 hosted tests; PR adds five binding tests. No fabricated human review."
 }

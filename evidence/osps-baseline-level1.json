@@ -30,26 +30,20 @@
     },
     {
       "control": "OSPS-AC-03.01",
-      "status": "BLOCKED-BY-HUMAN",
-      "assessment": "Main protection and release-review environment enforcement are not verified; current network restriction prevents App configuration/read-back. Prepared YAML is not enforcement.",
+      "status": "SATISFIED",
+      "assessment": "Actual protected main, restricted release environment, no self/admin bypass and immutable tags read back through company App. See current settings and live-control evidence.",
       "evidence": [
-        "README.md",
-        "SECURITY.md",
-        "docs/threat-model.md",
-        "evidence/rights-register.json",
-        ".github/workflows/checks.yml"
+        "evidence/github-settings.json",
+        "evidence/release-controls-live-verification.json"
       ]
     },
     {
       "control": "OSPS-AC-03.02",
-      "status": "BLOCKED-BY-HUMAN",
-      "assessment": "Main protection and release-review environment enforcement are not verified; current network restriction prevents App configuration/read-back. Prepared YAML is not enforcement.",
+      "status": "SATISFIED",
+      "assessment": "Actual protected main, restricted release environment, no self/admin bypass and immutable tags read back through company App. See current settings and live-control evidence.",
       "evidence": [
-        "README.md",
-        "SECURITY.md",
-        "docs/threat-model.md",
-        "evidence/rights-register.json",
-        ".github/workflows/checks.yml"
+        "evidence/github-settings.json",
+        "evidence/release-controls-live-verification.json"
       ]
     },
     {

@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-01",
+  "actor": "GitHub-App-installation",
+  "repository": "aksum-labs/messagebench",
+  "actual_api_guard_validation": "PASS",
+  "controls": [
+    "public repository",
+    "protected main",
+    "required company-team approval",
+    "prevention of self-review",
+    "administrator bypass disabled",
+    "exact main/tag deployment policies",
+    "immutable version-tag rules with version-matched privileged empty bypass readback"
+  ],
+  "does_not_verify_human_identity_or_review": true,
+  "formal_release_authorized": false
+}

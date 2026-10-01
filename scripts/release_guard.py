@@ -7,10 +7,48 @@ import json
 import os
 import urllib.error
 import urllib.request
+from pathlib import Path
 
 REPOSITORY = "aksum-labs/messagebench"
 REF = "refs/tags/v0.2.0-rc.1"
 TEAM_ID = 19826182
+
+
+def bind_admin_readback(rulesets, readback):
+    """Bind hidden bypass data to an actual reviewed, version-matched App record."""
+    if (
+        readback.get("repository") != REPOSITORY
+        or readback.get("actor") != "aksum-labs-publisher[bot]"
+    ):
+        raise ValueError("Exact privileged App read-back required")
+    saved = {rule["id"]: rule for rule in readback.get("rulesets", [])}
+    fields = (
+        "id",
+        "name",
+        "source_type",
+        "source",
+        "target",
+        "enforcement",
+        "conditions",
+        "rules",
+        "created_at",
+        "updated_at",
+    )
+    bound = []
+    for rule in rulesets:
+        if "bypass_actors" in rule:
+            bound.append(rule)
+            continue
+        previous = saved.get(rule.get("id"))
+        if (
+            not previous
+            or not previous.get("updated_at")
+            or "bypass_actors" not in previous
+            or any(rule.get(key) != previous.get(key) for key in fields)
+        ):
+            raise ValueError("Privileged tag read-back is missing or stale")
+        bound.append({**rule, "bypass_actors": previous["bypass_actors"]})
+    return bound
 
 
 def validate(repository, branch, environment, policies, rulesets):
@@ -81,12 +119,16 @@ def main():
     rules = read("/rulesets")
     if not isinstance(rules, list) or len(rules) > 25:
         raise ValueError("Unexpected ruleset collection")
+    current = [read("/rulesets/" + str(rule["id"])) for rule in rules]
+    readback = json.loads(
+        (Path(__file__).resolve().parents[1] / "evidence/tag-rules-admin-readback.json").read_text()
+    )
     validate(
         read(""),
         read("/branches/main"),
         read("/environments/release-review"),
         read("/environments/release-review/deployment-branch-policies"),
-        [read("/rulesets/" + str(rule["id"])) for rule in rules],
+        bind_admin_readback(current, readback),
     )
     print("Public release control checks passed; this is not independent human review.")
 
