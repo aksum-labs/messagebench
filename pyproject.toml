@@ -12,6 +12,13 @@ license = "Apache-2.0"
 license-files = ["LICENSE", "NOTICE", "third-party/*"]
 dependencies = ["lxml==6.1.3", "jsonschema==4.26.0"]
 
+[project.urls]
+Homepage = "https://aksum-labs.github.io/messagebench/"
+Repository = "https://github.com/aksum-labs/messagebench"
+Documentation = "https://aksum-labs.github.io/messagebench/"
+Security = "https://github.com/aksum-labs/messagebench/security/policy"
+Contributing = "https://github.com/aksum-labs/messagebench/blob/main/CONTRIBUTING.md"
+
 [project.scripts]
 messagebench = "aksum_messagebench.cli:entrypoint"
 
@@ -23,7 +30,7 @@ packages = ["src/aksum_messagebench"]
 "corpus" = "aksum_messagebench/data/corpus"
 
 [tool.hatch.build.targets.sdist]
-include = ["src", "schemas", "contracts", "corpus", "tests", "scripts", "docs", "evidence", "examples", "fuzz", "branding", ".github", ".secrets.baseline", "paper", "external", "site", "CITATION.cff", "AUTHORS", "CONTRIBUTORS", "codemeta.json", "*.md", "*.txt", "LICENSE", "NOTICE", "third-party", "pyproject.toml"]
+include = ["src", "schemas", "contracts", "corpus", "tests", "scripts", "docs", "evidence", "examples", "fuzz", "branding", ".github", ".clusterfuzzlite", "security-insights.yml", ".secrets.baseline", "paper", "external", "site", "CITATION.cff", "AUTHORS", "CONTRIBUTORS", "codemeta.json", "*.md", "*.txt", "LICENSE", "NOTICE", "third-party", "pyproject.toml"]
 
 [tool.pytest.ini_options]
 addopts = "-ra --strict-markers"

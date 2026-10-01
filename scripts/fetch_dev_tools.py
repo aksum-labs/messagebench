@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Explicit connected developer preparation of digest-pinned external check tools."""
 
 import argparse
@@ -10,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser()
 parser.add_argument("--out", type=Path, required=True)
-parser.add_argument("names", nargs="+", choices=["scorecard", "actionlint", "cosign"])
+parser.add_argument("names", nargs="+", choices=["scorecard", "actionlint", "cosign", "cue"])
 args = parser.parse_args()
 args.out.mkdir(parents=True, exist_ok=True)
 for pin in json.loads((ROOT / "evidence/developer-tool-pins.json").read_text()):

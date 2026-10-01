@@ -28,7 +28,7 @@ jobs:
       - name: Stage original static documentation
         run: |
           mkdir -p public/paper
-          cp site/index.html public/index.html
+          cp -R site/. public/
           cp paper/messagebench-benchmark.pdf paper/technical-brief.pdf public/paper/
       - uses: actions/upload-pages-artifact@98ef48e41587a300b82de4cf298aa98b57b2faae
         with:

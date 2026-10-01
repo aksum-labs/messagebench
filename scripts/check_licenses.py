@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Fail on changed pinned dependency metadata or license notices requiring renewed review."""
 
 import hashlib

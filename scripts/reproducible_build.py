@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Build twice from clean copies; attest only measured byte equivalence, not identity."""
 
 import argparse

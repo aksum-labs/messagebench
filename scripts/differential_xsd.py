@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Validate every distributable fixture with two independent XSD implementations."""
 
 import hashlib

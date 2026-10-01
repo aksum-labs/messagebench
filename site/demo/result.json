@@ -1,0 +1,28 @@
+{
+  "source_commit": "ad10253e1d0d9a07282ab78290f024cdbf5a111b",
+  "recorded_at": "2026-10-01",
+  "actual_execution_seconds": 0.12277280499984045,
+  "independent_reproduction": false,
+  "cases": [
+    {
+      "case": "identity",
+      "exit_code": 0,
+      "xsd": [
+        "PASS",
+        "PASS"
+      ],
+      "failed_assertions": []
+    },
+    {
+      "case": "reference-truncated",
+      "exit_code": 1,
+      "xsd": [
+        "PASS",
+        "PASS"
+      ],
+      "failed_assertions": [
+        "PRESERVE-END-TO-END-ID"
+      ]
+    }
+  ]
+}

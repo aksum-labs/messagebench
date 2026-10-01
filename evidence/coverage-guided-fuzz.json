@@ -1,0 +1,21 @@
+{
+  "boundary_invocations": {
+    "parser": 2837,
+    "contracts": 6080,
+    "comparators": 394,
+    "engine": 589
+  },
+  "scope": "Python guidance; synthetic-only; no native ASan claim",
+  "date_checked": "2026-10-01",
+  "runs_completed": 10000,
+  "libfuzzer_coverage_counter": 483,
+  "libfuzzer_feature_counter": 1324,
+  "generated_corpus_entries": 54,
+  "peak_rss_reported_mib": 93,
+  "unexpected_crashes": 0,
+  "atheris": "3.1.0",
+  "target": "fuzz/coverage_guided.py",
+  "instrumentation": "Atheris Python bytecode instrumentation, not native ASan",
+  "boundary_counts_note": "Checkpoint at 9900 processed nonempty bounded callbacks; final libFuzzer iteration count is separate",
+  "independent_review": false
+}

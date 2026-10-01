@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Locate bundled resources or the source checkout, without runtime downloads."""
 
 from pathlib import Path

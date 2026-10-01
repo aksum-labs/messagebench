@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """A bounded, non-resolving XML parser. Limits apply while constructing the tree."""
 
 from dataclasses import dataclass

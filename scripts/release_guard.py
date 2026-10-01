@@ -1,8 +1,11 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Fail closed before tag release when public platform protections are absent.
 
 Developer/CI tooling only; never imported by the offline MessageBench runtime.
 """
 
+import hashlib
 import json
 import os
 import urllib.error
@@ -12,6 +15,8 @@ from pathlib import Path
 REPOSITORY = "aksum-labs/messagebench"
 REF = "refs/tags/v0.2.0-rc.1"
 TEAM_ID = 19826182
+CHECKS = {"checks", "dependencies", "dependency-review", "analyze", "release-controls"}
+ACTIONS_APP_ID = 15368
 
 
 def bind_admin_readback(rulesets, readback):
@@ -51,6 +56,94 @@ def bind_admin_readback(rulesets, readback):
     return bound
 
 
+def validate_main_rules(rulesets):
+    """Verify publicly readable full branch policy, including bound bypass evidence."""
+    for rule in rulesets:
+        if not (
+            rule.get("target") == "branch"
+            and rule.get("enforcement") == "active"
+            and rule.get("bypass_actors") == []
+            and rule.get("conditions", {}).get("ref_name")
+            == {"include": ["refs/heads/main"], "exclude": []}
+        ):
+            continue
+        rules = {entry["type"]: entry for entry in rule.get("rules", [])}
+        if not {"deletion", "non_fast_forward", "required_linear_history"} <= rules.keys():
+            continue
+        review = rules.get("pull_request", {}).get("parameters", {})
+        checks = rules.get("required_status_checks", {}).get("parameters", {})
+        expected = {(name, ACTIONS_APP_ID) for name in CHECKS}
+        actual = {
+            (entry.get("context"), entry.get("integration_id"))
+            for entry in checks.get("required_status_checks", [])
+        }
+        if (
+            expected <= actual
+            and checks.get("strict_required_status_checks_policy") is True
+            and review.get("required_approving_review_count", 0) >= 1
+            and all(
+                review.get(key) is True
+                for key in (
+                    "dismiss_stale_reviews_on_push",
+                    "require_code_owner_review",
+                    "require_last_push_approval",
+                    "required_review_thread_resolution",
+                )
+            )
+        ):
+            return
+    raise ValueError("Complete reviewed main policy is absent")
+
+
+def validate_release_source(tag, main_sha, source_sha, checks, accepted_prs):
+    """Exact accepted source and exact-source green checks; never reuse old green evidence."""
+    if (
+        not isinstance(source_sha, str)
+        or len(source_sha) != 40
+        or tag.get("object") != {"type": "commit", "sha": source_sha}
+        or main_sha != source_sha
+    ):
+        raise ValueError("Release must target the exact currently accepted main commit")
+    latest = {}
+    for check in checks:
+        if check.get("app", {}).get("id") == ACTIONS_APP_ID:
+            name = check.get("name")
+            if name not in latest or check.get("id", 0) > latest[name].get("id", 0):
+                latest[name] = check
+    passed = {
+        check.get("name")
+        for check in latest.values()
+        if check.get("head_sha") == source_sha
+        and check.get("status") == "completed"
+        and check.get("conclusion") == "success"
+    }
+    if not CHECKS <= passed:
+        raise ValueError("Required exact-source checks are missing or unsuccessful")
+    if not any(
+        pr.get("merged") is True
+        and pr.get("merge_commit_sha") == source_sha
+        and pr.get("base", {}).get("ref") == "main"
+        and pr.get("base", {}).get("repo", {}).get("full_name") == REPOSITORY
+        for pr in accepted_prs
+    ):
+        raise ValueError("Release source lacks a normal protected-main PR acceptance record")
+
+
+def validate_human_acknowledgment(approvals, packet_sha):
+    """Check real platform approval plus scoped human attestation, not human expertise itself."""
+    marker = "REVIEWER-IDENTITIES-VERIFIED " + packet_sha
+    for approval in approvals:
+        if (
+            approval.get("state") == "approved"
+            and approval.get("user", {}).get("type") == "User"
+            and isinstance(approval.get("user", {}).get("id"), int)
+            and marker in approval.get("comment", "").splitlines()
+            and any(env.get("name") == "release-review" for env in approval.get("environments", []))
+        ):
+            return
+    raise ValueError("Accountable human reviewer-authentication acknowledgment is absent")
+
+
 def validate(repository, branch, environment, policies, rulesets):
     if repository.get("full_name") != REPOSITORY or repository.get("private") is not False:
         raise ValueError("Exact public repository required")
@@ -78,6 +171,7 @@ def validate(repository, branch, environment, policies, rulesets):
     actual = {(p.get("name"), p.get("type")) for p in policies.get("branch_policies", [])}
     if actual != {("main", "branch"), ("v0.2.0-rc.1", "tag")}:
         raise ValueError("Only main and the exact release tag may deploy")
+    validate_main_rules(rulesets)
     for rule in rulesets:
         condition = rule.get("conditions", {}).get("ref_name", {})
         types = {entry.get("type") for entry in rule.get("rules", [])}
@@ -136,6 +230,24 @@ def main():
     if os.environ.get("GITHUB_REPOSITORY") != REPOSITORY or os.environ.get("GITHUB_REF") != REF:
         raise ValueError("Exact repository and reviewed tag required")
     verify_live_controls()
+    sha = os.environ.get("GITHUB_SHA")
+    tag = read("/git/ref/tags/v0.2.0-rc.1")
+    obj = tag.get("object", {})
+    if obj.get("type") == "tag":
+        obj = read("/git/tags/" + obj["sha"]).get("object", {})
+    tag = {"object": {"type": obj.get("type"), "sha": obj.get("sha")}}
+    checks = read("/commits/" + str(sha) + "/check-runs?per_page=100")["check_runs"]
+    # Reject truncation rather than accepting a potentially incomplete check listing.
+    if len(checks) >= 100:
+        raise ValueError("Check listing requires a reviewed pagination implementation")
+    prs = read("/commits/" + str(sha) + "/pulls?per_page=100")
+    accepted = [read("/pulls/" + str(pr["number"])) for pr in prs]
+    validate_release_source(tag, read("/branches/main")["commit"]["sha"], sha, checks, accepted)
+    packet_bytes = (
+        Path(__file__).resolve().parents[1] / "evidence/review-packet.json"
+    ).read_bytes()
+    approvals = read("/actions/runs/" + str(os.environ.get("GITHUB_RUN_ID")) + "/approvals")
+    validate_human_acknowledgment(approvals, hashlib.sha256(packet_bytes).hexdigest())
 
 
 if __name__ == "__main__":

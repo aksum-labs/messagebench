@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Author 32 semantic scenarios and expectations without calling the oracle."""
 
 import copy

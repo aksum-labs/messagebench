@@ -1,0 +1,41 @@
+[
+  {
+    "Name": "altgraph",
+    "Version": "0.17.5",
+    "License": "MIT",
+    "wheel_sha256": "f3a22400bce1b0c701683820ac4f3b159cd301acab067c51c653e06961600597",
+    "bundled": false,
+    "role": "developer-only ClusterFuzzLite Python freezer"
+  },
+  {
+    "Name": "packaging",
+    "Version": "26.3",
+    "License-Expression": "Apache-2.0 OR BSD-2-Clause",
+    "wheel_sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+    "bundled": false,
+    "role": "developer-only ClusterFuzzLite Python freezer"
+  },
+  {
+    "Name": "pyinstaller",
+    "Version": "6.10.0",
+    "License": "GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (including commercial ones)",
+    "wheel_sha256": "6cf876d7d93b8b4f28d1ad57fa24645cf43119c79e985dd5e5f7a801245e6f53",
+    "bundled": false,
+    "role": "developer-only ClusterFuzzLite Python freezer"
+  },
+  {
+    "Name": "pyinstaller-hooks-contrib",
+    "Version": "2026.8",
+    "wheel_sha256": "6d21d65323ea4467753afc21f52d7d0e69416ae8101dd88269bf273ad48db084",
+    "bundled": false,
+    "role": "developer-only ClusterFuzzLite Python freezer"
+  },
+  {
+    "Name": "setuptools",
+    "Version": "84.0.0",
+    "License-Expression": "MIT",
+    "wheel_sha256": "51a52592b3b99e102b609654876bd65f19f999935166d1352678931132b0c670",
+    "bundled": false,
+    "role": "developer-only ClusterFuzzLite Python freezer"
+  }
+]

@@ -1,7 +1,7 @@
 {
   "checked_on": "2026-10-01",
   "source_url": "https://www.bestpractices.dev/en/criteria/0",
-  "source_sha256": "e81ab58a3f8b534965b31068ee01b1ce717cae729982ad197c4d63ea40c9a5ac",
+  "source_sha256": "0bd40483603fc71b91b5787991e46e3d5dfac81a5fafba5cd3864b943348787a",
   "criteria_count": 67,
   "official_badge_obtained": false,
   "official_project_page": null,
@@ -17,7 +17,8 @@
         "evidence/hosted-recognition.json"
       ],
       "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at ad10253e1d0d9a07282ab78290f024cdbf5a111b; see current hosted and platform evidence. This is not badge issuance.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.description_good"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.description_good",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "interact",
@@ -30,7 +31,8 @@
         "evidence/hosted-recognition.json"
       ],
       "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at ad10253e1d0d9a07282ab78290f024cdbf5a111b; see current hosted and platform evidence. This is not badge issuance.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.interact"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.interact",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "contribution",
@@ -39,7 +41,8 @@
         "CONTRIBUTING.md"
       ],
       "assessment": "Contribution process, coding and test requirements documented.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.contribution"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.contribution",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "contribution_requirements",
@@ -48,7 +51,8 @@
         "CONTRIBUTING.md"
       ],
       "assessment": "Contribution process, coding and test requirements documented.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.contribution_requirements"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.contribution_requirements",
+      "requirement_level": "SHOULD"
     },
     {
       "criterion": "floss_license",
@@ -58,19 +62,21 @@
         "NOTICE",
         "evidence/rights-register.json"
       ],
-      "assessment": "Original source is Apache-2.0; standard XSD assets retain non-OSI SWIFTStandards terms. Qualified license/assessor decision is required; do not assert all assets are OSI-approved.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.floss_license"
+      "assessment": "MUST concerns software produced by the project: original source/fixtures are Apache-2.0. Unmodified ancillary XSD terms are disclosed, not relabelled; official interpretation of their treatment is requested once authenticated corporate communication is available. No independent OSI-SUGGESTED blocker is manufactured.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.floss_license",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "floss_license_osi",
-      "status": "BLOCKED-BY-HUMAN",
+      "status": "SATISFIED",
       "evidence": [
         "LICENSE",
         "NOTICE",
         "evidence/rights-register.json"
       ],
-      "assessment": "Original source is Apache-2.0; standard XSD assets retain non-OSI SWIFTStandards terms. Qualified license/assessor decision is required; do not assert all assets are OSI-approved.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.floss_license_osi"
+      "assessment": "SUGGESTED, not an independent MUST gate: all Aksum-produced software is Apache-2.0 (OSI-approved). Ancillary unmodified standard schemas are separately licensed data; no claim their license is OSI-approved. Narrow program scope interpretation is separately tracked under floss_license.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.floss_license_osi",
+      "requirement_level": "SUGGESTED"
     },
     {
       "criterion": "license_location",
@@ -81,7 +87,8 @@
         "evidence/rights-register.json"
       ],
       "assessment": "Original Apache-2.0 source and separately documented third-party terms; uncertain camt asset excluded.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.license_location"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.license_location",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "documentation_basics",
@@ -91,7 +98,8 @@
         "docs/api.md"
       ],
       "assessment": "Install/use and external-interface references prepared.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.documentation_basics"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.documentation_basics",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "documentation_interface",
@@ -101,7 +109,8 @@
         "docs/api.md"
       ],
       "assessment": "Install/use and external-interface references prepared.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.documentation_interface"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.documentation_interface",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "sites_https",
@@ -114,7 +123,8 @@
         "evidence/hosted-recognition.json"
       ],
       "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at ad10253e1d0d9a07282ab78290f024cdbf5a111b; see current hosted and platform evidence. This is not badge issuance.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.sites_https"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.sites_https",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "discussion",
@@ -127,7 +137,8 @@
         "evidence/hosted-recognition.json"
       ],
       "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at ad10253e1d0d9a07282ab78290f024cdbf5a111b; see current hosted and platform evidence. This is not badge issuance.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.discussion"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.discussion",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "english",
@@ -138,7 +149,8 @@
         "GOVERNANCE.md"
       ],
       "assessment": "Local documentation/control prepared; applicability stated in the mandate report.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.english"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.english",
+      "requirement_level": "SHOULD"
     },
     {
       "criterion": "maintained",
@@ -149,7 +161,8 @@
         "GOVERNANCE.md"
       ],
       "assessment": "Accountable primary human developer/maintainer must attest actual secure-design competence and ongoing maintenance; automated tests do not supply that attestation.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.maintained"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.maintained",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "repo_public",
@@ -160,7 +173,8 @@
         "evidence/hosted-recognition.json"
       ],
       "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at ad10253e1d0d9a07282ab78290f024cdbf5a111b; see current hosted and platform evidence. This is not badge issuance.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.repo_public"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.repo_public",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "repo_track",
@@ -169,7 +183,8 @@
         "GOVERNANCE.md"
       ],
       "assessment": "Git tracks interim commits and attribution; actual public repository is owner controlled.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.repo_track"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.repo_track",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "repo_interim",
@@ -178,7 +193,8 @@
         "GOVERNANCE.md"
       ],
       "assessment": "Git tracks interim commits and attribution; actual public repository is owner controlled.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.repo_interim"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.repo_interim",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "repo_distributed",
@@ -187,7 +203,8 @@
         "GOVERNANCE.md"
       ],
       "assessment": "Git tracks interim commits and attribution; actual public repository is owner controlled.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.repo_distributed"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.repo_distributed",
+      "requirement_level": "SUGGESTED"
     },
     {
       "criterion": "version_unique",
@@ -197,7 +214,8 @@
         "CHANGELOG.md"
       ],
       "assessment": "Unique prerelease version and human-readable change notes; no known Aksum-code assigned CVE fix to omit.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.version_unique"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.version_unique",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "version_semver",
@@ -207,7 +225,8 @@
         "CHANGELOG.md"
       ],
       "assessment": "Unique prerelease version and human-readable change notes; no known Aksum-code assigned CVE fix to omit.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.version_semver"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.version_semver",
+      "requirement_level": "SUGGESTED"
     },
     {
       "criterion": "version_tags",
@@ -217,7 +236,8 @@
         "CHANGELOG.md"
       ],
       "assessment": "Formal RC tag/release remains gated by genuine independent human review.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.version_tags"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.version_tags",
+      "requirement_level": "SUGGESTED"
     },
     {
       "criterion": "release_notes",
@@ -227,7 +247,8 @@
         "CHANGELOG.md"
       ],
       "assessment": "Unique prerelease version and human-readable change notes; no known Aksum-code assigned CVE fix to omit.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.release_notes"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.release_notes",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "release_notes_vulns",
@@ -237,7 +258,8 @@
         "CHANGELOG.md"
       ],
       "assessment": "No known CVE assigned to MessageBench itself is fixed in this candidate.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.release_notes_vulns"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.release_notes_vulns",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "report_process",
@@ -247,7 +269,8 @@
         "scripts/owner_setup.py"
       ],
       "assessment": "Reporting policy and live private channel exist. An accountable human must commit to operating the response/fix process; no historical responses are invented.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.report_process"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.report_process",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "report_tracker",
@@ -259,27 +282,30 @@
         "evidence/hosted-recognition.json"
       ],
       "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at ad10253e1d0d9a07282ab78290f024cdbf5a111b; see current hosted and platform evidence. This is not badge issuance.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.report_tracker"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.report_tracker",
+      "requirement_level": "SHOULD"
     },
     {
       "criterion": "report_responses",
-      "status": "REQUIRES-HISTORY",
+      "status": "BLOCKED-BY-HUMAN",
       "evidence": [
         "SECURITY.md",
         "scripts/owner_setup.py"
       ],
-      "assessment": "No actual public report/response record is invented. A human should assess no-report applicability with official assessors; track real requests and response times.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.report_responses"
+      "assessment": "No qualifying real bug/enhancement reports in the detailed 2\u201312-month window; generated contributor invitations do not manufacture response history. No universal 90-day wait exists. Save a truthful empty-window justification or obtain a narrow program interpretation with the responsible maintainer; not a blanket maturity barrier.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.report_responses",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "enhancement_responses",
-      "status": "REQUIRES-HISTORY",
+      "status": "BLOCKED-BY-HUMAN",
       "evidence": [
         "SECURITY.md",
         "scripts/owner_setup.py"
       ],
-      "assessment": "No actual public report/response record is invented. A human should assess no-report applicability with official assessors; track real requests and response times.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.enhancement_responses"
+      "assessment": "No qualifying real bug/enhancement reports in the detailed 2\u201312-month window; generated contributor invitations do not manufacture response history. No universal 90-day wait exists. Save a truthful empty-window justification or obtain a narrow program interpretation with the responsible maintainer; not a blanket maturity barrier.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.enhancement_responses",
+      "requirement_level": "SHOULD"
     },
     {
       "criterion": "report_archive",
@@ -291,7 +317,8 @@
         "evidence/hosted-recognition.json"
       ],
       "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at ad10253e1d0d9a07282ab78290f024cdbf5a111b; see current hosted and platform evidence. This is not badge issuance.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.report_archive"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.report_archive",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "vulnerability_report_process",
@@ -301,7 +328,8 @@
         "scripts/owner_setup.py"
       ],
       "assessment": "Reporting policy and live private channel exist. An accountable human must commit to operating the response/fix process; no historical responses are invented.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.vulnerability_report_process"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.vulnerability_report_process",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "vulnerability_report_private",
@@ -313,17 +341,19 @@
         "evidence/hosted-recognition.json"
       ],
       "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at ad10253e1d0d9a07282ab78290f024cdbf5a111b; see current hosted and platform evidence. This is not badge issuance.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.vulnerability_report_private"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.vulnerability_report_private",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "vulnerability_report_response",
-      "status": "REQUIRES-HISTORY",
+      "status": "NOT APPLICABLE",
       "evidence": [
         "SECURITY.md",
         "scripts/owner_setup.py"
       ],
-      "assessment": "No actual public report/response record is invented. A human should assess no-report applicability with official assessors; track real requests and response times.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.vulnerability_report_response"
+      "assessment": "Current detailed criterion explicitly permits N/A when no vulnerability reports were received in the last six months; no reports are fabricated.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.vulnerability_report_response",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "build",
@@ -334,7 +364,8 @@
         "scripts/reproducible_build.py"
       ],
       "assessment": "FLOSS build tools and clean-build/install verification.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.build"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.build",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "build_common_tools",
@@ -345,7 +376,8 @@
         "scripts/reproducible_build.py"
       ],
       "assessment": "FLOSS build tools and clean-build/install verification.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.build_common_tools"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.build_common_tools",
+      "requirement_level": "SUGGESTED"
     },
     {
       "criterion": "build_floss_tools",
@@ -356,7 +388,8 @@
         "scripts/reproducible_build.py"
       ],
       "assessment": "FLOSS build tools and clean-build/install verification.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.build_floss_tools"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.build_floss_tools",
+      "requirement_level": "SHOULD"
     },
     {
       "criterion": "test",
@@ -370,7 +403,8 @@
         "evidence/hosted-recognition.json"
       ],
       "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at ad10253e1d0d9a07282ab78290f024cdbf5a111b; see current hosted and platform evidence. This is not badge issuance.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.test"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.test",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "test_invocation",
@@ -382,7 +416,8 @@
         "evidence/mutation-results.json"
       ],
       "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.test_invocation"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.test_invocation",
+      "requirement_level": "SHOULD"
     },
     {
       "criterion": "test_most",
@@ -394,7 +429,8 @@
         "evidence/mutation-results.json"
       ],
       "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.test_most"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.test_most",
+      "requirement_level": "SUGGESTED"
     },
     {
       "criterion": "test_continuous_integration",
@@ -408,7 +444,8 @@
         "evidence/hosted-recognition.json"
       ],
       "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at ad10253e1d0d9a07282ab78290f024cdbf5a111b; see current hosted and platform evidence. This is not badge issuance.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.test_continuous_integration"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.test_continuous_integration",
+      "requirement_level": "SUGGESTED"
     },
     {
       "criterion": "test_policy",
@@ -420,7 +457,8 @@
         "evidence/mutation-results.json"
       ],
       "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.test_policy"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.test_policy",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "tests_are_added",
@@ -432,7 +470,8 @@
         "evidence/mutation-results.json"
       ],
       "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.tests_are_added"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.tests_are_added",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "tests_documented_added",
@@ -444,7 +483,8 @@
         "evidence/mutation-results.json"
       ],
       "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.tests_documented_added"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.tests_documented_added",
+      "requirement_level": "SUGGESTED"
     },
     {
       "criterion": "warnings",
@@ -454,7 +494,8 @@
         ".github/workflows/checks.yml"
       ],
       "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.warnings"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.warnings",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "warnings_fixed",
@@ -464,7 +505,8 @@
         ".github/workflows/checks.yml"
       ],
       "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.warnings_fixed"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.warnings_fixed",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "warnings_strict",
@@ -474,7 +516,8 @@
         ".github/workflows/checks.yml"
       ],
       "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.warnings_strict"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.warnings_strict",
+      "requirement_level": "SUGGESTED"
     },
     {
       "criterion": "know_secure_design",
@@ -485,7 +528,8 @@
         "GOVERNANCE.md"
       ],
       "assessment": "Accountable primary human developer/maintainer must attest actual secure-design competence and ongoing maintenance; automated tests do not supply that attestation.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.know_secure_design"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.know_secure_design",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "know_common_errors",
@@ -496,7 +540,8 @@
         "GOVERNANCE.md"
       ],
       "assessment": "Accountable primary human developer/maintainer must attest actual secure-design competence and ongoing maintenance; automated tests do not supply that attestation.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.know_common_errors"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.know_common_errors",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "crypto_published",
@@ -506,7 +551,8 @@
         ".github/workflows/release.yml"
       ],
       "assessment": "SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_published"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_published",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "crypto_call",
@@ -516,7 +562,8 @@
         ".github/workflows/release.yml"
       ],
       "assessment": "SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_call"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_call",
+      "requirement_level": "SHOULD"
     },
     {
       "criterion": "crypto_floss",
@@ -526,7 +573,8 @@
         ".github/workflows/release.yml"
       ],
       "assessment": "SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_floss"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_floss",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "crypto_keylength",
@@ -536,7 +584,8 @@
         ".github/workflows/release.yml"
       ],
       "assessment": "Runtime does not implement cryptographic keys, passwords, key agreement or random security protocols; release signing uses mature tools.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_keylength"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_keylength",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "crypto_working",
@@ -546,7 +595,8 @@
         ".github/workflows/release.yml"
       ],
       "assessment": "SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_working"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_working",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "crypto_weaknesses",
@@ -556,7 +606,8 @@
         ".github/workflows/release.yml"
       ],
       "assessment": "SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_weaknesses"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_weaknesses",
+      "requirement_level": "SHOULD"
     },
     {
       "criterion": "crypto_pfs",
@@ -566,7 +617,8 @@
         ".github/workflows/release.yml"
       ],
       "assessment": "Runtime does not implement cryptographic keys, passwords, key agreement or random security protocols; release signing uses mature tools.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_pfs"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_pfs",
+      "requirement_level": "SHOULD"
     },
     {
       "criterion": "crypto_password_storage",
@@ -576,7 +628,8 @@
         ".github/workflows/release.yml"
       ],
       "assessment": "Runtime does not implement cryptographic keys, passwords, key agreement or random security protocols; release signing uses mature tools.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_password_storage"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_password_storage",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "crypto_random",
@@ -586,7 +639,8 @@
         ".github/workflows/release.yml"
       ],
       "assessment": "Runtime does not implement cryptographic keys, passwords, key agreement or random security protocols; release signing uses mature tools.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_random"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_random",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "delivery_mitm",
@@ -599,7 +653,8 @@
         "evidence/hosted-recognition.json"
       ],
       "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at ad10253e1d0d9a07282ab78290f024cdbf5a111b; see current hosted and platform evidence. This is not badge issuance.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.delivery_mitm"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.delivery_mitm",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "delivery_unsigned",
@@ -610,27 +665,30 @@
         "GOVERNANCE.md"
       ],
       "assessment": "Local documentation/control prepared; applicability stated in the mandate report.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.delivery_unsigned"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.delivery_unsigned",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "vulnerabilities_fixed_60_days",
-      "status": "BLOCKED-BY-HUMAN",
+      "status": "SATISFIED",
       "evidence": [
         "SECURITY.md",
         "scripts/owner_setup.py"
       ],
-      "assessment": "Reporting policy and live private channel exist. An accountable human must commit to operating the response/fix process; no historical responses are invented.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.vulnerabilities_fixed_60_days"
+      "assessment": "No known unpatched medium-or-higher MessageBench vulnerability older than 60 days in the measured record; pinned Python audit PASS and native-source advisory review are bounded evidence, not proof of absence of all vulnerabilities.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.vulnerabilities_fixed_60_days",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "vulnerabilities_critical_fixed",
-      "status": "REQUIRES-HISTORY",
+      "status": "SATISFIED",
       "evidence": [
         "SECURITY.md",
         "scripts/owner_setup.py"
       ],
-      "assessment": "No actual public report/response record is invented. A human should assess no-report applicability with official assessors; track real requests and response times.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.vulnerabilities_critical_fixed"
+      "assessment": "SHOULD: no actual reported critical MessageBench vulnerability or known unresolved critical finding in the measured record. No fabricated patch/history. Continued response responsibility requires the accountable human.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.vulnerabilities_critical_fixed",
+      "requirement_level": "SHOULD"
     },
     {
       "criterion": "no_leaked_credentials",
@@ -640,7 +698,8 @@
         ".secrets.baseline"
       ],
       "assessment": "Tracked-source secret scan without online credential probing; reviewed public digests only.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.no_leaked_credentials"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.no_leaked_credentials",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "static_analysis",
@@ -650,7 +709,8 @@
         ".github/workflows/checks.yml"
       ],
       "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.static_analysis"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.static_analysis",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "static_analysis_common_vulnerabilities",
@@ -660,7 +720,8 @@
         ".github/workflows/checks.yml"
       ],
       "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.static_analysis_common_vulnerabilities"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.static_analysis_common_vulnerabilities",
+      "requirement_level": "SUGGESTED"
     },
     {
       "criterion": "static_analysis_fixed",
@@ -670,7 +731,8 @@
         ".github/workflows/checks.yml"
       ],
       "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.static_analysis_fixed"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.static_analysis_fixed",
+      "requirement_level": "MUST"
     },
     {
       "criterion": "static_analysis_often",
@@ -680,7 +742,8 @@
         ".github/workflows/checks.yml"
       ],
       "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.static_analysis_often"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.static_analysis_often",
+      "requirement_level": "SUGGESTED"
     },
     {
       "criterion": "dynamic_analysis",
@@ -692,7 +755,8 @@
         "evidence/mutation-results.json"
       ],
       "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.dynamic_analysis"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.dynamic_analysis",
+      "requirement_level": "SUGGESTED"
     },
     {
       "criterion": "dynamic_analysis_unsafe",
@@ -704,7 +768,8 @@
         "evidence/mutation-results.json"
       ],
       "assessment": "Aksum-authored runtime is Python; native XML dependencies are maintained upstream and separately inventoried.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.dynamic_analysis_unsafe"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.dynamic_analysis_unsafe",
+      "requirement_level": "SUGGESTED"
     },
     {
       "criterion": "dynamic_analysis_enable_assertions",
@@ -716,7 +781,8 @@
         "evidence/mutation-results.json"
       ],
       "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.dynamic_analysis_enable_assertions"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.dynamic_analysis_enable_assertions",
+      "requirement_level": "SUGGESTED"
     },
     {
       "criterion": "dynamic_analysis_fixed",
@@ -728,7 +794,13 @@
         "evidence/mutation-results.json"
       ],
       "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance.",
-      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.dynamic_analysis_fixed"
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.dynamic_analysis_fixed",
+      "requirement_level": "MUST"
     }
-  ]
+  ],
+  "project_search": {
+    "query_url": "https://www.bestpractices.dev/en/projects.json?url=https%3A%2F%2Fgithub.com%2Faksum-labs%2Fmessagebench",
+    "returned_records": 0,
+    "interpretation": "No record returned by exact URL query; authenticated corporate registration/access still required."
+  }
 }

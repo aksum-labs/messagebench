@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-01",
+  "tests": 169,
+  "scope": "All Aksum runtime Python files via coverage source=aksum_messagebench; distinct from selected semantic branch coverage",
+  "totals": {
+    "covered_lines": 772,
+    "num_statements": 954,
+    "percent_covered": 80.8446455505279,
+    "percent_covered_display": "81",
+    "missing_lines": 182,
+    "excluded_lines": 0,
+    "percent_statements_covered": 80.92243186582809,
+    "percent_statements_covered_display": "81",
+    "num_branches": 372,
+    "num_partial_branches": 46,
+    "covered_branches": 300,
+    "missing_branches": 72,
+    "percent_branches_covered": 80.64516129032258,
+    "percent_branches_covered_display": "81"
+  }
+}

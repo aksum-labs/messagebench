@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Author pacs.002 source/output expectations without executing the preservation oracle."""
 
 import copy

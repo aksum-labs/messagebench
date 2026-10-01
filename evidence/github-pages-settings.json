@@ -16,11 +16,6 @@
     "status": null,
     "url": "https://api.github.com/repos/aksum-labs/messagebench/pages"
   },
-  "deployment_verified": true,
-  "repository": "aksum-labs/messagebench",
-  "verified_url": "https://aksum-labs.github.io/messagebench/",
-  "deployment_run": 36838839643,
-  "source_commit": "ad10253e1d0d9a07282ab78290f024cdbf5a111b",
-  "html_sha256": "c364e8e3bfe7b8249c93372c26740e8fb8860bc6d76ea65496fb610f0358cca7",
-  "body_matches_source": true
+  "deployment_verified": false,
+  "repository": "aksum-labs/messagebench"
 }

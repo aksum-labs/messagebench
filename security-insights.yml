@@ -1,0 +1,35 @@
+header:
+  schema-version: 2.2.0
+  last-updated: '2026-10-01'
+  last-reviewed: '2026-10-01'
+  url: https://raw.githubusercontent.com/aksum-labs/messagebench/main/security-insights.yml
+  comment: |
+    Repository self-reported metadata, not a certification or independent audit.
+    Collective owner contact is listed below; a named accountable security responder,
+    individual competence and MFA attestations are not authenticated by this metadata.
+repository:
+  url: https://github.com/aksum-labs/messagebench
+  status: active
+  accepts-change-request: true
+  accepts-automated-change-request: true
+  no-third-party-packages: false
+  core-team:
+    - name: Aksum Labs
+      affiliation: AKSUM LABS OÜ
+      social: https://github.com/aksum-labs
+      primary: true
+  license:
+    url: https://github.com/aksum-labs/messagebench/blob/main/LICENSE
+    expression: Apache-2.0 AND LicenseRef-SWIFTStandards-2005
+  documentation:
+    security-policy: https://github.com/aksum-labs/messagebench/security/policy
+  security:
+    assessments:
+      self:
+        comment: |
+          Offline two-message preservation toolkit. Synthetic tests, property/mutation
+          checks and supply-chain evidence are documented. Independent semantic/native
+          review and identity-backed reviewed-tag release have not been completed.
+          Main-snapshot provenance is distinct from reviewed-tag provenance.
+        evidence: https://github.com/aksum-labs/messagebench/blob/main/SECURITY-EVIDENCE.md
+        date: '2026-10-01'

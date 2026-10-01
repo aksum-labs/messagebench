@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: 2026 Aksum Labs
+# SPDX-License-Identifier: Apache-2.0
 """Bounded exact XSD dateTime comparison; no guessed timezone or calendar."""
 
 import re

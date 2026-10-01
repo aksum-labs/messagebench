@@ -13,3 +13,7 @@ Corporate commit metadata and company-App pushes protect the requested public at
 Organization MFA remains an owner/account-readiness decision. The App registration includes extra permissions; issued tokens are repository-restricted and purpose-scoped. Owner should reduce registered grants after confirming required automation capabilities. Formal release still requires two genuine independent review decisions and protected human approval.
 
 With main protected, final facts and the guard correction are published through a company-bot PR. Human review/merge is intentional; no direct push or bypass is used. Current CI and Scorecard evidence distinguishes main source from that review branch.
+
+## 1 October source restoration
+
+Public source publication is restored through the company GitHub App. Issues and Discussions are disabled. Owner decisions and reviewer details stay private. After the visibility change removed classic protection, the same five strict required contexts (checks, dependencies, dependency-review, analyze, release-controls), code-owner and last-push review policy, and administrator enforcement were restored and read back. The active additive main and immutable-tag rulesets remained. Public submissions and help-request posts are not authorized.

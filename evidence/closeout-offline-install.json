@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "version": "0.2.0rc1",
+  "corpus_cases": 100,
+  "schema_valid_semantic_loss_detected": true,
+  "identity_passed": true,
+  "python_socket_calls_denied": true,
+  "independent_reproduction": false,
+  "lxml": [
+    6,
+    1,
+    3,
+    0
+  ],
+  "libxml2": [
+    2,
+    15,
+    4
+  ],
+  "source_commit": "ad10253e1d0d9a07282ab78290f024cdbf5a111b",
+  "checked_at": "2026-10-01",
+  "fresh_environment": true
+}

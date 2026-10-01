@@ -11,3 +11,9 @@ GitHub source and Actions artifacts are useful evidence but Actions artifact ret
 ## Earned Software Heritage archival
 
 Save request 2520811 completed with a **full** visit on 1 October 2026. Snapshot: `swh:1:snp:68c8e8f3c5a263c3f9c21855ec9399c7550e70fa`; its main branch resolves to `swh:1:rev:ad10253e1d0d9a07282ab78290f024cdbf5a111b`. The receipt, completed visit and snapshot API data are retained under evidence/software-heritage-*.json. [Verified origin listing](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/aksum-labs/messagebench). This archives source; it is not a DOI, peer review or certification. Later evidence-PR changes are not claimed as part of this snapshot.
+
+## Close-out account and prerelease handling
+
+No corporate Zenodo authentication or existing-deposit ownership was available during this close-out. Registration/deposit is ACTION-REQUIRES-OWNER, not submitted. Software and paper must remain separate appropriately typed records; the paper is an unreviewed preprint with its original 140-test experiment, not a rewritten 169-test experiment. Do not attach a reserved DOI until a real published DOI landing page resolves.
+
+The current official GitHub-upload guide describes release processing and checking the resulting record; it does not establish that this exact prerelease will automatically archive. Verify the authorized account’s integration event/record, or use the supported direct-deposit path with the correctly labelled RC rather than assuming an archive. Direct deposits remain separate from independent reproduction or acceptance. Official guide: https://help.zenodo.org/docs/github/archive-software/github-upload/ .
