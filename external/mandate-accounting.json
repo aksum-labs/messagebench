@@ -1,0 +1,2497 @@
+{
+  "reference_date": "2026-10-01",
+  "source_commit": "2bb62cb1e0dcbbb91d265bb824eda274cbd9b217",
+  "requirement_count": 212,
+  "requirements": [
+    {
+      "id": "00.01",
+      "section": 0,
+      "requirement": "Zero fees",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/rejected-paid-recognition.md",
+        "external/recognition-matrix.json",
+        "evidence/hosted-recognition.json"
+      ],
+      "disposition": "No payment, institutional outreach or formal foundation application occurred; actual company-bot hosted actor is recorded."
+    },
+    {
+      "id": "00.02",
+      "section": 0,
+      "requirement": "No fabricated endorsements, reviews or adoption",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/rejected-paid-recognition.md",
+        "external/recognition-matrix.json",
+        "evidence/hosted-recognition.json"
+      ],
+      "disposition": "No payment, institutional outreach or formal foundation application occurred; actual company-bot hosted actor is recorded."
+    },
+    {
+      "id": "00.03",
+      "section": 0,
+      "requirement": "No fabricated history or certifications",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/rejected-paid-recognition.md",
+        "external/recognition-matrix.json",
+        "evidence/hosted-recognition.json"
+      ],
+      "disposition": "No payment, institutional outreach or formal foundation application occurred; actual company-bot hosted actor is recorded."
+    },
+    {
+      "id": "00.04",
+      "section": 0,
+      "requirement": "No personal-account public publishing",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/rejected-paid-recognition.md",
+        "external/recognition-matrix.json",
+        "evidence/hosted-recognition.json"
+      ],
+      "disposition": "No payment, institutional outreach or formal foundation application occurred; actual company-bot hosted actor is recorded."
+    },
+    {
+      "id": "00.05",
+      "section": 0,
+      "requirement": "Formal submission authorization respected",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/rejected-paid-recognition.md",
+        "external/recognition-matrix.json",
+        "evidence/hosted-recognition.json"
+      ],
+      "disposition": "No payment, institutional outreach or formal foundation application occurred; actual company-bot hosted actor is recorded."
+    },
+    {
+      "id": "01.01",
+      "section": 1,
+      "requirement": "Public visibility",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.02",
+      "section": 1,
+      "requirement": "Default main",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.03",
+      "section": 1,
+      "requirement": "Description",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.04",
+      "section": 1,
+      "requirement": "Topics",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.05",
+      "section": 1,
+      "requirement": "Repository-native documentation URL",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.06",
+      "section": 1,
+      "requirement": "Discussions",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.07",
+      "section": 1,
+      "requirement": "Issues",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.08",
+      "section": 1,
+      "requirement": "Private vulnerability reporting",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.09",
+      "section": 1,
+      "requirement": "Security policy",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.10",
+      "section": 1,
+      "requirement": "CODEOWNERS team write access",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.11",
+      "section": 1,
+      "requirement": "Dependabot configuration",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.12",
+      "section": 1,
+      "requirement": "Dependency review",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.13",
+      "section": 1,
+      "requirement": "CodeQL and Bandit",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.14",
+      "section": 1,
+      "requirement": "Secret scanning",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.15",
+      "section": 1,
+      "requirement": "Push protection",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.16",
+      "section": 1,
+      "requirement": "Immutable release setting",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.17",
+      "section": 1,
+      "requirement": "Least-privilege Actions default",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.18",
+      "section": 1,
+      "requirement": "SHA-pinned Actions",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.19",
+      "section": 1,
+      "requirement": "Job-scoped OIDC",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.20",
+      "section": 1,
+      "requirement": "No unsafe pull_request_target",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.21",
+      "section": 1,
+      "requirement": "Read-back of actual applied settings",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json",
+        ".github/CODEOWNERS"
+      ],
+      "disposition": "Verified public/settings read-back and successful hosted checks at 2bb62cb. Newly revised SECURITY.md is locally prepared for final company upload."
+    },
+    {
+      "id": "01.22",
+      "section": 1,
+      "requirement": "Main branch protection",
+      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "evidence": [
+        "docs/github-hardening-report.md",
+        ".github/workflows/pages.yml"
+      ],
+      "disposition": "Main/tag protection and required environment reviewers are not verified. Company-App DNS/network access is currently denied by the execution environment; personal-account substitution is disallowed. Settings payloads are prepared outside repository."
+    },
+    {
+      "id": "01.23",
+      "section": 1,
+      "requirement": "No force push to main",
+      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "evidence": [
+        "docs/github-hardening-report.md",
+        ".github/workflows/pages.yml"
+      ],
+      "disposition": "Main/tag protection and required environment reviewers are not verified. Company-App DNS/network access is currently denied by the execution environment; personal-account substitution is disallowed. Settings payloads are prepared outside repository."
+    },
+    {
+      "id": "01.24",
+      "section": 1,
+      "requirement": "Required PR review",
+      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "evidence": [
+        "docs/github-hardening-report.md",
+        ".github/workflows/pages.yml"
+      ],
+      "disposition": "Main/tag protection and required environment reviewers are not verified. Company-App DNS/network access is currently denied by the execution environment; personal-account substitution is disallowed. Settings payloads are prepared outside repository."
+    },
+    {
+      "id": "01.25",
+      "section": 1,
+      "requirement": "Required status checks",
+      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "evidence": [
+        "docs/github-hardening-report.md",
+        ".github/workflows/pages.yml"
+      ],
+      "disposition": "Main/tag protection and required environment reviewers are not verified. Company-App DNS/network access is currently denied by the execution environment; personal-account substitution is disallowed. Settings payloads are prepared outside repository."
+    },
+    {
+      "id": "01.26",
+      "section": 1,
+      "requirement": "Protected immutable version tags",
+      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "evidence": [
+        "docs/github-hardening-report.md",
+        ".github/workflows/pages.yml"
+      ],
+      "disposition": "Main/tag protection and required environment reviewers are not verified. Company-App DNS/network access is currently denied by the execution environment; personal-account substitution is disallowed. Settings payloads are prepared outside repository."
+    },
+    {
+      "id": "01.27",
+      "section": 1,
+      "requirement": "Enforced release environment review",
+      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "evidence": [
+        "docs/github-hardening-report.md",
+        ".github/workflows/pages.yml"
+      ],
+      "disposition": "Main/tag protection and required environment reviewers are not verified. Company-App DNS/network access is currently denied by the execution environment; personal-account substitution is disallowed. Settings payloads are prepared outside repository."
+    },
+    {
+      "id": "01.28",
+      "section": 1,
+      "requirement": "Final configuration read-back",
+      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "evidence": [
+        "docs/github-hardening-report.md",
+        ".github/workflows/pages.yml"
+      ],
+      "disposition": "Main/tag protection and required environment reviewers are not verified. Company-App DNS/network access is currently denied by the execution environment; personal-account substitution is disallowed. Settings payloads are prepared outside repository."
+    },
+    {
+      "id": "01.29",
+      "section": 1,
+      "requirement": "Dependabot security-update activation",
+      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "evidence": [
+        "docs/github-hardening-report.md",
+        ".github/workflows/pages.yml"
+      ],
+      "disposition": "Main/tag protection and required environment reviewers are not verified. Company-App DNS/network access is currently denied by the execution environment; personal-account substitution is disallowed. Settings payloads are prepared outside repository."
+    },
+    {
+      "id": "01.30",
+      "section": 1,
+      "requirement": "Optional Pages deployment",
+      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "evidence": [
+        "docs/github-hardening-report.md",
+        ".github/workflows/pages.yml"
+      ],
+      "disposition": "Main/tag protection and required environment reviewers are not verified. Company-App DNS/network access is currently denied by the execution environment; personal-account substitution is disallowed. Settings payloads are prepared outside repository."
+    },
+    {
+      "id": "01.31",
+      "section": 1,
+      "requirement": "Organization MFA and App registration grant reduction",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "evidence": [
+        "docs/github-hardening-report.md"
+      ],
+      "disposition": "Actual owner account readiness and reduction of extra registered permissions are required; issued task tokens were narrowly scoped."
+    },
+    {
+      "id": "02.01",
+      "section": 2,
+      "requirement": "Hosted formatting",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.02",
+      "section": 2,
+      "requirement": "Hosted typing",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.03",
+      "section": 2,
+      "requirement": "Hosted unit tests",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.04",
+      "section": 2,
+      "requirement": "Hosted golden tests",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.05",
+      "section": 2,
+      "requirement": "Hosted property tests",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.06",
+      "section": 2,
+      "requirement": "Hosted integration tests",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.07",
+      "section": 2,
+      "requirement": "Hosted targeted mutation campaign",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.08",
+      "section": 2,
+      "requirement": "Hosted parser fuzz smoke",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.09",
+      "section": 2,
+      "requirement": "Hosted contract fuzz smoke",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.10",
+      "section": 2,
+      "requirement": "Hosted differential XSD",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.11",
+      "section": 2,
+      "requirement": "Hosted security corpus",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.12",
+      "section": 2,
+      "requirement": "Hosted license checks",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.13",
+      "section": 2,
+      "requirement": "Hosted Python dependency audit",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.14",
+      "section": 2,
+      "requirement": "Hosted secret scan",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.15",
+      "section": 2,
+      "requirement": "Hosted SAST",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.16",
+      "section": 2,
+      "requirement": "Hosted manifest validation",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.17",
+      "section": 2,
+      "requirement": "Hosted native-inclusive SBOM",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.18",
+      "section": 2,
+      "requirement": "Hosted clean build",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.19",
+      "section": 2,
+      "requirement": "Hosted fresh offline install",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.20",
+      "section": 2,
+      "requirement": "Hosted Scorecard",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.21",
+      "section": 2,
+      "requirement": "Run IDs and source SHA",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.22",
+      "section": 2,
+      "requirement": "Artifact hashes and conclusions",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.23",
+      "section": 2,
+      "requirement": "Actual successful run links and failure reporting",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-checks-excerpt.txt"
+      ],
+      "disposition": "Six successful workflows at exact source 2bb62cb. Earlier transient configuration failures are disclosed. Later local changes require new hosted runs, not inferred success."
+    },
+    {
+      "id": "02.24",
+      "section": 2,
+      "requirement": "Hosted runs for final prepared documentation/workflow commit",
+      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "evidence": [
+        "docs/github-hardening-report.md"
+      ],
+      "disposition": "Final local changes cannot be uploaded/dispatched while company-App networking is denied."
+    },
+    {
+      "id": "03.01",
+      "section": 3,
+      "requirement": "Official immutable-pinned action",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/scorecard-public.json",
+        ".github/workflows/scorecard.yml",
+        "docs/scorecard-remediation.md",
+        "README.md"
+      ],
+      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+    },
+    {
+      "id": "03.02",
+      "section": 3,
+      "requirement": "Public scan",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/scorecard-public.json",
+        ".github/workflows/scorecard.yml",
+        "docs/scorecard-remediation.md",
+        "README.md"
+      ],
+      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+    },
+    {
+      "id": "03.03",
+      "section": 3,
+      "requirement": "publish_results",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/scorecard-public.json",
+        ".github/workflows/scorecard.yml",
+        "docs/scorecard-remediation.md",
+        "README.md"
+      ],
+      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+    },
+    {
+      "id": "03.04",
+      "section": 3,
+      "requirement": "Job-only id-token",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/scorecard-public.json",
+        ".github/workflows/scorecard.yml",
+        "docs/scorecard-remediation.md",
+        "README.md"
+      ],
+      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+    },
+    {
+      "id": "03.05",
+      "section": 3,
+      "requirement": "Least privileges elsewhere",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/scorecard-public.json",
+        ".github/workflows/scorecard.yml",
+        "docs/scorecard-remediation.md",
+        "README.md"
+      ],
+      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+    },
+    {
+      "id": "03.06",
+      "section": 3,
+      "requirement": "Safe job configuration",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/scorecard-public.json",
+        ".github/workflows/scorecard.yml",
+        "docs/scorecard-remediation.md",
+        "README.md"
+      ],
+      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+    },
+    {
+      "id": "03.07",
+      "section": 3,
+      "requirement": "SARIF upload",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/scorecard-public.json",
+        ".github/workflows/scorecard.yml",
+        "docs/scorecard-remediation.md",
+        "README.md"
+      ],
+      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+    },
+    {
+      "id": "03.08",
+      "section": 3,
+      "requirement": "Actual overall score",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/scorecard-public.json",
+        ".github/workflows/scorecard.yml",
+        "docs/scorecard-remediation.md",
+        "README.md"
+      ],
+      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+    },
+    {
+      "id": "03.09",
+      "section": 3,
+      "requirement": "All 18 checks recorded",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/scorecard-public.json",
+        ".github/workflows/scorecard.yml",
+        "docs/scorecard-remediation.md",
+        "README.md"
+      ],
+      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+    },
+    {
+      "id": "03.10",
+      "section": 3,
+      "requirement": "Full CLI cross-check",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/scorecard-public.json",
+        ".github/workflows/scorecard.yml",
+        "docs/scorecard-remediation.md",
+        "README.md"
+      ],
+      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+    },
+    {
+      "id": "03.11",
+      "section": 3,
+      "requirement": "Remediation plan",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/scorecard-public.json",
+        ".github/workflows/scorecard.yml",
+        "docs/scorecard-remediation.md",
+        "README.md"
+      ],
+      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+    },
+    {
+      "id": "03.12",
+      "section": 3,
+      "requirement": "Earned badge markup prepared",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/scorecard-public.json",
+        ".github/workflows/scorecard.yml",
+        "docs/scorecard-remediation.md",
+        "README.md"
+      ],
+      "disposition": "Actual public 6.4/10 at 2bb62cb; official action successful. Badge markup now local; published API result already exists. No score gaming."
+    },
+    {
+      "id": "03.13",
+      "section": 3,
+      "requirement": "Rescan after protection and final badge upload",
+      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "evidence": [
+        "docs/github-hardening-report.md"
+      ],
+      "disposition": "Requires company-App networking, actual enforcement and final source publication."
+    },
+    {
+      "id": "04.01",
+      "section": 4,
+      "requirement": "Current official Passing criteria",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/openssf-current-criteria.json",
+        "evidence/osps-baseline-level1.json",
+        "docs/openssf-best-practices-submission.md"
+      ],
+      "disposition": "Current source hashes/date retained; technical public/CI prerequisites reassessed from actual evidence."
+    },
+    {
+      "id": "04.02",
+      "section": 4,
+      "requirement": "All 67 criterion assessments and applicability",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/openssf-current-criteria.json",
+        "evidence/osps-baseline-level1.json",
+        "docs/openssf-best-practices-submission.md"
+      ],
+      "disposition": "Current source hashes/date retained; technical public/CI prerequisites reassessed from actual evidence."
+    },
+    {
+      "id": "04.03",
+      "section": 4,
+      "requirement": "Repository evidence per criterion",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/openssf-current-criteria.json",
+        "evidence/osps-baseline-level1.json",
+        "docs/openssf-best-practices-submission.md"
+      ],
+      "disposition": "Current source hashes/date retained; technical public/CI prerequisites reassessed from actual evidence."
+    },
+    {
+      "id": "04.04",
+      "section": 4,
+      "requirement": "No false badge claim",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/openssf-current-criteria.json",
+        "evidence/osps-baseline-level1.json",
+        "docs/openssf-best-practices-submission.md"
+      ],
+      "disposition": "Current source hashes/date retained; technical public/CI prerequisites reassessed from actual evidence."
+    },
+    {
+      "id": "04.05",
+      "section": 4,
+      "requirement": "Shortest honest satisfaction path",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/openssf-current-criteria.json",
+        "evidence/osps-baseline-level1.json",
+        "docs/openssf-best-practices-submission.md"
+      ],
+      "disposition": "Current source hashes/date retained; technical public/CI prerequisites reassessed from actual evidence."
+    },
+    {
+      "id": "04.06",
+      "section": 4,
+      "requirement": "Current OSPS Level 1 assessment",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/openssf-current-criteria.json",
+        "evidence/osps-baseline-level1.json",
+        "docs/openssf-best-practices-submission.md"
+      ],
+      "disposition": "Current source hashes/date retained; technical public/CI prerequisites reassessed from actual evidence."
+    },
+    {
+      "id": "04.07",
+      "section": 4,
+      "requirement": "Authorized account application",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "evidence": [
+        "docs/openssf-best-practices-submission.md"
+      ],
+      "disposition": "No project page or badge obtained. Owner/assessor must resolve identity, competence and ancillary-license classification honestly."
+    },
+    {
+      "id": "04.08",
+      "section": 4,
+      "requirement": "Secure-design competence attestation",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "evidence": [
+        "docs/openssf-best-practices-submission.md"
+      ],
+      "disposition": "No project page or badge obtained. Owner/assessor must resolve identity, competence and ancillary-license classification honestly."
+    },
+    {
+      "id": "04.09",
+      "section": 4,
+      "requirement": "Responsible human maintenance commitment",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "evidence": [
+        "docs/openssf-best-practices-submission.md"
+      ],
+      "disposition": "No project page or badge obtained. Owner/assessor must resolve identity, competence and ancillary-license classification honestly."
+    },
+    {
+      "id": "04.10",
+      "section": 4,
+      "requirement": "Ancillary schema FLOSS interpretation",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "evidence": [
+        "docs/openssf-best-practices-submission.md"
+      ],
+      "disposition": "No project page or badge obtained. Owner/assessor must resolve identity, competence and ancillary-license classification honestly."
+    },
+    {
+      "id": "04.11",
+      "section": 4,
+      "requirement": "Official Passing issuance",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "evidence": [
+        "docs/openssf-best-practices-submission.md"
+      ],
+      "disposition": "No project page or badge obtained. Owner/assessor must resolve identity, competence and ancillary-license classification honestly."
+    },
+    {
+      "id": "04.12",
+      "section": 4,
+      "requirement": "Response-history criteria",
+      "status": "BLOCKED-BY-REQUIRED-HUMAN-HISTORY",
+      "evidence": [
+        "evidence/openssf-current-criteria.json"
+      ],
+      "disposition": "No invented response percentages. Owner may seek official no-report applicability interpretation before waiting unnecessarily."
+    },
+    {
+      "id": "05.01",
+      "section": 5,
+      "requirement": "Candidate wheel and sdist build",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-signature-verification.txt",
+        ".github/workflows/snapshot.yml"
+      ],
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+    },
+    {
+      "id": "05.02",
+      "section": 5,
+      "requirement": "Source and toolchain provenance",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-signature-verification.txt",
+        ".github/workflows/snapshot.yml"
+      ],
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+    },
+    {
+      "id": "05.03",
+      "section": 5,
+      "requirement": "Dependency hashes",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-signature-verification.txt",
+        ".github/workflows/snapshot.yml"
+      ],
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+    },
+    {
+      "id": "05.04",
+      "section": 5,
+      "requirement": "Schema hashes",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-signature-verification.txt",
+        ".github/workflows/snapshot.yml"
+      ],
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+    },
+    {
+      "id": "05.05",
+      "section": 5,
+      "requirement": "Contract hashes",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-signature-verification.txt",
+        ".github/workflows/snapshot.yml"
+      ],
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+    },
+    {
+      "id": "05.06",
+      "section": 5,
+      "requirement": "Corpus hash",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-signature-verification.txt",
+        ".github/workflows/snapshot.yml"
+      ],
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+    },
+    {
+      "id": "05.07",
+      "section": 5,
+      "requirement": "CycloneDX native SBOM",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-signature-verification.txt",
+        ".github/workflows/snapshot.yml"
+      ],
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+    },
+    {
+      "id": "05.08",
+      "section": 5,
+      "requirement": "SHA256SUMS",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-signature-verification.txt",
+        ".github/workflows/snapshot.yml"
+      ],
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+    },
+    {
+      "id": "05.09",
+      "section": 5,
+      "requirement": "Cosign bundle",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-signature-verification.txt",
+        ".github/workflows/snapshot.yml"
+      ],
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+    },
+    {
+      "id": "05.10",
+      "section": 5,
+      "requirement": "GitHub OIDC signature",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-signature-verification.txt",
+        ".github/workflows/snapshot.yml"
+      ],
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+    },
+    {
+      "id": "05.11",
+      "section": 5,
+      "requirement": "Exact workflow and ref verification",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-signature-verification.txt",
+        ".github/workflows/snapshot.yml"
+      ],
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+    },
+    {
+      "id": "05.12",
+      "section": 5,
+      "requirement": "GitHub artifact attestation",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-signature-verification.txt",
+        ".github/workflows/snapshot.yml"
+      ],
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+    },
+    {
+      "id": "05.13",
+      "section": 5,
+      "requirement": "Two same-host unsigned builds compared",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-signature-verification.txt",
+        ".github/workflows/snapshot.yml"
+      ],
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+    },
+    {
+      "id": "05.14",
+      "section": 5,
+      "requirement": "Fresh offline bundle installation",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "evidence/hosted-signature-verification.txt",
+        ".github/workflows/snapshot.yml"
+      ],
+      "disposition": "Authenticated main-branch candidate only. Manifest SHA f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580; attestation 51734116. No independent reproduction claim."
+    },
+    {
+      "id": "05.15",
+      "section": 5,
+      "requirement": "Reviewed tag-backed signing approval",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "evidence": [
+        ".github/workflows/publish-reviewed-release.yml",
+        "docs/release-publication.md"
+      ],
+      "disposition": "Tag-specific workflow prepared and actionlint checked locally; enable only after real review and actual environment protection. No tag-backed signature exists yet."
+    },
+    {
+      "id": "05.16",
+      "section": 5,
+      "requirement": "Tag-specific publication/signing workflow",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "evidence": [
+        ".github/workflows/publish-reviewed-release.yml",
+        "docs/release-publication.md"
+      ],
+      "disposition": "Tag-specific workflow prepared and actionlint checked locally; enable only after real review and actual environment protection. No tag-backed signature exists yet."
+    },
+    {
+      "id": "06.01",
+      "section": 6,
+      "requirement": "Complete scope-labelled RC release notes",
+      "status": "ACHIEVED",
+      "evidence": [
+        "docs/release-notes-0.2.0-rc.1.md"
+      ],
+      "disposition": "Includes exact message scope, limits, synthetic evidence, security/rights/reproduction/Scorecard/Best Practices links; no approval claims."
+    },
+    {
+      "id": "06.02",
+      "section": 6,
+      "requirement": "Create reviewed v0.2.0-rc.1 tag and publish formal prerelease",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "evidence": [
+        "docs/release-publication.md",
+        ".github/workflows/publish-reviewed-release.yml"
+      ],
+      "disposition": "Requires two authenticated independent reviews and protected owner approval. Current signed snapshot is not this release."
+    },
+    {
+      "id": "07.01",
+      "section": 7,
+      "requirement": "Current LFDT process research",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/lfdt/README.md",
+        "external/lfdt/submission.md",
+        "external/lfdt/technical-summary.md",
+        "external/lfdt/governance-readiness.md",
+        "external/lfdt/faq.md"
+      ],
+      "disposition": "Current Lab Proposal issue form documented; no paid membership prerequisite asserted. Mission fit is candidly uncertain, not transformed into a blockchain claim."
+    },
+    {
+      "id": "07.02",
+      "section": 7,
+      "requirement": "Project summary and problem",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/lfdt/README.md",
+        "external/lfdt/submission.md",
+        "external/lfdt/technical-summary.md",
+        "external/lfdt/governance-readiness.md",
+        "external/lfdt/faq.md"
+      ],
+      "disposition": "Current Lab Proposal issue form documented; no paid membership prerequisite asserted. Mission fit is candidly uncertain, not transformed into a blockchain claim."
+    },
+    {
+      "id": "07.03",
+      "section": 7,
+      "requirement": "Architecture and maturity",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/lfdt/README.md",
+        "external/lfdt/submission.md",
+        "external/lfdt/technical-summary.md",
+        "external/lfdt/governance-readiness.md",
+        "external/lfdt/faq.md"
+      ],
+      "disposition": "Current Lab Proposal issue form documented; no paid membership prerequisite asserted. Mission fit is candidly uncertain, not transformed into a blockchain claim."
+    },
+    {
+      "id": "07.04",
+      "section": 7,
+      "requirement": "Governance and contributor model",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/lfdt/README.md",
+        "external/lfdt/submission.md",
+        "external/lfdt/technical-summary.md",
+        "external/lfdt/governance-readiness.md",
+        "external/lfdt/faq.md"
+      ],
+      "disposition": "Current Lab Proposal issue form documented; no paid membership prerequisite asserted. Mission fit is candidly uncertain, not transformed into a blockchain claim."
+    },
+    {
+      "id": "07.05",
+      "section": 7,
+      "requirement": "Licensing and security",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/lfdt/README.md",
+        "external/lfdt/submission.md",
+        "external/lfdt/technical-summary.md",
+        "external/lfdt/governance-readiness.md",
+        "external/lfdt/faq.md"
+      ],
+      "disposition": "Current Lab Proposal issue form documented; no paid membership prerequisite asserted. Mission fit is candidly uncertain, not transformed into a blockchain claim."
+    },
+    {
+      "id": "07.06",
+      "section": 7,
+      "requirement": "Roadmap and reproducibility",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/lfdt/README.md",
+        "external/lfdt/submission.md",
+        "external/lfdt/technical-summary.md",
+        "external/lfdt/governance-readiness.md",
+        "external/lfdt/faq.md"
+      ],
+      "disposition": "Current Lab Proposal issue form documented; no paid membership prerequisite asserted. Mission fit is candidly uncertain, not transformed into a blockchain claim."
+    },
+    {
+      "id": "07.07",
+      "section": 7,
+      "requirement": "OpenSSF and Scorecard disclosure",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/lfdt/README.md",
+        "external/lfdt/submission.md",
+        "external/lfdt/technical-summary.md",
+        "external/lfdt/governance-readiness.md",
+        "external/lfdt/faq.md"
+      ],
+      "disposition": "Current Lab Proposal issue form documented; no paid membership prerequisite asserted. Mission fit is candidly uncertain, not transformed into a blockchain claim."
+    },
+    {
+      "id": "07.08",
+      "section": 7,
+      "requirement": "Mission fit and complementary rationale",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/lfdt/README.md",
+        "external/lfdt/submission.md",
+        "external/lfdt/technical-summary.md",
+        "external/lfdt/governance-readiness.md",
+        "external/lfdt/faq.md"
+      ],
+      "disposition": "Current Lab Proposal issue form documented; no paid membership prerequisite asserted. Mission fit is candidly uncertain, not transformed into a blockchain claim."
+    },
+    {
+      "id": "07.09",
+      "section": 7,
+      "requirement": "Neutral governance and Aksum contribution",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/lfdt/README.md",
+        "external/lfdt/submission.md",
+        "external/lfdt/technical-summary.md",
+        "external/lfdt/governance-readiness.md",
+        "external/lfdt/faq.md"
+      ],
+      "disposition": "Current Lab Proposal issue form documented; no paid membership prerequisite asserted. Mission fit is candidly uncertain, not transformed into a blockchain claim."
+    },
+    {
+      "id": "07.10",
+      "section": 7,
+      "requirement": "Transfer and trademark implications",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/lfdt/README.md",
+        "external/lfdt/submission.md",
+        "external/lfdt/technical-summary.md",
+        "external/lfdt/governance-readiness.md",
+        "external/lfdt/faq.md"
+      ],
+      "disposition": "Current Lab Proposal issue form documented; no paid membership prerequisite asserted. Mission fit is candidly uncertain, not transformed into a blockchain claim."
+    },
+    {
+      "id": "07.11",
+      "section": 7,
+      "requirement": "Free Lab route and DCO assessment",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/lfdt/README.md",
+        "external/lfdt/submission.md",
+        "external/lfdt/technical-summary.md",
+        "external/lfdt/governance-readiness.md",
+        "external/lfdt/faq.md"
+      ],
+      "disposition": "Current Lab Proposal issue form documented; no paid membership prerequisite asserted. Mission fit is candidly uncertain, not transformed into a blockchain claim."
+    },
+    {
+      "id": "07.12",
+      "section": 7,
+      "requirement": "Complete five-file package",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/lfdt/README.md",
+        "external/lfdt/submission.md",
+        "external/lfdt/technical-summary.md",
+        "external/lfdt/governance-readiness.md",
+        "external/lfdt/faq.md"
+      ],
+      "disposition": "Current Lab Proposal issue form documented; no paid membership prerequisite asserted. Mission fit is candidly uncertain, not transformed into a blockchain claim."
+    },
+    {
+      "id": "07.13",
+      "section": 7,
+      "requirement": "Formal Lab submission and legal contact/transfer authority",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "evidence": [
+        "external/lfdt/submission.md"
+      ],
+      "disposition": "Owner supplies genuine human contacts, DCO authority and formal representation approval; no submission, acceptance or ownership transfer."
+    },
+    {
+      "id": "08.01",
+      "section": 8,
+      "requirement": "Three existing FINOS contribution targets",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/finos/upstream-targets.md",
+        "external/finos/project-proposal.md",
+        "external/finos/technical-charter-draft.md",
+        "external/finos/sponsor-request.md"
+      ],
+      "disposition": "Morphir, Common Domain Model and Legend inspected. DataHelix archived and rejected. Free existing-project route distinguished from member-sponsored new project."
+    },
+    {
+      "id": "08.02",
+      "section": 8,
+      "requirement": "Inspect actual contribution rules",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/finos/upstream-targets.md",
+        "external/finos/project-proposal.md",
+        "external/finos/technical-charter-draft.md",
+        "external/finos/sponsor-request.md"
+      ],
+      "disposition": "Morphir, Common Domain Model and Legend inspected. DataHelix archived and rejected. Free existing-project route distinguished from member-sponsored new project."
+    },
+    {
+      "id": "08.03",
+      "section": 8,
+      "requirement": "Concrete substantive improvement plans",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/finos/upstream-targets.md",
+        "external/finos/project-proposal.md",
+        "external/finos/technical-charter-draft.md",
+        "external/finos/sponsor-request.md"
+      ],
+      "disposition": "Morphir, Common Domain Model and Legend inspected. DataHelix archived and rejected. Free existing-project route distinguished from member-sponsored new project."
+    },
+    {
+      "id": "08.04",
+      "section": 8,
+      "requirement": "Avoid archived or cosmetic targets",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/finos/upstream-targets.md",
+        "external/finos/project-proposal.md",
+        "external/finos/technical-charter-draft.md",
+        "external/finos/sponsor-request.md"
+      ],
+      "disposition": "Morphir, Common Domain Model and Legend inspected. DataHelix archived and rejected. Free existing-project route distinguished from member-sponsored new project."
+    },
+    {
+      "id": "08.05",
+      "section": 8,
+      "requirement": "New-project proposal",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/finos/upstream-targets.md",
+        "external/finos/project-proposal.md",
+        "external/finos/technical-charter-draft.md",
+        "external/finos/sponsor-request.md"
+      ],
+      "disposition": "Morphir, Common Domain Model and Legend inspected. DataHelix archived and rejected. Free existing-project route distinguished from member-sponsored new project."
+    },
+    {
+      "id": "08.06",
+      "section": 8,
+      "requirement": "Business problem and solution",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/finos/upstream-targets.md",
+        "external/finos/project-proposal.md",
+        "external/finos/technical-charter-draft.md",
+        "external/finos/sponsor-request.md"
+      ],
+      "disposition": "Morphir, Common Domain Model and Legend inspected. DataHelix archived and rejected. Free existing-project route distinguished from member-sponsored new project."
+    },
+    {
+      "id": "08.07",
+      "section": 8,
+      "requirement": "Roadmap and existing materials",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/finos/upstream-targets.md",
+        "external/finos/project-proposal.md",
+        "external/finos/technical-charter-draft.md",
+        "external/finos/sponsor-request.md"
+      ],
+      "disposition": "Morphir, Common Domain Model and Legend inspected. DataHelix archived and rejected. Free existing-project route distinguished from member-sponsored new project."
+    },
+    {
+      "id": "08.08",
+      "section": 8,
+      "requirement": "Team/contributor commitment template",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/finos/upstream-targets.md",
+        "external/finos/project-proposal.md",
+        "external/finos/technical-charter-draft.md",
+        "external/finos/sponsor-request.md"
+      ],
+      "disposition": "Morphir, Common Domain Model and Legend inspected. DataHelix archived and rejected. Free existing-project route distinguished from member-sponsored new project."
+    },
+    {
+      "id": "08.09",
+      "section": 8,
+      "requirement": "Governance plan",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/finos/upstream-targets.md",
+        "external/finos/project-proposal.md",
+        "external/finos/technical-charter-draft.md",
+        "external/finos/sponsor-request.md"
+      ],
+      "disposition": "Morphir, Common Domain Model and Legend inspected. DataHelix archived and rejected. Free existing-project route distinguished from member-sponsored new project."
+    },
+    {
+      "id": "08.10",
+      "section": 8,
+      "requirement": "Technical charter",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/finos/upstream-targets.md",
+        "external/finos/project-proposal.md",
+        "external/finos/technical-charter-draft.md",
+        "external/finos/sponsor-request.md"
+      ],
+      "disposition": "Morphir, Common Domain Model and Legend inspected. DataHelix archived and rejected. Free existing-project route distinguished from member-sponsored new project."
+    },
+    {
+      "id": "08.11",
+      "section": 8,
+      "requirement": "Unsent sponsor request",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/finos/upstream-targets.md",
+        "external/finos/project-proposal.md",
+        "external/finos/technical-charter-draft.md",
+        "external/finos/sponsor-request.md"
+      ],
+      "disposition": "Morphir, Common Domain Model and Legend inspected. DataHelix archived and rejected. Free existing-project route distinguished from member-sponsored new project."
+    },
+    {
+      "id": "08.12",
+      "section": 8,
+      "requirement": "FINOS outreach/contribution authorization",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "evidence": [
+        "external/finos/sponsor-request.md"
+      ],
+      "disposition": "No outreach sent and no sponsor exists. Owner must authorize representation and real contributor legal agreements before contact."
+    },
+    {
+      "id": "08.13",
+      "section": 8,
+      "requirement": "Real Member sponsorship and formal proposal",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "evidence": [
+        "external/finos/sponsor-request.md"
+      ],
+      "disposition": "No outreach sent and no sponsor exists. Owner must authorize representation and real contributor legal agreements before contact."
+    },
+    {
+      "id": "09.01",
+      "section": 9,
+      "requirement": "Prior-art targets inspected",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/upstream/mx20022/proposal.md",
+        "external/upstream/mx20022/upstream.patch",
+        "external/upstream/mx20022/evidence.json"
+      ],
+      "disposition": "Two new mx20022 tests pass at pinned upstream 810cfa2e486745ca3a779c460a7768e1923f860a. Parser accepts transformed semantic changes; no upstream defect or merged contribution claimed."
+    },
+    {
+      "id": "09.02",
+      "section": 9,
+      "requirement": "Strongest narrow upstream improvement selected",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/upstream/mx20022/proposal.md",
+        "external/upstream/mx20022/upstream.patch",
+        "external/upstream/mx20022/evidence.json"
+      ],
+      "disposition": "Two new mx20022 tests pass at pinned upstream 810cfa2e486745ca3a779c460a7768e1923f860a. Parser accepts transformed semantic changes; no upstream defect or merged contribution claimed."
+    },
+    {
+      "id": "09.03",
+      "section": 9,
+      "requirement": "Original fixture and executable tests",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/upstream/mx20022/proposal.md",
+        "external/upstream/mx20022/upstream.patch",
+        "external/upstream/mx20022/evidence.json"
+      ],
+      "disposition": "Two new mx20022 tests pass at pinned upstream 810cfa2e486745ca3a779c460a7768e1923f860a. Parser accepts transformed semantic changes; no upstream defect or merged contribution claimed."
+    },
+    {
+      "id": "09.04",
+      "section": 9,
+      "requirement": "Tested Rust patch",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/upstream/mx20022/proposal.md",
+        "external/upstream/mx20022/upstream.patch",
+        "external/upstream/mx20022/evidence.json"
+      ],
+      "disposition": "Two new mx20022 tests pass at pinned upstream 810cfa2e486745ca3a779c460a7768e1923f860a. Parser accepts transformed semantic changes; no upstream defect or merged contribution claimed."
+    },
+    {
+      "id": "09.05",
+      "section": 9,
+      "requirement": "Proposal and PR plan",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/upstream/mx20022/proposal.md",
+        "external/upstream/mx20022/upstream.patch",
+        "external/upstream/mx20022/evidence.json"
+      ],
+      "disposition": "Two new mx20022 tests pass at pinned upstream 810cfa2e486745ca3a779c460a7768e1923f860a. Parser accepts transformed semantic changes; no upstream defect or merged contribution claimed."
+    },
+    {
+      "id": "09.06",
+      "section": 9,
+      "requirement": "Evidence and no duplication claim",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/upstream/mx20022/proposal.md",
+        "external/upstream/mx20022/upstream.patch",
+        "external/upstream/mx20022/evidence.json"
+      ],
+      "disposition": "Two new mx20022 tests pass at pinned upstream 810cfa2e486745ca3a779c460a7768e1923f860a. Parser accepts transformed semantic changes; no upstream defect or merged contribution claimed."
+    },
+    {
+      "id": "09.07",
+      "section": 9,
+      "requirement": "Submit upstream PR with actual legal contribution identity",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "evidence": [
+        "external/upstream/mx20022/patch-or-pr-plan.md"
+      ],
+      "disposition": "Prepared tested patch; no fake DCO/CLA or personal-account PR. Upstream acceptance not presumed."
+    },
+    {
+      "id": "10.01",
+      "section": 10,
+      "requirement": "Abstract and motivation",
+      "status": "ACHIEVED",
+      "evidence": [
+        "paper/messagebench-benchmark.md",
+        "paper/messagebench-benchmark.pdf",
+        "paper/technical-brief.pdf",
+        "paper/reproducibility-appendix.md"
+      ],
+      "disposition": "Only measured synthetic evidence; six-pair 1,000-comparison benchmark 80.624 pairs/s is bounded and environment-specific. No bank rates or peer-review claims."
+    },
+    {
+      "id": "10.02",
+      "section": 10,
+      "requirement": "Problem definition and validity distinction",
+      "status": "ACHIEVED",
+      "evidence": [
+        "paper/messagebench-benchmark.md",
+        "paper/messagebench-benchmark.pdf",
+        "paper/technical-brief.pdf",
+        "paper/reproducibility-appendix.md"
+      ],
+      "disposition": "Only measured synthetic evidence; six-pair 1,000-comparison benchmark 80.624 pairs/s is bounded and environment-specific. No bank rates or peer-review claims."
+    },
+    {
+      "id": "10.03",
+      "section": 10,
+      "requirement": "Preservation contracts",
+      "status": "ACHIEVED",
+      "evidence": [
+        "paper/messagebench-benchmark.md",
+        "paper/messagebench-benchmark.pdf",
+        "paper/technical-brief.pdf",
+        "paper/reproducibility-appendix.md"
+      ],
+      "disposition": "Only measured synthetic evidence; six-pair 1,000-comparison benchmark 80.624 pairs/s is bounded and environment-specific. No bank rates or peer-review claims."
+    },
+    {
+      "id": "10.04",
+      "section": 10,
+      "requirement": "Corpus design",
+      "status": "ACHIEVED",
+      "evidence": [
+        "paper/messagebench-benchmark.md",
+        "paper/messagebench-benchmark.pdf",
+        "paper/technical-brief.pdf",
+        "paper/reproducibility-appendix.md"
+      ],
+      "disposition": "Only measured synthetic evidence; six-pair 1,000-comparison benchmark 80.624 pairs/s is bounded and environment-specific. No bank rates or peer-review claims."
+    },
+    {
+      "id": "10.05",
+      "section": 10,
+      "requirement": "Threat model",
+      "status": "ACHIEVED",
+      "evidence": [
+        "paper/messagebench-benchmark.md",
+        "paper/messagebench-benchmark.pdf",
+        "paper/technical-brief.pdf",
+        "paper/reproducibility-appendix.md"
+      ],
+      "disposition": "Only measured synthetic evidence; six-pair 1,000-comparison benchmark 80.624 pairs/s is bounded and environment-specific. No bank rates or peer-review claims."
+    },
+    {
+      "id": "10.06",
+      "section": 10,
+      "requirement": "Methodology and baselines",
+      "status": "ACHIEVED",
+      "evidence": [
+        "paper/messagebench-benchmark.md",
+        "paper/messagebench-benchmark.pdf",
+        "paper/technical-brief.pdf",
+        "paper/reproducibility-appendix.md"
+      ],
+      "disposition": "Only measured synthetic evidence; six-pair 1,000-comparison benchmark 80.624 pairs/s is bounded and environment-specific. No bank rates or peer-review claims."
+    },
+    {
+      "id": "10.07",
+      "section": 10,
+      "requirement": "Measured results and failure classes",
+      "status": "ACHIEVED",
+      "evidence": [
+        "paper/messagebench-benchmark.md",
+        "paper/messagebench-benchmark.pdf",
+        "paper/technical-brief.pdf",
+        "paper/reproducibility-appendix.md"
+      ],
+      "disposition": "Only measured synthetic evidence; six-pair 1,000-comparison benchmark 80.624 pairs/s is bounded and environment-specific. No bank rates or peer-review claims."
+    },
+    {
+      "id": "10.08",
+      "section": 10,
+      "requirement": "Coverage limits and false assurance",
+      "status": "ACHIEVED",
+      "evidence": [
+        "paper/messagebench-benchmark.md",
+        "paper/messagebench-benchmark.pdf",
+        "paper/technical-brief.pdf",
+        "paper/reproducibility-appendix.md"
+      ],
+      "disposition": "Only measured synthetic evidence; six-pair 1,000-comparison benchmark 80.624 pairs/s is bounded and environment-specific. No bank rates or peer-review claims."
+    },
+    {
+      "id": "10.09",
+      "section": 10,
+      "requirement": "Prior art",
+      "status": "ACHIEVED",
+      "evidence": [
+        "paper/messagebench-benchmark.md",
+        "paper/messagebench-benchmark.pdf",
+        "paper/technical-brief.pdf",
+        "paper/reproducibility-appendix.md"
+      ],
+      "disposition": "Only measured synthetic evidence; six-pair 1,000-comparison benchmark 80.624 pairs/s is bounded and environment-specific. No bank rates or peer-review claims."
+    },
+    {
+      "id": "10.10",
+      "section": 10,
+      "requirement": "Reproducibility",
+      "status": "ACHIEVED",
+      "evidence": [
+        "paper/messagebench-benchmark.md",
+        "paper/messagebench-benchmark.pdf",
+        "paper/technical-brief.pdf",
+        "paper/reproducibility-appendix.md"
+      ],
+      "disposition": "Only measured synthetic evidence; six-pair 1,000-comparison benchmark 80.624 pairs/s is bounded and environment-specific. No bank rates or peer-review claims."
+    },
+    {
+      "id": "10.11",
+      "section": 10,
+      "requirement": "Limitations and future work",
+      "status": "ACHIEVED",
+      "evidence": [
+        "paper/messagebench-benchmark.md",
+        "paper/messagebench-benchmark.pdf",
+        "paper/technical-brief.pdf",
+        "paper/reproducibility-appendix.md"
+      ],
+      "disposition": "Only measured synthetic evidence; six-pair 1,000-comparison benchmark 80.624 pairs/s is bounded and environment-specific. No bank rates or peer-review claims."
+    },
+    {
+      "id": "10.12",
+      "section": 10,
+      "requirement": "Rights and conclusion",
+      "status": "ACHIEVED",
+      "evidence": [
+        "paper/messagebench-benchmark.md",
+        "paper/messagebench-benchmark.pdf",
+        "paper/technical-brief.pdf",
+        "paper/reproducibility-appendix.md"
+      ],
+      "disposition": "Only measured synthetic evidence; six-pair 1,000-comparison benchmark 80.624 pairs/s is bounded and environment-specific. No bank rates or peer-review claims."
+    },
+    {
+      "id": "10.13",
+      "section": 10,
+      "requirement": "9-page preprint PDF",
+      "status": "ACHIEVED",
+      "evidence": [
+        "paper/messagebench-benchmark.md",
+        "paper/messagebench-benchmark.pdf",
+        "paper/technical-brief.pdf",
+        "paper/reproducibility-appendix.md"
+      ],
+      "disposition": "Only measured synthetic evidence; six-pair 1,000-comparison benchmark 80.624 pairs/s is bounded and environment-specific. No bank rates or peer-review claims."
+    },
+    {
+      "id": "10.14",
+      "section": 10,
+      "requirement": "Figures and appendix",
+      "status": "ACHIEVED",
+      "evidence": [
+        "paper/messagebench-benchmark.md",
+        "paper/messagebench-benchmark.pdf",
+        "paper/technical-brief.pdf",
+        "paper/reproducibility-appendix.md"
+      ],
+      "disposition": "Only measured synthetic evidence; six-pair 1,000-comparison benchmark 80.624 pairs/s is bounded and environment-specific. No bank rates or peer-review claims."
+    },
+    {
+      "id": "10.15",
+      "section": 10,
+      "requirement": "Separate citation metadata",
+      "status": "ACHIEVED",
+      "evidence": [
+        "paper/messagebench-benchmark.md",
+        "paper/messagebench-benchmark.pdf",
+        "paper/technical-brief.pdf",
+        "paper/reproducibility-appendix.md"
+      ],
+      "disposition": "Only measured synthetic evidence; six-pair 1,000-comparison benchmark 80.624 pairs/s is bounded and environment-specific. No bank rates or peer-review claims."
+    },
+    {
+      "id": "10.16",
+      "section": 10,
+      "requirement": "2-page technical brief",
+      "status": "ACHIEVED",
+      "evidence": [
+        "paper/messagebench-benchmark.md",
+        "paper/messagebench-benchmark.pdf",
+        "paper/technical-brief.pdf",
+        "paper/reproducibility-appendix.md"
+      ],
+      "disposition": "Only measured synthetic evidence; six-pair 1,000-comparison benchmark 80.624 pairs/s is bounded and environment-specific. No bank rates or peer-review claims."
+    },
+    {
+      "id": "11.01",
+      "section": 11,
+      "requirement": "CITATION.cff",
+      "status": "ACHIEVED",
+      "evidence": [
+        "CITATION.cff",
+        "AUTHORS",
+        "CONTRIBUTORS",
+        "codemeta.json",
+        "docs/citation-and-archival.md"
+      ],
+      "disposition": "Public corporate attribution and citation metadata; archival identifiers absent."
+    },
+    {
+      "id": "11.02",
+      "section": 11,
+      "requirement": "AUTHORS and CONTRIBUTORS",
+      "status": "ACHIEVED",
+      "evidence": [
+        "CITATION.cff",
+        "AUTHORS",
+        "CONTRIBUTORS",
+        "codemeta.json",
+        "docs/citation-and-archival.md"
+      ],
+      "disposition": "Public corporate attribution and citation metadata; archival identifiers absent."
+    },
+    {
+      "id": "11.03",
+      "section": 11,
+      "requirement": "Codemeta project metadata",
+      "status": "ACHIEVED",
+      "evidence": [
+        "CITATION.cff",
+        "AUTHORS",
+        "CONTRIBUTORS",
+        "codemeta.json",
+        "docs/citation-and-archival.md"
+      ],
+      "disposition": "Public corporate attribution and citation metadata; archival identifiers absent."
+    },
+    {
+      "id": "11.04",
+      "section": 11,
+      "requirement": "SPDX and separate asset terms",
+      "status": "ACHIEVED",
+      "evidence": [
+        "CITATION.cff",
+        "AUTHORS",
+        "CONTRIBUTORS",
+        "codemeta.json",
+        "docs/citation-and-archival.md"
+      ],
+      "disposition": "Public corporate attribution and citation metadata; archival identifiers absent."
+    },
+    {
+      "id": "11.05",
+      "section": 11,
+      "requirement": "Free software and separate paper DOI pathways",
+      "status": "ACHIEVED",
+      "evidence": [
+        "CITATION.cff",
+        "AUTHORS",
+        "CONTRIBUTORS",
+        "codemeta.json",
+        "docs/citation-and-archival.md"
+      ],
+      "disposition": "Public corporate attribution and citation metadata; archival identifiers absent."
+    },
+    {
+      "id": "11.06",
+      "section": 11,
+      "requirement": "Zenodo account authorization and actual DOI deposit",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "evidence": [
+        "docs/citation-and-archival.md"
+      ],
+      "disposition": "Owner legal account/integration and genuine metadata approval required; no DOI yet."
+    },
+    {
+      "id": "11.07",
+      "section": 11,
+      "requirement": "Software Heritage save and actual snapshot verification",
+      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "evidence": [
+        "docs/citation-and-archival.md"
+      ],
+      "disposition": "Anti-bot denial encountered; no save receipt or SWHID. Current company shell also lacks network. A request would not prove archival."
+    },
+    {
+      "id": "12.01",
+      "section": 12,
+      "requirement": "Public Scorecard signal",
+      "status": "ACHIEVED",
+      "evidence": [
+        "SECURITY-EVIDENCE.md",
+        "evidence/hosted-recognition.json"
+      ],
+      "disposition": "Measured automated checks separated from independent review and awards; no claimed SLSA level."
+    },
+    {
+      "id": "12.02",
+      "section": 12,
+      "requirement": "Best Practices evidence",
+      "status": "ACHIEVED",
+      "evidence": [
+        "SECURITY-EVIDENCE.md",
+        "evidence/hosted-recognition.json"
+      ],
+      "disposition": "Measured automated checks separated from independent review and awards; no claimed SLSA level."
+    },
+    {
+      "id": "12.03",
+      "section": 12,
+      "requirement": "OSPS disclosure",
+      "status": "ACHIEVED",
+      "evidence": [
+        "SECURITY-EVIDENCE.md",
+        "evidence/hosted-recognition.json"
+      ],
+      "disposition": "Measured automated checks separated from independent review and awards; no claimed SLSA level."
+    },
+    {
+      "id": "12.04",
+      "section": 12,
+      "requirement": "CodeQL",
+      "status": "ACHIEVED",
+      "evidence": [
+        "SECURITY-EVIDENCE.md",
+        "evidence/hosted-recognition.json"
+      ],
+      "disposition": "Measured automated checks separated from independent review and awards; no claimed SLSA level."
+    },
+    {
+      "id": "12.05",
+      "section": 12,
+      "requirement": "Dependency review and updates",
+      "status": "ACHIEVED",
+      "evidence": [
+        "SECURITY-EVIDENCE.md",
+        "evidence/hosted-recognition.json"
+      ],
+      "disposition": "Measured automated checks separated from independent review and awards; no claimed SLSA level."
+    },
+    {
+      "id": "12.06",
+      "section": 12,
+      "requirement": "Secret scanning",
+      "status": "ACHIEVED",
+      "evidence": [
+        "SECURITY-EVIDENCE.md",
+        "evidence/hosted-recognition.json"
+      ],
+      "disposition": "Measured automated checks separated from independent review and awards; no claimed SLSA level."
+    },
+    {
+      "id": "12.07",
+      "section": 12,
+      "requirement": "Artifact attestation",
+      "status": "ACHIEVED",
+      "evidence": [
+        "SECURITY-EVIDENCE.md",
+        "evidence/hosted-recognition.json"
+      ],
+      "disposition": "Measured automated checks separated from independent review and awards; no claimed SLSA level."
+    },
+    {
+      "id": "12.08",
+      "section": 12,
+      "requirement": "Sigstore",
+      "status": "ACHIEVED",
+      "evidence": [
+        "SECURITY-EVIDENCE.md",
+        "evidence/hosted-recognition.json"
+      ],
+      "disposition": "Measured automated checks separated from independent review and awards; no claimed SLSA level."
+    },
+    {
+      "id": "12.09",
+      "section": 12,
+      "requirement": "Native-inclusive SBOM",
+      "status": "ACHIEVED",
+      "evidence": [
+        "SECURITY-EVIDENCE.md",
+        "evidence/hosted-recognition.json"
+      ],
+      "disposition": "Measured automated checks separated from independent review and awards; no claimed SLSA level."
+    },
+    {
+      "id": "12.10",
+      "section": 12,
+      "requirement": "SLSA-compatible provenance without level claim",
+      "status": "ACHIEVED",
+      "evidence": [
+        "SECURITY-EVIDENCE.md",
+        "evidence/hosted-recognition.json"
+      ],
+      "disposition": "Measured automated checks separated from independent review and awards; no claimed SLSA level."
+    },
+    {
+      "id": "12.11",
+      "section": 12,
+      "requirement": "Public security evidence disclosure",
+      "status": "ACHIEVED",
+      "evidence": [
+        "SECURITY-EVIDENCE.md",
+        "evidence/hosted-recognition.json"
+      ],
+      "disposition": "Measured automated checks separated from independent review and awards; no claimed SLSA level."
+    },
+    {
+      "id": "13.01",
+      "section": 13,
+      "requirement": "Professional free repository-native landing",
+      "status": "ACHIEVED",
+      "evidence": [
+        "docs/index.md",
+        "site/index.html",
+        ".github/workflows/pages.yml"
+      ],
+      "disposition": "Repository-native docs public. Pages workflow is prepared and linted locally, not a verified deployed site."
+    },
+    {
+      "id": "13.02",
+      "section": 13,
+      "requirement": "Demo and architecture",
+      "status": "ACHIEVED",
+      "evidence": [
+        "docs/index.md",
+        "site/index.html",
+        ".github/workflows/pages.yml"
+      ],
+      "disposition": "Repository-native docs public. Pages workflow is prepared and linted locally, not a verified deployed site."
+    },
+    {
+      "id": "13.03",
+      "section": 13,
+      "requirement": "Supported scope and security",
+      "status": "ACHIEVED",
+      "evidence": [
+        "docs/index.md",
+        "site/index.html",
+        ".github/workflows/pages.yml"
+      ],
+      "disposition": "Repository-native docs public. Pages workflow is prepared and linted locally, not a verified deployed site."
+    },
+    {
+      "id": "13.04",
+      "section": 13,
+      "requirement": "Benchmark and recognition status",
+      "status": "ACHIEVED",
+      "evidence": [
+        "docs/index.md",
+        "site/index.html",
+        ".github/workflows/pages.yml"
+      ],
+      "disposition": "Repository-native docs public. Pages workflow is prepared and linted locally, not a verified deployed site."
+    },
+    {
+      "id": "13.05",
+      "section": 13,
+      "requirement": "Citation and contribution",
+      "status": "ACHIEVED",
+      "evidence": [
+        "docs/index.md",
+        "site/index.html",
+        ".github/workflows/pages.yml"
+      ],
+      "disposition": "Repository-native docs public. Pages workflow is prepared and linted locally, not a verified deployed site."
+    },
+    {
+      "id": "13.06",
+      "section": 13,
+      "requirement": "Roadmap",
+      "status": "ACHIEVED",
+      "evidence": [
+        "docs/index.md",
+        "site/index.html",
+        ".github/workflows/pages.yml"
+      ],
+      "disposition": "Repository-native docs public. Pages workflow is prepared and linted locally, not a verified deployed site."
+    },
+    {
+      "id": "13.07",
+      "section": 13,
+      "requirement": "Prepared static Pages site and pinned workflow",
+      "status": "ACHIEVED",
+      "evidence": [
+        "docs/index.md",
+        "site/index.html",
+        ".github/workflows/pages.yml"
+      ],
+      "disposition": "Repository-native docs public. Pages workflow is prepared and linted locally, not a verified deployed site."
+    },
+    {
+      "id": "13.08",
+      "section": 13,
+      "requirement": "Actual GitHub Pages publication and URL verification",
+      "status": "BLOCKED-BY-EXTERNAL-PARTY",
+      "evidence": [
+        ".github/workflows/pages.yml"
+      ],
+      "disposition": "Requires company-App network/configuration, final workflow upload and real deployment. No successful Pages URL claimed."
+    },
+    {
+      "id": "14.01",
+      "section": 14,
+      "requirement": "Financial Infrastructure Assurance portfolio positioning",
+      "status": "ACHIEVED",
+      "evidence": [
+        "docs/aksum-open-source-positioning.md"
+      ],
+      "disposition": "No future tools announced as products or institutional relationships claimed."
+    },
+    {
+      "id": "14.02",
+      "section": 14,
+      "requirement": "Separation from sovereign settlement research",
+      "status": "ACHIEVED",
+      "evidence": [
+        "docs/aksum-open-source-positioning.md"
+      ],
+      "disposition": "No future tools announced as products or institutional relationships claimed."
+    },
+    {
+      "id": "14.03",
+      "section": 14,
+      "requirement": "Unannounced future tools kept as research possibilities",
+      "status": "ACHIEVED",
+      "evidence": [
+        "docs/aksum-open-source-positioning.md"
+      ],
+      "disposition": "No future tools announced as products or institutional relationships claimed."
+    },
+    {
+      "id": "15.01",
+      "section": 15,
+      "requirement": "Compact institutional overview",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/messagebench-institutional-brief.md"
+      ],
+      "disposition": "Dossier prepared, actual public candidate attestation linked; no formal release or earned foundation listing falsely implied."
+    },
+    {
+      "id": "15.02",
+      "section": 15,
+      "requirement": "Technical abstract and architecture diagram",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/messagebench-institutional-brief.md"
+      ],
+      "disposition": "Dossier prepared, actual public candidate attestation linked; no formal release or earned foundation listing falsely implied."
+    },
+    {
+      "id": "15.03",
+      "section": 15,
+      "requirement": "Benchmark and security summary",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/messagebench-institutional-brief.md"
+      ],
+      "disposition": "Dossier prepared, actual public candidate attestation linked; no formal release or earned foundation listing falsely implied."
+    },
+    {
+      "id": "15.04",
+      "section": 15,
+      "requirement": "License and actual earned signals",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/messagebench-institutional-brief.md"
+      ],
+      "disposition": "Dossier prepared, actual public candidate attestation linked; no formal release or earned foundation listing falsely implied."
+    },
+    {
+      "id": "15.05",
+      "section": 15,
+      "requirement": "Foundation and citation status",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/messagebench-institutional-brief.md"
+      ],
+      "disposition": "Dossier prepared, actual public candidate attestation linked; no formal release or earned foundation listing falsely implied."
+    },
+    {
+      "id": "15.06",
+      "section": 15,
+      "requirement": "Repository/paper URLs and release limits",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/messagebench-institutional-brief.md"
+      ],
+      "disposition": "Dossier prepared, actual public candidate attestation linked; no formal release or earned foundation listing falsely implied."
+    },
+    {
+      "id": "15.07",
+      "section": 15,
+      "requirement": "No NBE-proposal positioning",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/messagebench-institutional-brief.md"
+      ],
+      "disposition": "Dossier prepared, actual public candidate attestation linked; no formal release or earned foundation listing falsely implied."
+    },
+    {
+      "id": "16.01",
+      "section": 16,
+      "requirement": "Machine-readable all-target recognition matrix",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/recognition-matrix.json"
+      ],
+      "disposition": "Only mandated terminal dispositions used. Technical-environment blockers are explicit, not disguised as human approval."
+    },
+    {
+      "id": "16.02",
+      "section": 16,
+      "requirement": "Required free/paid and applicability fields",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/recognition-matrix.json"
+      ],
+      "disposition": "Only mandated terminal dispositions used. Technical-environment blockers are explicit, not disguised as human approval."
+    },
+    {
+      "id": "16.03",
+      "section": 16,
+      "requirement": "Prepared/submitted/accepted distinguished",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/recognition-matrix.json"
+      ],
+      "disposition": "Only mandated terminal dispositions used. Technical-environment blockers are explicit, not disguised as human approval."
+    },
+    {
+      "id": "16.04",
+      "section": 16,
+      "requirement": "Date/source/URLs and exact blockers",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/recognition-matrix.json"
+      ],
+      "disposition": "Only mandated terminal dispositions used. Technical-environment blockers are explicit, not disguised as human approval."
+    },
+    {
+      "id": "16.05",
+      "section": 16,
+      "requirement": "All minimum target categories",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/recognition-matrix.json"
+      ],
+      "disposition": "Only mandated terminal dispositions used. Technical-environment blockers are explicit, not disguised as human approval."
+    },
+    {
+      "id": "17.01",
+      "section": 17,
+      "requirement": "Paid membership filter",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/rejected-paid-recognition.md"
+      ],
+      "disposition": "No fee paid; some legitimate fee-based programs simply outside scope, not disparaged."
+    },
+    {
+      "id": "17.02",
+      "section": 17,
+      "requirement": "Paid awards/certification/listings rejected",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/rejected-paid-recognition.md"
+      ],
+      "disposition": "No fee paid; some legitimate fee-based programs simply outside scope, not disparaged."
+    },
+    {
+      "id": "17.03",
+      "section": 17,
+      "requirement": "Paid conference/standards/audit prerequisite filter",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/rejected-paid-recognition.md"
+      ],
+      "disposition": "No fee paid; some legitimate fee-based programs simply outside scope, not disparaged."
+    },
+    {
+      "id": "17.04",
+      "section": 17,
+      "requirement": "Separate rejected routes record",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/rejected-paid-recognition.md"
+      ],
+      "disposition": "No fee paid; some legitimate fee-based programs simply outside scope, not disparaged."
+    },
+    {
+      "id": "18.01",
+      "section": 18,
+      "requirement": "Every recognition target explicitly accounted for",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/recognition-matrix.json",
+        "external/mandate-accounting.json"
+      ],
+      "disposition": "Accounting complete; unresolved real outcomes still disclosed as blocked/owner-ready, not success."
+    },
+    {
+      "id": "18.02",
+      "section": 18,
+      "requirement": "No vague pending or PARTIAL target states",
+      "status": "ACHIEVED",
+      "evidence": [
+        "external/recognition-matrix.json",
+        "external/mandate-accounting.json"
+      ],
+      "disposition": "Accounting complete; unresolved real outcomes still disclosed as blocked/owner-ready, not success."
+    },
+    {
+      "id": "19.01",
+      "section": 19,
+      "requirement": "Completion report A through Q",
+      "status": "ACHIEVED",
+      "evidence": [
+        "EXTERNAL_RECOGNITION_COMPLETION_REPORT.md",
+        "evidence/recognition-hashes.json"
+      ],
+      "disposition": "Report prepared locally; final publication and enforcement remain genuine environment blockers."
+    },
+    {
+      "id": "19.02",
+      "section": 19,
+      "requirement": "All public URLs",
+      "status": "ACHIEVED",
+      "evidence": [
+        "EXTERNAL_RECOGNITION_COMPLETION_REPORT.md",
+        "evidence/recognition-hashes.json"
+      ],
+      "disposition": "Report prepared locally; final publication and enforcement remain genuine environment blockers."
+    },
+    {
+      "id": "19.03",
+      "section": 19,
+      "requirement": "All evidence hashes",
+      "status": "ACHIEVED",
+      "evidence": [
+        "EXTERNAL_RECOGNITION_COMPLETION_REPORT.md",
+        "evidence/recognition-hashes.json"
+      ],
+      "disposition": "Report prepared locally; final publication and enforcement remain genuine environment blockers."
+    },
+    {
+      "id": "19.04",
+      "section": 19,
+      "requirement": "Public allowed/prohibited claims",
+      "status": "ACHIEVED",
+      "evidence": [
+        "EXTERNAL_RECOGNITION_COMPLETION_REPORT.md",
+        "evidence/recognition-hashes.json"
+      ],
+      "disposition": "Report prepared locally; final publication and enforcement remain genuine environment blockers."
+    },
+    {
+      "id": "19.05",
+      "section": 19,
+      "requirement": "Human/account and external blockers",
+      "status": "ACHIEVED",
+      "evidence": [
+        "EXTERNAL_RECOGNITION_COMPLETION_REPORT.md",
+        "evidence/recognition-hashes.json"
+      ],
+      "disposition": "Report prepared locally; final publication and enforcement remain genuine environment blockers."
+    },
+    {
+      "id": "19.06",
+      "section": 19,
+      "requirement": "Exact final five summary categories",
+      "status": "ACHIEVED",
+      "evidence": [
+        "EXTERNAL_RECOGNITION_COMPLETION_REPORT.md",
+        "evidence/recognition-hashes.json"
+      ],
+      "disposition": "Report prepared locally; final publication and enforcement remain genuine environment blockers."
+    },
+    {
+      "id": "20.01",
+      "section": 20,
+      "requirement": "Public software exists and tests run",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "SECURITY-EVIDENCE.md",
+        "external/upstream/mx20022/evidence.json"
+      ],
+      "disposition": "Earned public engineering credibility; no invented reviews, certifications or paid visibility."
+    },
+    {
+      "id": "20.02",
+      "section": 20,
+      "requirement": "Claims reproducible within scope",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "SECURITY-EVIDENCE.md",
+        "external/upstream/mx20022/evidence.json"
+      ],
+      "disposition": "Earned public engineering credibility; no invented reviews, certifications or paid visibility."
+    },
+    {
+      "id": "20.03",
+      "section": 20,
+      "requirement": "Visible security controls",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "SECURITY-EVIDENCE.md",
+        "external/upstream/mx20022/evidence.json"
+      ],
+      "disposition": "Earned public engineering credibility; no invented reviews, certifications or paid visibility."
+    },
+    {
+      "id": "20.04",
+      "section": 20,
+      "requirement": "Authentic candidate provenance",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "SECURITY-EVIDENCE.md",
+        "external/upstream/mx20022/evidence.json"
+      ],
+      "disposition": "Earned public engineering credibility; no invented reviews, certifications or paid visibility."
+    },
+    {
+      "id": "20.05",
+      "section": 20,
+      "requirement": "Original licensing and separate asset limits",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "SECURITY-EVIDENCE.md",
+        "external/upstream/mx20022/evidence.json"
+      ],
+      "disposition": "Earned public engineering credibility; no invented reviews, certifications or paid visibility."
+    },
+    {
+      "id": "20.06",
+      "section": 20,
+      "requirement": "Constructive substantive upstream preparation",
+      "status": "ACHIEVED",
+      "evidence": [
+        "evidence/hosted-recognition.json",
+        "SECURITY-EVIDENCE.md",
+        "external/upstream/mx20022/evidence.json"
+      ],
+      "disposition": "Earned public engineering credibility; no invented reviews, certifications or paid visibility."
+    },
+    {
+      "id": "20.07",
+      "section": 20,
+      "requirement": "Fully hardened final public release and independent verification",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "evidence": [
+        "docs/release-publication.md",
+        "docs/github-hardening-report.md"
+      ],
+      "disposition": "Independent review/owner approval remain human gates; remaining configuration/upload additionally blocked by current company-network access."
+    }
+  ]
+}

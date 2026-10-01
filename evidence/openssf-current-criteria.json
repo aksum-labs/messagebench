@@ -8,24 +8,28 @@
   "criteria": [
     {
       "criterion": "description_good",
-      "status": "BLOCKED-BY-HUMAN",
+      "status": "SATISFIED",
       "evidence": [
         "README.md",
         "CONTRIBUTING.md",
-        "GOVERNANCE.md"
+        "GOVERNANCE.md",
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json"
       ],
-      "assessment": "Technically prepared; App permissions/actual public read-back required. Reassess after publication.",
+      "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at 2bb62cb1e0dcbbb91d265bb824eda274cbd9b217; see current hosted and platform evidence. This is not badge issuance.",
       "official_url": "https://www.bestpractices.dev/en/criteria/0#0.description_good"
     },
     {
       "criterion": "interact",
-      "status": "BLOCKED-BY-HUMAN",
+      "status": "SATISFIED",
       "evidence": [
         "README.md",
         "CONTRIBUTING.md",
-        "GOVERNANCE.md"
+        "GOVERNANCE.md",
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json"
       ],
-      "assessment": "Technically prepared; App permissions/actual public read-back required. Reassess after publication.",
+      "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at 2bb62cb1e0dcbbb91d265bb824eda274cbd9b217; see current hosted and platform evidence. This is not badge issuance.",
       "official_url": "https://www.bestpractices.dev/en/criteria/0#0.interact"
     },
     {
@@ -101,24 +105,28 @@
     },
     {
       "criterion": "sites_https",
-      "status": "BLOCKED-BY-HUMAN",
+      "status": "SATISFIED",
       "evidence": [
         "README.md",
         "CONTRIBUTING.md",
-        "GOVERNANCE.md"
+        "GOVERNANCE.md",
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json"
       ],
-      "assessment": "Technically prepared; App permissions/actual public read-back required. Reassess after publication.",
+      "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at 2bb62cb1e0dcbbb91d265bb824eda274cbd9b217; see current hosted and platform evidence. This is not badge issuance.",
       "official_url": "https://www.bestpractices.dev/en/criteria/0#0.sites_https"
     },
     {
       "criterion": "discussion",
-      "status": "BLOCKED-BY-HUMAN",
+      "status": "SATISFIED",
       "evidence": [
         "README.md",
         "CONTRIBUTING.md",
-        "GOVERNANCE.md"
+        "GOVERNANCE.md",
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json"
       ],
-      "assessment": "Technically prepared; App permissions/actual public read-back required. Reassess after publication.",
+      "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at 2bb62cb1e0dcbbb91d265bb824eda274cbd9b217; see current hosted and platform evidence. This is not badge issuance.",
       "official_url": "https://www.bestpractices.dev/en/criteria/0#0.discussion"
     },
     {
@@ -145,11 +153,13 @@
     },
     {
       "criterion": "repo_public",
-      "status": "BLOCKED-BY-HUMAN",
+      "status": "SATISFIED",
       "evidence": [
-        "GOVERNANCE.md"
+        "GOVERNANCE.md",
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json"
       ],
-      "assessment": "Technically prepared; App permissions/actual public read-back required. Reassess after publication.",
+      "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at 2bb62cb1e0dcbbb91d265bb824eda274cbd9b217; see current hosted and platform evidence. This is not badge issuance.",
       "official_url": "https://www.bestpractices.dev/en/criteria/0#0.repo_public"
     },
     {
@@ -236,17 +246,19 @@
         "SECURITY.md",
         "scripts/owner_setup.py"
       ],
-      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution.",
+      "assessment": "Reporting policy and live private channel exist. An accountable human must commit to operating the response/fix process; no historical responses are invented.",
       "official_url": "https://www.bestpractices.dev/en/criteria/0#0.report_process"
     },
     {
       "criterion": "report_tracker",
-      "status": "BLOCKED-BY-HUMAN",
+      "status": "SATISFIED",
       "evidence": [
         "SECURITY.md",
-        "scripts/owner_setup.py"
+        "scripts/owner_setup.py",
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json"
       ],
-      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution.",
+      "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at 2bb62cb1e0dcbbb91d265bb824eda274cbd9b217; see current hosted and platform evidence. This is not badge issuance.",
       "official_url": "https://www.bestpractices.dev/en/criteria/0#0.report_tracker"
     },
     {
@@ -271,12 +283,14 @@
     },
     {
       "criterion": "report_archive",
-      "status": "BLOCKED-BY-HUMAN",
+      "status": "SATISFIED",
       "evidence": [
         "SECURITY.md",
-        "scripts/owner_setup.py"
+        "scripts/owner_setup.py",
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json"
       ],
-      "assessment": "Technically prepared; App permissions/actual public read-back required. Reassess after publication.",
+      "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at 2bb62cb1e0dcbbb91d265bb824eda274cbd9b217; see current hosted and platform evidence. This is not badge issuance.",
       "official_url": "https://www.bestpractices.dev/en/criteria/0#0.report_archive"
     },
     {
@@ -286,17 +300,19 @@
         "SECURITY.md",
         "scripts/owner_setup.py"
       ],
-      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution.",
+      "assessment": "Reporting policy and live private channel exist. An accountable human must commit to operating the response/fix process; no historical responses are invented.",
       "official_url": "https://www.bestpractices.dev/en/criteria/0#0.vulnerability_report_process"
     },
     {
       "criterion": "vulnerability_report_private",
-      "status": "BLOCKED-BY-HUMAN",
+      "status": "SATISFIED",
       "evidence": [
         "SECURITY.md",
-        "scripts/owner_setup.py"
+        "scripts/owner_setup.py",
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json"
       ],
-      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution.",
+      "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at 2bb62cb1e0dcbbb91d265bb824eda274cbd9b217; see current hosted and platform evidence. This is not badge issuance.",
       "official_url": "https://www.bestpractices.dev/en/criteria/0#0.vulnerability_report_private"
     },
     {
@@ -344,14 +360,16 @@
     },
     {
       "criterion": "test",
-      "status": "BLOCKED-BY-HUMAN",
+      "status": "SATISFIED",
       "evidence": [
         "tests",
         "fuzz",
         "evidence/coverage.json",
-        "evidence/mutation-results.json"
+        "evidence/mutation-results.json",
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json"
       ],
-      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution.",
+      "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at 2bb62cb1e0dcbbb91d265bb824eda274cbd9b217; see current hosted and platform evidence. This is not badge issuance.",
       "official_url": "https://www.bestpractices.dev/en/criteria/0#0.test"
     },
     {
@@ -380,14 +398,16 @@
     },
     {
       "criterion": "test_continuous_integration",
-      "status": "BLOCKED-BY-HUMAN",
+      "status": "SATISFIED",
       "evidence": [
         "tests",
         "fuzz",
         "evidence/coverage.json",
-        "evidence/mutation-results.json"
+        "evidence/mutation-results.json",
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json"
       ],
-      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution.",
+      "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at 2bb62cb1e0dcbbb91d265bb824eda274cbd9b217; see current hosted and platform evidence. This is not badge issuance.",
       "official_url": "https://www.bestpractices.dev/en/criteria/0#0.test_continuous_integration"
     },
     {
@@ -570,13 +590,15 @@
     },
     {
       "criterion": "delivery_mitm",
-      "status": "BLOCKED-BY-HUMAN",
+      "status": "SATISFIED",
       "evidence": [
         "README.md",
         "CONTRIBUTING.md",
-        "GOVERNANCE.md"
+        "GOVERNANCE.md",
+        "evidence/github-settings.json",
+        "evidence/hosted-recognition.json"
       ],
-      "assessment": "Technically prepared; App permissions/actual public read-back required. Reassess after publication.",
+      "assessment": "Public source/issues/HTTPS and actual successful hosted checks are verified at 2bb62cb1e0dcbbb91d265bb824eda274cbd9b217; see current hosted and platform evidence. This is not badge issuance.",
       "official_url": "https://www.bestpractices.dev/en/criteria/0#0.delivery_mitm"
     },
     {
@@ -597,7 +619,7 @@
         "SECURITY.md",
         "scripts/owner_setup.py"
       ],
-      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution.",
+      "assessment": "Reporting policy and live private channel exist. An accountable human must commit to operating the response/fix process; no historical responses are invented.",
       "official_url": "https://www.bestpractices.dev/en/criteria/0#0.vulnerabilities_fixed_60_days"
     },
     {

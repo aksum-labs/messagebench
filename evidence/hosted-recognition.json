@@ -1,0 +1,916 @@
+{
+  "checked_at": "2026-10-01 07:43:50 UTC",
+  "repository": "aksum-labs/messagebench",
+  "source_commit": "2bb62cb1e0dcbbb91d265bb824eda274cbd9b217",
+  "runs": [
+    {
+      "id": 36831391995,
+      "name": "Scheduled security",
+      "event": "workflow_dispatch",
+      "commit": "2bb62cb1e0dcbbb91d265bb824eda274cbd9b217",
+      "status": "completed",
+      "conclusion": "success",
+      "actor": "aksum-labs-publisher[bot]",
+      "url": "https://github.com/aksum-labs/messagebench/actions/runs/36831391995",
+      "path": ".github/workflows/security.yml",
+      "jobs": [
+        {
+          "id": 110268592246,
+          "name": "parser-smoke",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 36831391995,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Run python -m pip install --require-hashes -r dependency-lock-hashed.txt",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Build reviewed native XML dependencies",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Install local native wheel",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Run python -m pip install --no-deps --no-build-isolation -e .",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7
+            },
+            {
+              "name": "Run python fuzz/smoke.py --iterations 100000",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 8
+            },
+            {
+              "name": "Run python fuzz/contracts.py --iterations 10000",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 9
+            },
+            {
+              "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 17
+            },
+            {
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 18
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 36831382192,
+      "name": "Dependency review",
+      "event": "workflow_dispatch",
+      "commit": "2bb62cb1e0dcbbb91d265bb824eda274cbd9b217",
+      "status": "completed",
+      "conclusion": "success",
+      "actor": "aksum-labs-publisher[bot]",
+      "url": "https://github.com/aksum-labs/messagebench/actions/runs/36831382192",
+      "path": ".github/workflows/dependency-review.yml",
+      "jobs": [
+        {
+          "id": 110268559939,
+          "name": "dependency-review",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 36831382192,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Run actions/dependency-review-action@2f920dad77d7f4f2ea876b66287b896de40dda79",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 36831373116,
+      "name": "Build and attest candidate snapshot",
+      "event": "workflow_dispatch",
+      "commit": "2bb62cb1e0dcbbb91d265bb824eda274cbd9b217",
+      "status": "completed",
+      "conclusion": "success",
+      "actor": "aksum-labs-publisher[bot]",
+      "url": "https://github.com/aksum-labs/messagebench/actions/runs/36831373116",
+      "path": ".github/workflows/snapshot.yml",
+      "jobs": [
+        {
+          "id": 110268532123,
+          "name": "prepare",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 36831373116,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Run python -m pip install --require-hashes -r dependency-lock-hashed.txt",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Run python scripts/build_native.py --archives \"$RUNNER_TEMP/native-sources\" --out \"$RUNNER_TEMP/native-wheels\" --download",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Run python -m pip install --no-index --no-deps --force-reinstall --require-hashes --find-links \"$RUNNER_TEMP/native-wheels\" -r \"$RUNNER_TEMP/native-wheels/install-requirements.txt\"",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Run python -m pip install --no-deps --no-build-isolation -e .",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7
+            },
+            {
+              "name": "Run ruff check src tests scripts fuzz",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 8
+            },
+            {
+              "name": "Run mypy src",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 9
+            },
+            {
+              "name": "Run pytest -q",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 10
+            },
+            {
+              "name": "Run python scripts/check_secrets.py",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 11
+            },
+            {
+              "name": "Run python scripts/check_licenses.py",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 12
+            },
+            {
+              "name": "Run messagebench corpus verify",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 13
+            },
+            {
+              "name": "Run python scripts/reproducible_build.py \"$RUNNER_TEMP/release-artifacts\" --require-clean",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 14
+            },
+            {
+              "name": "Run python scripts/prepare_bundle.py --release \"$RUNNER_TEMP/release-artifacts\" --native \"$RUNNER_TEMP/native-wheels\" --archives \"$RUNNER_TEMP/native-sources\" --out \"$RUNNER_TEMP/review-bundle\"",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 15
+            },
+            {
+              "name": "Run python scripts/inventory.py --out \"$RUNNER_TEMP/hosted-inventory\"",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 16
+            },
+            {
+              "name": "Run cp \"$RUNNER_TEMP/hosted-inventory/sbom.cdx.json\" \"$RUNNER_TEMP/review-bundle/sbom.cdx.json\"",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 17
+            },
+            {
+              "name": "Run python scripts/release_provenance.py --bundle \"$RUNNER_TEMP/review-bundle\"",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 18
+            },
+            {
+              "name": "Fresh offline installation",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 19
+            },
+            {
+              "name": "Run python scripts/release_provenance.py --bundle \"$RUNNER_TEMP/review-bundle\"",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 20
+            },
+            {
+              "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 21
+            },
+            {
+              "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 41
+            },
+            {
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 42
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 43
+            }
+          ]
+        },
+        {
+          "id": 110269188861,
+          "name": "sign",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 36831373116,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Run python scripts/fetch_dev_tools.py --out \"$RUNNER_TEMP/dev-tools\" cosign",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Verify public artifact checksums before signing",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Sign candidate manifest with GitHub OIDC",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7
+            },
+            {
+              "name": "Verify exact workflow identity",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 8
+            },
+            {
+              "name": "Run actions/attest-build-provenance@9d57eef8c06cd9d6b433effeeb7a6a77b3ff94ad",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 9
+            },
+            {
+              "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 10
+            },
+            {
+              "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 19
+            },
+            {
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 20
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 36831305491,
+      "name": "OpenSSF Scorecard",
+      "event": "push",
+      "commit": "2bb62cb1e0dcbbb91d265bb824eda274cbd9b217",
+      "status": "completed",
+      "conclusion": "success",
+      "actor": "aksum-labs-publisher[bot]",
+      "url": "https://github.com/aksum-labs/messagebench/actions/runs/36831305491",
+      "path": ".github/workflows/scorecard.yml",
+      "jobs": [
+        {
+          "id": 110268309613,
+          "name": "scorecard",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 36831305491,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Pull ghcr.io/ossf/scorecard-action:v2.4.4",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Run ossf/scorecard-action@2d1146689b8cda280b9bc96326124645441f03bc",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Run github/codeql-action/upload-sarif@1190a975f95ce23525efb6a3fc21ea29567c1b52",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Post Run github/codeql-action/upload-sarif@1190a975f95ce23525efb6a3fc21ea29567c1b52",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 11
+            },
+            {
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 12
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 36831305289,
+      "name": "CodeQL",
+      "event": "push",
+      "commit": "2bb62cb1e0dcbbb91d265bb824eda274cbd9b217",
+      "status": "completed",
+      "conclusion": "success",
+      "actor": "aksum-labs-publisher[bot]",
+      "url": "https://github.com/aksum-labs/messagebench/actions/runs/36831305289",
+      "path": ".github/workflows/codeql.yml",
+      "jobs": [
+        {
+          "id": 110268308798,
+          "name": "analyze",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 36831305289,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Run github/codeql-action/init@1190a975f95ce23525efb6a3fc21ea29567c1b52",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Run github/codeql-action/analyze@1190a975f95ce23525efb6a3fc21ea29567c1b52",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Post Run github/codeql-action/analyze@1190a975f95ce23525efb6a3fc21ea29567c1b52",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Post Run github/codeql-action/init@1190a975f95ce23525efb6a3fc21ea29567c1b52",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7
+            },
+            {
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 8
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 36831305315,
+      "name": "Checks",
+      "event": "push",
+      "commit": "2bb62cb1e0dcbbb91d265bb824eda274cbd9b217",
+      "status": "completed",
+      "conclusion": "success",
+      "actor": "aksum-labs-publisher[bot]",
+      "url": "https://github.com/aksum-labs/messagebench/actions/runs/36831305315",
+      "path": ".github/workflows/checks.yml",
+      "jobs": [
+        {
+          "id": 110268309100,
+          "name": "checks",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 36831305315,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Run python -m pip install --require-hashes -r dependency-lock-hashed.txt",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Build reviewed native XML dependencies",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Install local native wheel",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 6
+            },
+            {
+              "name": "Run python -m pip install --no-deps --no-build-isolation -e .",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7
+            },
+            {
+              "name": "Run ruff check src tests scripts fuzz",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 8
+            },
+            {
+              "name": "Run ruff format --check src tests scripts fuzz",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 9
+            },
+            {
+              "name": "Run mypy src",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 10
+            },
+            {
+              "name": "Run python scripts/fetch_dev_tools.py --out \"$RUNNER_TEMP/dev-tools\" actionlint",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 11
+            },
+            {
+              "name": "Run \"$RUNNER_TEMP/dev-tools/actionlint/actionlint\" .github/workflows/*.yml",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 12
+            },
+            {
+              "name": "Run python scripts/check_secrets.py",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 13
+            },
+            {
+              "name": "Run python scripts/check_licenses.py",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 14
+            },
+            {
+              "name": "Run python scripts/check_recognition.py",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 15
+            },
+            {
+              "name": "Run python scripts/inventory.py --out \"$RUNNER_TEMP/inventory\"",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 16
+            },
+            {
+              "name": "Run coverage run -m pytest -q",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 17
+            },
+            {
+              "name": "Run coverage json -o coverage-ci.json",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 18
+            },
+            {
+              "name": "Run python scripts/check_coverage.py coverage-ci.json",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 19
+            },
+            {
+              "name": "Run python fuzz/smoke.py --iterations 1000",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 20
+            },
+            {
+              "name": "Run python fuzz/contracts.py --iterations 1000",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 21
+            },
+            {
+              "name": "Run bandit -r src -ll",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 22
+            },
+            {
+              "name": "Run messagebench corpus verify corpus/index.json",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 23
+            },
+            {
+              "name": "Run messagebench corpus verify corpus/extended/index.json --contract contracts/pacs008-extended.json",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 24
+            },
+            {
+              "name": "Run messagebench corpus verify corpus/pacs002/index.json --contract contracts/pacs002-preserve.json",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 25
+            },
+            {
+              "name": "Run python scripts/differential_xsd.py",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 26
+            },
+            {
+              "name": "Run python scripts/security_corpus.py",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 27
+            },
+            {
+              "name": "Run python scripts/mutations.py",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 28
+            },
+            {
+              "name": "Run python -m build --no-isolation",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 29
+            },
+            {
+              "name": "Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 30
+            },
+            {
+              "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 59
+            },
+            {
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 60
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 61
+            }
+          ]
+        },
+        {
+          "id": 110268309304,
+          "name": "dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "run_id": 36831305315,
+          "logs_url": null,
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1
+            },
+            {
+              "name": "Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2
+            },
+            {
+              "name": "Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3
+            },
+            {
+              "name": "Run python -m pip install --require-hashes -r dependency-lock-hashed.txt",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 4
+            },
+            {
+              "name": "Run pip-audit --strict --disable-pip --no-deps -r dependency-lock.txt",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5
+            },
+            {
+              "name": "Post Run actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 9
+            },
+            {
+              "name": "Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 10
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 11
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "Observed public hosted checks all completed successfully for the source commit, including candidate snapshot signing and exact-identity verification. Formal release and independent review are not inferred.",
+  "artifacts": [
+    {
+      "id": 11147288352,
+      "name": "synthetic-test-coverage",
+      "size_in_bytes": 19673,
+      "url": "https://api.github.com/repos/aksum-labs/messagebench/actions/artifacts/11147288352",
+      "archive_download_url": "https://api.github.com/repos/aksum-labs/messagebench/actions/artifacts/11147288352/zip",
+      "expired": false,
+      "created_at": "2026-10-01T07:39:33Z",
+      "expires_at": "2026-10-15T07:39:32Z",
+      "updated_at": "2026-10-01T07:39:33Z",
+      "digest": "sha256:827cc8db244098bac42b54d1c5bf6ac8176398b6d133765f060b3f62febbc0b1",
+      "workflow_run": {
+        "id": 36831305315,
+        "repository_id": 1397888486,
+        "head_repository_id": 1397888486,
+        "head_branch": "main",
+        "head_sha": "2bb62cb1e0dcbbb91d265bb824eda274cbd9b217"
+      }
+    },
+    {
+      "id": 11146924609,
+      "name": "scorecard-public-results",
+      "size_in_bytes": 16371,
+      "url": "https://api.github.com/repos/aksum-labs/messagebench/actions/artifacts/11146924609",
+      "archive_download_url": "https://api.github.com/repos/aksum-labs/messagebench/actions/artifacts/11146924609/zip",
+      "expired": false,
+      "created_at": "2026-10-01T07:36:54Z",
+      "expires_at": "2026-10-31T07:36:53Z",
+      "updated_at": "2026-10-01T07:36:54Z",
+      "digest": "sha256:e4d8d0d2449796218115b3a3d0ad7f19085b4193484b204927eff91bc2c708da",
+      "workflow_run": {
+        "id": 36831305491,
+        "repository_id": 1397888486,
+        "head_repository_id": 1397888486,
+        "head_branch": "main",
+        "head_sha": "2bb62cb1e0dcbbb91d265bb824eda274cbd9b217"
+      }
+    },
+    {
+      "id": 11147880874,
+      "name": "signed-candidate-bundle",
+      "size_in_bytes": 22270211,
+      "url": "https://api.github.com/repos/aksum-labs/messagebench/actions/artifacts/11147880874",
+      "archive_download_url": "https://api.github.com/repos/aksum-labs/messagebench/actions/artifacts/11147880874/zip",
+      "expired": false,
+      "created_at": "2026-10-01T07:43:15Z",
+      "expires_at": "2026-10-31T07:43:13Z",
+      "updated_at": "2026-10-01T07:43:15Z",
+      "digest": "sha256:d2f57d3b0f4f259b78edfb3dfd5549ecf145192a7fe1eed04a909098c836296e",
+      "workflow_run": {
+        "id": 36831373116,
+        "repository_id": 1397888486,
+        "head_repository_id": 1397888486,
+        "head_branch": "main",
+        "head_sha": "2bb62cb1e0dcbbb91d265bb824eda274cbd9b217"
+      }
+    },
+    {
+      "id": 11147585114,
+      "name": "unsigned-candidate-bundle",
+      "size_in_bytes": 22263045,
+      "url": "https://api.github.com/repos/aksum-labs/messagebench/actions/artifacts/11147585114",
+      "archive_download_url": "https://api.github.com/repos/aksum-labs/messagebench/actions/artifacts/11147585114/zip",
+      "expired": false,
+      "created_at": "2026-10-01T07:39:21Z",
+      "expires_at": "2026-10-31T07:39:19Z",
+      "updated_at": "2026-10-01T07:39:21Z",
+      "digest": "sha256:2197eb1ad725045660715c941c601923bf2f821804672df24aba6ef2466f3f67",
+      "workflow_run": {
+        "id": 36831373116,
+        "repository_id": 1397888486,
+        "head_repository_id": 1397888486,
+        "head_branch": "main",
+        "head_sha": "2bb62cb1e0dcbbb91d265bb824eda274cbd9b217"
+      }
+    }
+  ]
+}

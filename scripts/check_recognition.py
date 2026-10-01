@@ -45,4 +45,19 @@ if (
     or len({item["criterion"] for item in criteria["criteria"]}) != criteria["criteria_count"]
 ):
     raise SystemExit("Criteria accounting mismatch")
-print("Recognition targets, artifacts, citation metadata and criteria accounting validated.")
+accounting = json.loads((ROOT / "external/mandate-accounting.json").read_text())
+requirements = accounting["requirements"]
+if (
+    len(requirements) != accounting["requirement_count"]
+    or len({item["id"] for item in requirements}) != len(requirements)
+    or {item["section"] for item in requirements} != set(range(21))
+):
+    raise SystemExit("Mandate accounting mismatch")
+for item in requirements:
+    if item["status"] not in STATES or not item["disposition"].strip():
+        raise SystemExit("Mandate item lacks a precise disposition")
+    for name in item["evidence"]:
+        path = (ROOT / name).resolve()
+        if not path.is_relative_to(ROOT) or not path.is_file():
+            raise SystemExit("Missing/unsafe mandate evidence")
+print("Recognition targets, artifacts, citations, criteria and mandate accounting validated.")

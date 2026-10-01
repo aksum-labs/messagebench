@@ -1,6 +1,6 @@
 # Prepared release notes — 0.2.0-rc.1
 
-Unpublished release candidate. Python version 0.2.0rc1. These notes are ready for the reviewed release workflow; they are not a release receipt.
+Public-source release candidate; formal reviewed release unpublished. Python version 0.2.0rc1. These notes are ready for the reviewed release workflow; they are not a release receipt.
 
 MessageBench checks whether externally supplied financial-message file pairs preserve the information promised by a versioned engineering contract. It runs offline, executes no adapter, and produces deterministic, redacted reports with explicit coverage limits.
 

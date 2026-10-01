@@ -1,7 +1,7 @@
 # Release readiness — 0.2.0-rc.1
 
-**Engineering candidate: complete. Source publication authorized 1 October 2026. Independent review and formal release approval: BLOCKED-BY-HUMAN.**
-Recommended engineering candidate: Semver 0.2.0-rc.1, Python 0.2.0rc1. No public release was made.
+**Engineering candidate: complete. Source published 1 October 2026 at 2bb62cb; candidate signed/attested through the hosted snapshot workflow. Independent review and formal release approval: BLOCKED-BY-HUMAN.**
+Recommended engineering candidate: Semver 0.2.0-rc.1, Python 0.2.0rc1. No formal reviewed public release was made. Current hosted/security/recognition state is in EXTERNAL_RECOGNITION_COMPLETION_REPORT.md.
 
 Exact supported namespaces:
 - `urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08`
@@ -31,7 +31,7 @@ and produces reproducible, scope-labelled results.”
 
 Disclose the candidate status, exact supported scope and absence of independent review.
 Do not claim NBE/EthSwitch/SWIFT/ISO approval or certification, production safety, national
-standard status, complete-document preservation, full Scorecard score or an earned badge.
+standard status, complete-document preservation, an unmeasured Scorecard score or an unearned badge. Actual public Scorecard is 6.4/10 at 2bb62cb; no Best Practices badge exists.
 Every result states: “Pass means only the listed assertions passed for these inputs and versions.”
 
 Human-only release actions:

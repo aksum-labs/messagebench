@@ -1,0 +1,8 @@
+2026-10-01T07:43:06.0847539Z SHA256 digest of downloaded artifact is 2197eb1ad725045660715c941c601923bf2f821804672df24aba6ef2466f3f67
+2026-10-01T07:43:08.6853028Z   --certificate-identity "$EXPECTED_IDENTITY" \
+2026-10-01T07:43:08.6853525Z   --certificate-oidc-issuer https://token.actions.githubusercontent.com SHA256SUMS
+2026-10-01T07:43:08.6892025Z   EXPECTED_IDENTITY: https://github.com/aksum-labs/messagebench/.github/workflows/snapshot.yml@refs/heads/main
+2026-10-01T07:43:08.8731751Z Verified OK
+2026-10-01T07:43:12.9088227Z Attestation created for SHA256SUMS@sha256:f49dc8dc5d04f12b6f48d68438da995ea20adb840aec867252111d6888f6e580
+2026-10-01T07:43:12.9120518Z https://github.com/aksum-labs/messagebench/attestations/51734116
+2026-10-01T07:43:14.9189099Z SHA256 digest of uploaded artifact zip is d2f57d3b0f4f259b78edfb3dfd5549ecf145192a7fe1eed04a909098c836296e

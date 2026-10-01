@@ -25,6 +25,8 @@ Security: offline runtime, secure bounded XML, non-executable contracts, default
 
 License: original code/corpus Apache-2.0; standards schemas retain separate terms. Foundation status: LFDT and FINOS proposals prepared, neither submitted nor accepted. Badge/Scorecard status must be read from external/recognition-matrix.json, not assumed from configured workflow files.
 
-Citation: CITATION.cff; no DOI yet. Paper: paper/messagebench-benchmark.md and PDF when generated. Release: no reviewed public release until the genuine review gate is satisfied. Current snapshot evidence can authenticate a workflow without implying reviewed release approval.
+Citation: CITATION.cff; no DOI yet. Paper: the public 9-page paper/messagebench-benchmark.pdf and corresponding Markdown source. Release: no reviewed public release until the genuine review gate is satisfied. Current snapshot evidence can authenticate a workflow without implying reviewed release approval.
 
 No independent human review or institutional adoption has been established. No certification, production-safety, national-standard or regulator/vendor endorsement claim is made. camt.053.001.08 is excluded because joint-contributor redistribution permission was not established. A PASS covers only listed assertions, never the whole document.
+
+Actual public security signals (1 October 2026): OpenSSF Scorecard 6.4/10 at `2bb62cb`; successful hosted Checks, CodeQL, dependency review, full bounded fuzz campaigns and offline build/installation. Candidate checksum manifest signed through GitHub OIDC and verified by the hosted workflow. [Authentic attestation](https://github.com/aksum-labs/messagebench/attestations/51734116). This is a main-branch candidate snapshot, not a reviewed formal release. No Best Practices badge, DOI or foundation acceptance has been earned. See evidence/hosted-recognition.json for exact run IDs and artifact digests.

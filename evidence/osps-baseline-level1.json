@@ -31,7 +31,7 @@
     {
       "control": "OSPS-AC-03.01",
       "status": "BLOCKED-BY-HUMAN",
-      "assessment": "Requires actual public configuration read-back or accountable security contact; current docs are prepared.",
+      "assessment": "Main protection and release-review environment enforcement are not verified; current network restriction prevents App configuration/read-back. Prepared YAML is not enforcement.",
       "evidence": [
         "README.md",
         "SECURITY.md",
@@ -43,7 +43,7 @@
     {
       "control": "OSPS-AC-03.02",
       "status": "BLOCKED-BY-HUMAN",
-      "assessment": "Requires actual public configuration read-back or accountable security contact; current docs are prepared.",
+      "assessment": "Main protection and release-review environment enforcement are not verified; current network restriction prevents App configuration/read-back. Prepared YAML is not enforcement.",
       "evidence": [
         "README.md",
         "SECURITY.md",

@@ -12,7 +12,7 @@ Do not sign in, accept terms or submit legal/competence attestations through the
 
 ## Shortest legitimate path
 
-1. Finish public configuration through the company App and read it back. This resolves publicly readable repository, HTTPS, issue archive and hosted-evidence prerequisites once verified.
+1. Public source, HTTPS, issue archive, private reporting and hosted evidence are now verified. Complete main/tag and release-environment enforcement through the company App; its current shell network access is restricted.
 2. A real primary human developer attests secure design and common-error knowledge, with relevant knowledge/experience; a coding agent is not that human.
 3. Confirm ongoing maintenance/security response responsibility. The verified private maintainer team owns code review but does not establish independent reviewer expertise.
 4. Resolve how separate SWIFTStandards schema assets are treated under FLOSS criteria. Royalty-free redistribution is not OSI approval. Consult program guidance/assessor if needed; do not silently classify all assets as Apache-2.0.

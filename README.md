@@ -1,5 +1,9 @@
 # MessageBench
 
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/aksum-labs/messagebench/badge)](https://scorecard.dev/viewer/?uri=github.com/aksum-labs/messagebench)
+
+Published Scorecard result: **6.4/10**, checked 1 October 2026 at commit `2bb62cb`. This automated score is not certification. [Checks and limitations](docs/scorecard-remediation.md).
+
 ```sh
 # From this checkout after installing the pinned dependencies (docs/quickstart.md):
 PYTHONPATH=src python -m aksum_messagebench compare \
