@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Cite this software and disclose its release-candidate scope."
+title: "MessageBench: offline financial-message preservation checks"
+type: software
+version: 0.2.0-rc.1
+authors:
+  - name: "Aksum Labs"
+repository-code: "https://github.com/aksum-labs/messagebench"
+url: "https://github.com/aksum-labs/messagebench"
+license: Apache-2.0
+keywords:
+  - ISO 20022
+  - preservation testing
+  - synthetic corpus
+  - financial messaging
+abstract: "Adapter-neutral declared preservation checks with deterministic reports and explicit coverage limits. Standard-schema assets retain separate terms."

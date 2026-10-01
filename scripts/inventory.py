@@ -1,5 +1,6 @@
 """Record Python/native dependencies and asset rights; no network access."""
 
+import argparse
 import ctypes
 import hashlib
 import importlib.metadata as metadata
@@ -10,6 +11,11 @@ from pathlib import Path
 from lxml import etree
 
 root = Path(__file__).resolve().parents[1]
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--out", type=Path, help="Write generated inventory outside the source tree")
+args = parser.parse_args()
+output = args.out or root / "evidence"
+output.mkdir(parents=True, exist_ok=True)
 runtime = {
     "lxml",
     "jsonschema",
@@ -94,7 +100,7 @@ for name, version, source, license in native_components:
             "source": source,
             "license_metadata": license,
             "vulnerability_scan": "Not covered by pip-audit Python advisory lookup; "
-            "native review pending.",
+            "see the separately dated evidence/native-advisory-review.json.",
         }
     )
     components.append(
@@ -201,8 +207,8 @@ rights_document = {
         "Excluded; see docs/camt053-asset-review.md. Rights clarification is BLOCKED-BY-HUMAN."
     ),
 }
-(root / "evidence/dependency-inventory.json").write_text(json.dumps(inventory, indent=2) + "\n")
-(root / "evidence/rights-register.json").write_text(json.dumps(rights_document, indent=2) + "\n")
+(output / "dependency-inventory.json").write_text(json.dumps(inventory, indent=2) + "\n")
+(output / "rights-register.json").write_text(json.dumps(rights_document, indent=2) + "\n")
 bom = {
     "bomFormat": "CycloneDX",
     "specVersion": "1.6",
@@ -217,6 +223,7 @@ bom = {
     "components": components,
     "dependencies": [{"ref": "lxml", "dependsOn": [item[0] for item in native_components]}],
 }
-(root / "evidence/sbom.cdx.json").write_text(json.dumps(bom, sort_keys=True, indent=2) + "\n")
+(output / "sbom.cdx.json").write_text(json.dumps(bom, sort_keys=True, indent=2) + "\n")
 lines = [i["name"] + "==" + i["version"] for i in inventory if i["role"] == "runtime"]
-(root / "runtime-lock.txt").write_text("\n".join(sorted(lines, key=str.lower)) + "\n")
+runtime_output = output / "runtime-lock.txt" if args.out else root / "runtime-lock.txt"
+runtime_output.write_text("\n".join(sorted(lines, key=str.lower)) + "\n")

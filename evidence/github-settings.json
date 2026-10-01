@@ -1,0 +1,85 @@
+{
+  "actor": "GitHub-App-installation",
+  "checked_on": "2026-10-01",
+  "configuration": {
+    "actions": {
+      "allowed_actions": "all",
+      "enabled": true,
+      "sha_pinning_required": false
+    },
+    "immutable_releases": {
+      "enabled": true,
+      "enforced_by_owner": false
+    },
+    "private_reporting": {
+      "enabled": true
+    },
+    "release_environment": {
+      "can_admins_bypass": true,
+      "created_at": "2026-10-01T07:33:54Z",
+      "deployment_branch_policy": null,
+      "html_url": "https://github.com/aksum-labs/messagebench/deployments/activity_log?environments_filter=release-review",
+      "id": 23184314443,
+      "name": "release-review",
+      "node_id": "EN_kwDOU1IV5s8AAAAFZeSQSw",
+      "protection_rules": [],
+      "updated_at": "2026-10-01T07:33:54Z",
+      "url": "https://api.github.com/repos/aksum-labs/messagebench/environments/release-review"
+    },
+    "rulesets": [],
+    "topics": {
+      "names": [
+        "data-quality",
+        "financial-messaging",
+        "iso20022",
+        "offline",
+        "python",
+        "supply-chain-security",
+        "synthetic-data",
+        "preservation-testing"
+      ]
+    },
+    "workflow_permissions": {
+      "can_approve_pull_request_reviews": false,
+      "default_workflow_permissions": "read"
+    }
+  },
+  "errors": {
+    "main_protection": "GitHub API rejected request: HTTP 404"
+  },
+  "human_membership": "private; no personal identities in public evidence",
+  "repository": {
+    "allow_merge_commit": false,
+    "allow_rebase_merge": false,
+    "allow_squash_merge": true,
+    "default_branch": "main",
+    "delete_branch_on_merge": true,
+    "description": "Offline preservation-contract tests for financial-message adapters, with synthetic fixtures and reproducible scope-labelled evidence.",
+    "full_name": "aksum-labs/messagebench",
+    "has_discussions": true,
+    "has_issues": true,
+    "has_wiki": false,
+    "homepage": "https://github.com/aksum-labs/messagebench#readme",
+    "html_url": "https://github.com/aksum-labs/messagebench",
+    "name": "messagebench",
+    "private": false,
+    "security_and_analysis": {
+      "dependabot_security_updates": {
+        "status": "disabled"
+      },
+      "secret_scanning": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "enabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
+    },
+    "visibility": "public"
+  }
+}

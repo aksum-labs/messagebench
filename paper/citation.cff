@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Cite this unreviewed engineering preprint separately from the software."
+title: "Schema-Valid Does Not Mean Transformation-Correct: An Open Benchmark for ISO 20022 Information Preservation"
+type: article
+authors:
+  - name: "Aksum Labs"
+date-released: 2026-10-01
+url: "https://github.com/aksum-labs/messagebench/blob/main/paper/messagebench-benchmark.md"
+license: Apache-2.0

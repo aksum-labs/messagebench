@@ -6,23 +6,6 @@ on:
 permissions:
   contents: read
 jobs:
-  scorecard:
-    runs-on: ubuntu-24.04
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
-        with:
-          persist-credentials: false
-      - uses: ossf/scorecard-action@4eaacf0543bb3f2c246792bd56e8cdeffafb205a
-        with:
-          results_file: scorecard-results.json
-          results_format: json
-          publish_results: false
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: scorecard-results
-          path: scorecard-results.json
-          retention-days: 30
   parser-smoke:
     runs-on: ubuntu-24.04
     timeout-minutes: 10

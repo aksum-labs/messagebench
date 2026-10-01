@@ -1,17 +1,17 @@
-# 0.2.0-rc.1 engineering release candidate
+# Prepared release notes — 0.2.0-rc.1
 
-Python packaging version: 0.2.0rc1. Not a published, certified or independently approved release.
+Unpublished release candidate. Python version 0.2.0rc1. These notes are ready for the reviewed release workflow; they are not a release receipt.
 
-- 100 original synthetic message pairs, including 32 new explicit-semantics cases.
-- Two exact ISO message versions; 27 extractable fields and 10 declarative contracts.
-- Explicit keyed repeated-item comparison and timezone-aware creation-datetime semantics.
-- Preserved precision, Unicode, identifier context and multiplicity; no implicit normalization.
-- Deterministic JSON/text/HTML/JUnit, coverage accounting and redacted error reporting.
-- CPU, wall-time and address-space limits at the CLI boundary, plus bounded XML processing.
-- Hash-pinned dependencies, native source rebuild, SBOM, offline bundle and reproducible Python artifacts.
-- Protected release/signing configuration and hash-bound independent-review packet.
+MessageBench checks whether externally supplied financial-message file pairs preserve the information promised by a versioned engineering contract. It runs offline, executes no adapter, and produces deterministic, redacted reports with explicit coverage limits.
 
-camt.053.001.08 remains excluded because complete redistribution authority was not established.
-This is an explicit rights decision, not an unimplemented claim of support. Genuine independent
-review and owner-controlled publication actions are required before publication. See the exhaustive
-completion report for evidence, limitations and specific human handoffs.
+Supported: pacs.008.001.08 and pacs.002.001.10 only; 27 extractable fields, ten contracts and 38 required assertion declarations. Tested cases are synthetic only. Required UNSUPPORTED or INDETERMINATE blocks overall PASS. Exact tested fields are in docs/fields.md, and unexamined fields are reported.
+
+100 synthetic paired cases; 140 passing tests; 99/102 core semantic branches (97.06%); 40/40 targeted mutants killed; 200 XML documents with matching XSD classifications across lxml and xmlschema; 100,000 parser fuzz iterations and 10,000 contract mutations.
+
+Unsupported: camt.053.001.08 (uncleared joint-contributor redistribution), other exact versions, universal translation, whole-document equivalence, arbitrary executable contracts and adapter execution. No Ethiopian scheme rules, proprietary SWIFT usage guidelines or live-bank data are included.
+
+No NBE/EthSwitch/SWIFT/ISO or foundation approval, certification, production-safety claim or national-standard status. No independent external review is claimed until actual review evidence is authenticated. OIDC signatures prove workflow identity and artifact integrity, not financial correctness.
+
+Read [threat model](../docs/threat-model.md), [rights register](../evidence/rights-register.json), [reproduction guide](../docs/reproduce.md), [security evidence](../SECURITY-EVIDENCE.md), [Scorecard remediation](../docs/scorecard-remediation.md), and [Best Practices application preparation](../docs/openssf-best-practices-submission.md). Badge status is only earned when the official system grants it.
+
+No known assigned vulnerability in MessageBench itself is advertised as fixed in this candidate. Dependency/native review scope is documented separately. No production-support warranty or stable public API is promised.

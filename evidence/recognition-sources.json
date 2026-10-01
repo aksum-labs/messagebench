@@ -1,0 +1,87 @@
+[
+  {
+    "id": "criteria",
+    "url": "https://www.bestpractices.dev/en/criteria/0",
+    "sha256": "e81ab58a3f8b534965b31068ee01b1ce717cae729982ad197c4d63ea40c9a5ac",
+    "bytes": 30403,
+    "date_checked": "2026-10-01"
+  },
+  {
+    "id": "criteria-details",
+    "url": "https://www.bestpractices.dev/en/criteria/0?details=true",
+    "sha256": "0fdedc706f86c67f8441c480c1c2ce1144dfc229c505908f48a45ce2c0d80845",
+    "bytes": 66795,
+    "date_checked": "2026-10-01"
+  },
+  {
+    "id": "baseline",
+    "url": "https://baseline.openssf.org/versions/2026-08-28.html",
+    "sha256": "d1d603880f2948f8465d5334af55e3235291493ab002898cd9519c70963e176c",
+    "bytes": 156117,
+    "date_checked": "2026-10-01"
+  },
+  {
+    "id": "lfdt-labs-readme",
+    "url": "https://raw.githubusercontent.com/LF-Decentralized-Trust/lab-proposals/main/README.md",
+    "sha256": "04bc228d845de901cd301ce3422efee16efaa2b2132745681bbeac13b4adcd08",
+    "bytes": 12255,
+    "date_checked": "2026-10-01"
+  },
+  {
+    "id": "finos-contribute",
+    "url": "https://community.finos.org/docs/journey/participate/",
+    "sha256": "c88584954e133a47d6c807bdb3d996aee8873b7a9b21a85656c224d3c2f416bd",
+    "bytes": 25879,
+    "date_checked": "2026-10-01"
+  },
+  {
+    "id": "finos-governance",
+    "url": "https://community.finos.org/docs/governance/",
+    "sha256": "f73d99dfa0a0266b3339d00ee1a882ec731b88cb82e543fd072eb3cb7312d252",
+    "bytes": 34260,
+    "date_checked": "2026-10-01"
+  },
+  {
+    "id": "scorecard-action",
+    "url": "https://raw.githubusercontent.com/ossf/scorecard-action/main/README.md",
+    "sha256": "a5fe361b5fa1eaa616a92e623198a4bd414c102ed95a0f0a66a5a8eb9364c867",
+    "bytes": 12554,
+    "date_checked": "2026-10-01"
+  },
+  {
+    "id": "zenodo-github",
+    "url": "https://help.zenodo.org/docs/github/",
+    "sha256": "3640976e9fbc9212b1aecdbe44f688c3291025d7b8d0e03bb5b412249b0b8698",
+    "bytes": 12218,
+    "date_checked": "2026-10-01"
+  },
+  {
+    "id": "software-heritage",
+    "url": "https://docs.softwareheritage.org/user/save-code-now/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "finos-cdm-contributing",
+    "sha256": "90f8032ae1c361b7dd0ad8b20289b06e6e1be133f49596990be91bec15e4652f",
+    "checked_on": "2026-10-01",
+    "url": "https://github.com/finos/common-domain-model/blob/master/CONTRIBUTING.md"
+  },
+  {
+    "id": "finos-morphir-contributing",
+    "sha256": "40f6c3f21f69f5c1ec024e1fedff61cbf1dbb2dc5019898ce09cb8fba62eacde",
+    "checked_on": "2026-10-01",
+    "url": "https://github.com/finos/morphir/blob/main/CONTRIBUTING.md"
+  },
+  {
+    "id": "finos-legend-contributing",
+    "sha256": "4829aaa277dc392d16cbb89b84f74f3c9d0e82d827828339a595481172aec10c",
+    "checked_on": "2026-10-01",
+    "url": "https://github.com/finos/legend/blob/master/CONTRIBUTING.md"
+  },
+  {
+    "id": "lab-form",
+    "sha256": "71fd3ebeacdd6eb74d84e48a0d355f925080d1f72f5f4e5530c99e93f78d8123",
+    "checked_on": "2026-10-01",
+    "url": "https://github.com/LF-Decentralized-Trust/lab-proposals/blob/a7fb6f0f5833cd7dcb18075376baf5305faad062/.github/ISSUE_TEMPLATE/lab-proposal.yml"
+  }
+]

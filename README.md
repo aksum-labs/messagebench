@@ -23,7 +23,7 @@ MessageBench helps financial-software engineers test whether message adapters pr
 declared payment information. It runs offline on synthetic fixtures or institution-local
 files and produces reproducible, scope-labelled results.
 
-**Status: engineering release candidate `0.2.0rc1`; human approval is required for publication.** There are 100 original
+**Status: engineering release candidate `0.2.0rc1`; public source publication is owner-authorized. Formal release still requires independent human review.** There are 100 original
 synthetic fixture pairs across two message versions. Independent human review has not occurred.
 The owner authorized continued development before that review; see the [decision](docs/expansion-decision.md).
 [Gate report](GATE_REPORT.md), [current progress](docs/implementation-progress.md),
@@ -113,3 +113,7 @@ PyPI wheels can contain different native versions. camt.053 assets remain under
 
 [Contribute](CONTRIBUTING.md) · [Prior art](docs/prior-art.md) ·
 [Reproduce evidence](docs/reproduce.md) · [Fixture review](docs/fixture-review.md)
+
+## Research and public evidence
+
+Read the [benchmark preprint](paper/messagebench-benchmark.md), [9-page PDF](paper/messagebench-benchmark.pdf), [two-page technical brief](paper/technical-brief.pdf), [security evidence](SECURITY-EVIDENCE.md), and [recognition status](external/recognition-matrix.json). The preprint has not been peer reviewed. Source publication and workflow signatures do not establish independent human review or institutional approval. Cite the software using [CITATION.cff](CITATION.cff).

@@ -1,7 +1,7 @@
-# Private review repository
+# Publication identity and review boundary
 
-The engineering candidate is prepared for aksum-labs/messagebench, an organization-owned private repository. Public release remains subject to the independent-review and rights gates documented in RELEASE_READINESS.md.
+The owner authorized public source publication on 1 October 2026. Repository: https://github.com/aksum-labs/messagebench. Actual visibility and settings are recorded in evidence/github-settings.json. This authorization does not fabricate independent review, a public reviewed release or foundation acceptance.
 
-Commit author and committer metadata use Aksum Labs with a company noreply address. Uploads are permitted only through a dedicated organization-owned GitHub App installation identity. Local hooks reject ordinary personal-account credentials. This controls public commit/push attribution; it does not promise invisibility from GitHub or authorized private administrative audit records.
+Commit author and committer use Aksum Labs with a company noreply address. Code uploads use the organization-owned publisher GitHub App installation identity. Local hooks reject personal-account credentials. Administrative/security audit records remain visible to GitHub and authorized administrators; complete platform anonymity is not claimed.
 
-The original engineering checkout and signed/unsigned evidence are preserved separately. Changing publication-history author metadata changes commit hashes; source trees and fixture hashes remain traceable. Build provenance must identify the actual publication commit for subsequent releases.
+Original engineering history/artifacts remain separately preserved. Release provenance identifies the actual publication commit, not the original engineering-history commit. Genuine independent semantic/rights review remains required before a reviewed public release.

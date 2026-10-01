@@ -1,0 +1,350 @@
+{
+  "schema_version": "1.0",
+  "reference_date": "2026-10-01",
+  "project_name": "MessageBench",
+  "version": "0.2.0-rc.1",
+  "repository": "https://github.com/aksum-labs/messagebench",
+  "no_paid_visibility": true,
+  "targets": [
+    {
+      "target": "Public hardened GitHub repository",
+      "category": "repository",
+      "free_or_paid": "free",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
+      "submission_url": "https://github.com/aksum-labs/messagebench",
+      "date_checked": "2026-10-01",
+      "artifact_required": [
+        "evidence/github-settings.json"
+      ],
+      "prepared": true,
+      "submitted": false,
+      "accepted": false,
+      "public_listing_url": null,
+      "badge_url": null,
+      "blocker": "Owner must grant and approve Administration/Actions write App permissions; then bot can publish and apply/read back settings.",
+      "next_action": "Owner must grant and approve Administration/Actions write App permissions; then bot can publish and apply/read back settings.",
+      "owner_approval_required": true
+    },
+    {
+      "target": "Complete hosted recognition CI",
+      "category": "reproducibility",
+      "free_or_paid": "free",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
+      "submission_url": "https://github.com/aksum-labs/messagebench/actions",
+      "date_checked": "2026-10-01",
+      "artifact_required": [
+        ".github/workflows/snapshot.yml"
+      ],
+      "prepared": true,
+      "submitted": false,
+      "accepted": false,
+      "public_listing_url": null,
+      "badge_url": null,
+      "blocker": "New public workflows need public visibility and App Actions write. Historical base Checks passed; no later-workflow success inferred.",
+      "next_action": "New public workflows need public visibility and App Actions write. Historical base Checks passed; no later-workflow success inferred.",
+      "owner_approval_required": true
+    },
+    {
+      "target": "OpenSSF Best Practices Passing",
+      "category": "badge",
+      "free_or_paid": "free",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
+      "submission_url": "https://www.bestpractices.dev/en/projects/new",
+      "date_checked": "2026-10-01",
+      "artifact_required": [
+        "docs/openssf-best-practices-submission.md"
+      ],
+      "prepared": true,
+      "submitted": false,
+      "accepted": false,
+      "public_listing_url": null,
+      "badge_url": null,
+      "blocker": "Authorized account/attestations, public evidence and ancillary-schema FLOSS treatment; submit honest criterion answers.",
+      "next_action": "Authorized account/attestations, public evidence and ancillary-schema FLOSS treatment; submit honest criterion answers.",
+      "owner_approval_required": true
+    },
+    {
+      "target": "OpenSSF Scorecard",
+      "category": "automated security",
+      "free_or_paid": "free",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
+      "submission_url": "https://api.scorecard.dev/projects/github.com/aksum-labs/messagebench",
+      "date_checked": "2026-10-01",
+      "artifact_required": [
+        ".github/workflows/scorecard.yml"
+      ],
+      "prepared": true,
+      "submitted": false,
+      "accepted": false,
+      "public_listing_url": null,
+      "badge_url": null,
+      "blocker": "Company App permissions/public visibility first; run official action and retain actual published result before badge.",
+      "next_action": "Company App permissions/public visibility first; run official action and retain actual published result before badge.",
+      "owner_approval_required": true
+    },
+    {
+      "target": "OSPS Baseline Level 1",
+      "category": "security self-assessment",
+      "free_or_paid": "free",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
+      "submission_url": "https://baseline.openssf.org/versions/2026-08-28.html",
+      "date_checked": "2026-10-01",
+      "artifact_required": [
+        "evidence/osps-baseline-level1.json"
+      ],
+      "prepared": true,
+      "submitted": false,
+      "accepted": false,
+      "public_listing_url": null,
+      "badge_url": null,
+      "blocker": "Owner establishes MFA and accountable security contact; verify branch controls and schema licensing treatment. No earned certification.",
+      "next_action": "Owner establishes MFA and accountable security contact; verify branch controls and schema licensing treatment. No earned certification.",
+      "owner_approval_required": true
+    },
+    {
+      "target": "LF Decentralized Trust Lab/project",
+      "category": "foundation",
+      "free_or_paid": "free",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
+      "submission_url": "https://github.com/LF-Decentralized-Trust/lab-proposals/issues/new?template=lab-proposal.yml",
+      "date_checked": "2026-10-01",
+      "artifact_required": [
+        "external/lfdt/submission.md"
+      ],
+      "prepared": true,
+      "submitted": false,
+      "accepted": false,
+      "public_listing_url": null,
+      "badge_url": null,
+      "blocker": "Approve formal representation, real human contacts/committers, DCO and transfer/naming decisions; mission fit is for stewards.",
+      "next_action": "Approve formal representation, real human contacts/committers, DCO and transfer/naming decisions; mission fit is for stewards.",
+      "owner_approval_required": true
+    },
+    {
+      "target": "FINOS existing-project contribution",
+      "category": "contribution",
+      "free_or_paid": "free",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
+      "submission_url": "https://community.finos.org/docs/journey/participate/",
+      "date_checked": "2026-10-01",
+      "artifact_required": [
+        "external/finos/upstream-targets.md"
+      ],
+      "prepared": true,
+      "submitted": false,
+      "accepted": false,
+      "public_listing_url": null,
+      "badge_url": null,
+      "blocker": "Approve outreach/public contribution identity and actual contributor agreement; shortlisted projects need narrow scope agreement.",
+      "next_action": "Approve outreach/public contribution identity and actual contributor agreement; shortlisted projects need narrow scope agreement.",
+      "owner_approval_required": true
+    },
+    {
+      "target": "FINOS sponsored new-project route",
+      "category": "foundation",
+      "free_or_paid": "free",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
+      "submission_url": "https://community.finos.org/docs/journey/participate/",
+      "date_checked": "2026-10-01",
+      "artifact_required": [
+        "external/finos/project-proposal.md"
+      ],
+      "prepared": true,
+      "submitted": false,
+      "accepted": false,
+      "public_listing_url": null,
+      "badge_url": null,
+      "blocker": "Approve sponsor request; an actual FINOS Member must agree before the new-project route can be filed.",
+      "next_action": "Approve sponsor request; an actual FINOS Member must agree before the new-project route can be filed.",
+      "owner_approval_required": true
+    },
+    {
+      "target": "GitHub signed release/provenance",
+      "category": "supply chain",
+      "free_or_paid": "free",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
+      "submission_url": "https://github.com/aksum-labs/messagebench/releases",
+      "date_checked": "2026-10-01",
+      "artifact_required": [
+        ".github/workflows/release.yml"
+      ],
+      "prepared": true,
+      "submitted": false,
+      "accepted": false,
+      "public_listing_url": null,
+      "badge_url": null,
+      "blocker": "Genuine independent review and protected approval precede formal RC release; candidate snapshot signing is separate.",
+      "next_action": "Genuine independent review and protected approval precede formal RC release; candidate snapshot signing is separate.",
+      "owner_approval_required": true
+    },
+    {
+      "target": "Authenticated candidate snapshot",
+      "category": "supply chain",
+      "free_or_paid": "free",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
+      "submission_url": "https://github.com/aksum-labs/messagebench/actions",
+      "date_checked": "2026-10-01",
+      "artifact_required": [
+        ".github/workflows/snapshot.yml"
+      ],
+      "prepared": true,
+      "submitted": false,
+      "accepted": false,
+      "public_listing_url": null,
+      "badge_url": null,
+      "blocker": "App Actions write/public visibility required to run, sign and verify exact main-workflow identity.",
+      "next_action": "App Actions write/public visibility required to run, sign and verify exact main-workflow identity.",
+      "owner_approval_required": true
+    },
+    {
+      "target": "Software Heritage",
+      "category": "archive",
+      "free_or_paid": "free",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
+      "submission_url": "https://archive.softwareheritage.org/save/",
+      "date_checked": "2026-10-01",
+      "artifact_required": [
+        "docs/citation-and-archival.md"
+      ],
+      "prepared": true,
+      "submitted": false,
+      "accepted": false,
+      "public_listing_url": null,
+      "badge_url": null,
+      "blocker": "Publish source first, request save and verify actual origin/snapshot; anti-bot denial is not a save receipt.",
+      "next_action": "Publish source first, request save and verify actual origin/snapshot; anti-bot denial is not a save receipt.",
+      "owner_approval_required": true
+    },
+    {
+      "target": "Zenodo/DOI",
+      "category": "archive",
+      "free_or_paid": "free",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
+      "submission_url": "https://zenodo.org/account/settings/github/",
+      "date_checked": "2026-10-01",
+      "artifact_required": [
+        "docs/citation-and-archival.md"
+      ],
+      "prepared": true,
+      "submitted": false,
+      "accepted": false,
+      "public_listing_url": null,
+      "badge_url": null,
+      "blocker": "Owner authorizes Zenodo account/GitHub integration and metadata attestations; reviewed release first. No DOI yet.",
+      "next_action": "Owner authorizes Zenodo account/GitHub integration and metadata attestations; reviewed release first. No DOI yet.",
+      "owner_approval_required": true
+    },
+    {
+      "target": "Substantive upstream PR",
+      "category": "contribution",
+      "free_or_paid": "free",
+      "status": "READY-FOR-OWNER-APPROVAL",
+      "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
+      "submission_url": "https://github.com/socrates8300/mx20022/pulls",
+      "date_checked": "2026-10-01",
+      "artifact_required": [
+        "external/upstream/mx20022/upstream.patch"
+      ],
+      "prepared": true,
+      "submitted": false,
+      "accepted": false,
+      "public_listing_url": null,
+      "badge_url": null,
+      "blocker": "Two new Rust tests pass; owner approves actual legal contributor identity and upstream submission. No PR submitted.",
+      "next_action": "Two new Rust tests pass; owner approves actual legal contributor identity and upstream submission. No PR submitted.",
+      "owner_approval_required": true
+    },
+    {
+      "target": "Benchmark paper and CTO brief",
+      "category": "research",
+      "free_or_paid": "free",
+      "status": "ACHIEVED",
+      "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
+      "submission_url": "https://github.com/aksum-labs/messagebench/tree/main/paper",
+      "date_checked": "2026-10-01",
+      "artifact_required": [
+        "paper/messagebench-benchmark.pdf"
+      ],
+      "prepared": true,
+      "submitted": false,
+      "accepted": false,
+      "public_listing_url": null,
+      "badge_url": null,
+      "blocker": null,
+      "next_action": "9-page preprint and 2-page brief generated locally; no peer review or public hosting claim before upload.",
+      "owner_approval_required": false
+    },
+    {
+      "target": "Software/paper citation metadata",
+      "category": "discoverability",
+      "free_or_paid": "free",
+      "status": "ACHIEVED",
+      "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
+      "submission_url": "https://github.com/aksum-labs/messagebench/blob/main/CITATION.cff",
+      "date_checked": "2026-10-01",
+      "artifact_required": [
+        "CITATION.cff"
+      ],
+      "prepared": true,
+      "submitted": false,
+      "accepted": false,
+      "public_listing_url": null,
+      "badge_url": null,
+      "blocker": null,
+      "next_action": "Citation metadata prepared and validated; archival identifiers not fabricated.",
+      "owner_approval_required": false
+    },
+    {
+      "target": "Repository-native documentation surface",
+      "category": "documentation",
+      "free_or_paid": "free",
+      "status": "ACHIEVED",
+      "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
+      "submission_url": "https://github.com/aksum-labs/messagebench/blob/main/docs/index.md",
+      "date_checked": "2026-10-01",
+      "artifact_required": [
+        "docs/index.md"
+      ],
+      "prepared": true,
+      "submitted": false,
+      "accepted": false,
+      "public_listing_url": null,
+      "badge_url": null,
+      "blocker": null,
+      "next_action": "Landing documentation and optional static HTML prepared; public access depends on repository publication.",
+      "owner_approval_required": false
+    },
+    {
+      "target": "Zero-cost recognition screening",
+      "category": "cost control",
+      "free_or_paid": "free",
+      "status": "ACHIEVED",
+      "eligibility": "Bounded original engineering contribution; see target-specific evidence and human decisions.",
+      "submission_url": null,
+      "date_checked": "2026-10-01",
+      "artifact_required": [
+        "external/rejected-paid-recognition.md"
+      ],
+      "prepared": true,
+      "submitted": false,
+      "accepted": false,
+      "public_listing_url": null,
+      "badge_url": null,
+      "blocker": null,
+      "next_action": "Paid/inappropriate routes rejected; no membership, award or listing fee paid.",
+      "owner_approval_required": false
+    }
+  ]
+}

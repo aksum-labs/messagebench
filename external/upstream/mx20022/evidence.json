@@ -1,0 +1,18 @@
+{
+  "upstream": "socrates8300/mx20022",
+  "source_commit": "810cfa2e486745ca3a779c460a7768e1923f860a",
+  "date_checked": "2026-10-01",
+  "command": "cargo test --locked -p mx20022-parse --test preservation_v08",
+  "new_tests": 2,
+  "passed": 2,
+  "submitted": false,
+  "pr_url": null,
+  "patch_sha256": "a12eac79577b3284fbd6ab9122b3b514f1cc8acc9b4e4db820ace209bc87513a",
+  "rustc": "rustc 1.90.0 (1159e78c4 2025-09-14)",
+  "cargo": "cargo 1.90.0 (840b83a10 2025-07-30)",
+  "exact_input_xsd_validation": {
+    "message": "pacs.008.001.08",
+    "source_valid": true,
+    "mutated_target_valid": true
+  }
+}

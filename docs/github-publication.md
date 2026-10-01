@@ -1,57 +1,11 @@
-# Publication preparation
+# GitHub publication and release controls
 
-Nothing in this sprint publishes the repository. Repository slug: `messagebench`.
-Intended owner: the Aksum Labs organization; its actual GitHub handle must be verified.
+Repository: https://github.com/aksum-labs/messagebench. Owner authorized public source publication on 1 October 2026. Actual configuration read-back and hosted workflow results are in evidence/github-settings.json and evidence/hosted-recognition.json. Historical 29 September local completion reports describe the pre-publication state; current recognition status is EXTERNAL_RECOGNITION_COMPLETION_REPORT.md.
 
-Description / About text:
+Company commit metadata and the organization-owned publisher App protect public author/push attribution. No personal account token is used for code pushes, public workflow dispatch or releases. A private owner-controlled maintainer team is CODEOWNER. Platform audit records are not erased or claimed anonymous.
 
-> Offline preservation tests for financial-message adapters: versioned contracts, synthetic fixtures and reproducible, scope-labelled evidence.
+Candidate snapshots may be built and signed by snapshot.yml without claiming independent review. It verifies a checksum manifest against the exact repository/workflow/main ref and OIDC issuer. The protected release.yml workflow retains the genuine review check and explicit enablement variables. It does not automatically publish a release.
 
-Topics: `financial-infrastructure`, `iso20022`, `testing`, `data-quality`, `python`,
-`offline`, `open-source`, `payments`.
+Before formal RC release: authenticate two independent technical/rights review decisions for the current packet; appoint actual accountable maintainers; confirm protected branch/tag/environment controls; enable RELEASE_PREPARATION_ENABLED and RELEASE_SIGNING_ENABLED only after review; run and verify the protected workflow; inspect artifacts/notes; create a draft prerelease, attach all assets and publish only with genuine approval. Do not call the candidate v0.5/v1.0.
 
-Social preview text: “Both messages parse. Did the transformation preserve what it promised?”
-Use Aksum-owned artwork only. Do not use regulator, scheme or vendor logos.
-
-Before enabling release preparation:
-
-1. Review GATE_REPORT.md, RELEASE_READINESS.md, asset rights and security evidence.
-2. Assign real maintainer/security handles; update CODEOWNERS and enable private vulnerability reporting.
-3. Protect main and release tags, require a separate review, disallow force pushes and require CI.
-4. Create the `release-review` environment with required human reviewers and main-only deployment branches.
-5. Only after those checks set repository variable `RELEASE_PREPARATION_ENABLED=true`.
-6. Run the manual preparation workflow. It builds review artifacts, not a public release.
-7. Human maintainers decide whether to publish and obtain identity-backed signatures/provenance.
-
-Workflow files do not themselves enable branch protection, private reporting or reviewer
-requirements. These settings and hosted CI results are unverified until the real repository
-is created and configured. No badge, organizational membership or endorsement is implied.
-
-## Concrete owner plan
-
-Generate files using the actual organization/repository, two real handles and corresponding
-numeric GitHub user IDs (examples below are placeholders, not assigned maintainers):
-
-```sh
-python scripts/owner_setup.py --repo ACTUAL_ORG/messagebench \
-  --maintainer REAL_HANDLE_ONE --maintainer REAL_HANDLE_TWO \
-  --reviewer-id REAL_NUMERIC_ID_ONE --reviewer-id REAL_NUMERIC_ID_TWO \
-  --out /tmp/messagebench-owner-plan
-```
-
-The command only writes a plan; it performs no GitHub calls. Inspect and execute the generated
-OWNER_COMMANDS.sh after publication approval. It configures two branch approvals, code owners,
-strict CI checks, no force pushes, private vulnerability reporting, a protected release
-review environment, controlled tag creation and immutable existing release tags. Use the
-current GitHub REST API; do not apply these settings to an unrelated existing repository.
-The plan also includes read-back commands to verify settings after application.
-
-Enable `RELEASE_SIGNING_ENABLED=true` only after real review records are in `reviews/`, the
-review checker passes, and the environment requires a separate human approver. The sign job
-uses a pinned Cosign executable and GitHub OIDC, verifies the exact repository/workflow/ref
-identity, and retains a Sigstore bundle. Only that job requests `id-token: write`; PR jobs
-remain read-only. The workflow never publishes a GitHub release or package automatically.
-
-Actual execution of this plan, hosted checks, account identity, disclosure ownership and
-publication approval are BLOCKED-BY-HUMAN. There is no configured remote in the delivered
-checkout. No account authority is inferred from the intended organization name.
+SHA-pinned Actions, read-only defaults, isolated OIDC jobs, CodeQL/Bandit, dependency review, secret scanning and SBOM/provenance are configured with least privilege. Public Scorecard badge appears only after the official published result exists. Prepared Best Practices/foundation forms are not earned awards or affiliations.

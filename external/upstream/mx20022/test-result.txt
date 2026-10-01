@@ -1,0 +1,10 @@
+   Compiling mx20022-parse v0.4.0 (<upstream-checkout>/crates/mx20022-parse)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.38s
+     Running tests/preservation_v08.rs (target/debug/deps/preservation_v08-cf44bb7198d7f01a)
+
+running 2 tests
+test pacs008_v08_reference_and_multiplicity_loss_are_observable ... ok
+test pacs008_v08_preserves_lexical_identifiers_and_duplicate_unicode_remittance ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

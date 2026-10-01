@@ -1,5 +1,7 @@
 # FINAL_COMPLETION_REPORT — MessageBench
 
+> Historical engineering acceptance snapshot (29 September 2026). Current publication/security/recognition state is recorded in EXTERNAL_RECOGNITION_COMPLETION_REPORT.md. This historical report is not a current visibility or badge claim.
+
 Reference date: 29 September 2026. Engineering candidate: **0.2.0-rc.1** (Python package 0.2.0rc1).
 
 Every original mandate section 0–37 is accounted for below. Technical automation is complete within the cleared two-message scope. Authentic human review, rights-holder clarification for the excluded third version, and account-owner actions are explicitly separated. Nothing was published or represented as independently approved.

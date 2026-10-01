@@ -1,0 +1,10 @@
+{
+  "source": "paper/messagebench-benchmark.md",
+  "toolchain": {
+    "reportlab": "4.4.10",
+    "matplotlib": "3.10.8"
+  },
+  "renderer": "paper/render_materials.py",
+  "date": "2026-10-01",
+  "independent_review": false
+}

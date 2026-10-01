@@ -29,6 +29,8 @@ jobs:
       - run: '"$RUNNER_TEMP/dev-tools/actionlint/actionlint" .github/workflows/*.yml'
       - run: python scripts/check_secrets.py
       - run: python scripts/check_licenses.py
+      - run: python scripts/check_recognition.py
+      - run: python scripts/inventory.py --out "$RUNNER_TEMP/inventory"
       - run: coverage run -m pytest -q
       - run: coverage json -o coverage-ci.json
       - run: python scripts/check_coverage.py coverage-ci.json
@@ -45,7 +47,9 @@ jobs:
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: synthetic-test-coverage
-          path: coverage-ci.json
+          path: |
+            coverage-ci.json
+            ${{ runner.temp }}/inventory
           retention-days: 14
   dependencies:
     runs-on: ubuntu-24.04

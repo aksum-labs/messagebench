@@ -19,7 +19,6 @@ work you have the right to contribute; retain third-party notices and separate a
 Describe why the change is useful, the exact behavior and relevant validation. Keep the
 core offline, non-operational and non-certifying. No executable contracts or adapter plugins.
 
-Independent human review is required before public release. The owner's recorded exception
-permits ongoing local development, not a claim of independent review. Maintainer identities,
-private security reporting and real repository review settings must be assigned before
-publication. See GOVERNANCE.md, SECURITY.md and docs/github-publication.md.
+Submit pull requests at https://github.com/aksum-labs/messagebench/pulls and discuss synthetic problems in its Issues. The organization-maintainer team reviews contributions. Public source publication is authorized; genuine independent review is still required before formal release. No review or contributor legal attestation may be fabricated.
+
+Use SECURITY.md for private vulnerability reports. Do not add personal customer data or credentials to public issues. For future LFDT/FINOS contributions, the owner must supply the actual required DCO/CLA authority; existing corporate commit metadata alone does not satisfy those agreements.

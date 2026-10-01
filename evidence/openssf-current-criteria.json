@@ -1,0 +1,712 @@
+{
+  "checked_on": "2026-10-01",
+  "source_url": "https://www.bestpractices.dev/en/criteria/0",
+  "source_sha256": "e81ab58a3f8b534965b31068ee01b1ce717cae729982ad197c4d63ea40c9a5ac",
+  "criteria_count": 67,
+  "official_badge_obtained": false,
+  "official_project_page": null,
+  "criteria": [
+    {
+      "criterion": "description_good",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Technically prepared; App permissions/actual public read-back required. Reassess after publication.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.description_good"
+    },
+    {
+      "criterion": "interact",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Technically prepared; App permissions/actual public read-back required. Reassess after publication.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.interact"
+    },
+    {
+      "criterion": "contribution",
+      "status": "SATISFIED",
+      "evidence": [
+        "CONTRIBUTING.md"
+      ],
+      "assessment": "Contribution process, coding and test requirements documented.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.contribution"
+    },
+    {
+      "criterion": "contribution_requirements",
+      "status": "SATISFIED",
+      "evidence": [
+        "CONTRIBUTING.md"
+      ],
+      "assessment": "Contribution process, coding and test requirements documented.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.contribution_requirements"
+    },
+    {
+      "criterion": "floss_license",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "LICENSE",
+        "NOTICE",
+        "evidence/rights-register.json"
+      ],
+      "assessment": "Original source is Apache-2.0; standard XSD assets retain non-OSI SWIFTStandards terms. Qualified license/assessor decision is required; do not assert all assets are OSI-approved.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.floss_license"
+    },
+    {
+      "criterion": "floss_license_osi",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "LICENSE",
+        "NOTICE",
+        "evidence/rights-register.json"
+      ],
+      "assessment": "Original source is Apache-2.0; standard XSD assets retain non-OSI SWIFTStandards terms. Qualified license/assessor decision is required; do not assert all assets are OSI-approved.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.floss_license_osi"
+    },
+    {
+      "criterion": "license_location",
+      "status": "SATISFIED",
+      "evidence": [
+        "LICENSE",
+        "NOTICE",
+        "evidence/rights-register.json"
+      ],
+      "assessment": "Original Apache-2.0 source and separately documented third-party terms; uncertain camt asset excluded.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.license_location"
+    },
+    {
+      "criterion": "documentation_basics",
+      "status": "SATISFIED",
+      "evidence": [
+        "docs/quickstart.md",
+        "docs/api.md"
+      ],
+      "assessment": "Install/use and external-interface references prepared.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.documentation_basics"
+    },
+    {
+      "criterion": "documentation_interface",
+      "status": "SATISFIED",
+      "evidence": [
+        "docs/quickstart.md",
+        "docs/api.md"
+      ],
+      "assessment": "Install/use and external-interface references prepared.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.documentation_interface"
+    },
+    {
+      "criterion": "sites_https",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Technically prepared; App permissions/actual public read-back required. Reassess after publication.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.sites_https"
+    },
+    {
+      "criterion": "discussion",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Technically prepared; App permissions/actual public read-back required. Reassess after publication.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.discussion"
+    },
+    {
+      "criterion": "english",
+      "status": "SATISFIED",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Local documentation/control prepared; applicability stated in the mandate report.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.english"
+    },
+    {
+      "criterion": "maintained",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Accountable primary human developer/maintainer must attest actual secure-design competence and ongoing maintenance; automated tests do not supply that attestation.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.maintained"
+    },
+    {
+      "criterion": "repo_public",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Technically prepared; App permissions/actual public read-back required. Reassess after publication.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.repo_public"
+    },
+    {
+      "criterion": "repo_track",
+      "status": "SATISFIED",
+      "evidence": [
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Git tracks interim commits and attribution; actual public repository is owner controlled.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.repo_track"
+    },
+    {
+      "criterion": "repo_interim",
+      "status": "SATISFIED",
+      "evidence": [
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Git tracks interim commits and attribution; actual public repository is owner controlled.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.repo_interim"
+    },
+    {
+      "criterion": "repo_distributed",
+      "status": "SATISFIED",
+      "evidence": [
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Git tracks interim commits and attribution; actual public repository is owner controlled.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.repo_distributed"
+    },
+    {
+      "criterion": "version_unique",
+      "status": "SATISFIED",
+      "evidence": [
+        "pyproject.toml",
+        "CHANGELOG.md"
+      ],
+      "assessment": "Unique prerelease version and human-readable change notes; no known Aksum-code assigned CVE fix to omit.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.version_unique"
+    },
+    {
+      "criterion": "version_semver",
+      "status": "SATISFIED",
+      "evidence": [
+        "pyproject.toml",
+        "CHANGELOG.md"
+      ],
+      "assessment": "Unique prerelease version and human-readable change notes; no known Aksum-code assigned CVE fix to omit.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.version_semver"
+    },
+    {
+      "criterion": "version_tags",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "pyproject.toml",
+        "CHANGELOG.md"
+      ],
+      "assessment": "Formal RC tag/release remains gated by genuine independent human review.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.version_tags"
+    },
+    {
+      "criterion": "release_notes",
+      "status": "SATISFIED",
+      "evidence": [
+        "pyproject.toml",
+        "CHANGELOG.md"
+      ],
+      "assessment": "Unique prerelease version and human-readable change notes; no known Aksum-code assigned CVE fix to omit.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.release_notes"
+    },
+    {
+      "criterion": "release_notes_vulns",
+      "status": "NOT APPLICABLE",
+      "evidence": [
+        "pyproject.toml",
+        "CHANGELOG.md"
+      ],
+      "assessment": "No known CVE assigned to MessageBench itself is fixed in this candidate.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.release_notes_vulns"
+    },
+    {
+      "criterion": "report_process",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.report_process"
+    },
+    {
+      "criterion": "report_tracker",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.report_tracker"
+    },
+    {
+      "criterion": "report_responses",
+      "status": "REQUIRES-HISTORY",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "No actual public report/response record is invented. A human should assess no-report applicability with official assessors; track real requests and response times.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.report_responses"
+    },
+    {
+      "criterion": "enhancement_responses",
+      "status": "REQUIRES-HISTORY",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "No actual public report/response record is invented. A human should assess no-report applicability with official assessors; track real requests and response times.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.enhancement_responses"
+    },
+    {
+      "criterion": "report_archive",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "Technically prepared; App permissions/actual public read-back required. Reassess after publication.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.report_archive"
+    },
+    {
+      "criterion": "vulnerability_report_process",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.vulnerability_report_process"
+    },
+    {
+      "criterion": "vulnerability_report_private",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.vulnerability_report_private"
+    },
+    {
+      "criterion": "vulnerability_report_response",
+      "status": "REQUIRES-HISTORY",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "No actual public report/response record is invented. A human should assess no-report applicability with official assessors; track real requests and response times.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.vulnerability_report_response"
+    },
+    {
+      "criterion": "build",
+      "status": "SATISFIED",
+      "evidence": [
+        "pyproject.toml",
+        "scripts/build_native.py",
+        "scripts/reproducible_build.py"
+      ],
+      "assessment": "FLOSS build tools and clean-build/install verification.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.build"
+    },
+    {
+      "criterion": "build_common_tools",
+      "status": "SATISFIED",
+      "evidence": [
+        "pyproject.toml",
+        "scripts/build_native.py",
+        "scripts/reproducible_build.py"
+      ],
+      "assessment": "FLOSS build tools and clean-build/install verification.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.build_common_tools"
+    },
+    {
+      "criterion": "build_floss_tools",
+      "status": "SATISFIED",
+      "evidence": [
+        "pyproject.toml",
+        "scripts/build_native.py",
+        "scripts/reproducible_build.py"
+      ],
+      "assessment": "FLOSS build tools and clean-build/install verification.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.build_floss_tools"
+    },
+    {
+      "criterion": "test",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.test"
+    },
+    {
+      "criterion": "test_invocation",
+      "status": "SATISFIED",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.test_invocation"
+    },
+    {
+      "criterion": "test_most",
+      "status": "SATISFIED",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.test_most"
+    },
+    {
+      "criterion": "test_continuous_integration",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.test_continuous_integration"
+    },
+    {
+      "criterion": "test_policy",
+      "status": "SATISFIED",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.test_policy"
+    },
+    {
+      "criterion": "tests_are_added",
+      "status": "SATISFIED",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.tests_are_added"
+    },
+    {
+      "criterion": "tests_documented_added",
+      "status": "SATISFIED",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.tests_documented_added"
+    },
+    {
+      "criterion": "warnings",
+      "status": "SATISFIED",
+      "evidence": [
+        "evidence/bandit.json",
+        ".github/workflows/checks.yml"
+      ],
+      "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.warnings"
+    },
+    {
+      "criterion": "warnings_fixed",
+      "status": "SATISFIED",
+      "evidence": [
+        "evidence/bandit.json",
+        ".github/workflows/checks.yml"
+      ],
+      "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.warnings_fixed"
+    },
+    {
+      "criterion": "warnings_strict",
+      "status": "SATISFIED",
+      "evidence": [
+        "evidence/bandit.json",
+        ".github/workflows/checks.yml"
+      ],
+      "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.warnings_strict"
+    },
+    {
+      "criterion": "know_secure_design",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Accountable primary human developer/maintainer must attest actual secure-design competence and ongoing maintenance; automated tests do not supply that attestation.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.know_secure_design"
+    },
+    {
+      "criterion": "know_common_errors",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Accountable primary human developer/maintainer must attest actual secure-design competence and ongoing maintenance; automated tests do not supply that attestation.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.know_common_errors"
+    },
+    {
+      "criterion": "crypto_published",
+      "status": "SATISFIED",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        ".github/workflows/release.yml"
+      ],
+      "assessment": "SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_published"
+    },
+    {
+      "criterion": "crypto_call",
+      "status": "SATISFIED",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        ".github/workflows/release.yml"
+      ],
+      "assessment": "SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_call"
+    },
+    {
+      "criterion": "crypto_floss",
+      "status": "SATISFIED",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        ".github/workflows/release.yml"
+      ],
+      "assessment": "SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_floss"
+    },
+    {
+      "criterion": "crypto_keylength",
+      "status": "NOT APPLICABLE",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        ".github/workflows/release.yml"
+      ],
+      "assessment": "Runtime does not implement cryptographic keys, passwords, key agreement or random security protocols; release signing uses mature tools.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_keylength"
+    },
+    {
+      "criterion": "crypto_working",
+      "status": "SATISFIED",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        ".github/workflows/release.yml"
+      ],
+      "assessment": "SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_working"
+    },
+    {
+      "criterion": "crypto_weaknesses",
+      "status": "SATISFIED",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        ".github/workflows/release.yml"
+      ],
+      "assessment": "SHA-256 uses standard-library primitives; no runtime passwords, keys, key exchange or cryptographic protocol. Inapplicable mechanisms are explicitly absent; signing uses Cosign.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_weaknesses"
+    },
+    {
+      "criterion": "crypto_pfs",
+      "status": "NOT APPLICABLE",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        ".github/workflows/release.yml"
+      ],
+      "assessment": "Runtime does not implement cryptographic keys, passwords, key agreement or random security protocols; release signing uses mature tools.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_pfs"
+    },
+    {
+      "criterion": "crypto_password_storage",
+      "status": "NOT APPLICABLE",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        ".github/workflows/release.yml"
+      ],
+      "assessment": "Runtime does not implement cryptographic keys, passwords, key agreement or random security protocols; release signing uses mature tools.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_password_storage"
+    },
+    {
+      "criterion": "crypto_random",
+      "status": "NOT APPLICABLE",
+      "evidence": [
+        "src/aksum_messagebench/reports.py",
+        ".github/workflows/release.yml"
+      ],
+      "assessment": "Runtime does not implement cryptographic keys, passwords, key agreement or random security protocols; release signing uses mature tools.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.crypto_random"
+    },
+    {
+      "criterion": "delivery_mitm",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Technically prepared; App permissions/actual public read-back required. Reassess after publication.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.delivery_mitm"
+    },
+    {
+      "criterion": "delivery_unsigned",
+      "status": "SATISFIED",
+      "evidence": [
+        "README.md",
+        "CONTRIBUTING.md",
+        "GOVERNANCE.md"
+      ],
+      "assessment": "Local documentation/control prepared; applicability stated in the mandate report.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.delivery_unsigned"
+    },
+    {
+      "criterion": "vulnerabilities_fixed_60_days",
+      "status": "BLOCKED-BY-HUMAN",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "Policy/forms prepared; accountable owner must establish live reporting/response and attest process history. Actual publication, accountable human competence/response attestations or hosted operation cannot be supplied by this local execution.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.vulnerabilities_fixed_60_days"
+    },
+    {
+      "criterion": "vulnerabilities_critical_fixed",
+      "status": "REQUIRES-HISTORY",
+      "evidence": [
+        "SECURITY.md",
+        "scripts/owner_setup.py"
+      ],
+      "assessment": "No actual public report/response record is invented. A human should assess no-report applicability with official assessors; track real requests and response times.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.vulnerabilities_critical_fixed"
+    },
+    {
+      "criterion": "no_leaked_credentials",
+      "status": "SATISFIED",
+      "evidence": [
+        "scripts/check_secrets.py",
+        ".secrets.baseline"
+      ],
+      "assessment": "Tracked-source secret scan without online credential probing; reviewed public digests only.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.no_leaked_credentials"
+    },
+    {
+      "criterion": "static_analysis",
+      "status": "SATISFIED",
+      "evidence": [
+        "evidence/bandit.json",
+        ".github/workflows/checks.yml"
+      ],
+      "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.static_analysis"
+    },
+    {
+      "criterion": "static_analysis_common_vulnerabilities",
+      "status": "SATISFIED",
+      "evidence": [
+        "evidence/bandit.json",
+        ".github/workflows/checks.yml"
+      ],
+      "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.static_analysis_common_vulnerabilities"
+    },
+    {
+      "criterion": "static_analysis_fixed",
+      "status": "SATISFIED",
+      "evidence": [
+        "evidence/bandit.json",
+        ".github/workflows/checks.yml"
+      ],
+      "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.static_analysis_fixed"
+    },
+    {
+      "criterion": "static_analysis_often",
+      "status": "SATISFIED",
+      "evidence": [
+        "evidence/bandit.json",
+        ".github/workflows/checks.yml"
+      ],
+      "assessment": "Ruff, mypy and Bandit checks; renderer-only low-severity import finding retained and explained.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.static_analysis_often"
+    },
+    {
+      "criterion": "dynamic_analysis",
+      "status": "SATISFIED",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.dynamic_analysis"
+    },
+    {
+      "criterion": "dynamic_analysis_unsafe",
+      "status": "NOT APPLICABLE",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Aksum-authored runtime is Python; native XML dependencies are maintained upstream and separately inventoried.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.dynamic_analysis_unsafe"
+    },
+    {
+      "criterion": "dynamic_analysis_enable_assertions",
+      "status": "SATISFIED",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.dynamic_analysis_enable_assertions"
+    },
+    {
+      "criterion": "dynamic_analysis_fixed",
+      "status": "SATISFIED",
+      "evidence": [
+        "tests",
+        "fuzz",
+        "evidence/coverage.json",
+        "evidence/mutation-results.json"
+      ],
+      "assessment": "Automated source tests, properties, targeted mutation witnesses and bounded dynamic checks; no claim of exhaustive assurance.",
+      "official_url": "https://www.bestpractices.dev/en/criteria/0#0.dynamic_analysis_fixed"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+name: Dependency review
+on:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      base_ref:
+        description: Trusted baseline commit
+        required: true
+        default: '2267eb3b42126fe65a87468d73e07b5218999626'
+permissions:
+  contents: read
+jobs:
+  dependency-review:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pull-requests: read
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/dependency-review-action@2f920dad77d7f4f2ea876b66287b896de40dda79
+        with:
+          base-ref: ${{ github.event_name == 'workflow_dispatch' && inputs.base_ref || github.event.pull_request.base.sha }}
+          head-ref: ${{ github.event_name == 'workflow_dispatch' && github.sha || github.event.pull_request.head.sha }}
+          fail-on-severity: moderate
+          comment-summary-in-pr: never

@@ -1,0 +1,78 @@
+diff --git a/crates/mx20022-parse/tests/preservation_v08.rs b/crates/mx20022-parse/tests/preservation_v08.rs
+new file mode 100644
+index 0000000..09676a5
+--- /dev/null
++++ b/crates/mx20022-parse/tests/preservation_v08.rs
+@@ -0,0 +1,44 @@
++//! Original synthetic preservation regression; no MessageBench dependency.
++use mx20022_model::generated::pacs::pacs_008_001_08::{AccountIdentification4Choice, Document};
++use mx20022_parse::{de, ser};
++
++fn input() -> &'static str {
++    include_str!("../../../testdata/xml/pacs/pacs_008_001_08_preservation.xml")
++}
++
++#[test]
++fn pacs008_v08_preserves_lexical_identifiers_and_duplicate_unicode_remittance() {
++    let before: Document = de::from_str(input()).expect("synthetic v08 fixture parses");
++    let tx = &before.fi_to_fi_cstmr_cdt_trf.cdt_trf_tx_inf[0];
++    let account = &tx.dbtr_acct.as_ref().expect("debtor account").id.inner;
++    match account {
++        AccountIdentification4Choice::Othr(id) => assert_eq!(id.id.0, "0000123400"),
++        AccountIdentification4Choice::IBAN(_) => panic!("fixture uses generic identifier"),
++    }
++    let remittance = &tx.rmt_inf.as_ref().expect("remittance").ustrd;
++    assert_eq!(remittance.len(), 4, "duplicates are significant");
++    assert_eq!(remittance[2].0, "ክፍያ INV-000123");
++    assert_eq!(remittance[3].0, "ክፍያ INV-000123");
++    let xml = ser::to_string(&before).expect("serialize");
++    let after: Document = de::from_str(&xml).expect("parse serialized output");
++    assert_eq!(
++        before, after,
++        "typed round trip must preserve every model field"
++    );
++}
++
++#[test]
++fn pacs008_v08_reference_and_multiplicity_loss_are_observable() {
++    let before: Document = de::from_str(input()).expect("original parses");
++    let changed = input()
++        .replacen("INV-2026-000123", "INV-2026-000", 1)
++        .replacen("<Ustrd>ክፍያ INV-000123</Ustrd>", "", 1);
++    let after: Document = de::from_str(&changed).expect("modified document still parses");
++    let a = &before.fi_to_fi_cstmr_cdt_trf.cdt_trf_tx_inf[0];
++    let b = &after.fi_to_fi_cstmr_cdt_trf.cdt_trf_tx_inf[0];
++    assert_ne!(a.pmt_id.end_to_end_id, b.pmt_id.end_to_end_id);
++    assert_eq!(
++        a.rmt_inf.as_ref().unwrap().ustrd.len(),
++        b.rmt_inf.as_ref().unwrap().ustrd.len() + 1
++    );
++}
+diff --git a/testdata/xml/pacs/pacs_008_001_08_preservation.xml b/testdata/xml/pacs/pacs_008_001_08_preservation.xml
+new file mode 100644
+index 0000000..c1c421a
+--- /dev/null
++++ b/testdata/xml/pacs/pacs_008_001_08_preservation.xml
+@@ -0,0 +1,22 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
++  <FIToFICstmrCdtTrf>
++    <GrpHdr>
++      <MsgId>AKSUM-SYNTHETIC-0001</MsgId>
++      <CreDtTm>2026-09-29T00:00:00Z</CreDtTm>
++      <NbOfTxs>1</NbOfTxs>
++      <SttlmInf><SttlmMtd>CLRG</SttlmMtd></SttlmInf>
++    </GrpHdr>
++    <CdtTrfTxInf>
++      <PmtId><EndToEndId>INV-2026-000123</EndToEndId><TxId>SYNTHETIC-TX-0001</TxId></PmtId>
++      <IntrBkSttlmAmt Ccy="ETB">1250.50</IntrBkSttlmAmt>
++      <ChrgBr>SHAR</ChrgBr>
++      <Dbtr><Nm>Fictional Payer</Nm></Dbtr>
++      <DbtrAcct><Id><Othr><Id>0000123400</Id><SchmeNm><Prtry>SYNTHETIC</Prtry></SchmeNm><Issr>FICTIONAL-ISSUER</Issr></Othr></Id></DbtrAcct>
++      <DbtrAgt><FinInstnId><Othr><Id>FICTIONAL-DEBTOR-AGENT</Id></Othr></FinInstnId></DbtrAgt>
++      <CdtrAgt><FinInstnId><Othr><Id>FICTIONAL-CREDITOR-AGENT</Id></Othr></FinInstnId></CdtrAgt>
++      <Cdtr><Nm>Fictional Recipient</Nm></Cdtr>
++      <RmtInf><Ustrd>INVOICE 000123</Ustrd><Ustrd>ሙከራ</Ustrd><Ustrd>ክፍያ INV-000123</Ustrd><Ustrd>ክፍያ INV-000123</Ustrd></RmtInf>
++    </CdtTrfTxInf>
++  </FIToFICstmrCdtTrf>
++</Document>

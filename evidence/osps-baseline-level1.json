@@ -1,0 +1,298 @@
+{
+  "version": "2026.08.28",
+  "checked_on": "2026-10-01",
+  "source": "https://baseline.openssf.org/versions/2026-08-28.html",
+  "source_sha256": "d1d603880f2948f8465d5334af55e3235291493ab002898cd9519c70963e176c",
+  "controls": [
+    {
+      "control": "OSPS-AC-01.01",
+      "status": "BLOCKED-BY-HUMAN",
+      "assessment": "Require and verify human MFA through organization policy; bot credentials are scoped separately.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-AC-02.01",
+      "status": "SATISFIED",
+      "assessment": "See public technical documentation and automated evidence.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-AC-03.01",
+      "status": "BLOCKED-BY-HUMAN",
+      "assessment": "Requires actual public configuration read-back or accountable security contact; current docs are prepared.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-AC-03.02",
+      "status": "BLOCKED-BY-HUMAN",
+      "assessment": "Requires actual public configuration read-back or accountable security contact; current docs are prepared.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-BR-01.01",
+      "status": "SATISFIED",
+      "assessment": "See public technical documentation and automated evidence.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-BR-01.03",
+      "status": "SATISFIED",
+      "assessment": "See public technical documentation and automated evidence.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-BR-03.01",
+      "status": "SATISFIED",
+      "assessment": "See public technical documentation and automated evidence.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-BR-03.02",
+      "status": "SATISFIED",
+      "assessment": "See public technical documentation and automated evidence.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-BR-07.01",
+      "status": "SATISFIED",
+      "assessment": "See public technical documentation and automated evidence.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-DO-01.01",
+      "status": "SATISFIED",
+      "assessment": "See public technical documentation and automated evidence.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-DO-02.01",
+      "status": "SATISFIED",
+      "assessment": "See public technical documentation and automated evidence.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-GV-02.01",
+      "status": "BLOCKED-BY-HUMAN",
+      "assessment": "Requires actual public configuration read-back or accountable security contact; current docs are prepared.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-GV-03.01",
+      "status": "SATISFIED",
+      "assessment": "See public technical documentation and automated evidence.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-LE-02.01",
+      "status": "SATISFIED",
+      "assessment": "See public technical documentation and automated evidence.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-LE-02.02",
+      "status": "BLOCKED-BY-HUMAN",
+      "assessment": "Standard-schema asset terms require assessor review; redistribution clearance is not equivalent to OSI/FSF licensing.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-LE-03.01",
+      "status": "SATISFIED",
+      "assessment": "See public technical documentation and automated evidence.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-LE-03.02",
+      "status": "SATISFIED",
+      "assessment": "See public technical documentation and automated evidence.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-QA-01.01",
+      "status": "BLOCKED-BY-HUMAN",
+      "assessment": "Requires actual public configuration read-back or accountable security contact; current docs are prepared.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-QA-01.02",
+      "status": "BLOCKED-BY-HUMAN",
+      "assessment": "Requires actual public configuration read-back or accountable security contact; current docs are prepared.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-QA-02.01",
+      "status": "SATISFIED",
+      "assessment": "See public technical documentation and automated evidence.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-QA-04.01",
+      "status": "NOT APPLICABLE",
+      "assessment": "Single software source repository; historical local artifacts are not independently maintained subprojects.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-QA-05.01",
+      "status": "SATISFIED",
+      "assessment": "See public technical documentation and automated evidence.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-QA-05.02",
+      "status": "SATISFIED",
+      "assessment": "Binary logo images have inspectable SVG sources; bundled license PDF has an extracted readable text reference. No unreviewable executable binaries.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    },
+    {
+      "control": "OSPS-VM-02.01",
+      "status": "BLOCKED-BY-HUMAN",
+      "assessment": "Requires actual public configuration read-back or accountable security contact; current docs are prepared.",
+      "evidence": [
+        "README.md",
+        "SECURITY.md",
+        "docs/threat-model.md",
+        "evidence/rights-register.json",
+        ".github/workflows/checks.yml"
+      ]
+    }
+  ],
+  "independent_assessment": false,
+  "badge_obtained": false
+}
