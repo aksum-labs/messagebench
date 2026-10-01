@@ -61,3 +61,18 @@ for item in requirements:
         if not path.is_relative_to(ROOT) or not path.is_file():
             raise SystemExit("Missing/unsafe mandate evidence")
 print("Recognition targets, artifacts, citations, criteria and mandate accounting validated.")
+
+current = json.loads((ROOT / "evidence/engineering-current-accounting.json").read_text())
+original = json.loads((ROOT / "docs/mandate-items.json").read_text())["items"]
+if len(current["items"]) != len(original) or {x["id"] for x in current["items"]} != {
+    x["id"] for x in original
+}:
+    raise SystemExit("Current original-mandate accounting mismatch")
+for item in current["items"]:
+    if item["status"] not in {"PASS", "BLOCKED-BY-HUMAN", "IMPOSSIBLE-WITH-EVIDENCE"}:
+        raise SystemExit("Invalid original-mandate current disposition")
+    for name in item["evidence"]:
+        path = (ROOT / name).resolve()
+        if not path.is_relative_to(ROOT) or not path.exists():
+            raise SystemExit("Missing/unsafe original-mandate evidence")
+print("All original engineering requirements also accounted for in the current crosswalk.")

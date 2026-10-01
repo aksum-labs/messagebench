@@ -1,6 +1,6 @@
 # FINAL_COMPLETION_REPORT — MessageBench
 
-> Historical engineering acceptance snapshot (29 September 2026). Current publication/security/recognition state is recorded in EXTERNAL_RECOGNITION_COMPLETION_REPORT.md. This historical report is not a current visibility or badge claim.
+> Historical engineering acceptance snapshot (29 September 2026). Current publication/security/recognition state is recorded in EXTERNAL_RECOGNITION_COMPLETION_REPORT.md. This historical report is not a current visibility or badge claim. The current 389-item crosswalk is FINAL_COMPLETION_REPORT_CURRENT.md.
 
 Reference date: 29 September 2026. Engineering candidate: **0.2.0-rc.1** (Python package 0.2.0rc1).
 

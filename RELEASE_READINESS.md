@@ -35,15 +35,9 @@ standard status, complete-document preservation, an unmeasured Scorecard score o
 Every result states: “Pass means only the listed assertions passed for these inputs and versions.”
 
 Human-only release actions:
-1. Two genuine independent reviewers inspect the hash-bound packet, expected outcomes and rights;
-   a responsible human authenticates identities/independence and approves publication.
-2. Actual repository hardening/hosted CI is recorded in evidence/github-settings.json and
-   EXTERNAL_RECOGNITION_COMPLETION_REPORT.md. Owner supplies accountable independent reviewers
-   and any still-missing MFA/environment reviewer controls.
-3. Owners enable the protected OIDC signing job and verify its exact identity before publication;
-   create public repository/release and submit any badge application only with authorization.
-4. For camt support, obtain authoritative joint-contributor redistribution clearance first.
+1. Two genuine independent reviewers inspect the hash-bound packet, expected outcomes and rights; a responsible human authenticates independence and approves publication.
+2. Review and merge company-bot PR #7. Main/tag/environment protections, hosted CI and signed candidate are already verified; owner maintains MFA and accountable security response.
+3. After review, authorize the exact protected RC tag workflow and human environment approval. The current authentic main snapshot is distinct from that formal release.
+4. Approve official badge/account/foundation representations separately. For future camt support, obtain authoritative joint-contributor redistribution clearance first.
 
-v0.5 criteria are not satisfied (third version and reviewed corpus). v1.0 criteria are not
-satisfied (external review, outside use, stable public API and governance). Preparation is complete;
-these real-world human facts cannot be manufactured by automation.
+Current original 389-item accounting is FINAL_COMPLETION_REPORT_CURRENT.md; the 29 September report is retained as historical evidence.

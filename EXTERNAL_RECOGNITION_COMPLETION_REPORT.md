@@ -4,7 +4,7 @@ MessageBench 0.2.0-rc.1 · 1 October 2026 · Aksum Labs
 
 **Automatable recognition work completed; genuine human decisions remain explicitly gated.** The repository is public and protected, seven actual hosted workflows succeeded, the public Scorecard is 7.1/10, an authentic signed candidate was verified locally, Pages is live, and Software Heritage completed a full archive. No fabricated review, adoption, certification, badge or institutional relationship is claimed. No fees paid.
 
-Evidence refers to main source `ad10253e1d0d9a07282ab78290f024cdbf5a111b`. Later evidence and the release-guard correction use a protected PR; they do not inherit main's signing or hosted test result. Version remains 0.2.0-rc.1 and two exact message versions. The original 389-item engineering completion report is preserved separately; this recognition mandate has 213 explicit requirements.
+Evidence refers to main source `ad10253e1d0d9a07282ab78290f024cdbf5a111b`. Later evidence and the release-guard correction use a protected PR; they do not inherit main's signing or hosted test result. Version remains 0.2.0-rc.1 and two exact message versions. The original 389-item engineering snapshot is preserved separately. Its dated current crosswalk, FINAL_COMPLETION_REPORT_CURRENT.md and evidence/engineering-current-accounting.json, accounts for 377 PASS and 12 BLOCKED-BY-HUMAN after five actual publication outcomes. This recognition mandate has 213 explicit requirements.
 
 ## A. Public repository status
 
