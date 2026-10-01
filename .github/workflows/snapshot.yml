@@ -38,7 +38,7 @@ jobs:
           cd "$RUNNER_TEMP"
           "$RUNNER_TEMP/install-check/bin/messagebench" corpus verify
       - run: python scripts/release_provenance.py --bundle "$RUNNER_TEMP/review-bundle"
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
           name: unsigned-candidate-bundle
           path: ${{ runner.temp }}/review-bundle
@@ -82,7 +82,7 @@ jobs:
       - uses: actions/attest-build-provenance@9d57eef8c06cd9d6b433effeeb7a6a77b3ff94ad
         with:
           subject-path: '${{ runner.temp }}/review-bundle/SHA256SUMS'
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
           name: signed-candidate-bundle
           path: ${{ runner.temp }}/review-bundle
