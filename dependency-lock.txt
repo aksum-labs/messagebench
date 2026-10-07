@@ -47,7 +47,7 @@ referencing==0.37.0
 requests==2.34.2
 rich==15.0.0
 rpds-py==2026.6.3
-ruff==0.16.9
+ruff==0.16.10
 setuptools==84.0.0
 sortedcontainers==2.4.0
 stevedore==5.9.1
